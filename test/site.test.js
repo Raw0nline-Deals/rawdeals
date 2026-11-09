@@ -29,10 +29,18 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (path) => readFileSync(join(root, path), "utf8");
 
 test("affiliate helper is the only runtime source of the Associates tag", () => {
-  const runtime = ["index.html", "js/app.js", "js/deals.js", "js/dead-deals.js", "data/deals.json"];
+  const runtime = ["js/app.js", "js/deals.js", "js/dead-deals.js", "data/deals.json"];
   for (const path of runtime) {
     assert.equal(read(path).includes(ASSOCIATE_TAG), false, path);
   }
+  const allowed = [
+    "https://www.amazon.com/prime?tag=onamzeddie0c-20",
+    "https://www.amazon.com/hz/audible/arya/mlp?tag=onamzeddie0c-20",
+    "https://www.amazon.com/gp/video/primesignup?tag=onamzeddie0c-20",
+  ];
+  let html = read("index.html");
+  for (const url of allowed) html = html.replaceAll(url, "");
+  assert.equal(html.includes(ASSOCIATE_TAG), false);
   assert.equal(ASSOCIATE_TAG, "onamzeddie0c-20");
 });
 

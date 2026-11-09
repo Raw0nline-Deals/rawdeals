@@ -530,6 +530,40 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
+.how-to .btn { margin-top: 14px; }
+
+.promo-row {
+  display: grid;
+  gap: 16px;
+  width: min(1120px, calc(100% - 32px));
+  margin: 28px auto 36px;
+}
+
+.promo-card {
+  margin: 0;
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+}
+
+.promo-card h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+.promo-card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.promo-card .btn { margin-top: 14px; }
+
 .newsletter {
   margin: 42px auto 8px;
   background: var(--card);
@@ -649,6 +683,8 @@ a { color: inherit; }
   .signup button { min-width: 170px; }
 
   .newsletter { padding: 36px 36px; }
+
+  .promo-row { grid-template-columns: 1fr 1fr; }
 }
 
 @media (min-width: 1040px) {
