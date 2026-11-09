@@ -5,9 +5,15 @@ on:
     # 13:00 UTC is 7:00 AM Central Standard Time.
     - cron: "0 13 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - data/asins.json
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: refresh-deals
@@ -35,9 +41,11 @@ jobs:
         run: node scripts/fetch-deals.js --live
 
       - name: Commit deals.json if it changed
+        id: commit
         run: |
           if git diff --quiet -- data/deals.json; then
             echo "deals.json unchanged"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
@@ -45,3 +53,13 @@ jobs:
           git add -- data/deals.json
           git commit -m "Daily deal refresh"
           git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh api --method POST "/repos/${{ github.repository }}/pages/builds"; then
+            echo "::warning::GitHub Pages rebuild request failed"
+          fi
