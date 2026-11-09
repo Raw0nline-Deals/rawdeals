@@ -1,0 +1,22 @@
+{
+  "name": "RawDeals",
+  "short_name": "RawDeals",
+  "description": "Daily Amazon deals from Raw0nline.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3efe7",
+  "theme_color": "#1a1814",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

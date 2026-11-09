@@ -1,0 +1,121 @@
+{
+  "about": "SAMPLE DATA. Product names, prices, and promo codes below are examples so the page has a layout. They are not live Amazon offers. Delete these objects before announcing the site. Real deals use sample: false and a title that does not say EXAMPLE.",
+  "deals": [
+    {
+      "id": "ex-studio-earbuds",
+      "title": "EXAMPLE Studio Earbuds",
+      "image": "images/samples/electronics.svg",
+      "price": 24.99,
+      "originalPrice": 49.99,
+      "percentOff": 50,
+      "promoCode": "RAWSAMPLE",
+      "category": "Electronics",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Studio%20Earbuds",
+      "added": "2026-11-09",
+      "expires": "2026-11-16",
+      "sample": true
+    },
+    {
+      "id": "ex-hill-skillet",
+      "title": "EXAMPLE Hill Country Skillet",
+      "image": "images/samples/kitchen.svg",
+      "price": 29.99,
+      "originalPrice": 44.99,
+      "percentOff": 33,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Hill%20Country%20Skillet",
+      "added": "2026-11-09",
+      "sample": true
+    },
+    {
+      "id": "ex-reading-lamp",
+      "title": "EXAMPLE Reading Lamp",
+      "image": "images/samples/home.svg",
+      "price": 18.5,
+      "originalPrice": 35,
+      "percentOff": 47,
+      "promoCode": "EXAMPLE47",
+      "category": "Home",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Reading%20Lamp",
+      "added": "2026-11-09",
+      "expires": "2026-11-11",
+      "sample": true
+    },
+    {
+      "id": "ex-river-bottle",
+      "title": "EXAMPLE River Bottle",
+      "image": "images/samples/outdoors.svg",
+      "price": 16,
+      "percentOff": 0,
+      "category": "Outdoors",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20River%20Bottle",
+      "added": "2026-11-09",
+      "sample": true
+    },
+    {
+      "id": "ex-band-set",
+      "title": "EXAMPLE Resistance Band Set",
+      "image": "images/samples/fitness.svg",
+      "price": 12.99,
+      "originalPrice": 25.99,
+      "percentOff": 50,
+      "promoCode": "FITRAW",
+      "category": "Fitness",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Resistance%20Band%20Set",
+      "added": "2026-11-08",
+      "sample": true
+    },
+    {
+      "id": "ex-click-keyboard",
+      "title": "EXAMPLE Click Keyboard",
+      "image": "images/samples/electronics.svg",
+      "price": 45,
+      "originalPrice": 79.99,
+      "percentOff": 44,
+      "category": "Electronics",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Click%20Keyboard",
+      "added": "2026-11-08",
+      "expires": "2026-11-12",
+      "sample": true
+    },
+    {
+      "id": "ex-block-bin",
+      "title": "EXAMPLE Block Bin",
+      "image": "images/samples/toys.svg",
+      "price": 22,
+      "originalPrice": 30,
+      "percentOff": 27,
+      "promoCode": "PLAYRAW",
+      "category": "Toys",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Block%20Bin",
+      "added": "2026-11-08",
+      "sample": true
+    },
+    {
+      "id": "ex-porch-blanket",
+      "title": "EXAMPLE Porch Blanket",
+      "image": "images/samples/home.svg",
+      "price": 27.5,
+      "originalPrice": 42,
+      "percentOff": 35,
+      "category": "Home",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Porch%20Blanket",
+      "added": "2026-11-07",
+      "sample": true
+    },
+    {
+      "id": "ex-floor-mat",
+      "title": "EXAMPLE Floor Mat",
+      "image": "images/samples/fitness.svg",
+      "price": 19.99,
+      "originalPrice": 34.99,
+      "percentOff": 43,
+      "promoCode": "MOVE43",
+      "category": "Fitness",
+      "url": "https://www.amazon.com/s?k=EXAMPLE%20Floor%20Mat",
+      "added": "2026-11-07",
+      "expires": "2026-11-08",
+      "sample": true
+    }
+  ]
+}

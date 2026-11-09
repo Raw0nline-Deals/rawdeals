@@ -1,0 +1,16 @@
+{
+  "about": "Future input for scripts/fetch-deals.js. The website does not read this file. These ASINs are placeholders, not products to publish.",
+  "marketplace": "www.amazon.com",
+  "items": [
+    {
+      "asin": "B0EXAMPLE01",
+      "category": "Electronics",
+      "promoCode": null
+    },
+    {
+      "asin": "B0EXAMPLE02",
+      "category": "Home",
+      "promoCode": "SAVE10"
+    }
+  ]
+}
