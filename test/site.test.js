@@ -57,7 +57,7 @@ test("deal links go through the affiliate helper", () => {
   assert.equal(new URL(href).searchParams.get("tag"), ASSOCIATE_TAG);
 });
 
-test("days are grouped with today first, using San Antonio time", () => {
+test("days are grouped with today first, using the America/Chicago calendar date", () => {
   assert.equal(todayISO(new Date("2026-11-09T05:00:00Z")), "2026-11-08");
   assert.equal(todayISO(new Date("2026-11-09T15:00:00Z")), "2026-11-09");
   assert.equal(dayHeading("2026-11-09", "2026-11-09"), "Today");

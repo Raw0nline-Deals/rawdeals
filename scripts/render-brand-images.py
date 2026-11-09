@@ -30,8 +30,6 @@ def og():
     draw.text((raw_box[2] - 6, 206), "Deals", font=deals, fill=INK)
     sub = ImageFont.truetype(SANS, 36)
     draw.text((216, 330), "Daily Amazon deals from Raw0nline", font=sub, fill=PINE)
-    place = ImageFont.truetype(SANS_BOLD, 24)
-    draw.text((216, 400), "SAN ANTONIO, TX", font=place, fill=(74, 69, 62))
     image.save(ROOT / "images" / "og.png", optimize=True)
 
 

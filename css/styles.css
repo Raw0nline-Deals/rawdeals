@@ -152,7 +152,7 @@ a { color: inherit; }
   letter-spacing: -0.03em;
 }
 
-.tagline, .place, .today {
+.tagline, .today {
   margin: 4px 0 0;
   color: var(--ink-soft);
 }
@@ -160,12 +160,6 @@ a { color: inherit; }
 .today { margin-top: 2px; font-size: 0.92rem; }
 
 .tagline { font-size: 0.98rem; }
-
-.place {
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
 
 .nav {
   display: flex;

@@ -1,6 +1,6 @@
 # RawDeals
 
-Daily Amazon deals from [Raw0nline](https://linktr.ee/raw0nline) (Eddie), in San Antonio. The site is static and is meant to be hosted free on GitHub Pages at [getrawdeals.com](https://getrawdeals.com/).
+Daily Amazon deals from [Raw0nline](https://linktr.ee/raw0nline) (Eddie). The site is static and is meant to be hosted free on GitHub Pages at [getrawdeals.com](https://getrawdeals.com/).
 
 The deals on the page right now are **examples**. Names, prices, and promo codes are made up so the layout has something to show. Cards are marked **Example**. Delete them before you announce the site.
 
@@ -55,7 +55,7 @@ Edit `data/deals.json`. Keep the `about` note until the examples are gone. Each 
 | `promoCode` | no | Leave the field out when there is no code. The card gets a Copy button only when this is set. |
 | `category` | yes | Short label. It becomes a filter chip. |
 | `url` | yes | A normal `amazon.com` link. Do not add the Associates tag yourself. |
-| `added` | yes | `YYYY-MM-DD` for the day you want the card grouped under. The page treats “today” as the date in San Antonio (`America/Chicago`). |
+| `added` | yes | `YYYY-MM-DD` for the day you want the card grouped under. The page treats “today” as the calendar date in `America/Chicago`. |
 | `expires` | no | `YYYY-MM-DD`. The card shows “Ends …” or “Ended …”. |
 | `sample` | yes | `false` for a real deal. `true` is only for placeholders, and those titles must include `EXAMPLE`. |
 
