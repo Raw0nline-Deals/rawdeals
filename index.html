@@ -83,22 +83,14 @@
     <p class="loading">Loading deals…</p>
   </main>
 
-  <!--
-    BEEHIIV SLOT
-    Replace this entire <section id="newsletter-slot"> with the Beehiiv embed
-    when the list is ready. Until then it must stay disabled and must not
-    collect or pretend to collect email addresses.
-  -->
-  <section id="newsletter-slot" class="newsletter wrap" aria-labelledby="newsletter-title" data-beehiiv-slot="replace-this-section">
-    <p class="eyebrow">Beehiiv embed slot · Coming soon</p>
+  <section id="newsletter-slot" class="newsletter wrap" aria-labelledby="newsletter-title">
     <h2 id="newsletter-title">Deals in your inbox</h2>
-    <p>Email signup is not live yet. This box does not collect addresses.</p>
-    <div class="signup" role="group" aria-disabled="true">
+    <p>One email a day with the best Amazon deals. Unsubscribe anytime.</p>
+    <form id="newsletter-form" class="signup">
       <label class="sr-only" for="newsletter-email">Email address</label>
-      <input id="newsletter-email" type="email" disabled placeholder="you@email.com" autocomplete="off">
-      <button type="button" disabled>Coming soon</button>
-    </div>
-    <p class="slot-note">Placeholder only. Replace this section with the Beehiiv embed later.</p>
+      <input id="newsletter-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com" inputmode="email">
+      <button type="submit">Get the deals</button>
+    </form>
   </section>
 
   <footer class="site-footer">

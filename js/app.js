@@ -1,4 +1,5 @@
 import { withAffiliateTag } from "./affiliate.js";
+import { beehiivSignupUrl } from "./signup.js";
 import { createDeadDealStore } from "./dead-deals.js";
 import {
   categoriesIn,
@@ -43,6 +44,27 @@ document.querySelector("#today-label").textContent = new Intl.DateTimeFormat("en
 
 document.querySelector("#search-form").addEventListener("submit", (event) => {
   event.preventDefault();
+});
+
+const newsletterForm = document.querySelector("#newsletter-form");
+newsletterForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const input = newsletterForm.querySelector("#newsletter-email");
+  input.value = input.value.trim();
+  if (!input.value || !input.checkValidity()) {
+    input.reportValidity();
+    return;
+  }
+  let destination;
+  try {
+    destination = beehiivSignupUrl(input.value);
+  } catch {
+    input.setCustomValidity("Enter a valid email address");
+    input.reportValidity();
+    input.setCustomValidity("");
+    return;
+  }
+  window.location.assign(destination);
 });
 
 document.querySelector("#deal-search").addEventListener("input", (event) => {

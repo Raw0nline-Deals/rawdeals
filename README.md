@@ -85,9 +85,7 @@ Reports are stored only in that browser, under the localStorage key `rawdeals.de
 
 ## Email signup (Beehiiv)
 
-The green block near the bottom is a placeholder. The email field and the **Coming soon** button are disabled. The section does not collect addresses.
-
-When the Beehiiv list exists, replace the whole `<section id="newsletter-slot">` in `index.html` with the Beehiiv embed. The HTML comment above that section marks the slot.
+The green block under the deal list is a working signup form. **Get the deals** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
 
 ## Affiliate tag
 

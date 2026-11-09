@@ -500,22 +500,7 @@ a { color: inherit; }
   margin: 6px 0 8px;
 }
 
-.eyebrow {
-  margin: 0;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #f3e1d4;
-}
-
 .newsletter p { margin: 0 0 16px; }
-
-.slot-note {
-  margin: 12px 0 0;
-  color: #f3e1d4;
-  font-size: 0.88rem;
-}
 
 .signup {
   display: flex;
@@ -527,18 +512,22 @@ a { color: inherit; }
 .signup button {
   min-height: 48px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(243, 239, 231, 0.8);
+  border: 1px solid transparent;
   padding: 0 14px;
 }
 
-.signup button { font-weight: 700; }
+.signup input {
+  background: var(--card);
+  color: var(--ink);
+}
 
-.signup input:disabled,
-.signup button:disabled {
-  opacity: 1;
-  cursor: not-allowed;
+.signup input::placeholder { color: var(--ink-soft); }
+
+.signup button {
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .site-footer {
@@ -578,6 +567,7 @@ a { color: inherit; }
 
 @media (hover: hover) {
   .btn-primary:hover { background: #2c2824; }
+  .signup button:hover { background: #fff; }
   .card:not(.is-dead):hover { border-color: #cfc6b8; }
   .nav a:hover { color: var(--copper-deep); }
 }

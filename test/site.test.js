@@ -5,6 +5,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { ASSOCIATE_TAG, withAffiliateTag } from "../js/affiliate.js";
+import { beehiivSignupUrl } from "../js/signup.js";
 import { createDeadDealStore, memoryStorage } from "../js/dead-deals.js";
 import {
   dayHeading,
@@ -108,9 +109,17 @@ test("seeded deals validate and the publishing files are in place", () => {
   assert.match(read("index.html"), /As an Amazon Associate I earn from qualifying purchases\./);
   assert.match(read("index.html"), /https:\/\/linktr\.ee\/raw0nline/);
   assert.match(read("index.html"), /https:\/\/www\.amazon\.com\/shop\/twitch\.tvraw0nline/);
-  assert.match(read("index.html"), /Coming soon/);
-  assert.match(read("index.html"), /disabled/);
-  assert.doesNotMatch(read("index.html").slice(read("index.html").indexOf("newsletter-slot")), /<form[\s>]/);
+  const slot = read("index.html").slice(read("index.html").indexOf('id="newsletter-slot"'));
+  assert.match(slot, /<form[\s>]/);
+  assert.match(slot, /type="email"/);
+  assert.match(slot, /required/);
+  assert.match(slot, /Get the deals/);
+  assert.match(slot, /One email a day with the best Amazon deals\. Unsubscribe anytime\./);
+  assert.doesNotMatch(slot, /disabled|Coming soon|coming soon/);
+  assert.equal(
+    beehiivSignupUrl("eddie+deals@example.com"),
+    "https://magic.beehiiv.com/v1/085d2554-2a2b-4438-9442-7f3b58ba41f3?email=eddie%2Bdeals%40example.com",
+  );
 });
 
 test("Creators API mapper stays offline and hides secrets", () => {
