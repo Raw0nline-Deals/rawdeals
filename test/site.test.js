@@ -113,7 +113,12 @@ test("seeded deals validate and the publishing files are in place", () => {
   assert.match(slot, /<form[\s>]/);
   assert.match(slot, /type="email"/);
   assert.match(slot, /required/);
-  assert.match(slot, /Get the deals/);
+  assert.match(slot, /Sign Up/);
+  assert.match(read("index.html"), /https:\/\/www\.tiktok\.com\/@raw0nline/);
+  assert.match(read("index.html"), /https:\/\/www\.instagram\.com\/raw0nline/);
+  assert.match(read("index.html"), /aria-label="Raw0nline on TikTok"/);
+  assert.match(read("index.html"), /aria-label="Raw0nline on Instagram"/);
+  assert.match(read("index.html"), /theme-color" content="#0a0a0f"/);
   assert.match(slot, /One email a day with the best Amazon deals\. Unsubscribe anytime\./);
   assert.doesNotMatch(slot, /disabled|Coming soon|coming soon/);
   assert.equal(

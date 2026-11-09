@@ -85,7 +85,7 @@ Reports are stored only in that browser, under the localStorage key `rawdeals.de
 
 ## Email signup (Beehiiv)
 
-The green block under the deal list is a working signup form. **Get the deals** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
+The panel under the deal list is a working signup form. **Sign Up** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
 
 ## Affiliate tag
 
@@ -160,4 +160,4 @@ Cloudflare flattens the apex CNAME. After Pages and HTTPS are on, `https://getra
 
 ## Fonts
 
-Outfit and Fraunces are self-hosted under `fonts/` under the SIL Open Font License. The license text is `fonts/outfit-OFL.txt` and `fonts/fraunces-OFL.txt`.
+Outfit is self-hosted under `fonts/` under the SIL Open Font License (`fonts/outfit-OFL.txt`). Headings use Source Serif 4 from Google Fonts. Fraunces files remain in `fonts/` under `fonts/fraunces-OFL.txt` and are not used by the page.
