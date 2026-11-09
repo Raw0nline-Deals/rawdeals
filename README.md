@@ -85,7 +85,7 @@ Reports are stored only in that browser, under the localStorage key `rawdeals.de
 
 ## Email signup (Beehiiv)
 
-The panel under the deal list is a working signup form. **Sign Up** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
+Under the header, and before the example notice, category filters, and deal list, “How to use a coupon code” explains the three checkout steps. Below the deals, the panel is a working signup form. **Sign Up** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
 
 ## Affiliate tag
 

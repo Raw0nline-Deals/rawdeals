@@ -498,6 +498,38 @@ a { color: inherit; }
 
 #deals { scroll-margin-top: 8.5rem; }
 
+.how-to {
+  margin: 42px auto 0;
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+}
+
+.how-to h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+.how-to ol {
+  margin: 0 0 14px;
+  padding-left: 1.25rem;
+}
+
+.how-to li { margin: 0 0 10px; }
+
+.how-to li:last-child { margin-bottom: 0; }
+
+.how-to p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
 .newsletter {
   margin: 42px auto 8px;
   background: var(--card);
