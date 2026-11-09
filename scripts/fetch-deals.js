@@ -23,7 +23,6 @@ export const GET_ITEMS_RESOURCES = [
   "offersV2.listings.price",
   "offersV2.listings.dealDetails",
   "offersV2.listings.isBuyBoxWinner",
-  "offersV2.listings.violatesMAP",
 ];
 
 export function tokenEndpoint(version = "3.1") {
