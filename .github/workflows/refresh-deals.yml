@@ -1,0 +1,47 @@
+name: Daily deal refresh
+
+on:
+  schedule:
+    # 13:00 UTC is 7:00 AM Central Standard Time.
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-deals
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh deals from the Creators API
+        env:
+          CREATORS_API_CREDENTIAL_ID: ${{ secrets.CREATORS_API_CREDENTIAL_ID }}
+          CREATORS_API_CREDENTIAL_SECRET: ${{ secrets.CREATORS_API_CREDENTIAL_SECRET }}
+          CREATORS_API_CREDENTIAL_VERSION: "3.1"
+        run: node scripts/fetch-deals.js --live
+
+      - name: Commit deals.json if it changed
+        run: |
+          if git diff --quiet -- data/deals.json; then
+            echo "deals.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/deals.json
+          git commit -m "Daily deal refresh"
+          git push origin HEAD:main

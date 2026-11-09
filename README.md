@@ -100,34 +100,58 @@ Links:
 - Linktree: https://linktr.ee/raw0nline
 - Amazon storefront: https://www.amazon.com/shop/twitch.tvraw0nline
 
-## Amazon Creators API (not connected)
+## Daily deal refresh
 
-Credentials are **not** in this repo and must never be committed, including in `.env` files. `.gitignore` ignores `.env`.
+Hand-written deals in `data/deals.json`, including the example cards, stay as they are. The refresh only adds and updates deals that come from `data/asins.json`.
 
-`scripts/fetch-deals.js` is a stub. It does not call Amazon. `node scripts/fetch-deals.js` prints the request it would make for the placeholder ASINs in `data/watchlist.json`. `node scripts/fetch-deals.js --live` exits with an error and still sends nothing.
+`data/asins.json` is a JSON array. It starts empty, which means the daily job does nothing. Each entry needs an `asin`. Optional fields: `promoCode`, `category`, `expires` (`YYYY-MM-DD`), `title`, and `image`. Promo codes are not returned by the Creators API, so put them here when you have one. Do not commit a made-up ASIN. Example shape:
 
-A future daily job would:
+```json
+[
+  {
+    "asin": "B0XXXXXXXX",
+    "category": "Home",
+    "promoCode": "SAVE10",
+    "expires": "2026-11-20",
+    "title": "Optional title override",
+    "image": "https://example.com/optional-image.jpg"
+  }
+]
+```
 
-1. In the GitHub repo, open **Settings → Secrets and variables → Actions** and add:
-   - `CREATORS_API_CREDENTIAL_ID`
-   - `CREATORS_API_CREDENTIAL_SECRET`
-   - `CREATORS_API_CREDENTIAL_VERSION` (`3.1` for the North America token host)
-2. Keep those values only in secrets. Do not put them in the workflow file.
-3. Request a token with `grant_type=client_credentials` and `scope=creatorsapi::default`. Version `3.1` uses `https://api.amazon.com/auth/o2/token`, `3.2` uses `https://api.amazon.co.uk/auth/o2/token`, and `3.3` uses `https://api.amazon.co.jp/auth/o2/token`.
-4. `POST https://creatorsapi.amazon/catalog/v1/getItems` with header `x-marketplace: www.amazon.com` and the body `buildGetItemsBody()` already builds. `partnerTag` should stay `onamzeddie0c-20`.
-5. Map each item with `mapCreatorsItemToDeal()`:
-   - price ← `offersV2.listings[].price.money.amount` (prefer `isBuyBoxWinner`)
-   - original price ← `price.savingBasis.money.amount`
-   - percent off ← `price.savings.percentage`
-   - expiry ← the date from `dealDetails.endTime`
-   - url ← `detailPageURL`
-   - image ← `images.primary.large.url`
-   - title ← `itemInfo.title.displayValue`
-   - Skip a listing when `violatesMAP` is true or the price is missing.
-6. Promo codes are **not** in OffersV2. Keep them on each ASIN in `data/watchlist.json`. The mapper copies `promoCode` from that extra data.
-7. Merge with `mergeDeals()` and commit the new `data/deals.json`. Set `sample` to `false` and `added` to that day’s date in `America/Chicago`.
+Replace `B0XXXXXXXX` with a real ASIN before you commit that entry.
 
-Do not add a workflow that passes `--live` until the stub is intentionally changed to perform those calls. The categories you care about still come from the watchlist, not from the API.
+The secrets live in GitHub, not in the repo: **Settings → Secrets and variables → Actions**. The names are `CREATORS_API_CREDENTIAL_ID` and `CREATORS_API_CREDENTIAL_SECRET`. The workflow sends version `3.1` (US token host) and the site tag `onamzeddie0c-20`. Never paste those secrets into a file, an issue, or a workflow.
+
+What the job does:
+
+- Reads `data/asins.json`. An empty list exits successfully and does not touch `data/deals.json`.
+- Requests an OAuth token, then calls GetItems in batches of 10 ASINs.
+- Sets `source` to `"api"`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`.
+- Drops an API deal when the offer is missing, the listing violates MAP, or `expires` is before today. Example deals are not dropped.
+- If sign-in or GetItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token.
+
+A local dry run prints the plan and does not call Amazon:
+
+```bash
+node scripts/fetch-deals.js
+```
+
+`node scripts/fetch-deals.js --live` calls Amazon. Use it only on a machine that has the two credential variables set. Do not put them in the command line.
+
+### Run it from the Actions tab
+
+The workflow is **Daily deal refresh** (`.github/workflows/refresh-deals.yml`). It runs every day at 13:00 UTC, which is 7:00 AM Central Standard Time (8:00 AM during daylight time), and when someone starts it by hand.
+
+1. Open the [rawdeals](https://github.com/Raw0nline-Deals/rawdeals) repository on GitHub.
+2. Click **Actions**.
+3. In the left sidebar, click **Daily deal refresh**.
+4. Click **Run workflow**.
+5. Leave the branch set to `main`, then click **Run workflow** again.
+6. Open the run. A green check means the script finished. If `data/deals.json` changed, the run adds a commit named `Daily deal refresh` by `github-actions[bot]`, and that commit contains only `data/deals.json`.
+7. If the run fails, `data/deals.json` on `main` is still the previous file.
+
+GitHub does not start a Pages publish from a commit made with the default Actions token. After a bot commit, if the site still shows the old prices, open **Actions**, click **pages-build-deployment**, and re-run the latest run. If the bot cannot push because `main` is protected, allow GitHub Actions to bypass that rule for this repository.
 
 `scripts/fixtures/get-items.sample-from-docs.json` is a fake response shaped like Amazon’s public docs. It is only there so the mapper can be tested. Do not publish it as a deal.
 

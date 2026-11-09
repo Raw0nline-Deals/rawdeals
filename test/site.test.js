@@ -149,7 +149,7 @@ test("Creators API mapper stays offline and hides secrets", () => {
 
   const secret = "super-secret-value-do-not-print";
   const text = planText({
-    watchlist: { items: [{ asin: "B0EXAMPLE01" }] },
+    entries: [{ asin: "B0EXAMPLE01" }],
     status: credentialStatus({
       CREATORS_API_CREDENTIAL_ID: "credential-id",
       CREATORS_API_CREDENTIAL_SECRET: secret,
@@ -164,7 +164,9 @@ test("Creators API mapper stays offline and hides secrets", () => {
   const live = spawnSync(process.execPath, ["scripts/fetch-deals.js", "--live"], {
     cwd: root,
     encoding: "utf8",
+    env: { PATH: process.env.PATH },
   });
-  assert.equal(live.status, 1);
-  assert.match(live.stderr, /No request was sent/);
+  assert.equal(live.status, 0);
+  assert.match(live.stdout, /ASIN list is empty/);
+  assert.equal(live.stdout.includes("super-secret-value-do-not-print"), false);
 });

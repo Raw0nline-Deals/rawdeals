@@ -44,13 +44,13 @@ export function validatePayload(payload, { fileExists }) {
     if (typeof deal.percentOff !== "number" || deal.percentOff < 0 || deal.percentOff > 100) {
       errors.push(`${where}.percentOff must be a number from 0 to 100`);
     }
-    if (typeof deal.originalPrice === "number" && typeof deal.price === "number" && deal.originalPrice > 0) {
+    if (deal.source !== "api" && typeof deal.originalPrice === "number" && typeof deal.price === "number" && deal.originalPrice > 0) {
       const expected = Math.round((1 - deal.price / deal.originalPrice) * 100);
       if (Math.abs(expected - deal.percentOff) > 1) {
         errors.push(`${where}.percentOff is ${deal.percentOff}, expected about ${expected}`);
       }
     }
-    if (deal.originalPrice == null && deal.percentOff !== 0) {
+    if (deal.source !== "api" && deal.originalPrice == null && deal.percentOff !== 0) {
       errors.push(`${where}.percentOff must be 0 when originalPrice is omitted`);
     }
 
