@@ -1,0 +1,53 @@
+{
+  "note": "Synthetic fixture for the mapper test. Fields follow Amazon's public Creators API OffersV2 sample. This is not a live response and must not be copied into data/deals.json.",
+  "itemsResult": {
+    "items": [
+      {
+        "asin": "B00MNV8E0C",
+        "detailPageURL": "https://www.amazon.com/dp/B00MNV8E0C?tag=example&linkCode=ogi&th=1&psc=1",
+        "itemInfo": {
+          "title": {
+            "displayValue": "Fixture item from the Creators API sample"
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "isBuyBoxWinner": true,
+              "violatesMAP": false,
+              "dealDetails": {
+                "accessType": "PRIME_EXCLUSIVE",
+                "endTime": "2024-11-06T05:35Z",
+                "percentClaimed": 38,
+                "startTime": "2024-11-05T18:05Z"
+              },
+              "price": {
+                "money": {
+                  "amount": 59.49,
+                  "currency": "USD",
+                  "displayAmount": "$59.49"
+                },
+                "savingBasis": {
+                  "money": {
+                    "amount": 69.99,
+                    "currency": "USD",
+                    "displayAmount": "$69.99"
+                  },
+                  "savingBasisType": "LIST_PRICE"
+                },
+                "savings": {
+                  "money": {
+                    "amount": 10.5,
+                    "currency": "USD",
+                    "displayAmount": "$10.50"
+                  },
+                  "percentage": 15
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
