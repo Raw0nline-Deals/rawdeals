@@ -161,12 +161,14 @@ test("Creators API mapper stays offline and hides secrets", () => {
   assert.equal(read("scripts/fetch-deals.js").includes("node:http"), false);
   assert.equal(read("scripts/fetch-deals.js").includes("node:https"), false);
 
+  const dealsBefore = read("data/deals.json");
   const live = spawnSync(process.execPath, ["scripts/fetch-deals.js", "--live"], {
     cwd: root,
     encoding: "utf8",
     env: { PATH: process.env.PATH },
   });
-  assert.equal(live.status, 0);
-  assert.match(live.stdout, /ASIN list is empty/);
-  assert.equal(live.stdout.includes("super-secret-value-do-not-print"), false);
+  assert.equal(live.status, 1);
+  assert.match(`${live.stdout}\n${live.stderr}`, /No request was sent/);
+  assert.equal(`${live.stdout}${live.stderr}`.includes(secret), false);
+  assert.equal(read("data/deals.json"), dealsBefore);
 });
