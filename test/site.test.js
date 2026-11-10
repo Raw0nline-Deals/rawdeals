@@ -131,6 +131,15 @@ test("seeded deals validate and the publishing files are in place", () => {
   assert.match(howTo, /<ol>/);
   assert.match(howTo, /tap the code on a deal card to copy it/);
   assert.match(howTo, /Some deals apply the discount automatically or use an on-page coupon checkbox, so no code is needed\./);
+  assert.match(page, /<h2 id="try-prime-title">Join Amazon Prime<\/h2>/);
+  assert.match(page, /New members may get a free trial\./);
+  assert.match(page, />See Prime plans</);
+  assert.match(page, /<h2>Get Audible<\/h2>/);
+  assert.match(page, />See Audible plans</);
+  assert.match(page, /<h2>Get Prime Video<\/h2>/);
+  assert.match(page, />See Prime Video plans</);
+  assert.match(page, /aria-label="More from Amazon"/);
+  assert.doesNotMatch(page, /Try Amazon Prime free|Try Prime free|Try Audible free|Try Prime Video free|More to try free/);
   const slot = page.slice(newsAt);
   assert.match(slot, /<form[\s>]/);
   assert.match(slot, /type="email"/);
