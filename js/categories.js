@@ -9,17 +9,17 @@
 
 export const DISPLAY_CATEGORIES = [
   "Tech",
+  "Gaming",
+  "Kitchen",
   "Home",
   "Pets",
-  "Clothing",
   "Fragrances",
   "Drinks",
-  "Food",
-  "Kitchen",
-  "Gaming",
   "Household",
-  "Sports",
   "Toys",
+  "Sports",
+  "Food",
+  "Clothing",
 ];
 
 export const CATEGORY_ORDER = [
