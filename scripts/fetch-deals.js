@@ -21,6 +21,8 @@ export const SEARCH_ITEMS_URL = "https://creatorsapi.amazon/catalog/v1/searchIte
 export const ASIN_BATCH_SIZE = 10;
 export const SEARCH_ITEM_COUNT = 10;
 export const MAX_DISCOVERY_SEARCHES = 16;
+export const CATALOG_PAUSE_MS = 1100;
+export const RATE_LIMIT_RETRIES = 3;
 
 export const GET_ITEMS_RESOURCES = [
   "images.primary.large",
@@ -493,7 +495,18 @@ export async function fetchCreatorsItems({ entries, env, fetchImpl, partnerTag }
   return catalog.byAsin;
 }
 
-export async function fetchCreatorsCatalog({ entries, searches = [], discovery, env, fetchImpl, partnerTag }) {
+const defaultSleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export async function fetchCreatorsCatalog({
+  entries,
+  searches = [],
+  discovery,
+  env,
+  fetchImpl,
+  partnerTag,
+  pauseMs = 0,
+  sleep = defaultSleep,
+}) {
   const id = env.CREATORS_API_CREDENTIAL_ID;
   const secret = env.CREATORS_API_CREDENTIAL_SECRET;
   const version = env.CREATORS_API_CREDENTIAL_VERSION || "3.1";
@@ -527,10 +540,16 @@ export async function fetchCreatorsCatalog({ entries, searches = [], discovery, 
   }
   token = tokenBody.access_token;
 
+  let catalogCalls = 0;
+  const callCatalog = (url, body, label) => postCatalog(fetchImpl, token, url, body, fail, label, {
+    pauseMs: catalogCalls++ > 0 ? pauseMs : 0,
+    sleep,
+  });
+
   const byAsin = new Map();
   if (entries.length > 0) {
     for (const batch of chunkList(entries.map((entry) => entry.asin), ASIN_BATCH_SIZE)) {
-      const response = await postCatalog(fetchImpl, token, GET_ITEMS_URL, buildGetItemsBody(batch, partnerTag), fail, "GetItems");
+      const response = await callCatalog(GET_ITEMS_URL, buildGetItemsBody(batch, partnerTag), "GetItems");
       const body = await response.json();
       if (!body?.itemsResult) fail("Creators API GetItems response was missing itemsResult.");
       const items = body.itemsResult.items || [];
@@ -545,16 +564,13 @@ export async function fetchCreatorsCatalog({ entries, searches = [], discovery, 
 
   const groups = [];
   for (const search of searches) {
-    const response = await postCatalog(
-      fetchImpl,
-      token,
+    const response = await callCatalog(
       SEARCH_ITEMS_URL,
       buildSearchBody(search, {
         partnerTag,
         minDiscountPercent: discovery.minDiscountPercent,
         minRating: discovery.minRating,
       }),
-      fail,
       "SearchItems",
     );
     const body = await response.json();
@@ -564,23 +580,32 @@ export async function fetchCreatorsCatalog({ entries, searches = [], discovery, 
   return { byAsin, groups };
 }
 
-async function postCatalog(fetchImpl, token, url, body, fail, label) {
-  let response;
-  try {
-    response = await fetchImpl(url, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-        "x-marketplace": "www.amazon.com",
-      },
-      body: JSON.stringify(body),
-    });
-  } catch (error) {
-    fail(`Creators API ${label} request failed. ${error instanceof Error ? error.message : ""}`.trim());
+async function postCatalog(fetchImpl, token, url, body, fail, label, { pauseMs = 0, sleep = defaultSleep } = {}) {
+  if (pauseMs > 0) await sleep(pauseMs);
+  let attempt = 0;
+  while (true) {
+    let response;
+    try {
+      response = await fetchImpl(url, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+          "x-marketplace": "www.amazon.com",
+        },
+        body: JSON.stringify(body),
+      });
+    } catch (error) {
+      fail(`Creators API ${label} request failed. ${error instanceof Error ? error.message : ""}`.trim());
+    }
+    if (response?.status === 429 && attempt < RATE_LIMIT_RETRIES) {
+      attempt += 1;
+      await sleep(1000 * 2 ** attempt);
+      continue;
+    }
+    if (!response?.ok) fail(`Creators API ${label} request failed (${response?.status ?? "no status"}).`);
+    return response;
   }
-  if (!response?.ok) fail(`Creators API ${label} request failed (${response?.status ?? "no status"}).`);
-  return response;
 }
 
 export function buildUpdates(existingDeals, entries, itemsByAsin, today) {
@@ -606,6 +631,8 @@ export async function refreshDealsFile({
   fetchImpl = globalThis.fetch,
   today = todayISO(),
   partnerTag = ASSOCIATE_TAG,
+  pauseMs = 0,
+  sleep,
 }) {
   const entries = loadAsinEntries(JSON.parse(readFileSync(asinsPath, "utf8")));
   const discovery = discoveryPath ? readDiscoveryFile(discoveryPath) : emptyDiscovery();
@@ -623,6 +650,8 @@ export async function refreshDealsFile({
     env,
     fetchImpl,
     partnerTag,
+    pauseMs,
+    sleep,
   });
   const updates = buildUpdates(existingDeals, entries, catalog.byAsin, today);
   const tagged = catalog.groups.flatMap((group) => group.items.map((item) => ({
@@ -687,7 +716,7 @@ function main() {
     console.log(planText({ entries, status: credentialStatus(), discovery }));
     return;
   }
-  refreshDealsFile({ asinsPath, dealsPath, discoveryPath })
+  refreshDealsFile({ asinsPath, dealsPath, discoveryPath, pauseMs: CATALOG_PAUSE_MS })
     .then((result) => {
       if (!result.changed) console.log(`deals.json was not changed (${result.reason}).`);
       else console.log(`Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered). Hand-written deals were kept.`);

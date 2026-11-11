@@ -149,7 +149,7 @@ To add a category, copy one block inside `searches` and change the three lines. 
 }
 ```
 
-You can list up to 16 searches. That cap keeps the morning job to a modest number of Amazon calls: one sign-in, one call per 10 hand-picked ASINs, and one call per search. Twelve searches plus the current ASIN list is about 15 calls. The job does not page deeper than the first 10 results of each search.
+You can list up to 16 searches. That cap keeps the morning job to a modest number of Amazon calls: one sign-in, one call per 10 hand-picked ASINs, and one call per search. Twelve searches plus the current ASIN list is about 15 calls. The job waits about a second between those calls, and if Amazon answers “slow down” it tries that call a few more times. It does not page deeper than the first 10 results of each search. If Amazon still refuses, the run stops and `data/deals.json` is left as it was.
 
 Department names you can put in `searchIndex` include `Electronics`, `HomeAndKitchen`, `PetSupplies`, `Fashion`, `Beauty`, `GroceryAndGourmetFood`, `VideoGames`, `HealthPersonalCare`, `SportsAndOutdoors`, and `ToysAndGames`. Leave `searchIndex` out to search all of Amazon. Leave `category` out and the job picks a label from Amazon’s department.
 
