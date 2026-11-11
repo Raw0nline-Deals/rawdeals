@@ -1,15 +1,9 @@
 import { withAffiliateTag } from "./affiliate.js";
+import { CATEGORY_ORDER } from "./categories.js";
+
+export { CATEGORY_ORDER };
 
 export const TIME_ZONE = "America/Chicago";
-
-export const CATEGORY_ORDER = [
-  "Electronics",
-  "Kitchen",
-  "Home",
-  "Outdoors",
-  "Fitness",
-  "Toys",
-];
 
 const money = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -67,7 +61,26 @@ export function formatMoney(amount) {
 }
 
 export function isExpired(deal, today) {
-  return Boolean(deal.expires) && deal.expires < today;
+  return Boolean(deal?.expires) && deal.expires < today;
+}
+
+/**
+ * Deals the page should show. Expired cards are hidden, including hand-written ones.
+ * API deals with no discount and no promo code, or marked out of stock, are hidden too.
+ */
+export function isActiveDeal(deal, today) {
+  if (!deal || typeof deal !== "object") return false;
+  if (isExpired(deal, today)) return false;
+  if (deal.inStock === false) return false;
+  if (deal.source === "api") {
+    const discounted = typeof deal.percentOff === "number" && deal.percentOff > 0;
+    if (!discounted && !deal.promoCode) return false;
+  }
+  return true;
+}
+
+export function activeDeals(deals, today) {
+  return deals.filter((deal) => isActiveDeal(deal, today));
 }
 
 export function dealHref(deal) {

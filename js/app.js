@@ -2,6 +2,7 @@ import { withAffiliateTag } from "./affiliate.js";
 import { beehiivSignupUrl } from "./signup.js";
 import { createDeadDealStore } from "./dead-deals.js";
 import {
+  activeDeals,
   categoriesIn,
   dayHeading,
   dealHref,
@@ -119,7 +120,7 @@ async function init() {
   try {
     const response = await fetch(new URL("../data/deals.json", import.meta.url), { cache: "no-cache" });
     if (!response.ok) throw new Error(`Could not load deals (${response.status})`);
-    state.deals = dealsFromPayload(await response.json());
+    state.deals = activeDeals(dealsFromPayload(await response.json()), state.today);
     const reports = await store.list();
     state.deadIds = new Set(reports.map((report) => report.id));
     sampleBanner.hidden = !state.deals.some((deal) => deal.sample);
