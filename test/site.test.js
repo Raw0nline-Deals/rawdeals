@@ -29,7 +29,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (path) => readFileSync(join(root, path), "utf8");
 
 test("affiliate helper is the only runtime source of the Associates tag", () => {
-  const runtime = ["js/app.js", "js/deals.js", "js/dead-deals.js", "data/deals.json"];
+  const runtime = ["js/app.js", "js/deals.js", "js/categories.js", "js/dead-deals.js"];
   for (const path of runtime) {
     assert.equal(read(path).includes(ASSOCIATE_TAG), false, path);
   }
@@ -112,7 +112,9 @@ test("seeded deals validate and the publishing files are in place", () => {
     fileExists: (relativePath) => readFileSync(join(root, relativePath)).byteLength > 0,
   });
   assert.deepEqual(errors, []);
-  assert.ok(payload.deals.every((deal) => deal.sample === true));
+  assert.ok(payload.deals.some((deal) => deal.sample === true));
+  assert.ok(payload.deals.filter((deal) => deal.sample).every((deal) => String(deal.title).includes("EXAMPLE")));
+  assert.ok(payload.deals.filter((deal) => deal.source === "api").every((deal) => deal.sample === false));
   assert.equal(read("CNAME").trim(), "getrawdeals.com");
   assert.match(read("index.html"), /As an Amazon Associate I earn from qualifying purchases\./);
   assert.match(read("index.html"), /https:\/\/linktr\.ee\/raw0nline/);

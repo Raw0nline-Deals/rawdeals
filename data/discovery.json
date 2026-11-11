@@ -1,0 +1,68 @@
+{
+  "_comment": "Edit this file to change the deals the daily job finds on its own. ASINs in data/asins.json always win over these searches. minDiscountPercent is the smallest discount to keep. minRating of 4 means four stars or better. maxDeals is how many discovered deals to keep per day, spread across the searches (about 20, which is what the daily slideshow uses). Copy a search block to add a category. You can list up to 16 searches. category is the label on the site. searchIndex is Amazon's department name.",
+  "minDiscountPercent": 20,
+  "minRating": 4,
+  "maxDeals": 20,
+  "searches": [
+    {
+      "keywords": "electronics",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "home organization",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "pet supplies",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "clothing",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "perfume",
+      "searchIndex": "Beauty",
+      "category": "Fragrances"
+    },
+    {
+      "keywords": "coffee",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
+    },
+    {
+      "keywords": "snacks",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "cookware",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "video games",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "cleaning supplies",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
+    },
+    {
+      "keywords": "fitness gear",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "toys",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    }
+  ]
+}
