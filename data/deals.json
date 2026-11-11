@@ -2,6 +2,20 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B073R3PBTT",
+      "title": "Underground Printing Run Away Tee - SM - Black",
+      "image": "https://m.media-amazon.com/images/I/414Qm4RfS4L._SL500_.jpg",
+      "price": 16.18,
+      "percentOff": 26,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B073R3PBTT?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 21.99
+    },
+    {
       "id": "B0HP6VQLZ5",
       "title": "Ecoeve Permanent Outdoor Lights for House, 200ft RGB+IC Christmas LED Light | App & Remote Control with Guest Mode, 16 Million Colors, 50+ Scenes, Music Sync, IP67 Waterproof Seasonal Rope Lights",
       "image": "https://m.media-amazon.com/images/I/51acb1axIHL._SL500_.jpg",
@@ -141,8 +155,8 @@
       "id": "B00023IXDQ",
       "title": "Revlon Fire & Ice Perfume for Women Eau de Cologne Spray 1.7 Ounce",
       "image": "https://m.media-amazon.com/images/I/31iGPEICFiL._SL500_.jpg",
-      "price": 18,
-      "percentOff": 31,
+      "price": 14.99,
+      "percentOff": 42,
       "category": "Fragrances",
       "url": "https://www.amazon.com/dp/B00023IXDQ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
@@ -239,7 +253,7 @@
       "id": "B0B3Y28N87",
       "title": "Prada Paradoxe by Prada for Women 3.0 oz Eau de Parfum Spray Rechargeable",
       "image": "https://m.media-amazon.com/images/I/41fTkgQTrKL._SL500_.jpg",
-      "price": 106.49,
+      "price": 106.99,
       "percentOff": 41,
       "category": "Fragrances",
       "url": "https://www.amazon.com/dp/B0B3Y28N87?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
@@ -248,21 +262,6 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 180
-    },
-    {
-      "id": "B0HLL1RSKC",
-      "title": "Tumzak Titanium Pans for Cooking, 8-Inch Titanium Pan with Lid, Non-Stick Frying Pans, PFAS/PFOA/PTFE-Free, Dishwasher & Oven Safe, Compatible with Gas & Induction Cooktops",
-      "image": "https://m.media-amazon.com/images/I/41udrkk+vyL._SL500_.jpg",
-      "price": 119.98,
-      "percentOff": 20,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0HLL1RSKC?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 149.99,
-      "expires": "2026-11-19"
     },
     {
       "id": "B01B1V10KA",
