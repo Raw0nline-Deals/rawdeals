@@ -2,7 +2,7 @@
 
 Daily Amazon deals from [Raw0nline](https://linktr.ee/raw0nline) (Eddie). The site is static and is meant to be hosted free on GitHub Pages at [getrawdeals.com](https://getrawdeals.com/).
 
-The deals on the page right now are **examples**. Names, prices, and promo codes are made up so the layout has something to show. Cards are marked **Example**. Delete them before you announce the site.
+Real deals on the page come from the daily refresh. Example cards are still in `data/deals.json`, with **Example** in the name, but the page and the email feed hide them.
 
 ## Preview on your computer
 
@@ -65,7 +65,7 @@ Commit the file and push to `main` (or merge a pull request). GitHub Pages publi
 
 Run `node scripts/validate-deals.js` before you push if you want the file checked.
 
-Remove every deal with `"sample": true` before you share the site. While any remain, a notice at the top says the prices are not live.
+Deals with `"sample": true` stay in the file. The page and the RSS feed both hide them, so they are not shown as live deals. Delete those objects when you no longer want them in the file.
 
 ## Promo codes and the Copy button
 
@@ -163,15 +163,16 @@ When an ASIN in `data/asins.json` has no `category`, the job reads Amazon’s pr
 
 Discovered deals use the `category` on their search. That is what keeps a coffee search under Drinks even if Amazon files it next to grocery.
 
-Example cards already on the page keep the labels they were given (Electronics, Outdoors, Fitness, and so on). Those are not rewritten.
+Example cards in the file keep the labels they were given (Electronics, Outdoors, Fitness, and so on). Those are not rewritten, and they are hidden on the site.
 
 ### Hide deals that are over
 
-The page does not show a deal as active when:
+The page and the RSS feed use one filter, `visibleDeals()` in `js/deals.js`. A deal is left off both when:
 
 - `expires` is before today (hand-written deals too)
 - an API deal no longer has a discount and has no promo code
 - an API deal is out of stock, unavailable, or not yet released
+- `"sample"` is true (example cards)
 
 Those cards are left off the list. The gray “Dead” style is still there for a deal you report by hand in the browser. The job also removes API deals in those states from `data/deals.json` on the next successful run, and it removes a discovered deal that no longer qualifies. Hand-written deals stay in the file. Example deals are not deleted.
 
@@ -192,19 +193,40 @@ node scripts/fetch-deals.js
 
 ### Run it from the Actions tab
 
-The workflow is **Daily deal refresh** (`.github/workflows/refresh-deals.yml`). It runs every day at 13:00 UTC, which is 7:00 AM Central Standard Time (8:00 AM during daylight time), when someone starts it by hand, and when `data/asins.json` or `data/discovery.json` is pushed to `main`.
+The workflow is **Daily deal refresh** (`.github/workflows/refresh-deals.yml`). It runs every day at 13:00 UTC, which is 7:00 AM Central Standard Time (8:00 AM during daylight time), when someone starts it by hand, and when `data/asins.json`, `data/discovery.json`, or `data/deals.json` is pushed to `main`. A push that only changes `data/deals.json` rebuilds the feed and does not call Amazon. The morning run still calls Amazon, then rebuilds the feed, so a deal that expired overnight drops out of the email even when prices did not change.
 
 1. Open the [rawdeals](https://github.com/Raw0nline-Deals/rawdeals) repository on GitHub.
 2. Click **Actions**.
 3. In the left sidebar, click **Daily deal refresh**.
 4. Click **Run workflow**.
 5. Leave the branch set to `main`, then click **Run workflow** again.
-6. Open the run. A green check means the script finished. If `data/deals.json` changed, the run adds a commit named `Daily deal refresh` by `github-actions[bot]`, and that commit contains only `data/deals.json`.
-7. If the run fails, `data/deals.json` on `main` is still the previous file.
+6. Open the run. A green check means the script finished. If `data/deals.json` or `feed.xml` changed, the run adds one commit named `Daily deal refresh` by `github-actions[bot]`. That commit contains only those files.
+7. If the Amazon call fails, the run stops before it writes the feed. `data/deals.json` and `feed.xml` on `main` stay as they were.
 
 GitHub does not start a Pages publish from a commit made with the default Actions token. After a bot commit, if the site still shows the old prices, open **Actions**, click **pages-build-deployment**, and re-run the latest run. If the bot cannot push because `main` is protected, allow GitHub Actions to bypass that rule for this repository.
 
 `scripts/fixtures/get-items.sample-from-docs.json` is a fake response shaped like Amazon’s public docs. It is only there so the mapper can be tested. Do not publish it as a deal.
+
+## Daily email feed
+
+Beehiiv can send the same deals the site is showing. The feed is [https://getrawdeals.com/feed.xml](https://getrawdeals.com/feed.xml).
+
+Paste that address into Beehiiv:
+
+1. Open Beehiiv and go to **Settings**, then **RSS**, then **RSS Ingestion**.
+2. Click **New External RSS Feed** and paste `https://getrawdeals.com/feed.xml`.
+3. In the post type, choose **/rss**. Pick this feed, and turn on **Refresh feed on send**.
+4. Go to **Review**, then **Schedule**, then **Schedule recurring series**. Send it every day around **8:00 AM Central**, after the 7:00 AM deal refresh.
+
+The feed is normal RSS. Each item has the product name, the Amazon link with the site tag, the day it was added, the category, the picture, and a short note with the sale price, the original price when there is one, the percent off, and the promo code when there is one. The channel description includes: “As an Amazon Associate I earn from qualifying purchases.”
+
+The list is the same one the page draws. Expired deals, API deals that lost their discount and have no promo code, out-of-stock deals, and example cards are left out. Newest day first.
+
+To rebuild it on your computer after you edit `data/deals.json`:
+
+```bash
+node scripts/build-feed.js
+```
 
 ## Turn on GitHub Pages
 

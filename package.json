@@ -6,6 +6,7 @@
     "start": "python3 -m http.server 4173",
     "test": "node --test",
     "validate": "node scripts/validate-deals.js",
-    "fetch-deals": "node scripts/fetch-deals.js"
+    "fetch-deals": "node scripts/fetch-deals.js",
+    "feed": "node scripts/build-feed.js"
   }
 }

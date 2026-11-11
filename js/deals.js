@@ -65,8 +65,8 @@ export function isExpired(deal, today) {
 }
 
 /**
- * Deals the page should show. Expired cards are hidden, including hand-written ones.
- * API deals with no discount and no promo code, or marked out of stock, are hidden too.
+ * A deal that has not expired, is not marked out of stock, and still has a discount
+ * or a promo code when it came from the API.
  */
 export function isActiveDeal(deal, today) {
   if (!deal || typeof deal !== "object") return false;
@@ -81,6 +81,18 @@ export function isActiveDeal(deal, today) {
 
 export function activeDeals(deals, today) {
   return deals.filter((deal) => isActiveDeal(deal, today));
+}
+
+/**
+ * Cards a visitor sees, and the deals the RSS feed publishes.
+ * Example cards are hidden here so the page and the email cannot drift.
+ */
+export function isVisibleDeal(deal, today) {
+  return isActiveDeal(deal, today) && deal.sample !== true;
+}
+
+export function visibleDeals(deals, today) {
+  return deals.filter((deal) => isVisibleDeal(deal, today));
 }
 
 export function dealHref(deal) {

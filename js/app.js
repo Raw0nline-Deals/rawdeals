@@ -2,7 +2,6 @@ import { withAffiliateTag } from "./affiliate.js";
 import { beehiivSignupUrl } from "./signup.js";
 import { createDeadDealStore } from "./dead-deals.js";
 import {
-  activeDeals,
   categoriesIn,
   dayHeading,
   dealHref,
@@ -14,6 +13,7 @@ import {
   longDate,
   shortDate,
   todayISO,
+  visibleDeals,
 } from "./deals.js";
 
 const state = {
@@ -120,7 +120,7 @@ async function init() {
   try {
     const response = await fetch(new URL("../data/deals.json", import.meta.url), { cache: "no-cache" });
     if (!response.ok) throw new Error(`Could not load deals (${response.status})`);
-    state.deals = activeDeals(dealsFromPayload(await response.json()), state.today);
+    state.deals = visibleDeals(dealsFromPayload(await response.json()), state.today);
     const reports = await store.list();
     state.deadIds = new Set(reports.map((report) => report.id));
     sampleBanner.hidden = !state.deals.some((deal) => deal.sample);
