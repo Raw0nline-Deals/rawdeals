@@ -59,6 +59,12 @@ jobs:
           CREATORS_API_CREDENTIAL_VERSION: "3.1"
         run: node scripts/fetch-deals.js --live
 
+      - name: Clear shared dead flags for deals still on the site
+        env:
+          DEAD_DEALS_TOKEN: ${{ secrets.DEAD_DEALS_TOKEN }}
+          DEAD_DEALS_API_URL: ${{ vars.DEAD_DEALS_API_URL }}
+        run: node scripts/verify-dead-deals.js --reconcile
+
       - name: Rebuild the RSS feed
         run: node scripts/build-feed.js
 

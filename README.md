@@ -73,15 +73,112 @@ The Copy button writes the code to the clipboard and the button label changes to
 
 ## Report dead deal
 
-**Report dead deal** grays that card out and adds a **Dead** label. **Undo report** clears it.
+**Report dead deal** grays that card out and adds a **Dead** label. **Undo report** clears it on that browser.
 
-Reports are stored only in that browser, under the localStorage key `rawdeals.deadReports.v1`. Nothing is sent to you. The value is a JSON array of:
+The gray mark is saved immediately in this browser, under the localStorage key `rawdeals.deadReports.v1`. That part works even if the shared API below is down or not deployed yet. Each saved report looks like:
 
 ```json
 { "id": "deal-id", "reportedAt": "2026-11-09T12:00:00.000Z", "source": "local" }
 ```
 
-`js/dead-deals.js` is the only place that reads and writes those reports. The page calls `list()`, `report()`, and `retract()`. A later shared backend can replace those three methods and keep the same record shape, with `source` set to `"api"`. The comments in that file name the routes that would fit: `GET /api/dead-deals`, `POST /api/dead-deals`, and `DELETE /api/dead-deals/:id`.
+The page also sends the report to `https://api.getrawdeals.com`. One browser gets one vote per deal. After **3 different people** report the same deal, a GitHub Action looks the ASIN up with the Creators API. If Amazon says the offer is dead, the card is removed for every visitor, and the next feed build leaves it out of `feed.xml` too. If Amazon says the offer is still good, the card stays up and those reports are cleared for 48 hours.
+
+**Undo report** removes only that browser’s vote. It does not bring back a deal that was already verified dead.
+
+Your own unverified report stays gray only for you. Other people still see the card until the Amazon check agrees it is dead.
+
+The browser id is a random value in localStorage (`rawdeals.visitor.v1`). The API stores a hash of that id and a hash of the IP address. It does not store the raw IP, and it never sees the Amazon credentials.
+
+Limits, so one visitor cannot flag the whole page:
+
+| Limit | Value |
+| --- | --- |
+| Distinct reporters before an Amazon check | 3 |
+| New reports per browser | 4 per hour, 6 per day |
+| New reports per network (hashed IP) | 6 per hour, 10 per day |
+| Cooldown after Amazon says the deal is still live | 48 hours |
+| Price difference that counts as “the price went up” | more than $0.02 above the card |
+
+A repeat tap on a deal you already reported does not use up the limit. Undo does not use it up either.
+
+The Amazon check marks a deal dead when any of these are true:
+
+- the ASIN is missing from the Creators API response
+- the offer is out of stock, unavailable, not released yet, or preorder
+- there is no buyable price, or the listing violates MAP
+- the current price is more than $0.02 above the price on the card
+- Amazon’s deal end time is already past
+
+If the price is still at or below the card and the item can be bought, the deal stays. A promo code is not something the API can check, so a working code with the same price is left up. A hand-written deal with no ASIN in its id or in a `/dp/ASIN` link cannot be checked, so it is not hidden for everyone. The browser that reported it still shows it gray.
+
+Checked deals are written back with `verifiedDead: true` and `inStock: false`. `visibleDeals()` then drops them from the page and from `feed.xml`. If a later refresh finds that ASIN on sale again, the shared flag is cleared and the card can come back.
+
+## Shared dead-deal reports (set this up once)
+
+Do this after the pull request is merged. The site keeps working before you finish. Reports stay on the visitor’s browser until the API is up, and the hourly workflow does nothing until the GitHub secret below exists.
+
+The API is a Cloudflare Worker. The Amazon check stays in GitHub Actions, because that is where `CREATORS_API_CREDENTIAL_ID` and `CREATORS_API_CREDENTIAL_SECRET` already live. Do not copy those two secrets into Cloudflare, into a file, or into the browser.
+
+DNS for the site stays as it is. The apex and `www` records stay **DNS only** (gray cloud), pointed at GitHub Pages. Proxying them breaks the GitHub certificate. The Worker gets its own hostname, `api.getrawdeals.com`, and that record is proxied.
+
+### 1. Cloudflare Worker and KV
+
+Use the same Cloudflare account that already has the DNS for getrawdeals.com. From your computer, in this repo:
+
+```bash
+cd workers/dead-deals
+npx wrangler login
+npx wrangler kv namespace create rawdeals-dead-deals
+```
+
+The namespace command prints an id. Open `workers/dead-deals/wrangler.toml` and replace `REPLACE_WITH_KV_NAMESPACE_ID` with that id. Commit that id. It is not a secret. Leave the Amazon credentials out of this file.
+
+Create two long random values and do not paste them into the repo, an issue, or a workflow file:
+
+```bash
+openssl rand -hex 32
+```
+
+Run that twice. The first value is the IP hash salt. The second is the API token. Both must be at least 16 characters. Then, still inside `workers/dead-deals`:
+
+```bash
+npx wrangler secret put IP_HASH_SALT
+npx wrangler secret put DEAD_DEALS_TOKEN
+npx wrangler deploy
+```
+
+`IP_HASH_SALT` is what the Worker mixes into the IP hash. If you change it later, existing votes are forgotten and people can report again. `DEAD_DEALS_TOKEN` is how GitHub Actions talks to the admin routes. The public site does not see either value.
+
+In the Cloudflare dashboard, open **Workers & Pages**, then **rawdeals-dead-deals**, then **Settings**, then **Domains & Routes**. Add a custom domain: `api.getrawdeals.com`. Cloudflare creates the DNS record and proxies it. Do not change the apex or `www` records while you do this.
+
+Check the Worker before you give GitHub the token:
+
+```bash
+curl -sS -H "X-Visitor-Id: 00000000-0000-4000-8000-000000000001" https://api.getrawdeals.com/api/dead-deals
+```
+
+An empty list (`[]`) means it is up. A browser error or a 503 means the salt or the KV binding is missing. Fix that before the next step.
+
+### 2. GitHub Actions secret
+
+The hourly workflow is **Verify dead deals** (`.github/workflows/verify-dead-deals.yml`). It runs at minute 15 of every hour, and you can start it by hand. It uses the Creators API secrets you already have. Add one new secret, and only after the curl above works. If the secret is set while the Worker is down, the hourly run fails.
+
+1. Open the [rawdeals](https://github.com/Raw0nline-Deals/rawdeals) repository on GitHub.
+2. Click **Settings**, then **Secrets and variables**, then **Actions**.
+3. Under **Repository secrets**, click **New repository secret**.
+4. Name it `DEAD_DEALS_TOKEN`. Paste the same token you gave Wrangler. Save it.
+5. Do not create new `CREATORS_API_CREDENTIAL_ID` or `CREATORS_API_CREDENTIAL_SECRET` values here if they are already set. Do not put the token in Cloudflare’s Amazon fields. There are no Amazon fields on the Worker.
+
+The API address defaults to `https://api.getrawdeals.com`. You only need a variable if you chose a different hostname: under **Variables**, add `DEAD_DEALS_API_URL`. Also change `DEAD_DEALS_API_ORIGIN` in `js/dead-deals.js` to that same origin, because the static site has no build step.
+
+### 3. Confirm a run
+
+1. Open **Actions**, then **Verify dead deals**, then **Run workflow** on `main`.
+2. A green run that says the token is not set means step 2 is not done yet.
+3. After the secret is saved, a green run should say there was nothing to check. It does not call Amazon when nobody has reached 3 reports.
+4. The daily deal refresh also clears a verified flag when Amazon puts that deal back on the site. That step does nothing until the token exists. If the API is down later, the refresh logs a warning and still rebuilds the feed.
+
+To try the script on your computer without calling Amazon, run `node scripts/verify-dead-deals.js`. With no token in the environment it prints that no request was sent. Do not put the token or the Creators API secrets on the command line. Export them in the shell only if you mean to hit the live API.
 
 ## Email signup (Beehiiv)
 
@@ -172,9 +269,10 @@ The page and the RSS feed use one filter, `visibleDeals()` in `js/deals.js`. A d
 - `expires` is before today (hand-written deals too)
 - an API deal no longer has a discount and has no promo code
 - an API deal is out of stock, unavailable, or not yet released
+- `verifiedDead` is true (a dead-deal report that the Creators API confirmed)
 - `"sample"` is true (example cards)
 
-Those cards are left off the list. The gray “Dead” style is still there for a deal you report by hand in the browser. The job also removes API deals in those states from `data/deals.json` on the next successful run, and it removes a discovered deal that no longer qualifies. Hand-written deals stay in the file. Example deals are not deleted.
+Those cards are left off the list. The gray “Dead” style is still there for a report that only this browser has made. A verified dead deal is removed from the list for everyone. The job also removes API deals in those states from `data/deals.json` on the next successful run, and it removes a discovered deal that no longer qualifies. Hand-written deals stay in the file, including ones marked `verifiedDead`, but the page and the feed hide them. Example deals are not deleted.
 
 What the job does:
 

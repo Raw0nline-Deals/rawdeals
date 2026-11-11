@@ -467,6 +467,11 @@ a { color: inherit; }
 
 .btn:disabled { cursor: progress; }
 
+.card.is-verified .report-btn:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
 .local-note {
   margin: 0;
   color: var(--ink-soft);

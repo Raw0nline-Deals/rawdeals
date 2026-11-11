@@ -1,0 +1,73 @@
+name: Verify dead deals
+
+on:
+  schedule:
+    # Hourly, offset from the 13:00 UTC deal refresh. A run with nothing pending
+    # does not call Amazon. Until DEAD_DEALS_TOKEN is set, the run skips.
+    - cron: "15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-deals
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify reported deals
+        id: verify
+        env:
+          CREATORS_API_CREDENTIAL_ID: ${{ secrets.CREATORS_API_CREDENTIAL_ID }}
+          CREATORS_API_CREDENTIAL_SECRET: ${{ secrets.CREATORS_API_CREDENTIAL_SECRET }}
+          CREATORS_API_CREDENTIAL_VERSION: "3.1"
+          DEAD_DEALS_TOKEN: ${{ secrets.DEAD_DEALS_TOKEN }}
+          DEAD_DEALS_API_URL: ${{ vars.DEAD_DEALS_API_URL }}
+        run: node scripts/verify-dead-deals.js
+
+      - name: Clear shared dead flags for deals still on the site
+        if: steps.verify.outcome == 'success'
+        env:
+          DEAD_DEALS_TOKEN: ${{ secrets.DEAD_DEALS_TOKEN }}
+          DEAD_DEALS_API_URL: ${{ vars.DEAD_DEALS_API_URL }}
+        run: node scripts/verify-dead-deals.js --reconcile
+
+      - name: Rebuild the RSS feed
+        if: steps.verify.outputs.changed == 'true'
+        run: node scripts/build-feed.js
+
+      - name: Commit deals.json and feed.xml if they changed
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git add -- data/deals.json feed.xml
+          if git diff --cached --quiet; then
+            echo "deals.json and feed.xml unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Verify dead deals"
+          git push origin HEAD:main
+
+      - name: Rebuild GitHub Pages
+        if: steps.verify.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh api --method POST "/repos/${{ github.repository }}/pages/builds"; then
+            echo "::warning::GitHub Pages rebuild request failed"
+          fi

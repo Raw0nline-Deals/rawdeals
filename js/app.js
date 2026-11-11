@@ -1,6 +1,6 @@
 import { withAffiliateTag } from "./affiliate.js";
 import { beehiivSignupUrl } from "./signup.js";
-import { createDeadDealStore } from "./dead-deals.js";
+import { createSharedDeadDealStore } from "./dead-deals.js";
 import {
   categoriesIn,
   dayHeading,
@@ -22,9 +22,10 @@ const state = {
   query: "",
   today: todayISO(),
   deadIds: new Set(),
+  verifiedIds: new Set(),
 };
 
-const store = createDeadDealStore();
+const store = createSharedDeadDealStore();
 const dealsRoot = document.querySelector("#deals");
 const filtersRoot = document.querySelector("#filters");
 const resultCount = document.querySelector("#result-count");
@@ -97,19 +98,31 @@ dealsRoot.addEventListener("click", async (event) => {
   const card = reportButton.closest(".card");
   const id = card.dataset.dealId;
   const marked = card.classList.contains("is-dead");
+  if (state.verifiedIds.has(id)) return;
   reportButton.disabled = true;
   try {
     if (marked) {
-      await store.retract(id);
-      state.deadIds.delete(id);
-      setDead(card, false);
+      const still = await store.retract(id);
+      if (still?.verified) {
+        state.verifiedIds.add(id);
+        state.deadIds.add(id);
+        hideVerified(id);
+      } else {
+        state.deadIds.delete(id);
+        setDead(card, false);
+      }
     } else {
-      await store.report(id);
+      const record = await store.report(id);
       state.deadIds.add(id);
-      setDead(card, true);
+      if (record?.verified) {
+        state.verifiedIds.add(id);
+        hideVerified(id);
+      } else {
+        setDead(card, true);
+      }
     }
   } finally {
-    reportButton.disabled = false;
+    if (!state.verifiedIds.has(id)) reportButton.disabled = false;
   }
 });
 
@@ -120,8 +133,8 @@ async function init() {
     const response = await fetch(new URL("../data/deals.json", import.meta.url), { cache: "no-cache" });
     if (!response.ok) throw new Error(`Could not load deals (${response.status})`);
     state.deals = visibleDeals(dealsFromPayload(await response.json()), state.today);
-    const reports = await store.list();
-    state.deadIds = new Set(reports.map((report) => report.id));
+    applyReports(await store.list());
+    state.deals = state.deals.filter((deal) => !state.verifiedIds.has(deal.id));
     renderChips(categoriesIn(state.deals));
     render();
   } catch (error) {
@@ -293,18 +306,38 @@ function renderCard(deal) {
   body.append(actions);
   card.append(media, body);
 
-  if (state.deadIds.has(deal.id)) setDead(card, true);
+  if (state.deadIds.has(deal.id)) setDead(card, true, { verified: state.verifiedIds.has(deal.id) });
   return card;
 }
 
-function setDead(card, dead) {
+function applyReports(reports) {
+  state.deadIds = new Set(reports.map((report) => report.id));
+  state.verifiedIds = new Set(reports.filter((report) => report.verified).map((report) => report.id));
+}
+
+function hideVerified(id) {
+  state.deals = state.deals.filter((deal) => deal.id !== id);
+  const categories = categoriesIn(state.deals);
+  if (!categories.includes(state.category)) state.category = "All";
+  renderChips(categories);
+  render();
+}
+
+function setDead(card, dead, { verified = false } = {}) {
+  const siteWide = Boolean(dead && verified);
   card.classList.toggle("is-dead", dead);
+  card.classList.toggle("is-verified", siteWide);
   const flag = card.querySelector(".dead-flag");
   flag.setAttribute("aria-hidden", dead ? "false" : "true");
   const button = card.querySelector(".report-btn");
-  button.textContent = dead ? "Undo report" : "Report dead deal";
+  button.disabled = siteWide;
+  button.textContent = siteWide ? "Verified dead" : dead ? "Undo report" : "Report dead deal";
   button.setAttribute("aria-pressed", dead ? "true" : "false");
-  card.querySelector(".local-note").hidden = !dead;
+  const note = card.querySelector(".local-note");
+  note.hidden = !dead;
+  note.textContent = siteWide
+    ? "Checked against Amazon. Marked dead for everyone."
+    : "Marked dead on this browser.";
 }
 
 function showCopied(button, code) {
