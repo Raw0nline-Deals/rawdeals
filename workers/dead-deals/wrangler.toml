@@ -1,0 +1,9 @@
+# Shared dead-deal votes. Setup is in the README under "Shared dead-deal reports".
+# Replace the KV id before the first deploy. Do not put Amazon credentials here.
+name = "rawdeals-dead-deals"
+main = "src/index.js"
+compatibility_date = "2026-11-11"
+
+[[kv_namespaces]]
+binding = "DEAD_DEALS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"

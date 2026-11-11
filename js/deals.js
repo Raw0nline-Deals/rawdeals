@@ -65,12 +65,13 @@ export function isExpired(deal, today) {
 }
 
 /**
- * A deal that has not expired, is not marked out of stock, and still has a discount
- * or a promo code when it came from the API.
+ * A deal that has not expired, was not verified dead, is not marked out of stock,
+ * and still has a discount or a promo code when it came from the API.
  */
 export function isActiveDeal(deal, today) {
   if (!deal || typeof deal !== "object") return false;
   if (isExpired(deal, today)) return false;
+  if (deal.verifiedDead === true) return false;
   if (deal.inStock === false) return false;
   if (deal.source === "api") {
     const discounted = typeof deal.percentOff === "number" && deal.percentOff > 0;

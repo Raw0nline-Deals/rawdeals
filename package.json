@@ -7,6 +7,7 @@
     "test": "node --test",
     "validate": "node scripts/validate-deals.js",
     "fetch-deals": "node scripts/fetch-deals.js",
+    "verify-dead-deals": "node scripts/verify-dead-deals.js",
     "feed": "node scripts/build-feed.js"
   }
 }
