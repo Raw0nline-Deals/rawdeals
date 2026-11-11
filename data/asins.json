@@ -1,4 +1,52 @@
 [
+  {
+    "asin": "B0G1XGM85S",
+    "promoCode": "GFIT057S",
+    "category": "Tech",
+    "expires": "2026-11-21"
+  },
+  {
+    "asin": "B0HMCM6BQW",
+    "promoCode": "SI6GQ0M1",
+    "category": "Tech",
+    "expires": "2026-11-15"
+  },
+  {
+    "asin": "B0HMR9N4T4",
+    "promoCode": "41HFTJFP",
+    "category": "Kitchen",
+    "expires": "2026-12-09"
+  },
+  {
+    "asin": "B0HDSYBMLJ",
+    "promoCode": "ZJLAN4XW",
+    "category": "Tech",
+    "expires": "2026-11-30"
+  },
+  {
+    "asin": "B0DBLT7838",
+    "promoCode": "OSNV7J65",
+    "category": "Tech",
+    "expires": "2027-07-10"
+  },
+  {
+    "asin": "B0H98R8DWP",
+    "promoCode": "6PJKSVVU",
+    "category": "Home",
+    "expires": "2026-11-25"
+  },
+  {
+    "asin": "B0GBTZHHVK",
+    "promoCode": "4G23PK58",
+    "category": "Home",
+    "expires": "2026-12-02"
+  },
+  {
+    "asin": "B0HH8R1RD6",
+    "promoCode": "YUNDVGHD",
+    "category": "Home",
+    "expires": "2026-11-30"
+  },
   { "asin": "B0FY2R5R8X" },
   { "asin": "B0BTCT7BJP" },
   { "asin": "B0H1Q4NJNB" },

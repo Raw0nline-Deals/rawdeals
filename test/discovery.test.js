@@ -6,10 +6,11 @@ import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { ASSOCIATE_TAG } from "../js/affiliate.js";
 import { DISPLAY_CATEGORIES, displayCategoryFromItem, matchCategory } from "../js/categories.js";
-import { activeDeals, isActiveDeal } from "../js/deals.js";
+import { activeDeals, isActiveDeal, visibleDeals } from "../js/deals.js";
 import {
   buildSearchBody,
   dealFromCreatorsItem,
+  loadAsinEntries,
   loadDiscoveryConfig,
   mergeApiDeals,
   refreshDealsFile,
@@ -75,6 +76,106 @@ function chain(names) {
   }
   return ancestor;
 }
+
+test("hand-picked promo prices and percents agree", () => {
+  const payload = JSON.parse(readFileSync(join(root, "data", "deals.json"), "utf8"));
+  const expectDeal = (id, fields) => {
+    const deal = payload.deals.find((entry) => entry.id === id);
+    const expected = Math.round((1 - deal.price / deal.originalPrice) * 100);
+    assert.ok(deal, id);
+    assert.ok(Math.abs(expected - deal.percentOff) <= 1, id);
+    assert.equal(deal.price, fields.price);
+    assert.equal(deal.originalPrice, fields.originalPrice);
+    assert.equal(deal.percentOff, fields.percentOff);
+    assert.equal(deal.promoCode, fields.promoCode);
+    assert.equal(deal.category, fields.category);
+    assert.equal(deal.expires, fields.expires);
+  };
+  expectDeal("B0DBLT7838", {
+    price: 8.25,
+    originalPrice: 27.49,
+    percentOff: 70,
+    promoCode: "OSNV7J65",
+    category: "Tech",
+    expires: "2027-07-10",
+  });
+  expectDeal("B0HDSYBMLJ", {
+    price: 26.49,
+    originalPrice: 52.99,
+    percentOff: 50,
+    promoCode: "ZJLAN4XW",
+    category: "Tech",
+    expires: "2026-11-30",
+  });
+  expectDeal("B0HMR9N4T4", {
+    price: 25,
+    originalPrice: 49.99,
+    percentOff: 50,
+    promoCode: "41HFTJFP",
+    category: "Kitchen",
+    expires: "2026-12-09",
+  });
+  expectDeal("B0HMCM6BQW", {
+    price: 18.99,
+    originalPrice: 49.99,
+    percentOff: 62,
+    promoCode: "SI6GQ0M1",
+    category: "Tech",
+    expires: "2026-11-15",
+  });
+  expectDeal("B0G1XGM85S", {
+    price: 7.69,
+    originalPrice: 13.99,
+    percentOff: 45,
+    promoCode: "GFIT057S",
+    category: "Tech",
+    expires: "2026-11-21",
+  });
+  expectDeal("B0H98R8DWP", {
+    price: 8.99,
+    originalPrice: 17.99,
+    percentOff: 50,
+    promoCode: "6PJKSVVU",
+    category: "Home",
+    expires: "2026-11-25",
+  });
+  expectDeal("B0GBTZHHVK", {
+    price: 39.99,
+    originalPrice: 79.99,
+    percentOff: 50,
+    promoCode: "4G23PK58",
+    category: "Home",
+    expires: "2026-12-02",
+  });
+  expectDeal("B0HH8R1RD6", {
+    price: 47.99,
+    originalPrice: 79.99,
+    percentOff: 40,
+    promoCode: "YUNDVGHD",
+    category: "Home",
+    expires: "2026-11-30",
+  });
+});
+
+test("a hand-picked promo code hides the day after its ASIN list end date", () => {
+  const [entry] = loadAsinEntries([{
+    asin: "B0HH8R1RD6",
+    promoCode: "YUNDVGHD",
+    category: "Home",
+    expires: "2026-11-30",
+  }]);
+  assert.equal(entry.expires, "2026-11-30");
+  const deal = dealFromCreatorsItem(
+    item({ asin: entry.asin, percent: 0, original: null }),
+    entry,
+    { today: "2026-11-11" },
+  );
+  assert.equal(deal.promoCode, "YUNDVGHD");
+  assert.equal(deal.category, "Home");
+  assert.equal(deal.expires, "2026-11-30");
+  assert.deepEqual(visibleDeals([deal], "2026-11-30").map((row) => row.id), [entry.asin]);
+  assert.deepEqual(visibleDeals([deal], "2026-12-01"), []);
+});
 
 test("the shipped discovery file is the twelve starting categories and about 20 deals", () => {
   const discovery = loadDiscoveryConfig(JSON.parse(readFileSync(join(root, "data", "discovery.json"), "utf8")));
