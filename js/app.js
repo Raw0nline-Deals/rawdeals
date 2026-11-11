@@ -28,7 +28,6 @@ const store = createDeadDealStore();
 const dealsRoot = document.querySelector("#deals");
 const filtersRoot = document.querySelector("#filters");
 const resultCount = document.querySelector("#result-count");
-const sampleBanner = document.querySelector("#sample-banner");
 const copyStatus = document.querySelector("#copy-status");
 let copyTimer = 0;
 
@@ -123,7 +122,6 @@ async function init() {
     state.deals = visibleDeals(dealsFromPayload(await response.json()), state.today);
     const reports = await store.list();
     state.deadIds = new Set(reports.map((report) => report.id));
-    sampleBanner.hidden = !state.deals.some((deal) => deal.sample);
     renderChips(categoriesIn(state.deals));
     render();
   } catch (error) {

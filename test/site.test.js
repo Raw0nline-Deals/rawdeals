@@ -112,9 +112,23 @@ test("seeded deals validate and the publishing files are in place", () => {
     fileExists: (relativePath) => readFileSync(join(root, relativePath)).byteLength > 0,
   });
   assert.deepEqual(errors, []);
-  assert.ok(payload.deals.some((deal) => deal.sample === true));
-  assert.ok(payload.deals.filter((deal) => deal.sample).every((deal) => String(deal.title).includes("EXAMPLE")));
-  assert.ok(payload.deals.filter((deal) => deal.source === "api").every((deal) => deal.sample === false));
+  const removedSamples = [
+    "ex-studio-earbuds",
+    "ex-hill-skillet",
+    "ex-reading-lamp",
+    "ex-river-bottle",
+    "ex-band-set",
+    "ex-click-keyboard",
+    "ex-block-bin",
+    "ex-porch-blanket",
+    "ex-floor-mat",
+  ];
+  assert.ok(payload.deals.length > 0);
+  assert.ok(payload.deals.every((deal) => deal.sample === false));
+  assert.ok(payload.deals.some((deal) => deal.source === "api"));
+  for (const id of removedSamples) {
+    assert.equal(payload.deals.some((deal) => deal.id === id), false, id);
+  }
   assert.equal(read("CNAME").trim(), "getrawdeals.com");
   assert.match(read("index.html"), /As an Amazon Associate I earn from qualifying purchases\./);
   assert.match(read("index.html"), /https:\/\/linktr\.ee\/raw0nline/);
@@ -122,13 +136,15 @@ test("seeded deals validate and the publishing files are in place", () => {
   const page = read("index.html");
   const headerAt = page.indexOf("site-header");
   const howAt = page.indexOf('id="how-to-coupon"');
-  const bannerAt = page.indexOf('id="sample-banner"');
   const filtersAt = page.indexOf('id="filters"');
   const dealsAt = page.indexOf('id="deals"');
   const newsAt = page.indexOf('id="newsletter-slot"');
-  assert.ok(headerAt !== -1 && howAt !== -1 && bannerAt !== -1 && filtersAt !== -1 && dealsAt !== -1 && newsAt !== -1);
-  assert.ok(headerAt < howAt && howAt < bannerAt && bannerAt < filtersAt && filtersAt < dealsAt);
-  const howTo = page.slice(howAt, bannerAt);
+  assert.equal(page.includes('id="sample-banner"'), false);
+  assert.doesNotMatch(page, /Example cards only/);
+  assert.doesNotMatch(page, /made up so this page has a layout/);
+  assert.ok(headerAt !== -1 && howAt !== -1 && filtersAt !== -1 && dealsAt !== -1 && newsAt !== -1);
+  assert.ok(headerAt < howAt && howAt < filtersAt && filtersAt < dealsAt);
+  const howTo = page.slice(howAt, filtersAt);
   assert.match(howTo, /<h2[^>]*>How to use a coupon code<\/h2>/);
   assert.match(howTo, /<ol>/);
   assert.match(howTo, /tap the code on a deal card to copy it/);
