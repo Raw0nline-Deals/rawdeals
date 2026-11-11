@@ -81,9 +81,11 @@ test("the shipped discovery file is the twelve starting categories and about 20 
   assert.equal(discovery.minDiscountPercent, 20);
   assert.equal(discovery.minRating, 4);
   assert.equal(discovery.maxDeals, 20);
-  assert.deepEqual(discovery.searches.map((search) => search.category), DISPLAY_CATEGORIES);
+  assert.deepEqual(discovery.searches.map((search) => search.category).sort(), [...DISPLAY_CATEGORIES].sort());
   assert.equal(new Set(discovery.searches.map((search) => search.keywords)).size, DISPLAY_CATEGORIES.length);
   assert.ok(discovery.searches.every((search) => search.searchIndex));
+  assert.deepEqual(discovery.priority.map((search) => search.category), ["Home", "Gaming", "Gaming"]);
+  assert.ok(discovery.priority.every((search) => search.priority === true));
 });
 
 test("discovery config rejects typos and too many searches", () => {

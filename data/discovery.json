@@ -20,7 +20,7 @@
       "category": "Pets"
     },
     {
-      "keywords": "clothing",
+      "keywords": "mens womens hoodies shirts dresses",
       "searchIndex": "Fashion",
       "category": "Clothing"
     },
@@ -63,6 +63,23 @@
       "keywords": "toys",
       "searchIndex": "ToysAndGames",
       "category": "Toys"
+    }
+  ],
+  "priority": [
+    {
+      "keywords": "permanent outdoor lights",
+      "searchIndex": "ToolsAndHomeImprovement",
+      "category": "Home"
+    },
+    {
+      "keywords": "gaming microphone",
+      "searchIndex": "Electronics",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "gaming headset",
+      "searchIndex": "Electronics",
+      "category": "Gaming"
     }
   ]
 }

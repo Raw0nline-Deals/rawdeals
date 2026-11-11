@@ -14,7 +14,14 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ASSOCIATE_TAG } from "../js/affiliate.js";
 import { displayCategoryFromItem } from "../js/categories.js";
-import { isActiveDeal, isExpired, todayISO } from "../js/deals.js";
+import {
+  apparelRank,
+  isActiveDeal,
+  isBabyOrInfantTitle,
+  isExpired,
+  priorityWatch,
+  todayISO,
+} from "../js/deals.js";
 
 export const GET_ITEMS_URL = "https://creatorsapi.amazon/catalog/v1/getItems";
 export const SEARCH_ITEMS_URL = "https://creatorsapi.amazon/catalog/v1/searchItems";
@@ -219,20 +226,29 @@ export function loadDiscoveryConfig(payload) {
   if (typeof payload !== "object" || Array.isArray(payload)) {
     throw new Error("data/discovery.json must be a JSON object.");
   }
-  const allowed = new Set(["_comment", "minDiscountPercent", "minRating", "maxDeals", "searches"]);
+  const allowed = new Set(["_comment", "minDiscountPercent", "minRating", "maxDeals", "searches", "priority"]);
   for (const key of Object.keys(payload)) {
     if (!allowed.has(key)) {
-      throw new Error(`Unknown field "${key}" in data/discovery.json. You can set minDiscountPercent, minRating, maxDeals, and searches.`);
+      throw new Error(`Unknown field "${key}" in data/discovery.json. You can set minDiscountPercent, minRating, maxDeals, searches, and priority.`);
     }
   }
   if (payload.minDiscountPercent == null || payload.minRating == null || payload.maxDeals == null || payload.searches == null) {
     throw new Error("data/discovery.json needs minDiscountPercent, minRating, maxDeals, and searches.");
   }
+  const searches = readSearches(payload.searches, "searches");
+  const priority = payload.priority == null ? [] : readSearches(payload.priority, "priority").map((search) => ({
+    ...search,
+    priority: true,
+  }));
+  if (searches.length + priority.length > MAX_DISCOVERY_SEARCHES) {
+    throw new Error(`discovery can have at most ${MAX_DISCOVERY_SEARCHES} searches so the daily job does not call Amazon too many times.`);
+  }
   return {
     minDiscountPercent: readBoundedInteger(payload.minDiscountPercent, "minDiscountPercent", 1, 99),
     minRating: readRating(payload.minRating),
     maxDeals: readBoundedInteger(payload.maxDeals, "maxDeals", 1, 40),
-    searches: readSearches(payload.searches),
+    searches,
+    priority,
   };
 }
 
@@ -250,34 +266,31 @@ function readRating(value) {
   return value;
 }
 
-function readSearches(value) {
-  if (!Array.isArray(value)) throw new Error("discovery.searches must be a list.");
-  if (value.length > MAX_DISCOVERY_SEARCHES) {
-    throw new Error(`discovery.searches can have at most ${MAX_DISCOVERY_SEARCHES} searches so the daily job does not call Amazon too many times.`);
-  }
+function readSearches(value, label) {
+  if (!Array.isArray(value)) throw new Error(`discovery.${label} must be a list.`);
   return value.map((entry, index) => {
     if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
-      throw new Error(`searches[${index}] must be an object.`);
+      throw new Error(`${label}[${index}] must be an object.`);
     }
     const allowed = new Set(["keywords", "searchIndex", "category"]);
     for (const key of Object.keys(entry)) {
       if (!allowed.has(key)) {
-        throw new Error(`searches[${index}].${key} is not a field you can set. Use keywords, searchIndex, and category.`);
+        throw new Error(`${label}[${index}].${key} is not a field you can set. Use keywords, searchIndex, and category.`);
       }
     }
     if (typeof entry.keywords !== "string" || !entry.keywords.trim()) {
-      throw new Error(`searches[${index}].keywords is required.`);
+      throw new Error(`${label}[${index}].keywords is required.`);
     }
     const search = { keywords: entry.keywords.trim() };
     if (entry.searchIndex != null) {
       if (typeof entry.searchIndex !== "string" || !entry.searchIndex.trim()) {
-        throw new Error(`searches[${index}].searchIndex must be a non-empty string when present.`);
+        throw new Error(`${label}[${index}].searchIndex must be a non-empty string when present.`);
       }
       search.searchIndex = entry.searchIndex.trim();
     }
     if (entry.category != null) {
       if (typeof entry.category !== "string" || !entry.category.trim()) {
-        throw new Error(`searches[${index}].category must be a non-empty string when present.`);
+        throw new Error(`${label}[${index}].category must be a non-empty string when present.`);
       }
       search.category = entry.category.trim();
     }
@@ -378,7 +391,9 @@ export function selectDiscoveredDeals(taggedItems, {
   for (const tagged of taggedItems) {
     const item = tagged?.item;
     const asin = item?.asin;
+    const title = item?.itemInfo?.title?.displayValue || "";
     if (!asin || blockedAsins.has(asin) || seen.has(asin)) continue;
+    if (isBabyOrInfantTitle(title)) continue;
     const qualified = dealFromDiscoveredItem(item, {
       today,
       existing: existingById.get(asin),
@@ -387,12 +402,21 @@ export function selectDiscoveredDeals(taggedItems, {
       minRating,
     });
     if (!qualified) continue;
+    const watch = priorityWatch(title);
+    if (watch) {
+      qualified.deal.category = watch.category;
+      qualified.deal.priority = true;
+    }
     seen.add(asin);
     if (!buckets.has(qualified.deal.category)) buckets.set(qualified.deal.category, []);
     buckets.get(qualified.deal.category).push(qualified);
   }
   for (const list of buckets.values()) {
     list.sort((a, b) => {
+      const priorityDelta = Number(b.deal.priority === true) - Number(a.deal.priority === true);
+      if (priorityDelta !== 0) return priorityDelta;
+      const apparelDelta = apparelRank(b.deal) - apparelRank(a.deal);
+      if (apparelDelta !== 0) return apparelDelta;
       if (b.deal.percentOff !== a.deal.percentOff) return b.deal.percentOff - a.deal.percentOff;
       const ratingDelta = (b.rating ?? -1) - (a.rating ?? -1);
       if (ratingDelta !== 0) return ratingDelta;
@@ -472,11 +496,12 @@ export function planText({ entries, status, discovery }) {
     `partnerTag: ${body.partnerTag}`,
     `itemIds: ${body.itemIds.join(", ") || "(none)"}`,
   ];
-  if (discovery?.searches?.length) {
+  const searches = [...(discovery?.searches || []), ...(discovery?.priority || [])];
+  if (searches.length) {
     lines.push(
-      `Would POST ${SEARCH_ITEMS_URL} for ${discovery.searches.length} searches (not called).`,
+      `Would POST ${SEARCH_ITEMS_URL} for ${searches.length} searches (not called).`,
       `Discovery keeps up to ${discovery.maxDeals} deals, at least ${discovery.minDiscountPercent}% off, rating ${discovery.minRating} or better.`,
-      `Searches: ${discovery.searches.map((search) => search.category || search.keywords).join(", ")}`,
+      `Searches: ${searches.map((search) => search.category || search.keywords).join(", ")}`,
     );
   }
   lines.push("No request was sent.");
@@ -645,7 +670,7 @@ export async function refreshDealsFile({
 
   const catalog = await fetchCreatorsCatalog({
     entries,
-    searches: discovery.searches,
+    searches: [...discovery.searches, ...(discovery.priority || [])],
     discovery,
     env,
     fetchImpl,
@@ -685,6 +710,7 @@ export async function refreshDealsFile({
     reason: "updated",
     count: apiDeals.length,
     discovered: apiDeals.filter((deal) => deal.discovered).length,
+    priority: apiDeals.filter((deal) => deal.priority).map((deal) => deal.id),
   };
 }
 
@@ -719,7 +745,10 @@ function main() {
   refreshDealsFile({ asinsPath, dealsPath, discoveryPath, pauseMs: CATALOG_PAUSE_MS })
     .then((result) => {
       if (!result.changed) console.log(`deals.json was not changed (${result.reason}).`);
-      else console.log(`Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered). Hand-written deals were kept.`);
+      else {
+        const priority = result.priority?.length ? ` Priority watch: ${result.priority.join(", ")}.` : "";
+        console.log(`Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered). Hand-written deals were kept.${priority}`);
+      }
     })
     .catch((error) => {
       const message = redactSecrets(error instanceof Error ? error.message : "Deal refresh failed.", [

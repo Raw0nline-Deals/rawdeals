@@ -137,7 +137,9 @@ Open `data/discovery.json`. That file is the only place you need to edit for aut
 | `maxDeals` | How many discovered deals to keep per day. `20` matches the daily slideshow. The job spreads them across the searches, one from each category before it takes a second from any category. |
 | `searches` | One block per search. `keywords` is what you would type into Amazon. `category` is the label on the site. `searchIndex` is Amazon’s department, which keeps the results in that aisle. |
 
-The starting searches are Tech, Home, Pets, Clothing, Fragrances, Drinks, Food, Kitchen, Gaming, Household, Sports, and Toys. Those same names are the labels on the site.
+The starting searches cover Tech, Gaming, Kitchen, Home, Pets, Fragrances, Drinks, Household, Toys, Sports, Food, and Clothing. The filter chips use that order. General and any other label come after those.
+
+`priority` is a short extra list for products to look for on purpose: permanent outdoor house lights (Home), gaming microphones, and gaming headsets (both Gaming). A match still has to be at least `minDiscountPercent` off, about `minRating` stars, and in stock. Those deals are marked `"priority": true` and the run prints `Priority watch:` with their ids. Men's and women's clothes, including hoodies, shirts, shorts, and dresses, are picked and shown ahead of other clothing. Baby and infant items, such as onesies, rompers, bibs, and anything for a newborn, infant, or toddler, are left off the site. A color name such as Baby Blue is not treated as a baby product.
 
 To add a category, copy one block inside `searches` and change the three lines. Example:
 
@@ -149,7 +151,7 @@ To add a category, copy one block inside `searches` and change the three lines. 
 }
 ```
 
-You can list up to 16 searches. That cap keeps the morning job to a modest number of Amazon calls: one sign-in, one call per 10 hand-picked ASINs, and one call per search. Twelve searches plus the current ASIN list is about 15 calls. The job waits about a second between those calls, and if Amazon answers “slow down” it tries that call a few more times. It does not page deeper than the first 10 results of each search. If Amazon still refuses, the run stops and `data/deals.json` is left as it was.
+You can list up to 16 searches, counting `searches` and `priority` together. That cap keeps the morning job to a modest number of Amazon calls: one sign-in, one call per 10 hand-picked ASINs, and one call per search. Twelve category searches, three priority searches, and the current ASIN list is about 18 calls. The job waits about a second between those calls, and if Amazon answers “slow down” it tries that call a few more times. It does not page deeper than the first 10 results of each search. If Amazon still refuses, the run stops and `data/deals.json` is left as it was.
 
 Department names you can put in `searchIndex` include `Electronics`, `HomeAndKitchen`, `PetSupplies`, `Fashion`, `Beauty`, `GroceryAndGourmetFood`, `VideoGames`, `HealthPersonalCare`, `SportsAndOutdoors`, and `ToysAndGames`. Leave `searchIndex` out to search all of Amazon. Leave `category` out and the job picks a label from Amazon’s department.
 
