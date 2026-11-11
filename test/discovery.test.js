@@ -240,7 +240,7 @@ test("a search category wins over the Amazon department", () => {
   assert.equal(deal.category, "Drinks");
 });
 
-test("merge drops dead API deals and stale discoveries, and keeps expired hand-written deals in the file", () => {
+test("merge keeps a discovery that missed today's cut, and drops dead or aged deals", () => {
   const handwritten = {
     id: "hand-old",
     title: "Old note",
@@ -248,7 +248,7 @@ test("merge drops dead API deals and stale discoveries, and keeps expired hand-w
     percentOff: 0,
     category: "Home",
     url: "https://www.amazon.com/dp/B0HAND",
-    added: "2026-11-01",
+    added: "2026-11-08",
     expires: "2026-11-02",
     sample: false,
     image: "https://example.com/a.jpg",
@@ -260,19 +260,19 @@ test("merge drops dead API deals and stale discoveries, and keeps expired hand-w
     percentOff: 0,
     category: "Tech",
     url: "https://www.amazon.com/dp/B0FLAT",
-    added: "2026-11-01",
+    added: "2026-11-10",
     sample: false,
     source: "api",
     image: "https://example.com/b.jpg",
   };
-  const stale = {
+  const missed = {
     id: "B0STALE",
-    title: "Yesterday",
+    title: "Missed the cut",
     price: 8,
     percentOff: 40,
     category: "Pets",
     url: "https://www.amazon.com/dp/B0STALE",
-    added: "2026-11-01",
+    added: "2026-11-10",
     sample: false,
     source: "api",
     discovered: true,
@@ -285,7 +285,7 @@ test("merge drops dead API deals and stale discoveries, and keeps expired hand-w
     percentOff: 30,
     category: "Home",
     url: "https://www.amazon.com/dp/B0KEEPDISC",
-    added: "2026-11-01",
+    added: "2026-11-08",
     sample: false,
     source: "api",
     discovered: true,
@@ -299,18 +299,19 @@ test("merge drops dead API deals and stale discoveries, and keeps expired hand-w
     title: "Fresh title",
   };
   const merged = mergeApiDeals(
-    [flat, stale, keptDiscovery, handwritten],
+    [flat, missed, keptDiscovery, handwritten],
     new Map(),
     today,
     [refreshed],
   );
-  assert.deepEqual(merged.map((deal) => deal.id), ["B0KEEPDISC", "hand-old"]);
-  assert.equal(merged[0].added, "2026-11-01");
-  assert.equal(merged[0].price, 9);
+  assert.deepEqual(merged.map((deal) => deal.id), ["B0STALE", "B0KEEPDISC", "hand-old"]);
+  assert.equal(merged.find((deal) => deal.id === "B0KEEPDISC").added, "2026-11-08");
+  assert.equal(merged.find((deal) => deal.id === "B0KEEPDISC").price, 9);
+  assert.equal(merged.find((deal) => deal.id === "B0STALE").added, "2026-11-10");
   assert.equal(isActiveDeal(handwritten, today), false);
-  assert.equal(isActiveDeal(merged[0], today), true);
+  assert.equal(isActiveDeal(merged.find((deal) => deal.id === "B0KEEPDISC"), today), true);
   assert.equal(isActiveDeal({ ...flat, promoCode: "CODE" }, today), true);
-  assert.deepEqual(activeDeals([flat, handwritten, merged[0]], today).map((deal) => deal.id), ["B0KEEPDISC"]);
+  assert.deepEqual(activeDeals([flat, handwritten, merged[1]], today).map((deal) => deal.id), ["B0KEEPDISC"]);
 });
 
 test("a failed search leaves deals.json unchanged and hides the secret", async () => {
@@ -368,7 +369,7 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
     percentOff: 0,
     category: "Home",
     url: "https://www.amazon.com/s?k=EXAMPLE",
-    added: "2026-11-01",
+    added: "2026-11-08",
     expires: "2026-11-02",
     sample: true,
     image: "images/samples/home.svg",
@@ -380,7 +381,7 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
     percentOff: 40,
     category: "Home",
     url: "https://www.amazon.com/dp/B0KEEP000001",
-    added: "2026-11-01",
+    added: "2026-11-08",
     sample: false,
     source: "api",
     image: "https://m.media-amazon.com/images/I/old.jpg",
@@ -392,7 +393,7 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
     percentOff: 30,
     category: "Tech",
     url: "https://www.amazon.com/dp/B0DISC000001",
-    added: "2026-11-01",
+    added: "2026-11-08",
     sample: false,
     source: "api",
     discovered: true,
@@ -482,7 +483,7 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
   const home = written.deals.find((deal) => deal.id === "B0HOME000001");
   assert.equal(home.category, "Home");
   const still = written.deals.find((deal) => deal.id === "B0DISC000001");
-  assert.equal(still.added, "2026-11-01");
+  assert.equal(still.added, "2026-11-08");
   assert.equal(still.percentOff, 35);
   assert.equal(written.deals.some((deal) => deal.id === "B0THIN000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "B0OOS0000001"), false);

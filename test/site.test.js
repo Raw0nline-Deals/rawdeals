@@ -8,6 +8,7 @@ import { ASSOCIATE_TAG, withAffiliateTag } from "../js/affiliate.js";
 import { beehiivSignupUrl } from "../js/signup.js";
 import { createDeadDealStore, memoryStorage } from "../js/dead-deals.js";
 import {
+  dayGroups,
   dayHeading,
   dealHref,
   filterDeals,
@@ -79,6 +80,23 @@ test("days are grouped with today first, using the America/Chicago calendar date
     { added: "2026-11-08", id: "mid" },
   ]);
   assert.deepEqual(groups.map((group) => group.date), ["2026-11-09", "2026-11-08", "2026-11-07"]);
+
+  const sections = dayGroups([
+    { added: "2026-11-09", id: "today", category: "Home", title: "Lamp" },
+    { added: "2026-11-08", id: "y", category: "Home", title: "Pan" },
+    { added: "2026-11-03", id: "early", category: "Home", title: "Mug" },
+    { added: "2026-11-02", id: "too-old", category: "Home", title: "Spoon" },
+  ], "2026-11-09");
+  assert.deepEqual(sections.map((group) => group.date), ["2026-11-09", "2026-11-08", "2026-11-03"]);
+  assert.equal(sections[0].expanded, true);
+  assert.equal(sections[0].collapsible, false);
+  assert.equal(sections[1].expanded, false);
+  assert.equal(sections[1].collapsible, true);
+  assert.equal(sections[2].collapsible, true);
+  assert.match(read("js/app.js"), /<details>|createElement\("details"\)/);
+  assert.match(read("js/app.js"), /createElement\("summary"\)/);
+  assert.match(read("js/app.js"), /dayGroups\(/);
+  assert.match(read("css/styles.css"), /\.day-summary/);
 });
 
 test("search and category filters combine", () => {

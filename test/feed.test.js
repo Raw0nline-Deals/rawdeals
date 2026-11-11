@@ -12,6 +12,7 @@ import {
   buildFeedXml,
   dealDescription,
   escapeXml,
+  orderedFeedDeals,
   orderedVisibleDeals,
   writeFeedFile,
 } from "../scripts/build-feed.js";
@@ -70,9 +71,10 @@ json.dump({
   return JSON.parse(result.stdout);
 }
 
-test("the feed lists the same deals the page shows, newest first", () => {
+test("the feed lists today's deals and leaves earlier days on the page", () => {
   const deals = [
     deal({ id: "old", title: "Older lamp", added: "2026-11-09", category: "Home", promoCode: undefined, percentOff: 20 }),
+    deal({ id: "ancient", title: "Week-old lamp", added: "2026-11-01", category: "Home", promoCode: undefined, percentOff: 20 }),
     deal({ id: "sample", title: "EXAMPLE Skillet", sample: true, source: undefined }),
     deal({ id: "expired", title: "Ended mat", expires: "2026-11-08", added: "2026-11-07" }),
     deal({ id: "flat", title: "Full price headphones", percentOff: 0, originalPrice: undefined, promoCode: undefined }),
@@ -85,9 +87,13 @@ test("the feed lists the same deals the page shows, newest first", () => {
   const ordered = orderedVisibleDeals(deals, today).map((entry) => entry.id);
   assert.deepEqual(ordered, groupDeals(visibleDeals(deals, today)).flatMap((group) => group.deals.map((entry) => entry.id)));
   assert.deepEqual(ordered, ["coded", "second", "old"]);
+  const feedIds = orderedFeedDeals(deals, today).map((entry) => entry.id);
+  assert.deepEqual(feedIds, ["coded", "second"]);
 
   const parsed = parseFeed(buildFeedXml(deals, { today }));
-  assert.deepEqual(parsed.items.map((item) => item.guid), ordered);
+  assert.deepEqual(parsed.items.map((item) => item.guid), feedIds);
+  assert.equal(parsed.items.some((item) => item.guid === "old"), false);
+  assert.equal(parsed.items.some((item) => item.guid === "ancient"), false);
   assert.equal(parsed.items.some((item) => item.title.includes("EXAMPLE")), false);
   assert.equal(parsed.items.some((item) => item.guid === "expired"), false);
   assert.equal(parsed.items.some((item) => item.guid === "flat"), false);
@@ -153,7 +159,7 @@ test("the published feed matches the page filter and the workflow refreshes it w
   const months = { Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06", Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12" };
   const stamp = feed.lastBuildDate.match(/(\d{2}) ([A-Za-z]{3}) (\d{4})/);
   const buildDay = `${stamp[3]}-${months[stamp[2]]}-${stamp[1]}`;
-  const expected = orderedVisibleDeals(dealsFromPayload(payload), buildDay);
+  const expected = orderedFeedDeals(dealsFromPayload(payload), buildDay);
   assert.deepEqual(feed.items.map((item) => item.guid), expected.map((entry) => entry.id));
   assert.ok(feed.items.length > 0);
   assert.equal(feed.items.some((item) => item.title.includes("EXAMPLE")), false);

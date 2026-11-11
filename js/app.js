@@ -3,12 +3,12 @@ import { beehiivSignupUrl } from "./signup.js";
 import { createDeadDealStore } from "./dead-deals.js";
 import {
   categoriesIn,
+  dayGroups,
   dayHeading,
   dealHref,
   dealsFromPayload,
   filterDeals,
   formatMoney,
-  groupDeals,
   isExpired,
   longDate,
   shortDate,
@@ -25,6 +25,8 @@ const state = {
 };
 
 const store = createDeadDealStore();
+const openDays = new Set();
+let rendering = false;
 const dealsRoot = document.querySelector("#deals");
 const filtersRoot = document.querySelector("#filters");
 const resultCount = document.querySelector("#result-count");
@@ -144,7 +146,7 @@ function renderChips(categories) {
 
 function render() {
   const filtered = filterDeals(state.deals, state);
-  const groups = groupDeals(filtered);
+  const groups = dayGroups(filtered, state.today);
   const count = filtered.length;
   resultCount.textContent = count === 0 ? "No matching deals" : `${count} deal${count === 1 ? "" : "s"}`;
 
@@ -156,30 +158,58 @@ function render() {
     return;
   }
 
+  rendering = true;
   const fragment = document.createDocumentFragment();
   for (const group of groups) {
     fragment.append(renderGroup(group));
   }
   dealsRoot.replaceChildren(fragment);
+  rendering = false;
 }
 
 function renderGroup(group) {
-  const section = document.createElement("section");
-  section.className = "day";
-  const heading = document.createElement("h2");
   const label = dayHeading(group.date, state.today);
-  heading.textContent = label;
-  const meta = document.createElement("p");
-  meta.className = "day-meta";
   const countLabel = `${group.deals.length} deal${group.deals.length === 1 ? "" : "s"}`;
-  meta.textContent = label === "Today" || label === "Yesterday"
-    ? `${longDate(group.date)} · ${countLabel}`
-    : countLabel;
+  const metaText = `${longDate(group.date)} · ${countLabel}`;
   const grid = document.createElement("div");
   grid.className = "grid";
+  grid.id = `day-${group.date}`;
   for (const deal of group.deals) grid.append(renderCard(deal));
-  section.append(heading, meta, grid);
-  return section;
+
+  if (!group.collapsible) {
+    const section = document.createElement("section");
+    section.className = "day day-today";
+    const heading = document.createElement("h2");
+    heading.textContent = label;
+    const meta = document.createElement("p");
+    meta.className = "day-meta";
+    meta.textContent = metaText;
+    section.append(heading, meta, grid);
+    return section;
+  }
+
+  const details = document.createElement("details");
+  details.className = "day day-past";
+  details.open = group.expanded || openDays.has(group.date);
+  const summary = document.createElement("summary");
+  summary.className = "day-summary";
+  summary.setAttribute("aria-controls", grid.id);
+  summary.setAttribute("aria-expanded", details.open ? "true" : "false");
+  const heading = document.createElement("span");
+  heading.className = "day-heading";
+  heading.textContent = label;
+  const meta = document.createElement("span");
+  meta.className = "day-meta";
+  meta.textContent = metaText;
+  summary.append(heading, meta);
+  details.append(summary, grid);
+  details.addEventListener("toggle", () => {
+    summary.setAttribute("aria-expanded", details.open ? "true" : "false");
+    if (rendering || !details.isConnected) return;
+    if (details.open) openDays.add(group.date);
+    else openDays.delete(group.date);
+  });
+  return details;
 }
 
 function renderCard(deal) {

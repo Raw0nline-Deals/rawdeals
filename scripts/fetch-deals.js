@@ -3,8 +3,11 @@
  *
  * Without --live, this prints the request it would make and does not use the network.
  * With --live, it refreshes the ASINs in data/asins.json and also searches for deals
- * described in data/discovery.json. Hand-written deals are left in the file.
- * Hand-picked ASINs take priority over discovered ones.
+ * described in data/discovery.json. Hand-picked ASINs take priority over discovered ones.
+ * Discovered deals from earlier days stay until they fall outside DEAL_RETENTION_DAYS
+ * (today plus the six days before it) or Amazon shows they are dead, out of stock,
+ * or ended. maxDeals caps how many new discoveries are added, not how many are kept.
+ * Hand-written deals inside that window stay in the file. Older ones are pruned.
  *
  * Credentials come from the environment. They are never printed. A failed auth,
  * GetItems, or SearchItems call exits non-zero and does not write deals.json.
@@ -16,9 +19,12 @@ import { ASSOCIATE_TAG } from "../js/affiliate.js";
 import { displayCategoryFromItem } from "../js/categories.js";
 import {
   apparelRank,
+  DEAL_RETENTION_DAYS,
+  inactiveReason,
   isActiveDeal,
   isBabyOrInfantTitle,
   isExpired,
+  isWithinRetention,
   priorityWatch,
   todayISO,
 } from "../js/deals.js";
@@ -342,16 +348,18 @@ export function dealFromCreatorsItem(item, entry, { today, existing }) {
   return deal;
 }
 
-export function dealFromDiscoveredItem(item, { today, existing, category, minDiscountPercent, minRating }) {
-  if (availabilityStatus(pickListing(item)) === "unavailable") return null;
+export function explainDiscoveredItem(item, { today, existing, category, minDiscountPercent, minRating }) {
+  const title = item?.itemInfo?.title?.displayValue || "";
+  if (isBabyOrInfantTitle(title)) return { reason: "baby or infant product" };
+  if (availabilityStatus(pickListing(item)) === "unavailable") return { reason: "out of stock or unavailable" };
   const mapped = mapCreatorsItemToDeal(item, { id: item?.asin }, existing?.added || today);
-  if (!mapped || !item?.asin) return null;
-  if (isExpired(mapped, today)) return null;
-  if (!(mapped.percentOff >= minDiscountPercent)) return null;
-  if (!mapped.image && !existing?.image) return null;
-  if (typeof mapped.url !== "string" || !mapped.url.startsWith("https://")) return null;
+  if (!mapped || !item?.asin) return { reason: "no buyable offer" };
+  if (isExpired(mapped, today)) return { reason: "deal ended" };
+  if (!(mapped.percentOff >= minDiscountPercent)) return { reason: "discount below the discovery minimum" };
+  if (!mapped.image && !existing?.image) return { reason: "no product image" };
+  if (typeof mapped.url !== "string" || !mapped.url.startsWith("https://")) return { reason: "no product link" };
   const rating = readStarRating(item);
-  if (rating != null && rating < minRating) return null;
+  if (rating != null && rating < minRating) return { reason: "rating below the discovery minimum" };
 
   const deal = {
     id: item.asin,
@@ -371,14 +379,23 @@ export function dealFromDiscoveredItem(item, { today, existing, category, minDis
   return { deal, rating };
 }
 
+export function dealFromDiscoveredItem(item, options) {
+  const assessed = explainDiscoveredItem(item, options);
+  return assessed.deal ? { deal: assessed.deal, rating: assessed.rating } : null;
+}
+
 /**
- * Keep at most maxDeals, taking the best item from each category before taking a second.
+ * Split search hits into new discoveries, refreshes of deals we already have,
+ * and rejections of deals we already have that no longer qualify.
+ * maxDeals limits only the new discoveries. A deal we already saved does not
+ * take one of those slots.
  * @param {{ item: object, category?: string }[]} taggedItems
  */
-export function selectDiscoveredDeals(taggedItems, {
+export function partitionDiscoveredDeals(taggedItems, {
   today,
   existingDeals = [],
   blockedAsins = new Set(),
+  knownAsins = new Set(),
   minDiscountPercent,
   minRating,
   maxDeals,
@@ -388,28 +405,35 @@ export function selectDiscoveredDeals(taggedItems, {
   );
   const buckets = new Map();
   const seen = new Set();
+  const refreshed = [];
+  const rejected = [];
   for (const tagged of taggedItems) {
     const item = tagged?.item;
     const asin = item?.asin;
     const title = item?.itemInfo?.title?.displayValue || "";
     if (!asin || blockedAsins.has(asin) || seen.has(asin)) continue;
-    if (isBabyOrInfantTitle(title)) continue;
-    const qualified = dealFromDiscoveredItem(item, {
+    const assessed = explainDiscoveredItem(item, {
       today,
       existing: existingById.get(asin),
       category: tagged.category,
       minDiscountPercent,
       minRating,
     });
-    if (!qualified) continue;
-    const watch = priorityWatch(title);
-    if (watch) {
-      qualified.deal.category = watch.category;
-      qualified.deal.priority = true;
+    if (knownAsins.has(asin)) {
+      seen.add(asin);
+      if (!assessed.deal) {
+        rejected.push({ id: asin, reason: assessed.reason || "no longer qualifies" });
+        continue;
+      }
+      applyWatch(assessed.deal, title);
+      refreshed.push(assessed.deal);
+      continue;
     }
+    if (!assessed.deal) continue;
     seen.add(asin);
-    if (!buckets.has(qualified.deal.category)) buckets.set(qualified.deal.category, []);
-    buckets.get(qualified.deal.category).push(qualified);
+    applyWatch(assessed.deal, title);
+    if (!buckets.has(assessed.deal.category)) buckets.set(assessed.deal.category, []);
+    buckets.get(assessed.deal.category).push(assessed);
   }
   for (const list of buckets.values()) {
     list.sort((a, b) => {
@@ -423,63 +447,176 @@ export function selectDiscoveredDeals(taggedItems, {
       return a.deal.id < b.deal.id ? -1 : a.deal.id > b.deal.id ? 1 : 0;
     });
   }
-  const picked = [];
+  const fresh = [];
   let round = 0;
-  while (picked.length < maxDeals) {
+  while (fresh.length < maxDeals) {
     let added = false;
     for (const list of buckets.values()) {
-      if (picked.length >= maxDeals) break;
+      if (fresh.length >= maxDeals) break;
       const next = list[round];
       if (!next) continue;
-      picked.push(next.deal);
+      fresh.push(next.deal);
       added = true;
     }
     if (!added) break;
     round += 1;
   }
-  return picked;
+  return { fresh, refreshed, rejected };
+}
+
+function applyWatch(deal, title) {
+  const watch = priorityWatch(title);
+  if (!watch) return;
+  deal.category = watch.category;
+  deal.priority = true;
 }
 
 /**
+ * Keep at most maxDeals new discoveries, taking the best item from each
+ * category before taking a second.
+ * @param {{ item: object, category?: string }[]} taggedItems
+ */
+export function selectDiscoveredDeals(taggedItems, options) {
+  return partitionDiscoveredDeals(taggedItems, options).fresh;
+}
+
+function retainedAdded(added, today) {
+  return isWithinRetention({ added }, today) ? added : today;
+}
+
+function ageReason() {
+  return `older than ${DEAL_RETENTION_DAYS} days`;
+}
+
+/**
+ * Merge today's API results with deals already in the file.
+ * A previously discovered deal that misses today's maxDeals cut is kept when
+ * it is still active and its added date is inside the retention window.
+ * maxDeals applies only to discoveries that are new.
+ * A deal confirmed again today whose added date is already outside the window
+ * is saved with added set to today. Anything else outside the window is removed.
+ *
  * @param {object[]} existingDeals
  * @param {Map<string, object|null>} updates asin -> refreshed deal, or null to drop it
  * @param {string} today YYYY-MM-DD in America/Chicago
- * @param {object[]} discovered deals selected from search, already capped
+ * @param {object[]} discovered new discoveries, already capped by maxDeals
+ * @returns {{ deals: object[], dropped: { id: string, reason: string }[] }}
  */
-export function mergeApiDeals(existingDeals, updates, today, discovered = []) {
+export function planDealMerge(existingDeals, updates, today, discovered = [], {
+  refreshed = [],
+  rejected = [],
+  updateReasons = new Map(),
+} = {}) {
+  const dropped = [];
+  const seenDrops = new Set();
+  const noteDrop = (id, reason) => {
+    if (!id || seenDrops.has(id)) return;
+    seenDrops.add(id);
+    dropped.push({ id, reason });
+  };
+
   const discoveredById = new Map();
   for (const deal of discovered) {
     if (deal && !updates.has(deal.id)) discoveredById.set(deal.id, deal);
   }
+  const refreshedById = new Map();
+  for (const deal of refreshed) {
+    if (deal && !updates.has(deal.id) && !discoveredById.has(deal.id)) refreshedById.set(deal.id, deal);
+  }
+  const rejectedById = new Map(
+    rejected.filter((entry) => entry?.id).map((entry) => [entry.id, entry.reason || "no longer qualifies"]),
+  );
+
   const kept = [];
   const seen = new Set();
 
   for (const deal of existingDeals) {
-    if (deal.source === "api" && updates.has(deal.id)) {
+    if (!deal || typeof deal !== "object") continue;
+
+    if (deal.source !== "api") {
+      if (!isWithinRetention(deal, today)) {
+        noteDrop(deal.id, ageReason());
+        continue;
+      }
+      kept.push(deal);
+      continue;
+    }
+
+    if (updates.has(deal.id)) {
       seen.add(deal.id);
       const next = updates.get(deal.id);
-      if (isActiveDeal(next, today)) kept.push(next);
+      if (!next || !isActiveDeal(next, today)) {
+        noteDrop(deal.id, updateReasons.get(deal.id) || inactiveReason(next, today) || "no longer an active deal");
+        continue;
+      }
+      kept.push({ ...next, added: retainedAdded(next.added, today) });
       continue;
     }
-    if (deal.source === "api" && deal.discovered) {
+
+    if (deal.discovered) {
       seen.add(deal.id);
-      const next = discoveredById.get(deal.id);
-      if (next && isActiveDeal(next, today)) kept.push({ ...next, added: deal.added || next.added });
+      const next = discoveredById.get(deal.id) || refreshedById.get(deal.id);
+      if (next && isActiveDeal(next, today)) {
+        kept.push({ ...next, added: retainedAdded(deal.added || next.added, today) });
+        discoveredById.delete(deal.id);
+        refreshedById.delete(deal.id);
+        continue;
+      }
       discoveredById.delete(deal.id);
+      refreshedById.delete(deal.id);
+      if (rejectedById.has(deal.id)) {
+        noteDrop(deal.id, rejectedById.get(deal.id));
+        continue;
+      }
+      if (!isWithinRetention(deal, today)) {
+        noteDrop(deal.id, ageReason());
+        continue;
+      }
+      if (isBabyOrInfantTitle(deal.title)) {
+        noteDrop(deal.id, "baby or infant product");
+        continue;
+      }
+      if (!isActiveDeal(deal, today)) {
+        noteDrop(deal.id, inactiveReason(deal, today) || "no longer an active deal");
+        continue;
+      }
+      kept.push(deal);
       continue;
     }
-    if (deal.source === "api" && !isActiveDeal(deal, today)) continue;
+
+    if (!isWithinRetention(deal, today)) {
+      noteDrop(deal.id, ageReason());
+      continue;
+    }
+    if (!isActiveDeal(deal, today)) {
+      noteDrop(deal.id, inactiveReason(deal, today) || "no longer an active deal");
+      continue;
+    }
     kept.push(deal);
   }
 
   const novel = [];
   for (const [id, deal] of updates) {
-    if (!seen.has(id) && isActiveDeal(deal, today)) novel.push(deal);
+    if (seen.has(id)) continue;
+    if (!deal || !isActiveDeal(deal, today)) {
+      if (deal) noteDrop(id, updateReasons.get(id) || inactiveReason(deal, today) || "no longer an active deal");
+      continue;
+    }
+    novel.push({ ...deal, added: retainedAdded(deal.added, today) });
   }
-  for (const deal of discoveredById.values()) {
-    if (isActiveDeal(deal, today)) novel.push(deal);
+  for (const deal of [...discoveredById.values(), ...refreshedById.values()]) {
+    if (!isActiveDeal(deal, today)) {
+      noteDrop(deal.id, inactiveReason(deal, today) || "no longer an active deal");
+      continue;
+    }
+    novel.push({ ...deal, added: retainedAdded(deal.added, today) });
   }
-  return [...novel, ...kept];
+
+  return { deals: [...novel, ...kept], dropped };
+}
+
+export function mergeApiDeals(existingDeals, updates, today, discovered = [], extra) {
+  return planDealMerge(existingDeals, updates, today, discovered, extra).deals;
 }
 
 export function planText({ entries, status, discovery }) {
@@ -500,7 +637,7 @@ export function planText({ entries, status, discovery }) {
   if (searches.length) {
     lines.push(
       `Would POST ${SEARCH_ITEMS_URL} for ${searches.length} searches (not called).`,
-      `Discovery keeps up to ${discovery.maxDeals} deals, at least ${discovery.minDiscountPercent}% off, rating ${discovery.minRating} or better.`,
+      `Discovery adds up to ${discovery.maxDeals} new deals, at least ${discovery.minDiscountPercent}% off, rating ${discovery.minRating} or better. Earlier discoveries stay for ${DEAL_RETENTION_DAYS} days.`,
       `Searches: ${searches.map((search) => search.category || search.keywords).join(", ")}`,
     );
   }
@@ -633,19 +770,46 @@ async function postCatalog(fetchImpl, token, url, body, fail, label, { pauseMs =
   }
 }
 
+export function assessAsinItem(item, entry, { today, existing }) {
+  if (!item) return { deal: null, reason: "not returned by the Creators API" };
+  const listing = pickListing(item);
+  if (availabilityStatus(listing) === "unavailable") return { deal: null, reason: "out of stock or unavailable" };
+  if (!listing || listing.violatesMAP || listing.price?.money?.amount == null) {
+    return { deal: null, reason: "no buyable offer" };
+  }
+  const deal = dealFromCreatorsItem(item, entry, { today, existing });
+  if (!deal) return { deal: null, reason: "no longer discounted" };
+  if (isExpired(deal, today) || !isActiveDeal(deal, today)) {
+    return { deal: null, reason: inactiveReason(deal, today) || "no longer an active deal" };
+  }
+  return { deal, reason: null };
+}
+
 export function buildUpdates(existingDeals, entries, itemsByAsin, today) {
   const updates = new Map();
+  const reasons = new Map();
   for (const entry of entries) {
     const existing = existingDeals.find((deal) => deal.id === entry.asin && deal.source === "api");
-    const item = itemsByAsin.get(entry.asin);
-    if (!item) {
-      updates.set(entry.asin, null);
-      continue;
-    }
-    const deal = dealFromCreatorsItem(item, entry, { today, existing });
-    updates.set(entry.asin, deal && !isExpired(deal, today) ? deal : null);
+    const assessed = assessAsinItem(itemsByAsin.get(entry.asin), entry, { today, existing });
+    updates.set(entry.asin, assessed.deal);
+    if (!assessed.deal) reasons.set(entry.asin, assessed.reason || "no longer an active deal");
   }
-  return updates;
+  return { updates, reasons };
+}
+
+export function refreshSummary(result) {
+  if (!result.changed) return [`deals.json was not changed (${result.reason}).`];
+  const priority = result.priority?.length ? ` Priority watch: ${result.priority.join(", ")}.` : "";
+  const freshCount = result.addedDiscoveries || 0;
+  const fresh = freshCount
+    ? ` ${freshCount} new ${freshCount === 1 ? "discovery" : "discoveries"}.`
+    : "";
+  const hand = result.handWritten > 0 ? " Hand-written deals were kept." : "";
+  const lines = [
+    `Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered).${fresh}${hand}${priority}`,
+  ];
+  for (const drop of result.dropped || []) lines.push(`Dropped ${drop.id} (${drop.reason}).`);
+  return lines;
 }
 
 export async function refreshDealsFile({
@@ -678,22 +842,42 @@ export async function refreshDealsFile({
     pauseMs,
     sleep,
   });
-  const updates = buildUpdates(existingDeals, entries, catalog.byAsin, today);
+  const { updates, reasons } = buildUpdates(existingDeals, entries, catalog.byAsin, today);
   const tagged = catalog.groups.flatMap((group) => group.items.map((item) => ({
     item,
     category: group.category,
   })));
-  const discovered = selectDiscoveredDeals(tagged, {
+  const blockedAsins = new Set(entries.map((entry) => entry.asin));
+  const knownAsins = new Set(
+    existingDeals
+      .filter((deal) => deal?.source === "api" && deal.discovered && !blockedAsins.has(deal.id))
+      .map((deal) => deal.id),
+  );
+  const partitioned = partitionDiscoveredDeals(tagged, {
     today,
     existingDeals,
-    blockedAsins: new Set(entries.map((entry) => entry.asin)),
+    blockedAsins,
+    knownAsins,
     minDiscountPercent: discovery.minDiscountPercent,
     minRating: discovery.minRating,
     maxDeals: discovery.maxDeals,
   });
-  const nextDeals = mergeApiDeals(existingDeals, updates, today, discovered);
+  const { deals: nextDeals, dropped } = planDealMerge(existingDeals, updates, today, partitioned.fresh, {
+    refreshed: partitioned.refreshed,
+    rejected: partitioned.rejected,
+    updateReasons: reasons,
+  });
   const nextPayload = Array.isArray(payload) ? nextDeals : { ...payload, deals: nextDeals };
-  if (canonicalJson(payload) === canonicalJson(nextPayload)) return { changed: false, reason: "unchanged" };
+  const existingIds = new Set(existingDeals.map((deal) => deal?.id));
+  const report = {
+    count: nextDeals.filter((deal) => deal.source === "api").length,
+    discovered: nextDeals.filter((deal) => deal.source === "api" && deal.discovered).length,
+    addedDiscoveries: nextDeals.filter((deal) => deal.discovered && !existingIds.has(deal.id)).length,
+    priority: nextDeals.filter((deal) => deal.source === "api" && deal.priority).map((deal) => deal.id),
+    handWritten: nextDeals.filter((deal) => deal.source !== "api").length,
+    dropped,
+  };
+  if (canonicalJson(payload) === canonicalJson(nextPayload)) return { changed: false, reason: "unchanged", ...report };
 
   const nextText = `${JSON.stringify(nextPayload, null, 2)}\n`;
   const temporary = `${dealsPath}.${process.pid}.tmp`;
@@ -704,14 +888,7 @@ export async function refreshDealsFile({
     try { unlinkSync(temporary); } catch { /* the original deals.json is still in place */ }
     throw error;
   }
-  const apiDeals = nextDeals.filter((deal) => deal.source === "api");
-  return {
-    changed: true,
-    reason: "updated",
-    count: apiDeals.length,
-    discovered: apiDeals.filter((deal) => deal.discovered).length,
-    priority: apiDeals.filter((deal) => deal.priority).map((deal) => deal.id),
-  };
+  return { changed: true, reason: "updated", ...report };
 }
 
 function canonicalJson(value) {
@@ -744,11 +921,7 @@ function main() {
   }
   refreshDealsFile({ asinsPath, dealsPath, discoveryPath, pauseMs: CATALOG_PAUSE_MS })
     .then((result) => {
-      if (!result.changed) console.log(`deals.json was not changed (${result.reason}).`);
-      else {
-        const priority = result.priority?.length ? ` Priority watch: ${result.priority.join(", ")}.` : "";
-        console.log(`Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered). Hand-written deals were kept.${priority}`);
-      }
+      for (const line of refreshSummary(result)) console.log(line);
     })
     .catch((error) => {
       const message = redactSecrets(error instanceof Error ? error.message : "Deal refresh failed.", [

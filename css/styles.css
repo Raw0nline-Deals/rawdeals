@@ -263,7 +263,8 @@ a { color: inherit; }
 
 .day { margin: 26px 0 8px; }
 
-.day h2 {
+.day h2,
+.day-heading {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 2rem;
@@ -273,6 +274,43 @@ a { color: inherit; }
 }
 
 .day-meta { margin: 0 0 14px; }
+
+.day-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  padding: 6px 2px 10px;
+}
+
+.day-summary::-webkit-details-marker { display: none; }
+
+.day-summary .day-heading {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.day-summary .day-meta { margin: 0; }
+
+.day-summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-left: auto;
+  border-right: 2px solid var(--ink-soft);
+  border-bottom: 2px solid var(--ink-soft);
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.day-past[open] > .day-summary::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.day-past .grid { margin-top: 12px; }
 
 .grid {
   display: grid;

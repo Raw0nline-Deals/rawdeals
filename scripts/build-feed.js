@@ -1,8 +1,9 @@
 /**
  * Write feed.xml from data/deals.json.
  *
- * The item list is visibleDeals(), the same filter the page uses, in the same
- * newest-first order. A failed read does not replace an existing feed.
+ * Items are visible deals whose added date is today in America/Chicago.
+ * Earlier days stay on the site for DEAL_RETENTION_DAYS and are not published
+ * again as new feed items. A failed read does not replace an existing feed.
  */
 import { readFileSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -69,8 +70,13 @@ export function orderedVisibleDeals(deals, today) {
   return groupDeals(visibleDeals(deals, today)).flatMap((group) => group.deals);
 }
 
+/** Deals that belong in the RSS feed: visible, and first seen today. */
+export function orderedFeedDeals(deals, today) {
+  return orderedVisibleDeals(deals, today).filter((deal) => deal.added === today);
+}
+
 export function buildFeedXml(deals, { today = todayISO(), siteUrl = SITE_URL, feedUrl = FEED_URL } = {}) {
-  const items = orderedVisibleDeals(deals, today);
+  const items = orderedFeedDeals(deals, today);
   const lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">',
@@ -137,7 +143,7 @@ function main() {
   }
   try {
     const result = writeFeedFile(feedPath, buildFeedXml(deals));
-    const count = orderedVisibleDeals(deals, todayISO()).length;
+    const count = orderedFeedDeals(deals, todayISO()).length;
     if (result.changed) console.log(`Updated feed.xml (${count} deals).`);
     else console.log(`feed.xml was already current (${count} deals).`);
   } catch (error) {
