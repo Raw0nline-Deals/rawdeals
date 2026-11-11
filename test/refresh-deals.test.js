@@ -108,15 +108,15 @@ function mockFetch(itemsByAsin, { failToken = false, failItems = false } = {}) {
 }
 
 test("merge keeps hand-written deals and refreshes API price, image, and added date", () => {
-  const handwritten = sampleDeal();
-  const existingApi = apiDeal();
+  const handwritten = sampleDeal({ added: "2026-11-08" });
+  const existingApi = apiDeal({ added: "2026-11-05" });
   const updates = new Map([
     ["B0KEEP000001", apiDeal({
       price: 8,
       originalPrice: 16,
       percentOff: 50,
       image: "https://m.media-amazon.com/images/I/new.jpg",
-      added: "2026-11-01",
+      added: "2026-11-05",
     })],
     ["B0NEW0000001", apiDeal({
       id: "B0NEW0000001",
@@ -132,12 +132,12 @@ test("merge keeps hand-written deals and refreshes API price, image, and added d
   assert.equal(merged[1].price, 8);
   assert.equal(merged[1].originalPrice, 16);
   assert.equal(merged[1].image, "https://m.media-amazon.com/images/I/new.jpg");
-  assert.equal(merged[1].added, "2026-11-01");
+  assert.equal(merged[1].added, "2026-11-05");
   assert.deepEqual(merged[2], handwritten);
 });
 
 test("expired API deals are dropped and expired hand-written deals stay", () => {
-  const handwritten = sampleDeal();
+  const handwritten = sampleDeal({ added: "2026-11-07" });
   const expiredApi = apiDeal({ id: "B0OLD0000001", expires: "2026-11-08" });
   const updates = new Map([
     ["B0KEEP000001", null],
@@ -203,10 +203,11 @@ test("a failed Creators API call leaves deals.json bytes unchanged and hides the
 
 test("live refresh merges API deals, drops MAP and expiry, and keeps samples", async () => {
   const dir = mkdtempSync(join(tmpdir(), "rawdeals-live-"));
-  const handwritten = sampleDeal();
-  const existing = apiDeal();
+  const handwritten = sampleDeal({ added: "2026-11-08", expires: "2026-11-20" });
+  const ancient = sampleDeal({ id: "ex-ancient", added: "2026-11-01", expires: "2026-11-02" });
+  const existing = apiDeal({ added: "2026-11-05" });
   const dealsPath = join(dir, "deals.json");
-  writeFileSync(dealsPath, `${JSON.stringify({ about: "keep", deals: [existing, handwritten] }, null, 2)}\n`);
+  writeFileSync(dealsPath, `${JSON.stringify({ about: "keep", deals: [existing, handwritten, ancient] }, null, 2)}\n`);
   const asins = [
     { asin: "B0KEEP000001", category: "Home", promoCode: "KEEP10" },
     { asin: "B0NEW0000001", category: "Outdoors", title: "Override title" },
@@ -249,7 +250,7 @@ test("live refresh merges API deals, drops MAP and expiry, and keeps samples", a
   assert.equal(kept.originalPrice, 14);
   assert.equal(kept.percentOff, 50);
   assert.equal(kept.image, "https://m.media-amazon.com/images/I/kept.jpg");
-  assert.equal(kept.added, "2026-11-01");
+  assert.equal(kept.added, "2026-11-05");
   assert.equal(kept.title, "Kept widget");
   assert.equal(kept.promoCode, "KEEP10");
   assert.equal(kept.source, "api");
@@ -258,6 +259,7 @@ test("live refresh merges API deals, drops MAP and expiry, and keeps samples", a
   assert.equal(created.source, "api");
   assert.equal(written.deals.some((deal) => deal.id === "B0MAP0000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "B0END0000001"), false);
+  assert.equal(written.deals.some((deal) => deal.id === "ex-ancient"), false);
   assert.deepEqual(sample, handwritten);
   assert.equal(JSON.stringify(written).includes(secret), false);
   rmSync(dir, { recursive: true, force: true });

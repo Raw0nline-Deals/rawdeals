@@ -264,6 +264,21 @@
       "originalPrice": 180
     },
     {
+      "id": "B0HLL1RSKC",
+      "title": "Tumzak Titanium Pans for Cooking, 8-Inch Titanium Pan with Lid, Non-Stick Frying Pans, PFAS/PFOA/PTFE-Free, Dishwasher & Oven Safe, Compatible with Gas & Induction Cooktops",
+      "image": "https://m.media-amazon.com/images/I/41udrkk+vyL._SL500_.jpg",
+      "price": 119.98,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0HLL1RSKC?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 149.99,
+      "expires": "2026-11-19"
+    },
+    {
       "id": "B01B1V10KA",
       "title": "Melissa & Doug Wooden Scoop & Serve Ice Cream Counter, Pretend Play Store, 28 Toy Food & Play Kitchen Accessories, Preschool Toys for Girls & Boys 3+",
       "image": "https://m.media-amazon.com/images/I/41rAk0pvK8L._SL500_.jpg",
@@ -369,6 +384,77 @@
       "added": "2026-11-11",
       "sample": false,
       "source": "api"
+    },
+    {
+      "id": "B07DBCCBHL",
+      "title": "K Cup Holder-Coffee Pods Holder Storage Organizer Stand 40 Pods Capacity | K Cup Carousel, Stable Base, 360° Rotating K Cup Organizer, Space-Saving for Countertop,K Cups Holder No Assembly Required",
+      "image": "https://m.media-amazon.com/images/I/41-l+kzuNEL._SL500_.jpg",
+      "price": 22.97,
+      "percentOff": 23,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B07DBCCBHL?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99
+    },
+    {
+      "id": "B0HFMTZLX4",
+      "title": "7 Inch 7in Inseam Men Casual Cargo Golf Hiking Work Summer Shorts Camping Gear Essential Fishing Accessories Must Have Safari Stuff Military Apparel Tactical Clothing Outfit Sun Protection Wear Black",
+      "image": "https://m.media-amazon.com/images/I/41fJQdgCkzL._SL500_.jpg",
+      "price": 19.99,
+      "percentOff": 23,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0HFMTZLX4?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 25.99
+    },
+    {
+      "id": "B0HMCWB6FZ",
+      "title": "COBEEK Ultrasonic Retainer Cleaner Machine, 52kHz Ultrasonic Denture Cleaner for Night Guards, Braces, Aligner, Toothbrush, Jewelry, Scaler Tips, Dental Cleaning Pod with Digital Timer & 250ML, White",
+      "image": "https://m.media-amazon.com/images/I/4164P6VSv9L._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 27,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0HMCWB6FZ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 54.99
+    },
+    {
+      "id": "B09Q4GWMZQ",
+      "title": "LEGO Botanicals Succulents 10309 | Back to School Gift for Students & Teachers, Building Set for Adults, Ages 18+, 771 Pieces, Artificial Plant Home Decor",
+      "image": "https://m.media-amazon.com/images/I/51S9RXLfrhL._SL500_.jpg",
+      "price": 32.99,
+      "percentOff": 34,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B09Q4GWMZQ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99
+    },
+    {
+      "id": "B087N9N6HH",
+      "title": "Play Doh Bulk Handout 42-Pack of 1-Ounce Modeling Compound Cans, Back to School Gifts, Prizes, & Party Favors, Kids Arts & Crafts, Preschool Toys, Ages 2+ (Amazon Exclusive)",
+      "image": "https://m.media-amazon.com/images/I/51AfQTDq2gL._SL500_.jpg",
+      "price": 11.99,
+      "percentOff": 29,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B087N9N6HH?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-11",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.99,
+      "expires": "2026-11-26"
     }
   ]
 }

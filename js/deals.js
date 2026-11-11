@@ -26,6 +26,24 @@ export function addDays(iso, days) {
   return utc.toISOString().slice(0, 10);
 }
 
+/**
+ * How many calendar days of deals to keep, including today.
+ * Today plus the 6 days before it. The page, the refresh, and the feed
+ * all read this one constant.
+ */
+export const DEAL_RETENTION_DAYS = 7;
+
+export function retentionStart(today, days = DEAL_RETENTION_DAYS) {
+  return addDays(today, 1 - days);
+}
+
+export function isWithinRetention(deal, today, days = DEAL_RETENTION_DAYS) {
+  const added = deal?.added;
+  if (typeof added !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(added)) return false;
+  if (typeof today !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(today)) return false;
+  return added >= retentionStart(today, days) && added <= today;
+}
+
 export function dayHeading(iso, today) {
   if (iso === today) return "Today";
   if (iso === addDays(today, -1)) return "Yesterday";
@@ -65,18 +83,27 @@ export function isExpired(deal, today) {
 }
 
 /**
- * A deal that has not expired, is not marked out of stock, and still has a discount
- * or a promo code when it came from the API.
+ * Why a deal is not active, or null when it still is.
+ * Verified-dead matches the flag the dead-deal check writes onto a card.
  */
-export function isActiveDeal(deal, today) {
-  if (!deal || typeof deal !== "object") return false;
-  if (isExpired(deal, today)) return false;
-  if (deal.inStock === false) return false;
+export function inactiveReason(deal, today) {
+  if (!deal || typeof deal !== "object") return "not a deal";
+  if (isExpired(deal, today)) return "deal ended";
+  if (deal.verifiedDead === true) return "verified dead";
+  if (deal.inStock === false) return "out of stock";
   if (deal.source === "api") {
     const discounted = typeof deal.percentOff === "number" && deal.percentOff > 0;
-    if (!discounted && !deal.promoCode) return false;
+    if (!discounted && !deal.promoCode) return "no longer discounted";
   }
-  return true;
+  return null;
+}
+
+/**
+ * A deal that has not expired, was not verified dead, is not marked out of stock,
+ * and still has a discount or a promo code when it came from the API.
+ */
+export function isActiveDeal(deal, today) {
+  return inactiveReason(deal, today) == null;
 }
 
 export function activeDeals(deals, today) {
@@ -84,11 +111,15 @@ export function activeDeals(deals, today) {
 }
 
 /**
- * Cards a visitor sees, and the deals the RSS feed publishes.
- * Example cards are hidden here so the page and the email cannot drift.
+ * Cards a visitor sees. Example cards, baby products, and deals older than
+ * DEAL_RETENTION_DAYS are hidden. The RSS feed is narrower still: it publishes
+ * only the deals in this set whose added date is today.
  */
 export function isVisibleDeal(deal, today) {
-  return isActiveDeal(deal, today) && deal.sample !== true && !isBabyOrInfantTitle(deal?.title);
+  return isActiveDeal(deal, today)
+    && isWithinRetention(deal, today)
+    && deal.sample !== true
+    && !isBabyOrInfantTitle(deal?.title);
 }
 
 export function visibleDeals(deals, today) {
@@ -120,6 +151,21 @@ export function groupDeals(deals) {
   return [...groups.entries()]
     .sort((a, b) => (a[0] < b[0] ? 1 : a[0] > b[0] ? -1 : 0))
     .map(([date, items]) => ({ date, deals: preferMensAndWomensClothing(items) }));
+}
+
+/**
+ * Day sections for the page. Today is expanded. Each earlier day in the
+ * retention window is present and collapsed. Days outside the window are omitted.
+ */
+export function dayGroups(deals, today) {
+  return groupDeals(deals)
+    .filter((group) => isWithinRetention({ added: group.date }, today))
+    .map((group) => ({
+      date: group.date,
+      deals: group.deals,
+      expanded: group.date === today,
+      collapsible: group.date !== today,
+    }));
 }
 
 export function categoriesIn(deals) {

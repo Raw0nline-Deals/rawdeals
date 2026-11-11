@@ -59,7 +59,7 @@ Edit `data/deals.json`. Keep the `about` note until the examples are gone. Each 
 | `expires` | no | `YYYY-MM-DD`. The card shows “Ends …”. After that date the card is hidden, including hand-written deals. |
 | `sample` | yes | `false` for a real deal. `true` is only for placeholders, and those titles must include `EXAMPLE`. |
 
-Put new deals anywhere in the array. The page groups by `added` and shows the newest day first. Within a day, cards stay in the order they appear in the file.
+Put new deals anywhere in the array. The page groups by `added` and shows the newest day first. Today stays open. Each earlier day is a collapsed section: the header shows the date and how many deals are in it, and clicking it opens that day. Within a day, cards stay in the order they appear in the file, with men's and women's clothing sorted ahead of other clothing.
 
 Commit the file and push to `main` (or merge a pull request). GitHub Pages publishes the update. Browsers are asked to revalidate `deals.json`. A refresh a minute or two later should show the new day.
 
@@ -102,7 +102,7 @@ Links:
 
 ## Daily deal refresh
 
-Hand-written deals in `data/deals.json`, including the example cards, stay in the file. The refresh updates two kinds of live deals:
+Hand-written deals in `data/deals.json`, including example cards, stay in the file while their `added` date is inside the last 7 days (today included). The refresh updates two kinds of live deals:
 
 - ASINs you list in `data/asins.json` (these always win)
 - Deals it finds on its own from `data/discovery.json`
@@ -134,7 +134,7 @@ Open `data/discovery.json`. That file is the only place you need to edit for aut
 | --- | --- |
 | `minDiscountPercent` | Smallest discount to keep. `20` means 20% off or more. |
 | `minRating` | Star rating. `4` means four stars or better. |
-| `maxDeals` | How many discovered deals to keep per day. `20` matches the daily slideshow. The job spreads them across the searches, one from each category before it takes a second from any category. |
+| `maxDeals` | How many new discovered deals to add on a run. `20` matches the daily slideshow. Deals already saved from earlier days do not use these slots. The job spreads the new ones across the searches, one from each category before it takes a second from any category. |
 | `searches` | One block per search. `keywords` is what you would type into Amazon. `category` is the label on the site. `searchIndex` is Amazon’s department, which keeps the results in that aisle. |
 
 The starting searches cover Tech, Gaming, Kitchen, Home, Pets, Fragrances, Drinks, Household, Toys, Sports, Food, and Clothing. The filter chips use that order. General and any other label come after those.
@@ -169,20 +169,25 @@ Example cards in the file keep the labels they were given (Electronics, Outdoors
 
 ### Hide deals that are over
 
-The page and the RSS feed use one filter, `visibleDeals()` in `js/deals.js`. A deal is left off both when:
+The page uses `visibleDeals()` in `js/deals.js`. A deal is left off the page when:
 
 - `expires` is before today (hand-written deals too)
 - an API deal no longer has a discount and has no promo code
 - an API deal is out of stock, unavailable, or not yet released
+- `verifiedDead` is true
 - `"sample"` is true (example cards)
+- `added` is outside the 7-day window (`DEAL_RETENTION_DAYS` in `js/deals.js`: today and the 6 days before it)
 
-Those cards are left off the list. The gray “Dead” style is still there for a deal you report by hand in the browser. The job also removes API deals in those states from `data/deals.json` on the next successful run, and it removes a discovered deal that no longer qualifies. Hand-written deals stay in the file. Example deals are not deleted.
+Those cards are left off the list. The gray “Dead” style is still there for a deal you report by hand in the browser. The job also removes API deals in the dead, out-of-stock, or ended states from `data/deals.json` on the next successful run. A discovered deal that misses the day’s `maxDeals` cut stays, with the `added` date from the first day it was seen, until that date is older than 7 days or Amazon shows it no longer qualifies. Hand-written deals inside the window stay in the file, including expired ones and example cards. The refresh deletes deals, including hand-written ones, whose `added` date is older than 7 days.
+
+A deal the run confirms again today (it is still in `data/asins.json`, or it still qualifies in a search) whose first-seen date is already outside the window is saved again with `added` set to today. That keeps a still-live ASIN on the page instead of dropping it for a day.
 
 What the job does:
 
 - Reads `data/asins.json` and `data/discovery.json`. If both are empty, it exits successfully and does not touch `data/deals.json`.
 - Requests one OAuth token, then calls GetItems in batches of 10 ASINs, then one SearchItems call per discovery search.
-- Sets `source` to `"api"`. Discovered deals also get `discovered: true`, so the next run can replace that set. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`.
+- Sets `source` to `"api"`. Discovered deals also get `discovered: true`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`, including for a discovery that is not one of the new `maxDeals` picks.
+- Prints a `Dropped ASIN (reason).` line for each ASIN it removes. It prints `Hand-written deals were kept.` only when the file still has a hand-written deal.
 - If sign-in, GetItems, or SearchItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token.
 
 A local dry run prints the plan and does not call Amazon:
@@ -222,7 +227,7 @@ Paste that address into Beehiiv:
 
 The feed is normal RSS. Each item has the product name, the Amazon link with the site tag, the day it was added, the category, the picture, and a short note with the sale price, the original price when there is one, the percent off, and the promo code when there is one. The channel description includes: “As an Amazon Associate I earn from qualifying purchases.”
 
-The list is the same one the page draws. Expired deals, API deals that lost their discount and have no promo code, out-of-stock deals, and example cards are left out. Newest day first.
+The feed lists deals added today only, so the earlier days on the page are not sent again as new email items. Expired deals, API deals that lost their discount and have no promo code, out-of-stock deals, verified-dead deals, deals older than 7 days, and example cards are left out. Newest of today’s deals first. The page still shows the rest of the 7-day window, with today open and each earlier day collapsed.
 
 To rebuild it on your computer after you edit `data/deals.json`:
 
