@@ -85,7 +85,17 @@ Reports are stored only in that browser, under the localStorage key `rawdeals.de
 
 ## Email signup (Beehiiv)
 
-Under the header, and before the example notice, category filters, and deal list, “How to use a coupon code” explains the three checkout steps. Below the deals, the panel is a working signup form. **Sign Up** checks the address, then opens Beehiiv’s magic link with the email encoded in the query string. RawDeals does not store the address. The link is built in `js/signup.js`.
+Under the header, and before the example notice, category filters, and deal list, “How to use a coupon code” explains the three checkout steps.
+
+The top of the page, inside the existing header, has a short headline: “Get Amazon daily deals, hand-picked.”
+
+Below the deals, the newsletter card says “Deals in your inbox.” The Beehiiv signup form is already embedded there. The script is in `index.html`, inside the card. It draws the form in that spot.
+
+The form id is set in one place: the `data-beehiiv-form` attribute on that script. The comment just above it says `BEEHIIV FORM ID`. Change that attribute only if you create a new form in Beehiiv.
+
+If the form script cannot load, or JavaScript is turned off, the card shows a **Subscribe** button instead. The button opens https://raws-newsletter-1cd85b.beehiiv.com/subscribe.
+
+The card still contains an email field, hidden. If that field is shown, **Sign Up** checks the address and opens Beehiiv’s magic link. RawDeals does not store the address. The link is built in `js/signup.js`.
 
 ## Affiliate tag
 

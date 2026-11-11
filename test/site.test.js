@@ -156,6 +156,18 @@ test("seeded deals validate and the publishing files are in place", () => {
     beehiivSignupUrl("eddie+deals@example.com"),
     "https://magic.beehiiv.com/v1/085d2554-2a2b-4438-9442-7f3b58ba41f3?email=eddie%2Bdeals%40example.com",
   );
+  const headerEnd = page.indexOf("</header>");
+  const heroAt = page.indexOf('id="hero-title"');
+  assert.ok(heroAt > headerAt && heroAt < headerEnd);
+  assert.match(page.slice(headerAt, headerEnd), /Get Amazon daily deals, hand-picked/);
+  assert.match(page.slice(headerAt, headerEnd), /Eddie posts a short list of Amazon deals here each day\./);
+  const formId = "eff7ec96-aa7f-4fd0-80e3-792e97c46208";
+  assert.equal(page.split(formId).length - 1, 1);
+  assert.match(slot, /src="https:\/\/subscribe-forms\.beehiiv\.com\/v3\/loader\.js"/);
+  assert.match(slot, new RegExp(`data-beehiiv-form="${formId}"`));
+  assert.match(slot, /https:\/\/raws-newsletter-1cd85b\.beehiiv\.com\/subscribe/);
+  assert.match(slot, /<noscript>/);
+  assert.doesNotMatch(page, /<iframe\b/i);
 });
 
 test("Creators API mapper stays offline and hides secrets", () => {

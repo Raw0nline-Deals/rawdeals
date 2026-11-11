@@ -72,6 +72,10 @@
         <a href="https://www.amazon.com/shop/twitch.tvraw0nline" data-affiliate target="_blank" rel="noopener noreferrer sponsored">Amazon storefront</a>
       </nav>
     </div>
+    <div class="hero">
+      <h2 class="hero-title" id="hero-title">Get Amazon daily deals, hand-picked</h2>
+      <p class="hero-lead">Eddie posts a short list of Amazon deals here each day.</p>
+    </div>
   </header>
 
   <section id="how-to-coupon" class="how-to wrap" aria-labelledby="how-to-title">
@@ -113,8 +117,23 @@
 
   <section id="newsletter-slot" class="newsletter wrap" aria-labelledby="newsletter-title">
     <h2 id="newsletter-title">Deals in your inbox</h2>
-    <p>One email a day with the best Amazon deals. Unsubscribe anytime.</p>
-    <form id="newsletter-form" class="signup">
+    <p id="newsletter-copy">One email a day with the best Amazon deals. Unsubscribe anytime.</p>
+    <div class="beehiiv-scale" id="beehiiv-scale">
+      <div id="beehiiv-embed" class="beehiiv-embed">
+        <!-- BEEHIIV FORM ID lives on data-beehiiv-form on the script below. This is the only place it is set. -->
+        <script async id="beehiiv-loader" src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="eff7ec96-aa7f-4fd0-80e3-792e97c46208" onerror="this.dataset.failed='1'"></script>
+      </div>
+    </div>
+    <div class="newsletter-fallback" id="newsletter-fallback" hidden>
+      <a class="btn btn-primary" href="https://raws-newsletter-1cd85b.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" aria-describedby="newsletter-copy">Subscribe</a>
+    </div>
+    <noscript>
+      <div class="newsletter-fallback">
+        <a class="btn btn-primary" href="https://raws-newsletter-1cd85b.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" aria-describedby="newsletter-copy">Subscribe</a>
+      </div>
+    </noscript>
+    <!-- Email field stays for the magic-link signup in js/signup.js. Visitors use the Beehiiv form above. -->
+    <form id="newsletter-form" class="signup" hidden>
       <label class="sr-only" for="newsletter-email">Email address</label>
       <input id="newsletter-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com" inputmode="email">
       <button type="submit">Sign Up</button>
