@@ -487,3 +487,78 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
   assert.equal(JSON.stringify(written).includes(secret), false);
   rmSync(dir, { recursive: true, force: true });
 });
+
+test("a rate limit is retried and a lasting limit leaves deals.json unchanged", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-429-"));
+  const dealsPath = join(dir, "deals.json");
+  const body = `${JSON.stringify({ deals: [] }, null, 2)}\n`;
+  writeFileSync(dealsPath, body);
+  writeFileSync(join(dir, "asins.json"), "[]\n");
+  writeFileSync(join(dir, "discovery.json"), JSON.stringify({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    searches: [{ keywords: "electronics", searchIndex: "Electronics", category: "Tech" }],
+  }));
+  const waits = [];
+  let searchCalls = 0;
+  const fetchImpl = async (url) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    searchCalls += 1;
+    if (searchCalls < 3) return { ok: false, status: 429, json: async () => ({ message: secret }) };
+    return {
+      ok: true,
+      json: async () => ({
+        searchResult: { items: [item({ asin: "B0TECH000009", percent: 40, rating: 4.5, group: "Electronics" })] },
+      }),
+    };
+  };
+  const result = await refreshDealsFile({
+    asinsPath: join(dir, "asins.json"),
+    dealsPath,
+    discoveryPath: join(dir, "discovery.json"),
+    env: {
+      CREATORS_API_CREDENTIAL_ID: "credential-id",
+      CREATORS_API_CREDENTIAL_SECRET: secret,
+    },
+    fetchImpl,
+    sleep: async (ms) => { waits.push(ms); },
+    today,
+  });
+  assert.equal(result.changed, true);
+  assert.equal(searchCalls, 3);
+  assert.deepEqual(waits, [2000, 4000]);
+  const written = JSON.parse(readFileSync(dealsPath, "utf8"));
+  assert.equal(written.deals[0].id, "B0TECH000009");
+  assert.equal(JSON.stringify(written).includes(secret), false);
+
+  writeFileSync(dealsPath, body);
+  searchCalls = 0;
+  const blocked = async (url) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    searchCalls += 1;
+    return { ok: false, status: 429, json: async () => ({ message: secret }) };
+  };
+  await assert.rejects(
+    () => refreshDealsFile({
+      asinsPath: join(dir, "asins.json"),
+      dealsPath,
+      discoveryPath: join(dir, "discovery.json"),
+      env: {
+        CREATORS_API_CREDENTIAL_ID: "credential-id",
+        CREATORS_API_CREDENTIAL_SECRET: secret,
+      },
+      fetchImpl: blocked,
+      sleep: async () => {},
+      today,
+    }),
+    /SearchItems request failed \(429\)/,
+  );
+  assert.equal(searchCalls, 4);
+  assert.equal(readFileSync(dealsPath, "utf8"), body);
+  rmSync(dir, { recursive: true, force: true });
+});
