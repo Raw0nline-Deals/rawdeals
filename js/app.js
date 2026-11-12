@@ -69,6 +69,8 @@ newsletterForm.addEventListener("submit", (event) => {
   window.location.assign(destination);
 });
 
+watchNewsletterEmbed();
+
 document.querySelector("#deal-search").addEventListener("input", (event) => {
   state.query = event.target.value;
   render();
@@ -386,6 +388,76 @@ async function copyText(code) {
     }
   }
   return legacyCopy(code);
+}
+
+function watchNewsletterEmbed() {
+  const host = document.querySelector("#beehiiv-embed");
+  const scaler = document.querySelector("#beehiiv-scale");
+  const fallback = document.querySelector("#newsletter-fallback");
+  const loader = document.querySelector("#beehiiv-loader");
+  if (!host || !scaler || !fallback) return;
+
+  let naturalWidth = 0;
+  let naturalHeight = 0;
+
+  const formReady = () => {
+    const frame = host.querySelector("iframe");
+    if (!frame) return false;
+    if (!frame.getAttribute("title")) frame.title = "Subscribe to the RawDeals newsletter";
+    fallback.hidden = true;
+    return true;
+  };
+
+  const fitFrame = () => {
+    const frame = host.querySelector("iframe");
+    if (!frame || !naturalWidth) return;
+    frame.style.width = `${naturalWidth}px`;
+    frame.style.maxWidth = "none";
+    host.style.width = `${naturalWidth}px`;
+    host.style.marginInline = "auto";
+    const available = scaler.clientWidth;
+    if (available > 0 && available < naturalWidth - 1) {
+      const scale = available / naturalWidth;
+      host.style.marginInline = "0";
+      host.style.transformOrigin = "top left";
+      host.style.transform = `scale(${scale})`;
+      if (naturalHeight > 0) scaler.style.height = `${Math.ceil(naturalHeight * scale)}px`;
+    } else {
+      host.style.marginInline = "auto";
+      host.style.transform = "";
+      scaler.style.height = "";
+    }
+  };
+
+  const showFallback = () => {
+    if (formReady()) return;
+    fallback.hidden = false;
+  };
+
+  if (loader?.dataset.failed === "1") showFallback();
+  loader?.addEventListener("error", showFallback);
+
+  const observer = new MutationObserver(() => {
+    formReady();
+  });
+  observer.observe(host, { childList: true, subtree: true });
+  window.setTimeout(showFallback, 6000);
+  window.addEventListener("resize", fitFrame);
+
+  window.addEventListener("message", (event) => {
+    if (event.origin !== "https://subscribe-forms.beehiiv.com") return;
+    const data = event.data;
+    if (!data || data.type !== "beehiiv:styles") return;
+    const frame = host.querySelector("iframe");
+    if (!frame || event.source !== frame.contentWindow) return;
+    const width = parseFloat(data.payload?.width);
+    const height = parseFloat(data.payload?.height);
+    if (!Number.isFinite(width) || width < 1) return;
+    naturalWidth = width;
+    if (Number.isFinite(height) && height > 0) naturalHeight = height;
+    formReady();
+    fitFrame();
+  });
 }
 
 function sr(text) {
