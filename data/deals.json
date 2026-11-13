@@ -2,6 +2,370 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0FP1TRW4L",
+      "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
+      "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
+      "price": 69.49,
+      "percentOff": 31,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "features": [
+        "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
+        "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07SCM9F8T",
+      "title": "Heathyoga Capri Leggings with Pockets for Women Capris Yoga Pants Women | 15\"/19\" Capri Pants, High Waist, Tummy Control, Squat Proof, Comfortable, Compression, 3 Pockets, For Pilates Yoga Daily Wear",
+      "image": "https://m.media-amazon.com/images/I/31K+iQyp6lL._SL500_.jpg",
+      "price": 14.98,
+      "percentOff": 25,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B07SCM9F8T?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-11-16",
+      "features": [
+        "Ultra Soft Fabrics with Latest Technology - Our capri pants for women are made from high quality materials. By adopting 4-way stretch technology, these leggings with pockets for women enable you to move, bend, squat and stretch easily, just as a second-layer skin on your body",
+        "2 Side Pockets & Inner Pocket - These capris pants for women have pockets on both sides to stash cash and phone, extra with an inner pocket designed to keep cards and keys. So you can go out wallet-free and focus on your exercise, not on your essentials"
+      ]
+    },
+    {
+      "id": "B01F35UGWS",
+      "title": "Mercer Culinary M23890 Millennia Black Handle, 9-Inch Offset Wavy Edge, Bread Knife",
+      "image": "https://m.media-amazon.com/images/I/21WGsDGgM2L._SL500_.jpg",
+      "price": 16.49,
+      "percentOff": 41,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B01F35UGWS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 27.99,
+      "features": [
+        "QUALITY CONSTRUCTION: Knife is crafted with one-piece high-carbon Japanese steel for easy edge maintenance and long-lasting sharpness",
+        "SUPERIOR DESIGN: Built to last ergonomic handle with textured finger points offers a non-slip grip with added comfort, durability, and safety"
+      ]
+    },
+    {
+      "id": "B0881972V6",
+      "title": "SKL Home Fall/Autumn Football is My Favorite Season 100% Cotton Embroidered 2pc Hand Towel Set, Decorative for Bath/Kitchen/Bar & Gift, Green",
+      "image": "https://m.media-amazon.com/images/I/61joCqgNsoL._SL500_.jpg",
+      "price": 12.59,
+      "percentOff": 46,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0881972V6?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 23.43,
+      "features": [
+        "Includes 2 hand towels; 16\" x 25\"",
+        "Soft cotton velour with decorative football embroidery and field-inspired, white horizontal lines"
+      ]
+    },
+    {
+      "id": "B003BYQ1C8",
+      "title": "Armarkat Cat Tree Model A7802, Silver Gray",
+      "image": "https://m.media-amazon.com/images/I/41UsG3e61wL._SL500_.jpg",
+      "price": 164.24,
+      "percentOff": 49,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B003BYQ1C8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 319,
+      "features": [
+        "Constructed with 15mm pressed wood and reinforced with postal tube cardboard with plastic end caps, this cat tree is upholstered in 550g/m² high-density faux fur fabric and wrapped with 6mm thick natural sisal rope for durability and comfort.",
+        "Model A7802 features soft-side playhouse, condo, basket, soft ramp, hammock and hanging toys."
+      ]
+    },
+    {
+      "id": "B0CBKLFTGH",
+      "title": "Ewedoos Thermal Underwear Set for Kids Thermals Top and Bottom Set Boys Long Johns Base Layer Thermal Set Black",
+      "image": "https://m.media-amazon.com/images/I/31NH4u4KZ8L._SL500_.jpg",
+      "price": 12.98,
+      "percentOff": 52,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0CBKLFTGH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Fleece-Lined Soft (Without bulk). Ewedoos thermal underwear for kids gives your kids a high-quality warmth thanks to our unique soft and thick fleece-lined lightweight fibers. Ewedoos long johns for kids keep you warm but not bulky. Bring it on, blizzards. Do your worst, polar vortexes",
+        "Unique Neckline Shirts. Ensuring maximum protection for your kids - the collar has been widened, increasing extra coverage area for your kid's neck. To keep up with them on their adventures, our kids thermals top and bottom set also feature flat and unnoticeable seaming, reducing chafing over long s"
+      ]
+    },
+    {
+      "id": "B0DDPYQTXR",
+      "title": "Cutluxe Butcher Knife Set, Brisket, Breaking & Boning Knife for Meat | BBQ Carving & Slicing Blades, Ultra Sharp German Steel, Full Tang Ergonomic Handles – Grilling Gift",
+      "image": "https://m.media-amazon.com/images/I/51IR2-pNymL._SL500_.jpg",
+      "price": 89.99,
+      "percentOff": 33,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DDPYQTXR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 134.99,
+      "features": [
+        "BUTCHER KNIFE SET OF 3: Includes a 12\" brisket knife, a 10\" breaking cimeter knife, and a 6\" boning knife for meat cutting. The perfect BBQ knife set for any pitmaster.",
+        "VERSATILE BBQ KNIFE SET: breaking down primals with the breaking knife, trimming fat or filleting with the deboning knife, portioning briskets with the slicing knife. The right meat cutting knife for each job."
+      ]
+    },
+    {
+      "id": "B097CMNV6Q",
+      "title": "SKL Home Halloween Graveyard Cat Hand Towel 2pc Set for Bath/Kitchen/Bar & Gift, Gray",
+      "image": "https://m.media-amazon.com/images/I/51YYGR-uHMS._SL500_.jpg",
+      "price": 10.11,
+      "percentOff": 32,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B097CMNV6Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.83,
+      "features": [
+        "Includes 2 hand towels",
+        "Soft cotton velour with decorative embroidery"
+      ]
+    },
+    {
+      "id": "B003BYQ16O",
+      "title": "Armarkat Cat Tree Model A6501, Real Wood Cat Condo,30 inches L X28 inches W X 65 inches H",
+      "image": "https://m.media-amazon.com/images/I/31yg06KLE0L._SL500_.jpg",
+      "price": 140.52,
+      "percentOff": 46,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B003BYQ16O?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 259,
+      "features": [
+        "30L x 28W x 65H Inches",
+        "Covering Material: Faux Fur"
+      ]
+    },
+    {
+      "id": "B097N9X8BJ",
+      "title": "Kuhn Rikon COLORI+ Non-Stick Straight and Serrated Paring Knives with Safety Sheaths, Set of 3, Red, Yellow and Green",
+      "image": "https://m.media-amazon.com/images/I/41Y7L2f-nWS._SL500_.jpg",
+      "price": 16.1,
+      "percentOff": 29,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B097N9X8BJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.8,
+      "features": [
+        "Set of 3 all-purpose lightweight kitchen prep knives - chop vegetables, peel apples, slice cheese etc with ease",
+        "Feature ultra-sharp, hand-ground, long-lasting, Japanese stainless steel blades"
+      ]
+    },
+    {
+      "id": "B0B5DYQ836",
+      "title": "Disney Toy Story Buzz Lightyear Towel Poncho Kids Swim Bath Towel",
+      "image": "https://m.media-amazon.com/images/I/41Z1qNEs0yL._SL500_.jpg",
+      "price": 20,
+      "percentOff": 31,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0B5DYQ836?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 28.95,
+      "features": [
+        "WARM AND DRY SPACE RANGER TOWELLING PONCHO FOR KIDS - Dress up as Buzz Lightyear the Space Ranger whilst drying off after a swim or a bath. It is the best way to make getting ready fun!",
+        "GIRLS AND BOYS ONE SIZE TOWEL ROBE - This towel comes in one size that suits all toddlers and children. It comes in a poncho style with a super soft purple hood perfect for keeping cosy and getting dry."
+      ]
+    },
+    {
+      "id": "B003BYQ1K0",
+      "title": "Armarkat A7202 72-Inch Real Wood Cat Tree, Beige,53 inches L X22 inches W X 72 inches H",
+      "image": "https://m.media-amazon.com/images/I/41SDsdAS3lL._SL500_.jpg",
+      "price": 164.62,
+      "percentOff": 45,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B003BYQ1K0?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 299,
+      "features": [
+        "Constructed with 15mm pressed wood and reinforced with postal tube cardboard with plastic end caps, this cat tree is upholstered in 550g/m² high-density faux fur fabric and wrapped with 6mm thick natural sisal rope for durability and comfort.",
+        "72\" Height, Beige Multi-Level Cat Tower, with high density faux fur covering for felines comfort and soft"
+      ]
+    },
+    {
+      "id": "B0CB6MR12S",
+      "title": "Cutluxe Carving Knife Set, Brisket Slicing & Boning Knife for Meat & BBQ | Razor Sharp German Steel, Full Tang Ergonomic Handle – Grilling Gift for Men, Artisan Series",
+      "image": "https://m.media-amazon.com/images/I/41BKierNiIL._SL500_.jpg",
+      "price": 64.99,
+      "percentOff": 25,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0CB6MR12S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 86.99,
+      "features": [
+        "PREMIUM PERFORMANCE: This BBQ knife set includes a 12\" brisket slicing knife and a 6\" boning knife, designed for precise meat cutting, ensuring a perfect slice every time.",
+        "RAZOR-SHARP GRANTON BLADE EDGE: Experience premium performance with razor-sharp granton blades on both knives, reducing friction and preventing meat from sticking, making slicing effortless."
+      ]
+    },
+    {
+      "id": "B0FTSZW3DG",
+      "title": "Get Trend Monster Jam Bath Towels with Hood for Boys, 49”x30”, Monster Truck Absorbent Cotton Hooded Beach Towel Wrap, Poncho for Swimming Pool Travel for Boys",
+      "image": "https://m.media-amazon.com/images/I/51iGi7r3GgL._SL500_.jpg",
+      "price": 23.49,
+      "percentOff": 27,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0FTSZW3DG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 32.19,
+      "features": [
+        "Cozy Playful Adventure : Power up bath time with bold Monster Jam hooded bath towels featuring epic truck action that young fans will love. Ideal for water play activities or swimming lessons while keeping boys dry and cozy after every splash.",
+        "Comfy Hooded Coverage - Measuring 49x30 in, this soft bath towel offers comfortable coverage to toddlers and kids. The integrated hood design keeps hair dry with a poncho style, making it a practical choice for holidays or as towels for bathroom"
+      ]
+    },
+    {
+      "id": "B003BYQ1L4",
+      "title": "Armarkat B6802 68-Inch Cat Tree, Ivory",
+      "image": "https://m.media-amazon.com/images/I/31ub2s7+F8L._SL500_.jpg",
+      "price": 140.71,
+      "percentOff": 43,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B003BYQ1L4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 249,
+      "features": [
+        "31L x 25W x 68H Inches",
+        "Great unit for scratching, climbing, sleeping, and exercising"
+      ]
+    },
+    {
+      "id": "B0F1MWGTD4",
+      "title": "Piklohas Resharpenable Bread Knife for Homemade Bread, 8 Inch | Serrated Sourdough Knife with Offset Handle, Innovative Wavy Edge for Clean Slices Crusty Bread, Bagels, Pineapple & Tomatoes",
+      "image": "https://m.media-amazon.com/images/I/31O-rMnpyIL._SL500_.jpg",
+      "price": 20.78,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0F1MWGTD4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 25.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Resharpenable Serrated Edge: Unlike ordinary bread knives that get dull over time, this patented bread knife can be resharpened with a regular honing rod to restore excellent cutting performance for homemade bread, sourdough, and everyday kitchen prep",
+        "Made for Crusty & Soft Loaves: The 8 inch serrated blade handles sourdough, baguettes, sandwich bread, bagels, and soft loaves with clean slices and fewer crumbs. It also works well on pineapple, tomatoes, and other foods with a firm exterior and tender interior"
+      ]
+    },
+    {
+      "id": "B0DMG6CMZL",
+      "title": "SereneLife Counter Towel Warmer Bucket - with Customized Fragrance for Spa and Bathroom, Luxury Heater, Auto Shut Off, Fits 1 Large Blanket, Bathrobe, PJs (Pink)",
+      "image": "https://m.media-amazon.com/images/I/412jpdmxobL._SL500_.jpg",
+      "price": 69.99,
+      "percentOff": 22,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0DMG6CMZL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 89.99,
+      "features": [
+        "SPA-LIKE EXPERIENCE - Indulge in a spa-like experience with our luxurious towel warmers for bathrooms, complete with a customized fragrance feature. Surround yourself with relaxation and tranquility as you fill the air with your favorite scents.",
+        "BUILT IN TIMER FOR HEATER - Set your desired warming time with the adjustable timer function, offering options of 20, 40, 60, or 90 minutes. The intuitive touch buttons make operation effortless, so your towels are heated with minimal waiting time."
+      ]
+    },
+    {
+      "id": "B0HFBP7W3Z",
+      "title": "Pet Memorial Gifts for Loss of Dog Cat, Remembrance & Sympathy Ornament | Christmas Tree Ornament, Dog Passing Away Gift, Hanging Heart Ceramic Keepsake Decoration, Pet Loss Bereavement Gift, Flowers",
+      "image": "https://m.media-amazon.com/images/I/41-EajJTE7L._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 20,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0HFBP7W3Z?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "Premium Ceramic Keepsake with Meaningful Details - Crafted with a heart-shaped ceramic design, this pet memorial hanging ornament features double-sided printed artwork, a smooth ceramic finish, and includes 1 white ribbon and 1 gold cord for flexible hanging. Comes in an elegant gift box, combining",
+        "Heartfelt “When Tomorrow Starts Without Me” Memorial Message - Featuring the meaningful words “When Tomorrow Starts Without Me,” this heart-shaped ceramic keepsake honors the bond between pets and their families. Keep your beloved dog or cat’s memory close by displaying it near pet photos, keepsake"
+      ]
+    },
+    {
+      "id": "B0G43YYLXW",
+      "title": "Cutluxe Boning Knife Set, 6\" Straight, Curved & Flexible for Fish & Meat | Razor Sharp High Carbon German Steel, Full Tang Ergonomic Handles – Artisan Series, Deboning",
+      "image": "https://m.media-amazon.com/images/I/51uBuebq+TL._SL500_.jpg",
+      "price": 54.99,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0G43YYLXW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 68.99,
+      "features": [
+        "PREMIUM PERFORMANCE – Perfectly engineered flexible boning knife tapered to a razor-sharp edge for effortless filleting, de-boning, trimming, skinning and butterflying of different types of meat and fish.",
+        "RAZOR-SHARP PERFORMANCE: Each 6 Inch boning knife is hand sharpened to 14–16° per side for clean cuts. Designed as a meat cutting knife that cuts through fish, poultry, and meat with ease"
+      ]
+    },
+    {
+      "id": "B0FPRL4S8Q",
+      "title": "Marvel Spidey And His Amazing Friends Bath Towels With Hood For Boys, Soft Absorbent Cotton Beach Towels, Swimming Pool Hooded Poncho For Kids, Superhero Gifts For Boys Ages 2-6 (Multi Spidey)",
+      "image": "https://m.media-amazon.com/images/I/51THkYc0fqL._SL500_.jpg",
+      "price": 20.48,
+      "percentOff": 22,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0FPRL4S8Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-13",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.42,
+      "features": [
+        "Comfortable Everyday Drying: Designed for older kids, this kids bath towels option keeps hair and shoulders covered after showers, swim practice, or sports. A reliable Marvel Spidey bath towel for kids that works well for daily routines at home, school trips, and after water activities",
+        "Beach And Summer Ready: Bold beach towels for kids choice that doubles as a dependable kids pool towel for swim days and beach outings. Packs easily as a travel beach towel for vacations, camps, and weekend family trips"
+      ]
+    },
+    {
       "id": "B0FLKC5JN4",
       "title": "CMF BY Nothing Headphone Pro Active Noise Canceling Wireless Headphones Bluetooth 5.4 Over The Ear Headset, 50H ANC Playtime, Bass&Treble Slider, Custom EQ&Spatial Audio, Hi-Res LDAC, Light Grey",
       "image": "https://m.media-amazon.com/images/I/31JIyfwXuXL._SL500_.jpg",
@@ -9,11 +373,15 @@
       "originalPrice": 79,
       "percentOff": 38,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0FLKC5JN4?tag=onamzeddie0c-20&linkCode=ogi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0FLKC5JN4?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-13",
       "expires": "2026-12-01",
       "sample": false,
-      "source": "api"
+      "source": "api",
+      "features": [
+        "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
+        "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
+      ]
     },
     {
       "id": "B0HMD5RZBN",
@@ -22,12 +390,16 @@
       "price": 50.99,
       "percentOff": 27,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HMD5RZBN?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HMD5RZBN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 69.99,
+      "features": [
+        "Smart App & Remote Control: Control your outdoor permanent lights effortlessly. Use the intuitive app to select various preset colors, or use the included physical remote for quick adjustments, allowing family members to manage lighting without needing a smartphone or hub",
+        "Music Sync & DIY Scenes: Transform your patio into a dynamic space. The built-in mic syncs your eaves lights outdoor to music beats for parties. Use the DIY function on the app to paint custom colors and save your favorite scenes for any mood"
+      ],
       "priority": true
     },
     {
@@ -52,12 +424,16 @@
       "price": 17.83,
       "percentOff": 29,
       "category": "Food",
-      "url": "https://www.amazon.com/dp/B0DP3JV2WB?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0DP3JV2WB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 24.98
+      "originalPrice": 24.98,
+      "features": [
+        "You will recieve 5 resealable pouches of Kodiak Cakes Protein Packed Honey Oat Granola",
+        "Packed with 16g of protein per serving to help keep you fuller, longer. ​"
+      ]
     },
     {
       "id": "B0H6MP2P32",
@@ -66,12 +442,16 @@
       "price": 19.99,
       "percentOff": 50,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0H6MP2P32?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0H6MP2P32?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 39.99
+      "originalPrice": 39.99,
+      "features": [
+        "Thick Fleece Lining for All-Day Cozy Warmth: Lined with ultra-soft, dense fleece that locks in body heat and fends off freezing temperatures, these thermal leggings deliver premium insulation without stiff bulk. Stay toasty from morning commutes to evening walks — enjoy cloud-like comfort that wraps",
+        "Water-Resistant Outer Layer for Dry Protection: Crafted with durable water-resistant outer fabric, these fleece lined leggings shrug off light rain, snow flurries, and accidental spills to keep you dry. No more soaked-through tights. The outer surface blocks cold gusts, perfect for outdoor walks, hi"
+      ]
     },
     {
       "id": "B0HH9GQ3DK",
@@ -80,13 +460,17 @@
       "price": 23.99,
       "percentOff": 40,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0HH9GQ3DK?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HH9GQ3DK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 39.99,
-      "expires": "2026-11-15"
+      "expires": "2026-11-15",
+      "features": [
+        "Advanced Bluetooth 5.4 Technology: Featuring cutting-edge Bluetooth 5.4, experience up to 90% faster transmission for lightning-speed audio sync and a powerful 15-meter range that easily conquers outdoor spaces while effectively resisting interference. Whether you're hosting a backyard party or expl",
+        "20 Hour Marathon Playtime & Dynamic RGB Light Show: Engineered with a high-capacity 3000mAh rechargeable battery, this party speaker provides up to 20 hours of uninterrupted music (at 50% volume; actual playback may vary with usage). Elevate every moment with 7 captivating RGB lighting modes that rh"
+      ]
     },
     {
       "id": "B0H83X7475",
@@ -95,13 +479,17 @@
       "price": 99.99,
       "percentOff": 35,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H83X7475?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0H83X7475?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 152.99,
-      "expires": "2026-11-19"
+      "expires": "2026-11-19",
+      "features": [
+        "【PERMANENT HOLIDAY LIGHTING】 : Rigid screw-mount tracks fix securely to your roofline, eaves, porch or fence with no ladders needed every season. No more climbing up and down to drape, hang, untangle, or take down strings every holiday. Set them up one time and enjoy vivid, professional-grade outdoo",
+        "【SMART APP CONTROL WITH DIY SCENES】: The free app lets you design custom light shows, pick from a library of ready-made scenes, and set each pixel color and effect in seconds. Save your favorite scenes, schedule them to turn on at sunset, and control the whole display from your phone anywhere, anyti"
+      ]
     },
     {
       "id": "B0DVCYTV1R",
@@ -110,12 +498,16 @@
       "price": 32.99,
       "percentOff": 45,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0DVCYTV1R?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0DVCYTV1R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 59.99
+      "originalPrice": 59.99,
+      "features": [
+        "CREEPIN’ IT REAL — Truly live the block life with Razer’s officially licensed gaming mouse for Minecraft",
+        "58G LIGHTWEIGHT DESIGN — Built to fit most grip styles, the mouse allows for fast, precise control and feels comfortable to use during long gaming sessions"
+      ]
     },
     {
       "id": "B00COQZDUU",
@@ -124,12 +516,16 @@
       "price": 4.15,
       "percentOff": 27,
       "category": "Food",
-      "url": "https://www.amazon.com/dp/B00COQZDUU?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B00COQZDUU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 5.69
+      "originalPrice": 5.69,
+      "features": [
+        "One 11 oz bag of KIND HEALTHY GRAINS Granola, Cinnamon Oat Granola with Flax Seeds",
+        "Gluten free snacks made with five super grains - oats, buckwheat, millet, amaranth and quinoa"
+      ]
     },
     {
       "id": "B0C6GZSWQY",
@@ -138,12 +534,16 @@
       "price": 19.99,
       "percentOff": 33,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0C6GZSWQY?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0C6GZSWQY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 29.99
+      "originalPrice": 29.99,
+      "features": [
+        "Thermal Fabric and Cozy: Our thermal underwear for kids is crafted with a fleece-lined interior that locks in body heat. Whether your children are building snowmen in the snow, attending classes at school, or going on weekend outings, these boys thermal set will provide them with ample warmth and co",
+        "Moisture-Wicking: The quick-drying fabric absorbs and evaporates moisture rapidly. The moisture-wicking technology of these boys thermal underwear set reduces sweat buildup on your children's bodies during snowball fights, playground chases or workouts, keeping the thermal base layer dry and comfort"
+      ]
     },
     {
       "id": "B0D5NMHRCB",
@@ -152,12 +552,16 @@
       "price": 44.99,
       "percentOff": 25,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0D5NMHRCB?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0D5NMHRCB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 59.95
+      "originalPrice": 59.95,
+      "features": [
+        "Legendary JBL Pro Sound: Experience surprisingly rich audio and punchy bass from the compact JBL Clip 4.",
+        "Integrated Carabiner: Redesigned carabiner for extra protection, making it easy to clip on a belt, strap, or buckle."
+      ]
     },
     {
       "id": "B0CT559B2P",
@@ -166,12 +570,16 @@
       "price": 13.98,
       "percentOff": 39,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0CT559B2P?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0CT559B2P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 22.99
+      "originalPrice": 22.99,
+      "features": [
+        "Code for Bonus Virtual Item Included - Rocket Rodeo",
+        "Sturdy outer shell with rubberized handle and durable dual zipper pulls"
+      ]
     },
     {
       "id": "B01B395DDA",
@@ -180,12 +588,16 @@
       "price": 4.97,
       "percentOff": 23,
       "category": "Food",
-      "url": "https://www.amazon.com/dp/B01B395DDA?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B01B395DDA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 6.47
+      "originalPrice": 6.47,
+      "features": [
+        "Contains: 1 Pouch of Love Crunch Dark Chocolate & Peanut Butter Granola, 11.5 ounces",
+        "The chocolate chunks, roasted peanuts and great hearty crunch is the perfect blend for a go getter’s morning. If you’re a peanut butter kind of person, we’ve found the perfect match for your taste buds."
+      ]
     },
     {
       "id": "B0H38VLB2T",
@@ -194,12 +606,16 @@
       "price": 16.99,
       "percentOff": 26,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0H38VLB2T?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0H38VLB2T?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 22.99
+      "originalPrice": 22.99,
+      "features": [
+        "FEATURES: These girls leggings feature a flowy double-layer skirt overlay and a stretch elastic waistband. The simple, clean silhouette works for teen girls for back to schooll and everyday wear",
+        "MATERIAL: Made of 92% Polyester + 8% Elastane, these girls pants offer all-day stretch and gentle warmth for cool days. The smooth, flexible material moves with kids during outdoor play and sports"
+      ]
     },
     {
       "id": "B07M729D3X",
@@ -208,12 +624,16 @@
       "price": 92,
       "percentOff": 22,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B07M729D3X?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B07M729D3X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 118
+      "originalPrice": 118,
+      "features": [
+        "CRISP AND CLEAR: (2) 3-inch high quality stereo wireless bluetooth speakers at various volumes",
+        "WIRELESS STREAMING: 100 ft. bluetooth compatibility of bluetooth speaker"
+      ]
     },
     {
       "id": "B0BV32YNQT",
@@ -222,12 +642,16 @@
       "price": 21.48,
       "percentOff": 28,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0BV32YNQT?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0BV32YNQT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 29.99
+      "originalPrice": 29.99,
+      "features": [
+        "Starting with four distinct, yet interwoven story threads, for either solo or co-op play, both offline and online, not only does Resident Evil 6 deliver both different perspectives and gameplay styles",
+        "Ada Wong, Resident Evil's very own femme fatale, dives into a thrilling campaign of intrigue and infiltration, featuring unique missions, gameplay and weapons. Ada is available from the start"
+      ]
     },
     {
       "id": "B0HCJ2K883",
@@ -236,12 +660,16 @@
       "price": 14.79,
       "percentOff": 25,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0HCJ2K883?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HCJ2K883?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 19.75
+      "originalPrice": 19.75,
+      "features": [
+        "Premium Wool-Blend Warmth：Engineered with a luxurious wool blend lining and advanced brushed fleece interior, our thermal underwear for women locks in body heat while naturally wicking moisture to keep you dry. This breathable thermal underwear delivers lasting comfort in freezing temperatures. Idea",
+        "Ultra-Soft & Skin-Friendly Fabric： Crafted from premium natural fabrics with a plush fleece lining, these long johns for women thermal resist pilling, static, and shrinking—no harsh chemicals, no irritants. The odor-resistant base layer stays soft against sensitive skin all day. Perfect as fleece li"
+      ]
     },
     {
       "id": "B0DLQ23PDB",
@@ -250,12 +678,16 @@
       "price": 23.99,
       "percentOff": 20,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0DLQ23PDB?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0DLQ23PDB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 29.99
+      "originalPrice": 29.99,
+      "features": [
+        "EVA Case Designed for Anker Soundcore X600 Motion: This custom-molded hard shell case snuggly fits your Soundcore X600 Motion speaker, shielding it from bumps, drops, scratches, and dust.",
+        "Durable & Travel-Ready: Crafted from high-quality EVA material, this case offers superior shock absorption and water resistance, making it perfect for adventures."
+      ]
     },
     {
       "id": "B0B57G4FRF",
@@ -264,12 +696,16 @@
       "price": 38.99,
       "percentOff": 20,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0B57G4FRF?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0B57G4FRF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 48.74
+      "originalPrice": 48.74,
+      "features": [
+        "Officially licensed Barbie little girls 3 piece mix n’ match clothing set: cute, comfy and stylish long sleeve graphic hooded sweatshirt, tee, and leggings",
+        "All over print design; Rib knit crew neck collar; Ribbed sleeve cuffs for a better fit; Zip up front for easy dressing; Comfortable hood lining; Soft hand screen print design; Elastic waist for better fit; Pull on closure"
+      ]
     },
     {
       "id": "B0DH8JN526",
@@ -278,12 +714,16 @@
       "price": 87.5,
       "percentOff": 20,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0DH8JN526?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0DH8JN526?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 110
+      "originalPrice": 110,
+      "features": [
+        "Tight Fit: Snug & form-fitting without the squeeze of compression.",
+        "UA Base 4.0 Extreme Baselayer is our warmest yet, delivering extreme warmth in the extreme cold"
+      ]
     },
     {
       "id": "B0FLXVCXQN",
@@ -292,13 +732,17 @@
       "price": 19.99,
       "percentOff": 20,
       "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0FLXVCXQN?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0FLXVCXQN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 24.99,
-      "expires": "2026-11-14"
+      "expires": "2026-11-14",
+      "features": [
+        "Practical Design: Thermal underwear for kids with thumb holes on the top for extra warmth, elastic waistband for easy on and off, and a functional fly for convenience",
+        "Stretch & Warmth: Boys thermal underwear set made from 88% polyester and 12% spandex, featuring 4-way stretch outer fabric and fleece-lined interior for lasting warmth"
+      ]
     },
     {
       "id": "B0H8SFXKY8",
@@ -322,13 +766,17 @@
       "price": 29.98,
       "percentOff": 40,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0GVSC9LZS?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0GVSC9LZS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 49.99,
       "expires": "2026-11-18",
+      "features": [
+        "【Crystal-Clear Voice with AI Noise Reduction】Sound sharp and professional every time. The cardioid pickup pattern focuses on your voice while reducing keyboard clicks, room echo, and background distractions. Long press to activate AI noise cancellation for cleaner audio during gaming, streaming, pod",
+        "【Touch Mute & Real-Time Audio Control】Tap the top to instantly mute with a red LED indicator—perfect for avoiding awkward moments during calls or livestreams. Fine-tune your setup with dedicated controls for mic gain, headphone volume, and mic-to-PC balance for smooth, distortion-free sound."
+      ],
       "priority": true
     },
     {
@@ -353,13 +801,17 @@
       "price": 79.99,
       "percentOff": 47,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HMP8SXRJ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HMP8SXRJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 149.99,
       "expires": "2026-11-18",
+      "features": [
+        "RGB+IC Permanent Outdoor Lights: LANDRHYTHM 100ft permanent outdoor light is designed for outdoor use, offering a wide range of RGB+IC color options and adjustable brightness. You can create customized lighting schemes through the APP or remote control, easily decorating eaves of houses, gardens, pa",
+        "Multiple scene modes: The permanent outdoor lights are equipped with 72 scene modes, which can be switched to create diverse festive atmospheres. Additionally, it also supports personalized DIY modes. You can customize and save unique lighting colors and dynamic effects according to different occasi"
+      ],
       "priority": true
     },
     {
@@ -398,13 +850,17 @@
       "price": 89.99,
       "percentOff": 36,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H83QHHN9?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0H83QHHN9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 139.99,
       "expires": "2026-11-19",
+      "features": [
+        "Customizable RGB+IC Eaves Light Modes: These permanent outdoor RGB+IC lights adopt independent chip design, delivering smooth multi‑color flowing, flashing and gradient lighting effects. Access rich preset holiday scene modes via App, you can also DIY colors, light flows, brightness and zone dimming",
+        "Year‑Round Outdoor Durability: Built to withstand harsh outdoor conditions, these permanent RGB+IC outdoor lights feature heavy‑duty outer housing with excellent water‑resistant performance. They resist fading, cracking and wear under blazing sun, heavy rain, snow and frost. Through sweltering summe"
+      ],
       "priority": true
     },
     {
@@ -414,12 +870,16 @@
       "price": 29.94,
       "percentOff": 25,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0CWS6WV23?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0CWS6WV23?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 39.99,
+      "features": [
+        "On-Ear Volume Control",
+        "Convenient Flip-To-Mute Mic"
+      ],
       "priority": true
     },
     {
@@ -443,12 +903,16 @@
       "price": 109.99,
       "percentOff": 35,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0CV3NW398?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0CV3NW398?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 169.99,
+      "features": [
+        "RGBIC Creative Lighting: Govee outdoor wall light can display at least 3 colors simultaneously in a horizontal gradient, breaking free from conventional lighting. Enjoy flexible DIY and 45+ immersive scene modes to make your home unique in the neighborhood.",
+        "High-brightness White Light: More than just for holiday, this LED light delivers up to 1500 LM of white light with an adjustable color temperature(2700K-6500K ) for color changing and daily accent lighting. It is suitable for patio, porch, balcony, courtyard, yard and garage."
+      ],
       "priority": true
     },
     {
@@ -458,13 +922,17 @@
       "price": 99.99,
       "percentOff": 23,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B081415GCS?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B081415GCS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 129.99,
       "expires": "2026-11-19",
+      "features": [
+        "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
+        "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
+      ],
       "priority": true
     },
     {
@@ -489,12 +957,16 @@
       "price": 159.99,
       "percentOff": 30,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0F3CQJZRQ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0F3CQJZRQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 229.99,
+      "features": [
+        "All-Around Dynamic Lighting: Govee outdoor wall lights deliver seamless lighting effects equipped with smooth color transitions. Featuring up/down RGBWW and flanking RGBIC ambient lighting, it offers 16 million color options for daily outdoor decor and holiday lighting",
+        "1200lm Bright White: With a color temperature from 2700K to 6500K, these wall sconces are able to shift from soft warm to clear bright. Features a glare-free vertical wall-washing design that doesn't disturb onlookers, adding a warm ambiance to your porch, patio, courtyard or other outdoor place"
+      ],
       "priority": true
     },
     {
@@ -504,13 +976,17 @@
       "price": 35.97,
       "percentOff": 20,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0CLLJC6QC?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0CLLJC6QC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 44.99,
       "expires": "2026-11-18",
+      "features": [
+        "🎵【7.1 Surround Sound & Aesthetic Decorative Light】 UG-08S PC gaming headset can provide you with a cinema 3D stereo surround sound experience, designed specifically for gamers and audiophiles and multi-platform Compatibility. Long-press the 'M' key to activate 7.1 surround sound and dynamic driver",
+        "🔋【Extraordinary 100-Hour Battery Life & Support Use While Charging 】Valorise PS5 headset has a sustainable game time of 45-100Hrs. 100-hour playtime via bluetooth mode, turn off RGB lights and microphone. 45-hour playtime via 2.4GHz dongle mode, turn on RGB lights and microphone. With a low battery"
+      ],
       "priority": true
     },
     {
@@ -536,12 +1012,16 @@
       "price": 149,
       "percentOff": 63,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B07MWQBMDR?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B07MWQBMDR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 399
+      "originalPrice": 399,
+      "features": [
+        "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
+        "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
+      ]
     },
     {
       "id": "B0H6L14J6D",
@@ -550,12 +1030,16 @@
       "price": 34.99,
       "percentOff": 29,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H6L14J6D?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0H6L14J6D?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 48.99,
+      "features": [
+        "Installation Flexibility: our outdoor light side mounting clips are compatible with Govee Pro H706 H806 light string/Govee permanent outdoor lights; We provide ample sets light side mounting clips and screws to meet your side mounting needs, installation is a breeze",
+        "Stability Post-installation: say goodbye to unreliable adhesives; These outdoor lights clips Compatible with Govee Pro H706 H806 are crafted to enhance the stability of your outdoor lights, even in heavy rain, strong winds, or extreme temperatures"
+      ],
       "priority": true
     },
     {
@@ -565,12 +1049,16 @@
       "price": 290.45,
       "percentOff": 24,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 379.99
+      "originalPrice": 379.99,
+      "features": [
+        "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
+        "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
+      ]
     },
     {
       "id": "B0HFZDGL2T",
@@ -579,12 +1067,16 @@
       "price": 79.98,
       "percentOff": 20,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HFZDGL2T?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HFZDGL2T?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 99.98,
+      "features": [
+        "【Permanent Outdoor Lights for House, Light Up Your Christmas 】Brighten roofs, eaves, garage, patios with vivid RGB colors that make your house stand out. Perfect as outdoor christmas lights for house, Halloween decor, birthdays, New Year, and everyday outside lights for house. Enjoy hassle-free perm",
+        "【Dynamic Color Chasing Effects & Smart IC Individually Control Tech】Featuring advanced individually addressable LED chips, each LED bead allows for independent color control and supports 16 million rgb colors, enabling the entire outside christmas lights to display multiple vibrant hues simultaneous"
+      ],
       "priority": true
     },
     {
@@ -594,12 +1086,16 @@
       "price": 94,
       "percentOff": 22,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B08DHH74JQ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B08DHH74JQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 119.99
+      "originalPrice": 119.99,
+      "features": [
+        "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
+        "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
+      ]
     },
     {
       "id": "B0HB5PVL52",
@@ -636,12 +1132,16 @@
       "price": 225,
       "percentOff": 25,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0CTJ6GQGZ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0CTJ6GQGZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 299
+      "originalPrice": 299,
+      "features": [
+        "OBS-CERTIFIED FOR CREATION: Certified for Open Broadcaster Software, the Shure MV7+ delivers professional audio for podcasting, streaming, and recording, with advanced DSP and Voice Isolation Technology that keeps your voice clear and present",
+        "CUSTOMIZABLE LED TOUCH PANEL: Personalize your setup with a full-color LED touch panel featuring 16.8 million color options, real-time level monitoring, and tap-to-mute control—ideal for livestreams, video calls, and on-camera podcasting"
+      ]
     },
     {
       "id": "B0DNRSL18Y",
@@ -723,13 +1223,17 @@
       "price": 159.99,
       "percentOff": 20,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HF191VSF?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HF191VSF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 199.99,
       "expires": "2026-11-19",
+      "features": [
+        "【Year-Round Outdoor Lighting for Any Occasion】Transform your home with 500FT RGB+IC Permanent Outdoor Lights designed for year-round outdoor lighting. Create stunning lighting effects on roofs, eaves, garages, patios, and backyards. Whether for holidays, special events, or everyday curb appeal, thes",
+        "【Smart Dual Control with Presets & DIY Customization】 Take full command of your outdoor lighting via smartphone App and included remote controller. Powered by RGB+IC chasing function, it offers abundant pre‑set scene modes for Christmas, Halloween, parties and daily home use with one‑tap switching."
+      ],
       "priority": true
     },
     {
@@ -739,12 +1243,16 @@
       "price": 44.98,
       "percentOff": 25,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 59.99,
+      "features": [
+        "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
+        "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
+      ],
       "priority": true
     },
     {
@@ -754,13 +1262,17 @@
       "price": 29.98,
       "percentOff": 25,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0HKFQSNFQ?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HKFQSNFQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 39.99,
       "expires": "2026-11-18",
+      "features": [
+        "【Triple Connectivity Modes for Flexible Gaming Setup】Connect through 2.4GHz wireless, Bluetooth 5.3, or 3.5mm wired mode. The 2.4GHz connection provides low-latency audio for PC, PS5, PS4, and laptops, while Bluetooth supports mobile devices and Mac. The wired connection allows compatibility with Xb",
+        "【Up to 60 Hours of Battery Life for Extended Gaming】Enjoy up to 60 hours of playtime with RGB lighting off and up to 25 hours with RGB lighting enabled. The built-in rechargeable battery supports extended gaming sessions, streaming, and online communication with convenient USB charging."
+      ],
       "priority": true
     },
     {
@@ -770,12 +1282,16 @@
       "price": 119.49,
       "percentOff": 20,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 149.99,
+      "features": [
+        "Connectivity Technology: Wired",
+        "Cable Length: 9.84 ft"
+      ],
       "priority": true
     },
     {
@@ -785,13 +1301,17 @@
       "price": 87.98,
       "percentOff": 32,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0DQ5CWB2X?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0DQ5CWB2X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 129.99,
-      "expires": "2026-11-16"
+      "expires": "2026-11-16",
+      "features": [
+        "6 Major Upgrades, Easily Enjoy Professional Sound Quality: With ultra-high-definition 192kHz/24bit sampling rate and visual graphic EQ panel, every detail is crystal clear. The robust dynamic microphone structure and multi-dimensional noise reduction technology ensure authentic sound reproduction, r",
+        "Breakthrough Audio Performance: The MAONO PD300X dynamic microphone features ultra-high-definition 192kHz/24bit sampling, surpassing traditional CD recording standards. This allows it to capture higher-frequency sound details and reproduce exceptional audio quality. Whether you're using it for strea"
+      ]
     },
     {
       "id": "B002VA464S",
@@ -800,12 +1320,16 @@
       "price": 96.62,
       "percentOff": 31,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B002VA464S?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B002VA464S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 139.99
+      "originalPrice": 139.99,
+      "features": [
+        "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
+        "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
+      ]
     },
     {
       "id": "B073R3PBTT",
@@ -828,13 +1352,17 @@
       "price": 149.99,
       "percentOff": 74,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HP6VQLZ5?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HP6VQLZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 566.99,
       "expires": "2026-11-18",
+      "features": [
+        "App & Remote Control With Guest Mode: Control your permanent outdoor lights through the smartphone app or included remote. Guest mode lets you enjoy app-based lighting control without creating an account, adding a convenient option for everyday use",
+        "16 Million Colors & Dimmable Brightness: Personalize your outdoor lighting with 16 million color options and adjustable brightness levels. Create a warm everyday atmosphere or colorful lighting for Christmas, Halloween, parties, and other celebrations"
+      ],
       "priority": true
     },
     {
@@ -858,13 +1386,17 @@
       "price": 39.99,
       "percentOff": 50,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0HNVF67QS?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HNVF67QS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 79.99,
       "expires": "2026-11-19",
+      "features": [
+        "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
+        "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
+      ],
       "priority": true
     },
     {
@@ -874,13 +1406,17 @@
       "price": 98.99,
       "percentOff": 60,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HC3FSWGH?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0HC3FSWGH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 249.99,
       "expires": "2026-11-21",
+      "features": [
+        "【Bluetooth Smart Control With Privacy Protection】Effortlessly control your permanent outdoor lights via smartphone. Our App features a no-login guest mode to safeguard your privacy, allowing you to adjust lighting modes anytime, anywhere—no account required.",
+        "【DIY Custom Modes for Any Occasion】Each LED is individually controllable via the App. Choose from 16 million colors to craft custom lighting scenes for holidays and daily decor. Static and dynamic lighting modes are included."
+      ],
       "priority": true
     },
     {
@@ -905,12 +1441,16 @@
       "price": 24.98,
       "percentOff": 38,
       "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0BDGTM1DP?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0BDGTM1DP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
       "discovered": true,
       "originalPrice": 39.99,
+      "features": [
+        "Official Xbox Licensed headset: CloudX Stinger 2 Core was tested and approved by Microsoft, and connects directly to Xbox One and Xbox Series X|S controllers with a 3.5mm port.",
+        "Lightweight comfort: Soft ear cushions provide a comfortable fit, and the flexible mic can be positioned just as you like."
+      ],
       "priority": true
     },
     {
@@ -1092,10 +1632,14 @@
       "originalPrice": 18.99,
       "percentOff": 8,
       "category": "Home",
-      "url": "https://www.amazon.com/dp/B09XF23WY2?tag=onamzeddie0c-20&linkCode=ogi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
-      "source": "api"
+      "source": "api",
+      "features": [
+        "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
+        "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
+      ]
     },
     {
       "id": "B0GX5XQG45",
@@ -1105,10 +1649,14 @@
       "originalPrice": 40.44,
       "percentOff": 21,
       "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0GX5XQG45?tag=onamzeddie0c-20&linkCode=ogi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0GX5XQG45?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
-      "source": "api"
+      "source": "api",
+      "features": [
+        "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
+        "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
+      ]
     },
     {
       "id": "B0BF976MJY",
@@ -1118,10 +1666,14 @@
       "originalPrice": 49.99,
       "percentOff": 9,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0BF976MJY?tag=onamzeddie0c-20&linkCode=ogi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
-      "source": "api"
+      "source": "api",
+      "features": [
+        "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
+        "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -1131,10 +1683,14 @@
       "originalPrice": 99.99,
       "percentOff": 22,
       "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0GYF7PRYR?tag=onamzeddie0c-20&linkCode=ogi&th=1&psc=1",
+      "url": "https://www.amazon.com/dp/B0GYF7PRYR?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-11",
       "sample": false,
-      "source": "api"
+      "source": "api",
+      "features": [
+        "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
+        "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
+      ]
     },
     {
       "id": "B07DBCCBHL",
@@ -1185,7 +1741,7 @@
       "price": 32.99,
       "percentOff": 34,
       "category": "Toys",
-      "url": "https://www.amazon.com/dp/B09Q4GWMZQ?tag=onamzeddie0c-20",
+      "url": "https://www.amazon.com/dp/B09Q4GWMZQ?tag=eddie060-20",
       "added": "2026-11-11",
       "sample": false,
       "source": "api",
