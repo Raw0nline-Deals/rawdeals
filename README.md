@@ -134,8 +134,11 @@ Open `data/discovery.json`. That file is the only place you need to edit for aut
 | --- | --- |
 | `minDiscountPercent` | Smallest discount to keep. `20` means 20% off or more. |
 | `minRating` | Star rating. `4` means four stars or better. |
-| `maxDeals` | How many new discovered deals to add on a run. `20` matches the daily slideshow. Deals already saved from earlier days do not use these slots. The job spreads the new ones across the searches, one from each category before it takes a second from any category. |
-| `searches` | One block per search. `keywords` is what you would type into Amazon. `category` is the label on the site. `searchIndex` is Amazon’s department, which keeps the results in that aisle. |
+| `maxDeals` | How many new discovered deals to add on a run. `20` matches the daily slideshow. Deals already saved from earlier days do not use these slots. The job spreads the new ones across the searches it actually ran, one from each category before it takes a second from any category. |
+| `pagesPerKeyword` | How many result pages to read for each keyword chosen that morning. Amazon allows `itemPage` 1 through 10 and `itemCount` 1 through 10, so this is a whole number from 1 to 10. The job asks for 10 products a page. `3` reads up to 30 products per keyword. |
+| `keywordsPerRun` | How many entries to take from the `searches` pool each morning. `12` is one keyword from each favored category. The date picks which keyword, and which category is searched first. |
+| `maxRequests` | Most catalog calls (GetItems batches plus SearchItems pages) in one run. `48` covers the current ASIN list plus every selected keyword at `pagesPerKeyword` 3. The job stops sooner when it already has `maxDeals` new discoveries. |
+| `searches` | The keyword pool. Not every row runs every morning. `keywords` is what you would type into Amazon. `category` is the label on the site. `searchIndex` is Amazon’s department, which keeps the results in that aisle. |
 
 The starting searches cover Tech, Gaming, Kitchen, Home, Pets, Fragrances, Drinks, Household, Toys, Sports, Food, and Clothing. The filter chips use that order. General and any other label come after those.
 
@@ -151,7 +154,13 @@ To add a category, copy one block inside `searches` and change the three lines. 
 }
 ```
 
-You can list up to 16 searches, counting `searches` and `priority` together. That cap keeps the morning job to a modest number of Amazon calls: one sign-in, one call per 10 hand-picked ASINs, and one call per search. Twelve category searches, three priority searches, and the current ASIN list is about 18 calls. The job waits about a second between those calls, and if Amazon answers “slow down” it tries that call a few more times. It does not page deeper than the first 10 results of each search. If Amazon still refuses, the run stops and `data/deals.json` is left as it was.
+`searches` can list up to 96 keywords. A single morning still searches at most 16 keywords, counting `keywordsPerRun` and `priority` together. The shipped pool has several keywords in each of the twelve categories. The lists are different lengths so the categories do not all come back to the same keyword on the same morning. The job keeps every `priority` search, then takes `keywordsPerRun` more, rotating by the Chicago date so the next morning searches a different product type. The category at the front of that list also changes with the date, because the run stops once it has enough new deals.
+
+Each chosen keyword starts at page 1. The next page is requested only while the run still needs discoveries, the request budget has room, and the page just read contained an ASIN that is not already in `data/deals.json` or `data/asins.json`. Amazon’s SearchItems operation returns at most 10 items per page (`itemCount` 1 through 10) and at most 10 pages (`itemPage` 1 through 10). When the response includes `totalResultCount` and this page already covers it, that keyword stops. A saved discovery that shows up again is refreshed. It does not take one of the `maxDeals` slots.
+
+The morning run is one sign-in, then catalog calls. Sign-in is not a Creators API transaction. Catalog calls are one GetItems request per 10 hand-picked ASINs, then one SearchItems request per page. The current ASIN list is 11 products, so that is 2 GetItems calls. The daily selection is 3 priority searches plus 12 keywords. At 3 pages each, that is 45 SearchItems calls. 2 + 45 = 47, which fits under `maxRequests` of 48. The run usually stops earlier: it quits paging once it has 20 new qualifying discoveries, so a typical morning is those 2 GetItems calls plus the SearchItems pages needed to reach 20, not all 45. The expected addition is 20 new deals, which is the slideshow cap. It can be fewer when the rotated keywords run out of new ASINs first.
+
+A new Creators API credential is limited to 1 request per second and 8,640 requests per day. The job waits about a second between catalog calls, which stays under that 1-per-second limit. One morning’s 48 calls is a small slice of the daily 8,640. If Amazon answers “slow down” (HTTP 429), the job waits and tries that call again, up to three more times. The wait doubles each time (2 seconds, then 4, then 8). If the error body includes `retryAfterSeconds`, the job waits at least that long, and never more than 120 seconds for one wait. If Amazon still refuses, the run stops and `data/deals.json` is left as it was.
 
 Department names you can put in `searchIndex` include `Electronics`, `HomeAndKitchen`, `PetSupplies`, `Fashion`, `Beauty`, `GroceryAndGourmetFood`, `VideoGames`, `HealthPersonalCare`, `SportsAndOutdoors`, and `ToysAndGames`. Leave `searchIndex` out to search all of Amazon. Leave `category` out and the job picks a label from Amazon’s department.
 
@@ -185,7 +194,7 @@ A deal the run confirms again today (it is still in `data/asins.json`, or it sti
 What the job does:
 
 - Reads `data/asins.json` and `data/discovery.json`. If both are empty, it exits successfully and does not touch `data/deals.json`.
-- Requests one OAuth token, then calls GetItems in batches of 10 ASINs, then one SearchItems call per discovery search.
+- Requests one OAuth token, then calls GetItems in batches of 10 ASINs. Hand-picked batches always run. It then calls SearchItems for the day’s keywords, page by page, and stops at `maxDeals` new discoveries, a page with no new ASINs, or `maxRequests` catalog calls.
 - Sets `source` to `"api"`. Discovered deals also get `discovered: true`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`, including for a discovery that is not one of the new `maxDeals` picks.
 - Prints a `Dropped ASIN (reason).` line for each ASIN it removes. It prints `Hand-written deals were kept.` only when the file still has a hand-written deal.
 - If sign-in, GetItems, or SearchItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token.
