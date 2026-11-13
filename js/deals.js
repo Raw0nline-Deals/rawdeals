@@ -85,6 +85,8 @@ export function isExpired(deal, today) {
 /**
  * Why a deal is not active, or null when it still is.
  * Verified-dead matches the flag the dead-deal check writes onto a card.
+ * A promo code or an auto-applied checkout discount keeps an API deal active
+ * when the list price is not marked down.
  */
 export function inactiveReason(deal, today) {
   if (!deal || typeof deal !== "object") return "not a deal";
@@ -93,14 +95,15 @@ export function inactiveReason(deal, today) {
   if (deal.inStock === false) return "out of stock";
   if (deal.source === "api") {
     const discounted = typeof deal.percentOff === "number" && deal.percentOff > 0;
-    if (!discounted && !deal.promoCode) return "no longer discounted";
+    if (!discounted && !deal.promoCode && deal.checkoutDiscount !== true) return "no longer discounted";
   }
   return null;
 }
 
 /**
  * A deal that has not expired, was not verified dead, is not marked out of stock,
- * and still has a discount or a promo code when it came from the API.
+ * and still has a discount, a promo code, or an auto-applied checkout discount
+ * when it came from the API.
  */
 export function isActiveDeal(deal, today) {
   return inactiveReason(deal, today) == null;
@@ -126,7 +129,16 @@ export function visibleDeals(deals, today) {
   return deals.filter((deal) => isVisibleDeal(deal, today));
 }
 
+/** Button text for an auto-applied AmazonOfferCode deal. There is no code to copy. */
+export const CHECKOUT_DISCOUNT_LABEL = "discount applied at checkout";
+
+export function dealLinkLabel(deal) {
+  if (!deal?.promoCode && deal?.checkoutDiscount === true) return CHECKOUT_DISCOUNT_LABEL;
+  return "View on Amazon";
+}
+
 export function dealHref(deal) {
+  if (deal?.preserveAffiliateTag === true) return deal.url;
   return withAffiliateTag(deal.url);
 }
 
@@ -135,7 +147,7 @@ export function filterDeals(deals, { category = "All", query = "" } = {}) {
   return deals.filter((deal) => {
     if (category !== "All" && deal.category !== category) return false;
     if (!needle) return true;
-    const haystack = [deal.title, deal.category, deal.promoCode || ""]
+    const haystack = [deal.title, deal.category, deal.promoCode || "", deal.checkoutDiscount ? "checkout" : ""]
       .join(" ")
       .toLowerCase();
     return haystack.includes(needle);

@@ -6,6 +6,7 @@ import {
   dayGroups,
   dayHeading,
   dealHref,
+  dealLinkLabel,
   dealsFromPayload,
   filterDeals,
   formatMoney,
@@ -309,7 +310,8 @@ function renderCard(deal) {
   view.href = dealHref(deal);
   view.target = "_blank";
   view.rel = "noopener noreferrer sponsored";
-  view.textContent = "View on Amazon";
+  view.textContent = dealLinkLabel(deal);
+  if (!deal.promoCode && deal.checkoutDiscount) view.classList.add("btn-checkout");
   const report = document.createElement("button");
   report.type = "button";
   report.className = "btn btn-ghost report-btn";

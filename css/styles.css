@@ -494,7 +494,16 @@ a { color: inherit; }
   cursor: pointer;
 }
 
-.btn-primary { background: var(--purple); color: #fff; border-radius: 12px; }
+.btn-primary {
+  background: var(--purple);
+  color: #fff;
+  border-radius: 12px;
+  white-space: normal;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.btn-checkout { font-size: 0.95rem; }
 
 .btn-ghost {
   background: var(--icon);

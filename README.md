@@ -126,6 +126,38 @@ Replace `B0XXXXXXXX` with a real ASIN before you commit that entry.
 
 The secrets live in GitHub, not in the repo: **Settings → Secrets and variables → Actions**. The names are `CREATORS_API_CREDENTIAL_ID` and `CREATORS_API_CREDENTIAL_SECRET`. The workflow sends version `3.1` (US token host) and the site tag `onamzeddie0c-20`. Never paste those secrets into a file, an issue, or a workflow.
 
+### AmazonOfferCode promo codes
+
+The same **Daily deal refresh** job can also read promo codes from [AmazonOfferCode](https://amazonoffercode.com/api). It runs only after the Creators API refresh has succeeded. If `AMAZONOFFERCODE_API_KEY` is missing, that part logs a skip and the Creators deals are still saved. A bad key, a disabled key, a monthly limit, or a failed request does the same: it stops the promo calls and leaves the Creators result in place.
+
+The refresh step is the only step that receives `AMAZONOFFERCODE_API_KEY`, from the repository secret of that name. The script never prints the key. A failed request log replaces the key, and any `token=` query value, with `[redacted]`.
+
+Setup for the free key:
+
+1. Open [amazonoffercode.com/api](https://amazonoffercode.com/api) and create the free key. The free plan is 100 requests a month. No credit card.
+2. In the [rawdeals](https://github.com/Raw0nline-Deals/rawdeals) repo, open **Settings → Secrets and variables → Actions → New repository secret**.
+3. Name it `AMAZONOFFERCODE_API_KEY` and paste the key. Do not put the key in a file, the workflow, or a pull request. This secret is already set on the repository.
+4. The next 13:00 UTC run, or **Run workflow**, picks it up. Do not merge this change until it has been reviewed. Merging is what lets the scheduled job start calling the promo API.
+
+`data/amazonoffercode.json` is the category list. The default slugs are `electronics`, `home`, and `kitchen` (the API’s own examples also include `sports` and `beauty`). Each run calls at most 3 categories, `limit=100`, `active=true`, `marketplace=us`, and does not ask for page 2 even when `has_more` is true. The log prints `meta.usage` after each call.
+
+Call budget: 3 calls × 1 scheduled run a day × 30 days is about 90, under the free plan’s 100. A manual **Run workflow**, or a push of `data/asins.json` or `data/discovery.json`, is another live run and spends up to 3 more. About 10 requests are left for those. A `429` stops the rest of the promo calls for that run.
+
+A row with a `coupon_code` is stored as `promoCode`, so the card keeps the Copy button. A row with `coupon_code: null` is auto-applied: the card’s link reads “discount applied at checkout” and there is no Copy button. `end_date` is saved as `expires`, and the card shows it the same way as other end dates. Rows that are not `is_active`, or whose `end_date` is already past, are left out. Baby and infant titles are left out too.
+
+Deals are matched by ASIN. When the Creators API already has that ASIN, its price, title, and image stay, and the code or the checkout link is added. A code already typed in `data/asins.json` is kept. A Creators result that is out of stock, unsellable, or already ended is not brought back by a promo row. The paged keyword search runs first and stops at `maxDeals` new discoveries. Promo-only deals are added after that, and only into slots that search left open. They use the same 7-day window and the same RSS rule: today is in the feed, earlier days stay on the page and stay collapsed.
+
+`useOwnTag` defaults to true. Coded deals link to `https://www.amazon.com/dp/<ASIN>?tag=onamzeddie0c-20`. Auto-applied deals keep the `amazon_link` promo page, with its `tag` replaced or added as `onamzeddie0c-20`. Set `useOwnTag` to false in `data/amazonoffercode.json`, or set the Actions variable `AOC_USE_OWN_TAG` to `false`, to leave `amazon_link` as AmazonOfferCode sent it. The page normally rewrites every Amazon link to the site tag. When the flag is false, those promo deals set `preserveAffiliateTag` so the stored tag is left alone.
+
+AmazonOfferCode publishes no terms of service. Their docs say your own Associates ID is written onto `amazon_link` only on a paid plan. On the free plan that link carries their tag. Rewriting it is what `useOwnTag` does, and it is on by default so RawDeals links use `onamzeddie0c-20`.
+
+Check the built links, and optionally follow one public promo URL, with no API key:
+
+```bash
+node scripts/check-promo-tag.js
+node scripts/check-promo-tag.js --live
+```
+
 ### Find deals on its own
 
 Open `data/discovery.json`. That file is the only place you need to edit for automatic deals.
@@ -180,8 +212,8 @@ Example cards in the file keep the labels they were given (Electronics, Outdoors
 
 The page uses `visibleDeals()` in `js/deals.js`. A deal is left off the page when:
 
-- `expires` is before today (hand-written deals too)
-- an API deal no longer has a discount and has no promo code
+- `expires` is before today (hand-written deals too, and an AmazonOfferCode `end_date` stored as `expires`)
+- an API deal no longer has a discount, has no promo code, and is not an auto-applied checkout discount
 - an API deal is out of stock, unavailable, or not yet released
 - `verifiedDead` is true
 - `"sample"` is true (example cards)
@@ -194,10 +226,10 @@ A deal the run confirms again today (it is still in `data/asins.json`, or it sti
 What the job does:
 
 - Reads `data/asins.json` and `data/discovery.json`. If both are empty, it exits successfully and does not touch `data/deals.json`.
-- Requests one OAuth token, then calls GetItems in batches of 10 ASINs. Hand-picked batches always run. It then calls SearchItems for the day’s keywords, page by page, and stops at `maxDeals` new discoveries, a page with no new ASINs, or `maxRequests` catalog calls.
+- Requests one OAuth token, then calls GetItems in batches of 10 ASINs. Hand-picked batches always run. It then calls SearchItems for the day’s keywords, page by page, and stops at `maxDeals` new discoveries, a page with no new ASINs, or `maxRequests` catalog calls. AmazonOfferCode runs after that search. A matching ASIN gains its code or checkout link. New promo-only deals fill only the `maxDeals` slots the paged search did not use.
 - Sets `source` to `"api"`. Discovered deals also get `discovered: true`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`, including for a discovery that is not one of the new `maxDeals` picks.
 - Prints a `Dropped ASIN (reason).` line for each ASIN it removes. It prints `Hand-written deals were kept.` only when the file still has a hand-written deal.
-- If sign-in, GetItems, or SearchItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token.
+- If sign-in, GetItems, or SearchItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token. The AmazonOfferCode call runs only after that refresh succeeds. If the promo key is missing or the promo call fails, the script still saves the Creators deals and does not print the key.
 
 A local dry run prints the plan and does not call Amazon:
 
@@ -234,9 +266,9 @@ Paste that address into Beehiiv:
 3. In the post type, choose **/rss**. Pick this feed, and turn on **Refresh feed on send**.
 4. Go to **Review**, then **Schedule**, then **Schedule recurring series**. Send it every day around **8:00 AM Central**, after the 7:00 AM deal refresh.
 
-The feed is normal RSS. Each item has the product name, the Amazon link with the site tag, the day it was added, the category, the picture, and a short note with the sale price, the original price when there is one, the percent off, and the promo code when there is one. The channel description includes: “As an Amazon Associate I earn from qualifying purchases.”
+The feed is normal RSS. Each item has the product name, the Amazon link with the site tag, the day it was added, the category, the picture, and a short note with the sale price, the original price when there is one, the percent off, the promo code when there is one, “Discount applied at checkout” when the discount is automatic, and the end date when there is one. The channel description includes: “As an Amazon Associate I earn from qualifying purchases.”
 
-The feed lists deals added today only, so the earlier days on the page are not sent again as new email items. Expired deals, API deals that lost their discount and have no promo code, out-of-stock deals, verified-dead deals, deals older than 7 days, and example cards are left out. Newest of today’s deals first. The page still shows the rest of the 7-day window, with today open and each earlier day collapsed.
+The feed lists deals added today only, so the earlier days on the page are not sent again as new email items. Expired deals, API deals that lost their discount and have no promo code or checkout discount, out-of-stock deals, verified-dead deals, deals older than 7 days, and example cards are left out. Newest of today’s deals first. The page still shows the rest of the 7-day window, with today open and each earlier day collapsed.
 
 To rebuild it on your computer after you edit `data/deals.json`:
 

@@ -51,12 +51,15 @@ jobs:
           fi
           echo "live=$live" >> "$GITHUB_OUTPUT"
 
-      - name: Refresh deals from the Creators API
+      - name: Refresh deals from the Creators API and AmazonOfferCode
         if: steps.plan.outputs.live == 'true'
         env:
           CREATORS_API_CREDENTIAL_ID: ${{ secrets.CREATORS_API_CREDENTIAL_ID }}
           CREATORS_API_CREDENTIAL_SECRET: ${{ secrets.CREATORS_API_CREDENTIAL_SECRET }}
           CREATORS_API_CREDENTIAL_VERSION: "3.1"
+          # Passed only into this step. The script must not print the value.
+          AMAZONOFFERCODE_API_KEY: ${{ secrets.AMAZONOFFERCODE_API_KEY }}
+          AOC_USE_OWN_TAG: ${{ vars.AOC_USE_OWN_TAG }}
         run: node scripts/fetch-deals.js --live
 
       - name: Rebuild the RSS feed
