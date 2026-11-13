@@ -295,6 +295,27 @@ a { color: inherit; }
 
 .day-summary .day-meta { margin: 0; }
 
+/* Prior-day sections, including Yesterday, are a large bordered control. */
+.day-past > .day-summary {
+  background: var(--card);
+  border: 2px solid #6d8cff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-height: 84px;
+  padding: 18px 16px;
+  margin: 8px 0 4px;
+  gap: 10px 14px;
+}
+
+.day-past > .day-summary .day-heading {
+  font-size: 2.15rem;
+}
+
+.day-past > .day-summary .day-meta {
+  font-size: 0.95rem;
+  padding: 6px 12px;
+}
+
 .day-summary::after {
   content: "";
   flex: 0 0 auto;
@@ -304,6 +325,14 @@ a { color: inherit; }
   border-right: 2px solid var(--ink-soft);
   border-bottom: 2px solid var(--ink-soft);
   transform: translateY(-2px) rotate(45deg);
+}
+
+.day-past > .day-summary::after {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-color: #d5d8e2;
 }
 
 .day-past[open] > .day-summary::after {
@@ -697,6 +726,10 @@ a { color: inherit; }
   .icon-btn:hover,
   .btn-ghost:hover { background: #242838; }
   .card:not(.is-dead):hover { border-color: #343856; }
+  .day-past > .day-summary:hover {
+    border-color: var(--focus);
+    background: #181c2c;
+  }
   .nav a:not(.icon-btn):hover { color: #fff; }
 }
 
@@ -713,6 +746,15 @@ a { color: inherit; }
   .result-count { margin-left: auto; }
 
   .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+
+  .day-past > .day-summary {
+    min-height: 96px;
+    padding: 22px 24px;
+  }
+
+  .day-past > .day-summary .day-heading { font-size: 2.5rem; }
+
+  .day-past > .day-summary .day-meta { font-size: 1.05rem; }
 
   .signup { flex-direction: row; align-items: center; }
 
