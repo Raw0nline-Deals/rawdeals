@@ -5,7 +5,8 @@
  * missing value skips posting and exits successfully.
  *
  * A deal is new when its id was not in the previous deals file. Existing
- * deals are not posted again. At most MAX_DISCORD_DEALS go out in one run.
+ * deals are not posted again. Rewriting an old deal's Associates tag does
+ * not make that deal new. At most MAX_DISCORD_DEALS go out in one run.
  *
  *   node scripts/post-discord.js --previous /tmp/deals-before.json --current data/deals.json
  */

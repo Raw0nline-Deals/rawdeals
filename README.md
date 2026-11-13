@@ -95,7 +95,7 @@ Every Amazon link the page creates goes through `withAffiliateTag()` in `js/affi
 
 Paste a normal product URL in `url`. The tag is added when the page is drawn.
 
-The daily refresh sends `partnerTag` `eddie060-20` on each Creators API GetItems and SearchItems request. It stores `detailPageURL` exactly as Amazon returns it and does not rewrite that link. The page still runs deal links through `withAffiliateTag()` when it draws a card, so a stored link with a different tag is switched to `eddie060-20` in the browser. `data/deals.json` keeps the links from the last refresh until the next daily run replaces them. `feed.xml` is rebuilt in that same run. The published feed's `tag` is `eddie060-20`.
+The daily refresh sends `partnerTag` `eddie060-20` on each Creators API GetItems and SearchItems request. Before it writes `data/deals.json`, it normalizes every stored deal URL: `tag=onamzeddie0c-20`, or a missing `tag` on an `amazon.com` URL, becomes `tag=eddie060-20`. Other query parameters stay as they are. A different tag already on the link is left alone. The page still runs deal links through `withAffiliateTag()` when it draws a card, so a stored link with a different tag is switched to `eddie060-20` in the browser. `feed.xml` is rebuilt in that same run from the file just written. The published feed's `tag` is `eddie060-20`.
 
 The footer on the page includes: “As an Amazon Associate I earn from qualifying purchases.” It also has a short affiliate disclosure. Both are in `index.html`, so they stay visible with the deal list.
 

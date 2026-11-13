@@ -13,6 +13,7 @@ import {
   featureBulletsFromItem,
   GET_ITEMS_RESOURCES,
   mapCreatorsItemToDeal,
+  normalizeStoredDeals,
 } from "../scripts/fetch-deals.js";
 import {
   batchDealMessages,
@@ -77,6 +78,23 @@ test("new deals are ids missing from the previous file, capped, and not posted a
   assert.equal(picked.length, MAX_DISCORD_DEALS);
   assert.equal(picked.at(-1).id, "B0EXTRA0022");
   assert.equal(picked.some((entry) => entry.id === "B0EXTRA0023"), false);
+});
+
+test("normalizing an old Associates tag does not make that deal new", () => {
+  const previous = deal();
+  const [current] = normalizeStoredDeals([previous]);
+  assert.equal(previous.url.includes("onamzeddie0c-20"), true);
+  assert.equal(current.id, previous.id);
+  assert.equal(
+    current.url,
+    `https://www.amazon.com/dp/B0NEWDEAL01?tag=${ASSOCIATE_TAG}&linkCode=ogi&th=1&psc=1`,
+  );
+  assert.equal(selectNewDeals([previous], [current], { today }).length, 0);
+  const fresh = deal({ id: "B0REALLYNEW", title: "New lamp" });
+  assert.deepEqual(
+    selectNewDeals([previous], [current, fresh], { today }).map((entry) => entry.id),
+    ["B0REALLYNEW"],
+  );
 });
 
 test("deal text includes percent, was-price, code, exact API url, and a short feature", () => {
