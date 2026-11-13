@@ -257,6 +257,9 @@ test("live refresh merges API deals, drops MAP and expiry, and keeps samples", a
   assert.equal(created.added, "2026-11-09");
   assert.equal(created.title, "Override title");
   assert.equal(created.source, "api");
+  assert.equal(kept.url, items.B0KEEP000001.detailPageURL);
+  assert.equal(created.url, items.B0NEW0000001.detailPageURL);
+  assert.equal(new URL(created.url).searchParams.get("tag"), "example");
   assert.equal(written.deals.some((deal) => deal.id === "B0MAP0000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "B0END0000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "ex-ancient"), false);

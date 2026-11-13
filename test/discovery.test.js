@@ -693,7 +693,7 @@ function runDiscovery(dir, dealsPath, fetchImpl, date) {
 }
 
 test("later pages are fetched until the new-deal cap, and saved ASINs do not count", async () => {
-  assert.equal(ASSOCIATE_TAG, "onamzeddie0c-20");
+  assert.equal(ASSOCIATE_TAG, "eddie060-20");
   const dir = mkdtempSync(join(tmpdir(), "rawdeals-pages-"));
   const date = "2026-11-12";
   const discovery = {

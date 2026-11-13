@@ -274,6 +274,8 @@ export function mapCreatorsItemToDeal(item, extras = {}, added) {
     price,
     percentOff,
     category: extras.category || "General",
+    // partnerTag on the GetItems/SearchItems body is what tags this link.
+    // Store detailPageURL exactly as Amazon returned it.
     url: item.detailPageURL,
     added,
     sample: false,

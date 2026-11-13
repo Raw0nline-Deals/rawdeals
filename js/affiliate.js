@@ -1,9 +1,11 @@
 /**
- * The only place the Amazon Associates tag is applied.
+ * The only place the Amazon Associates tag string is defined.
+ * This is the regular Store ID for traffic this site sends to Amazon.
  * Deal cards, the storefront link, and any other element with
  * data-affiliate go through withAffiliateTag().
+ * The Prime, Audible, and Prime Video hrefs in index.html repeat this value.
  */
-export const ASSOCIATE_TAG = "onamzeddie0c-20";
+export const ASSOCIATE_TAG = "eddie060-20";
 
 function isUsAmazonHost(hostname) {
   const host = hostname.toLowerCase().replace(/\.$/, "");
@@ -14,7 +16,9 @@ function isUsAmazonHost(hostname) {
 
 /**
  * Return an Amazon URL carrying the Associates tag.
- * Replaces any existing tag. Leaves non-US and non-Amazon links unchanged.
+ * Replaces any other tag. A URL that already has this tag is returned unchanged
+ * so a Creators API detailPageURL is not rewritten. Leaves non-US and
+ * non-Amazon links unchanged.
  * @param {string} rawUrl
  * @returns {string}
  */
@@ -26,6 +30,7 @@ export function withAffiliateTag(rawUrl) {
     return rawUrl;
   }
   if (!isUsAmazonHost(url.hostname)) return rawUrl;
+  if (url.searchParams.get("tag") === ASSOCIATE_TAG) return rawUrl;
   url.searchParams.set("tag", ASSOCIATE_TAG);
   return url.toString();
 }
