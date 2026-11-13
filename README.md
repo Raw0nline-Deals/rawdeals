@@ -89,9 +89,13 @@ Under the header, and before the example notice, category filters, and deal list
 
 ## Affiliate tag
 
-Every Amazon link the page creates goes through `withAffiliateTag()` in `js/affiliate.js`. That function sets `tag=onamzeddie0c-20` on US Amazon hosts (`amazon.com` and short links such as `amzn.to` and `a.co`) and replaces any other tag already on the link. The storefront link uses it too.
+The Associates Store ID is `eddie060-20`. It is defined once as `ASSOCIATE_TAG` in `js/affiliate.js`. That is the regular Store ID for traffic this site sends to Amazon.
 
-Paste a normal product URL in `url`. The tag is added when the page is drawn. The tag string lives in `js/affiliate.js` so it is not copied through the HTML.
+Every Amazon link the page creates goes through `withAffiliateTag()` in `js/affiliate.js`. That function sets `tag=eddie060-20` on US Amazon hosts (`amazon.com` and short links such as `amzn.to` and `a.co`) and replaces any other tag already on the link. A link that already has this tag is left as written, so a Creators API `detailPageURL` is not rebuilt. The storefront link uses it too. The Prime, Audible, and Prime Video buttons in `index.html` use the same tag in the href.
+
+Paste a normal product URL in `url`. The tag is added when the page is drawn.
+
+The daily refresh sends `partnerTag` `eddie060-20` on each Creators API GetItems and SearchItems request. It stores `detailPageURL` exactly as Amazon returns it and does not rewrite that link. The page still runs deal links through `withAffiliateTag()` when it draws a card, so a stored link with a different tag is switched to `eddie060-20` in the browser. `data/deals.json` keeps the links from the last refresh until the next daily run replaces them. `feed.xml` is rebuilt in that same run. The published feed's `tag` is `eddie060-20`.
 
 The footer on the page includes: “As an Amazon Associate I earn from qualifying purchases.” It also has a short affiliate disclosure. Both are in `index.html`, so they stay visible with the deal list.
 
@@ -124,7 +128,7 @@ Hand-written deals in `data/deals.json`, including example cards, stay in the fi
 
 Replace `B0XXXXXXXX` with a real ASIN before you commit that entry.
 
-The secrets live in GitHub, not in the repo: **Settings → Secrets and variables → Actions**. The names are `CREATORS_API_CREDENTIAL_ID` and `CREATORS_API_CREDENTIAL_SECRET`. The workflow sends version `3.1` (US token host) and the site tag `onamzeddie0c-20`. Never paste those secrets into a file, an issue, or a workflow.
+The secrets live in GitHub, not in the repo: **Settings → Secrets and variables → Actions**. The names are `CREATORS_API_CREDENTIAL_ID` and `CREATORS_API_CREDENTIAL_SECRET`. The workflow sends version `3.1` (US token host). It does not set a partner-tag variable. The refresh script puts `eddie060-20` (`ASSOCIATE_TAG`) in the Creators API request as `partnerTag`. Never paste those secrets into a file, an issue, or a workflow.
 
 ### AmazonOfferCode promo codes
 
@@ -147,9 +151,9 @@ A row with a `coupon_code` is stored as `promoCode`, so the card keeps the Copy 
 
 Deals are matched by ASIN. When the Creators API already has that ASIN, its price, title, and image stay, and the code or the checkout link is added. A code already typed in `data/asins.json` is kept. A Creators result that is out of stock, unsellable, or already ended is not brought back by a promo row. The paged keyword search runs first and stops at `maxDeals` new discoveries. Promo-only deals are added after that, and only into slots that search left open. They use the same 7-day window and the same RSS rule: today is in the feed, earlier days stay on the page and stay collapsed.
 
-`useOwnTag` defaults to true. Coded deals link to `https://www.amazon.com/dp/<ASIN>?tag=onamzeddie0c-20`. Auto-applied deals keep the `amazon_link` promo page, with its `tag` replaced or added as `onamzeddie0c-20`. Set `useOwnTag` to false in `data/amazonoffercode.json`, or set the Actions variable `AOC_USE_OWN_TAG` to `false`, to leave `amazon_link` as AmazonOfferCode sent it. The page normally rewrites every Amazon link to the site tag. When the flag is false, those promo deals set `preserveAffiliateTag` so the stored tag is left alone.
+`useOwnTag` defaults to true. Coded deals link to `https://www.amazon.com/dp/<ASIN>?tag=eddie060-20`. Auto-applied deals keep the `amazon_link` promo page, with its `tag` replaced or added as `eddie060-20`. Set `useOwnTag` to false in `data/amazonoffercode.json`, or set the Actions variable `AOC_USE_OWN_TAG` to `false`, to leave `amazon_link` as AmazonOfferCode sent it. The page normally rewrites every Amazon link to the site tag. When the flag is false, those promo deals set `preserveAffiliateTag` so the stored tag is left alone.
 
-AmazonOfferCode publishes no terms of service. Their docs say your own Associates ID is written onto `amazon_link` only on a paid plan. On the free plan that link carries their tag. Rewriting it is what `useOwnTag` does, and it is on by default so RawDeals links use `onamzeddie0c-20`.
+AmazonOfferCode publishes no terms of service. Their docs say your own Associates ID is written onto `amazon_link` only on a paid plan. On the free plan that link carries their tag. Rewriting it is what `useOwnTag` does, and it is on by default so RawDeals links use `eddie060-20`.
 
 Check the built links, and optionally follow one public promo URL, with no API key:
 

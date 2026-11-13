@@ -59,7 +59,7 @@ function offerRow(overrides = {}) {
 function creatorsItem({ asin, title = "API title", unavailable = false }) {
   return {
     asin,
-    detailPageURL: `https://www.amazon.com/dp/${asin}?tag=onamzeddie0c-20&linkCode=osi`,
+    detailPageURL: `https://www.amazon.com/dp/${asin}?tag=${ASSOCIATE_TAG}&linkCode=osi`,
     images: { primary: { large: { url: "https://m.media-amazon.com/images/I/keep.jpg" } } },
     itemInfo: {
       title: { displayValue: title },
@@ -188,7 +188,7 @@ test("merge keeps Creators data, shares the discovery cap, and drops a dead prom
     originalPrice: 39.99,
     percentOff: 50,
     category: "Tech",
-    url: "https://www.amazon.com/dp/B0PLAIN001?tag=onamzeddie0c-20",
+    url: `https://www.amazon.com/dp/B0PLAIN001?tag=${ASSOCIATE_TAG}`,
     added: "2026-11-10",
     sample: false,
     source: "api",
@@ -336,7 +336,7 @@ test("a 429 stops later categories and a promo failure still keeps Creators deal
     originalPrice: 40,
     percentOff: 25,
     category: "Tech",
-    url: "https://www.amazon.com/dp/B0PLAIN001?tag=onamzeddie0c-20",
+    url: `https://www.amazon.com/dp/B0PLAIN001?tag=${ASSOCIATE_TAG}`,
     added: "2026-11-10",
     sample: false,
     source: "api",
@@ -349,7 +349,7 @@ test("a 429 stops later categories and a promo failure still keeps Creators deal
     percentOff: 10,
     promoCode: "STAY",
     category: "Home",
-    url: "https://www.amazon.com/dp/B0STAY0001?tag=onamzeddie0c-20",
+    url: `https://www.amazon.com/dp/B0STAY0001?tag=${ASSOCIATE_TAG}`,
     added: "2026-11-10",
     expires: "2026-11-20",
     sample: false,
@@ -545,7 +545,7 @@ test("a 500 is retried and the workflow reads the key from the repo secret", asy
 
 test("the promo-page tag check reports a redirect that drops the tag and one that keeps it", async () => {
   const dropped = await tracePromoTag(
-    "https://www.amazon.com/promocode/A25MGS6T831FVU?tag=onamzeddie0c-20",
+    `https://www.amazon.com/promocode/A25MGS6T831FVU?tag=${ASSOCIATE_TAG}`,
     async (url) => {
       if (String(url).includes("/promocode/")) {
         return {
@@ -563,12 +563,12 @@ test("the promo-page tag check reports a redirect that drops the tag and one tha
   assert.match(dropped.hops[0].location, /\/dp\/B0GN91F43B$/);
 
   const kept = await tracePromoTag(
-    "https://www.amazon.com/promocode/A25MGS6T831FVU?tag=onamzeddie0c-20",
+    `https://www.amazon.com/promocode/A25MGS6T831FVU?tag=${ASSOCIATE_TAG}`,
     async (url) => {
       if (String(url).includes("/promocode/")) {
         return {
           status: 302,
-          headers: { get: () => "https://www.amazon.com/dp/B0GN91F43B?tag=onamzeddie0c-20" },
+          headers: { get: () => `https://www.amazon.com/dp/B0GN91F43B?tag=${ASSOCIATE_TAG}` },
         };
       }
       return { status: 200, headers: { get: () => "" } };
@@ -591,7 +591,7 @@ test("promo deals fill only the maxDeals room left after paged discovery", async
       originalPrice: 40,
       percentOff: 25,
       category: "Tech",
-      url: "https://www.amazon.com/dp/B0PLAIN001?tag=onamzeddie0c-20",
+      url: `https://www.amazon.com/dp/B0PLAIN001?tag=${ASSOCIATE_TAG}`,
       added: "2026-11-10",
       sample: false,
       source: "api",

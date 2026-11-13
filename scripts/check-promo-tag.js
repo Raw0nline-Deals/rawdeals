@@ -1,5 +1,5 @@
 /**
- * Confirm the links this repo builds for AmazonOfferCode carry tag=onamzeddie0c-20.
+ * Confirm the links this repo builds for AmazonOfferCode carry ASSOCIATE_TAG.
  *
  * Without --live, it only checks the link builder and does not use the network.
  * With --live, it also requests a public sample promo page with that tag and

@@ -35,14 +35,14 @@ test("affiliate helper is the only runtime source of the Associates tag", () => 
     assert.equal(read(path).includes(ASSOCIATE_TAG), false, path);
   }
   const allowed = [
-    "https://www.amazon.com/prime?tag=onamzeddie0c-20",
-    "https://www.amazon.com/hz/audible/arya/mlp?tag=onamzeddie0c-20",
-    "https://www.amazon.com/gp/video/primesignup?tag=onamzeddie0c-20",
+    `https://www.amazon.com/prime?tag=${ASSOCIATE_TAG}`,
+    `https://www.amazon.com/hz/audible/arya/mlp?tag=${ASSOCIATE_TAG}`,
+    `https://www.amazon.com/gp/video/primesignup?tag=${ASSOCIATE_TAG}`,
   ];
   let html = read("index.html");
   for (const url of allowed) html = html.replaceAll(url, "");
   assert.equal(html.includes(ASSOCIATE_TAG), false);
-  assert.equal(ASSOCIATE_TAG, "onamzeddie0c-20");
+  assert.equal(ASSOCIATE_TAG, "eddie060-20");
 });
 
 test("affiliate helper sets the US tag and leaves other links alone", () => {
@@ -55,7 +55,10 @@ test("affiliate helper sets the US tag and leaves other links alone", () => {
   assert.equal(replaced.searchParams.get("psc"), "1");
 
   const storefront = withAffiliateTag("https://www.amazon.com/shop/twitch.tvraw0nline");
-  assert.equal(storefront, "https://www.amazon.com/shop/twitch.tvraw0nline?tag=onamzeddie0c-20");
+  assert.equal(storefront, `https://www.amazon.com/shop/twitch.tvraw0nline?tag=${ASSOCIATE_TAG}`);
+
+  const vended = `https://www.amazon.com/dp/B00TEST?tag=${ASSOCIATE_TAG}&linkCode=ogi&th=1&psc=1`;
+  assert.equal(withAffiliateTag(vended), vended);
 
   assert.equal(withAffiliateTag("https://linktr.ee/raw0nline"), "https://linktr.ee/raw0nline");
   assert.equal(withAffiliateTag("https://www.amazon.co.uk/dp/B00TEST"), "https://www.amazon.co.uk/dp/B00TEST");
@@ -205,6 +208,7 @@ test("Creators API mapper stays offline and hides secrets", () => {
   assert.equal(deal.promoCode, "SAVE10");
   assert.equal(deal.sample, false);
   assert.equal(deal.category, "Electronics");
+  assert.equal(deal.url, item.detailPageURL);
 
   const merged = mergeDeals([{ id: "keep", added: "2026-11-08" }], [deal, { id: "keep" }]);
   assert.deepEqual(merged.map((entry) => entry.id), [deal.id, "keep"]);
