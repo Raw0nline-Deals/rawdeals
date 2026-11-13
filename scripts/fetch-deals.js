@@ -72,6 +72,8 @@ export const RETRY_AFTER_CAP_MS = 120000;
 export const GET_ITEMS_RESOURCES = [
   "images.primary.large",
   "itemInfo.title",
+  // Same GetItems and SearchItems call. This does not add a catalog request.
+  "itemInfo.features",
   "itemInfo.classifications",
   "browseNodeInfo.browseNodes",
   "offersV2.listings.price",
@@ -255,6 +257,32 @@ function parseRating(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+/** How many Amazon feature bullets to keep on a deal. */
+export const STORED_FEATURE_LIMIT = 2;
+const STORED_FEATURE_CHARS = 300;
+
+/**
+ * First feature bullets from a Creators API item.
+ * itemInfo.features.displayValues is a list of strings. Empty when Amazon omits it.
+ */
+export function featureBulletsFromItem(item, limit = STORED_FEATURE_LIMIT) {
+  const values = item?.itemInfo?.features?.displayValues;
+  if (!Array.isArray(values) || limit < 1) return [];
+  const bullets = [];
+  for (const value of values) {
+    if (typeof value !== "string") continue;
+    const text = value.replace(/\s+/g, " ").trim();
+    if (!text) continue;
+    bullets.push(text.length > STORED_FEATURE_CHARS ? text.slice(0, STORED_FEATURE_CHARS).trimEnd() : text);
+    if (bullets.length >= limit) break;
+  }
+  return bullets;
+}
+
+function assignFeatures(deal, mapped) {
+  if (Array.isArray(mapped?.features) && mapped.features.length) deal.features = mapped.features;
+}
+
 export function mapCreatorsItemToDeal(item, extras = {}, added) {
   const listing = pickListing(item);
   if (!listing || listing.violatesMAP || listing.price?.money?.amount == null) return null;
@@ -282,6 +310,8 @@ export function mapCreatorsItemToDeal(item, extras = {}, added) {
   };
   if (typeof original === "number") deal.originalPrice = original;
   if (extras.promoCode) deal.promoCode = extras.promoCode;
+  const features = featureBulletsFromItem(item);
+  if (features.length) deal.features = features;
   const end = listing.dealDetails?.endTime;
   if (end) deal.expires = String(end).slice(0, 10);
   return deal;
@@ -520,6 +550,7 @@ export function dealFromCreatorsItem(item, entry, { today, existing }) {
   if (expires) deal.expires = expires;
   deal.sample = false;
   deal.source = "api";
+  assignFeatures(deal, mapped);
   return deal;
 }
 
@@ -551,6 +582,7 @@ export function explainDiscoveredItem(item, { today, existing, category, minDisc
   };
   if (typeof mapped.originalPrice === "number") deal.originalPrice = mapped.originalPrice;
   if (mapped.expires) deal.expires = mapped.expires;
+  assignFeatures(deal, mapped);
   return { deal, rating };
 }
 
@@ -1261,6 +1293,7 @@ function main() {
         process.env.CREATORS_API_CREDENTIAL_ID,
         process.env.CREATORS_API_CREDENTIAL_SECRET,
         process.env.AMAZONOFFERCODE_API_KEY,
+        process.env.DISCORD_WEBHOOK_URL,
       ]);
       console.error(message || "Deal refresh failed.");
       process.exitCode = 1;

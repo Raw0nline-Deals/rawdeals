@@ -231,7 +231,7 @@ What the job does:
 
 - Reads `data/asins.json` and `data/discovery.json`. If both are empty, it exits successfully and does not touch `data/deals.json`.
 - Requests one OAuth token, then calls GetItems in batches of 10 ASINs. Hand-picked batches always run. It then calls SearchItems for the day’s keywords, page by page, and stops at `maxDeals` new discoveries, a page with no new ASINs, or `maxRequests` catalog calls. AmazonOfferCode runs after that search. A matching ASIN gains its code or checkout link. New promo-only deals fill only the `maxDeals` slots the paged search did not use.
-- Sets `source` to `"api"`. Discovered deals also get `discovered: true`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, and `image`, including for a discovery that is not one of the new `maxDeals` picks.
+- Sets `source` to `"api"`. Discovered deals also get `discovered: true`. The first day an ASIN appears, `added` is that day in `America/Chicago`. Later runs keep that `added` date and refresh `price`, `originalPrice`, `percentOff`, `image`, and `features` when Amazon sent feature bullets, including for a discovery that is not one of the new `maxDeals` picks. `features` is up to two strings from `itemInfo.features.displayValues`. That resource is on the same GetItems and SearchItems request.
 - Prints a `Dropped ASIN (reason).` line for each ASIN it removes. It prints `Hand-written deals were kept.` only when the file still has a hand-written deal.
 - If sign-in, GetItems, or SearchItems fails, the script exits with an error and leaves `data/deals.json` unchanged. It does not print the secret or the token. The AmazonOfferCode call runs only after that refresh succeeds. If the promo key is missing or the promo call fails, the script still saves the Creators deals and does not print the key.
 
@@ -256,6 +256,21 @@ The workflow is **Daily deal refresh** (`.github/workflows/refresh-deals.yml`). 
 7. If the Amazon call fails, the run stops before it writes the feed. `data/deals.json` and `feed.xml` on `main` stay as they were.
 
 GitHub does not start a Pages publish from a commit made with the default Actions token. After a bot commit, if the site still shows the old prices, open **Actions**, click **pages-build-deployment**, and re-run the latest run. If the bot cannot push because `main` is protected, allow GitHub Actions to bypass that rule for this repository.
+
+### Discord
+
+The live run posts that morning’s new deals to Discord after the deals are committed. It compares `data/deals.json` from before the refresh with the file after it. A deal is posted only when its id was not in the earlier file. Deals already saved are not posted again, even when `added` is today. At most 25 new deals go out. Example cards, and anything the site would hide, are left out. A push that only rebuilds the feed does not post.
+
+Each deal is one or two lines. The name links to the Amazon URL. Creators API links, including AmazonOfferCode links already stored on the deal, are sent exactly as stored and are not rewritten. A hand-written deal gets the same `eddie060-20` tag the page adds. The first line looks like `**[Name](<url>)** — 38% off • $49 (was $79)`, and adds ` • code PAN10` when the deal has a promo code. Names are cut to about 60 characters on a word boundary. When Amazon returned feature bullets, the first one is shortened to about 90 characters and placed on the next line. If there is no bullet, that line is left off. The product title is not copied into it. The first message starts with `🔥 Raw's Daily Deals — Nov 14`. The last message ends with `More at <https://getrawdeals.com>`. Several deals share one message, under Discord’s 2000-character limit. The webhook is sent with `flags` 4 so Discord does not show link previews. The webhook username is RawDeals.
+
+The webhook URL is the Actions secret `DISCORD_WEBHOOK_URL`. It is passed only into the Discord step. The script does not print it. If the secret is missing or blank, the step logs a skip and the job still succeeds. A `429` waits for Discord’s `retry_after` and tries that message again.
+
+To set it:
+
+1. In Discord, open the channel, then **Edit Channel**, then **Integrations**, then **Webhooks**, then **New Webhook**. Copy the webhook URL.
+2. Open the [rawdeals](https://github.com/Raw0nline-Deals/rawdeals) repository. Go to **Settings → Secrets and variables → Actions → New repository secret**.
+3. Name it `DISCORD_WEBHOOK_URL` and paste the URL. Do not put the URL in a file, the workflow, or a pull request.
+4. The next 13:00 UTC run, or **Run workflow**, posts after the commit. Do not merge this change until it has been reviewed.
 
 `scripts/fixtures/get-items.sample-from-docs.json` is a fake response shaped like Amazon’s public docs. It is only there so the mapper can be tested. Do not publish it as a deal.
 

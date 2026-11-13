@@ -51,6 +51,10 @@ jobs:
           fi
           echo "live=$live" >> "$GITHUB_OUTPUT"
 
+      - name: Save deals from before this refresh
+        if: steps.plan.outputs.live == 'true'
+        run: cp data/deals.json "$RUNNER_TEMP/deals-before.json"
+
       - name: Refresh deals from the Creators API and AmazonOfferCode
         if: steps.plan.outputs.live == 'true'
         env:
@@ -88,3 +92,10 @@ jobs:
           if ! gh api --method POST "/repos/${{ github.repository }}/pages/builds"; then
             echo "::warning::GitHub Pages rebuild request failed"
           fi
+
+      - name: Post new deals to Discord
+        if: steps.plan.outputs.live == 'true'
+        env:
+          # Passed only into this step. The script must not print the value.
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node scripts/post-discord.js --previous "$RUNNER_TEMP/deals-before.json" --current data/deals.json
