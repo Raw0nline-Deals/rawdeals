@@ -100,6 +100,7 @@ test("days are grouped with today first, using the America/Chicago calendar date
   assert.match(read("js/app.js"), /createElement\("summary"\)/);
   assert.match(read("js/app.js"), /dayGroups\(/);
   assert.match(read("css/styles.css"), /\.day-summary/);
+  assert.match(read("css/styles.css"), /\.day-past > \.day-summary\s*\{[^}]*border:\s*2px solid/);
 });
 
 test("search and category filters combine", () => {
