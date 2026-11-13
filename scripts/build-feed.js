@@ -63,6 +63,8 @@ export function dealDescription(deal) {
   if (typeof deal.originalPrice === "number") parts.push(`Original price: ${formatMoney(deal.originalPrice)}`);
   parts.push(`${deal.percentOff}% off`);
   if (deal.promoCode) parts.push(`Promo code: ${deal.promoCode}`);
+  else if (deal.checkoutDiscount) parts.push("Discount applied at checkout");
+  if (deal.expires) parts.push(`Ends ${deal.expires}`);
   return `${parts.join(". ")}.`;
 }
 

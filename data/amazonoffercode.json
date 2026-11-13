@@ -1,0 +1,10 @@
+{
+  "_comment": "Categories for the AmazonOfferCode promo API during Daily deal refresh. Slugs must be ones that API accepts (docs examples: electronics, sports, beauty). electronics, home, and kitchen match RawDeals. The job calls at most 3 categories per run, one page of 100, so a daily run stays near 90 requests a month on the 100-request free plan. It does not request page 2. sort is newest or discount. useOwnTag true rewrites links to the site tag onamzeddie0c-20. Set useOwnTag to false, or set the env var AOC_USE_OWN_TAG=false, to keep the tag AmazonOfferCode put on amazon_link. Their docs say your own Associates ID is added to amazon_link only on a paid plan, and they publish no terms of service. The API key is the GitHub secret AMAZONOFFERCODE_API_KEY and is not stored in this file.",
+  "categories": ["electronics", "home", "kitchen"],
+  "limit": 100,
+  "active": true,
+  "marketplace": "us",
+  "sort": "newest",
+  "maxCallsPerRun": 3,
+  "useOwnTag": true
+}

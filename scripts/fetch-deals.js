@@ -14,11 +14,22 @@
  *
  * Credentials come from the environment. They are never printed. A failed auth,
  * GetItems, or SearchItems call exits non-zero and does not write deals.json.
+ *
+ * When AMAZONOFFERCODE_API_KEY is set, the same run then reads promo codes from
+ * AmazonOfferCode and merges them in. A missing key or a failed promo call
+ * does not undo the Creators API result.
  */
 import { readFileSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ASSOCIATE_TAG } from "../js/affiliate.js";
+import {
+  applyOfferCodes,
+  creatorsBlockReason,
+  fetchAmazonOfferCodes,
+  MAX_OFFER_CALLS,
+  readOfferConfigFile,
+} from "./amazonoffercode.js";
 import { displayCategoryFromItem } from "../js/categories.js";
 import {
   apparelRank,
@@ -290,9 +301,14 @@ export function chunkList(items, size = ASIN_BATCH_SIZE) {
 export function redactSecrets(message, secrets) {
   let text = String(message ?? "");
   for (const secret of secrets) {
-    if (typeof secret === "string" && secret) text = text.split(secret).join("[redacted]");
+    if (typeof secret !== "string" || !secret) continue;
+    text = text.split(secret).join("[redacted]");
+    const encoded = encodeURIComponent(secret);
+    if (encoded !== secret) text = text.split(encoded).join("[redacted]");
+    const form = encoded.replaceAll("%20", "+");
+    if (form !== encoded) text = text.split(form).join("[redacted]");
   }
-  return text;
+  return text.replace(/([?&]token=)[^&\s"'<>]*/gi, "$1[redacted]");
 }
 
 export function loadAsinEntries(payload) {
@@ -776,7 +792,7 @@ export function mergeApiDeals(existingDeals, updates, today, discovered = [], ex
   return planDealMerge(existingDeals, updates, today, discovered, extra).deals;
 }
 
-export function planText({ entries, status, discovery, today = todayISO() }) {
+export function planText({ entries, status, discovery, today = todayISO(), offerCategories }) {
   const asins = entries.map((entry) => entry.asin);
   const body = buildGetItemsBody(asins, status.partnerTag);
   const lines = [
@@ -799,6 +815,13 @@ export function planText({ entries, status, discovery, today = todayISO() }) {
       `Discovery adds up to ${discovery.maxDeals} new deals, at least ${discovery.minDiscountPercent}% off, rating ${discovery.minRating} or better. Earlier discoveries stay for ${DEAL_RETENTION_DAYS} days.`,
       `Catalog budget: ${discovery.maxRequests} requests (about ${getItems} GetItems and up to ${searchCeiling} SearchItems). Stops at ${discovery.maxDeals} new discoveries or a page with no new ASINs.`,
       `Searches: ${searches.map((search) => (search.category ? `${search.category}: ${search.keywords}` : search.keywords)).join("; ")}`,
+    );
+  }
+  const categories = offerCategories || [];
+  if (categories.length) {
+    const called = categories.slice(0, MAX_OFFER_CALLS);
+    lines.push(
+      `Would call AmazonOfferCode for ${called.join(", ")} if AMAZONOFFERCODE_API_KEY is set (not called). At most ${MAX_OFFER_CALLS} calls.`,
     );
   }
   lines.push("No request was sent.");
@@ -1000,7 +1023,8 @@ export function buildUpdates(existingDeals, entries, itemsByAsin, today) {
 }
 
 export function refreshSummary(result) {
-  if (!result.changed) return [`deals.json was not changed (${result.reason}).`];
+  const notes = Array.isArray(result.offerNotes) ? result.offerNotes : [];
+  if (!result.changed) return [`deals.json was not changed (${result.reason}).`, ...notes];
   const priority = result.priority?.length ? ` Priority watch: ${result.priority.join(", ")}.` : "";
   const freshCount = result.addedDiscoveries || 0;
   const fresh = freshCount
@@ -1012,13 +1036,65 @@ export function refreshSummary(result) {
   ];
   if (typeof result.requests === "number") lines.push(`Catalog requests: ${result.requests}.`);
   for (const drop of result.dropped || []) lines.push(`Dropped ${drop.id} (${drop.reason}).`);
+  lines.push(...notes);
   return lines;
+}
+
+async function mergeOfferCodes({
+  deals,
+  existingDeals,
+  dropped,
+  creatorsIds,
+  blockedAsins,
+  today,
+  maxDeals,
+  env,
+  fetchImpl,
+  sleep,
+  offerConfigPath,
+}) {
+  const notes = [];
+  try {
+    const config = readOfferConfigFile(offerConfigPath);
+    const fetched = await fetchAmazonOfferCodes({ config, env, fetchImpl, sleep, today });
+    notes.push(...fetched.notes);
+    if (fetched.skipped) return { deals, dropped, notes };
+    const existingIds = new Set(existingDeals.map((deal) => deal?.id).filter(Boolean));
+    const newDiscoveries = deals.filter((deal) => deal?.discovered && !existingIds.has(deal.id)).length;
+    const applied = applyOfferCodes(deals, {
+      offers: fetched.offers,
+      rejectedAsins: fetched.rejectedAsins,
+      blockedAsins,
+      existingDeals,
+      today,
+      maxNew: Math.max(0, maxDeals - newDiscoveries),
+      creatorsIds,
+    });
+    notes.push(`AmazonOfferCode attached promo info to ${applied.attached} existing deals and added ${applied.added}.`);
+    if (applied.skippedForCap > 0) {
+      notes.push(`AmazonOfferCode left ${applied.skippedForCap} new deals out because the daily discovery cap is ${maxDeals}.`);
+    }
+    return {
+      deals: applied.deals,
+      dropped: [...dropped, ...applied.dropped],
+      notes,
+    };
+  } catch (error) {
+    const message = redactSecrets(error instanceof Error ? error.message : "AmazonOfferCode failed.", [
+      env?.AMAZONOFFERCODE_API_KEY,
+      env?.CREATORS_API_CREDENTIAL_SECRET,
+      env?.CREATORS_API_CREDENTIAL_ID,
+    ]);
+    notes.push(`AmazonOfferCode failed (${message || "unknown error"}). Creators API deals were kept.`);
+    return { deals, dropped, notes };
+  }
 }
 
 export async function refreshDealsFile({
   asinsPath,
   dealsPath,
   discoveryPath,
+  offerConfigPath,
   env = process.env,
   fetchImpl = globalThis.fetch,
   today = todayISO(),
@@ -1081,11 +1157,37 @@ export async function refreshDealsFile({
     minRating: discovery.minRating,
     maxDeals: discovery.maxDeals,
   });
-  const { deals: nextDeals, dropped } = planDealMerge(existingDeals, updates, today, partitioned.fresh, {
+  const merged = planDealMerge(existingDeals, updates, today, partitioned.fresh, {
     refreshed: partitioned.refreshed,
     rejected: partitioned.rejected,
     updateReasons: reasons,
   });
+  const creatorsIds = new Set();
+  const offerBlockedAsins = new Set();
+  for (const [id, deal] of updates) {
+    if (deal) creatorsIds.add(id);
+    else if (creatorsBlockReason(reasons.get(id))) offerBlockedAsins.add(id);
+  }
+  for (const deal of partitioned.fresh) creatorsIds.add(deal.id);
+  for (const deal of partitioned.refreshed) creatorsIds.add(deal.id);
+  for (const entry of partitioned.rejected) {
+    if (creatorsBlockReason(entry.reason)) offerBlockedAsins.add(entry.id);
+  }
+  const offerResult = await mergeOfferCodes({
+    deals: merged.deals,
+    existingDeals,
+    dropped: merged.dropped,
+    creatorsIds,
+    blockedAsins: offerBlockedAsins,
+    today,
+    maxDeals: discovery.maxDeals,
+    env,
+    fetchImpl,
+    sleep,
+    offerConfigPath: offerConfigPath || join(dirname(dealsPath), "amazonoffercode.json"),
+  });
+  const nextDeals = offerResult.deals;
+  const dropped = offerResult.dropped;
   const nextPayload = Array.isArray(payload) ? nextDeals : { ...payload, deals: nextDeals };
   const existingIds = new Set(existingDeals.map((deal) => deal?.id));
   const report = {
@@ -1096,6 +1198,7 @@ export async function refreshDealsFile({
     handWritten: nextDeals.filter((deal) => deal.source !== "api").length,
     dropped,
     requests: catalog.requests,
+    offerNotes: offerResult.notes,
   };
   if (canonicalJson(payload) === canonicalJson(nextPayload)) return { changed: false, reason: "unchanged", ...report };
 
@@ -1136,7 +1239,15 @@ function main() {
     return;
   }
   if (!live) {
-    console.log(planText({ entries, status: credentialStatus(), discovery }));
+    let offerCategories = [];
+    try {
+      offerCategories = readOfferConfigFile(join(root, "data", "amazonoffercode.json")).categories;
+    } catch (error) {
+      console.error(error instanceof Error ? error.message : "Could not read data/amazonoffercode.json.");
+      process.exitCode = 1;
+      return;
+    }
+    console.log(planText({ entries, status: credentialStatus(), discovery, offerCategories, today: todayISO() }));
     return;
   }
   refreshDealsFile({ asinsPath, dealsPath, discoveryPath, pauseMs: CATALOG_PAUSE_MS })
@@ -1147,6 +1258,7 @@ function main() {
       const message = redactSecrets(error instanceof Error ? error.message : "Deal refresh failed.", [
         process.env.CREATORS_API_CREDENTIAL_ID,
         process.env.CREATORS_API_CREDENTIAL_SECRET,
+        process.env.AMAZONOFFERCODE_API_KEY,
       ]);
       console.error(message || "Deal refresh failed.");
       process.exitCode = 1;
