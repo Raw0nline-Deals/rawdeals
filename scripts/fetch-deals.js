@@ -3,7 +3,10 @@
  *
  * Without --live, this prints the request it would make and does not use the network.
  * With --live, it refreshes the ASINs in data/asins.json and also searches for deals
- * described in data/discovery.json. Hand-picked ASINs take priority over discovered ones.
+ * described in data/discovery.json. Each morning uses a different subset of the
+ * keyword pool. A search can read past the first page of results. Hand-picked
+ * ASINs take priority over discovered ones. ASINs already saved in deals.json
+ * or listed in asins.json are not added again.
  * Discovered deals from earlier days stay until they fall outside DEAL_RETENTION_DAYS
  * (today plus the six days before it) or Amazon shows they are dead, out of stock,
  * or ended. maxDeals caps how many new discoveries are added, not how many are kept.
@@ -32,10 +35,28 @@ import {
 export const GET_ITEMS_URL = "https://creatorsapi.amazon/catalog/v1/getItems";
 export const SEARCH_ITEMS_URL = "https://creatorsapi.amazon/catalog/v1/searchItems";
 export const ASIN_BATCH_SIZE = 10;
+/**
+ * SearchItems limits, from the Creators API reference:
+ * itemCount is an integer from 1 to 10, and itemPage is an integer from 1 to 10.
+ * https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/operations/search-items
+ *
+ * A new credential is limited to 1 request per second and 8640 requests per day.
+ * https://affiliate-program.amazon.com/creatorsapi/docs/en-us/concepts/api-rates
+ */
 export const SEARCH_ITEM_COUNT = 10;
-export const MAX_DISCOVERY_SEARCHES = 16;
+export const MAX_SEARCH_PAGE = 10;
+export const DEFAULT_PAGES_PER_KEYWORD = 3;
+export const DEFAULT_KEYWORDS_PER_RUN = 12;
+export const DEFAULT_MAX_REQUESTS = 48;
+export const MAX_CONFIG_REQUESTS = 200;
+export const MAX_KEYWORD_POOL = 96;
+/** Keywords actually sent on one run, counting keywordsPerRun and priority. */
+export const MAX_RUN_SEARCHES = 16;
+export const MAX_DISCOVERY_SEARCHES = MAX_RUN_SEARCHES;
 export const CATALOG_PAUSE_MS = 1100;
 export const RATE_LIMIT_RETRIES = 3;
+/** Cap a single 429 wait so a huge retryAfterSeconds cannot stall the daily job. */
+export const RETRY_AFTER_CAP_MS = 120000;
 
 export const GET_ITEMS_RESOURCES = [
   "images.primary.large",
@@ -87,13 +108,21 @@ export function amazonMinReviewsRating(minRating) {
   return Math.min(4, Math.max(1, rounded));
 }
 
-export function buildSearchBody(search, { partnerTag = ASSOCIATE_TAG, minDiscountPercent, minRating } = {}) {
+export function buildSearchBody(search, {
+  partnerTag = ASSOCIATE_TAG,
+  minDiscountPercent,
+  minRating,
+  itemPage = 1,
+} = {}) {
+  if (!Number.isInteger(itemPage) || itemPage < 1 || itemPage > MAX_SEARCH_PAGE) {
+    throw new Error(`itemPage must be a whole number from 1 to ${MAX_SEARCH_PAGE}.`);
+  }
   const body = {
     keywords: search.keywords,
     marketplace: "www.amazon.com",
     partnerTag,
     itemCount: SEARCH_ITEM_COUNT,
-    itemPage: 1,
+    itemPage,
     availability: "Available",
     condition: "New",
     minSavingPercent: minDiscountPercent,
@@ -103,6 +132,85 @@ export function buildSearchBody(search, { partnerTag = ASSOCIATE_TAG, minDiscoun
   };
   if (search.searchIndex) body.searchIndex = search.searchIndex;
   return body;
+}
+
+export function daysSinceEpoch(iso) {
+  if (typeof iso !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+    throw new Error("A discovery date must be YYYY-MM-DD.");
+  }
+  const [year, month, day] = iso.split("-").map(Number);
+  return Math.floor(Date.UTC(year, month - 1, day) / 86400000);
+}
+
+function searchIdentity(search) {
+  return `${search.category || ""}\0${search.keywords}\0${search.searchIndex || ""}`;
+}
+
+/**
+ * True when this keyword should not request another page.
+ * A page with no ASIN outside `seenAsins` is exhausted. So is a page that
+ * already covers totalResultCount, when Amazon sends that count.
+ * itemPage cannot go past MAX_SEARCH_PAGE; the caller enforces that.
+ */
+export function shouldStopKeyword(items, seenAsins, { page = 1, totalResultCount } = {}) {
+  const list = Array.isArray(items) ? items : [];
+  const hasNew = list.some((item) => {
+    const asin = item?.asin;
+    return typeof asin === "string" && asin && !seenAsins.has(asin);
+  });
+  if (!hasNew) return true;
+  const total = Number(totalResultCount);
+  if (Number.isFinite(total) && page * SEARCH_ITEM_COUNT >= total) return true;
+  return false;
+}
+
+/**
+ * Priority searches run every day. The pool contributes keywordsPerRun entries,
+ * one category at a time, starting at a category chosen from the date.
+ * The keyword inside a category also moves forward with the date.
+ */
+export function selectDailySearches(discovery, today) {
+  const priority = discovery?.priority || [];
+  const pool = discovery?.searches || [];
+  const groups = new Map();
+  for (const search of pool) {
+    const category = search.category || "General";
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(search);
+  }
+  const categories = [...groups.keys()];
+  if (categories.length === 0) return [...priority];
+
+  const day = daysSinceEpoch(today);
+  const start = day % categories.length;
+  const ordered = categories.slice(start).concat(categories.slice(0, start));
+  const limit = discovery.keywordsPerRun ?? Math.min(DEFAULT_KEYWORDS_PER_RUN, categories.length);
+  const reserved = new Set(priority.map(searchIdentity));
+  const picked = [];
+  const seenKeys = new Set();
+  let round = 0;
+  while (picked.length < limit) {
+    let added = false;
+    for (const category of ordered) {
+      if (picked.length >= limit) break;
+      const options = groups.get(category);
+      let choice = null;
+      for (let offset = 0; offset < options.length; offset += 1) {
+        const candidate = options[(day + round + offset) % options.length];
+        const key = searchIdentity(candidate);
+        if (seenKeys.has(key) || reserved.has(key)) continue;
+        choice = candidate;
+        break;
+      }
+      if (!choice) continue;
+      seenKeys.add(searchIdentity(choice));
+      picked.push(choice);
+      added = true;
+    }
+    if (!added) break;
+    round += 1;
+  }
+  return [...priority, ...picked];
 }
 
 export function pickListing(item) {
@@ -224,7 +332,16 @@ function copyOptionalString(entry, clean, key, index) {
 }
 
 export function emptyDiscovery() {
-  return { minDiscountPercent: 20, minRating: 4, maxDeals: 20, searches: [] };
+  return {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: DEFAULT_PAGES_PER_KEYWORD,
+    keywordsPerRun: 0,
+    maxRequests: DEFAULT_MAX_REQUESTS,
+    searches: [],
+    priority: [],
+  };
 }
 
 export function loadDiscoveryConfig(payload) {
@@ -232,10 +349,20 @@ export function loadDiscoveryConfig(payload) {
   if (typeof payload !== "object" || Array.isArray(payload)) {
     throw new Error("data/discovery.json must be a JSON object.");
   }
-  const allowed = new Set(["_comment", "minDiscountPercent", "minRating", "maxDeals", "searches", "priority"]);
+  const allowed = new Set([
+    "_comment",
+    "minDiscountPercent",
+    "minRating",
+    "maxDeals",
+    "pagesPerKeyword",
+    "keywordsPerRun",
+    "maxRequests",
+    "searches",
+    "priority",
+  ]);
   for (const key of Object.keys(payload)) {
     if (!allowed.has(key)) {
-      throw new Error(`Unknown field "${key}" in data/discovery.json. You can set minDiscountPercent, minRating, maxDeals, searches, and priority.`);
+      throw new Error(`Unknown field "${key}" in data/discovery.json. You can set minDiscountPercent, minRating, maxDeals, pagesPerKeyword, keywordsPerRun, maxRequests, searches, and priority.`);
     }
   }
   if (payload.minDiscountPercent == null || payload.minRating == null || payload.maxDeals == null || payload.searches == null) {
@@ -246,16 +373,46 @@ export function loadDiscoveryConfig(payload) {
     ...search,
     priority: true,
   }));
-  if (searches.length + priority.length > MAX_DISCOVERY_SEARCHES) {
-    throw new Error(`discovery can have at most ${MAX_DISCOVERY_SEARCHES} searches so the daily job does not call Amazon too many times.`);
+  if (searches.length > MAX_KEYWORD_POOL) {
+    throw new Error(`discovery.searches can list at most ${MAX_KEYWORD_POOL} keywords.`);
+  }
+  assertUniqueSearches([...searches, ...priority]);
+  const pagesPerKeyword = payload.pagesPerKeyword == null
+    ? DEFAULT_PAGES_PER_KEYWORD
+    : readBoundedInteger(payload.pagesPerKeyword, "pagesPerKeyword", 1, MAX_SEARCH_PAGE);
+  const maxRequests = payload.maxRequests == null
+    ? DEFAULT_MAX_REQUESTS
+    : readBoundedInteger(payload.maxRequests, "maxRequests", 1, MAX_CONFIG_REQUESTS);
+  let keywordsPerRun = payload.keywordsPerRun == null
+    ? Math.min(DEFAULT_KEYWORDS_PER_RUN, searches.length)
+    : readBoundedInteger(payload.keywordsPerRun, "keywordsPerRun", 1, MAX_RUN_SEARCHES);
+  if (payload.keywordsPerRun == null) {
+    keywordsPerRun = Math.min(keywordsPerRun, Math.max(0, MAX_RUN_SEARCHES - priority.length));
+  } else if (priority.length + keywordsPerRun > MAX_RUN_SEARCHES) {
+    throw new Error(`a run can search at most ${MAX_RUN_SEARCHES} keywords, counting keywordsPerRun and priority together.`);
   }
   return {
     minDiscountPercent: readBoundedInteger(payload.minDiscountPercent, "minDiscountPercent", 1, 99),
     minRating: readRating(payload.minRating),
     maxDeals: readBoundedInteger(payload.maxDeals, "maxDeals", 1, 40),
+    pagesPerKeyword,
+    keywordsPerRun,
+    maxRequests,
     searches,
     priority,
   };
+}
+
+function assertUniqueSearches(list) {
+  const seen = new Set();
+  for (const search of list) {
+    const key = searchIdentity(search);
+    if (seen.has(key)) {
+      const where = search.category ? ` in ${search.category}` : "";
+      throw new Error(`discovery lists "${search.keywords}"${where} more than once.`);
+    }
+    seen.add(key);
+  }
 }
 
 function readBoundedInteger(value, label, min, max) {
@@ -619,7 +776,7 @@ export function mergeApiDeals(existingDeals, updates, today, discovered = [], ex
   return planDealMerge(existingDeals, updates, today, discovered, extra).deals;
 }
 
-export function planText({ entries, status, discovery }) {
+export function planText({ entries, status, discovery, today = todayISO() }) {
   const asins = entries.map((entry) => entry.asin);
   const body = buildGetItemsBody(asins, status.partnerTag);
   const lines = [
@@ -633,12 +790,15 @@ export function planText({ entries, status, discovery }) {
     `partnerTag: ${body.partnerTag}`,
     `itemIds: ${body.itemIds.join(", ") || "(none)"}`,
   ];
-  const searches = [...(discovery?.searches || []), ...(discovery?.priority || [])];
+  const searches = discovery ? selectDailySearches(discovery, today) : [];
   if (searches.length) {
+    const getItems = entries.length === 0 ? 0 : Math.ceil(entries.length / ASIN_BATCH_SIZE);
+    const searchCeiling = searches.length * discovery.pagesPerKeyword;
     lines.push(
-      `Would POST ${SEARCH_ITEMS_URL} for ${searches.length} searches (not called).`,
+      `Would POST ${SEARCH_ITEMS_URL} for ${searches.length} searches, up to ${discovery.pagesPerKeyword} page(s) of ${SEARCH_ITEM_COUNT} (itemPage 1 to ${MAX_SEARCH_PAGE}).`,
       `Discovery adds up to ${discovery.maxDeals} new deals, at least ${discovery.minDiscountPercent}% off, rating ${discovery.minRating} or better. Earlier discoveries stay for ${DEAL_RETENTION_DAYS} days.`,
-      `Searches: ${searches.map((search) => search.category || search.keywords).join(", ")}`,
+      `Catalog budget: ${discovery.maxRequests} requests (about ${getItems} GetItems and up to ${searchCeiling} SearchItems). Stops at ${discovery.maxDeals} new discoveries or a page with no new ASINs.`,
+      `Searches: ${searches.map((search) => (search.category ? `${search.category}: ${search.keywords}` : search.keywords)).join("; ")}`,
     );
   }
   lines.push("No request was sent.");
@@ -668,6 +828,8 @@ export async function fetchCreatorsCatalog({
   partnerTag,
   pauseMs = 0,
   sleep = defaultSleep,
+  seenAsins = new Set(),
+  countsAsNewDeal = null,
 }) {
   const id = env.CREATORS_API_CREDENTIAL_ID;
   const secret = env.CREATORS_API_CREDENTIAL_SECRET;
@@ -702,11 +864,14 @@ export async function fetchCreatorsCatalog({
   }
   token = tokenBody.access_token;
 
-  let catalogCalls = 0;
-  const callCatalog = (url, body, label) => postCatalog(fetchImpl, token, url, body, fail, label, {
-    pauseMs: catalogCalls++ > 0 ? pauseMs : 0,
-    sleep,
-  });
+  let requests = 0;
+  const callCatalog = (url, body, label) => {
+    requests += 1;
+    return postCatalog(fetchImpl, token, url, body, fail, label, {
+      pauseMs: requests > 1 ? pauseMs : 0,
+      sleep,
+    });
+  };
 
   const byAsin = new Map();
   if (entries.length > 0) {
@@ -724,22 +889,49 @@ export async function fetchCreatorsCatalog({
     }
   }
 
+  const seen = new Set(seenAsins);
+  let newQualifying = 0;
+  let stopAll = false;
   const groups = [];
+  const pagesPerKeyword = discovery.pagesPerKeyword;
+  const maxRequests = discovery.maxRequests;
+  const maxNewDeals = discovery.maxDeals;
+
   for (const search of searches) {
-    const response = await callCatalog(
-      SEARCH_ITEMS_URL,
-      buildSearchBody(search, {
-        partnerTag,
-        minDiscountPercent: discovery.minDiscountPercent,
-        minRating: discovery.minRating,
-      }),
-      "SearchItems",
-    );
-    const body = await response.json();
-    if (!body?.searchResult) fail("Creators API SearchItems response was missing searchResult.");
-    groups.push({ category: search.category, items: body.searchResult.items || [] });
+    if (stopAll || requests >= maxRequests) break;
+    const collected = [];
+    for (let page = 1; page <= pagesPerKeyword && page <= MAX_SEARCH_PAGE; page += 1) {
+      if (requests >= maxRequests) break;
+      const response = await callCatalog(
+        SEARCH_ITEMS_URL,
+        buildSearchBody(search, {
+          partnerTag,
+          minDiscountPercent: discovery.minDiscountPercent,
+          minRating: discovery.minRating,
+          itemPage: page,
+        }),
+        "SearchItems",
+      );
+      const body = await response.json();
+      if (!body?.searchResult) fail("Creators API SearchItems response was missing searchResult.");
+      const items = Array.isArray(body.searchResult.items) ? body.searchResult.items : [];
+      const stopKeyword = shouldStopKeyword(items, seen, {
+        page,
+        totalResultCount: body.searchResult.totalResultCount,
+      });
+      for (const item of items) {
+        const asin = item?.asin;
+        if (!asin || seen.has(asin)) continue;
+        seen.add(asin);
+        if (typeof countsAsNewDeal === "function" && countsAsNewDeal(item, search)) newQualifying += 1;
+      }
+      collected.push(...items);
+      if (typeof countsAsNewDeal === "function" && newQualifying >= maxNewDeals) stopAll = true;
+      if (stopKeyword || stopAll) break;
+    }
+    groups.push({ category: search.category, items: collected });
   }
-  return { byAsin, groups };
+  return { byAsin, groups, requests };
 }
 
 async function postCatalog(fetchImpl, token, url, body, fail, label, { pauseMs = 0, sleep = defaultSleep } = {}) {
@@ -762,7 +954,17 @@ async function postCatalog(fetchImpl, token, url, body, fail, label, { pauseMs =
     }
     if (response?.status === 429 && attempt < RATE_LIMIT_RETRIES) {
       attempt += 1;
-      await sleep(1000 * 2 ** attempt);
+      let waitMs = 1000 * 2 ** attempt;
+      try {
+        const errorBody = await response.json();
+        const retryAfter = Number(errorBody?.retryAfterSeconds);
+        if (Number.isFinite(retryAfter) && retryAfter > 0) {
+          waitMs = Math.max(waitMs, Math.min(Math.round(retryAfter * 1000), RETRY_AFTER_CAP_MS));
+        }
+      } catch {
+        // Keep the exponential wait when the throttle body cannot be read.
+      }
+      await sleep(waitMs);
       continue;
     }
     if (!response?.ok) fail(`Creators API ${label} request failed (${response?.status ?? "no status"}).`);
@@ -808,6 +1010,7 @@ export function refreshSummary(result) {
   const lines = [
     `Updated data/deals.json (${result.count} API deals, ${result.discovered} discovered).${fresh}${hand}${priority}`,
   ];
+  if (typeof result.requests === "number") lines.push(`Catalog requests: ${result.requests}.`);
   for (const drop of result.dropped || []) lines.push(`Dropped ${drop.id} (${drop.reason}).`);
   return lines;
 }
@@ -825,34 +1028,50 @@ export async function refreshDealsFile({
 }) {
   const entries = loadAsinEntries(JSON.parse(readFileSync(asinsPath, "utf8")));
   const discovery = discoveryPath ? readDiscoveryFile(discoveryPath) : emptyDiscovery();
-  if (entries.length === 0 && discovery.searches.length === 0) return { changed: false, reason: "empty" };
+  const selected = selectDailySearches(discovery, today);
+  if (entries.length === 0 && selected.length === 0) return { changed: false, reason: "empty" };
 
   const before = readFileSync(dealsPath, "utf8");
   const payload = JSON.parse(before);
   const existingDeals = Array.isArray(payload) ? payload : payload?.deals;
   if (!Array.isArray(existingDeals)) throw new Error("data/deals.json must be an array or an object with a deals array.");
 
+  const listedAsins = new Set(entries.map((entry) => entry.asin));
+  const knownAsins = new Set(
+    existingDeals
+      .filter((deal) => deal?.source === "api" && deal.discovered && !listedAsins.has(deal.id))
+      .map((deal) => deal.id),
+  );
+  const blockedAsins = new Set(listedAsins);
+  for (const deal of existingDeals) {
+    if (deal?.id && !knownAsins.has(deal.id)) blockedAsins.add(deal.id);
+  }
+  const skipAsins = new Set([...blockedAsins, ...knownAsins]);
   const catalog = await fetchCreatorsCatalog({
     entries,
-    searches: [...discovery.searches, ...(discovery.priority || [])],
+    searches: selected,
     discovery,
     env,
     fetchImpl,
     partnerTag,
     pauseMs,
     sleep,
+    seenAsins: skipAsins,
+    countsAsNewDeal: (item, search) => {
+      if (!item?.asin || skipAsins.has(item.asin)) return false;
+      return Boolean(explainDiscoveredItem(item, {
+        today,
+        category: search.category,
+        minDiscountPercent: discovery.minDiscountPercent,
+        minRating: discovery.minRating,
+      }).deal);
+    },
   });
   const { updates, reasons } = buildUpdates(existingDeals, entries, catalog.byAsin, today);
   const tagged = catalog.groups.flatMap((group) => group.items.map((item) => ({
     item,
     category: group.category,
   })));
-  const blockedAsins = new Set(entries.map((entry) => entry.asin));
-  const knownAsins = new Set(
-    existingDeals
-      .filter((deal) => deal?.source === "api" && deal.discovered && !blockedAsins.has(deal.id))
-      .map((deal) => deal.id),
-  );
   const partitioned = partitionDiscoveredDeals(tagged, {
     today,
     existingDeals,
@@ -876,6 +1095,7 @@ export async function refreshDealsFile({
     priority: nextDeals.filter((deal) => deal.source === "api" && deal.priority).map((deal) => deal.id),
     handWritten: nextDeals.filter((deal) => deal.source !== "api").length,
     dropped,
+    requests: catalog.requests,
   };
   if (canonicalJson(payload) === canonicalJson(nextPayload)) return { changed: false, reason: "unchanged", ...report };
 

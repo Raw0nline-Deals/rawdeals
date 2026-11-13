@@ -1,8 +1,11 @@
 {
-  "_comment": "Edit this file to change the deals the daily job finds on its own. ASINs in data/asins.json always win over these searches. minDiscountPercent is the smallest discount to keep. minRating of 4 means four stars or better. maxDeals is how many discovered deals to keep per day, spread across the searches (about 20, which is what the daily slideshow uses). Copy a search block to add a category. You can list up to 16 searches. category is the label on the site. searchIndex is Amazon's department name.",
+  "_comment": "Keyword pool for the morning job. priority always runs. keywordsPerRun entries are chosen from searches by the date, one category at a time, so the next morning uses a different product type. List lengths differ by category so the pools do not all repeat on the same morning. pagesPerKeyword is how many SearchItems pages to read per keyword (Amazon allows itemPage 1 through 10 and itemCount 1 through 10). The job stops at maxDeals new discoveries, when a page has no new ASINs, or at maxRequests catalog calls. ASINs already in data/deals.json or data/asins.json are not added again.",
   "minDiscountPercent": 20,
   "minRating": 4,
   "maxDeals": 20,
+  "pagesPerKeyword": 3,
+  "keywordsPerRun": 12,
+  "maxRequests": 48,
   "searches": [
     {
       "keywords": "electronics",
@@ -10,7 +13,127 @@
       "category": "Tech"
     },
     {
+      "keywords": "wireless earbuds",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "bluetooth speaker",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "portable charger",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "computer monitor",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "smart watch",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "webcam",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "usb c hub",
+      "searchIndex": "Electronics",
+      "category": "Tech"
+    },
+    {
+      "keywords": "video games",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "wireless controller",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "gaming keyboard",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "gaming mouse",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "nintendo switch game",
+      "searchIndex": "VideoGames",
+      "category": "Gaming"
+    },
+    {
+      "keywords": "cookware",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "knife set",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "air fryer",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "blender",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "bakeware",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "food storage containers",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
+      "keywords": "coffee maker",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Kitchen"
+    },
+    {
       "keywords": "home organization",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "bedding set",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "storage bins",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "table lamp",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "bath towels",
+      "searchIndex": "HomeAndKitchen",
+      "category": "Home"
+    },
+    {
+      "keywords": "throw blanket",
       "searchIndex": "HomeAndKitchen",
       "category": "Home"
     },
@@ -20,12 +143,62 @@
       "category": "Pets"
     },
     {
-      "keywords": "mens womens hoodies shirts dresses",
-      "searchIndex": "Fashion",
-      "category": "Clothing"
+      "keywords": "dog toys",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "cat tree",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "dog bed",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "pet grooming",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "cat litter",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "dog leash",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
+    },
+    {
+      "keywords": "fish tank",
+      "searchIndex": "PetSupplies",
+      "category": "Pets"
     },
     {
       "keywords": "perfume",
+      "searchIndex": "Beauty",
+      "category": "Fragrances"
+    },
+    {
+      "keywords": "cologne",
+      "searchIndex": "Beauty",
+      "category": "Fragrances"
+    },
+    {
+      "keywords": "eau de parfum",
+      "searchIndex": "Beauty",
+      "category": "Fragrances"
+    },
+    {
+      "keywords": "body mist",
+      "searchIndex": "Beauty",
+      "category": "Fragrances"
+    },
+    {
+      "keywords": "unisex fragrance",
       "searchIndex": "Beauty",
       "category": "Fragrances"
     },
@@ -35,19 +208,34 @@
       "category": "Drinks"
     },
     {
-      "keywords": "snacks",
+      "keywords": "tea bags",
       "searchIndex": "GroceryAndGourmetFood",
-      "category": "Food"
+      "category": "Drinks"
     },
     {
-      "keywords": "cookware",
-      "searchIndex": "HomeAndKitchen",
-      "category": "Kitchen"
+      "keywords": "sparkling water",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
     },
     {
-      "keywords": "video games",
-      "searchIndex": "VideoGames",
-      "category": "Gaming"
+      "keywords": "protein shake",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
+    },
+    {
+      "keywords": "hot chocolate",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
+    },
+    {
+      "keywords": "energy drink",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
+    },
+    {
+      "keywords": "fruit juice",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Drinks"
     },
     {
       "keywords": "cleaning supplies",
@@ -55,14 +243,159 @@
       "category": "Household"
     },
     {
-      "keywords": "fitness gear",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
+      "keywords": "paper towels",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
+    },
+    {
+      "keywords": "laundry detergent",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
+    },
+    {
+      "keywords": "trash bags",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
+    },
+    {
+      "keywords": "dish soap",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
+    },
+    {
+      "keywords": "disinfectant wipes",
+      "searchIndex": "HealthPersonalCare",
+      "category": "Household"
     },
     {
       "keywords": "toys",
       "searchIndex": "ToysAndGames",
       "category": "Toys"
+    },
+    {
+      "keywords": "board games",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "building blocks",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "jigsaw puzzle",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "action figures",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "stuffed animals",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "outdoor play set",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "card games",
+      "searchIndex": "ToysAndGames",
+      "category": "Toys"
+    },
+    {
+      "keywords": "fitness gear",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "yoga mat",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "dumbbell set",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "resistance bands",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "camping tent",
+      "searchIndex": "SportsAndOutdoors",
+      "category": "Sports"
+    },
+    {
+      "keywords": "snacks",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "granola",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "mixed nuts",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "pasta",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "chocolate candy",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "peanut butter",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "breakfast cereal",
+      "searchIndex": "GroceryAndGourmetFood",
+      "category": "Food"
+    },
+    {
+      "keywords": "mens womens hoodies shirts dresses",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "womens sneakers",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "mens shorts",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "winter jacket",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "athletic leggings",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
+    },
+    {
+      "keywords": "socks multipack",
+      "searchIndex": "Fashion",
+      "category": "Clothing"
     }
   ],
   "priority": [

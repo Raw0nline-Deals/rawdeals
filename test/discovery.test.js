@@ -9,11 +9,16 @@ import { DISPLAY_CATEGORIES, displayCategoryFromItem, matchCategory } from "../j
 import { activeDeals, isActiveDeal } from "../js/deals.js";
 import {
   buildSearchBody,
+  daysSinceEpoch,
   dealFromCreatorsItem,
   loadDiscoveryConfig,
+  MAX_SEARCH_PAGE,
   mergeApiDeals,
   refreshDealsFile,
+  SEARCH_ITEM_COUNT,
+  selectDailySearches,
   selectDiscoveredDeals,
+  shouldStopKeyword,
 } from "../scripts/fetch-deals.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -76,31 +81,104 @@ function chain(names) {
   return ancestor;
 }
 
-test("the shipped discovery file is the twelve starting categories and about 20 deals", () => {
+test("the shipped discovery file rotates a keyword pool across the twelve categories", () => {
   const discovery = loadDiscoveryConfig(JSON.parse(readFileSync(join(root, "data", "discovery.json"), "utf8")));
+  const asins = JSON.parse(readFileSync(join(root, "data", "asins.json"), "utf8"));
   assert.equal(discovery.minDiscountPercent, 20);
   assert.equal(discovery.minRating, 4);
   assert.equal(discovery.maxDeals, 20);
-  assert.deepEqual(discovery.searches.map((search) => search.category).sort(), [...DISPLAY_CATEGORIES].sort());
-  assert.equal(new Set(discovery.searches.map((search) => search.keywords)).size, DISPLAY_CATEGORIES.length);
+  assert.equal(discovery.pagesPerKeyword, 3);
+  assert.equal(discovery.keywordsPerRun, 12);
+  assert.equal(discovery.maxRequests, 48);
+  assert.ok(discovery.pagesPerKeyword <= MAX_SEARCH_PAGE);
+  assert.equal(SEARCH_ITEM_COUNT, 10);
+  assert.equal(MAX_SEARCH_PAGE, 10);
+  const firstSeen = [];
+  for (const search of discovery.searches) {
+    if (!firstSeen.includes(search.category)) firstSeen.push(search.category);
+  }
+  assert.deepEqual(firstSeen, [...DISPLAY_CATEGORIES]);
+  const lengths = [];
+  for (const category of DISPLAY_CATEGORIES) {
+    const keywords = discovery.searches.filter((search) => search.category === category).map((search) => search.keywords);
+    assert.ok(keywords.length >= 5, category);
+    assert.equal(new Set(keywords).size, keywords.length, category);
+    lengths.push(keywords.length);
+  }
+  assert.ok(new Set(lengths).size > 1);
   assert.ok(discovery.searches.every((search) => search.searchIndex));
   assert.deepEqual(discovery.priority.map((search) => search.category), ["Home", "Gaming", "Gaming"]);
   assert.ok(discovery.priority.every((search) => search.priority === true));
+
+  const selected = selectDailySearches(discovery, "2026-11-12");
+  assert.equal(selected.length, 15);
+  assert.deepEqual(selected.slice(0, 3).map((search) => search.keywords), [
+    "permanent outdoor lights",
+    "gaming microphone",
+    "gaming headset",
+  ]);
+  const daily = selected.slice(3);
+  assert.equal(new Set(daily.map((search) => search.category)).size, DISPLAY_CATEGORIES.length);
+  const day = daysSinceEpoch("2026-11-12");
+  const start = day % DISPLAY_CATEGORIES.length;
+  const ordered = [...DISPLAY_CATEGORIES.slice(start), ...DISPLAY_CATEGORIES.slice(0, start)];
+  assert.deepEqual(daily.map((search) => search.category), ordered);
+  for (const search of daily) {
+    const options = discovery.searches.filter((entry) => entry.category === search.category);
+    assert.equal(search.keywords, options[day % options.length].keywords);
+  }
+  const nextDay = selectDailySearches(discovery, "2026-11-13").slice(3).map((search) => search.keywords);
+  assert.notDeepEqual(daily.map((search) => search.keywords), nextDay);
+  assert.deepEqual(selectDailySearches(discovery, "2026-11-12"), selected);
+
+  const getItems = Math.ceil(asins.length / 10);
+  assert.equal(getItems, 2);
+  const worstCase = getItems + selected.length * discovery.pagesPerKeyword;
+  assert.equal(worstCase, 47);
+  assert.ok(worstCase <= discovery.maxRequests);
 });
 
-test("discovery config rejects typos and too many searches", () => {
+test("discovery config rejects typos, duplicate keywords, and budgets the API will not allow", () => {
   assert.throws(() => loadDiscoveryConfig({ extra: true }), /Unknown field "extra"/);
-  const searches = Array.from({ length: 17 }, (_, index) => ({ keywords: `item ${index}`, category: "Tech" }));
+  const tooMany = Array.from({ length: 97 }, (_, index) => ({ keywords: `item ${index}`, category: "Tech" }));
   assert.throws(() => loadDiscoveryConfig({
     minDiscountPercent: 20,
     minRating: 4,
     maxDeals: 20,
-    searches,
+    searches: tooMany,
+  }), /at most 96/);
+  assert.throws(() => loadDiscoveryConfig({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    keywordsPerRun: 14,
+    searches: [{ keywords: "electronics", category: "Tech" }],
+    priority: [
+      { keywords: "one", category: "Home" },
+      { keywords: "two", category: "Home" },
+      { keywords: "three", category: "Home" },
+    ],
   }), /at most 16/);
+  assert.throws(() => loadDiscoveryConfig({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 11,
+    searches: [{ keywords: "electronics", category: "Tech" }],
+  }), /pagesPerKeyword must be a whole number from 1 to 10/);
+  assert.throws(() => loadDiscoveryConfig({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    searches: [
+      { keywords: "electronics", category: "Tech" },
+      { keywords: "electronics", category: "Tech" },
+    ],
+  }), /more than once/);
   assert.throws(() => loadDiscoveryConfig([]), /JSON object/);
 });
 
-test("search requests stay on one page and use the site associate tag", () => {
+test("search requests use the site associate tag and a page from 1 to 10", () => {
   const body = buildSearchBody(
     { keywords: "coffee", searchIndex: "GroceryAndGourmetFood", category: "Drinks" },
     { partnerTag: ASSOCIATE_TAG, minDiscountPercent: 20, minRating: 4 },
@@ -108,6 +186,28 @@ test("search requests stay on one page and use the site associate tag", () => {
   assert.equal(body.partnerTag, ASSOCIATE_TAG);
   assert.equal(body.itemCount, 10);
   assert.equal(body.itemPage, 1);
+  const pageTwo = buildSearchBody(
+    { keywords: "coffee", category: "Drinks" },
+    { partnerTag: ASSOCIATE_TAG, minDiscountPercent: 20, minRating: 4, itemPage: 2 },
+  );
+  assert.equal(pageTwo.itemPage, 2);
+  assert.equal(pageTwo.itemCount, SEARCH_ITEM_COUNT);
+  assert.throws(() => buildSearchBody(
+    { keywords: "coffee", category: "Drinks" },
+    { itemPage: 11 },
+  ), /itemPage must be a whole number from 1 to 10/);
+  const seen = new Set(["B0SAVED"]);
+  assert.equal(shouldStopKeyword([], seen), true);
+  assert.equal(shouldStopKeyword([{ asin: "B0SAVED" }, { asin: "B0SAVED" }], seen), true);
+  assert.equal(shouldStopKeyword(
+    Array.from({ length: 10 }, (_, index) => ({ asin: `B0NEW${index}` })),
+    seen,
+  ), false);
+  assert.equal(shouldStopKeyword(
+    Array.from({ length: 10 }, (_, index) => ({ asin: `B0NEW${index}` })),
+    seen,
+    { page: 1, totalResultCount: 10 },
+  ), true);
   assert.equal(body.minSavingPercent, 20);
   assert.equal(body.minReviewsRating, 4);
   assert.equal(body.availability, "Available");
@@ -409,6 +509,7 @@ test("live refresh keeps hand-picked priority, fills categories, and preserves d
     minDiscountPercent: 20,
     minRating: 4,
     maxDeals: 20,
+    pagesPerKeyword: 1,
     searches: [
       { keywords: "electronics", searchIndex: "Electronics", category: "Tech" },
       { keywords: "home organization", searchIndex: "HomeAndKitchen", category: "Home" },
@@ -501,6 +602,7 @@ test("a rate limit is retried and a lasting limit leaves deals.json unchanged", 
     minDiscountPercent: 20,
     minRating: 4,
     maxDeals: 20,
+    pagesPerKeyword: 1,
     searches: [{ keywords: "electronics", searchIndex: "Electronics", category: "Tech" }],
   }));
   const waits = [];
@@ -563,5 +665,355 @@ test("a rate limit is retried and a lasting limit leaves deals.json unchanged", 
   );
   assert.equal(searchCalls, 4);
   assert.equal(readFileSync(dealsPath, "utf8"), body);
+  rmSync(dir, { recursive: true, force: true });
+});
+
+function writeDiscoveryRun(dir, { discovery, deals = [], asins = [] }) {
+  const dealsPath = join(dir, "deals.json");
+  writeFileSync(dealsPath, `${JSON.stringify({ deals }, null, 2)}\n`);
+  writeFileSync(join(dir, "asins.json"), JSON.stringify(asins));
+  writeFileSync(join(dir, "discovery.json"), JSON.stringify(discovery));
+  return dealsPath;
+}
+
+function runDiscovery(dir, dealsPath, fetchImpl, date) {
+  return refreshDealsFile({
+    asinsPath: join(dir, "asins.json"),
+    dealsPath,
+    discoveryPath: join(dir, "discovery.json"),
+    env: {
+      CREATORS_API_CREDENTIAL_ID: "credential-id",
+      CREATORS_API_CREDENTIAL_SECRET: secret,
+    },
+    fetchImpl,
+    sleep: async () => {},
+    today: date,
+    partnerTag: ASSOCIATE_TAG,
+  });
+}
+
+test("later pages are fetched until the new-deal cap, and saved ASINs do not count", async () => {
+  assert.equal(ASSOCIATE_TAG, "onamzeddie0c-20");
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-pages-"));
+  const date = "2026-11-12";
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 2,
+    pagesPerKeyword: 3,
+    keywordsPerRun: 2,
+    maxRequests: 20,
+    searches: [
+      { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
+      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+    ],
+  };
+  const saved = {
+    id: "B0OLD0000001",
+    title: "Already saved",
+    price: 10,
+    percentOff: 25,
+    category: "Tech",
+    url: "https://www.amazon.com/dp/B0OLD0000001",
+    added: "2026-11-10",
+    sample: false,
+    source: "api",
+    discovered: true,
+    image: "https://m.media-amazon.com/images/I/old.jpg",
+  };
+  const handwritten = {
+    id: "B0HAND000001",
+    title: "Hand written",
+    price: 8,
+    percentOff: 0,
+    category: "Home",
+    url: "https://www.amazon.com/dp/B0HAND000001",
+    added: "2026-11-10",
+    sample: false,
+    image: "https://example.com/hand.jpg",
+  };
+  const dealsPath = writeDiscoveryRun(dir, { discovery, deals: [saved, handwritten] });
+  const selected = selectDailySearches(loadDiscoveryConfig(discovery), date);
+  const first = selected[0].keywords;
+  const second = selected[1].keywords;
+  const calls = [];
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    assert.equal(body.partnerTag, ASSOCIATE_TAG);
+    assert.equal(body.itemCount, 10);
+    calls.push(`${body.keywords}#${body.itemPage}`);
+    if (body.keywords === first && body.itemPage === 1) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: {
+            items: [
+              item({ asin: "B0PAGE000001", percent: 40, rating: 4.6, title: "New earbuds" }),
+              item({ asin: "B0OLD0000001", percent: 50, rating: 4.8, title: "Already saved" }),
+              item({ asin: "B0HAND000001", percent: 60, rating: 4.9, title: "Hand written" }),
+            ],
+          },
+        }),
+      };
+    }
+    if (body.keywords === first && body.itemPage === 2) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: {
+            items: [item({ asin: "B0PAGE000002", percent: 33, rating: 4.2, title: "Second page earbuds" })],
+          },
+        }),
+      };
+    }
+    throw new Error(`unexpected search ${body.keywords} page ${body.itemPage}`);
+  };
+  const result = await runDiscovery(dir, dealsPath, fetchImpl, date);
+  assert.deepEqual(calls, [`${first}#1`, `${first}#2`]);
+  assert.equal(calls.includes(`${second}#1`), false);
+  assert.equal(result.addedDiscoveries, 2);
+  assert.equal(result.requests, 2);
+  const written = JSON.parse(readFileSync(dealsPath, "utf8"));
+  const ids = written.deals.map((deal) => deal.id);
+  assert.equal(ids.filter((id) => id === "B0HAND000001").length, 1);
+  assert.equal(ids.includes("B0PAGE000001"), true);
+  assert.equal(ids.includes("B0PAGE000002"), true);
+  assert.equal(written.deals.find((deal) => deal.id === "B0OLD0000001").percentOff, 50);
+  assert.equal(written.deals.find((deal) => deal.id === "B0OLD0000001").added, "2026-11-10");
+  assert.equal(written.deals.filter((deal) => deal.discovered && deal.added === date).length, 2);
+  rmSync(dir, { recursive: true, force: true });
+});
+
+test("a page with no new ASINs stops that keyword and the next keyword still runs", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-dry-page-"));
+  const date = "2026-11-12";
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 3,
+    keywordsPerRun: 2,
+    maxRequests: 20,
+    searches: [
+      { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
+      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+    ],
+  };
+  const known = ["B0KNOWN00001", "B0KNOWN00002"].map((id) => ({
+    id,
+    title: id,
+    price: 10,
+    percentOff: 30,
+    category: "Tech",
+    url: `https://www.amazon.com/dp/${id}`,
+    added: "2026-11-10",
+    sample: false,
+    source: "api",
+    discovered: true,
+    image: "https://m.media-amazon.com/images/I/old.jpg",
+  }));
+  const dealsPath = writeDiscoveryRun(dir, { discovery, deals: known });
+  const selected = selectDailySearches(loadDiscoveryConfig(discovery), date);
+  const first = selected[0].keywords;
+  const second = selected[1].keywords;
+  const calls = [];
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    calls.push(`${body.keywords}#${body.itemPage}`);
+    if (body.keywords === first) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: { items: known.map((deal) => item({ asin: deal.id, percent: 30, rating: 4.4 })) },
+        }),
+      };
+    }
+    if (body.keywords === second && body.itemPage === 1) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: { items: [item({ asin: "B0FRESH00001", percent: 40, rating: 4.5, title: "Yoga block" })] },
+        }),
+      };
+    }
+    if (body.keywords === second && body.itemPage === 2) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: { items: [item({ asin: "B0FRESH00001", percent: 40, rating: 4.5, title: "Yoga block" })] },
+        }),
+      };
+    }
+    throw new Error(`unexpected search ${body.keywords} page ${body.itemPage}`);
+  };
+  const result = await runDiscovery(dir, dealsPath, fetchImpl, date);
+  assert.deepEqual(calls, [`${first}#1`, `${second}#1`, `${second}#2`]);
+  assert.equal(result.addedDiscoveries, 1);
+  const written = JSON.parse(readFileSync(dealsPath, "utf8"));
+  assert.equal(written.deals.filter((deal) => deal.id === "B0FRESH00001").length, 1);
+  rmSync(dir, { recursive: true, force: true });
+});
+
+test("the request budget stops further SearchItems calls and still saves deals already fetched", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-budget-"));
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 3,
+    maxRequests: 1,
+    searches: [
+      { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
+      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+    ],
+  };
+  const dealsPath = writeDiscoveryRun(dir, { discovery });
+  const calls = [];
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    calls.push(`${body.keywords}#${body.itemPage}`);
+    return {
+      ok: true,
+      json: async () => ({
+        searchResult: { items: [item({ asin: "B0BUDGET0001", percent: 44, rating: 4.4, title: "Budget earbuds" })] },
+      }),
+    };
+  };
+  const result = await runDiscovery(dir, dealsPath, fetchImpl, "2026-11-11");
+  assert.deepEqual(calls, ["wireless earbuds#1"]);
+  assert.equal(result.requests, 1);
+  assert.equal(result.addedDiscoveries, 1);
+  rmSync(dir, { recursive: true, force: true });
+});
+
+test("GetItems batches still run when they meet the request budget, and search does not start", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-getitems-budget-"));
+  const asins = Array.from({ length: 12 }, (_, index) => ({ asin: `B0BATCH0000${index}` }));
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 3,
+    maxRequests: 1,
+    searches: [{ keywords: "electronics", searchIndex: "Electronics", category: "Tech" }],
+  };
+  const dealsPath = writeDiscoveryRun(dir, { discovery, asins });
+  const calls = [];
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    if (String(url).includes("searchItems")) throw new Error("search should not run");
+    calls.push(body.itemIds.length);
+    return {
+      ok: true,
+      json: async () => ({
+        itemsResult: {
+          items: body.itemIds.map((asin) => item({ asin, percent: 30, group: "Electronics", title: asin })),
+        },
+      }),
+    };
+  };
+  const result = await runDiscovery(dir, dealsPath, fetchImpl, "2026-11-12");
+  assert.deepEqual(calls, [10, 2]);
+  assert.equal(result.requests, 2);
+  const written = JSON.parse(readFileSync(dealsPath, "utf8"));
+  assert.equal(written.deals.length, 12);
+  rmSync(dir, { recursive: true, force: true });
+});
+
+test("a throttle response waits for retryAfterSeconds", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-retry-after-"));
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 1,
+    searches: [{ keywords: "electronics", searchIndex: "Electronics", category: "Tech" }],
+  };
+  const dealsPath = writeDiscoveryRun(dir, { discovery });
+  const waits = [];
+  let searchCalls = 0;
+  const fetchImpl = async (url) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    searchCalls += 1;
+    if (searchCalls === 1) {
+      return { ok: false, status: 429, json: async () => ({ retryAfterSeconds: 9, message: secret }) };
+    }
+    return {
+      ok: true,
+      json: async () => ({
+        searchResult: { items: [item({ asin: "B0RETRY00001", percent: 40, rating: 4.5 })] },
+      }),
+    };
+  };
+  const result = await refreshDealsFile({
+    asinsPath: join(dir, "asins.json"),
+    dealsPath,
+    discoveryPath: join(dir, "discovery.json"),
+    env: {
+      CREATORS_API_CREDENTIAL_ID: "credential-id",
+      CREATORS_API_CREDENTIAL_SECRET: secret,
+    },
+    fetchImpl,
+    sleep: async (ms) => { waits.push(ms); },
+    today: "2026-11-12",
+  });
+  assert.deepEqual(waits, [9000]);
+  assert.equal(result.addedDiscoveries, 1);
+  assert.equal(JSON.parse(readFileSync(dealsPath, "utf8")).deals[0].id, "B0RETRY00001");
+  rmSync(dir, { recursive: true, force: true });
+});
+
+test("a failed later page leaves deals.json unchanged", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-page-fail-"));
+  const dealsPath = writeDiscoveryRun(dir, {
+    discovery: {
+      minDiscountPercent: 20,
+      minRating: 4,
+      maxDeals: 20,
+      pagesPerKeyword: 3,
+      searches: [{ keywords: "electronics", searchIndex: "Electronics", category: "Tech" }],
+    },
+  });
+  const before = readFileSync(dealsPath, "utf8");
+  let searchCalls = 0;
+  const fetchImpl = async (url) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    searchCalls += 1;
+    if (searchCalls === 1) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: { items: [item({ asin: "B0PAGE000009", percent: 40, rating: 4.5 })] },
+        }),
+      };
+    }
+    return { ok: false, status: 503, json: async () => ({ message: secret }) };
+  };
+  await assert.rejects(
+    () => runDiscovery(dir, dealsPath, fetchImpl, "2026-11-12"),
+    (error) => {
+      assert.equal(error.message.includes(secret), false);
+      assert.match(error.message, /SearchItems request failed \(503\)/);
+      return true;
+    },
+  );
+  assert.equal(searchCalls, 2);
+  assert.equal(readFileSync(dealsPath, "utf8"), before);
   rmSync(dir, { recursive: true, force: true });
 });
