@@ -2,6 +2,372 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0HCV9GQSL",
+      "title": "50000mAh Portable Charger Power Bank, Built in Cables, 22.5W Fast Charging | Ultra-High Capacity, Travel Essential, Charge 4 Devices, Flashlight, for iPhone 18/17/16/15 Series, Samsung, iPad & Laptops",
+      "image": "https://m.media-amazon.com/images/I/41+rlSqonQL._SL500_.jpg",
+      "price": 34.99,
+      "percentOff": 35,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HCV9GQSL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 53.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Massive 50000mAh Capacity for Long-Lasting Power: Stay powered wherever life takes you with a high-capacity 50000mAh portable charger. Charge compatible smartphones multiple times on a single charge, making it a reliable companion for travel, camping, business trips, outdoor adventures, emergencies,",
+        "Built-In 2 Cables for iPhone and USB-C Devices – Ready to Charge Anytime: Leave extra charging cables behind. This portable power bank features built-in USB-C and iOS cables, plus an additional USB-C port, allowing you to charge multiple devices conveniently right out of the box. Perfect for keeping"
+      ]
+    },
+    {
+      "id": "B0C1MSXC2R",
+      "title": "Parchment Paper Sheets, 9x13 In Non-Stick Precut Baking Parchment for Baking, Grilling, Air Fryer, Steaming, and More (Unbleached) - Quarter Sheet Size, Perfect for Bread, Cakes, Cookies, 100PCS",
+      "image": "https://m.media-amazon.com/images/I/41ycKbxoGoL._SL500_.jpg",
+      "price": 7.98,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0C1MSXC2R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 11.39,
+      "expires": "2026-11-19",
+      "features": [
+        "Natural, Unbleached Parchment Paper: Made from natural wood pulp, our parchment paper baking sheet is completely free from fluorescent agents, chlorine, and other harmful chemicals. It's food-grade, waterproof and BPA-FREE. Also the paper sheets is biodegradable, eco-friendly.",
+        "Pre-cut and Perfectly Sized Parchment Paper Sheets: Are you tired of cutting rolled parchment paper and it will curl? With 100 sheets of 9\"x13\" baking paper, each sheet is precisely pre-cut to fit standard quarter sheet baking pans or large airfyers, making baking a breeze. No more measuring and cut"
+      ]
+    },
+    {
+      "id": "B08HDN6M4Z",
+      "title": "PetFusion Premium Cat and Dog Cooling Blanket. Lightweight Pet Blanket | Machine Washable | Multiple Sizes: for Pets Small to Extra-Large | Multiple Colors: Grey and Brown",
+      "image": "https://m.media-amazon.com/images/I/31+zmV+lTsL._SL500_.jpg",
+      "price": 21.48,
+      "percentOff": 52,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B08HDN6M4Z?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 44.99,
+      "features": [
+        "LIGHTWEIGHT COOLING BLANKET: Releases dog and cat body heat to keep your animal comfortable during all seasons. This cooling soft blanket comes in multiple sizes to meet the needs of your small dog or cat, medium dog, large dog or extra large dog. Available in grey or brown.",
+        "MULTIPLE USES: Fold dog blanket to create a thick dog cooling blanket for use on the floor, furniture, within a dog carrier or as added a topper on their dog crate mat or dog couch. Use this blanket with a dog bed to create a calming dog bed that keeps your pet comfortable and reduces pet anxiety. U"
+      ]
+    },
+    {
+      "id": "B0055QAD8I",
+      "title": "Florida Water Cologne 7.5 Oz - Three (3) Plastic Bottles",
+      "image": "https://m.media-amazon.com/images/I/41Lv595cZrL._SL500_.jpg",
+      "price": 11.99,
+      "percentOff": 30,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0055QAD8I?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 17.12,
+      "features": [
+        "Refreshing and leaves the skin fragrant",
+        "Faint and elusive, yet delightful scent"
+      ]
+    },
+    {
+      "id": "B0CQ9PQ85X",
+      "title": "Maison Perrier Forever Lime Sparkling Water, 0 Calories, 24 Pack | Crafted in France with bold bubbles, refreshing lime flavor, no sweeteners, and 0 calories. 24 pack.",
+      "image": "https://m.media-amazon.com/images/I/419svk9kFEL._SL500_.jpg",
+      "price": 17.98,
+      "percentOff": 25,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B0CQ9PQ85X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 23.96,
+      "features": [
+        "Three packs of eight 11.15 fl oz cans of Maison Perrier Forever Lime Flavored Sparkling Water SNAP and EBT item in eligible states",
+        "An exciting new range of premium sparkling water inspired by the iconic legacy of Perrier, Maison Perrier Forever Lime brings you a new product with the same uplifting experience you love"
+      ]
+    },
+    {
+      "id": "B00QIT9NDW",
+      "title": "Lysol All Purpose Cleaner Spray, Disinfectant, Lemon, 32oz | Multipurpose Cleaner, Sanitizer & Disinfectant Spray, Degreaser, Multi-Surface Kitchen & Bathroom Cleaner, Cleaning Supplies",
+      "image": "https://m.media-amazon.com/images/I/41w0uD9S5FL._SL500_.jpg",
+      "price": 3.84,
+      "percentOff": 36,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00QIT9NDW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 5.99,
+      "features": [
+        "ALL PURPOSE CLEANER KILLS 99.9% OF VIRUSES and BACTERIA: Lysol All Purpose disinfectant spray kills 99.9% of viruses and bacteria including the COVID-19 virus to help keep your family protected",
+        "KILLS 99.9% OF GERMS FOR A DEEP CLEAN: This disinfectant spray kills 99.9% of germs, removes soap scum and cuts through tough grease and grime — a versatile, multipurpose cleaner you can count on"
+      ]
+    },
+    {
+      "id": "B0DFYPVPRT",
+      "title": "Baseus Portable Charger, 10000mAh Fast Charging Power Bank, 22.5W PD3.0 QC4+ Battery Pack Built-in USB C Braided Cable, Travel Essentials Portable Phone Charger for iPhone 18 17 16 15, iPad, S26/S25",
+      "image": "https://m.media-amazon.com/images/I/31ONMo8yLgL._SL500_.jpg",
+      "price": 17.99,
+      "percentOff": 22,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0DFYPVPRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.99,
+      "expires": "2026-11-16",
+      "features": [
+        "⚡【Charge Fast Anywhere】Baseus Bipow power bank delivers 22.5W Power Delivery fast charging — power your i Phone 16 to 57% in just 30min. Also supports PD 3.0, QC 3.0 and other fast-charging protocols. Both the built-in USB-C cable and the USB-C port support input and output. Unlike other devices on",
+        "⚡ 【Pocket-Friendly Power Bank】At just 4.8x2.7x0.7 inches, this compact portable phone charger slips effortlessly into your backpack, clutch purse, or gym bag without bulging. The 10,000mAh battery bank cell capacity gives you enough power to charge the iPhone 16 Pro Max 1.5 times, the S25 1.5 times,"
+      ]
+    },
+    {
+      "id": "B0H1FQTTN4",
+      "title": "JODEVI 5'' x 4'' Small Baking Dishes, Set of 4 Mini Ceramic Baking Pans | Fits most 1-cup freezer tray portions plus JoDeVi 1.4-cup, Lead-free ceramic, Meal prep friendly, Oven microwave safe",
+      "image": "https://m.media-amazon.com/images/I/31341NfYgLL._SL500_.jpg",
+      "price": 19.94,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0H1FQTTN4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 28.49,
+      "expires": "2026-11-18",
+      "features": [
+        "Baking Dishes Made To Fit Freezer Tray Portions: Sized to fit JoDeVi 1.4-cup portions and most 1-cup silicone freezer tray portions, this baking dish set lets frozen meal cubes drop in neatly with less trimming, less mess, and easier freezer-to-oven meal prep",
+        "Cook Healthier with Premium Ceramic: 100% non-toxic, odor-free, and free from plastic. Oven safe up to 450°F, it won’t leach chemicals during high-heat baking, giving you cleaner, more reassuring meals for the whole family"
+      ]
+    },
+    {
+      "id": "B0GDDYZF7N",
+      "title": "Warmrest Waterproof Dog Blanket for Large Dogs, Fluffy Faux Fur, 40 X 50'' | Soft Plush Reversible Pet Blankets for Couch and Dog Bed. Washable Pet Throw, Throw for Dogs and Cats, Tie‑Dye Grey",
+      "image": "https://m.media-amazon.com/images/I/51F3Bu9VKFL._SL500_.jpg",
+      "price": 13.49,
+      "percentOff": 50,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0GDDYZF7N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.99,
+      "expires": "2026-11-25",
+      "features": [
+        "[Dual-Sided Comfort & Calming Support]: This Warmrest dog blanket features a reversible design with soft sherpa fleece on one side and a printed faux rabbit fur on the other. Mimicking a pet's fur, it provides a warm, secure embrace that helping pets to feel secure and significantly improves sleep q",
+        "[Full Waterproof Furniture Protection]: Engineered with an internal waterproof barrier, this waterproof dog blanket effectively blocks liquids, urine, and accidental spills, making it an ideal waterproof blanket for dogs. It also minimizes damage from scratching and pet hair, safeguarding your sofa,"
+      ]
+    },
+    {
+      "id": "B0CD87HL46",
+      "title": "Victoria's Secret Bare Eau de Parfum, Bare Rose - 3.4 fl oz",
+      "image": "https://m.media-amazon.com/images/I/31rMq-ZKIvL._SL500_.jpg",
+      "price": 59.96,
+      "percentOff": 25,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0CD87HL46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.95,
+      "features": [
+        "Fresh and floral, Bare Rose blends vivid petals and warm woods with a proprietary blend of musks that mixes with your body chemistry to reveal your signature.",
+        "Fragrance type: Warm Floral"
+      ]
+    },
+    {
+      "id": "B01LHMHP0C",
+      "title": "Sprite Zero Sugar Lemon-Lime Caffeine-Free Soda Bottles, 16.9 fl oz, 6 Pack | Naturally flavored soft drink, zero calories",
+      "image": "https://m.media-amazon.com/images/I/41Dm6ZnGjNL._SL500_.jpg",
+      "price": 4.37,
+      "percentOff": 21,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B01LHMHP0C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 5.52,
+      "features": [
+        "Experience the crisp taste of Sprite Zero Sugar lemon-lime flavored sodas",
+        "Boldly refreshing soft drinks made with 100% natural flavors, zero sugar, zero calories and no caffeine, ever"
+      ]
+    },
+    {
+      "id": "B00HSC9F2C",
+      "title": "Clorox Disinfecting Wipes Variety Pack Bleach Free 75 Count 3 Pack | Kills Cold and Flu Viruses, 100 Plus Surface Safe, Germ Hotspot Disinfectant, Bleach Free, 75 Count, 3 Pack",
+      "image": "https://m.media-amazon.com/images/I/51Qjc7JmLWL._SL500_.jpg",
+      "price": 11.79,
+      "percentOff": 21,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00HSC9F2C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "features": [
+        "COLD AND FLU SEASON ESSENTIAL: These wipes kill 99.9% of viruses and bacteria (3), including cold and flu viruses, on hard non-porous surfaces when used as directed. Package May Vary",
+        "HOW MUCH MORE DO THEY CLEAN? Each wipe cleans 2x more than the other guys on soap scum for tough messes (1), so you get more clean with every single wipe"
+      ]
+    },
+    {
+      "id": "B0DJ6XV88H",
+      "title": "100 Pcs Disposable Parchment Papers for CHEFMAN Air Fryer 10L Family Size | Air Fryer Liners, Natural Wood Pulp, Unbleached and Chlorine-Free, Food-Grade Safe, Trim to Fit Any Basket, Non-Stick",
+      "image": "https://m.media-amazon.com/images/I/31V+d839SNL._SL500_.jpg",
+      "price": 6.99,
+      "percentOff": 22,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DJ6XV88H?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9,
+      "features": [
+        "Important Usage Tips - Do not use the liners during the preheating cycle. Always place the liner at the bottom of the basket after preheating is complete and avoid direct contact with the heating elements, as they can reach temperatures above the paper's heat resistance. Be sure to add enough food o",
+        "Important Usage Tips - Do not use the liners during the preheating cycle. Always place the liner at the bottom of the basket after preheating is complete and avoid direct contact with the heating elements, as they can reach temperatures above the paper's heat resistance. Be sure to add enough food o"
+      ]
+    },
+    {
+      "id": "B07QZ8LHDZ",
+      "title": "K&H Outdoor Elevated Dog Bed Pet Cot Replacement Cover, XL 50x32in, Gray | Designed to fit K&H XL Pet Cots (Sold Separately), Indoor Outdoor Dog Bed, Breathable Cooling Mesh Center, Machine Washable",
+      "image": "https://m.media-amazon.com/images/I/31ktDoYA71L._SL500_.jpg",
+      "price": 16.44,
+      "percentOff": 34,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B07QZ8LHDZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 24.98,
+      "features": [
+        "REPLACEMENT K&H PET COT COVER: Raised dog bed cover helps pets stay cool in warm spring and summer months by allowing air to circulate; designed for K&H Pet Cots only",
+        "STRONG & STURDY: Dog cot cover is made with a heavy denier that holds over 300 pounds, durable and tested for strength; Cover is machine washable an can even be hosed off outdoors"
+      ]
+    },
+    {
+      "id": "B01LOC9N9G",
+      "title": "Lysol Disinfectant Spray, Sanitizer, Crisp Linen, 12.5 oz, 2 Pack | Multi-Surface Disinfecting & Sanitizing Antibacterial Room Spray, Deodorizer Spray, Home & Bathroom Cleaning Supplies",
+      "image": "https://m.media-amazon.com/images/I/51Dya5+pmOL._SL500_.jpg",
+      "price": 9.19,
+      "percentOff": 21,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B01LOC9N9G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 11.7,
+      "features": [
+        "LYSOL DISINFECTANT SPRAY: This household essential is tested and proven to kill 99.9% of viruses and bacteria(1), including the Covid-19 virus, Hantavirus(5), Norovirus, and cold and flu(2). Perfect for any room, this Lysol spray will sanitize, disinfect, and deodorize your home.",
+        "DISINFECTING AND SANITIZING SPRAY: Lysol disinfects hard non-porous contact surfaces and sanitizes soft surfaces. This multipurpose spray can be used in the home and kitchen, to disinfect toys, couches, counters(3), bathrooms, and over 100 more surfaces."
+      ]
+    },
+    {
+      "id": "B081T3HBNF",
+      "title": "E-far 9 Inch Round Canning Cooking Racks, Stainless Steel Round Steaming Baking Cooling Rack Set of 2, Multi-Purpose for Air Fryer Pressure Cooker, Dishwasher Safe",
+      "image": "https://m.media-amazon.com/images/I/41loD2VVwSL._SL500_.jpg",
+      "price": 11.99,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B081T3HBNF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "features": [
+        "HEALTHY MATERIAL - E-far round cooling racks are made of pure stainless steel to ensure no harmful substance into food, Rust free and healthy racks to meet your daily kitchen use",
+        "STURDY & DURABLE - High hardness stainless to resist deformation, Solid welded thick wires sturdy enough to lift heavy food, Mirror finish surface for easy clean up, Dishwasher safe"
+      ]
+    },
+    {
+      "id": "B07BJDR6JV",
+      "title": "Best Friends by Sheri Cozy Cuddler Ilan Small Dog Bed, Tide Pool Blue, 24\" | Cozy Cat & Burrow Dog Bed, Washable, Orthopedic Support, Attached Blanket, Faux Fur & Microfiber, Pets Up to 25 lbs",
+      "image": "https://m.media-amazon.com/images/I/31n5bqwwWJL._SL500_.jpg",
+      "price": 23.49,
+      "percentOff": 33,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B07BJDR6JV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 34.99,
+      "features": [
+        "Cuddler Bed & Blanket in One: Attached pet blanket creates a den-like retreat for cats and small dogs who like to burrow up in cozy cave-like comfort; 24in bed is perfect for pets up to 25lbs",
+        "Round Donut Shape Calms & Soothes: Raised bolsters support your pet's head/neck and create a sense of security for deeper, more comfortable sleep"
+      ]
+    },
+    {
+      "id": "B0CG3K638P",
+      "title": "300 PCS Unbleached Parchment Paper Sheets for Baking 12x16 Inches, Non-Stick and Non-Toxic Precut Parchment Sheets for Oven, Cooking, Grilling, Air Fryer and Steaming - Fit for Half Sheet Pans",
+      "image": "https://m.media-amazon.com/images/I/51TBhZyuHlL._SL500_.jpg",
+      "price": 19.98,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0CG3K638P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 24.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Natural, Unbleached Parchment Paper: Made from natural wood pulp with a premium food-grade silicone oil coating, our parchment paper baking sheet is naturely unbleached, fluorescent-free, and quilon-free. It ensures safe, PFAS-free contact with your breads, meats, and pastries.",
+        "12\"x16\" Perfect Fit for Half Sheet Pans: Precisely pre-cut to 12x16 inches, these baking parchment paper sheets fit standard US half-sheet pans seamlessly with no trimming, cutting, or annoying curling required, saving you valuable time during daily meal prep and holiday baking."
+      ]
+    },
+    {
+      "id": "B0GQL4GM4H",
+      "title": "BALANCE Donut Dog Bed, 30 Inches Round Dog Bed Medium Size Dogs Washable, Orthopedic Calming Dogs Beds for Kitten, Fluffy Plush Faux Fur Pet Bed with Anti-Slip Bottom",
+      "image": "https://m.media-amazon.com/images/I/4125k+igN9L._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0GQL4GM4H?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Size Reminder: To ensure the best fit, please refer to the size guide and measure your pet’s length from head to base of tail before purchasing. Due to compression, slight measurement errors may occur, but always within 5% tolerance.",
+        "Calming & Anti-Anxiety: The calming dog bed features a comfortable supportive edge that offers excellent support for your pet's neck and head. This donut bed caters to pets who love to curl up, ensuring your pet feels safe and snug.It is also great for cats."
+      ]
+    },
+    {
+      "id": "B0H8Y1XSD2",
+      "title": "Unbleached Parchment Paper Roll, 13 in x 135 ft, 150 Sq Ft | Built-In Cutter, Non-Stick, Oven Safe to 450℉, Easy to Cut for Any Pan, Ideal for Baking & Cooking, Perfect for Air Fryer",
+      "image": "https://m.media-amazon.com/images/I/41ypD8kvS5L._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0H8Y1XSD2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "STANDARD PAN WIDTH & BUILT-IN CUTTER: This parchment paper roll (13 in x 135 ft) matches 13 in wide baking pans without extra width trimming. Made of durable parchment paper, it features a built-in metal serrated cutter so you can easily cut custom sheets with zero hassle",
+        "HEAT-RESISTANT UP TO 450℉: Parchment paper for baking safe for oven use up to 450℉ without scorching, curling, or releasing fumes. Made of natural wood pulp, this unbleached parchment paper features a food-grade silicone coating that meets food contact standards for all your baking"
+      ]
+    },
+    {
       "id": "B0HF8D3TBJ",
       "title": "UIRWAY Permanent Outdoor Lights S3, Removable Press-Fit Clip, 100ft 60 LEDs | IP68 Waterproof, Smart Outdoor Eaves Lights, 60lm, 111 Modes for Christmas, Everyday Lighting, App, Voice & Remote Control",
       "image": "https://m.media-amazon.com/images/I/51b20sgvtFL._SL500_.jpg",
@@ -1589,7 +1955,7 @@
       "id": "B0FLKJ7FH7",
       "title": "HyperX SoloCast 2 USB Condenser Gaming Microphone | 24-bit | 96kHz | Cardioid | USB-C | Tap-to-Mute | PC Compatible",
       "image": "https://m.media-amazon.com/images/I/31PWz6pDdjL._SL500_.jpg",
-      "price": 44.98,
+      "price": 44.99,
       "percentOff": 25,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
