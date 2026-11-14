@@ -4,14 +4,18 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import { ASSOCIATE_TAG } from "../js/affiliate.js";
+import { buildFeedXml } from "../scripts/build-feed.js";
 import {
   chunkList,
   fetchCreatorsItems,
   loadAsinEntries,
   mergeApiDeals,
+  normalizeStoredDealUrl,
+  normalizeStoredDeals,
   redactSecrets,
   refreshDealsFile,
 } from "../scripts/fetch-deals.js";
+import { selectNewDeals } from "../scripts/post-discord.js";
 
 const secret = "super-secret-value-do-not-print";
 
@@ -263,7 +267,10 @@ test("live refresh merges API deals, drops MAP and expiry, and keeps samples", a
   assert.equal(written.deals.some((deal) => deal.id === "B0MAP0000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "B0END0000001"), false);
   assert.equal(written.deals.some((deal) => deal.id === "ex-ancient"), false);
-  assert.deepEqual(sample, handwritten);
+  assert.deepEqual(sample, {
+    ...handwritten,
+    url: `${handwritten.url}&tag=${ASSOCIATE_TAG}`,
+  });
   assert.equal(JSON.stringify(written).includes(secret), false);
   rmSync(dir, { recursive: true, force: true });
 });
@@ -301,4 +308,176 @@ test("missing credentials and GetItems failures do not reveal secrets", async ()
   assert.equal(redactSecrets(`token ${secret}`, [secret]).includes(secret), false);
   assert.deepEqual(chunkList([1, 2, 3], 2), [[1, 2], [3]]);
   assert.deepEqual(loadAsinEntries([]), []);
+});
+
+test("stored deal URLs swap the old Associates tag and fill a missing amazon.com tag", () => {
+  const legacy = "https://www.amazon.com/dp/B00SAYCXWG?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1";
+  assert.equal(
+    normalizeStoredDealUrl(legacy),
+    `https://www.amazon.com/dp/B00SAYCXWG?tag=${ASSOCIATE_TAG}&linkCode=osi&th=1&psc=1`,
+  );
+  assert.equal(
+    normalizeStoredDealUrl("https://www.amazon.com/dp/B0LATE0001?linkCode=ogi&tag=onamzeddie0c-20&psc=1"),
+    `https://www.amazon.com/dp/B0LATE0001?linkCode=ogi&tag=${ASSOCIATE_TAG}&psc=1`,
+  );
+  assert.equal(
+    normalizeStoredDealUrl("https://www.amazon.com/s?k=EXAMPLE%20Studio%20Earbuds"),
+    `https://www.amazon.com/s?k=EXAMPLE%20Studio%20Earbuds&tag=${ASSOCIATE_TAG}`,
+  );
+  assert.equal(
+    normalizeStoredDealUrl("https://www.amazon.com/dp/B0NONE0001"),
+    `https://www.amazon.com/dp/B0NONE0001?tag=${ASSOCIATE_TAG}`,
+  );
+  assert.equal(
+    normalizeStoredDealUrl("https://www.amazon.com/dp/B0EMPTY001?tag=&psc=1#reviews"),
+    `https://www.amazon.com/dp/B0EMPTY001?tag=${ASSOCIATE_TAG}&psc=1#reviews`,
+  );
+
+  const current = `https://www.amazon.com/dp/B0KEEP0001?tag=${ASSOCIATE_TAG}&linkCode=osi&th=1&psc=1`;
+  assert.equal(normalizeStoredDealUrl(current), current);
+  const other = "https://www.amazon.com/dp/B0OTHER001?tag=someone-20&psc=1";
+  assert.equal(normalizeStoredDealUrl(other), other);
+  const example = "https://www.amazon.com/dp/B0EXAMPLE1?tag=example";
+  assert.equal(normalizeStoredDealUrl(example), example);
+  assert.equal(normalizeStoredDealUrl("https://www.amazon.co.uk/dp/B00TEST"), "https://www.amazon.co.uk/dp/B00TEST");
+  assert.equal(normalizeStoredDealUrl("https://amzn.to/abc"), "https://amzn.to/abc");
+  assert.equal(
+    normalizeStoredDealUrl("https://amzn.to/abc?tag=onamzeddie0c-20&ref=1"),
+    `https://amzn.to/abc?tag=${ASSOCIATE_TAG}&ref=1`,
+  );
+  assert.equal(normalizeStoredDealUrl("not a url"), "not a url");
+  assert.equal(normalizeStoredDealUrl(""), "");
+
+  const stored = { id: "B0OLD", url: legacy, price: 10 };
+  const [next, untouched, empty] = normalizeStoredDeals([stored, { id: "no-url" }, null]);
+  assert.equal(stored.url, legacy);
+  assert.equal(next.id, "B0OLD");
+  assert.equal(next.price, 10);
+  assert.equal(next.url.includes("onamzeddie0c-20"), false);
+  assert.equal(new URL(next.url).searchParams.get("tag"), ASSOCIATE_TAG);
+  assert.equal(new URL(next.url).searchParams.get("linkCode"), "osi");
+  assert.equal(new URL(next.url).searchParams.get("th"), "1");
+  assert.equal(new URL(next.url).searchParams.get("psc"), "1");
+  assert.deepEqual(untouched, { id: "no-url" });
+  assert.equal(empty, null);
+});
+
+test("a refresh rewrites old deal URLs without counting them as new Discord deals", async () => {
+  const today = "2026-11-13";
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-tags-"));
+  const oldDeal = {
+    id: "B0OLD0TAG01",
+    title: "Older headset",
+    image: "https://m.media-amazon.com/images/I/old.jpg",
+    price: 59.99,
+    originalPrice: 79.99,
+    percentOff: 25,
+    category: "Gaming",
+    url: "https://www.amazon.com/dp/B0OLD0TAG01?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+    added: today,
+    sample: false,
+    source: "api",
+    discovered: true,
+  };
+  const missingTag = {
+    id: "hand-pan",
+    title: "Kept skillet",
+    image: "https://m.media-amazon.com/images/I/pan.jpg",
+    price: 12,
+    percentOff: 0,
+    category: "Kitchen",
+    url: "https://www.amazon.com/dp/B0HAND0001?linkCode=ogi&psc=1",
+    added: today,
+    sample: false,
+  };
+  const otherTag = {
+    id: "B0OTHER0001",
+    title: "Other tag lamp",
+    image: "https://m.media-amazon.com/images/I/lamp.jpg",
+    price: 8,
+    originalPrice: 10,
+    percentOff: 20,
+    category: "Home",
+    url: "https://www.amazon.com/dp/B0OTHER0001?tag=someone-20&psc=1",
+    added: today,
+    sample: false,
+    source: "api",
+  };
+  const before = [oldDeal, missingTag, otherTag];
+  const dealsPath = join(dir, "deals.json");
+  writeFileSync(dealsPath, `${JSON.stringify({ deals: before }, null, 2)}\n`);
+  writeFileSync(join(dir, "asins.json"), JSON.stringify([{ asin: "B0NEW0000001", category: "Home" }]));
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    assert.deepEqual(body.itemIds, ["B0NEW0000001"]);
+    return {
+      ok: true,
+      json: async () => ({
+        itemsResult: {
+          items: [{
+            asin: "B0NEW0000001",
+            detailPageURL: "https://www.amazon.com/dp/B0NEW0000001?tag=onamzeddie0c-20&linkCode=osi&th=1&psc=1",
+            images: { primary: { large: { url: "https://m.media-amazon.com/images/I/new.jpg" } } },
+            itemInfo: { title: { displayValue: "New widget" } },
+            offersV2: {
+              listings: [{
+                isBuyBoxWinner: true,
+                violatesMAP: false,
+                price: {
+                  money: { amount: 9 },
+                  savingBasis: { money: { amount: 18 } },
+                  savings: { percentage: 50 },
+                },
+              }],
+            },
+          }],
+        },
+      }),
+    };
+  };
+  const result = await refreshDealsFile({
+    asinsPath: join(dir, "asins.json"),
+    dealsPath,
+    env: {
+      CREATORS_API_CREDENTIAL_ID: "credential-id",
+      CREATORS_API_CREDENTIAL_SECRET: secret,
+    },
+    fetchImpl,
+    today,
+    partnerTag: ASSOCIATE_TAG,
+  });
+  assert.equal(result.changed, true);
+  assert.equal(result.addedDiscoveries, 0);
+  const written = JSON.parse(readFileSync(dealsPath, "utf8"));
+  const savedOld = written.deals.find((deal) => deal.id === oldDeal.id);
+  const savedMissing = written.deals.find((deal) => deal.id === missingTag.id);
+  const savedOther = written.deals.find((deal) => deal.id === otherTag.id);
+  const savedNew = written.deals.find((deal) => deal.id === "B0NEW0000001");
+  assert.equal(
+    savedOld.url,
+    `https://www.amazon.com/dp/B0OLD0TAG01?tag=${ASSOCIATE_TAG}&linkCode=osi&th=1&psc=1`,
+  );
+  assert.equal(savedOld.discovered, true);
+  assert.equal(savedOld.added, today);
+  assert.equal(
+    savedMissing.url,
+    `https://www.amazon.com/dp/B0HAND0001?linkCode=ogi&psc=1&tag=${ASSOCIATE_TAG}`,
+  );
+  assert.equal(savedOther.url, otherTag.url);
+  assert.equal(
+    savedNew.url,
+    `https://www.amazon.com/dp/B0NEW0000001?tag=${ASSOCIATE_TAG}&linkCode=osi&th=1&psc=1`,
+  );
+  assert.equal(JSON.stringify(written).includes("onamzeddie0c-20"), false);
+  assert.deepEqual(selectNewDeals(before, written.deals, { today }).map((deal) => deal.id), ["B0NEW0000001"]);
+  const feed = buildFeedXml(written.deals, { today });
+  assert.equal(feed.includes("onamzeddie0c-20"), false);
+  assert.equal(
+    feed.includes(`https://www.amazon.com/dp/B0OLD0TAG01?tag=${ASSOCIATE_TAG}&amp;linkCode=osi&amp;th=1&amp;psc=1`),
+    true,
+  );
+  rmSync(dir, { recursive: true, force: true });
 });

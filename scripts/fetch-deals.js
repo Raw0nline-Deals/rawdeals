@@ -15,6 +15,12 @@
  * Credentials come from the environment. They are never printed. A failed auth,
  * GetItems, or SearchItems call exits non-zero and does not write deals.json.
  *
+ * Before a successful run writes data/deals.json, every stored deal URL is
+ * normalized. tag=onamzeddie0c-20, or a missing tag on an amazon.com URL,
+ * becomes tag=ASSOCIATE_TAG. Other query parameters stay as they are. The
+ * deal id is not changed, so Discord still posts only ids that were absent
+ * from the previous file.
+ *
  * When AMAZONOFFERCODE_API_KEY is set, the same run then reads promo codes from
  * AmazonOfferCode and merges them in. A missing key or a failed promo call
  * does not undo the Creators API result.
@@ -302,8 +308,8 @@ export function mapCreatorsItemToDeal(item, extras = {}, added) {
     price,
     percentOff,
     category: extras.category || "General",
-    // partnerTag on the GetItems/SearchItems body is what tags this link.
-    // Store detailPageURL exactly as Amazon returned it.
+    // Keep the Creators API detailPageURL here. refreshDealsFile normalizes
+    // the Associates tag on every stored deal before it writes the file.
     url: item.detailPageURL,
     added,
     sample: false,
@@ -1124,6 +1130,93 @@ async function mergeOfferCodes({
   }
 }
 
+/** Older Associates tag still stored on deals the daily refresh did not re-fetch. */
+export const LEGACY_ASSOCIATE_TAG = "onamzeddie0c-20";
+
+function amazonComHost(hostname) {
+  const host = String(hostname || "").toLowerCase().replace(/\.$/, "");
+  return host === "amazon.com" || host.endsWith(".amazon.com");
+}
+
+function decodedTagValue(part) {
+  const eq = part.indexOf("=");
+  const key = eq === -1 ? part : part.slice(0, eq);
+  if (key !== "tag") return undefined;
+  const raw = eq === -1 ? "" : part.slice(eq + 1);
+  try {
+    return decodeURIComponent(raw.replaceAll("+", " "));
+  } catch {
+    return raw;
+  }
+}
+
+/**
+ * Point a stored deal URL at the current Associates tag.
+ * Replaces tag=onamzeddie0c-20 anywhere, and adds the tag when an amazon.com
+ * URL has none. Other query parameters, their order, and their encoding stay.
+ * A URL that already uses this tag is returned unchanged.
+ * @param {string} rawUrl
+ * @param {string} [tag]
+ * @returns {string}
+ */
+export function normalizeStoredDealUrl(rawUrl, tag = ASSOCIATE_TAG) {
+  if (typeof rawUrl !== "string" || !rawUrl) return rawUrl;
+  let parsed;
+  try {
+    parsed = new URL(rawUrl);
+  } catch {
+    return rawUrl;
+  }
+  const hashAt = rawUrl.indexOf("#");
+  const beforeHash = hashAt === -1 ? rawUrl : rawUrl.slice(0, hashAt);
+  const hash = hashAt === -1 ? "" : rawUrl.slice(hashAt);
+  const queryAt = beforeHash.indexOf("?");
+  const base = queryAt === -1 ? beforeHash : beforeHash.slice(0, queryAt);
+  const query = queryAt === -1 ? null : beforeHash.slice(queryAt + 1);
+  const parts = query == null ? [] : query.split("&").filter((part) => part.length > 0);
+  const amazon = amazonComHost(parsed.hostname);
+  let sawTag = false;
+  let changed = false;
+  const nextParts = [];
+  for (const part of parts) {
+    const value = decodedTagValue(part);
+    if (value === undefined) {
+      nextParts.push(part);
+      continue;
+    }
+    sawTag = true;
+    if (value === LEGACY_ASSOCIATE_TAG || (amazon && value === "")) {
+      const replacement = `tag=${tag}`;
+      if (replacement !== part) changed = true;
+      nextParts.push(replacement);
+      continue;
+    }
+    nextParts.push(part);
+  }
+  if (!sawTag && amazon) {
+    changed = true;
+    nextParts.push(`tag=${tag}`);
+  }
+  if (!changed) return rawUrl;
+  return `${base}?${nextParts.join("&")}${hash}`;
+}
+
+/**
+ * Normalize the url on each stored deal. Deals whose url is already fine are
+ * the same objects, so a tag-only rewrite does not invent a new deal id.
+ * @param {object[]} deals
+ * @param {string} [tag]
+ */
+export function normalizeStoredDeals(deals, tag = ASSOCIATE_TAG) {
+  if (!Array.isArray(deals)) return deals;
+  return deals.map((deal) => {
+    if (!deal || typeof deal !== "object" || typeof deal.url !== "string") return deal;
+    const url = normalizeStoredDealUrl(deal.url, tag);
+    if (url === deal.url) return deal;
+    return { ...deal, url };
+  });
+}
+
 export async function refreshDealsFile({
   asinsPath,
   dealsPath,
@@ -1220,7 +1313,7 @@ export async function refreshDealsFile({
     sleep,
     offerConfigPath: offerConfigPath || join(dirname(dealsPath), "amazonoffercode.json"),
   });
-  const nextDeals = offerResult.deals;
+  const nextDeals = normalizeStoredDeals(offerResult.deals, partnerTag);
   const dropped = offerResult.dropped;
   const nextPayload = Array.isArray(payload) ? nextDeals : { ...payload, deals: nextDeals };
   const existingIds = new Set(existingDeals.map((deal) => deal?.id));
