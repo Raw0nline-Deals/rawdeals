@@ -2,6 +2,374 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0HF8D3TBJ",
+      "title": "UIRWAY Permanent Outdoor Lights S3, Removable Press-Fit Clip, 100ft 60 LEDs | IP68 Waterproof, Smart Outdoor Eaves Lights, 60lm, 111 Modes for Christmas, Everyday Lighting, App, Voice & Remote Control",
+      "image": "https://m.media-amazon.com/images/I/51b20sgvtFL._SL500_.jpg",
+      "price": 134.99,
+      "percentOff": 21,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0HF8D3TBJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 169.99,
+      "expires": "2026-11-18",
+      "features": [
+        "【Removable & Cuttable】 UIRWAY permanent outdoor lights use a clip-on design for easy mounting and removal. Screw the base plates in first, then simply clip the lights on—no extra adapters or parts needed. Cut or extend to fit any roofline (extension wires included), with each light installing in as",
+        "【5-in-1 LED. Unlimited Colors】 16 million colors with 111 preset lighting scenes – from 4th of July to Christmas and everyday use. RGBCW+WW+IC chips deliver vivid RGB plus cool and warm white. Each bead is independently controlled – mix your own colors across a single string. Save up to 10 custom sc"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0CBD17GN4",
+      "title": "For Bare Feet NFL Tennessee Titans Argyle Remix Dress Socks, Adult One Size",
+      "image": "https://m.media-amazon.com/images/I/41smWvDmM5L._SL500_.jpg",
+      "price": 15.08,
+      "percentOff": 25,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0CBD17GN4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20,
+      "features": [
+        "These officially licensed NFL Tennessee Titans socks are one size for adults and fit men's US shoe sizes 5-12 and women's US shoe sizes 6-13, so one size fits most adult fans.",
+        "One of the easiest Tennessee Titans gifts for men and women to get right: everyone wears socks, so this is Titans merch that gets worn every week. A go-to Father's Day, groomsmen, or office gift for fans who dress up for work."
+      ]
+    },
+    {
+      "id": "B0H7HYD1XR",
+      "title": "for Magsafe Portable Charger, 5000mAh Magnetic Power Bank with USB-C Charge | for Magsafe Battery Pack, 15W Fast Charging, Lighting Input Wireless Portable Charger for iPhone 18/17/16/15/14/13/12/ Series",
+      "image": "https://m.media-amazon.com/images/I/41lnuzCt20L._SL500_.jpg",
+      "price": 16.99,
+      "percentOff": 64,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0H7HYD1XR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 47.29,
+      "expires": "2026-11-21",
+      "features": [
+        "Convenient Magnetic Alignment for Wireless Charging: Designed with magnetic attachment for compatible iPhones, the TRKOY power bank offers a convenient way to charge without a cable. Simply attach it to the back of your phone for wireless charging while browsing, messaging, watching videos, or handl",
+        "Compact Design for Convenient Carrying: Measuring approximately 11.8mm in thickness and weighing around 120g, the W5 portable charger is designed to offer a practical balance between size and portability. Its compact shape makes it convenient to carry in a bag or pocket and attach to your phone when"
+      ]
+    },
+    {
+      "id": "B0D1GC5XJ4",
+      "title": "PowerA Enhanced Wireless Controller for Nintendo Switch - Pikachu Garden, Nintendo Switch - OLED Model, Nintendo Switch Lite, Gamepad, game controller, Bluetooth controller",
+      "image": "https://m.media-amazon.com/images/I/41n7I8pLhVL._SL500_.jpg",
+      "price": 28.99,
+      "percentOff": 52,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0D1GC5XJ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.99,
+      "features": [
+        "Works with Nintendo Switch 2. C button not available.",
+        "Wireless controller with Bluetooth 5.0 technology"
+      ]
+    },
+    {
+      "id": "B0D8YZJWPH",
+      "title": "Smartwool Women's Hike Light Cushion Ankle Socks Multipack Black Small",
+      "image": "https://m.media-amazon.com/images/I/31-CFzgQf8L._SL500_.jpg",
+      "price": 49.92,
+      "percentOff": 24,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0D8YZJWPH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 66,
+      "features": [
+        "* Sock Height: Ankle * Indestructawool Technology with extended durability zones * 4 Degree Elite Fit System for a dialed-in, performance-oriented fit * Mesh zones for added breathability * Virtually Seamless Toe for enhanced comfort * Comfort welt with 'stay put' fit * Women's specific fit"
+      ]
+    },
+    {
+      "id": "B0GX63Q4J1",
+      "title": "EF ECOFLOW Rapid 45W Power Bank 10000mAh Portable Charger with Built-in USB C 2.3ft Cable and USB C&A Port Travel Essential Battery Bank with Digital Display for iPhone 17/16 Series, Galaxy, ipad",
+      "image": "https://m.media-amazon.com/images/I/31gCMQi6CnL._SL500_.jpg",
+      "price": 19.99,
+      "percentOff": 52,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0GX63Q4J1?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 41.99,
+      "expires": "2026-12-01",
+      "features": [
+        "45W High-Speed Fast Charging:The portable charger supports PD3.0 and PPS fast charging protocols, charging iPhone 17 from 0-50% in only 19 minutes, Samsung S22 0-50% in 22 minutes, and MacBook Air 0-50% in 54 minutes, delivering ultra-fast and stable power replenishment for all your daily devices",
+        "Easy-Carry:Portable charger power bank ultra-slim and lightweight (0.5lb) with compact 1.57*1.96*2.95 inch size. Easy to slip into pockets and bags, perfect for travel, business trips and outdoor use"
+      ]
+    },
+    {
+      "id": "B0BVKXT1DD",
+      "title": "PowerA Nano Wired Controller with Comfort Grip - Pokemon: Sweet Assortment, Protection Case for Nintendo Switch",
+      "image": "https://m.media-amazon.com/images/I/31GK4qMf5LL._SL500_.jpg",
+      "price": 32.9,
+      "percentOff": 45,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BVKXT1DD?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.99,
+      "features": [
+        "Get the party started with this treat-themed threesome featuring favorites Pikachu, Jigglypuff, Eevee, and Pichu.",
+        "Compact Nano Controller offers comfort for all"
+      ]
+    },
+    {
+      "id": "B07JCPZQ56",
+      "title": "IDEGG No Show Socks Women 10 Pairs Low Cut Anti-Slid Athletic Casual Socks | Women Invisible Line Ankle Short Athletic Socks with Heel Grips prevents slipping, snug fit, all‑day comfy hidden wearing",
+      "image": "https://m.media-amazon.com/images/I/51YlFUBFIKL._SL500_.jpg",
+      "price": 14.99,
+      "percentOff": 21,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B07JCPZQ56?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 18.99,
+      "features": [
+        "No-Show Invisibility: Easily matches various shoes like sneakers, oxfords, running shoes, casual shoes, training shoes, athletic shoes, and business shoes. Not suitable for very low-cut shoes.",
+        "Two Size: Fit shoe size S (US Women Size 5-8.5, Men Size:3-4)/XM (US Women Size 7.5-9, Men Size 3-4) M(US Women Size 9-12, Men Size:5-7) Attention:For women size in 8.5-9, choose size M for wide feet and S for thin feet"
+      ]
+    },
+    {
+      "id": "B0FJR4DYK7",
+      "title": "for Magsafe Power Bank iPhone, USB C Magnetic Portable Charger Fast Charging Built in Cable, 10000mAh Wireless Battery Pack for iPhone18/17/16/15/14/13 Travel & Daily Use Essentials Powerbank, Blue",
+      "image": "https://m.media-amazon.com/images/I/31LoSKVcg4L._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 50,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0FJR4DYK7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.99,
+      "features": [
+        "For iPhone MagSafe Battery Pack: Strong magnetic attachment designed for iPhone 17/16/15/14/13/12 series, including Pro, Pro Max, Plus, and Mini. Built-in Type-C cable supports for iPhone 15/16/17.",
+        "All-in-One Magnetic Power Bank: This powerbank combines wireless charging, a built-in USB-C cable, and a foldable stand in one compact design. No extra cable needed for USB-C devices—just snap, charge, and stay powered wherever you go."
+      ]
+    },
+    {
+      "id": "B0CBNMWFQL",
+      "title": "PDP Afterglow Wave Wired RGB Gaming Controller for Nintendo Switch 2, Lite | Also works with Switch OLED, RGB LED Lighting, 2 Mappable Back Buttons, Audio Controls, Headset Jack, Motion Controls, Blue",
+      "image": "https://m.media-amazon.com/images/I/416X13dt5UL._SL500_.jpg",
+      "price": 19.99,
+      "percentOff": 33,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CBNMWFQL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "expires": "2026-11-16",
+      "features": [
+        "Officially Licensed Nintendo Product - Officially licensed by Nintendo for Nintendo Switch, Nintendo Switch Lite, and Nintendo Switch - OLED Model. Also works with Nintendo Switch 2 - C Button not available.",
+        "Custom RGB Lighting - Glow up your setup with eight RGB zones and four preset modes, creating vibrant color combinations to light up your game like never before!"
+      ]
+    },
+    {
+      "id": "B0B3ZXMV61",
+      "title": "For Bare Feet NCAA Maryland Terrapins Camo Boom Ankle Socks, 3 Pack, Adult Large",
+      "image": "https://m.media-amazon.com/images/I/51AO6TIh7wL._SL500_.jpg",
+      "price": 11.1,
+      "percentOff": 63,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0B3ZXMV61?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 30,
+      "features": [
+        "These officially licensed NCAA Maryland Terrapins socks (3-pack) are size Large and fit men's US shoe sizes 10-13 and women's US shoe sizes 11-14, so fans with bigger feet get socks that fit right the first time.",
+        "One of the easiest Maryland Terrapins gifts for men and women to get right: everyone wears socks, so this is Terrapins merch that gets worn every week. A go-to graduation, birthday, or homecoming gift for students, alumni, and parents."
+      ]
+    },
+    {
+      "id": "B0GYP5D1ZL",
+      "title": "EF ECOFLOW Rapid 20000mAh Power Bank, 45W Max Fast Charging,Portable Phone Charger Built in USB C Cable and USB-C&A Port Digital Display Battery Bank for iPhone 17/16/15 Series, Samsung S23 ipad 11",
+      "image": "https://m.media-amazon.com/images/I/31G3KdAVLLL._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 38,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0GYP5D1ZL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 47.99,
+      "expires": "2026-12-01",
+      "features": [
+        "45W Fast Charging: Portable phone charger compatible devices up to 45W and supports PPS for Samsung Supeer Fast Charging 2.0.Delivers up to 3x faster charging than standard 15W power banks.",
+        "Built-in USB-C Cable: Portable battery charger built-in 0.82ft USB C cable supports over 10,000 bends and 90° repeated folding without damage. Eliminating tangled or lost cords"
+      ]
+    },
+    {
+      "id": "B0D79HHW99",
+      "title": "PowerA Enhanced Wireless Controller for Nintendo Switch/Switch 2 / Switch Lite/OLED Model - Color Splash Heros - Gamepad, game controller, Officially Licensed",
+      "image": "https://m.media-amazon.com/images/I/41hTuNsVcjL._SL500_.jpg",
+      "price": 50.09,
+      "percentOff": 28,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0D79HHW99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "features": [
+        "Works with Nintendo Switch 2. C button not available",
+        "Wireless controller with Bluetooth 5.0 technology"
+      ]
+    },
+    {
+      "id": "B07XPD1DS8",
+      "title": "For Bare Feet NFL Miami Dolphins 4 Stripe Deuce Crew Socks, Youth One Size | Youth fit; One Size is the youth size in this collection",
+      "image": "https://m.media-amazon.com/images/I/412iPDqwGML._SL500_.jpg",
+      "price": 3.91,
+      "percentOff": 36,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B07XPD1DS8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 6.14,
+      "features": [
+        "These officially licensed NFL Miami Dolphins socks are youth one size and fit youth shoe sizes 13 and 1-3, sized for young fans.",
+        "One of the easiest Miami Dolphins gifts for kids to get right: everyone wears socks, so this is Dolphins merch that gets worn every week. A go-to birthday, Christmas, or back-to-school gift for young fans."
+      ]
+    },
+    {
+      "id": "B0H8N3J89N",
+      "title": "45W Fast Charging Portable Charger, 35% Smaller 20000mAh Travel Power Bank | Flight-Safe, USB-C Cable, 70% in 30min, LED Display Travel Essential Battery Pack for iPhone 17 / Galaxy S26 Series and More",
+      "image": "https://m.media-amazon.com/images/I/31BwswK+NvL._SL500_.jpg",
+      "price": 29.98,
+      "percentOff": 38,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0H8N3J89N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 47.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Charges to 70% in 30 Minutes: This 45W fast charger boosts an iPhone 17 Pro Max to 76%, a Galaxy S25 Ultra to 84%, or an iPad Pro to 60% in just 30 minutes (charging from 20%) — this power bank supports PD, QC, built-in smart recognition chip automatically adjusts power output for different devices,",
+        "Charge Your Phone 4 Times: This portable charger features a new high-density polymer battery that provides 4 charges for iPhone 15, freeing you from battery anxiety. The 20,000mAh capacity meets airline carry-on standards, and it’s extremely portable. The design is incredibly compact; despite its sm"
+      ]
+    },
+    {
+      "id": "B09B1XX1PN",
+      "title": "PowerA Twin Charging Station for Dualsense Wireless Controllers, Dualsense Controller Charging, Charge, Sony PlayStation, PS5, Officially Licensed - PlayStation 5",
+      "image": "https://m.media-amazon.com/images/I/41iFkL0D5oL._SL500_.jpg",
+      "price": 20.37,
+      "percentOff": 27,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B09B1XX1PN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 27.99,
+      "features": [
+        "Charges 2 DualSense wireless controllers",
+        "Simple charging design"
+      ]
+    },
+    {
+      "id": "B0GYPZ92VM",
+      "title": "Portable Charger Power Bank 10000mAh, 45% Smaller Built-in Cables & AC Plug | Built-in Cables & AC Plug, 22.5W Fast Charging, 4-Device Charging, Travel Essential, for iPhone, iPad & Samsung Galaxy, Black",
+      "image": "https://m.media-amazon.com/images/I/31HMFAPGhUL._SL500_.jpg",
+      "price": 21.96,
+      "percentOff": 35,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0GYPZ92VM?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 33.99,
+      "expires": "2026-11-19",
+      "features": [
+        "All-in-One Power in a Compact Body: No extra adapters or cables needed. This 10000mAh portable charger is up to 45% smaller than average power banks, with a compact 3.66 × 2.36 in body and 7.05 oz lightweight design. Built-in USB-C and USB-A cables stay ready in your pocket, purse, backpack, or trav",
+        "Flexible Charging, Simple Recharging: Charge up to 4 devices at once, then recharge the power bank your way. Plug it directly into a wall outlet with the foldable AC plug in about 2.5 hours, or use a PD20W USB-C adapter to recharge in about 2 hours. Pass-through charging lets you power your phone wh"
+      ]
+    },
+    {
+      "id": "B0F1J12R6N",
+      "title": "XBOX Wireless Gaming Controller | Shock Blue | Textured triggers and bumpers, Hybrid D-pad, XBOX Wireless, Bluetooth, USB-C, Play across Console & PC & Cloud Devices",
+      "image": "https://m.media-amazon.com/images/I/31s2MmDM8kL._SL500_.jpg",
+      "price": 54.99,
+      "percentOff": 21,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0F1J12R6N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "features": [
+        "MODERNIZED DESIGN — Experience the modernized design of the XBOX Wireless Controller with sculpted surfaces and updated geometry that enhances comfort and control during long gaming sessions.",
+        "PRECISION PERFORMANCE — Stay on target with a hybrid D-pad and textured grips on triggers, bumpers, and back case for improved accuracy and handling."
+      ]
+    },
+    {
+      "id": "B0H2M6F22Q",
+      "title": "15000mAh Portable Charger, 35% Smaller Power Bank with 4 Built-in Cables | Charge 6 Devices Simultaneously , Travel Essential Battery Pack for iPhone 18/17, Samsung/Android/iPad",
+      "image": "https://m.media-amazon.com/images/I/413uGmHVD4L._SL500_.jpg",
+      "price": 23.99,
+      "percentOff": 35,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0H2M6F22Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 36.99,
+      "expires": "2026-11-19",
+      "features": [
+        "30% More Power & 15000mAh Massive Capacity,Powered by high-performance battery cells,the 15000mAh capacity delivers 30% more power than common 10000mAh power bank on the market.It provides about 2.5 full charges for an iPhone 17,roughly 1.9 charges for a Samsung S26+,or up to 18.8 charges for AirPod",
+        "4-in-1 Cables & Lanyard Design : No more lost or forgotten cables! Features 4 rugged integrated cables (ios & Type-C & Micro USB & USB-A), far more durable than ordinary detachable cords.Unlike competitors,the top lanyard doubles as a finger hook-secure and drop-free, so you never have to worry abou"
+      ]
+    },
+    {
+      "id": "B0FH7KDR4K",
+      "title": "Pro Controllers (2 Pack) Accessories Bundle for Nintendo Switch 2, 18-in-1 | 2* Wireless Controllers (Back Buttons), 22-Slot Case, Auto-Align Screen Protector, Dockable Protective Cover for Game Console",
+      "image": "https://m.media-amazon.com/images/I/51FeVEd5cKL._SL500_.jpg",
+      "price": 49.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FH7KDR4K?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-14",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 62.49,
+      "features": [
+        "【Instant Multiplayer with 2 Pro Controllers】 Elevate your gaming experience with 2 included wireless pro controllers—a $50 value! Features sweat-resistant leather grips, dual vibration, and 6-axis motion control. Perfect for lag-free 2-player action right out of the box, saving you over 50% compared",
+        "【Massive 22-Slot Storage Library】 Never leave a game behind. Our upgraded travel case features 20 dedicated game card slots and 2 TF card slots—nearly double the capacity of standard kits. Keep your entire Nintendo Switch 2 collection organized and secure in one sleek, portable command center."
+      ]
+    },
+    {
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
@@ -368,7 +736,7 @@
     {
       "id": "B0FLKC5JN4",
       "title": "CMF BY Nothing Headphone Pro Active Noise Canceling Wireless Headphones Bluetooth 5.4 Over The Ear Headset, 50H ANC Playtime, Bass&Treble Slider, Custom EQ&Spatial Audio, Hi-Res LDAC, Light Grey",
-      "image": "https://m.media-amazon.com/images/I/31JIyfwXuXL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/313YG4UIMVL._SL500_.jpg",
       "price": 49,
       "originalPrice": 79,
       "percentOff": 38,
@@ -470,25 +838,6 @@
       "features": [
         "Advanced Bluetooth 5.4 Technology: Featuring cutting-edge Bluetooth 5.4, experience up to 90% faster transmission for lightning-speed audio sync and a powerful 15-meter range that easily conquers outdoor spaces while effectively resisting interference. Whether you're hosting a backyard party or expl",
         "20 Hour Marathon Playtime & Dynamic RGB Light Show: Engineered with a high-capacity 3000mAh rechargeable battery, this party speaker provides up to 20 hours of uninterrupted music (at 50% volume; actual playback may vary with usage). Elevate every moment with 7 captivating RGB lighting modes that rh"
-      ]
-    },
-    {
-      "id": "B0H83X7475",
-      "title": "HCMTGW 500FT Permanent Outdoor RGB+IC Lights, IP67 Waterproof Smart Addressable Eaves Lights, App & Voice Control, Programmable Chasing Effect, DIY Following Scenes for Christmas Halloween Holiday",
-      "image": "https://m.media-amazon.com/images/I/51bawLHBU8L._SL500_.jpg",
-      "price": 99.99,
-      "percentOff": 35,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H83X7475?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 152.99,
-      "expires": "2026-11-19",
-      "features": [
-        "【PERMANENT HOLIDAY LIGHTING】 : Rigid screw-mount tracks fix securely to your roofline, eaves, porch or fence with no ladders needed every season. No more climbing up and down to drape, hang, untangle, or take down strings every holiday. Set them up one time and enjoy vivid, professional-grade outdoo",
-        "【SMART APP CONTROL WITH DIY SCENES】: The free app lets you design custom light shows, pick from a library of ready-made scenes, and set each pixel color and effect in seconds. Save your favorite scenes, schedule them to turn on at sunset, and control the whole display from your phone anywhere, anyti"
       ]
     },
     {
@@ -867,7 +1216,7 @@
       "id": "B0CWS6WV23",
       "title": "Turtle Beach Recon 70 Wired Multiplatform Gaming Headset for PS5, PC, Xbox | PlayStation, PS4, Xbox Series X|S, Xbox One, Mobile, Flip-to-Mute Mic, 40mm Speakers, Lightweight, Soft Earpads, Black",
       "image": "https://m.media-amazon.com/images/I/31UXgBMnRGL._SL500_.jpg",
-      "price": 29.94,
+      "price": 29.99,
       "percentOff": 25,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0CWS6WV23?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -1358,7 +1707,6 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 566.99,
-      "expires": "2026-11-18",
       "features": [
         "App & Remote Control With Guest Mode: Control your permanent outdoor lights through the smartphone app or included remote. Guest mode lets you enjoy app-based lighting control without creating an account, adding a convenient option for everyday use",
         "16 Million Colors & Dimmable Brightness: Personalize your outdoor lighting with 16 million color options and adjustable brightness levels. Create a warm everyday atmosphere or colorful lighting for Christmas, Halloween, parties, and other celebrations"
