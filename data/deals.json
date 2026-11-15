@@ -2,6 +2,376 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0H98ZVTBW",
+      "title": "SMAVISTA Permanent Outdoor Lights S2, 200ft with 120 RGBCW LED String Light | Cuttable, Dual-Output, 16M RGB & 2700K-6500K White, 100+ Scenes, IP67 Waterproof, Compatible with Alexa & Google Assistant",
+      "image": "https://m.media-amazon.com/images/I/513tcFwwS5L._SL500_.jpg",
+      "price": 199.99,
+      "percentOff": 50,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0H98ZVTBW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 399.99,
+      "expires": "2026-11-23",
+      "features": [
+        "[100+ Preset Scenes & Creative DIY Customization] Never worry about repetitive decorations again. Choose from over 100 professionally tuned dynamic scenes covering holidays, parties, and atmospheric modes, or tap into the DIY editor to map individual node colors, motion speeds, and gradient effects",
+        "[2700K–6500K Tunable White for Year-Round Use] More than just holiday lights. Equipped with dedicated RGBCW LEDs outputting up to 50 lumens per lights, you can adjust color temperature from cozy 2700K warm white to crisp 6500K daylight white. Perfect for daily architectural accents, landscape ambian"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0HNRSRX9V",
+      "title": "AOC Wireless Gaming Headset for PS5, PS4, Nintendo Switch, PC- Black | Bluetooth 5.4 & 2.4GHz Gaming Headphones with Noise Canceling Mic, RGB, Type-C, 20ms Latency, 45H, 7.1 Virtual Surround",
+      "image": "https://m.media-amazon.com/images/I/41t+QhvnY3L._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 50,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0HNRSRX9V?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.99,
+      "expires": "2026-11-19",
+      "features": [
+        "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
+        "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0HJ255N6R",
+      "title": "CIDETTY Laptop Screen Extender 15.6\", FHD 1080P Detachable Monitor Portable | 360° Rotating，Height Adjustable，Vesa support, Ultra Thin, Smart Display software, Fit 12-17.3\" Laptop, Remote Work & Travel",
+      "image": "https://m.media-amazon.com/images/I/51Wwxdp76TL._SL500_.jpg",
+      "price": 89.99,
+      "percentOff": 44,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HJ255N6R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 159.99,
+      "features": [
+        "[More Comfort & Space-Saving] Unlike most extended monitor for laptop on the market, this CIDETTY 15.6\" second monitor for laptop features a unique vertical stacked screen design. This space-saving design lets you work efficiently anywhere — even in tight spaces. It also helps ease your eye strain a",
+        "[Enhanced Viewing Experience] This portable laptop monitor features a durable and sturdy casing and a matching stand. This upgraded extended monitor also offers a higher-quality smooth feeling, and is equipped with a high performance 15.6-inch IPS panel with a 1920x1080P resolution, delivering stunn"
+      ]
+    },
+    {
+      "id": "B0GD55C2VQ",
+      "title": "Wireless Gaming Headset for PS5, PS4, PC, Switch, 20ms Low Latency with Mic | 2.4GHz 2-in-1 USB-A/USB-C Receiver & Bluetooth 5.4, Up to 60-Hour Battery Life, 50mm Titanium-Coated Drivers, RGB Lighting",
+      "image": "https://m.media-amazon.com/images/I/41fdikmtamL._SL500_.jpg",
+      "price": 19.99,
+      "percentOff": 31,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0GD55C2VQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 28.99,
+      "features": [
+        "IMMERSIVE 3D GAMING AUDIO: Fachixy VK81 wireless gaming headset delivers powerful 3D stereo sound with deep bass, clear mids, and crisp highs. Hear footsteps, reloads, and environmental details precisely, improving reaction time and enhancing immersion for FPS, RPG, or open-world games on for PS5, P",
+        "VERSATILE MULTI-DEVICE CONNECTIVITY: Switch seamlessly between 2.4GHz wireless (USB/Type-C) for PC, PS5, PS4, Mac, Laptops, and Switch, or Bluetooth 5.4 for mobile devices. Ensure lag-free gaming on consoles and enjoy easy mobile audio streaming. Not compatible with Xbox consoles."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0HH9CBL44",
+      "title": "Laptop Screen Extender 14.1\" 1080P, Dual Screen Monitor for Laptop 13-17.3\" | Plug & Play FHD IPS Portable Monitor Extender with USB-C/HDMI,Travel Monitor for Work, Home Office Mac/Windows/Chrome/Android",
+      "image": "https://m.media-amazon.com/images/I/41-5w3j6g8L._SL500_.jpg",
+      "price": 89.98,
+      "percentOff": 40,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HH9CBL44?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 149.99,
+      "expires": "2026-11-19",
+      "features": [
+        "【Important Notes】: 1. If connecting via USB-C, your laptop must support full-featured USB-C (DP/Thunderbolt 3/4). Please check your device specifications or contact us for assistance. 2. If the laptop screen extender shows a black screen or is not working properly:(1) Ensure sufficient power supply",
+        "【1080P IPS FHD + 280°Rotation】：Funhill laptop monitor extender features a 14.1\" FHD IPS display with 1920×1080 resolution, 16:9 aspect ratio, and 60Hz refresh rate for clear and vibrant visuals. The portable monitor supports 0–280° rotation, allowing flexible viewing angles. Easily adjust brightness"
+      ]
+    },
+    {
+      "id": "B0CB44JSH8",
+      "title": "Montech MKey Mechanical Gaming Keyboard: Customizable RGB LED, Premium MDA Profile PBT Keycap, Hot-Swappable, Gateron G Yellow Pro 2.0 Pre-lubed Switches, Osaka Castle Theme, Freedom (MK105FY)",
+      "image": "https://m.media-amazon.com/images/I/4143-unsEQL._SL500_.jpg",
+      "price": 74.89,
+      "percentOff": 32,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CB44JSH8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 109.9,
+      "features": [
+        "Immerse yourself in a story full of adventure and culture: The essence of the historic landmark, Osaka Castle.",
+        "Elevate your keyboard experience: Premium MDA Profile Key Caps made of high-grade PBT material, offering a stylish and luxurious touch."
+      ]
+    },
+    {
+      "id": "B0F3MMK1J4",
+      "title": "AOC 16\" Portable Monitor FHD 60Hz USB-C IPS Ultra Slim Smart Cover 16T20 | 1920×1080 Computer Monitor, USB-C, Mini HDMI, Built-in Speakers, Smart Cover, Ultra Slim, VESA Mount, Low Blue Light",
+      "image": "https://m.media-amazon.com/images/I/41xXSmdU62L._SL500_.jpg",
+      "price": 47.48,
+      "percentOff": 32,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0F3MMK1J4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "expires": "2026-12-01",
+      "features": [
+        "EXPAND YOUR WORKSPACE ANYWHERE - Add a flexible 15.6-inch portable second screen to your laptop for smoother multitasking, enhanced productivity, and more comfortable binge-watching—perfect for travel, work, or study setups.",
+        "FULL HD 1080P CLARITY FOR WORK & ENTERTAINMENT - Enjoy sharp detail with a 1920x1080 FHD panel, ideal for spreadsheets, video calls, gaming, and streaming. Your content stays crisp and vibrant whether you’re working or relaxing."
+      ]
+    },
+    {
+      "id": "B08NZY8TB7",
+      "title": "KINESIS Gaming TKO Mechanical Keyboard | Clicky White Switches | 60% Layout | Split Spacebar | Hotswap | PBT Keycaps | Aluminum Body | SF Shock Limited Edition Travel Case",
+      "image": "https://m.media-amazon.com/images/I/51or1iF-vtL._SL500_.jpg",
+      "price": 48.75,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08NZY8TB7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 65,
+      "features": [
+        "PROGRAMMABLE 60% LAYOUT: Ultra-compact aluminum keyboard with standard 60% layout and modular triple-space bar. Maximum portability and closer mouse placement.",
+        "HOTSWAP MECHANICAL SWITCHES: Premium Kailh Box White mechanical switches with tactile feedback and click. Switches are plug-and-play so you can customize the feel of WASD or swap out the whole board."
+      ]
+    },
+    {
+      "id": "B0HGGCLYJT",
+      "title": "Wixzet 14\" Laptop Screen Extender, Ultra-Thin FHD 1080P Portable Monitor | 2.2lbs Lightweight, USB-C/HDMI Plug & Play, Travel Monitor for 13”-17” Laptops, Compatible with Wins/Mac/Android/Chrome",
+      "image": "https://m.media-amazon.com/images/I/41XfgDsQBkL._SL500_.jpg",
+      "price": 209.99,
+      "percentOff": 30,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HGGCLYJT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 299.99,
+      "expires": "2026-11-19",
+      "features": [
+        "【Ultra-Slim & Portable Design】The Wixzet triple screen portable monitor is designed for professionals who prioritize exceptional mobility. The extender's screens are an ultra-thin 0.17 inches (approximately 4.5 cm) thick and feature a lightweight aerospace-grade aluminum alloy body—about 50% lighter",
+        "【Multi-Screen Modes for Higher Efficiency】Expand your workflow instantly with laptop screen extennder that support extended, mirrored, and portrait modes. Manage emails, video conferences, spreadsheets, and creative tools simultaneously without switching windows. Whether you're a remote professional"
+      ]
+    },
+    {
+      "id": "B0DVDGC52L",
+      "title": "Razer BlackWidow V4 X Mechanical Gaming Keyboard, Minecraft Edition | Green Switches Tactile & Clicky, 6 Macro Keys, Chroma RGB, Doubleshot ABS Keycaps, Sound Dampening & Stabilizers",
+      "image": "https://m.media-amazon.com/images/I/416p5K1M45L._SL500_.jpg",
+      "price": 129.5,
+      "percentOff": 24,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0DVDGC52L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 169.99,
+      "features": [
+        "CREEPIN’ IT REAL — Truly live the block life with Razer’s officially licensed gaming keyboard for Minecraft",
+        "GREEN MECHANICAL CLICKY SWITCHES — With a 1.9mm actuation point requiring just 50g of force, experience the perfect pairing of pressure and response time—for precise inputs with satisfying, tactile feedback"
+      ]
+    },
+    {
+      "id": "B0DLP9JPR3",
+      "title": "Acer Nitro 27in FHD 1920x1080 Curved 280Hz Gaming Monitor XZ270 Zbmiiphx | 1ms, AMD FreeSync Premium, sRGB 99%, 2xHDMI, DisplayPort, 1500R Curve, Ergo Stand, Speaker, VESA Mountable",
+      "image": "https://m.media-amazon.com/images/I/41HHCeu1-7L._SL500_.jpg",
+      "price": 143.99,
+      "percentOff": 28,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0DLP9JPR3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 199.99,
+      "features": [
+        "Resolution Matters: The Nitro 27\" Curved Display with Full HD (1920 x 1080) resolution offers the sharpest picture quality and provides a perfect picture with a broader view. The zero-frame design does away with the thick frames found on conventional monitors freeing up precious screen space, so you",
+        "AMD FreeSync Premium Technology: Say “goodbye” to stuttering and tearing. With AMD FreeSync Premium, the monitor’s frames are synced with the graphics card’s frames, which eliminates screen tearing and provide the smoothest gaming experience."
+      ]
+    },
+    {
+      "id": "B092LK5NSN",
+      "title": "Logitech G713 Wired Gaming Keyboard with LIGHTSYNC RGB Lighting, Tactile Switches (GX Brown), and Keyboard Palm Rest, PC and Mac Compatible, White Mist",
+      "image": "https://m.media-amazon.com/images/I/31NxWs+NfzL._SL500_.jpg",
+      "price": 132.21,
+      "percentOff": 22,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B092LK5NSN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 169.99,
+      "features": [
+        "Cloud-soft Comfort: Float away with G713’s dreamy white design and comfy, cloud-shaped palm rest; compact mechanical TKL keyboard layout and adjustable height give that good game feeling, all-day long",
+        "Lovely Lighting: Per key and perimeter Logitech LIGHTSYNC RGB with preloaded Play Mood animations, the Aurora Collection signature lighting; customize your RGB gaming keyboard’s lighting on G HUB"
+      ]
+    },
+    {
+      "id": "B0HF81JXF3",
+      "title": "16\" Laptop Screen Extender, 1200P FHD+ Triple Portable Monitor for Laptops, Ultra-Slim Travel Monitor for 12–17.3\" Laptops, USB-C/HDMI Plug-Play Monitor Extender for Mac/Win/Android/Chrome",
+      "image": "https://m.media-amazon.com/images/I/41YEmEFhrOL._SL500_.jpg",
+      "price": 249,
+      "percentOff": 24,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HF81JXF3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 329,
+      "expires": "2026-11-16",
+      "features": [
+        "【16\" 1200P IPS – Bigger, Clearer】The AetherSpark laptop monitor extender features dual 16\" IPS displays with 1920×1200 resolution and a 16:10 aspect ratio — more vertical space than standard 16:9 screens. See more code, docs, and spreadsheets on a clearer screen — with less scrolling. At 350 nits br",
+        "【2-Cable Plug & Play – Clutter-Free】The AetherSpark portable screen for laptop is designed for simplicity and efficiency. Its upgraded internal structure reduces cable clutter and simplifies the connection process. Unlike traditional portable laptop monitor, it requires just two USB-C cables for ful"
+      ]
+    },
+    {
+      "id": "B089GN2KBT",
+      "title": "RK ROYAL KLUDGE RK61 Wired 60% Mechanical Gaming Keyboard, Compact PC Game Keyboards with QMK/VIA Programmable RGB Backlit, Hot Swappable Custom Keyboard for Win/MAC, Pre-lubed Red Switch, White",
+      "image": "https://m.media-amazon.com/images/I/41bborQ0jcL._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B089GN2KBT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Ultra Compact 60% Keyboard--Compact 61 keys keyboard concentrates all the key functions you need in minimalist design. Save more space for your mouse moving and neat the desktop. Most FPS gamers' choice for this 60% gaming keyboard",
+        "Gorgeous RGB Backlit--The pc gaming keyboard has 18 RGB backlight modes and 8 monochrome backlight on board. Customized backlit colors and effects are also available through RK ROYAL KLUDGE software. Giving you more enjoyable when you gaming or typing at night"
+      ]
+    },
+    {
+      "id": "B0H7GYYRPV",
+      "title": "Laptop Screen Extender 15.6\", 5 Modes & Detachable Slim Portable Monitor | FHD 1080P, Fit for 12-17.3\" Laptops, Plug & Play, Height Adjustable & Slide-rail Dual Travel Monitor Extender for Wins/Mac",
+      "image": "https://m.media-amazon.com/images/I/51nuYN1M1uL._SL500_.jpg",
+      "price": 69.99,
+      "percentOff": 21,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0H7GYYRPV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 88.99,
+      "expires": "2026-11-19",
+      "features": [
+        "【Multifunctional Display Modes & VESA Mount Support】This Anyking laptop screen extender offers multiple display modes, including landscape, portrait, extend, mirror, and rotated modes to fit different needs. At work, keep multiple windows open at once and switch between tasks without constantly chan",
+        "【Flexible Adjustable Stand for Any Setup】The built-in adjustable stand features a slide-rail design for flexible height adjustment and supports 90° screen rotation. Adjust the viewing angle effortlessly for different scenarios, including coding, reading, presentations, and entertainment. The stable"
+      ]
+    },
+    {
+      "id": "B0CMWK8YGY",
+      "title": "EPOMAKER Ajazz AK820 Pro Wireless Mechanical Keyboard with TFT Display&Knob | 75% Gasket-Mounted Gaming Keyboard, BT/2.4GHz/USB-C Wired, Creamy Keyboard for PC/Mac (Purple, Gift Switch)",
+      "image": "https://m.media-amazon.com/images/I/41zLpclY0KL._SL500_.jpg",
+      "price": 55.19,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CMWK8YGY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 68.99,
+      "features": [
+        "【TFT Screen: The Interactive Interface】AK820 Pro mechanical keyboard comes equipped with a TFT Screen, serving as your interactive interface for real-time updates and customization. The high-definition display allows for customizable visuals, battery status, date & time display, connectivity & OS di",
+        "【A Popular 75% Compact Design】Designed for both enthusiasts and professionals alike, the Ajazz AK820 Pro offers a combination of innovation and craftsmanship that's hard to beat. This 75% compact mechanical keyboard maximize your desk space and enjoy a sleek look with this 75% layout. It's also perf"
+      ]
+    },
+    {
+      "id": "B0DMTTDSTG",
+      "title": "Xtrfy Cherry K4V2 TKL, Tenkeyless Mechanical Gaming Keyboard, Wired (USB-A), Adjustable RGB Lighting, 1000 Hz Polling Rate, Cherry MX2A RED Switches, Black",
+      "image": "https://m.media-amazon.com/images/I/41vJD8rx0mL._SL500_.jpg",
+      "price": 63.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0DMTTDSTG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.99,
+      "features": [
+        "High-performance wired gaming keyboard: Featuring a metal plate construction and durable housing - delivering powerful performance without unnecessary frills",
+        "Compact tenkeyless design: By eliminating the number pad, this wired keyboard not only frees up more desk space but also gives you greater freedom of movement for your mouse"
+      ]
+    },
+    {
+      "id": "B0F6XTH9ZX",
+      "title": "MechLands Aula F75 PRO 75% Wireless Gaming Keyboard, Gasket Mechanical Custom Keyboard with Five-Layer Padding, BT/2.4GHz/USB-C, Hot Swappable, Knob, RGB, Reaper Switches (Gradient Black)",
+      "image": "https://m.media-amazon.com/images/I/415ziHmPCfL._SL500_.jpg",
+      "price": 63.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0F6XTH9ZX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.99,
+      "features": [
+        "【Compact 75% Layout & Ergonomic Gasket Structure】 Embrace a more efficient workspace with the F75 Pro keyboard, which offers full capabilities while taking up 25% less room on your desk, making it perfect for those who use dual monitors or enjoy gaming. This groundbreaking gasket-mounted structure u",
+        "【Tri-Mode Connectivity & 4000mAh Battery】 With support for BT 5.0, 2.4GHz wireless, and USB wired connections, the AULA F75 Pro wireless mechanical keyboard can connect to five devices at once and switch seamlessly via shortcut keys or a side button. It's perfect for maintaining a tidy wireless envi"
+      ]
+    },
+    {
+      "id": "B0FLX78XVF",
+      "title": "YUNZII C75 Cute 75% Wireless Mechanical Keyboard (Beige, Candy Switch) | Creamy Cake Keyboard, BT5.0/2.4G/USB-C, Hot-Swap, NKRO, PBT MOA Keycaps,5500mAh RGB Gasket Mount for Mac/Win/Gaming/Office",
+      "image": "https://m.media-amazon.com/images/I/41zQhk-CWYL._SL500_.jpg",
+      "price": 73.59,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FLX78XVF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 91.99,
+      "features": [
+        "Cute Cake Keyboard 75% LAYOUT: The new YUNZI C75 cute mechanical keyboard series, a sweet addition to desk accessories with colorful keyboard design. Boasting all the beloved features—high-quality mechanical keyboard, compact 75% layout Keyboard, wireless, BT and wired connectivity, and creamy typin",
+        "Creamy Keyboard with Gasket Structure: This cute mechanical gaming keyboard takes gasket structure and multiple layers of sound-absorbing fillings, pre-lubed mechanical switches, stabilizers and solid silicone eliminate typing noise, creating a solid creamy mechanical keyboard. Enjoy smooth and cons"
+      ]
+    },
+    {
+      "id": "B0FM7PZ3WS",
+      "title": "MechLands Aula F99 96% Wireless Gaming Keyboard, 8000mAh Battery | Creamy Gasket Mechanical Keyboard, BT/2.4GHz/USB-C, Hot-Swappable, Linear Switch, Programmable RGB, Win/Mac (Pink Gradient)",
+      "image": "https://m.media-amazon.com/images/I/41tonbuv6uL._SL500_.jpg",
+      "price": 63.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FM7PZ3WS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-15",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.99,
+      "features": [
+        "【96% Layout & Creamy Gasket Structure】Featuring a 96% layout with 99 keys, this keyboard is designed to save space on your desk while providing essential arrow keys and a number pad for gaming and professional activities. The innovative gasket-mounted structure of the F99 creamy mechanical keyboard,",
+        "【Innovative Five-Layer Padding】The F99 custom keyboard boasts a distinctive single-key slotted PCB, delivering an enjoyable typing feedback. Each key operates independently within its slot, resulting in enhanced keystroke clarity and precision. Its five-layer architecture includes IXPE pads beneath"
+      ]
+    },
+    {
       "id": "B0HCV9GQSL",
       "title": "50000mAh Portable Charger Power Bank, Built in Cables, 22.5W Fast Charging | Ultra-High Capacity, Travel Essential, Charge 4 Devices, Flashlight, for iPhone 18/17/16/15 Series, Samsung, iPad & Laptops",
       "image": "https://m.media-amazon.com/images/I/41+rlSqonQL._SL500_.jpg",
@@ -1441,25 +1811,6 @@
       ]
     },
     {
-      "id": "B0FLXVCXQN",
-      "title": "Poekuao Thermal Underwear Set for Kids Long Underwear Youth Boys Fleece Lined Leggings and Undershirts Athletic Base Layer Gray",
-      "image": "https://m.media-amazon.com/images/I/31sT+KS+GxL._SL500_.jpg",
-      "price": 19.99,
-      "percentOff": 20,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0FLXVCXQN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 24.99,
-      "expires": "2026-11-14",
-      "features": [
-        "Practical Design: Thermal underwear for kids with thumb holes on the top for extra warmth, elastic waistband for easy on and off, and a functional fly for convenience",
-        "Stretch & Warmth: Boys thermal underwear set made from 88% polyester and 12% spandex, featuring 4-way stretch outer fabric and fleece-lined interior for lasting warmth"
-      ]
-    },
-    {
       "id": "B0H8SFXKY8",
       "title": "Ecoeve Permanent Outdoor Lights for House, 49ft RGB+IC Christmas LED Lights | App & Remote Control with Guest Mode, 16 Million Colors, 50+ Scenes, Music Sync, IP67 Waterproof Track Lighting Heads",
       "image": "https://m.media-amazon.com/images/I/515FCqa11CL._SL500_.jpg",
@@ -1761,8 +2112,8 @@
       "id": "B0BSBVPWCV",
       "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
       "image": "https://m.media-amazon.com/images/I/31ZPUnFQUvL._SL500_.jpg",
-      "price": 290.45,
-      "percentOff": 24,
+      "price": 290.99,
+      "percentOff": 23,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-12",
@@ -1944,7 +2295,6 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 199.99,
-      "expires": "2026-11-19",
       "features": [
         "【Year-Round Outdoor Lighting for Any Occasion】Transform your home with 500FT RGB+IC Permanent Outdoor Lights designed for year-round outdoor lighting. Create stunning lighting effects on roofs, eaves, garages, patios, and backyards. Whether for holidays, special events, or everyday curb appeal, thes",
         "【Smart Dual Control with Presets & DIY Customization】 Take full command of your outdoor lighting via smartphone App and included remote controller. Powered by RGB+IC chasing function, it offers abundant pre‑set scene modes for Christmas, Halloween, parties and daily home use with one‑tap switching."
@@ -1994,8 +2344,8 @@
       "id": "B0D9MCK4R8",
       "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
       "image": "https://m.media-amazon.com/images/I/31v2asog0qL._SL500_.jpg",
-      "price": 119.49,
-      "percentOff": 20,
+      "price": 119,
+      "percentOff": 21,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
@@ -2032,8 +2382,8 @@
       "id": "B002VA464S",
       "title": "Logitech Creators Blue Yeti USB Microphone for PC, Mac, Gaming, Recording, Streaming, Podcasting, Studio and Computer Condenser Mic with Blue VO!CE Effects, 4 Pickup Patterns, Plug and Play - Silver",
       "image": "https://m.media-amazon.com/images/I/31kREU8BpVL._SL500_.jpg",
-      "price": 96.62,
-      "percentOff": 31,
+      "price": 99.99,
+      "percentOff": 29,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B002VA464S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
