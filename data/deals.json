@@ -2,6 +2,372 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0H5CYZYFX",
+      "title": "Permanent Outdoor Lights for House,199FT Christmas Lights",
+      "image": "https://m.media-amazon.com/images/I/514Ljsn1mGL._SL500_.jpg",
+      "price": 59.99,
+      "percentOff": 64,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0H5CYZYFX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 165.99,
+      "features": [
+        "1. YEAR-ROUND ARCHITECTURAL ACCENT LIGHTING & MULTI-SCENE MODES Enhance your home exterior with versatile lighting for year-round use. Featuring 50+ preset scene modes and 16 million colors, these permanent outdoor lights for house are designed for holidays, gatherings, and everyday ambient lighting",
+        "2. ALL-WEATHER PERFORMANCE & IP67 WATER RESISTANCE Designed for outdoor installation, this lighting system features IP67 water resistance for the light strands, control unit, and power adapter. UV-resistant materials are suitable for general outdoor environments with rain, snow, and sunlight exposur"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0CWS6V29J",
+      "title": "Turtle Beach Recon 70 Wired Multiplatform Gaming Headset for PS5, PC, Xbox | PlayStation, PS4, Xbox Series X|S, Xbox One, Mobile, Flip-to-Mute Mic, 40mm Speakers, Lightweight, Soft Earpads, White",
+      "image": "https://m.media-amazon.com/images/I/315bnTIy-cL._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CWS6V29J?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "features": [
+        "Premium, Noise-Isolating Ear Cushions",
+        "On-Ear Volume Control"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07HJVD1T9",
+      "title": "Rachael Ray 47578 Cucina Nonstick Bakeware Set with Grips Includes Nonstick Bread Pan, Baking Sheet, Cookie Sheet, Baking Pans, Cake Pan and Muffin Pan - 10 Piece, Latte Brown with Agave Blue Grips",
+      "image": "https://m.media-amazon.com/images/I/51ezzLa85tL._SL500_.jpg",
+      "price": 87.74,
+      "percentOff": 35,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B07HJVD1T9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 134.99,
+      "expires": "2026-12-01",
+      "features": [
+        "SET INCLUDES: Two 10-inch x 15-inch cookie pans, Two 9-inch round cake pans, 9-inch square cake pan, 2 loaf pans, 9-inch x 13-inch rectangular cake pan with lid, 12-cup muffin and cupcake pan",
+        "EVERYDAY DURABILITY: This Rachael Ray nonstick bakeware set features heavy gauge steel construction with rolled-rim bake pan edges designed for easy, everyday use"
+      ]
+    },
+    {
+      "id": "B0CV3LRK95",
+      "title": "Govee Outdoor Wall Light,1 Pack,1500LM Smart RGBIC Porch Lights,IP65 | 45 Scene Modes,Waterproof Lights for Outdoor Decor,Patio,DIY Wall Sconce Works with Alexa,Google Assistant and Matter",
+      "image": "https://m.media-amazon.com/images/I/41AM7LZCWgL._SL500_.jpg",
+      "price": 79.99,
+      "percentOff": 20,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0CV3LRK95?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "features": [
+        "RGBIC Creative Lighting: Govee outdoor wall light can display at least 3 colors simultaneously in a horizontal gradient, breaking free from conventional lighting. Enjoy flexible DIY and 45+ immersive scene modes to make your home unique in the neighborhood.",
+        "High-brightness White Light: More than just for holiday, this LED light delivers up to 1500 LM of white light with an adjustable color temperature(2700K-6500K ) for daily accent lighting. It is ideal for patio, porch, balcony, yard and garage."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07V4F7ZZ5",
+      "title": "EKSA E1000 Gaming Headset, Computer Headphones with Noise Canceling Mic & RGB Light, Compatible with PC, PS4, PS5, Laptop",
+      "image": "https://m.media-amazon.com/images/I/51Rsh1JKjtL._SL500_.jpg",
+      "price": 27.19,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07V4F7ZZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 33.99,
+      "expires": "2026-11-19",
+      "features": [
+        "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
+        "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07TMJ5Q6V",
+      "title": "Rachael Ray Yum-o! Bakeware Oven Lovin' Nonstick Loaf Pan, 9-Inch by 5-Inch Steel Pan, Gray with Marine Blue Handles",
+      "image": "https://m.media-amazon.com/images/I/31L79ZLLyaL._SL500_.jpg",
+      "price": 9.79,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B07TMJ5Q6V?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 13.99,
+      "features": [
+        "NONSTICK BREAD LOAF PAN: Long-lasting nonstick pan promotes excellent food release and easy cleanup when making banana bread or zucchini bread.",
+        "HEAT IT UP: The sturdy loaf pan is made from heavy gauge steel and is conveniently dishwasher safe and oven safe to 500 degrees Fahrenheit."
+      ]
+    },
+    {
+      "id": "B0GZP8PZ71",
+      "title": "Lacasa Solar Driveway Lights 12 Pack, Solar Step Lights Outdoor Waterproof | 2 Color in 1 Marine Driveway Markers Lights for Pathway, Sidewalk, Walkway, Garden, Patio, Pool, Blue & Cool White",
+      "image": "https://m.media-amazon.com/images/I/41lnTQMIwfL._SL500_.jpg",
+      "price": 52.99,
+      "percentOff": 20,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0GZP8PZ71?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 66.49,
+      "features": [
+        "【2-in-1 Blue & Cool White Modes】Choose Blue Light for a modern decorative glow or Cool White for enhanced nighttime visibility. Easily switch between lighting modes to create the ideal atmosphere while adding practical illumination to your outdoor spaces.",
+        "【Efficient Solar Charging & Auto On/Off】Equipped with an upgraded solar panel and a high-capacity 1000mAh battery, these solar outdoor lights efficiently capture sunlight during the day and automatically turn on at dusk and off at dawn for convenient, energy-saving operation."
+      ]
+    },
+    {
+      "id": "B09C13PZX7",
+      "title": "Razer Basilisk V3 Customizable RGB Wired Ergonomic Gaming Mouse, Black | Fastest Gaming Mouse Switch, Chroma RGB Lighting, 26K DPI Optical Sensor, 11 Programmable Buttons, HyperScroll Tilt Wheel",
+      "image": "https://m.media-amazon.com/images/I/31N1BZUZLwL._SL500_.jpg",
+      "price": 34.99,
+      "percentOff": 50,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B09C13PZX7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "features": [
+        "ICONIC ERGONOMIC DESIGN WITH THUMB REST — PC gaming mouse favored by millions worldwide with a form factor that perfectly supports the hand while its buttons are optimally positioned for quick and easy access",
+        "11 PROGRAMMABLE BUTTONS — Assign macros and secondary functions across 11 programmable buttons to execute essential actions like push-to-talk, ping, and more"
+      ]
+    },
+    {
+      "id": "B0DWYNY698",
+      "title": "Farberware Disney Bake with Mickey Mouse Nonstick Bakeware Cake Decorating/Baking Dish, 3D Cake Pan - Gray",
+      "image": "https://m.media-amazon.com/images/I/31sy1KlhyYL._SL500_.jpg",
+      "price": 29.5,
+      "percentOff": 26,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DWYNY698?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "features": [
+        "DETAILED MOLDS: Pans feature 3D details for everything from Mickey’s nose to his playful smile, making it easy to create cakes that look like the beloved character",
+        "EASY-RELEASE NONSTICK: A durable nonstick surface helps all of the details of Mickey cakes release effortlessly, so you can focus on fun"
+      ]
+    },
+    {
+      "id": "B07GBZ4Q68",
+      "title": "Logitech G502 HERO Wired Gaming Mouse, HERO 25K Sensor for PC/Mac | High performance, 25,600 DPI, RGB, adjustable weights, 11 programmable buttons, on-board memory, programmable mouse",
+      "image": "https://m.media-amazon.com/images/I/315LLa+0edL._SL500_.jpg",
+      "price": 37.99,
+      "percentOff": 46,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07GBZ4Q68?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "features": [
+        "Adjustable weights: Match your playing style with our PC gaming mouse. Arrange up to five 3.6 g weights for a personalized weight and balance configuration",
+        "HERO Gaming Sensor: Next generation HERO mouse sensor in this PC mouse delivers precision tracking up to 25600 DPI with zero smoothing, filtering or acceleration"
+      ]
+    },
+    {
+      "id": "B000HM9UDO",
+      "title": "Nordic Ware Original Bundt, 12-Cup, Graphite | Bakeware, Cake Pans, Aluminum Bakeware, Nonstick Bakeware, Aluminum, Carded, Nordic Ware 10.38 in",
+      "image": "https://m.media-amazon.com/images/I/31C+0ibMJqL._SL500_.jpg",
+      "price": 28.49,
+      "percentOff": 21,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B000HM9UDO?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 36,
+      "features": [
+        "Genuine Bundt pans are made of durable cast aluminum to achieve the most crisp, intricate cake detail possible",
+        "Cast aluminum’s superior heat conductivity ensures controlled, even browning of cakes and treats"
+      ]
+    },
+    {
+      "id": "B0C84ZD7L6",
+      "title": "Logitech G309 Lightspeed Wireless Gaming Mouse | Optical Switches, 68g w/ PowerPlay Wireless Charging & 86g w/ AA Battery, 300+ Hr Battery Life, 6 Buttons, PC/Mac Compatible",
+      "image": "https://m.media-amazon.com/images/I/318U2jlieCL._SL500_.jpg",
+      "price": 49.99,
+      "percentOff": 44,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0C84ZD7L6?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 89.99,
+      "features": [
+        "Max Play: Switch between the robust yet low latency LIGHTSPEED wireless and Bluetooth connectivity on this wireless gaming mouse for total wireless flexibility",
+        "Min Weight: Logitech G309 LIGHTSPEED is a lightweight gaming mouse that weighs just 86 g with the included AA battery or 68 g (battery-free) with use of POWERPLAY wireless charging system"
+      ]
+    },
+    {
+      "id": "B07CMS5Q6P",
+      "title": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse, Hero 12K Sensor - Black | 12,000 DPI, lightweight, 6 programmable buttons, 250h battery life, on-board memory, PC/Mac, lightweight gaming mouse",
+      "image": "https://m.media-amazon.com/images/I/31zy93Vq31L._SL500_.jpg",
+      "price": 29.49,
+      "percentOff": 41,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07CMS5Q6P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Ultra-fast LIGHTSPEED wireless technology in this wireless mouse gives you a lag-free gaming experience, delivering incredible responsiveness and reliability with 1 ms report rate for competition-level performance",
+        "G305 wireless computer mouse boasts an incredible 250 hours of continuous gameplay on just 1 AA battery; switch to Endurance mode via Logitech G HUB software and extend battery life up to 9 months"
+      ]
+    },
+    {
+      "id": "B0H331RY7K",
+      "title": "TECKNET Wireless Gaming Mouse,2.4GHz/USB-C, 1000Hz,7 Custom Buttons 13 RGB | 12800 DPI, 700mAh Rechargeable Battery, 13 RGB Modes, Macro Support, Ergonomic Design",
+      "image": "https://m.media-amazon.com/images/I/31NovFOPLYL._SL500_.jpg",
+      "price": 17.99,
+      "percentOff": 40,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0H331RY7K?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "features": [
+        "【2.4G Wireless + USB-C Wired Dual Mode | 700mAh Battery, Up to 75 Hours】 This gaming mouse wireless supports 2.4G and USB-C wired connections for gaming, work, and study. The rechargeable 700mAh battery delivers up to 75 hours with RGB off, making it a reliable rechargeable wireless mouse. Store up",
+        "【12,800 DPI + 1000Hz Polling Rate | Precise, Fast Response】 This high DPI PC gaming mouse offers 6 DPI levels: 800/1200/2400/3200/4800/8000 DPI, expandable to 12,800 DPI through Windows software. Choose 125/250/500/1000Hz polling for fast tracking. As a gaming mouse wireless users can rely on, it su"
+      ]
+    },
+    {
+      "id": "B082FQL8SB",
+      "title": "Logitech G203 Wired Gaming Mouse for Laptop & Computer, 8,000 DPI - Blue | Rainbow Optical Effect, 6 Programmable Buttons, On-Board Memory, Screen Mapping, PC/Mac Computer and Laptop Compatible",
+      "image": "https://m.media-amazon.com/images/I/31Ky5k6L6WL._SL500_.jpg",
+      "price": 26.99,
+      "percentOff": 33,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B082FQL8SB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "features": [
+        "Play in color with LIGHTSYNC RGB featuring color wave effects customizable across ~16.8 million colors. Install Logitech G HUB software on this wired mouse to choose from preset colors and animations or create your own",
+        "Primary buttons on this wired computer mouse are mechanical and tensioned with durable metal springs for reliability, performance and excellent feel. The crisp clicks and precise feedback delivers a great precision feel to maximize your fun in game."
+      ]
+    },
+    {
+      "id": "B08G8WH435",
+      "title": "HyperX QuadCast S – RGB USB Condenser Microphone for PC, PS4, PS5 and Mac, Anti-Vibration Shock Mount, 4 Polar Patterns, Pop Filter, Gain Control, Gaming, Streaming, Podcasts, Twitch, YouTube, Discord",
+      "image": "https://m.media-amazon.com/images/I/31B7mVD6Y7L._SL500_.jpg",
+      "price": 99.99,
+      "percentOff": 29,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08G8WH435?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 139.99,
+      "features": [
+        "Radiant RGB lighting with dynamic effects: Personalize stunning RGB lighting and dynamic effects for an eye-catching shot of customizable style.",
+        "Built-in anti-vibration shock mount: Isolate the mic and suppress the sound of unintentional rumbles and bumps with the elastic rope suspension."
+      ]
+    },
+    {
+      "id": "B0C51J2ZXN",
+      "title": "Razer Cobra Wired Gaming Mouse, Gen-3 Optical Switches, 58g, Black | Chroma RGB Lighting with Underglow, Precise 8500 DPI Optical Sensor, 100% PTFE Mouse Feet",
+      "image": "https://m.media-amazon.com/images/I/31x9+o4UFdL._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0C51J2ZXN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "features": [
+        "58G LIGHTWEIGHT DESIGN — Built to fit most grip styles, the mouse allows for fast, precise control and feels comfortable to use during long gaming sessions",
+        "GEN-3 OPTICAL MOUSE SWITCHES — Unrivalled durability and speed with switches that have an extended 90-million click lifecycle and eliminate double-clicking issues, boasting a blistering 0.2 ms actuation time without debounce delay"
+      ]
+    },
+    {
+      "id": "B0CN131D3K",
+      "title": "ATTACK SHARK X6 Wireless Gaming Mouse with Magnetic RGB Charging Base,Black | 49g Superlight,PixArt PAW3395 Gaming Sensor,26K DPI,BT/2.4G Wireless/Wired Mice,Ergonomic Design,200Hrs Battery for Win/Mac",
+      "image": "https://m.media-amazon.com/images/I/31xOx6B5TGL._SL500_.jpg",
+      "price": 39.38,
+      "percentOff": 21,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CN131D3K?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "【MANBASNAKE × ATTACK SHARK 49g Ultra-lightweight Mouse】X6 Aerox gaming mouse designed for speed and precision. Through meticulous engineering and innovative liquid nitrogen cooling injection moulding, strength is guaranteed while achieving a thinner and lighter shell. Perfect for all RPG, MMO, FPS,",
+        "【RGB Magnetic Charging Dock & Super Long Battery Life】This mini mouse comes with a wireless magnetic fast-charging base, that provides 5 hours of use on a 10-minute charge. The innovative design of the base is equipped with fingerprint recognition, which can quickly change the RGB lighting effect wi"
+      ]
+    },
+    {
+      "id": "B0885632M9",
+      "title": "Razer Gigantus V2 Cloth Gaming Mouse Pad (3XL), Thick, Classic Black | Textured MicroWeave Cloth Surface, Thick, High-Density Rubber Foam, Non Slip Base",
+      "image": "https://m.media-amazon.com/images/I/21bt-8tlWiL._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0885632M9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Optimized across all mouse sensors: Calibrated with pixel-precise accuracy and total tracking responsiveness. Reducing the need to lift and reposition mice during high-leverage gaming.",
+        "Micro-weave surface: Glide the mouse with ease across the mat for quick, fluid swipes with both fast and controlled playstyles."
+      ]
+    },
+    {
+      "id": "B0D2BJTX1L",
+      "title": "HyperX Pulsefire Haste 2 Core Wireless Lightweight Gaming Mouse | 12K DPI | 59g Mouse Weight | 69g With Battery | 2.4GHz + Bluetooth 5.2 | 6 Buttons | Custom Core Sensor | Dual Wireless Connectivity,",
+      "image": "https://m.media-amazon.com/images/I/31DL0itJvgL._SL500_.jpg",
+      "price": 39.98,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0D2BJTX1L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-16",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Up to 100 hours of gaming performance: The Pulsefire Haste 2 Core Wireless will game for up to 100 hours with a single AAA battery in high-speed 2.4GHz mode. Game even longer in Bluetooth mode with a reduced polling rate.",
+        "Lightweight, comfortable frame: Make light work of long gaming sessions. With an operating weight of only 70 grams this mouse enables you to move quicker, react faster, and feel less fatigue than with bulkier mice."
+      ]
+    },
+    {
       "id": "B0H98ZVTBW",
       "title": "SMAVISTA Permanent Outdoor Lights S2, 200ft with 120 RGBCW LED String Light | Cuttable, Dual-Output, 16M RGB & 2700K-6500K White, 100+ Scenes, IP67 Waterproof, Compatible with Alexa & Google Assistant",
       "image": "https://m.media-amazon.com/images/I/513tcFwwS5L._SL500_.jpg",
@@ -1109,8 +1475,8 @@
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
-      "price": 69.49,
-      "percentOff": 31,
+      "price": 69.59,
+      "percentOff": 30,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
@@ -1558,43 +1924,6 @@
       ]
     },
     {
-      "id": "B0HH9GQ3DK",
-      "title": "dotn Portable Bluetooth Speaker, 2026 Bluetooth Wireless Speaker 5.4 with RGB Lights, 20H Playtime with Deep Bass, IP7 Waterproof, TWS Pairing, Portable Speaker for Travel/Party/Home/Gifts, Black",
-      "image": "https://m.media-amazon.com/images/I/41Us0rhR5LL._SL500_.jpg",
-      "price": 23.99,
-      "percentOff": 40,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0HH9GQ3DK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "expires": "2026-11-15",
-      "features": [
-        "Advanced Bluetooth 5.4 Technology: Featuring cutting-edge Bluetooth 5.4, experience up to 90% faster transmission for lightning-speed audio sync and a powerful 15-meter range that easily conquers outdoor spaces while effectively resisting interference. Whether you're hosting a backyard party or expl",
-        "20 Hour Marathon Playtime & Dynamic RGB Light Show: Engineered with a high-capacity 3000mAh rechargeable battery, this party speaker provides up to 20 hours of uninterrupted music (at 50% volume; actual playback may vary with usage). Elevate every moment with 7 captivating RGB lighting modes that rh"
-      ]
-    },
-    {
-      "id": "B0DVCYTV1R",
-      "title": "Razer Cobra Wired Gaming Mouse, 58g Lightweight, Minecraft Edition | Gen-3 Optical Switches, Chroma RGB Lighting Underglow, 8500 DPI Optical Sensor, 100% PTFE Mouse Feet, Speedflex Cable",
-      "image": "https://m.media-amazon.com/images/I/31j-QFuEj7L._SL500_.jpg",
-      "price": 32.99,
-      "percentOff": 45,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0DVCYTV1R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 59.99,
-      "features": [
-        "CREEPIN’ IT REAL — Truly live the block life with Razer’s officially licensed gaming mouse for Minecraft",
-        "58G LIGHTWEIGHT DESIGN — Built to fit most grip styles, the mouse allows for fast, precise control and feels comfortable to use during long gaming sessions"
-      ]
-    },
-    {
       "id": "B00COQZDUU",
       "title": "Kind Healthy Grains Granola, Cinnamon Oat Clusters with Flax Seeds, Gluten Free, Healthy Snack Mix, 6g Protein, 11oz, 1 Count",
       "image": "https://m.media-amazon.com/images/I/41KBbMPw8oL._SL500_.jpg",
@@ -1881,21 +2210,6 @@
       "priority": true
     },
     {
-      "id": "B0GYWH5PYQ",
-      "title": "NUBWO Wireless Gaming Headset for PS5, PS4, PC, 7.1 Surround Sound, Black | 2.4GHz USB & Type-C, 80Hr Battery, 270g, Foldable, Mic Monitoring, Compatible with Laptop, Mac, ideal for FPS, RPG",
-      "image": "https://m.media-amazon.com/images/I/41Ki9lULp4L._SL500_.jpg",
-      "price": 35.99,
-      "percentOff": 28,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0GYWH5PYQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-12",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 49.99,
-      "priority": true
-    },
-    {
       "id": "B0GYYKCGK1",
       "title": "Pop Up Screen House Tent 6x6 FT Portable Instant Screen Canopy Tent | with Carry Bag Waterproof UV Protection Outdoor Gazebo for Patio Backyard Camping Deck Beach",
       "image": "https://m.media-amazon.com/images/I/51ztC1e4qmL._SL500_.jpg",
@@ -2002,21 +2316,6 @@
       "priority": true
     },
     {
-      "id": "B073GQXMM9",
-      "title": "Wise Owl Outfitters Hammock Rain Fly – Waterproof Camping Tarp Cover with Tent Stakes & Carry Bag, Ultralight Shelter for Backpacking & Outdoor Shade",
-      "image": "https://m.media-amazon.com/images/I/415gx-6wsoL._SL500_.jpg",
-      "price": 46.71,
-      "percentOff": 22,
-      "category": "Sports",
-      "url": "https://www.amazon.com/dp/B073GQXMM9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-12",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 59.99,
-      "expires": "2026-11-15"
-    },
-    {
       "id": "B0F3CQJZRQ",
       "title": "Govee Outdoor UpDown Wall Light, 2 Pack, 1200LM RGBICWW Smart Porch Lights | 64 Scene Modes, IP66 Waterproof Wall Sconce for Outdoor Decor, Compatible with Alexa, Google Assistant and Matter",
       "image": "https://m.media-amazon.com/images/I/51-BivF3O2L._SL500_.jpg",
@@ -2103,8 +2402,8 @@
       "discovered": true,
       "originalPrice": 48.99,
       "features": [
-        "Installation Flexibility: our outdoor light side mounting clips are compatible with Govee Pro H706 H806 light string/Govee permanent outdoor lights; We provide ample sets light side mounting clips and screws to meet your side mounting needs, installation is a breeze",
-        "Stability Post-installation: say goodbye to unreliable adhesives; These outdoor lights clips Compatible with Govee Pro H706 H806 are crafted to enhance the stability of your outdoor lights, even in heavy rain, strong winds, or extreme temperatures"
+        "Installation Flexibility: our outdoor light mounting clips are compatible with Govee Pro H706 H806 permanent outdoor lights, not compatible with Govee lights(H705); We provide ample sets light mounting clips and screws to meet your mounting needs, installation is a breeze",
+        "Stability Post-installation: say goodbye to unreliable adhesives; These outdoor lights clips Compatible with Govee Pro H706 H806, not compatible with Govee lights(H705) are crafted to enhance the stability of your outdoor lights, even in heavy rain, strong winds, or extreme temperatures"
       ],
       "priority": true
     },
@@ -2305,7 +2604,7 @@
       "id": "B0FLKJ7FH7",
       "title": "HyperX SoloCast 2 USB Condenser Gaming Microphone | 24-bit | 96kHz | Cardioid | USB-C | Tap-to-Mute | PC Compatible",
       "image": "https://m.media-amazon.com/images/I/31PWz6pDdjL._SL500_.jpg",
-      "price": 44.99,
+      "price": 44.98,
       "percentOff": 25,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -2344,8 +2643,8 @@
       "id": "B0D9MCK4R8",
       "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
       "image": "https://m.media-amazon.com/images/I/31v2asog0qL._SL500_.jpg",
-      "price": 119,
-      "percentOff": 21,
+      "price": 119.49,
+      "percentOff": 20,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-11",
@@ -2726,12 +3025,13 @@
       "id": "B0BF976MJY",
       "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
       "image": "https://m.media-amazon.com/images/I/416LIaAUumL._SL500_.jpg",
-      "price": 45.59,
+      "price": 42.59,
       "originalPrice": 49.99,
-      "percentOff": 9,
+      "percentOff": 15,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-11",
+      "expires": "2026-11-19",
       "sample": false,
       "source": "api",
       "features": [
@@ -2797,22 +3097,6 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 54.99
-    },
-    {
-      "id": "B09Q4GWMZQ",
-      "title": "LEGO Botanicals Succulents 10309 | Back to School Gift for Students & Teachers, Building Set for Adults, Ages 18+, 771 Pieces, Artificial Plant Home Decor",
-      "image": "https://m.media-amazon.com/images/I/51S9RXLfrhL._SL500_.jpg",
-      "price": 32.99,
-      "percentOff": 34,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B09Q4GWMZQ?tag=eddie060-20",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 49.99,
-      "checkoutDiscount": true,
-      "expires": "2026-11-15"
     },
     {
       "id": "B087N9N6HH",
