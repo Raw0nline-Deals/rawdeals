@@ -2,23 +2,369 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
-      "id": "B0H5CYZYFX",
-      "title": "Permanent Outdoor Lights for House,199FT Christmas Lights",
-      "image": "https://m.media-amazon.com/images/I/514Ljsn1mGL._SL500_.jpg",
-      "price": 59.99,
-      "percentOff": 64,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H5CYZYFX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-16",
+      "id": "B0FQ2M9F1R",
+      "title": "VK81 Wireless Gaming Headset for PS5 PC Switch, ≤20ms Low Latency | 2.4GHz & Bluetooth 5.4, 50mm 3D Audio, ENC Mic, Switch Voice Chat, RGB, 50H Battery, Foldable Comfort",
+      "image": "https://m.media-amazon.com/images/I/41pw7RUu17L._SL500_.jpg",
+      "price": 19.49,
+      "percentOff": 35,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FQ2M9F1R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
       "sample": false,
       "source": "api",
       "discovered": true,
-      "originalPrice": 165.99,
+      "originalPrice": 29.99,
       "features": [
-        "1. YEAR-ROUND ARCHITECTURAL ACCENT LIGHTING & MULTI-SCENE MODES Enhance your home exterior with versatile lighting for year-round use. Featuring 50+ preset scene modes and 16 million colors, these permanent outdoor lights for house are designed for holidays, gatherings, and everyday ambient lighting",
-        "2. ALL-WEATHER PERFORMANCE & IP67 WATER RESISTANCE Designed for outdoor installation, this lighting system features IP67 water resistance for the light strands, control unit, and power adapter. UV-resistant materials are suitable for general outdoor environments with rain, snow, and sunlight exposur"
+        "【Flexible 2.4GHz & Bluetooth Connectivity】Built for gaming and everyday listening, the VK81 wireless gaming headset uses the included USB/Type-C dongle for a stable, ≤20ms connection with PS5, PS4, PC, Mac and Switch. Switch to Bluetooth for compatible PCs, laptops, phones and tablets. Game and Musi",
+        "【Immersive 50mm 3D Audio for Every Detail】Large 50mm drivers deliver fuller, more dimensional sound so footsteps, reloads, distant effects and environmental cues are easier to distinguish. Whether you are tracking movement in an FPS or exploring an open world, the VK81 gaming headphones bring greate"
       ],
       "priority": true
+    },
+    {
+      "id": "B01JCNEJVQ",
+      "title": "Rubbermaid Brilliance Plastic Leak-Proof Food Storage Container, 9.6-Cup | Airtight and Leakproof, 9.6 Cup Capacity, Shatter-Resistant and Durable, Splatter-Free Microwaving",
+      "image": "https://m.media-amazon.com/images/I/41ISGlBo1aL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B01JCNEJVQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.34,
+      "expires": "2026-12-01",
+      "features": [
+        "The Brilliance Food Storage Container from Rubbermaid is a convenient way to store and heat leftovers",
+        "Leak-proof design"
+      ]
+    },
+    {
+      "id": "B0HDJ6YDBF",
+      "title": "6 Pack Extra Large Moving Bags with Double Zipper & Handles, Heavy Duty Storage Bag, Water-Resistant Storage Totes, Dorm, Closet, Travel, Holiday Ornaments (Black)",
+      "image": "https://m.media-amazon.com/images/I/41fHWXFiaBL._SL500_.jpg",
+      "price": 27.99,
+      "percentOff": 30,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0HDJ6YDBF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "expires": "2026-11-19",
+      "features": [
+        "Heavy Duty Material - Made of upgrade thick PE fabric, storage boxes with fully wrap around handles, strong zipper and reinforced stitching promise to safely hold more than 65 lbs loading.",
+        "Extra Large Storage Capacity - Measuring 29*14*13 inches, available in 3 colors: blue, pink and black. these storage totes boast a generous capacity for your storage needs. They easily fit comforters, blankets, seasonal apparel, garage supplies, Holiday Ornaments and other bulky items."
+      ]
+    },
+    {
+      "id": "B0CCRNWS6P",
+      "title": "CuteBone Christmas Dog Sweater Dress with Bow for Small Medium Dogs & Cats | Embroidered Christmas Tree, Turtleneck Knit Pullover,Leash Hole, Rhinestone Bow Decor, Warm Clothes, Sizes XS-XXL Available",
+      "image": "https://m.media-amazon.com/images/I/41PWjbdFnrL._SL500_.jpg",
+      "price": 11.49,
+      "percentOff": 50,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0CCRNWS6P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.99,
+      "expires": "2026-11-21",
+      "features": [
+        "Exquisite Embroidery Craft: Stitched Merry Christmas letter and Christmas tree pattern, more durable and premium than ordinary printing, ideal for holiday parties and Xmas photoshoots.",
+        "Sparkly Rhinestone Bow Ornament: Elegant red bow decorated with shiny rhinestones, makes your furry friend stand out in crowds."
+      ]
+    },
+    {
+      "id": "B09PMWD5T5",
+      "title": "Bath & Body Works Moonlight Path Fine Fragrance Mist - Value Pack Lot of 2 (Moonlight Path)",
+      "image": "https://m.media-amazon.com/images/I/41irgxl+AxL._SL500_.jpg",
+      "price": 24.95,
+      "percentOff": 30,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B09PMWD5T5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 35.47,
+      "features": [
+        "Fragrant Garden Experience: Transport your senses to a lush, midnight flower garden with notes of night-blooming jasmine, blue violet, sheer lavender, lily of the valley, and soft musk",
+        "Light-as-Air Mist: Enjoy a super layerable, fine fragrance mist that gently scents your skin"
+      ]
+    },
+    {
+      "id": "B0BSVXMGG8",
+      "title": "REDCON1 Total War Ready to Drink Pre Workout | Tiger’s Blood | 365mg Caffeine + Citrulline Malate + Beta Alanine | Zero Sugar (12 Pack)",
+      "image": "https://m.media-amazon.com/images/I/41xoSPULPNL._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 33,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B0BSVXMGG8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 44.99,
+      "features": [
+        "Total War Preworkout for Men & Women - Formulated with amino acid beta alanine to enhance muscular endurance and reduce exhaustion. Total War preworkout delivers rapid, fast-acting power & focus for a transformative workout you didn't think was possible.",
+        "Unstoppable Power - This award-winning pre workout contains 350mg of active caffeine with 300mg of caffeine anhydrous, a dehydrated form that promotes alertness and wakefulness + 100mg of di-caffeine malate, which slows the release to help you dominate even your most challenging workouts."
+      ]
+    },
+    {
+      "id": "B00T7PCQBK",
+      "title": "MRS. MEYER'S CLEAN DAY All-Purpose Cleaner Spray, Lavender, 16 fl. oz",
+      "image": "https://m.media-amazon.com/images/I/31pgI8uQosL._SL500_.jpg",
+      "price": 1.95,
+      "percentOff": 70,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00T7PCQBK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 6.49,
+      "features": [
+        "Quick and easy multi surface spray removes stuck on dirt",
+        "A fresh way to clean and refresh non-porous surfaces throughout the house"
+      ]
+    },
+    {
+      "id": "B0752ZJ5LF",
+      "title": "Rubbermaid Brilliance 16-Cup Airtight Food Storage Container with Lid Clear/Grey - optimal for pantry organization flour sugar and food storage",
+      "image": "https://m.media-amazon.com/images/I/31CeUbQl7oL._SL500_.jpg",
+      "price": 13.99,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0752ZJ5LF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Modular Design: Rubbermaid Storage Containers are compact and stackable, optimizing your kitchen storage space.",
+        "High Capacity: With a 16-cup volume, it is perfect for maintaining large quantities of flour, sugar, and other baking ingredients."
+      ]
+    },
+    {
+      "id": "B0DGF616XN",
+      "title": "6 Pack Extra Heavy Duty Large Moving Bags with Strong Zipper, Dark Blue | Comfortable Handles, Sturdy & Durable Clothes Storage Bags Totes Bins, Blue Packing Moving Boxes for College Supplies",
+      "image": "https://m.media-amazon.com/images/I/41D8Mks69aL._SL500_.jpg",
+      "price": 26.99,
+      "percentOff": 27,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0DGF616XN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 36.99,
+      "features": [
+        "【Extra Heavy Duty】Made of upgraded 180 GMS extra thick coated PE fabric, Fygrip moving bags with fully wrap around handles, strong zipper and reinforced stitching promise to safely hold more than 65 lbs loading.",
+        "【Extra Large Capacity】Sized at 29\"L x 14\"W x 13\"H, these extra large storage bags offers more than 23 gallon volume, perfect packing bags for the moving of college student."
+      ]
+    },
+    {
+      "id": "B0G5D28PBS",
+      "title": "Hikiko 5FT Dog Leash Padded Double Handle with Designed Pattern | Heavy Duty Traffic Handle Extra Control,Special Navy Blue Pink Flower,360° Rotating Clasp,for Medium Large Dog",
+      "image": "https://m.media-amazon.com/images/I/41qT4spvnkL._SL500_.jpg",
+      "price": 7.5,
+      "percentOff": 29,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0G5D28PBS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 10.49,
+      "features": [
+        "【Dual Handles Soft Padded】- Two neoprene padded handles ensure comfortable grip. The standard handle is suitable for relaxing walking. Traffic handle are suitable for providing quick and emergency control on sidewalks or crowded areas.",
+        "【Durable & Sturdy】- 5FT length, 1 inch width dog leash suitable for medium or large dogs. The nylon material of the double handle dog leash is sturdy, durable, soft and comfortable."
+      ]
+    },
+    {
+      "id": "B0FPZTCQWX",
+      "title": "Lattafa Mallow Madness Eau de Parfum Give Me Gourmand Collection, Sweet Gourmand Fragrance, Marshmallow & Vanilla, Spray Form, 75ml, Long-lasting",
+      "image": "https://m.media-amazon.com/images/I/31HFadW73PL._SL500_.jpg",
+      "price": 31.98,
+      "percentOff": 29,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0FPZTCQWX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 44.99,
+      "features": [
+        "FRAGRANCE PROFILE: A gourmand delight featuring sweet toasted marshmallow, creamy vanilla, and delicate sugar notes for an indulgent experience.",
+        "SCENT COMPOSITION: Luxurious blend of marshmallow-inspired accords combined with rich vanilla and sweet gourmand elements."
+      ]
+    },
+    {
+      "id": "B07P97J837",
+      "title": "vitaminwater Energy Tropical Citrus, Flavored Water Beverage Bottles, 20 fl oz, 12 Pack",
+      "image": "https://m.media-amazon.com/images/I/415vQrTbxDL._SL500_.jpg",
+      "price": 16.97,
+      "percentOff": 25,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B07P97J837?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.56,
+      "features": [
+        "60mg caffeine, plus deliciousness packed in",
+        "vitamins, electrolytes and a boost of caffeine"
+      ]
+    },
+    {
+      "id": "B01BUNHFAS",
+      "title": "OxiClean Odor Blasters Versatile Odor and Stain Remover Powder, 5 lb | Eliminates Tough Odors, Laundry Stain Remover, Oxygen-Powered Cleaning, Multi-Purpose Cleaner, Color Safe Formula",
+      "image": "https://m.media-amazon.com/images/I/51+3naixieL._SL500_.jpg",
+      "price": 9.25,
+      "percentOff": 34,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B01BUNHFAS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 13.99,
+      "features": [
+        "OXICLEAN ODOR BLASTERS: Versatile Odor Eliminator and Stain Remover Powder gets out tough stains and stubborn smells, 5 lb tub tackles big and small messes",
+        "HELPS REMOVE SMELLS AND STAINS: Oxygen-based, water-activated laundry booster gets out tough dirt, persistent spots and set-in stains, plus eliminates sweat, musty towel and body odors"
+      ]
+    },
+    {
+      "id": "B0BC7ZY1ZY",
+      "title": "[8 Pack] Salad Dressing Container To Go, 2.4oz Small Condiment Containers with Leakproof Silicone Lids, Reusable Stainless Steel Sauce Cups for Lunch Bento Box, Picnic and Travel",
+      "image": "https://m.media-amazon.com/images/I/41--7DmsKrL._SL500_.jpg",
+      "price": 12.99,
+      "percentOff": 24,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0BC7ZY1ZY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.99,
+      "features": [
+        "PORTABLE SIZE : Each features 2.6” x 1.7”. and 2.4oz(70ml). Perfect Size for packing sauces, salad dressings, peanut butter, jams, dressings, snacks, etc.",
+        "RELIABLE MATERIAL: The small containers with lids are made of high quality 18/8 stainless steel and food grade safe silicone, BPA free, non-toxic. It can completely replace disposable containers and avoid environmental pollution caused by them. Totally dishwasher and fridge safe."
+      ]
+    },
+    {
+      "id": "B0D8WPCBZL",
+      "title": "ARMAF Eter Arabian Sky EDP Spray 100ML (3.4 OZ) By Armaf | A Celestial Blend Of Citrus, Floral & Woody Scents.",
+      "image": "https://m.media-amazon.com/images/I/51lmeKbGhfL._SL500_.jpg",
+      "price": 46.91,
+      "percentOff": 26,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0D8WPCBZL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 62.99,
+      "features": [
+        "ARABIAN SKY: This scent offers a fresh, energetic burst of pepper, lemon, Italian bergamot, orange oil, grapefruit, and pineapple. Perfect for those seeking perfumes para hombres original & ideal for mens gifts.",
+        "AN INTRICATE SYMPHONY: As the scent evolves, men perfume reveals a floral and sweet heart of lavender & caramel. Base notes of patchouli, musk perfume & amber perfume ensure lasting men's fragrances."
+      ]
+    },
+    {
+      "id": "B0BJM1MXG5",
+      "title": "Tide Hygienic Clean Power PODS Laundry Detergent Pacs, Original Scent, 45 Count, Removes Visible and Invisible Dirt",
+      "image": "https://m.media-amazon.com/images/I/41nBBIPglkL._SL500_.jpg",
+      "price": 14.99,
+      "percentOff": 25,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0BJM1MXG5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "features": [
+        "TACKLES TOUGH, SET-IN STAINS: stain fighting, with the power of Hygienic Clean",
+        "DEEP, HYGIENIC CLEAN: Gets between fibers to clean the hidden dirt"
+      ]
+    },
+    {
+      "id": "B08BL4CWNW",
+      "title": "SOPHICO 2 Cup Silicone Lids Replacement for Pyrex & Anchor Hocking 7200-PC | Food Grade Silicone, Leakproof、Airtight Lids, Dishwasher Microwave Safe(2 Pack)",
+      "image": "https://m.media-amazon.com/images/I/31k-IlyT4CL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 23,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B08BL4CWNW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 12.99,
+      "features": [
+        "Silicone Cover for 2 cup Glass Round Storage Dish (Containers are NOT INCLUDED) Package included: 2 Pack",
+        "LEAK-PROOF DESIGN: provide an airtight and secure seal to lock in freshness. Tight fit reduces leakage. Mess-free, spill-free."
+      ]
+    },
+    {
+      "id": "B00I8YAT42",
+      "title": "OxiClean Versatile Stain Remover Powder, 5 lb | 101+ Household Uses, Tough Stain Removal, Laundry Booster, Multi-Surface Cleaning, Color Safe, Chlorine Free",
+      "image": "https://m.media-amazon.com/images/I/51Tda3la9mL._SL500_.jpg",
+      "price": 9.05,
+      "percentOff": 23,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00I8YAT42?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 11.78,
+      "features": [
+        "One 5 lb container of OxiClean Stain Remover Powder with over 101 uses for laundry and around the home",
+        "Oxygen-powered, water-activated OxiClean powder removes everyday dirt and grime, and tough set-in stains from machine-washable t-shirts, sheets, towels, shoes, hats, workout gear, and kids’ and baby clothes"
+      ]
+    },
+    {
+      "id": "B087D6RB5Q",
+      "title": "Zulay Kitchen Glass Storage Containers with Lids, Premium BPA Free 36oz | 5 Piece Large Borosilicate Glass Food Storage Containers - Leak-Proof Meal Prep - Microwave, Freezer & Oven Safe - Gray",
+      "image": "https://m.media-amazon.com/images/I/51MJQMVlGGL._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B087D6RB5Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Glass food storage containers with lids: Replace your old and flimsy plastic containers that stain easily with the Zulay Kitchen glass meal prep containers. Made from high-quality borosilicate glass that is sturdy, durable, and aesthetically pleasing. It works great for storing leftovers, packing lu",
+        "Premium Borosilicate Glass Food Storage Containers: Featuring a 100% BPA free thick glass that can withstand heat up to 600 degrees Fahrenheit making this glass container best for microwave, oven and freezer. Package comes with 5 rectangular container pieces with 36oz capacity that is perfect for pa"
+      ]
+    },
+    {
+      "id": "B0B1PGR1LZ",
+      "title": "Tide PODS Laundry Detergent Soap with Ultra Oxi 4-in-1 Detergent, 85 Count, Built-in Pre-Treaters, Set-in Stains, Color Protectors, HE Compatible",
+      "image": "https://m.media-amazon.com/images/I/41GCZthQ1tL._SL500_.jpg",
+      "price": 21.24,
+      "percentOff": 23,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0B1PGR1LZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-17",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 27.49,
+      "features": [
+        "TIDE PODS + ULTRA OXI POWER: Unleash Tide PODS laundry detergent with added Ultra Oxi set-in stain fighting power",
+        "4-IN-1 VALUE LAUNDRY SOAP: Tide Detergent PODS with Ultra Oxi are pre-measured, concentrated laundry detergent pacs with built-in pre-treaters, stain removers, and color protectors"
+      ]
     },
     {
       "id": "B0CWS6V29J",
@@ -592,25 +938,6 @@
       ]
     },
     {
-      "id": "B0HF81JXF3",
-      "title": "16\" Laptop Screen Extender, 1200P FHD+ Triple Portable Monitor for Laptops, Ultra-Slim Travel Monitor for 12–17.3\" Laptops, USB-C/HDMI Plug-Play Monitor Extender for Mac/Win/Android/Chrome",
-      "image": "https://m.media-amazon.com/images/I/41YEmEFhrOL._SL500_.jpg",
-      "price": 249,
-      "percentOff": 24,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0HF81JXF3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 329,
-      "expires": "2026-11-16",
-      "features": [
-        "【16\" 1200P IPS – Bigger, Clearer】The AetherSpark laptop monitor extender features dual 16\" IPS displays with 1920×1200 resolution and a 16:10 aspect ratio — more vertical space than standard 16:9 screens. See more code, docs, and spreadsheets on a clearer screen — with less scrolling. At 350 nits br",
-        "【2-Cable Plug & Play – Clutter-Free】The AetherSpark portable screen for laptop is designed for simplicity and efficiency. Its upgraded internal structure reduces cable clutter and simplifies the connection process. Unlike traditional portable laptop monitor, it requires just two USB-C cables for ful"
-      ]
-    },
-    {
       "id": "B089GN2KBT",
       "title": "RK ROYAL KLUDGE RK61 Wired 60% Mechanical Gaming Keyboard, Compact PC Game Keyboards with QMK/VIA Programmable RGB Backlit, Hot Swappable Custom Keyboard for Win/MAC, Pre-lubed Red Switch, White",
       "image": "https://m.media-amazon.com/images/I/41bborQ0jcL._SL500_.jpg",
@@ -845,25 +1172,6 @@
       "features": [
         "ALL PURPOSE CLEANER KILLS 99.9% OF VIRUSES and BACTERIA: Lysol All Purpose disinfectant spray kills 99.9% of viruses and bacteria including the COVID-19 virus to help keep your family protected",
         "KILLS 99.9% OF GERMS FOR A DEEP CLEAN: This disinfectant spray kills 99.9% of germs, removes soap scum and cuts through tough grease and grime — a versatile, multipurpose cleaner you can count on"
-      ]
-    },
-    {
-      "id": "B0DFYPVPRT",
-      "title": "Baseus Portable Charger, 10000mAh Fast Charging Power Bank, 22.5W PD3.0 QC4+ Battery Pack Built-in USB C Braided Cable, Travel Essentials Portable Phone Charger for iPhone 18 17 16 15, iPad, S26/S25",
-      "image": "https://m.media-amazon.com/images/I/31ONMo8yLgL._SL500_.jpg",
-      "price": 17.99,
-      "percentOff": 22,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0DFYPVPRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 22.99,
-      "expires": "2026-11-16",
-      "features": [
-        "⚡【Charge Fast Anywhere】Baseus Bipow power bank delivers 22.5W Power Delivery fast charging — power your i Phone 16 to 57% in just 30min. Also supports PD 3.0, QC 3.0 and other fast-charging protocols. Both the built-in USB-C cable and the USB-C port support input and output. Unlike other devices on",
-        "⚡ 【Pocket-Friendly Power Bank】At just 4.8x2.7x0.7 inches, this compact portable phone charger slips effortlessly into your backpack, clutch purse, or gym bag without bulging. The 10,000mAh battery bank cell capacity gives you enough power to charge the iPhone 16 Pro Max 1.5 times, the S25 1.5 times,"
       ]
     },
     {
@@ -1269,25 +1577,6 @@
       ]
     },
     {
-      "id": "B0CBNMWFQL",
-      "title": "PDP Afterglow Wave Wired RGB Gaming Controller for Nintendo Switch 2, Lite | Also works with Switch OLED, RGB LED Lighting, 2 Mappable Back Buttons, Audio Controls, Headset Jack, Motion Controls, Blue",
-      "image": "https://m.media-amazon.com/images/I/416X13dt5UL._SL500_.jpg",
-      "price": 19.99,
-      "percentOff": 33,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0CBNMWFQL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "expires": "2026-11-16",
-      "features": [
-        "Officially Licensed Nintendo Product - Officially licensed by Nintendo for Nintendo Switch, Nintendo Switch Lite, and Nintendo Switch - OLED Model. Also works with Nintendo Switch 2 - C Button not available.",
-        "Custom RGB Lighting - Glow up your setup with eight RGB zones and four preset modes, creating vibrant color combinations to light up your game like never before!"
-      ]
-    },
-    {
       "id": "B0B3ZXMV61",
       "title": "For Bare Feet NCAA Maryland Terrapins Camo Boom Ankle Socks, 3 Pack, Adult Large",
       "image": "https://m.media-amazon.com/images/I/51AO6TIh7wL._SL500_.jpg",
@@ -1475,8 +1764,8 @@
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
-      "price": 69.59,
-      "percentOff": 30,
+      "price": 68.39,
+      "percentOff": 32,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-13",
@@ -1489,25 +1778,6 @@
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
       "priority": true
-    },
-    {
-      "id": "B07SCM9F8T",
-      "title": "Heathyoga Capri Leggings with Pockets for Women Capris Yoga Pants Women | 15\"/19\" Capri Pants, High Waist, Tummy Control, Squat Proof, Comfortable, Compression, 3 Pockets, For Pilates Yoga Daily Wear",
-      "image": "https://m.media-amazon.com/images/I/31K+iQyp6lL._SL500_.jpg",
-      "price": 14.98,
-      "percentOff": 25,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B07SCM9F8T?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 19.99,
-      "expires": "2026-11-16",
-      "features": [
-        "Ultra Soft Fabrics with Latest Technology - Our capri pants for women are made from high quality materials. By adopting 4-way stretch technology, these leggings with pockets for women enable you to move, bend, squat and stretch easily, just as a second-layer skin on your body",
-        "2 Side Pockets & Inner Pocket - These capris pants for women have pockets on both sides to stash cash and phone, extra with an inner pocket designed to keep cards and keys. So you can go out wallet-free and focus on your exercise, not on your essentials"
-      ]
     },
     {
       "id": "B01F35UGWS",
@@ -1833,24 +2103,6 @@
       "features": [
         "Comfortable Everyday Drying: Designed for older kids, this kids bath towels option keeps hair and shoulders covered after showers, swim practice, or sports. A reliable Marvel Spidey bath towel for kids that works well for daily routines at home, school trips, and after water activities",
         "Beach And Summer Ready: Bold beach towels for kids choice that doubles as a dependable kids pool towel for swim days and beach outings. Packs easily as a travel beach towel for vacations, camps, and weekend family trips"
-      ]
-    },
-    {
-      "id": "B0FLKC5JN4",
-      "title": "CMF BY Nothing Headphone Pro Active Noise Canceling Wireless Headphones Bluetooth 5.4 Over The Ear Headset, 50H ANC Playtime, Bass&Treble Slider, Custom EQ&Spatial Audio, Hi-Res LDAC, Light Grey",
-      "image": "https://m.media-amazon.com/images/I/313YG4UIMVL._SL500_.jpg",
-      "price": 49,
-      "originalPrice": 79,
-      "percentOff": 38,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0FLKC5JN4?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-13",
-      "expires": "2026-12-01",
-      "sample": false,
-      "source": "api",
-      "features": [
-        "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
-        "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
       ]
     },
     {
@@ -2550,6 +2802,10 @@
       "discovered": true,
       "originalPrice": 69.99,
       "expires": "2026-11-19",
+      "features": [
+        "Christmas Outdoor Decorations: Bring your outdoor space to life during holidays, parties, or casual weekend hangouts. Our RGB+IC lighting features a dynamic Music Sync mode that flashes and pulses in real-time to the beat of your favorite playlist. Whether you are hosting a lively backyard barbecue,",
+        "16 Million Lighting Colors Effects: Elevate your home’s curb appeal with our permanent outdoor lights for house. Featuring a unique lens design, these lights project a crisp 100° triangular lighting effect. For best results, install them 2-4 inches away from the wall to achieve 24 inches wall wash d"
+      ],
       "priority": true
     },
     {
@@ -2657,25 +2913,6 @@
         "Cable Length: 9.84 ft"
       ],
       "priority": true
-    },
-    {
-      "id": "B0DQ5CWB2X",
-      "title": "MAONO Dynamic Microphone-XLR USB Podcast Recording Mic with 192kHz/24bit | for Vocal Recording, Content Creation, Home Studio, Voiceover, with Noise Reduction, Mic Gain, Monitoring, Mute, PD300X",
-      "image": "https://m.media-amazon.com/images/I/41EaoH2fJyL._SL500_.jpg",
-      "price": 87.98,
-      "percentOff": 32,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0DQ5CWB2X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 129.99,
-      "expires": "2026-11-16",
-      "features": [
-        "6 Major Upgrades, Easily Enjoy Professional Sound Quality: With ultra-high-definition 192kHz/24bit sampling rate and visual graphic EQ panel, every detail is crystal clear. The robust dynamic microphone structure and multi-dimensional noise reduction technology ensure authentic sound reproduction, r",
-        "Breakthrough Audio Performance: The MAONO PD300X dynamic microphone features ultra-high-definition 192kHz/24bit sampling, surpassing traditional CD recording standards. This allows it to capture higher-frequency sound details and reproduce exceptional audio quality. Whether you're using it for strea"
-      ]
     },
     {
       "id": "B002VA464S",
@@ -2986,23 +3223,6 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 41.99
-    },
-    {
-      "id": "B09XF23WY2",
-      "title": "Lepro Clip on Desk Lamp, LED Reading Light with Clamp, 460LM 5W, Black | 3 Color Modes 10 Brightness, Dimmable, USB Small Desk Light with Gooseneck Swing Arm for Nail, Home Office and Dorm",
-      "image": "https://m.media-amazon.com/images/I/31n1Qsepg+L._SL500_.jpg",
-      "price": 17.54,
-      "originalPrice": 18.99,
-      "percentOff": 8,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "features": [
-        "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
-        "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ]
     },
     {
       "id": "B0GX5XQG45",
