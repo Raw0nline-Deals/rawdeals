@@ -1,6 +1,7 @@
 import { withAffiliateTag } from "./affiliate.js";
 import { beehiivSignupUrl } from "./signup.js";
 import { createDeadDealStore } from "./dead-deals.js";
+import { activeCodes, codesFromPayload, presentCode } from "./codes.js";
 import {
   categoriesIn,
   dayGroups,
@@ -32,6 +33,9 @@ const dealsRoot = document.querySelector("#deals");
 const filtersRoot = document.querySelector("#filters");
 const resultCount = document.querySelector("#result-count");
 const copyStatus = document.querySelector("#copy-status");
+const codesSection = document.querySelector("#codes");
+const codesList = document.querySelector("#codes-list");
+const codesNav = document.querySelector("#codes-nav");
 let copyTimer = 0;
 
 for (const link of document.querySelectorAll("[data-affiliate]")) {
@@ -88,10 +92,7 @@ filtersRoot.addEventListener("click", (event) => {
 dealsRoot.addEventListener("click", async (event) => {
   const copyButton = event.target.closest(".copy-btn");
   if (copyButton) {
-    const code = copyButton.dataset.code;
-    const copied = await copyText(code);
-    if (copied) showCopied(copyButton, code);
-    else copyStatus.textContent = `Could not copy ${code}. Select the code and copy it.`;
+    await copyFromButton(copyButton);
     return;
   }
 
@@ -116,9 +117,16 @@ dealsRoot.addEventListener("click", async (event) => {
   }
 });
 
+codesSection.addEventListener("click", async (event) => {
+  const copyButton = event.target.closest(".copy-btn");
+  if (!copyButton) return;
+  await copyFromButton(copyButton);
+});
+
 init();
 
 async function init() {
+  const codesPromise = loadCodes();
   try {
     const response = await fetch(new URL("../data/deals.json", import.meta.url), { cache: "no-cache" });
     if (!response.ok) throw new Error(`Could not load deals (${response.status})`);
@@ -130,6 +138,87 @@ async function init() {
   } catch (error) {
     dealsRoot.replaceChildren(message(error.message || "Deals could not be loaded."));
   }
+  renderCodes(await codesPromise);
+}
+
+async function loadCodes() {
+  try {
+    const response = await fetch(new URL("../data/codes.json", import.meta.url), { cache: "no-cache" });
+    if (!response.ok) return [];
+    return activeCodes(codesFromPayload(await response.json()), state.today);
+  } catch {
+    return [];
+  }
+}
+
+function renderCodes(entries) {
+  const views = entries.map(presentCode).filter(Boolean);
+  if (views.length === 0) {
+    codesSection.hidden = true;
+    codesNav.hidden = true;
+    codesList.replaceChildren();
+    return;
+  }
+  const fragment = document.createDocumentFragment();
+  views.forEach((view, index) => fragment.append(renderCodeCard(view, index)));
+  codesList.replaceChildren(fragment);
+  codesSection.hidden = false;
+  codesNav.hidden = false;
+}
+
+function renderCodeCard(view, index) {
+  const card = document.createElement("article");
+  card.className = "code-card";
+  card.dataset.codeId = view.id;
+  const titleId = `code-title-${index + 1}`;
+  card.setAttribute("aria-labelledby", titleId);
+
+  const brand = document.createElement("p");
+  brand.className = "category";
+  brand.textContent = view.brand;
+
+  const title = document.createElement("h3");
+  title.className = "title";
+  title.id = titleId;
+  title.textContent = view.title;
+
+  card.append(brand, title);
+
+  if (view.description) {
+    const description = document.createElement("p");
+    description.className = "code-detail";
+    description.textContent = view.description;
+    card.append(description);
+  }
+
+  const discount = document.createElement("p");
+  discount.className = "code-discount";
+  discount.textContent = view.discount;
+
+  const expiry = document.createElement("p");
+  expiry.className = "expiry";
+  expiry.textContent = view.expiresLabel;
+
+  card.append(discount, createCopyRow(view.code), expiry);
+
+  if (view.notes) {
+    const notes = document.createElement("p");
+    notes.className = "code-notes";
+    notes.textContent = view.notes;
+    card.append(notes);
+  }
+
+  if (view.href) {
+    const link = document.createElement("a");
+    link.className = "btn btn-primary";
+    link.href = view.href;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer sponsored";
+    link.textContent = view.linkLabel;
+    card.append(link);
+  }
+
+  return card;
 }
 
 function renderChips(categories) {
@@ -273,23 +362,7 @@ function renderCard(deal) {
 
   body.append(category, title, price);
 
-  if (deal.promoCode) {
-    const row = document.createElement("div");
-    row.className = "code-row";
-    const code = document.createElement("code");
-    code.textContent = deal.promoCode;
-    const copyButton = document.createElement("button");
-    copyButton.type = "button";
-    copyButton.className = "copy-btn";
-    copyButton.dataset.code = deal.promoCode;
-    copyButton.setAttribute("aria-label", `Copy promo code ${deal.promoCode}`);
-    const copyText = document.createElement("span");
-    copyText.className = "copy-text";
-    copyText.textContent = "Copy";
-    copyButton.append(copyText);
-    row.append(code, copyButton);
-    body.append(row);
-  }
+  if (deal.promoCode) body.append(createCopyRow(deal.promoCode));
 
   if (deal.expires) {
     const expiry = document.createElement("p");
@@ -339,8 +412,33 @@ function setDead(card, dead) {
   card.querySelector(".local-note").hidden = !dead;
 }
 
+function createCopyRow(promoCode) {
+  const row = document.createElement("div");
+  row.className = "code-row";
+  const code = document.createElement("code");
+  code.textContent = promoCode;
+  const copyButton = document.createElement("button");
+  copyButton.type = "button";
+  copyButton.className = "copy-btn";
+  copyButton.dataset.code = promoCode;
+  copyButton.setAttribute("aria-label", `Copy promo code ${promoCode}`);
+  const label = document.createElement("span");
+  label.className = "copy-text";
+  label.textContent = "Copy";
+  copyButton.append(label);
+  row.append(code, copyButton);
+  return row;
+}
+
+async function copyFromButton(copyButton) {
+  const code = copyButton.dataset.code;
+  const copied = await copyText(code);
+  if (copied) showCopied(copyButton, code);
+  else copyStatus.textContent = `Could not copy ${code}. Select the code and copy it.`;
+}
+
 function showCopied(button, code) {
-  for (const other of dealsRoot.querySelectorAll(".copy-btn.is-copied")) {
+  for (const other of document.querySelectorAll(".copy-btn.is-copied")) {
     other.classList.remove("is-copied");
     other.querySelector(".copy-text").textContent = "Copy";
   }

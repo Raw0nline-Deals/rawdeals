@@ -30,7 +30,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (path) => readFileSync(join(root, path), "utf8");
 
 test("affiliate helper is the only runtime source of the Associates tag", () => {
-  const runtime = ["js/app.js", "js/deals.js", "js/categories.js", "js/dead-deals.js"];
+  const runtime = ["js/app.js", "js/deals.js", "js/categories.js", "js/dead-deals.js", "js/codes.js"];
   for (const path of runtime) {
     assert.equal(read(path).includes(ASSOCIATE_TAG), false, path);
   }
@@ -168,7 +168,14 @@ test("seeded deals validate and the publishing files are in place", () => {
   const howTo = page.slice(howAt, filtersAt);
   assert.match(howTo, /<h2[^>]*>How to use a coupon code<\/h2>/);
   assert.match(howTo, /<ol>/);
-  assert.match(howTo, /tap the code on a deal card to copy it/);
+  assert.match(howTo, /tap Copy on a promo code or on a deal card/);
+  assert.match(howTo, /When a promo code is listed above the deals, it uses the same Copy button\./);
+  const codesAt = page.indexOf('id="codes"');
+  const primeAt = page.indexOf('id="try-prime"');
+  assert.ok(codesAt !== -1 && primeAt !== -1);
+  assert.ok(primeAt < codesAt && codesAt < filtersAt);
+  assert.match(page, /id="codes-nav"/);
+  assert.match(page, /href="#codes"/);
   assert.match(howTo, /Some deals apply the discount automatically or use an on-page coupon checkbox, so no code is needed\./);
   assert.match(page, /<h2 id="try-prime-title">Join Amazon Prime<\/h2>/);
   assert.match(page, /New members may get a free trial\./);
