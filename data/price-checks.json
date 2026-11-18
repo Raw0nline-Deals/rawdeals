@@ -616,6 +616,271 @@
         }
       ],
       "requests": 19
+    },
+    {
+      "checkedAt": "2026-11-18T17:52:17.847Z",
+      "checked": 145,
+      "unchanged": 122,
+      "updated": 9,
+      "removed": 12,
+      "unavailable": 2,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B01BZ0LXL8",
+          "title": "Hefty Ultra Strong 13 Gal Kitchen Trash Bags, White, Lavender Vanilla, 80ct | 13G Tall White Trash Bags with Drawstrings for Kitchen and Home Use, Resists Leaks, Punctures, Rips, Continuous Odor Control",
+          "url": "https://www.amazon.com/dp/B01BZ0LXL8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.99,
+          "newPrice": 15.52,
+          "oldPercentOff": 56,
+          "newPercentOff": 14,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0C3WTYZ3G",
+          "title": "Hefty 4 Gallon Small Trash Bags, White, Fabuloso Lavender Scent, 52ct | Drawstring Closure, 4G Small White Trash Bags for Bathrooms, Dorm Rooms, Home Offices, Scented, Continuous Odor Control",
+          "url": "https://www.amazon.com/dp/B0C3WTYZ3G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 4.5,
+          "newPrice": 9.79,
+          "oldPercentOff": 52,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0063KBZV4",
+          "title": "Hefty Ultra Strong 30 Gal Large Trash Bags, Black, Unscented, 25ct | 30G Large Black Trash Bags with Drawstrings, Resists Leaks, Punctures, Tears, Continuous Odor Control, Multipurpose Uses",
+          "url": "https://www.amazon.com/dp/B0063KBZV4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.99,
+          "newPrice": 12.99,
+          "oldPercentOff": 38,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B08MV9FM8G",
+          "title": "Robe Factory LLC STAR WARS Darth Vader LED Light | Desk Lamp | Night Light | 24 Inches",
+          "url": "https://www.amazon.com/dp/B08MV9FM8G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 38.94,
+          "newPrice": 39,
+          "oldPercentOff": 22,
+          "newPercentOff": 22,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B07NWC11T6",
+          "title": "Hefty Load & Carry 42 Gallon Contractor Trash Bags, Black, 26 Count | Construction Cleanup, Remodeling Projects, Extra-Long Flap Handles, Easy to Tie, Easy to Carry",
+          "url": "https://www.amazon.com/dp/B07NWC11T6?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 20.41,
+          "newPrice": 26.26,
+          "oldPercentOff": 33,
+          "newPercentOff": 14,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B00HNW8CXA",
+          "title": "Hefty Strong 30 Gallon Trash Bags, Large Trash Bags 30 Gallon Size, Durable Drawstring Enclosure, Resists Punctures, Leaks, and Tears, Black, Unscented, 56 Bags",
+          "url": "https://www.amazon.com/dp/B00HNW8CXA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 13.37,
+          "newPrice": 17.99,
+          "oldPercentOff": 26,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B00T7PCQBK",
+          "title": "MRS. MEYER'S CLEAN DAY All-Purpose Cleaner Spray, Lavender, 16 fl. oz",
+          "url": "https://www.amazon.com/dp/B00T7PCQBK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 1.95,
+          "newPrice": 4.99,
+          "oldPercentOff": 70,
+          "newPercentOff": 23,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00I8YAT42",
+          "title": "OxiClean Versatile Stain Remover Powder, 5 lb | 101+ Household Uses, Tough Stain Removal, Laundry Booster, Multi-Surface Cleaning, Color Safe, Chlorine Free",
+          "url": "https://www.amazon.com/dp/B00I8YAT42?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 9.06,
+          "newPrice": 11.79,
+          "oldPercentOff": 23,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B000HM9UDO",
+          "title": "Nordic Ware Original Bundt, 12-Cup, Graphite | Bakeware, Cake Pans, Aluminum Bakeware, Nonstick Bakeware, Aluminum, Carded, Nordic Ware 10.38 in",
+          "url": "https://www.amazon.com/dp/B000HM9UDO?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 28.49,
+          "newPrice": 27.74,
+          "oldPercentOff": 21,
+          "newPercentOff": 23,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B089GN2KBT",
+          "title": "RK ROYAL KLUDGE RK61 Wired 60% Mechanical Gaming Keyboard, Compact PC Game Keyboards with QMK/VIA Programmable RGB Backlit, Hot Swappable Custom Keyboard for Win/MAC, Pre-lubed Red Switch, White",
+          "url": "https://www.amazon.com/dp/B089GN2KBT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 39.99,
+          "newPrice": 49.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0055QAD8I",
+          "title": "Florida Water Cologne 7.5 Oz - Three (3) Plastic Bottles",
+          "url": "https://www.amazon.com/dp/B0055QAD8I?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.99,
+          "newPrice": 14.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 12,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0H1FQTTN4",
+          "title": "JODEVI 5'' x 4'' Small Baking Dishes, Set of 4 Mini Ceramic Baking Pans | Fits most 1-cup freezer tray portions plus JoDeVi 1.4-cup, Lead-free ceramic, Meal prep friendly, Oven microwave safe",
+          "url": "https://www.amazon.com/dp/B0H1FQTTN4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 19.94,
+          "newPrice": 27.06,
+          "oldPercentOff": 30,
+          "newPercentOff": 5,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0HF8D3TBJ",
+          "title": "UIRWAY Permanent Outdoor Lights S3, Removable Press-Fit Clip, 100ft 60 LEDs | IP68 Waterproof, Smart Outdoor Eaves Lights, 60lm, 111 Modes for Christmas, Everyday Lighting, App, Voice & Remote Control",
+          "url": "https://www.amazon.com/dp/B0HF8D3TBJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 134.99,
+          "newPrice": 189.99,
+          "oldPercentOff": 21,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0D1GC5XJ4",
+          "title": "PowerA Enhanced Wireless Controller for Nintendo Switch - Pikachu Garden, Nintendo Switch - OLED Model, Nintendo Switch Lite, Gamepad, game controller, Bluetooth controller",
+          "url": "https://www.amazon.com/dp/B0D1GC5XJ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 28.99,
+          "newPrice": 33.69,
+          "oldPercentOff": 52,
+          "newPercentOff": 44,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0D79HHW99",
+          "title": "PowerA Enhanced Wireless Controller for Nintendo Switch/Switch 2 / Switch Lite/OLED Model - Color Splash Heros - Gamepad, game controller, Officially Licensed",
+          "url": "https://www.amazon.com/dp/B0D79HHW99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 47.99,
+          "newPrice": 44.02,
+          "oldPercentOff": 31,
+          "newPercentOff": 37,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0FP1TRW4L",
+          "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
+          "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 68.15,
+          "newPrice": 68.35,
+          "oldPercentOff": 32,
+          "newPercentOff": 32,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B003BYQ16O",
+          "title": "Armarkat Cat Tree Model A6501, Real Wood Cat Condo,30 inches L X28 inches W X 65 inches H",
+          "url": "https://www.amazon.com/dp/B003BYQ16O?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 142.26,
+          "newPrice": 140.42,
+          "oldPercentOff": 45,
+          "newPercentOff": 46,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HFBP7W3Z",
+          "title": "Pet Memorial Gifts for Loss of Dog Cat, Remembrance & Sympathy Ornament | Christmas Tree Ornament, Dog Passing Away Gift, Hanging Heart Ceramic Keepsake Decoration, Pet Loss Bereavement Gift, Flowers",
+          "url": "https://www.amazon.com/dp/B0HFBP7W3Z?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.99,
+          "newPrice": 9.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0DP3JV2WB",
+          "title": "Kodiak Protein Granola, Honey Oat,High Protein Whole Grain Breakfast, 5pk",
+          "url": "https://www.amazon.com/dp/B0DP3JV2WB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 17.41,
+          "newPrice": 17.41,
+          "oldPercentOff": 30,
+          "newPercentOff": 6,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0C6GZSWQY",
+          "title": "2-Set Boys Thermal Underwear Set Fleece Lined Compression Long Johns 2B L | Ultra-Soft Warmth, High Elasticity, Quick-Dry Fabric, Base Layer, Leggings, Shirt, Soccer, Skiing, Hockey, Campus, Youth, Kid",
+          "url": "https://www.amazon.com/dp/B0C6GZSWQY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 19.99,
+          "newPrice": 23.98,
+          "oldPercentOff": 33,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0GVSC9LZS",
+          "title": "TENLAMP USB Gaming Microphone for Streaming & Podcast, Gain Control | Capture clear voice with cardioid condenser sound, noise reduction, RGB lighting, touch mute and headphone monitoring",
+          "url": "https://www.amazon.com/dp/B0GVSC9LZS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 29.98,
+          "newPrice": 29.99,
+          "oldPercentOff": 40,
+          "newPercentOff": 40,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CLLJC6QC",
+          "title": "Wireless Gaming Headset for PC PS5 PS4 Mac Switch 7.1 Surround Sound 100-Hr | 2.4Ghz USB Gaming Headphones, Bluetooth 5.4 & Type-C, Noise Canceling Mic, RGB Light, Ideal for FPS, RPG Gamers, Not for Xbox",
+          "url": "https://www.amazon.com/dp/B0CLLJC6QC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 35.97,
+          "newPrice": 35.98,
+          "oldPercentOff": 20,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B072PY2WZG",
+          "title": "Melissa & Doug Star Diner Restaurant Pretend Play Set | 41 Pieces, Kitchen Toys, Frying Pan, Play Food, Plates, Utensils, Play Money, Menu, Apron, Preschool Toys for Kids, Ages 3+",
+          "url": "https://www.amazon.com/dp/B072PY2WZG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 16.22,
+          "newPrice": 21.99,
+          "oldPercentOff": 61,
+          "newPercentOff": 48,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
