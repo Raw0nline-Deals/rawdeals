@@ -77,6 +77,9 @@ export function validatePayload(payload, { fileExists }) {
     if (isDate(deal.added) && isDate(deal.expires) && deal.expires < deal.added) {
       errors.push(`${where}.expires is before added`);
     }
+    if (deal.lastChecked != null && !isTimestamp(deal.lastChecked)) {
+      errors.push(`${where}.lastChecked must be an ISO timestamp when present`);
+    }
   });
 
   return errors;
@@ -91,6 +94,13 @@ function isDate(value) {
   const [year, month, day] = value.split("-").map(Number);
   const utc = new Date(Date.UTC(year, month - 1, day));
   return utc.getUTCFullYear() === year && utc.getUTCMonth() === month - 1 && utc.getUTCDate() === day;
+}
+
+const ISO_TIMESTAMP = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?Z$/;
+
+function isTimestamp(value) {
+  if (typeof value !== "string" || !ISO_TIMESTAMP.test(value)) return false;
+  return Number.isFinite(Date.parse(value));
 }
 
 function isImageAvailable(src, fileExists) {

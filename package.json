@@ -7,6 +7,7 @@
     "test": "node --test",
     "validate": "node scripts/validate-deals.js",
     "fetch-deals": "node scripts/fetch-deals.js",
+    "price-check": "node scripts/price-check.js",
     "feed": "node scripts/build-feed.js"
   }
 }

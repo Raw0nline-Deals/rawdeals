@@ -274,6 +274,49 @@ To set it:
 
 `scripts/fixtures/get-items.sample-from-docs.json` is a fake response shaped like Amazon’s public docs. It is only there so the mapper can be tested. Do not publish it as a deal.
 
+## Intra-day price check
+
+Posted prices can go stale the same day. On November 17, 2026 the morning refresh saved Mrs. Meyer's Lavender spray (ASIN `B00T7PCQBK`) at $1.95, 70% off $6.49. By evening Amazon was showing $4.99, and the site was still showing $1.95. **Intra-day price check** (`.github/workflows/price-check.yml`) rechecks deals already in `data/deals.json` four times a day so those prices do not sit until the next morning.
+
+It does not add deals, read `data/discovery.json` for new searches, call AmazonOfferCode, rebuild the slideshow, or post the morning “new deals” Discord message. The morning workflow is unchanged: it still runs at `0 13 * * *` (7:00 AM Central Standard Time, 8:00 AM during daylight time).
+
+GitHub Actions cron is UTC and cannot name `America/Chicago`. Chicago is Central Daylight Time (UTC−5) from the second Sunday in March through the first Sunday in November, and Central Standard Time (UTC−6) the rest of the year. The schedule uses daylight-time hours from March 8 through November 7, and standard-time hours from November 8 through March 7. The real switch is a Sunday inside those windows, so that one week can run an hour early. 8:00 PM Chicago is after midnight UTC, so those crons use the next UTC date.
+
+| Chicago time | Daylight time (UTC−5) | Standard time (UTC−6) |
+| --- | --- | --- |
+| 11:00 AM | `0 16 8-31 3 *`, `0 16 * 4-10 *`, `0 16 1-7 11 *` | `0 17 * 1,2,12 *`, `0 17 1-7 3 *`, `0 17 8-30 11 *` |
+| 2:00 PM | `0 19 8-31 3 *`, `0 19 * 4-10 *`, `0 19 1-7 11 *` | `0 20 * 1,2,12 *`, `0 20 1-7 3 *`, `0 20 8-30 11 *` |
+| 5:00 PM | `0 22 8-31 3 *`, `0 22 * 4-10 *`, `0 22 1-7 11 *` | `0 23 * 1,2,12 *`, `0 23 1-7 3 *`, `0 23 8-30 11 *` |
+| 8:00 PM | `0 1 9-31 3 *`, `0 1 * 4-10 *`, `0 1 1-8 11 *` | `0 2 * 1,2,12 *`, `0 2 1-8 3 *`, `0 2 9-30 11 *` |
+
+**Run workflow** starts the same check on `main`. The job uses the concurrency group `refresh-deals`, the same group as **Daily deal refresh**, with `cancel-in-progress: false`. One waits for the other. A push rebases onto `main` and retries, so a morning commit that lands first is not overwritten.
+
+What one sweep does:
+
+- Reads the deals already in `data/deals.json`. Sample cards, hand-written deals, and ids that are not ASINs are not sent to Amazon.
+- Calls Creators API GetItems with the same secrets, token host, `partnerTag` `eddie060-20`, and OffersV2 resources the morning refresh uses. ASINs are batched by 10, with the same pause between calls. There is no SearchItems call.
+- Compares the live price, the `savingBasis` list price, the savings percent, and availability with the posted deal.
+- If the price changed and the deal still meets the morning discount rule, it updates `price`, `originalPrice`, and `percentOff` only. A discovered deal must stay at `minDiscountPercent` from `data/discovery.json` (20). An ASIN in `data/asins.json` stays while the discount is still above 0, or while that deal has a promo code, which is the same rule as the morning GetItems pass.
+- Removes the deal when GetItems has no offer, the offer violates MAP, the deal end date has passed, or the discount is under that minimum. Out of stock is removed too. The log action for that case is `unavailable`.
+- Leaves an AmazonOfferCode deal (`origin` `amazonoffercode`) at its posted coupon price. GetItems does not know the coupon. If GetItems does not return that ASIN, the row stays. If GetItems reports no offer, MAP, or out of stock, the row is removed, which is the same block the morning refresh already uses.
+- Writes `lastChecked` (an ISO timestamp) on each deal it actually checked. `scripts/validate-deals.js` accepts that field and rejects anything that is not an ISO timestamp.
+
+`data/price-checks.json` gets one record per run: the timestamp, counts, and one entry for each updated, removed, or unavailable ASIN (title, old price, new price, old and new `percentOff`, and the action). Runs older than 30 days are dropped. The file is created the first time a sweep finishes. A sweep that only stamps `lastChecked` still updates `deals.json`, but it does not post to Discord.
+
+`feed.xml` is rebuilt, and GitHub Pages is asked to rebuild, only when `data/deals.json` changed. That is the same commit-and-pages path the morning job uses. The commit message is `Intra-day price check`.
+
+Discord gets a short **Price check** note, only when a price changed or a deal was removed. It uses the `DISCORD_WEBHOOK_URL` secret and the same webhook post as the morning (suppress embeds, username RawDeals, no link previews). It does not repeat the new-deal announcement. A missing webhook skips the post and the job still succeeds.
+
+If the credential id or secret is missing, or GetItems cannot be reached, the script exits with an error and does not write `data/deals.json` or `data/price-checks.json`. It does not print the secret or the token. No new secret is required. The sweep uses `CREATORS_API_CREDENTIAL_ID`, `CREATORS_API_CREDENTIAL_SECRET`, and, only for the Discord step, `DISCORD_WEBHOOK_URL`.
+
+A local dry run does not call Amazon:
+
+```bash
+node scripts/price-check.js
+```
+
+`node scripts/price-check.js --live` calls Amazon. Use it only where the two credential variables are set. Do not put them in the command line.
+
 ## Daily email feed
 
 Beehiiv can send the same deals the site is showing. The feed is [https://getrawdeals.com/feed.xml](https://getrawdeals.com/feed.xml).

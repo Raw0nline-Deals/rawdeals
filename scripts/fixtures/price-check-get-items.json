@@ -1,0 +1,86 @@
+{
+  "note": "Synthetic GetItems body for the intra-day price check. Fields follow the Creators API OffersV2 shape. This is not a live response and must not be copied into data/deals.json.",
+  "itemsResult": {
+    "items": [
+      {
+        "asin": "B00T7PCQBK",
+        "detailPageURL": "https://www.amazon.com/dp/B00T7PCQBK?tag=example",
+        "itemInfo": {
+          "title": {
+            "displayValue": "Mrs. Meyer's Clean Day Lavender Multi-Surface Everyday Cleaner"
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "isBuyBoxWinner": false,
+              "violatesMAP": false,
+              "availability": { "type": "IN_STOCK" },
+              "price": {
+                "money": { "amount": 1.95, "currency": "USD" },
+                "savingBasis": { "money": { "amount": 6.49, "currency": "USD" } },
+                "savings": { "percentage": 70 }
+              }
+            },
+            {
+              "isBuyBoxWinner": true,
+              "violatesMAP": false,
+              "availability": { "type": "IN_STOCK" },
+              "price": {
+                "money": { "amount": 4.99, "currency": "USD", "displayAmount": "$4.99" },
+                "savingBasis": {
+                  "money": { "amount": 6.49, "currency": "USD", "displayAmount": "$6.49" },
+                  "savingBasisType": "LIST_PRICE"
+                },
+                "savings": {
+                  "money": { "amount": 1.5, "currency": "USD", "displayAmount": "$1.50" },
+                  "percentage": 23
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "asin": "B0OOS00001",
+        "detailPageURL": "https://www.amazon.com/dp/B0OOS00001?tag=example",
+        "itemInfo": { "title": { "displayValue": "Out of stock soap" } },
+        "offersV2": {
+          "listings": [
+            {
+              "isBuyBoxWinner": true,
+              "violatesMAP": false,
+              "availability": { "type": "OUT_OF_STOCK" },
+              "price": {
+                "money": { "amount": 3.5, "currency": "USD" },
+                "savingBasis": { "money": { "amount": 7, "currency": "USD" } },
+                "savings": { "percentage": 50 }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "asin": "B0MAP00001",
+        "detailPageURL": "https://www.amazon.com/dp/B0MAP00001?tag=example",
+        "itemInfo": { "title": { "displayValue": "MAP blocked item" } },
+        "offersV2": {
+          "listings": [
+            {
+              "isBuyBoxWinner": true,
+              "violatesMAP": true,
+              "availability": { "type": "IN_STOCK" },
+              "price": { "money": { "amount": 12, "currency": "USD" } }
+            }
+          ]
+        }
+      },
+      {
+        "asin": "B0NONE0001",
+        "detailPageURL": "https://www.amazon.com/dp/B0NONE0001?tag=example",
+        "itemInfo": { "title": { "displayValue": "No offer item" } },
+        "offersV2": { "listings": [] }
+      }
+    ]
+  }
+}
