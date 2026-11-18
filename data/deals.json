@@ -2,6 +2,371 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0GMWK5PGT",
+      "title": "Hestia Permanent Outdoor Lights for House, 200ft RGB+IC Smart Lights | App & Remote Control, IP67 Waterproof,16 Million Colors,Outdoor Strip Lights,DIY Scene Modes for Christmas Halloween Decor",
+      "image": "https://m.media-amazon.com/images/I/515GpJ86HqL._SL500_.jpg",
+      "price": 69.99,
+      "percentOff": 46,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0GMWK5PGT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 129,
+      "expires": "2026-11-19",
+      "features": [
+        "IP67 All-Weather Reliability: Engineered with an IP67 waterproof rating and UV-resistant materials, our outdoor led lights withstand wind, rain and snow, and work in weather from -4°F to 140°F (-20°C-60°C).",
+        "Dynamic RGB+IC & Holidy Modes: Advanced RGB+IC permanent outdoor lights lets each LED display different colors at the same time, while 16 million colors, 50+ scene modes, and music sync create festive outdoor Christmas lights, or for Halloween, birthdays, game days, backyard parties, or everyday cur"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0GV7DTQ6G",
+      "title": "Ordtop 2.4GHz Wireless Gaming Headset for PS5/PS4/PC/Switch, 45H RGB Lights | 2026 Gaming Headphones with ENC Mic, 7.1 Surround Sound, Bluetooth 5.4 & <20ms Low Latency, 40mm Drivers,Memory Foam/276g",
+      "image": "https://m.media-amazon.com/images/I/41++T+KLRiL._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0GV7DTQ6G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
+        "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0HPL68PVF",
+      "title": "LIMANS No.00210 Lost Cherry Inspired Eau de Parfum 0.34 oz Mini Perfume | Long Lasting Unisex Perfume for Women & Men | 0.34 oz (10 ml) Mini Eau de Parfum Travel Spray | Vegan, French Perfume Oils",
+      "image": "https://m.media-amazon.com/images/I/51CUdsAnPGL._SL500_.jpg",
+      "price": 12.99,
+      "percentOff": 50,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0HPL68PVF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 25.95,
+      "features": [
+        "FRUITY, SWEET & WARM SCENT - A rich fragrance blending black cherry and cherry liqueur with bitter almond, Turkish rose, jasmine sambac and plum. Tonka bean, Peru balsam and sandalwood create a warm base for a unisex scent",
+        "INSPIRED FRAGRANCE FOR WOMEN & MEN - LIMANS No. XXX is designed for those who enjoy a sweet fruity fragrance profile with floral and woody accents. A versatile Eau de Parfum for everyday wear, evenings and special occasions"
+      ]
+    },
+    {
+      "id": "B0D54QFW77",
+      "title": "Poppi Prebiotic Soda, Wild Berry, 12 Oz, 12 Pack | Prebiotic Soda, Sparkling Water & Fruit Juice, 5g Sugar",
+      "image": "https://m.media-amazon.com/images/I/41q1LCwwtyL._SL500_.jpg",
+      "price": 14.66,
+      "percentOff": 35,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B0D54QFW77?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.56,
+      "features": [
+        "MOUTHWATERING FLAVOR: Includes twelve 12 fl oz cans of Wild Berry. A major flavor experience that makes an easy addition to your daily beverage cart.",
+        "FRIDGE RESTOCK: The perfect 12-pack size for quick pantry replenishment and setting up a seamless recurring delivery."
+      ]
+    },
+    {
+      "id": "B01BZ0LXL8",
+      "title": "Hefty Ultra Strong 13 Gal Kitchen Trash Bags, White, Lavender Vanilla, 80ct | 13G Tall White Trash Bags with Drawstrings for Kitchen and Home Use, Resists Leaks, Punctures, Rips, Continuous Odor Control",
+      "image": "https://m.media-amazon.com/images/I/51NM8GLA7xL._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 56,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B01BZ0LXL8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 17.99,
+      "features": [
+        "13 Gallon Tall Kitchen Garbage Bags: This package contains 80 Hefty Ultra Strong 13 Gallon Kitchen Trash Bags in White, Lavender and Sweet Vanilla scent",
+        "Toughness You Can Trust: Hefty’s strongest tall kitchen garbage bags deliver toughness you can trust with a secure, break-resistant drawstring and superior durability"
+      ]
+    },
+    {
+      "id": "B00000IV35",
+      "title": "Five Crowns Rummy Style Card Game for Kids and Adults, Family Game Night | Unique Twist on Classic Rummy, Travel Games, Holiday Game, Playing Cards, Award-Winning, Holiday Gift",
+      "image": "https://m.media-amazon.com/images/I/51LOnrPPuoL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 33,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B00000IV35?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "features": [
+        "FAMILY CARD GAME: It’s a unique twist on the classic rummy card game. A fifth suit of stars makes Five Crowns even more exciting than other family card games",
+        "EASY TO LEARN GAME: Make books and runs, knowing when to play your cards. But tread carefully! Rotating wild cards can change your luck in an instant"
+      ]
+    },
+    {
+      "id": "B00OV7UKDU",
+      "title": "SAFAVIEH Greek Key Table Lamp Set of 2, 29\" LIT4305A-SET2 | Metal Base, Fabric Shade, 2-Piece Set, On/Off Switch, E26 Base, Bulb Included, nightstand, console table, Assembly Required",
+      "image": "https://m.media-amazon.com/images/I/21mD2e-E9+L._SL500_.jpg",
+      "price": 75.29,
+      "percentOff": 50,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B00OV7UKDU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 149.99,
+      "features": [
+        "[TABLE LAMP]: SAFAVIEH's Greek Key table lamp is a 29\" bedside lamp for a bedroom, bedside or living room, under a fabric shade.",
+        "[METAL & FABRIC CONSTRUCTION]: The body is metal, in a gold finish, seated on a spider fitter and harp."
+      ]
+    },
+    {
+      "id": "B0C3WTYZ3G",
+      "title": "Hefty 4 Gallon Small Trash Bags, White, Fabuloso Lavender Scent, 52ct | Drawstring Closure, 4G Small White Trash Bags for Bathrooms, Dorm Rooms, Home Offices, Scented, Continuous Odor Control",
+      "image": "https://m.media-amazon.com/images/I/51-IuWeeC7L._SL500_.jpg",
+      "price": 4.5,
+      "percentOff": 52,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0C3WTYZ3G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.34,
+      "features": [
+        "4 GALLON GARBAGE BAGS-This package contains 52 Hefty Small white, Fabuloso* scented, 4 gallon trash bags",
+        "ARM & HAMMER* ODOR NEUTRALIZER**-Fabuloso scented patented odor neutralizer harnesses the power of ARM & HAMMER to fight nasty odors to keep your home smelling fresh"
+      ]
+    },
+    {
+      "id": "B00JJ4PNHI",
+      "title": "Dutch Blitz Expansion Pack - 4 New Card Colors - 160 Cards for 4 Players | Add 4 more players for 8 total, fast-paced Vonder-fast card game, includes carriage, bucket, pump and plow deck designs",
+      "image": "https://m.media-amazon.com/images/I/51J0hiJjw8L._SL500_.jpg",
+      "price": 8.99,
+      "percentOff": 31,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B00JJ4PNHI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 12.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Can be played just with this deck or combined with other decks",
+        "4 new card colors"
+      ]
+    },
+    {
+      "id": "B0F53RS8G2",
+      "title": "CRMILL Candle Warmer Lamp with Timer: Adjustable Dimmable Height Adjustable Warming - Flower Shape Wax Lamp Jar Candles No Flame Modern Home Decor Table Lights - Home Living Bedroom",
+      "image": "https://m.media-amazon.com/images/I/41qRKvPyY7L._SL500_.jpg",
+      "price": 16.99,
+      "percentOff": 23,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0F53RS8G2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 21.99,
+      "features": [
+        "romantic design, perfect for creating a cozy, aromatic atmosphere in any room. The adjustable heat settings and dimmable features make it suitable for various settings, from bedrooms to living rooms, enhancing the decor of your home",
+        "High-Quality Materials Crafted from durable materials like metal and bronze, this candle warmer features a sleek contemporary look. The light is powered by electric and offers a safe way to enjoy the warm glow of a candle without the flame, ensuring flameless relaxation and safety"
+      ]
+    },
+    {
+      "id": "B0063KBZV4",
+      "title": "Hefty Ultra Strong 30 Gal Large Trash Bags, Black, Unscented, 25ct | 30G Large Black Trash Bags with Drawstrings, Resists Leaks, Punctures, Tears, Continuous Odor Control, Multipurpose Uses",
+      "image": "https://m.media-amazon.com/images/I/41H76F4135L._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 38,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0063KBZV4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 12.99,
+      "features": [
+        "LARGE GARBAGE BAGS: This package contains 25 Hefty Ultra Strong large, black, unscented, 30 gallon multipurpose drawstring trash bags",
+        "30 GALLON CAPACITY: These heavy duty large trash bags are made wider & taller to fit sizeable loads, or line large curbside carts or trash cans in the garage or basement"
+      ]
+    },
+    {
+      "id": "B00WIIPQEC",
+      "title": "Dutch Blitz: Original and Expansion Combo, Fast Paced Card Game, Fun for Everyone, Great Family Game, Combine Packs to Play With 2-4 Players, For Ages 8 and Up",
+      "image": "https://m.media-amazon.com/images/I/51gXDkbcKJL._SL500_.jpg",
+      "price": 17.99,
+      "percentOff": 28,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B00WIIPQEC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 24.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Contains Dutch Blitz and Expansion Set",
+        "Combine packs to play with 2-4 players"
+      ]
+    },
+    {
+      "id": "B08MV9FM8G",
+      "title": "Robe Factory LLC STAR WARS Darth Vader LED Light | Desk Lamp | Night Light | 24 Inches",
+      "image": "https://m.media-amazon.com/images/I/215kuQPGp+L._SL500_.jpg",
+      "price": 38.94,
+      "percentOff": 22,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B08MV9FM8G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "features": [
+        "Set the Mood: Show off your love of Star Wars with this Darth Vader Lightsaber LED Lamp. This fun LED light is perfect for adding a geeky flair to your home decor.",
+        "Authentic Design: This standing lamp is shaped like Darth Vader's iconic red lightsaber. Measuring approximately 24-inches tall with a 5-inch diameter base, this well-designed piece of Star Wars decor is a great home accessory for fans of all ages."
+      ]
+    },
+    {
+      "id": "B07NWC11T6",
+      "title": "Hefty Load & Carry 42 Gallon Contractor Trash Bags, Black, 26 Count | Construction Cleanup, Remodeling Projects, Extra-Long Flap Handles, Easy to Tie, Easy to Carry",
+      "image": "https://m.media-amazon.com/images/I/51gQHL5L6gL._SL500_.jpg",
+      "price": 20.41,
+      "percentOff": 33,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B07NWC11T6?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 30.49,
+      "features": [
+        "LARGE GARBAGE BAGS—This package contains 26 Hefty Load & Carry Heavy Duty large, black, unscented, 42 gallon contractor trash bags",
+        "HANDLE FLAPS FOR EASY LOADING—Load, carry & tie up the toughest trash with the only trash bags to feature extra-long tie flaps with handles"
+      ]
+    },
+    {
+      "id": "0980209277",
+      "title": "The Red Dragon Inn 5: The Character Trove - Strategy Card Game | 2-4 Players, Ages 13+, 30-60 Minutes - Standalone Expansion w/Storage Box - Compatible with All Other Expansions",
+      "image": "https://m.media-amazon.com/images/I/51+QWClhU9L._SL500_.jpg",
+      "price": 44.73,
+      "percentOff": 25,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/0980209277?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.95,
+      "features": [
+        "JOIN THE AFTERPARTY: Our heroes are celebrating their hard-earned adventuring victory by drinking, gambling and roughhousing in the tavern. The adventure’s over, but the party’s just getting started!",
+        "UNIQUE CHARACTERS: Play as Zakhan the Drunken Master (Half-Elf Monk), Lizwick the Collector (Gnome Rogue), Joran the Trickster (Human Mage), or Sera the Fleetfooted (Human Rogue). Mix and match characters for endless replayability."
+      ]
+    },
+    {
+      "id": "B0FNX47S5Y",
+      "title": "Floresita Dried Flowers Tripod Table Lamp 14.96in, 9W LED Dimmable Cute Bedside Lamp with Flowers Linen Lampshade for Nursery, Bedroom, Kid Room, Living Room, Light Brown Wooden Base",
+      "image": "https://m.media-amazon.com/images/I/41Y6BeuobyL._SL500_.jpg",
+      "price": 28.99,
+      "percentOff": 22,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B0FNX47S5Y?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 36.99,
+      "features": [
+        "Pressed Flowers Table Lamp: Through exquisite handwork, different varieties of colorful dried flowers are made on the small table lamp. With a wooden base, linen shade, and lovely flowers, you'll be sure to be attracted to this beautiful pressed flowers table lamp!",
+        "Dimmable 9W Bulb Included: 9W LED light bulb, warm light, dimmable, you can choose your preferred light brightness! Soft, flicker-free, and glare-free, creating a warm and comfortable atmosphere for your work, study, and nighttime reading!"
+      ]
+    },
+    {
+      "id": "B09WNG7W3C",
+      "title": "Glad Small Trash Bags 4 Gallon, Febreze Cherry Blossom Garbage Bags, Odor Resistant with Drawstring, 34 Count",
+      "image": "https://m.media-amazon.com/images/I/4136qMECofL._SL500_.jpg",
+      "price": 5.5,
+      "percentOff": 31,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B09WNG7W3C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 7.99,
+      "features": [
+        "SMALL TRASH BAGS: Thirty-four (34) 4-gallon Glad Drawstring Small Trash Bags with Cherry Blossom scent with Febreze freshness provide strength plus odor control",
+        "SCENTED GARBAGE BAGS: These small bathroom trash bags have Cherry Blossom scent with Febreze freshness to provide odor neutralization around the house and an airy orchard of floral scent"
+      ]
+    },
+    {
+      "id": "B0CQ1DJGYQ",
+      "title": "hand2mind Numberblocks Playing Cards, 6 Math Games, Ages 3+ | Fun Card Games, Math Card Games for Kids Ages 3-5, Deck of Cards for Kids, Playing Cards Themed, Preschool Math Learning Toys",
+      "image": "https://m.media-amazon.com/images/I/51H9nwu-tRL._SL500_.jpg",
+      "price": 7.52,
+      "percentOff": 25,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0CQ1DJGYQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "OFFICIALLY LICENSED NUMBERBLOCKS GAMES: Join all the numbery fun as you play along with Numberblocks One to Ten and friends in Numberblocks Playing Cards!",
+        "EDUCATIONAL MATH GAMES: Packed with opportunities to practice early math concepts, this versatile set features beloved characters from the global hit TV series on oversized playing cards designed for little hands."
+      ]
+    },
+    {
+      "id": "B07JKZQKZ4",
+      "title": "Deacon 26\" Tall Desk Lamp Gooseneck USB and Outlet Bronze Brown LED Modern | USB Ports A+C Charging and AC Power Living Room Bedroom House Bedside Nightstand Office Home Family Rectangular Linen Shade",
+      "image": "https://m.media-amazon.com/images/I/411jLlw+lGL._SL500_.jpg",
+      "price": 199.99,
+      "percentOff": 20,
+      "category": "Home",
+      "url": "https://www.amazon.com/dp/B07JKZQKZ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 249.99,
+      "features": [
+        "【Specifications】UL listed. 26\" high overall. Base is 8\" wide x 5 1/2\" deep. Shade is 10\" wide, 6\" deep at the top x 16\" wide, 10 1/2\" deep at the bottom x 10\" high. Weighs 10 lbs. Uses two maximum 60 watt standard-medium base bulbs (not included). Gooseneck arm includes 5 watt GU10 LED bulb. Dual ro",
+        "【Bedroom Ambiance】 Elevate your night stand with bedside lamps from Lamps Plus that combine functionality and style. Perfect for late-night reading, this modern nightstand lamp features a USB port for added convenience. Its unique design and decorative touch enhance your bed side decor, providing bo"
+      ]
+    },
+    {
+      "id": "B00HNW8CXA",
+      "title": "Hefty Strong 30 Gallon Trash Bags, Large Trash Bags 30 Gallon Size, Durable Drawstring Enclosure, Resists Punctures, Leaks, and Tears, Black, Unscented, 56 Bags",
+      "image": "https://m.media-amazon.com/images/I/51Ti-Z51mcL._SL500_.jpg",
+      "price": 13.37,
+      "percentOff": 26,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00HNW8CXA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-18",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 17.99,
+      "features": [
+        "Unscented Large Garbage Bags-This package contains 56 Hefty Strong Large 30 Gallon Trash Bags in Black, Unscented",
+        "Superior Puncture Resistance-Composed of signature Hefty quality and thick 1.05 mil plastic, these large trash can liners help contain sharp indoor and outdoor debris"
+      ]
+    },
+    {
       "id": "B0FQ2M9F1R",
       "title": "VK81 Wireless Gaming Headset for PS5 PC Switch, ≤20ms Low Latency | 2.4GHz & Bluetooth 5.4, 50mm 3D Audio, ENC Mic, Switch Voice Chat, RGB, 50H Battery, Foldable Comfort",
       "image": "https://m.media-amazon.com/images/I/41pw7RUu17L._SL500_.jpg",
@@ -18,8 +383,7 @@
         "【Flexible 2.4GHz & Bluetooth Connectivity】Built for gaming and everyday listening, the VK81 wireless gaming headset uses the included USB/Type-C dongle for a stable, ≤20ms connection with PS5, PS4, PC, Mac and Switch. Switch to Bluetooth for compatible PCs, laptops, phones and tablets. Game and Musi",
         "【Immersive 50mm 3D Audio for Every Detail】Large 50mm drivers deliver fuller, more dimensional sound so footsteps, reloads, distant effects and environmental cues are easier to distinguish. Whether you are tracking movement in an FPS or exploring an open world, the VK81 gaming headphones bring greate"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B01JCNEJVQ",
@@ -347,8 +711,7 @@
         "RGBIC Creative Lighting: Govee outdoor wall light can display at least 3 colors simultaneously in a horizontal gradient, breaking free from conventional lighting. Enjoy flexible DIY and 45+ immersive scene modes to make your home unique in the neighborhood.",
         "High-brightness White Light: More than just for holiday, this LED light delivers up to 1500 LM of white light with an adjustable color temperature(2700K-6500K ) for daily accent lighting. It is ideal for patio, porch, balcony, yard and garage."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B07TMJ5Q6V",
@@ -537,8 +900,7 @@
       "features": [
         "Radiant RGB lighting with dynamic effects: Personalize stunning RGB lighting and dynamic effects for an eye-catching shot of customizable style.",
         "Built-in anti-vibration shock mount: Isolate the mic and suppress the sound of unintentional rumbles and bumps with the elastic rope suspension."
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0C51J2ZXN",
@@ -615,8 +977,7 @@
         "[100+ Preset Scenes & Creative DIY Customization] Never worry about repetitive decorations again. Choose from over 100 professionally tuned dynamic scenes covering holidays, parties, and atmospheric modes, or tap into the DIY editor to map individual node colors, motion speeds, and gradient effects",
         "[2700K–6500K Tunable White for Year-Round Use] More than just holiday lights. Equipped with dedicated RGBCW LEDs outputting up to 50 lumens per lights, you can adjust color temperature from cozy 2700K warm white to crisp 6500K daylight white. Perfect for daily architectural accents, landscape ambian"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0HNRSRX9V",
@@ -636,8 +997,7 @@
         "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
         "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0HJ255N6R",
@@ -984,8 +1344,7 @@
       "features": [
         "Fresh and floral, Bare Rose blends vivid petals and warm woods with a proprietary blend of musks that mixes with your body chemistry to reveal your signature.",
         "Fragrance type: Warm Floral"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B01LHMHP0C",
@@ -1358,7 +1717,7 @@
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
-      "price": 67.53,
+      "price": 68.15,
       "percentOff": 32,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -1371,8 +1730,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B01F35UGWS",
@@ -1697,8 +2055,7 @@
         "Smart App & Remote Control: Control your outdoor permanent lights effortlessly. Use the intuitive app to select various preset colors, or use the included physical remote for quick adjustments, allowing family members to manage lighting without needing a smartphone or hub",
         "Music Sync & DIY Scenes: Transform your patio into a dynamic space. The built-in mic syncs your eaves lights outdoor to music beats for parties. Use the DIY function on the app to paint custom colors and save your favorite scenes for any mood"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B00SAYCXWG",
@@ -2016,8 +2373,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0CLLJC6QC",
@@ -2058,25 +2414,6 @@
       "lastChecked": "2026-11-18T02:46:49.207Z"
     },
     {
-      "id": "B07MWQBMDR",
-      "title": "Apogee Hype Mic - USB Microphone with Analog Compression for Capturing Vocals and Instruments, Streaming, Podcasting, and Gaming",
-      "image": "https://m.media-amazon.com/images/I/411gMxKJt4L._SL500_.jpg",
-      "price": 149,
-      "percentOff": 63,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B07MWQBMDR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-12",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 399,
-      "features": [
-        "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
-        "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
       "id": "B0H6L14J6D",
       "title": "Beeveer 70 Set Light Clips Compatible with Govee H706 H806 Pro Light | Compatible with Govee H706 H806, with 140 Screws, Secure Wall Fence Mount, Weather Resistant, Firm Hold Install",
       "image": "https://m.media-amazon.com/images/I/41GoPRYCyXL._SL500_.jpg",
@@ -2093,8 +2430,7 @@
         "Installation Flexibility: our outdoor light mounting clips are compatible with Govee Pro H706 H806 permanent outdoor lights, not compatible with Govee lights(H705); We provide ample sets light mounting clips and screws to meet your mounting needs, installation is a breeze",
         "Stability Post-installation: say goodbye to unreliable adhesives; These outdoor lights clips Compatible with Govee Pro H706 H806, not compatible with Govee lights(H705) are crafted to enhance the stability of your outdoor lights, even in heavy rain, strong winds, or extreme temperatures"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0BSBVPWCV",
@@ -2112,8 +2448,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0HFZDGL2T",
@@ -2132,8 +2467,7 @@
         "【Permanent Outdoor Lights for House, Light Up Your Christmas 】Brighten roofs, eaves, garage, patios with vivid RGB colors that make your house stand out. Perfect as outdoor christmas lights for house, Halloween decor, birthdays, New Year, and everyday outside lights for house. Enjoy hassle-free perm",
         "【Dynamic Color Chasing Effects & Smart IC Individually Control Tech】Featuring advanced individually addressable LED chips, each LED bead allows for independent color control and supports 16 million rgb colors, enabling the entire outside christmas lights to display multiple vibrant hues simultaneous"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B08DHH74JQ",
@@ -2151,8 +2485,7 @@
       "features": [
         "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
         "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0HB5PVL52",
@@ -2200,21 +2533,6 @@
       "lastChecked": "2026-11-18T02:46:49.207Z"
     },
     {
-      "id": "B08HVXZW8X",
-      "title": "LEGO Icons Bonsai Tree 10281 | Building Set for Adults, Ages 18+, 878 Pieces, Artificial Plant Decor, Table, Desk or Office Decoration, Gift for Men & Women",
-      "image": "https://m.media-amazon.com/images/I/51RhUHz7BRL._SL500_.jpg",
-      "price": 39.98,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B08HVXZW8X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 49.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
       "id": "B0HPFM2T2W",
       "title": "100FT Permanent Outdoor Lights for House, RGB+IC Smart Christmas Lights IP67 Waterproof Eaves Light with App and Remote Control for House, DIY Scene Modes for Roof, Holiday, Party, Christmas Decor",
       "image": "https://m.media-amazon.com/images/I/51JwTA1kBhL._SL500_.jpg",
@@ -2222,7 +2540,7 @@
       "percentOff": 29,
       "category": "Home",
       "url": "https://www.amazon.com/dp/B0HPFM2T2W?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2232,23 +2550,7 @@
         "Christmas Outdoor Decorations: Bring your outdoor space to life during holidays, parties, or casual weekend hangouts. Our RGB+IC lighting features a dynamic Music Sync mode that flashes and pulses in real-time to the beat of your favorite playlist. Whether you are hosting a lively backyard barbecue,",
         "16 Million Lighting Colors Effects: Elevate your home’s curb appeal with our permanent outdoor lights for house. Featuring a unique lens design, these lights project a crisp 100° triangular lighting effect. For best results, install them 2-4 inches away from the wall to achieve 24 inches wall wash d"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0FMSC41B5",
-      "title": "LEGO Friends Dog Treats Bakery 42677 | Building Toys for Girls & Boys, Ages 6+, Toy Figures & Playset, Aliya & Sage Minidolls, 278 Pieces, Gift for Birthdays",
-      "image": "https://m.media-amazon.com/images/I/51CT9nwTulL._SL500_.jpg",
-      "price": 23.95,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0FMSC41B5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0HF191VSF",
@@ -2258,7 +2560,7 @@
       "percentOff": 20,
       "category": "Home",
       "url": "https://www.amazon.com/dp/B0HF191VSF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2267,8 +2569,7 @@
         "【Year-Round Outdoor Lighting for Any Occasion】Transform your home with 500FT RGB+IC Permanent Outdoor Lights designed for year-round outdoor lighting. Create stunning lighting effects on roofs, eaves, garages, patios, and backyards. Whether for holidays, special events, or everyday curb appeal, thes",
         "【Smart Dual Control with Presets & DIY Customization】 Take full command of your outdoor lighting via smartphone App and included remote controller. Powered by RGB+IC chasing function, it offers abundant pre‑set scene modes for Christmas, Halloween, parties and daily home use with one‑tap switching."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0FLKJ7FH7",
@@ -2278,7 +2579,7 @@
       "percentOff": 25,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2287,39 +2588,17 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0HKFQSNFQ",
-      "title": "BENGOO 60H Wireless Gaming Headset with RGB Lights for PS5 PS4 PC | 7.1 Surround Sound, Noise Cancelling Mic, Bluetooth 5.3, Memory Foam Ear Cushions, Compatible with Switch Mac",
-      "image": "https://m.media-amazon.com/images/I/41cl8hA+KNL._SL500_.jpg",
-      "price": 29.98,
-      "percentOff": 25,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0HKFQSNFQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "expires": "2026-11-18",
-      "features": [
-        "【Triple Connectivity Modes for Flexible Gaming Setup】Connect through 2.4GHz wireless, Bluetooth 5.3, or 3.5mm wired mode. The 2.4GHz connection provides low-latency audio for PC, PS5, PS4, and laptops, while Bluetooth supports mobile devices and Mac. The wired connection allows compatibility with Xb",
-        "【Up to 60 Hours of Battery Life for Extended Gaming】Enjoy up to 60 hours of playtime with RGB lighting off and up to 25 hours with RGB lighting enabled. The built-in rechargeable battery supports extended gaming sessions, streaming, and online communication with convenient USB charging."
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
       "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
       "image": "https://m.media-amazon.com/images/I/31v2asog0qL._SL500_.jpg",
-      "price": 119.49,
-      "percentOff": 20,
+      "price": 119,
+      "percentOff": 21,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2328,8 +2607,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2339,7 +2617,7 @@
       "percentOff": 29,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B002VA464S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2347,23 +2625,7 @@
       "features": [
         "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
         "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B073R3PBTT",
-      "title": "Underground Printing Run Away Tee - SM - Black",
-      "image": "https://m.media-amazon.com/images/I/414Qm4RfS4L._SL500_.jpg",
-      "price": 16.18,
-      "percentOff": 26,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B073R3PBTT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 21.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0HP6VQLZ5",
@@ -2373,7 +2635,7 @@
       "percentOff": 74,
       "category": "Home",
       "url": "https://www.amazon.com/dp/B0HP6VQLZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2382,44 +2644,7 @@
         "App & Remote Control With Guest Mode: Control your permanent outdoor lights through the smartphone app or included remote. Guest mode lets you enjoy app-based lighting control without creating an account, adding a convenient option for everyday use",
         "16 Million Colors & Dimmable Brightness: Personalize your outdoor lighting with 16 million color options and adjustable brightness levels. Create a warm everyday atmosphere or colorful lighting for Christmas, Halloween, parties, and other celebrations"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B079SGW3QD",
-      "title": "Underground Printing Rabies Awareness Fun Run Tee - 2XL - HTR Red",
-      "image": "https://m.media-amazon.com/images/I/51LN1V8pc6L._SL500_.jpg",
-      "price": 17.38,
-      "percentOff": 21,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B079SGW3QD?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 21.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0HNVF67QS",
-      "title": "AOC Wireless Gaming Headphones Compatible with PS5/4, Switch, PC- White | USB-C & Bluetooth 5.4 & 2.4GHz Gaming Headset with Noise Canceling Mic, 7.1 Virtual Surround, 20ms Latency, 45H, RGB",
-      "image": "https://m.media-amazon.com/images/I/414TztAiYEL._SL500_.jpg",
-      "price": 39.99,
-      "percentOff": 50,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0HNVF67QS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 79.99,
-      "expires": "2026-11-19",
-      "features": [
-        "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
-        "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0HC3FSWGH",
@@ -2429,7 +2654,7 @@
       "percentOff": 60,
       "category": "Home",
       "url": "https://www.amazon.com/dp/B0HC3FSWGH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2439,24 +2664,7 @@
         "【Bluetooth Smart Control With Privacy Protection】Effortlessly control your permanent outdoor lights via smartphone. Our App features a no-login guest mode to safeguard your privacy, allowing you to adjust lighting modes anytime, anywhere—no account required.",
         "【DIY Custom Modes for Any Occasion】Each LED is individually controllable via the App. Choose from 16 million colors to craft custom lighting scenes for holidays and daily decor. Static and dynamic lighting modes are included."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B07TN3R7QX",
-      "title": "Slipknot Official The Gray Chapter Star T-Shirt",
-      "image": "https://m.media-amazon.com/images/I/3188JlBBKTL._SL500_.jpg",
-      "price": 19.99,
-      "percentOff": 20,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B07TN3R7QX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 24.99,
-      "expires": "2026-12-01",
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0BDGTM1DP",
@@ -2466,7 +2674,7 @@
       "percentOff": 38,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0BDGTM1DP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2475,161 +2683,7 @@
         "Official Xbox Licensed headset: CloudX Stinger 2 Core was tested and approved by Microsoft, and connects directly to Xbox One and Xbox Series X|S controllers with a 3.5mm port.",
         "Lightweight comfort: Soft ear cushions provide a comfortable fit, and the flexible mic can be positioned just as you like."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0H5HBY1WG",
-      "title": "200FT Permanent Outdoor Lights for House , RGB+IC LED Christmas Lights | App&Remote Control, Daily & Accent Lighting, 50 Scene Modes, DIY Music Sync, Weather-Resistant, Pendant Lights Chandeliers",
-      "image": "https://m.media-amazon.com/images/I/51OXYWhZj-L._SL500_.jpg",
-      "price": 99.98,
-      "percentOff": 40,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H5HBY1WG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 165.99,
-      "expires": "2026-11-18",
-      "priority": true,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B00J7L34M4",
-      "title": "Energizer MAX 9V Batteries (4 Pack), 9 Volt Alkaline Batteries",
-      "image": "https://m.media-amazon.com/images/I/517WBdATceL._SL500_.jpg",
-      "price": 11.49,
-      "percentOff": 33,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B00J7L34M4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 17.08,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B000F4AVPA",
-      "title": "Chuckit! Ultra Rubber Dog Ball, Floating Fetch Toy, Medium 2.5-in, 2-Pack | Durable rubber dog toy, extra-thick core for high-bounce fetch; floats; Perfect for pool or yard play; includes 2 balls",
-      "image": "https://m.media-amazon.com/images/I/31NKTw5DUeL._SL500_.jpg",
-      "price": 5.83,
-      "percentOff": 27,
-      "category": "Pets",
-      "url": "https://www.amazon.com/dp/B000F4AVPA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 7.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B001E5E0SI",
-      "title": "Melitta #4 Unbleached Coffee Filters, Natural Brown Cone Filters, 6-Pack | Flavor-Enhancing Microfine Perforations, Double Crimp Strength, FSC & BPI Compostable, For 8-12 Cup Brewers, 100 Ct, USA Made",
-      "image": "https://m.media-amazon.com/images/I/51SZAKMbVYL._SL500_.jpg",
-      "price": 15.5,
-      "percentOff": 33,
-      "category": "Drinks",
-      "url": "https://www.amazon.com/dp/B001E5E0SI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 23.19,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B01IH2TWFQ",
-      "title": "MRS. MEYER'S CLEAN DAY Multi-Surface Cleaner, Apple Cider, 16 fl oz | Removes Dirt and Freshens Surfaces, Everyday Use, All-Purpose Cleaner, Cruelty Free, Made with Essential Oils",
-      "image": "https://m.media-amazon.com/images/I/31thy3lDUlL._SL500_.jpg",
-      "price": 3.87,
-      "percentOff": 35,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B01IH2TWFQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 5.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B006RQ8TY0",
-      "title": "Learning Resources Original Farmer's Market Color Sorting Set | Pretend Play Food Sets for Kids Kitchen, Color Sorting Toys, Plastic Fruit and Vegetable Toy for Kids Kitchen Set",
-      "image": "https://m.media-amazon.com/images/I/41pwtUUvTrL._SL500_.jpg",
-      "price": 24.97,
-      "percentOff": 50,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B006RQ8TY0?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 49.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B08SGM6F79",
-      "title": "STREBITO Electronics Precision Screwdriver Sets 142-Piece with 120 Bits | Magnetic Repair Tool Kit for iPhone, MacBook, Computer, Laptop, PC, Tablet, PS4, Xbox, Nintendo, Game Console",
-      "image": "https://m.media-amazon.com/images/I/51flTTTGdML._SL500_.jpg",
-      "price": 27.99,
-      "percentOff": 26,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B08SGM6F79?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 37.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0HLL1RSKC",
-      "title": "Tumzak Titanium Pans for Cooking, 8-Inch Titanium Pan with Lid, Non-Stick Frying Pans, PFAS/PFOA/PTFE-Free, Dishwasher & Oven Safe, Compatible with Gas & Induction Cooktops",
-      "image": "https://m.media-amazon.com/images/I/41udrkk+vyL._SL500_.jpg",
-      "price": 119.98,
-      "percentOff": 20,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0HLL1RSKC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 149.99,
-      "expires": "2026-11-19",
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B01B1V10KA",
-      "title": "Melissa & Doug Wooden Scoop & Serve Ice Cream Counter, Pretend Play Store, 28 Toy Food & Play Kitchen Accessories, Preschool Toys for Girls & Boys 3+",
-      "image": "https://m.media-amazon.com/images/I/41rAk0pvK8L._SL500_.jpg",
-      "price": 35.99,
-      "percentOff": 49,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B01B1V10KA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 70.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B00CPHX6YI",
-      "title": "Melissa & Doug Stainless Steel Pots & Pans, 8 Piece Play Kitchen Set, Premium Play Kitchen Accessories & Cooking Utensils, Preschool Toys for Kids 3+",
-      "image": "https://m.media-amazon.com/images/I/41LOfX5f4rL._SL500_.jpg",
-      "price": 22.99,
-      "percentOff": 45,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B00CPHX6YI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 41.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      "priority": true
     },
     {
       "id": "B0GX5XQG45",
@@ -2640,14 +2694,13 @@
       "percentOff": 21,
       "category": "Kitchen",
       "url": "https://www.amazon.com/dp/B0GX5XQG45?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
@@ -2658,15 +2711,14 @@
       "percentOff": 15,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "expires": "2026-11-19",
       "sample": false,
       "source": "api",
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2677,75 +2729,13 @@
       "percentOff": 22,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0GYF7PRYR?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-11",
+      "added": "2026-11-18",
       "sample": false,
       "source": "api",
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B07DBCCBHL",
-      "title": "K Cup Holder-Coffee Pods Holder Storage Organizer Stand 40 Pods Capacity | K Cup Carousel, Stable Base, 360° Rotating K Cup Organizer, Space-Saving for Countertop,K Cups Holder No Assembly Required",
-      "image": "https://m.media-amazon.com/images/I/41-l+kzuNEL._SL500_.jpg",
-      "price": 22.97,
-      "percentOff": 23,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B07DBCCBHL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0HFMTZLX4",
-      "title": "7 Inch 7in Inseam Men Casual Cargo Golf Hiking Work Summer Shorts Camping Gear Essential Fishing Accessories Must Have Safari Stuff Military Apparel Tactical Clothing Outfit Sun Protection Wear Black",
-      "image": "https://m.media-amazon.com/images/I/41fJQdgCkzL._SL500_.jpg",
-      "price": 19.99,
-      "percentOff": 23,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0HFMTZLX4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 25.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B0HMCWB6FZ",
-      "title": "COBEEK Ultrasonic Retainer Cleaner Machine, 52kHz Ultrasonic Denture Cleaner for Night Guards, Braces, Aligner, Toothbrush, Jewelry, Scaler Tips, Dental Cleaning Pod with Digital Timer & 250ML, White",
-      "image": "https://m.media-amazon.com/images/I/4164P6VSv9L._SL500_.jpg",
-      "price": 39.99,
-      "percentOff": 27,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0HMCWB6FZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 54.99,
-      "lastChecked": "2026-11-18T02:46:49.207Z"
-    },
-    {
-      "id": "B087N9N6HH",
-      "title": "Play Doh Bulk Handout 42-Pack of 1-Ounce Modeling Compound Cans, Back to School Gifts, Prizes, & Party Favors, Kids Arts & Crafts, Preschool Toys, Ages 2+ (Amazon Exclusive)",
-      "image": "https://m.media-amazon.com/images/I/51AfQTDq2gL._SL500_.jpg",
-      "price": 11.99,
-      "percentOff": 29,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B087N9N6HH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-11",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 16.99,
-      "expires": "2026-11-26",
-      "lastChecked": "2026-11-18T02:46:49.207Z"
+      ]
     }
   ]
 }
