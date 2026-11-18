@@ -881,6 +881,84 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-18T20:43:16.781Z",
+      "checked": 131,
+      "unchanged": 125,
+      "updated": 4,
+      "removed": 1,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0DWYNY698",
+          "title": "Farberware Disney Bake with Mickey Mouse Nonstick Bakeware Cake Decorating/Baking Dish, 3D Cake Pan - Gray",
+          "url": "https://www.amazon.com/dp/B0DWYNY698?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 29.37,
+          "newPrice": 29.67,
+          "oldPercentOff": 27,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0F3MMK1J4",
+          "title": "AOC 16\" Portable Monitor FHD 60Hz USB-C IPS Ultra Slim Smart Cover 16T20 | 1920×1080 Computer Monitor, USB-C, Mini HDMI, Built-in Speakers, Smart Cover, Ultra Slim, VESA Mount, Low Blue Light",
+          "url": "https://www.amazon.com/dp/B0F3MMK1J4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 47.48,
+          "newPrice": 47.48,
+          "oldPercentOff": 32,
+          "newPercentOff": 32,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0HGGCLYJT",
+          "title": "Wixzet 14\" Laptop Screen Extender, Ultra-Thin FHD 1080P Portable Monitor | 2.2lbs Lightweight, USB-C/HDMI Plug & Play, Travel Monitor for 13”-17” Laptops, Compatible with Wins/Mac/Android/Chrome",
+          "url": "https://www.amazon.com/dp/B0HGGCLYJT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 209.99,
+          "newPrice": 209.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 5,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0CD87HL46",
+          "title": "Victoria's Secret Bare Eau de Parfum, Bare Rose - 3.4 fl oz",
+          "url": "https://www.amazon.com/dp/B0CD87HL46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 59.96,
+          "newPrice": 55.96,
+          "oldPercentOff": 25,
+          "newPercentOff": 30,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0D79HHW99",
+          "title": "PowerA Enhanced Wireless Controller for Nintendo Switch/Switch 2 / Switch Lite/OLED Model - Color Splash Heros - Gamepad, game controller, Officially Licensed",
+          "url": "https://www.amazon.com/dp/B0D79HHW99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 44.02,
+          "newPrice": 45,
+          "oldPercentOff": 37,
+          "newPercentOff": 36,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0FP1TRW4L",
+          "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
+          "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 68.35,
+          "newPrice": 68.51,
+          "oldPercentOff": 32,
+          "newPercentOff": 31,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 14
     }
   ]
 }
