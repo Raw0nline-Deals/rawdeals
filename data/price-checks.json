@@ -959,6 +959,84 @@
         }
       ],
       "requests": 14
+    },
+    {
+      "checkedAt": "2026-11-18T23:43:10.628Z",
+      "checked": 129,
+      "unchanged": 123,
+      "updated": 4,
+      "removed": 1,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B07TMJ5Q6V",
+          "title": "Rachael Ray Yum-o! Bakeware Oven Lovin' Nonstick Loaf Pan, 9-Inch by 5-Inch Steel Pan, Gray with Marine Blue Handles",
+          "url": "https://www.amazon.com/dp/B07TMJ5Q6V?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 9.79,
+          "newPrice": 13.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B092LK5NSN",
+          "title": "Logitech G713 Wired Gaming Keyboard with LIGHTSYNC RGB Lighting, Tactile Switches (GX Brown), and Keyboard Palm Rest, PC and Mac Compatible, White Mist",
+          "url": "https://www.amazon.com/dp/B092LK5NSN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 132.21,
+          "newPrice": 129,
+          "oldPercentOff": 22,
+          "newPercentOff": 24,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CD87HL46",
+          "title": "Victoria's Secret Bare Eau de Parfum, Bare Rose - 3.4 fl oz",
+          "url": "https://www.amazon.com/dp/B0CD87HL46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 55.96,
+          "newPrice": 56.89,
+          "oldPercentOff": 30,
+          "newPercentOff": 29,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0FP1TRW4L",
+          "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
+          "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 68.51,
+          "newPrice": 68.41,
+          "oldPercentOff": 31,
+          "newPercentOff": 32,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HPFM2T2W",
+          "title": "100FT Permanent Outdoor Lights for House, RGB+IC Smart Christmas Lights IP67 Waterproof Eaves Light with App and Remote Control for House, DIY Scene Modes for Roof, Holiday, Party, Christmas Decor",
+          "url": "https://www.amazon.com/dp/B0HPFM2T2W?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 49.99,
+          "newPrice": null,
+          "oldPercentOff": 29,
+          "newPercentOff": null,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0HP6VQLZ5",
+          "title": "Ecoeve Permanent Outdoor Lights for House, 200ft RGB+IC Christmas LED Light | App & Remote Control with Guest Mode, 16 Million Colors, 50+ Scenes, Music Sync, IP67 Waterproof Seasonal Rope Lights",
+          "url": "https://www.amazon.com/dp/B0HP6VQLZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 149.99,
+          "newPrice": 149.99,
+          "oldPercentOff": 74,
+          "newPercentOff": 40,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 13
     }
   ]
 }
