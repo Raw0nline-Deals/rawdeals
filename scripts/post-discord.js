@@ -240,6 +240,75 @@ export async function postDiscordMessages(messages, {
   return { skipped: false, reason: "posted", posted: queue.length };
 }
 
+function moneyAndPercent(price, percent) {
+  const money = formatDiscordPrice(price);
+  const value = typeof percent === "number" ? percent : Number.NaN;
+  const pct = Number.isFinite(value) ? `${Math.round(value)}% off` : "";
+  if (money && pct) return `${money} (${pct})`;
+  return money || pct;
+}
+
+/**
+ * One line for a price-check change. This is not a new-deal announcement.
+ * Updated deals show the old and new price. Removals and out-of-stock deals
+ * are marked expired or out of stock.
+ */
+export function formatPriceCheckLine(change) {
+  const title = shortenText(change?.title, DISCORD_TITLE_LIMIT).replace(/[\[\]]/g, "").trim()
+    || (typeof change?.asin === "string" ? change.asin : "")
+    || "Deal";
+  const url = typeof change?.url === "string" && change.url.startsWith("https://") ? change.url : "";
+  const name = url ? `**[${title}](<${url}>)**` : `**${title}**`;
+  const before = moneyAndPercent(change?.oldPrice, change?.oldPercentOff);
+  const after = moneyAndPercent(change?.newPrice, change?.newPercentOff);
+  if (change?.action === "updated") {
+    if (before && after) return `${name} — ${before} → ${after}`;
+    if (after) return `${name} — now ${after}`;
+    return `${name} — price updated`;
+  }
+  const verb = change?.action === "unavailable" ? "out of stock" : "expired";
+  if (before && after && before !== after) return `${name} — ${before} → ${after}, ${verb}`;
+  if (before) return `${name} — was ${before}, ${verb}`;
+  return `${name} — ${verb}`;
+}
+
+/**
+ * Short Discord note for one price-check run. Empty when nothing changed,
+ * so a sweep that only stamps lastChecked does not post.
+ */
+export function formatPriceCheckMessages(run, { today = todayISO(), limit = DISCORD_CONTENT_LIMIT } = {}) {
+  const lines = (Array.isArray(run?.changes) ? run.changes : []).map(formatPriceCheckLine).filter(Boolean);
+  if (!lines.length) return [];
+  const header = `Price check — ${shortDate(today)}`;
+  const messages = [];
+  let current = header;
+  for (const line of lines) {
+    const candidate = current ? `${current}\n\n${line}` : line;
+    if (candidate.length <= limit) {
+      current = candidate;
+      continue;
+    }
+    if (current) messages.push(current);
+    current = line.length <= limit ? line : `${line.slice(0, Math.max(0, limit - 1))}…`;
+  }
+  if (current) messages.push(current);
+  const last = messages[messages.length - 1];
+  const withFooter = `${last}\n\n${DISCORD_FOOTER}`;
+  if (withFooter.length <= limit) messages[messages.length - 1] = withFooter;
+  else if (DISCORD_FOOTER.length <= limit) messages.push(DISCORD_FOOTER);
+  return messages;
+}
+
+/**
+ * Post the price-check note. A run with no changes does not call the webhook.
+ * A missing webhook skips, the same way the morning new-deal post does.
+ */
+export async function postPriceCheck(run, options = {}) {
+  const messages = formatPriceCheckMessages(run, options);
+  if (!messages.length) return { skipped: true, reason: "no price changes", posted: 0 };
+  return postDiscordMessages(messages, options);
+}
+
 function option(name) {
   const index = process.argv.indexOf(name);
   if (index === -1) return "";

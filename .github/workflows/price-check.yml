@@ -1,0 +1,128 @@
+name: Intra-day price check
+
+on:
+  schedule:
+    # GitHub Actions cron is UTC. It cannot name America/Chicago, which
+    # switches between Central Daylight Time (UTC−5) and Central Standard
+    # Time (UTC−6). These hours are 11:00, 14:00, 17:00, and 20:00 Chicago
+    # time. Daylight-time rules cover March 8 through November 7. Standard-time
+    # rules cover November 8 through March 7. The real switch is the second
+    # Sunday in March and the first Sunday in November, so that week can be
+    # an hour early. 20:00 Chicago is after midnight UTC, so those day lists
+    # are the next UTC date. This does not change the 13:00 UTC morning refresh.
+    # 11:00 America/Chicago
+    - cron: "0 16 8-31 3 *"
+    - cron: "0 16 * 4-10 *"
+    - cron: "0 16 1-7 11 *"
+    - cron: "0 17 * 1,2,12 *"
+    - cron: "0 17 1-7 3 *"
+    - cron: "0 17 8-30 11 *"
+    # 14:00 America/Chicago
+    - cron: "0 19 8-31 3 *"
+    - cron: "0 19 * 4-10 *"
+    - cron: "0 19 1-7 11 *"
+    - cron: "0 20 * 1,2,12 *"
+    - cron: "0 20 1-7 3 *"
+    - cron: "0 20 8-30 11 *"
+    # 17:00 America/Chicago
+    - cron: "0 22 8-31 3 *"
+    - cron: "0 22 * 4-10 *"
+    - cron: "0 22 1-7 11 *"
+    - cron: "0 23 * 1,2,12 *"
+    - cron: "0 23 1-7 3 *"
+    - cron: "0 23 8-30 11 *"
+    # 20:00 America/Chicago (01:00 UTC next day during CDT, 02:00 UTC next day during CST)
+    - cron: "0 1 9-31 3 *"
+    - cron: "0 1 * 4-10 *"
+    - cron: "0 1 1-8 11 *"
+    - cron: "0 2 * 1,2,12 *"
+    - cron: "0 2 1-8 3 *"
+    - cron: "0 2 9-30 11 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# Same group as Daily deal refresh. cancel-in-progress is false, so one waits
+# for the other instead of both writing data/deals.json.
+concurrency:
+  group: refresh-deals
+  cancel-in-progress: false
+
+jobs:
+  price-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Recheck posted deal prices
+        env:
+          CREATORS_API_CREDENTIAL_ID: ${{ secrets.CREATORS_API_CREDENTIAL_ID }}
+          CREATORS_API_CREDENTIAL_SECRET: ${{ secrets.CREATORS_API_CREDENTIAL_SECRET }}
+          CREATORS_API_CREDENTIAL_VERSION: "3.1"
+        run: node scripts/price-check.js --live
+
+      - name: Rebuild the RSS feed when deals.json changed
+        id: feed
+        run: |
+          if git diff --quiet -- data/deals.json; then
+            echo "deals.json unchanged"
+            echo "deals_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            node scripts/build-feed.js
+            echo "deals_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit the price check if anything changed
+        id: commit
+        run: |
+          git add -- data/deals.json data/price-checks.json feed.xml
+          if git diff --cached --quiet; then
+            echo "deals.json, price-checks.json, and feed.xml unchanged"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Intra-day price check"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            if git rebase origin/main; then
+              if git push origin HEAD:main; then
+                echo "pushed=true" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "push attempt ${attempt} was rejected"
+            else
+              echo "rebase attempt ${attempt} hit a conflict"
+              git rebase --abort || true
+            fi
+            sleep $((attempt * 4))
+          done
+          echo "could not push the price check onto main"
+          exit 1
+
+      - name: Rebuild GitHub Pages
+        if: steps.feed.outputs.deals_changed == 'true' && steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh api --method POST "/repos/${{ github.repository }}/pages/builds"; then
+            echo "::warning::GitHub Pages rebuild request failed"
+          fi
+
+      - name: Post price changes to Discord
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node scripts/price-check.js --discord
