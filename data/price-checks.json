@@ -1037,6 +1037,84 @@
         }
       ],
       "requests": 13
+    },
+    {
+      "checkedAt": "2026-11-19T02:47:57.750Z",
+      "checked": 127,
+      "unchanged": 121,
+      "updated": 4,
+      "removed": 2,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0D54QFW77",
+          "title": "Poppi Prebiotic Soda, Wild Berry, 12 Oz, 12 Pack | Prebiotic Soda, Sparkling Water & Fruit Juice, 5g Sugar",
+          "url": "https://www.amazon.com/dp/B0D54QFW77?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 14.66,
+          "newPrice": 9.82,
+          "oldPercentOff": 35,
+          "newPercentOff": 56,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00T7PCQBK",
+          "title": "MRS. MEYER'S CLEAN DAY All-Purpose Cleaner Spray, Lavender, 16 fl. oz",
+          "url": "https://www.amazon.com/dp/B00T7PCQBK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 4.99,
+          "newPrice": 1.95,
+          "oldPercentOff": 23,
+          "newPercentOff": 70,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CB44JSH8",
+          "title": "Montech MKey Mechanical Gaming Keyboard: Customizable RGB LED, Premium MDA Profile PBT Keycap, Hot-Swappable, Gateron G Yellow Pro 2.0 Pre-lubed Switches, Osaka Castle Theme, Freedom (MK105FY)",
+          "url": "https://www.amazon.com/dp/B0CB44JSH8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 63.9,
+          "newPrice": 109.9,
+          "oldPercentOff": 42,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0CBD17GN4",
+          "title": "For Bare Feet NFL Tennessee Titans Argyle Remix Dress Socks, Adult One Size",
+          "url": "https://www.amazon.com/dp/B0CBD17GN4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.21,
+          "newPrice": 11.39,
+          "oldPercentOff": 39,
+          "newPercentOff": 43,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B003BYQ16O",
+          "title": "Armarkat Cat Tree Model A6501, Real Wood Cat Condo,30 inches L X28 inches W X 65 inches H",
+          "url": "https://www.amazon.com/dp/B003BYQ16O?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 140.42,
+          "newPrice": 140.43,
+          "oldPercentOff": 46,
+          "newPercentOff": 46,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HMD5RZBN",
+          "title": "Bszatan Permanent Outdoor Lights, 100ft Smart Eaves Lights with Remote | 100ft kit with sturdy mounting tracks and adhesive backing, suitable for porch, roof, and patio exterior decor",
+          "url": "https://www.amazon.com/dp/B0HMD5RZBN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 50.99,
+          "newPrice": 50.99,
+          "oldPercentOff": 27,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        }
+      ],
+      "requests": 13
     }
   ]
 }
