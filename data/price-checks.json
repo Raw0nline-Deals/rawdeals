@@ -1856,6 +1856,95 @@
         }
       ],
       "requests": 13
+    },
+    {
+      "checkedAt": "2026-11-20T17:52:54.651Z",
+      "checked": 137,
+      "unchanged": 130,
+      "updated": 7,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0C7QDW1M4",
+          "title": "Kastty 4L/135oz Stainless Steel Pet Water Fountain Replacement Filters | Kastty 8+8 Replacement Filters 6.5 Inch Larger Size and More Active Carbon than Others, 8 Pack Filters + 8 Pack Pump Filters",
+          "url": "https://www.amazon.com/dp/B0C7QDW1M4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 14.39,
+          "newPrice": 13.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 22,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HBCNVTQ4",
+          "title": "Smart C9 LED Christmas Lights Outdoor, 150 LEDs 99FT RGB‑IC String Lights | 16 Mil Color Changing, APP & Remote Control, Group Control, Timer, 105+ Pre‑set Scene Modes Waterproof Holiday Decor Lights",
+          "url": "https://www.amazon.com/dp/B0HBCNVTQ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 59.56,
+          "newPrice": 53.99,
+          "oldPercentOff": 23,
+          "newPercentOff": 30,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0F53RS8G2",
+          "title": "CRMILL Candle Warmer Lamp with Timer: Adjustable Dimmable Height Adjustable Warming - Flower Shape Wax Lamp Jar Candles No Flame Modern Home Decor Table Lights - Home Living Bedroom",
+          "url": "https://www.amazon.com/dp/B0F53RS8G2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 16.13,
+          "newPrice": 15.99,
+          "oldPercentOff": 27,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00T7PCQBK",
+          "title": "MRS. MEYER'S CLEAN DAY All-Purpose Cleaner Spray, Lavender, 16 fl. oz",
+          "url": "https://www.amazon.com/dp/B00T7PCQBK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 1.9,
+          "newPrice": 4.99,
+          "oldPercentOff": 71,
+          "newPercentOff": 23,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DWYNY698",
+          "title": "Farberware Disney Bake with Mickey Mouse Nonstick Bakeware Cake Decorating/Baking Dish, 3D Cake Pan - Gray",
+          "url": "https://www.amazon.com/dp/B0DWYNY698?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 29.67,
+          "newPrice": 29.32,
+          "oldPercentOff": 26,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0H331RY7K",
+          "title": "TECKNET Wireless Gaming Mouse,2.4GHz/USB-C, 1000Hz,7 Custom Buttons 13 RGB | 12800 DPI, 700mAh Rechargeable Battery, 13 RGB Modes, Macro Support, Ergonomic Design",
+          "url": "https://www.amazon.com/dp/B0H331RY7K?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 17.99,
+          "newPrice": 14.39,
+          "oldPercentOff": 40,
+          "newPercentOff": 52,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0D79HHW99",
+          "title": "PowerA Enhanced Wireless Controller for Nintendo Switch/Switch 2 / Switch Lite/OLED Model - Color Splash Heros - Gamepad, game controller, Officially Licensed",
+          "url": "https://www.amazon.com/dp/B0D79HHW99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 44.33,
+          "newPrice": 45,
+          "oldPercentOff": 37,
+          "newPercentOff": 36,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 14
     }
   ]
 }
