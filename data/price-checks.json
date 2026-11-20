@@ -1990,6 +1990,62 @@
         }
       ],
       "requests": 14
+    },
+    {
+      "checkedAt": "2026-11-20T23:40:38.423Z",
+      "checked": 136,
+      "unchanged": 132,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.17,
+          "newPrice": 6.99,
+          "oldPercentOff": 28,
+          "newPercentOff": 30,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DWYNY698",
+          "title": "Farberware Disney Bake with Mickey Mouse Nonstick Bakeware Cake Decorating/Baking Dish, 3D Cake Pan - Gray",
+          "url": "https://www.amazon.com/dp/B0DWYNY698?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 29.62,
+          "newPrice": 29.74,
+          "oldPercentOff": 26,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00HSC9F2C",
+          "title": "Clorox Disinfecting Wipes Variety Pack Bleach Free 75 Count 3 Pack | Kills Cold and Flu Viruses, 100 Plus Surface Safe, Germ Hotspot Disinfectant, Bleach Free, 75 Count, 3 Pack",
+          "url": "https://www.amazon.com/dp/B00HSC9F2C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.79,
+          "newPrice": null,
+          "oldPercentOff": 21,
+          "newPercentOff": null,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0D79HHW99",
+          "title": "PowerA Enhanced Wireless Controller for Nintendo Switch/Switch 2 / Switch Lite/OLED Model - Color Splash Heros - Gamepad, game controller, Officially Licensed",
+          "url": "https://www.amazon.com/dp/B0D79HHW99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 45,
+          "newPrice": 51.1,
+          "oldPercentOff": 36,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 14
     }
   ]
 }
