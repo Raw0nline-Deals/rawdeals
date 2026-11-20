@@ -2,6 +2,379 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0GV7MQ1NN",
+      "title": "2.4GHz Wireless Gaming Headset for PS5/PS4/PC/Switch, 45H RGB Lights, 2026 | Gaming Headphones with ENC Mic, 7.1 Surround Sound, 40mm Drivers, BT 5.4, <20ms Low Latency, 276g Lightweight, Memory Foam",
+      "image": "https://m.media-amazon.com/images/I/41zEx1ALw1L._SL500_.jpg",
+      "price": 41.99,
+      "percentOff": 58,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0GV7MQ1NN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "expires": "2026-12-01",
+      "features": [
+        "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
+        "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0GYCYQDS7",
+      "title": "Rayhaan Wolf – Spicy, Gourmand, Amber, Woody – Eau de Parfum Spray Long-Lasting Fragrance for Men, 3.4 Ounce / 100 ml",
+      "image": "https://m.media-amazon.com/images/I/41CZfidG9vL._SL500_.jpg",
+      "price": 26.6,
+      "percentOff": 43,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0GYCYQDS7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 46.5,
+      "expires": "2026-12-01",
+      "features": [
+        "Bold Spiced & Gourmand Warmth: A captivating masculine fragrance that blends aromatic spices, rich sweetness, and warm woody accords for a confident and memorable scent.",
+        "Fragrance Notes: Opens with Cardamom & Orange Blossom, unfolds into a decadent heart of Toffee & Tonka Bean, and settles into a smooth base of Vanilla, Amber & Blonde Woods."
+      ]
+    },
+    {
+      "id": "B013S2AOEI",
+      "title": "Lipton Decaf Green Tea Bags, Unsweetened Iced or Hot Tea Bags, 240 Total Tea Bags (40ct - Pack of 6)",
+      "image": "https://m.media-amazon.com/images/I/41k8CDJhDaL._SL500_.jpg",
+      "price": 21.4,
+      "percentOff": 20,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B013S2AOEI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.78,
+      "expires": "2026-12-01",
+      "features": [
+        "DECAF GREEN TEA BLEND: Savor the smooth and delicate taste of Lipton Decaffeinated Green Tea any time of day",
+        "2 CUPS TO GOODNESS: Per serving, unsweetened Lipton Decaffeinated Green Tea contains about 50mg of Flavonoids, naturally occurring bioactives found in tea, vegetables, and fruit; Enjoy two cups a day to provide 100mg of Flavonoids"
+      ]
+    },
+    {
+      "id": "B0CQKNQ62N",
+      "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+      "image": "https://m.media-amazon.com/images/I/41136Dw6+tL._SL500_.jpg",
+      "price": 11.84,
+      "percentOff": 39,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.49,
+      "features": [
+        "ONE BOTTLE SOLUTION: This 80 fluid ounce bottle of CloroxPro Pine-Sol Multi-Surface Cleaner gives you 80 gallons of cleaning solution that is safe for use on most commercial high-touch surfaces",
+        "KILLS 99.9% OF GERMS (3): When used as directed, CloroxPro Pine-Sol Multi-Surface Cleaner disinfects both neat and diluted with a formula that kills 99.9% of cold and flu viruses (1)"
+      ]
+    },
+    {
+      "id": "1932188126",
+      "title": "Bananagrams Classic Word Game, 144 Tiles in Banana Pouch, Travel Game | Fast-paced spelling & anagram game for 1-8 players; portable pouch, educational wordplay for kids and adults ages 7+",
+      "image": "https://m.media-amazon.com/images/I/31DfwOmhhVL._SL500_.jpg",
+      "price": 11.99,
+      "percentOff": 25,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/1932188126?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 15.99,
+      "features": [
+        "FUN FOR EVERYONE – Gather your family and friends with word games for adults and kids, and race against each other to build crossword grids. This anagram game that will drive you bananas.",
+        "MAKES A GREAT GIFT – Bananagrams will make a thoughtful gift as family games for adults and children for your friends or family members. It is perfect for both boys and girls."
+      ]
+    },
+    {
+      "id": "B07JG9JB29",
+      "title": "Geekria Shield Gaming Headset Case for Lay Flat Over-Ear Headphones, Replacement Hard Shell Travel Carrying Bag with Cable Storage, Compatible with SteelSeries, Logitech, JBL (Dark Grey)",
+      "image": "https://m.media-amazon.com/images/I/51dIToUVBnS._SL500_.jpg",
+      "price": 21.52,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07JG9JB29?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.9,
+      "features": [
+        "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
+        "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B00023IXDQ",
+      "title": "Revlon Fire & Ice Perfume for Women Eau de Cologne Spray 1.7 Ounce",
+      "image": "https://m.media-amazon.com/images/I/31iGPEICFiL._SL500_.jpg",
+      "price": 16.99,
+      "percentOff": 35,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B00023IXDQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26,
+      "features": [
+        "Revlon Luxury Perfume",
+        "Fire & Ice Cologne"
+      ]
+    },
+    {
+      "id": "B0D5MFLFM2",
+      "title": "Pukka Premium Herbal Tea Gift Set, 45 Organic Tea Bags with 9 Flavors | Premium Herbal Tea, Caffeine Free, Variety Pack Wellness Collection for Tea Lovers Holiday Birthday Gift Box",
+      "image": "https://m.media-amazon.com/images/I/51BVbAqU-3L._SL500_.jpg",
+      "price": 19.11,
+      "percentOff": 20,
+      "category": "Drinks",
+      "url": "https://www.amazon.com/dp/B0D5MFLFM2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 23.93,
+      "expires": "2026-12-01",
+      "features": [
+        "Variety: Experience 9 premium herbal tea flavors in this comprehensive tea sampler gift set box, featuring 45 individually wrapped organic tea bags that deliver exceptional taste and wellness benefits for every tea lover's palate",
+        "Caffeine-Free: Enjoy relaxing caffeine free tea blends crafted without caffeine, perfect for evening sipping or anytime you want to unwind with soothing herbal teas that promote wellness and peaceful moments throughout your day"
+      ]
+    },
+    {
+      "id": "B09158614F",
+      "title": "Clorox Free & Clear Cleaning Wipes, Light Lemon Scent, 75 Count, 3 Pack | For Most Surfaces in Kitchen, Bathroom and High Touch Areas, Safe Around Kids, Pets and Food, Bleach Free, No Dyes or Ammonia",
+      "image": "https://m.media-amazon.com/images/I/51yFOfIMljL._SL500_.jpg",
+      "price": 13.97,
+      "percentOff": 33,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B09158614F?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20.97,
+      "features": [
+        "CLEANING WIPES: Safer Choice certified, Clorox Cleaning Wipes in a lemon scent are made from plant based fibers; Pack may vary",
+        "FAMILY FRIENDLY: Clorox Free & Clear Cleaning Wipes are formulated without dyes, bleach or ammonia to get the surface clean you want from the brand you trust"
+      ]
+    },
+    {
+      "id": "B000K8FYAS",
+      "title": "Asmodee Ticket to Ride USA 1910 Board Game Expansion - Train Route-Building Strategy Game, Fun Family Game for Kids & Adults, Ages 8+, 2-5 Players, 30-60 Minute Playtime",
+      "image": "https://m.media-amazon.com/images/I/41rBNxm9PoL._SL500_.jpg",
+      "price": 17.49,
+      "percentOff": 20,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B000K8FYAS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 21.99,
+      "expires": "2026-12-01",
+      "features": [
+        "EXPANSION FOR CLASSIC FUN: Enhance your Ticket to Ride experience with 181 new large format cards and 35 new Destination Tickets.",
+        "GLOBETROTTER BONUS: Compete for the GlobeTrotter bonus card by completing the most tickets in this exciting expansion."
+      ]
+    },
+    {
+      "id": "B0BSBVPWCV",
+      "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
+      "image": "https://m.media-amazon.com/images/I/31ZPUnFQUvL._SL500_.jpg",
+      "price": 280,
+      "percentOff": 26,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 379.99,
+      "features": [
+        "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
+        "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
+      ]
+    },
+    {
+      "id": "B0FNF8WK62",
+      "title": "Issey Miyake L'Eau d'Issey Eau de Toilette Holiday Fragrance Set for Women - Includes Eau de Toilette (100 mL), Moisturizing Body Lotion (50 mL) & Eau de Toilette Purse Spray (10 mL)",
+      "image": "https://m.media-amazon.com/images/I/41njMCerl7L._SL500_.jpg",
+      "price": 93.09,
+      "percentOff": 34,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0FNF8WK62?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 140,
+      "expires": "2026-12-01",
+      "features": [
+        "HOLIDAY GIFT SET - Issey Miyake's exclusive set, designed in collaboration with Philippe Apeloig. Includes: L’Eau d’Issey Eau de Toilette (100 mL), L’Eau d’Issey Moisturizing Body Lotion (50 mL) & L’Eau d’Issey Eau de Toilette Purse Spray (10 mL).",
+        "TIMELESS FRAGRANCE FOR WOMEN - L'Eau d'Issey Eau de Toilette, the first aquatic floral fragrance for women by Issey Miyake. Inspired by the scent of water on a woman's skin, it captures the purity of water and luxury of the essentials."
+      ]
+    },
+    {
+      "id": "B004KEMIRK",
+      "title": "CLIPPERCIDE 5-in-1 Clipper Disinfectant Spray 15oz, 3 Pack | Cleans, Lubricates, Cools, Prevents Rust & Disinfects | Professional Clipper Spray for Barbers, Stylists & Pet Groomers | Made by BARBICIDE",
+      "image": "https://m.media-amazon.com/images/I/51rTaJFOXiL._SL500_.jpg",
+      "price": 25.34,
+      "percentOff": 30,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B004KEMIRK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 35.99,
+      "expires": "2026-12-01",
+      "features": [
+        "TRUSTED BY PROFESSIONALS - From the makers of Barbicide, Clippercide is the industry-standard choice for professional barbers, stylists, and groomers. Trust the brand that has set the gold standard in salon hygiene to protect your tools and your clients.",
+        "5-IN-1 TOTAL BLADE CARE: The ultimate all-in-one clipper spray. This professional formula disinfects, lubricates, cleans, cools, and prevents rust in one easy step. Keep your clippers running smoother, quieter, and longer while maintaining peak performance."
+      ]
+    },
+    {
+      "id": "B074YPSTRP",
+      "title": "Asmodee Twilight Imperium: 4th Edition Board Game - Epic Galactic Conquest, Sci-Fi Adventure Strategy Game for Kids & Adults, Ages 14+, 3-6 Players, 4-8 Hour Playtime",
+      "image": "https://m.media-amazon.com/images/I/51JFan8VxYL._SL500_.jpg",
+      "price": 151.99,
+      "percentOff": 20,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B074YPSTRP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 189.99,
+      "expires": "2026-12-01",
+      "features": [
+        "THE DAWN OF A NEW AGE: Explore the latest reimagining of the Twilight Imperium saga with this epic fourth edition. The galaxy stirs once more, and the great races are again looking beyond their borders into the far reaches of space. Mecatol Rex, the jewel of galactic civilization, awaits the one who",
+        "SCI-FI STRATEGY BOARD GAME: In this game of galactic conquest, each player takes command of one of seventeen unique civilizations to compete for interstellar supremacy through warfare, trade, uncertain allegiances, and political dominance. Negotiate your way to victory or overrun your foes with mili"
+      ]
+    },
+    {
+      "id": "B0BDTR1733",
+      "title": "Victoria's Secret Bare 3 Piece Fragrance Gift Set",
+      "image": "https://m.media-amazon.com/images/I/41sF5mGBHTL._SL500_.jpg",
+      "price": 49.99,
+      "percentOff": 33,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0BDTR1733?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 74.22,
+      "expires": "2026-12-01",
+      "features": [
+        "Gift a new signature fragrance with this three-piece Set.",
+        "This proprietary blend of musks mixes with your body chemistry to reveal a scent that is unique to you."
+      ]
+    },
+    {
+      "id": "B00WT6QLI8",
+      "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/51GsTTTJx6L._SL500_.jpg",
+      "price": 6.99,
+      "percentOff": 30,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "Disinfecting Wipes Kill 99.9% of Cold & Flu Viruses and Antibiotic resistant bacteria including Influenza",
+        "A Virus H2N2, Human Corona Virus, Strep, and Staph Lysol Wipes remove more than 95% of allergens and help prevent the growth of Mold & Mildew"
+      ]
+    },
+    {
+      "id": "B000VCW7EO",
+      "title": "Estée Lauder Beautiful Eau de Parfum Spray with Notes of Rose, Lily, Tuberose & Orange Flower | Floral Perfume for Women | Perfumes for Women, 2.5 Fl Oz",
+      "image": "https://m.media-amazon.com/images/I/219EcVAmlGL._SL500_.jpg",
+      "price": 80.5,
+      "percentOff": 30,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B000VCW7EO?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 115,
+      "expires": "2026-12-01",
+      "features": [
+        "TOP NOTES: Rose, Mandarin, Lily, Tuberose, Marigold",
+        "MIDDLE NOTES: Orange Flower, Muguet, Jasmine, Ylang-Ylang"
+      ]
+    },
+    {
+      "id": "B09PZLN5ZF",
+      "title": "Clorox Disinfecting Cleaner Pack, 32 fl. oz., 3 Pack | All-Purpose Cleaner and Bathroom Cleaner Pack, Bleach Free, Household Essentials, Cleans Dirt and Grime Off Most Surfaces",
+      "image": "https://m.media-amazon.com/images/I/51rZORpgz2L._SL500_.jpg",
+      "price": 13.17,
+      "percentOff": 20,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B09PZLN5ZF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.38,
+      "features": [
+        "ALL PURPOSE DISINFECTING CLEANER BUNDLE: 4 in 1 Clorox Disinfecting All Purpose Cleaner cleans, deodorizes, disinfects and shines (1); Clorox Bathroom Disinfecting Cleaner dissolves soap scum",
+        "BLEACH FREE DISINFECTANTS: These Clorox bathroom cleaning sprays are formulated without bleach, but do not compromise the cleaning power you need in your bathroom"
+      ]
+    },
+    {
+      "id": "B003NLV6W4",
+      "title": "Lancôme Miracle Eau de Parfum - Spicy & Floral Women's Perfume - 3.4 Fl Oz | Perfume for Women - With Notes of Magnolia, Lychee, Ginger, Jasmine & Amber - Long Lasting Fragrance",
+      "image": "https://m.media-amazon.com/images/I/31dMqRdaWoL._SL500_.jpg",
+      "price": 95.9,
+      "percentOff": 30,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B003NLV6W4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 137,
+      "expires": "2026-12-01",
+      "features": [
+        "A joyful, empowering and inspiring eau de parfum that captures the feeling that life is extraordinary. This vibrant spicy floral fragrance opens with fresh, dewy notes of lychee and freesia for a sparkling scent that feels like the dawning of a new day. It is luminous, feminine and uplifting, with a",
+        "Bursting with brilliant freesia, peppered with ginger and balanced by warm amber notes, this scent offers all day wear with a luminous floral signature. It feels vibrant, sparkling and uplifting, making everyday moments feel more joyful and extraordinary. Wear it when you want a fragrance that feels"
+      ]
+    },
+    {
+      "id": "B0FJ2WQKJ2",
+      "title": "Marc Jacobs Daisy Love ($210 Value) - Floral Women's Perfume – Discovery 3 Pieces Trial Set",
+      "image": "https://m.media-amazon.com/images/I/31E-LHGNEGL._SL500_.jpg",
+      "price": 120,
+      "percentOff": 20,
+      "category": "Fragrances",
+      "url": "https://www.amazon.com/dp/B0FJ2WQKJ2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-20",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 150,
+      "expires": "2026-12-01",
+      "features": [
+        "A radiant fragrance that combines fresh and floral accords featuring cloudberries, daisy petals and driftwood."
+      ]
+    },
+    {
       "id": "B081415GCS",
       "title": "Logitech G733 Lightspeed Wireless Gaming Headset - Black | Suspension Headband, Blue VO!CE Mic, PRO-G Audio, PC, PS5, PS4, Switch Compatible",
       "image": "https://m.media-amazon.com/images/I/410QZvnpIxL._SL500_.jpg",
@@ -837,27 +1210,6 @@
       ]
     },
     {
-      "id": "B0GMWK5PGT",
-      "title": "Hestia Permanent Outdoor Lights for House, 200ft RGB+IC Smart Lights | App & Remote Control, IP67 Waterproof,16 Million Colors,Outdoor Strip Lights,DIY Scene Modes for Christmas Halloween Decor",
-      "image": "https://m.media-amazon.com/images/I/515GpJ86HqL._SL500_.jpg",
-      "price": 66.49,
-      "percentOff": 48,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0GMWK5PGT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 129,
-      "expires": "2026-11-19",
-      "features": [
-        "IP67 All-Weather Reliability: Engineered with an IP67 waterproof rating and UV-resistant materials, our outdoor led lights withstand wind, rain and snow, and work in weather from -4°F to 140°F (-20°C-60°C).",
-        "Dynamic RGB+IC & Holidy Modes: Advanced RGB+IC permanent outdoor lights lets each LED display different colors at the same time, while 16 million colors, 50+ scene modes, and music sync create festive outdoor Christmas lights, or for Halloween, birthdays, game days, backyard parties, or everyday cur"
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
       "id": "B0HPL68PVF",
       "title": "LIMANS No.00210 Lost Cherry Inspired Eau de Parfum 0.34 oz Mini Perfume | Long Lasting Unisex Perfume for Women & Men | 0.34 oz (10 ml) Mini Eau de Parfum Travel Spray | Vegan, French Perfume Oils",
       "image": "https://m.media-amazon.com/images/I/51CUdsAnPGL._SL500_.jpg",
@@ -873,8 +1225,7 @@
       "features": [
         "FRUITY, SWEET & WARM SCENT - A rich fragrance blending black cherry and cherry liqueur with bitter almond, Turkish rose, jasmine sambac and plum. Tonka bean, Peru balsam and sandalwood create a warm base for a unisex scent",
         "INSPIRED FRAGRANCE FOR WOMEN & MEN - LIMANS No. XXX is designed for those who enjoy a sweet fruity fragrance profile with floral and woody accents. A versatile Eau de Parfum for everyday wear, evenings and special occasions"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0D54QFW77",
@@ -1104,26 +1455,6 @@
       "features": [
         "The Brilliance Food Storage Container from Rubbermaid is a convenient way to store and heat leftovers",
         "Leak-proof design"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0HDJ6YDBF",
-      "title": "6 Pack Extra Large Moving Bags with Double Zipper & Handles, Heavy Duty Storage Bag, Water-Resistant Storage Totes, Dorm, Closet, Travel, Holiday Ornaments (Black)",
-      "image": "https://m.media-amazon.com/images/I/41fHWXFiaBL._SL500_.jpg",
-      "price": 26.59,
-      "percentOff": 34,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HDJ6YDBF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "expires": "2026-11-19",
-      "features": [
-        "Heavy Duty Material - Made of upgrade thick PE fabric, storage boxes with fully wrap around handles, strong zipper and reinforced stitching promise to safely hold more than 65 lbs loading.",
-        "Extra Large Storage Capacity - Measuring 29*14*13 inches, available in 3 colors: blue, pink and black. these storage totes boast a generous capacity for your storage needs. They easily fit comforters, blankets, seasonal apparel, garage supplies, Holiday Ornaments and other bulky items."
       ],
       "lastChecked": "2026-11-20T02:47:09.009Z"
     },
@@ -1743,46 +2074,6 @@
       "lastChecked": "2026-11-20T02:47:09.009Z"
     },
     {
-      "id": "B0HCV9GQSL",
-      "title": "50000mAh Portable Charger Power Bank, Built in Cables, 22.5W Fast Charging | Ultra-High Capacity, Travel Essential, Charge 4 Devices, Flashlight, for iPhone 18/17/16/15 Series, Samsung, iPad & Laptops",
-      "image": "https://m.media-amazon.com/images/I/41+rlSqonQL._SL500_.jpg",
-      "price": 33.24,
-      "percentOff": 38,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0HCV9GQSL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 53.99,
-      "expires": "2026-11-19",
-      "features": [
-        "Massive 50000mAh Capacity for Long-Lasting Power: Stay powered wherever life takes you with a high-capacity 50000mAh portable charger. Charge compatible smartphones multiple times on a single charge, making it a reliable companion for travel, camping, business trips, outdoor adventures, emergencies,",
-        "Built-In 2 Cables for iPhone and USB-C Devices – Ready to Charge Anytime: Leave extra charging cables behind. This portable power bank features built-in USB-C and iOS cables, plus an additional USB-C port, allowing you to charge multiple devices conveniently right out of the box. Perfect for keeping"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0C1MSXC2R",
-      "title": "Parchment Paper Sheets, 9x13 In Non-Stick Precut Baking Parchment for Baking, Grilling, Air Fryer, Steaming, and More (Unbleached) - Quarter Sheet Size, Perfect for Bread, Cakes, Cookies, 100PCS",
-      "image": "https://m.media-amazon.com/images/I/41ycKbxoGoL._SL500_.jpg",
-      "price": 7.58,
-      "percentOff": 33,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0C1MSXC2R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 11.39,
-      "expires": "2026-11-19",
-      "features": [
-        "Natural, Unbleached Parchment Paper: Made from natural wood pulp, our parchment paper baking sheet is completely free from fluorescent agents, chlorine, and other harmful chemicals. It's food-grade, waterproof and BPA-FREE. Also the paper sheets is biodegradable, eco-friendly.",
-        "Pre-cut and Perfectly Sized Parchment Paper Sheets: Are you tired of cutting rolled parchment paper and it will curl? With 100 sheets of 9\"x13\" baking paper, each sheet is precisely pre-cut to fit standard quarter sheet baking pans or large airfyers, making baking a breeze. No more measuring and cut"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
       "id": "B08HDN6M4Z",
       "title": "PetFusion Premium Cat and Dog Cooling Blanket. Lightweight Pet Blanket | Machine Washable | Multiple Sizes: for Pets Small to Extra-Large | Multiple Colors: Grey and Brown",
       "image": "https://m.media-amazon.com/images/I/31+zmV+lTsL._SL500_.jpg",
@@ -1817,8 +2108,7 @@
       "features": [
         "ALL PURPOSE CLEANER KILLS 99.9% OF VIRUSES and BACTERIA: Lysol All Purpose disinfectant spray kills 99.9% of viruses and bacteria including the COVID-19 virus to help keep your family protected",
         "KILLS 99.9% OF GERMS FOR A DEEP CLEAN: This disinfectant spray kills 99.9% of germs, removes soap scum and cuts through tough grease and grime — a versatile, multipurpose cleaner you can count on"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0CD87HL46",
@@ -1833,11 +2123,11 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 79.95,
+      "expires": "2026-12-01",
       "features": [
         "Fresh and floral, Bare Rose blends vivid petals and warm woods with a proprietary blend of musks that mixes with your body chemistry to reveal your signature.",
         "Fragrance type: Warm Floral"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B01LHMHP0C",
@@ -1874,8 +2164,7 @@
       "features": [
         "COLD AND FLU SEASON ESSENTIAL: These wipes kill 99.9% of viruses and bacteria (3), including cold and flu viruses, on hard non-porous surfaces when used as directed. Package May Vary",
         "HOW MUCH MORE DO THEY CLEAN? Each wipe cleans 2x more than the other guys on soap scum for tough messes (1), so you get more clean with every single wipe"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0DJ6XV88H",
@@ -1912,8 +2201,7 @@
       "features": [
         "LYSOL DISINFECTANT SPRAY: This household essential is tested and proven to kill 99.9% of viruses and bacteria(1), including the Covid-19 virus, Hantavirus(5), Norovirus, and cold and flu(2). Perfect for any room, this Lysol spray will sanitize, disinfect, and deodorize your home.",
         "DISINFECTING AND SANITIZING SPRAY: Lysol disinfects hard non-porous contact surfaces and sanitizes soft surfaces. This multipurpose spray can be used in the home and kitchen, to disinfect toys, couches, counters(3), bathrooms, and over 100 more surfaces."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0GQL4GM4H",
@@ -2048,26 +2336,6 @@
       "lastChecked": "2026-11-20T02:47:09.009Z"
     },
     {
-      "id": "B0H8N3J89N",
-      "title": "45W Fast Charging Portable Charger, 35% Smaller 20000mAh Travel Power Bank | Flight-Safe, USB-C Cable, 70% in 30min, LED Display Travel Essential Battery Pack for iPhone 17 / Galaxy S26 Series and More",
-      "image": "https://m.media-amazon.com/images/I/31BwswK+NvL._SL500_.jpg",
-      "price": 28.48,
-      "percentOff": 41,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0H8N3J89N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 47.99,
-      "expires": "2026-11-19",
-      "features": [
-        "Charges to 70% in 30 Minutes: This 45W fast charger boosts an iPhone 17 Pro Max to 76%, a Galaxy S25 Ultra to 84%, or an iPad Pro to 60% in just 30 minutes (charging from 20%) — this power bank supports PD, QC, built-in smart recognition chip automatically adjusts power output for different devices,",
-        "Charge Your Phone 4 Times: This portable charger features a new high-density polymer battery that provides 4 charges for iPhone 15, freeing you from battery anxiety. The 20,000mAh capacity meets airline carry-on standards, and it’s extremely portable. The design is incredibly compact; despite its sm"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
       "id": "B09B1XX1PN",
       "title": "PowerA Twin Charging Station for Dualsense Wireless Controllers, Dualsense Controller Charging, Charge, Sony PlayStation, PS5, Officially Licensed - PlayStation 5",
       "image": "https://m.media-amazon.com/images/I/41iFkL0D5oL._SL500_.jpg",
@@ -2083,26 +2351,6 @@
       "features": [
         "Charges 2 DualSense wireless controllers",
         "Simple charging design"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0GYPZ92VM",
-      "title": "Portable Charger Power Bank 10000mAh, 45% Smaller Built-in Cables & AC Plug | Built-in Cables & AC Plug, 22.5W Fast Charging, 4-Device Charging, Travel Essential, for iPhone, iPad & Samsung Galaxy, Black",
-      "image": "https://m.media-amazon.com/images/I/31HMFAPGhUL._SL500_.jpg",
-      "price": 23.99,
-      "percentOff": 29,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0GYPZ92VM?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 33.99,
-      "expires": "2026-11-19",
-      "features": [
-        "All-in-One Power in a Compact Body: No extra adapters or cables needed. This 10000mAh portable charger is up to 45% smaller than average power banks, with a compact 3.66 × 2.36 in body and 7.05 oz lightweight design. Built-in USB-C and USB-A cables stay ready in your pocket, purse, backpack, or trav",
-        "Flexible Charging, Simple Recharging: Charge up to 4 devices at once, then recharge the power bank your way. Plug it directly into a wall outlet with the foldable AC plug in about 2.5 hours, or use a PD20W USB-C adapter to recharge in about 2 hours. Pass-through charging lets you power your phone wh"
       ],
       "lastChecked": "2026-11-20T02:47:09.009Z"
     },
@@ -2126,26 +2374,6 @@
       "lastChecked": "2026-11-20T02:47:09.009Z"
     },
     {
-      "id": "B0H2M6F22Q",
-      "title": "15000mAh Portable Charger, 35% Smaller Power Bank with 4 Built-in Cables | Charge 6 Devices Simultaneously , Travel Essential Battery Pack for iPhone 18/17, Samsung/Android/iPad",
-      "image": "https://m.media-amazon.com/images/I/413uGmHVD4L._SL500_.jpg",
-      "price": 22.79,
-      "percentOff": 38,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0H2M6F22Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-14",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 36.99,
-      "expires": "2026-11-19",
-      "features": [
-        "30% More Power & 15000mAh Massive Capacity,Powered by high-performance battery cells,the 15000mAh capacity delivers 30% more power than common 10000mAh power bank on the market.It provides about 2.5 full charges for an iPhone 17,roughly 1.9 charges for a Samsung S26+,or up to 18.8 charges for AirPod",
-        "4-in-1 Cables & Lanyard Design : No more lost or forgotten cables! Features 4 rugged integrated cables (ios & Type-C & Micro USB & USB-A), far more durable than ordinary detachable cords.Unlike competitors,the top lanyard doubles as a finger hook-secure and drop-free, so you never have to worry abou"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
@@ -2153,7 +2381,7 @@
       "percentOff": 31,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
+      "added": "2026-11-20",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2163,442 +2391,6 @@
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
       "priority": true
-    },
-    {
-      "id": "B01F35UGWS",
-      "title": "Mercer Culinary M23890 Millennia Black Handle, 9-Inch Offset Wavy Edge, Bread Knife",
-      "image": "https://m.media-amazon.com/images/I/21WGsDGgM2L._SL500_.jpg",
-      "price": 16.49,
-      "percentOff": 41,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B01F35UGWS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 27.99,
-      "features": [
-        "QUALITY CONSTRUCTION: Knife is crafted with one-piece high-carbon Japanese steel for easy edge maintenance and long-lasting sharpness",
-        "SUPERIOR DESIGN: Built to last ergonomic handle with textured finger points offers a non-slip grip with added comfort, durability, and safety"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0881972V6",
-      "title": "SKL Home Fall/Autumn Football is My Favorite Season 100% Cotton Embroidered 2pc Hand Towel Set, Decorative for Bath/Kitchen/Bar & Gift, Green",
-      "image": "https://m.media-amazon.com/images/I/61joCqgNsoL._SL500_.jpg",
-      "price": 12.59,
-      "percentOff": 46,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0881972V6?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 23.43,
-      "features": [
-        "Includes 2 hand towels; 16\" x 25\"",
-        "Soft cotton velour with decorative football embroidery and field-inspired, white horizontal lines"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B003BYQ1C8",
-      "title": "Armarkat Cat Tree Model A7802, Silver Gray",
-      "image": "https://m.media-amazon.com/images/I/41UsG3e61wL._SL500_.jpg",
-      "price": 164.24,
-      "percentOff": 49,
-      "category": "Pets",
-      "url": "https://www.amazon.com/dp/B003BYQ1C8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 319,
-      "features": [
-        "Constructed with 15mm pressed wood and reinforced with postal tube cardboard with plastic end caps, this cat tree is upholstered in 550g/m² high-density faux fur fabric and wrapped with 6mm thick natural sisal rope for durability and comfort.",
-        "Model A7802 features soft-side playhouse, condo, basket, soft ramp, hammock and hanging toys."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0CBKLFTGH",
-      "title": "Ewedoos Thermal Underwear Set for Kids Thermals Top and Bottom Set Boys Long Johns Base Layer Thermal Set Black",
-      "image": "https://m.media-amazon.com/images/I/31NH4u4KZ8L._SL500_.jpg",
-      "price": 12.33,
-      "percentOff": 54,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0CBKLFTGH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 26.99,
-      "expires": "2026-11-19",
-      "features": [
-        "Fleece-Lined Soft (Without bulk). Ewedoos thermal underwear for kids gives your kids a high-quality warmth thanks to our unique soft and thick fleece-lined lightweight fibers. Ewedoos long johns for kids keep you warm but not bulky. Bring it on, blizzards. Do your worst, polar vortexes",
-        "Unique Neckline Shirts. Ensuring maximum protection for your kids - the collar has been widened, increasing extra coverage area for your kid's neck. To keep up with them on their adventures, our kids thermals top and bottom set also feature flat and unnoticeable seaming, reducing chafing over long s"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0DDPYQTXR",
-      "title": "Cutluxe Butcher Knife Set, Brisket, Breaking & Boning Knife for Meat | BBQ Carving & Slicing Blades, Ultra Sharp German Steel, Full Tang Ergonomic Handles – Grilling Gift",
-      "image": "https://m.media-amazon.com/images/I/51IR2-pNymL._SL500_.jpg",
-      "price": 84.99,
-      "percentOff": 37,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0DDPYQTXR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 134.99,
-      "features": [
-        "BUTCHER KNIFE SET OF 3: Includes a 12\" brisket knife, a 10\" breaking cimeter knife, and a 6\" boning knife for meat cutting. The perfect BBQ knife set for any pitmaster.",
-        "VERSATILE BBQ KNIFE SET: breaking down primals with the breaking knife, trimming fat or filleting with the deboning knife, portioning briskets with the slicing knife. The right meat cutting knife for each job."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B097CMNV6Q",
-      "title": "SKL Home Halloween Graveyard Cat Hand Towel 2pc Set for Bath/Kitchen/Bar & Gift, Gray",
-      "image": "https://m.media-amazon.com/images/I/51YYGR-uHMS._SL500_.jpg",
-      "price": 9.12,
-      "percentOff": 32,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B097CMNV6Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 13.35,
-      "features": [
-        "Includes 2 hand towels",
-        "Soft cotton velour with decorative embroidery"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B003BYQ16O",
-      "title": "Armarkat Cat Tree Model A6501, Real Wood Cat Condo,30 inches L X28 inches W X 65 inches H",
-      "image": "https://m.media-amazon.com/images/I/31yg06KLE0L._SL500_.jpg",
-      "price": 140.43,
-      "percentOff": 46,
-      "category": "Pets",
-      "url": "https://www.amazon.com/dp/B003BYQ16O?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 259,
-      "features": [
-        "30L x 28W x 65H Inches",
-        "Covering Material: Faux Fur"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B097N9X8BJ",
-      "title": "Kuhn Rikon COLORI+ Non-Stick Straight and Serrated Paring Knives with Safety Sheaths, Set of 3, Red, Yellow and Green",
-      "image": "https://m.media-amazon.com/images/I/41Y7L2f-nWS._SL500_.jpg",
-      "price": 16.1,
-      "percentOff": 29,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B097N9X8BJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 22.8,
-      "features": [
-        "Set of 3 all-purpose lightweight kitchen prep knives - chop vegetables, peel apples, slice cheese etc with ease",
-        "Feature ultra-sharp, hand-ground, long-lasting, Japanese stainless steel blades"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0B5DYQ836",
-      "title": "Disney Toy Story Buzz Lightyear Towel Poncho Kids Swim Bath Towel",
-      "image": "https://m.media-amazon.com/images/I/41Z1qNEs0yL._SL500_.jpg",
-      "price": 20,
-      "percentOff": 31,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0B5DYQ836?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 28.95,
-      "features": [
-        "WARM AND DRY SPACE RANGER TOWELLING PONCHO FOR KIDS - Dress up as Buzz Lightyear the Space Ranger whilst drying off after a swim or a bath. It is the best way to make getting ready fun!",
-        "GIRLS AND BOYS ONE SIZE TOWEL ROBE - This towel comes in one size that suits all toddlers and children. It comes in a poncho style with a super soft purple hood perfect for keeping cosy and getting dry."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0CB6MR12S",
-      "title": "Cutluxe Carving Knife Set, Brisket Slicing & Boning Knife for Meat & BBQ | Razor Sharp German Steel, Full Tang Ergonomic Handle – Grilling Gift for Men, Artisan Series",
-      "image": "https://m.media-amazon.com/images/I/41BKierNiIL._SL500_.jpg",
-      "price": 54.99,
-      "percentOff": 37,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0CB6MR12S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 86.99,
-      "features": [
-        "PREMIUM PERFORMANCE: This BBQ knife set includes a 12\" brisket slicing knife and a 6\" boning knife, designed for precise meat cutting, ensuring a perfect slice every time.",
-        "RAZOR-SHARP GRANTON BLADE EDGE: Experience premium performance with razor-sharp granton blades on both knives, reducing friction and preventing meat from sticking, making slicing effortless."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0FTSZW3DG",
-      "title": "Get Trend Monster Jam Bath Towels with Hood for Boys, 49”x30”, Monster Truck Absorbent Cotton Hooded Beach Towel Wrap, Poncho for Swimming Pool Travel for Boys",
-      "image": "https://m.media-amazon.com/images/I/51iGi7r3GgL._SL500_.jpg",
-      "price": 18.79,
-      "percentOff": 42,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0FTSZW3DG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 32.19,
-      "features": [
-        "Cozy Playful Adventure : Power up bath time with bold Monster Jam hooded bath towels featuring epic truck action that young fans will love. Ideal for water play activities or swimming lessons while keeping boys dry and cozy after every splash.",
-        "Comfy Hooded Coverage - Measuring 49x30 in, this soft bath towel offers comfortable coverage to toddlers and kids. The integrated hood design keeps hair dry with a poncho style, making it a practical choice for holidays or as towels for bathroom"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B003BYQ1L4",
-      "title": "Armarkat B6802 68-Inch Cat Tree, Ivory",
-      "image": "https://m.media-amazon.com/images/I/31ub2s7+F8L._SL500_.jpg",
-      "price": 140.71,
-      "percentOff": 43,
-      "category": "Pets",
-      "url": "https://www.amazon.com/dp/B003BYQ1L4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 249,
-      "features": [
-        "31L x 25W x 68H Inches",
-        "Great unit for scratching, climbing, sleeping, and exercising"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0F1MWGTD4",
-      "title": "Piklohas Resharpenable Bread Knife for Homemade Bread, 8 Inch | Serrated Sourdough Knife with Offset Handle, Innovative Wavy Edge for Clean Slices Crusty Bread, Bagels, Pineapple & Tomatoes",
-      "image": "https://m.media-amazon.com/images/I/31O-rMnpyIL._SL500_.jpg",
-      "price": 19.74,
-      "percentOff": 24,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0F1MWGTD4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 25.99,
-      "expires": "2026-11-19",
-      "features": [
-        "Resharpenable Serrated Edge: Unlike ordinary bread knives that get dull over time, this patented bread knife can be resharpened with a regular honing rod to restore excellent cutting performance for homemade bread, sourdough, and everyday kitchen prep",
-        "Made for Crusty & Soft Loaves: The 8 inch serrated blade handles sourdough, baguettes, sandwich bread, bagels, and soft loaves with clean slices and fewer crumbs. It also works well on pineapple, tomatoes, and other foods with a firm exterior and tender interior"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0DMG6CMZL",
-      "title": "SereneLife Counter Towel Warmer Bucket - with Customized Fragrance for Spa and Bathroom, Luxury Heater, Auto Shut Off, Fits 1 Large Blanket, Bathrobe, PJs (Pink)",
-      "image": "https://m.media-amazon.com/images/I/412jpdmxobL._SL500_.jpg",
-      "price": 69.99,
-      "percentOff": 22,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0DMG6CMZL?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 89.99,
-      "features": [
-        "SPA-LIKE EXPERIENCE - Indulge in a spa-like experience with our luxurious towel warmers for bathrooms, complete with a customized fragrance feature. Surround yourself with relaxation and tranquility as you fill the air with your favorite scents.",
-        "BUILT IN TIMER FOR HEATER - Set your desired warming time with the adjustable timer function, offering options of 20, 40, 60, or 90 minutes. The intuitive touch buttons make operation effortless, so your towels are heated with minimal waiting time."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0G43YYLXW",
-      "title": "Cutluxe Boning Knife Set, 6\" Straight, Curved & Flexible for Fish & Meat | Razor Sharp High Carbon German Steel, Full Tang Ergonomic Handles – Artisan Series, Deboning",
-      "image": "https://m.media-amazon.com/images/I/51uBuebq+TL._SL500_.jpg",
-      "price": 52.24,
-      "percentOff": 24,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0G43YYLXW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 68.99,
-      "features": [
-        "PREMIUM PERFORMANCE – Perfectly engineered flexible boning knife tapered to a razor-sharp edge for effortless filleting, de-boning, trimming, skinning and butterflying of different types of meat and fish.",
-        "RAZOR-SHARP PERFORMANCE: Each 6 Inch boning knife is hand sharpened to 14–16° per side for clean cuts. Designed as a meat cutting knife that cuts through fish, poultry, and meat with ease"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B00SAYCXWG",
-      "title": "HyperX Cloud II Gaming Headset - 7.1 Surround Sound - Memory Foam Ear Pads - Durable Aluminum Frame - Multi Platform Headset - Works with PC, PS4, PS4 PRO, Xbox One, Xbox One S - Red (KHX-HSCP-RD)",
-      "image": "https://m.media-amazon.com/images/I/41SkA5j2l-L._SL500_.jpg",
-      "price": 44.99,
-      "percentOff": 44,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B00SAYCXWG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 79.99,
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0H6MP2P32",
-      "title": "Fleece Lined Leggings Women with Pockets - Winter Thermal Water Resistant | Warm High Waisted Tummy Control Black Leggings, Snow Running Hiking Thick Yoga Pants, Winter Clothing for Women Cold Weather",
-      "image": "https://m.media-amazon.com/images/I/31MaAoCvv0L._SL500_.jpg",
-      "price": 19.99,
-      "percentOff": 50,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0H6MP2P32?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "features": [
-        "Thick Fleece Lining for All-Day Cozy Warmth: Lined with ultra-soft, dense fleece that locks in body heat and fends off freezing temperatures, these thermal leggings deliver premium insulation without stiff bulk. Stay toasty from morning commutes to evening walks — enjoy cloud-like comfort that wraps",
-        "Water-Resistant Outer Layer for Dry Protection: Crafted with durable water-resistant outer fabric, these fleece lined leggings shrug off light rain, snow flurries, and accidental spills to keep you dry. No more soaked-through tights. The outer surface blocks cold gusts, perfect for outdoor walks, hi"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B00COQZDUU",
-      "title": "Kind Healthy Grains Granola, Cinnamon Oat Clusters with Flax Seeds, Gluten Free, Healthy Snack Mix, 6g Protein, 11oz, 1 Count",
-      "image": "https://m.media-amazon.com/images/I/41KBbMPw8oL._SL500_.jpg",
-      "price": 4.15,
-      "percentOff": 20,
-      "category": "Food",
-      "url": "https://www.amazon.com/dp/B00COQZDUU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 5.19,
-      "features": [
-        "One 11 oz bag of KIND HEALTHY GRAINS Granola, Cinnamon Oat Granola with Flax Seeds",
-        "Gluten free snacks made with five super grains - oats, buckwheat, millet, amaranth and quinoa"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B01B395DDA",
-      "title": "Love Crunch Dark Chocolate & Peanut Butter Granola, 11.5 oz (Pack of 1) | Fair Trade Italian Dark Chocolate, 13g Whole Grains, Premium Organic Granola, Non-GMO, Vegan, Family Owned Company",
-      "image": "https://m.media-amazon.com/images/I/41oRuWc7G3L._SL500_.jpg",
-      "price": 4.97,
-      "percentOff": 23,
-      "category": "Food",
-      "url": "https://www.amazon.com/dp/B01B395DDA?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 6.47,
-      "features": [
-        "Contains: 1 Pouch of Love Crunch Dark Chocolate & Peanut Butter Granola, 11.5 ounces",
-        "The chocolate chunks, roasted peanuts and great hearty crunch is the perfect blend for a go getter’s morning. If you’re a peanut butter kind of person, we’ve found the perfect match for your taste buds."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B07M729D3X",
-      "title": "CRAFTSMAN V20 Wireless Portable Bluetooth Speaker, Tool Only (CMCR001B), Red",
-      "image": "https://m.media-amazon.com/images/I/51TMrpIgvYL._SL500_.jpg",
-      "price": 92,
-      "percentOff": 22,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B07M729D3X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 118,
-      "features": [
-        "CRISP AND CLEAR: (2) 3-inch high quality stereo wireless bluetooth speakers at various volumes",
-        "WIRELESS STREAMING: 100 ft. bluetooth compatibility of bluetooth speaker"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0BV32YNQT",
-      "title": "Resident Evil 6 HD PS4 (PS4) [video game]",
-      "image": "https://m.media-amazon.com/images/I/51bYr6MeJYL._SL500_.jpg",
-      "price": 21.48,
-      "percentOff": 28,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0BV32YNQT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "features": [
-        "Starting with four distinct, yet interwoven story threads, for either solo or co-op play, both offline and online, not only does Resident Evil 6 deliver both different perspectives and gameplay styles",
-        "Ada Wong, Resident Evil's very own femme fatale, dives into a thrilling campaign of intrigue and infiltration, featuring unique missions, gameplay and weapons. Ada is available from the start"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0DLQ23PDB",
-      "title": "ENCASED Travel Case for Soundcore Motion X600 Bluetooth Speaker - Protective EVA Hard Shell with Carrying Handle (Black)",
-      "image": "https://m.media-amazon.com/images/I/51qcSWIFjXL._SL500_.jpg",
-      "price": 23.99,
-      "percentOff": 20,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0DLQ23PDB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "features": [
-        "EVA Case Designed for Anker Soundcore X600 Motion: This custom-molded hard shell case snuggly fits your Soundcore X600 Motion speaker, shielding it from bumps, drops, scratches, and dust.",
-        "Durable & Travel-Ready: Crafted from high-quality EVA material, this case offers superior shock absorption and water resistance, making it perfect for adventures."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
-    },
-    {
-      "id": "B0DH8JN526",
-      "title": "Under Armour Men's Packaged Base 4.0 Leggings, 001 Black, LG",
-      "image": "https://m.media-amazon.com/images/I/31I9mdmNmIL._SL500_.jpg",
-      "price": 87.5,
-      "percentOff": 20,
-      "category": "Clothing",
-      "url": "https://www.amazon.com/dp/B0DH8JN526?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-13",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 110,
-      "features": [
-        "Tight Fit: Snug & form-fitting without the squeeze of compression.",
-        "UA Base 4.0 Extreme Baselayer is our warmest yet, delivering extreme warmth in the extreme cold"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
     },
     {
       "id": "B0H6L14J6D",
@@ -2801,13 +2593,12 @@
       "id": "B0BF976MJY",
       "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
       "image": "https://m.media-amazon.com/images/I/416LIaAUumL._SL500_.jpg",
-      "price": 39.99,
+      "price": 45.59,
       "originalPrice": 49.99,
-      "percentOff": 20,
+      "percentOff": 9,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-18",
-      "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
