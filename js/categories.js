@@ -17,9 +17,9 @@ export const DISPLAY_CATEGORIES = [
   "Drinks",
   "Household",
   "Toys",
-  "Sports",
   "Food",
   "Clothing",
+  "Shoes",
 ];
 
 export const CATEGORY_ORDER = [
@@ -37,8 +37,8 @@ const CATEGORY_RULES = [
   ["Gaming", ["video game", "gaming", "playstation", "xbox", "nintendo"]],
   ["Household", ["household", "cleaning", "paper towel", "laundry", "detergent", "trash bag"]],
   ["Pets", ["pet", "dog food", "cat food"]],
-  ["Clothing", ["clothing", "apparel", "shoe", "fashion"]],
-  ["Sports", ["sport", "outdoor", "camping", "fitness", "exercise", "yoga", "patio", "lawn", "garden"]],
+  ["Shoes", ["shoe", "sneaker", "running shoe", "nike", "adidas"]],
+  ["Clothing", ["clothing", "apparel", "fashion"]],
   ["Tech", ["electronic", "computer", "wireless", "phone", "headphone", "camera", "television", "tv", "software", "tablet", "laptop"]],
   ["Toys", ["toy"]],
   ["Home", ["home", "furniture", "bedding", "bath", "lighting", "decor", "storage"]],
@@ -86,8 +86,8 @@ const SPECIFICITY = [
   "Pets",
   "Kitchen",
   "Toys",
+  "Shoes",
   "Clothing",
-  "Sports",
   "Tech",
   "Food",
   "Home",
@@ -121,6 +121,7 @@ function categorySignals(item) {
     for (const node of nodes) {
       for (const name of nodeNames(node)) {
         if (hasPhrase(name, "home") && hasPhrase(name, "kitchen")) continue;
+        if (hasPhrase(name, "clothing") && hasPhrase(name, "shoe")) continue;
         texts.push(name);
       }
     }
@@ -131,7 +132,8 @@ function categorySignals(item) {
 /**
  * Map a Creators API item to a display category.
  * A narrower name wins when several match. Grocery plus a coffee node is Drinks.
- * "Home & Kitchen" alone is too broad to decide. Returns null when nothing matches.
+ * "Home & Kitchen" and "Clothing, Shoes & Jewelry" alone are too broad to decide.
+ * Returns null when nothing matches.
  */
 export function displayCategoryFromItem(item) {
   const matches = categorySignals(item).map((text) => matchCategory(text)).filter(Boolean);

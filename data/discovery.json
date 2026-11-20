@@ -1,5 +1,5 @@
 {
-  "_comment": "Keyword pool for the morning job. priority always runs. keywordsPerRun entries are chosen from searches by the date, one category at a time, so the next morning uses a different product type. List lengths differ by category so the pools do not all repeat on the same morning. pagesPerKeyword is how many SearchItems pages to read per keyword (Amazon allows itemPage 1 through 10 and itemCount 1 through 10). The job stops at maxDeals new discoveries, when a page has no new ASINs, or at maxRequests catalog calls. ASINs already in data/deals.json or data/asins.json are not added again.",
+  "_comment": "Keyword pool for the morning job. priority always runs. keywordsPerRun entries are chosen from searches by the date, one category at a time, so the next morning uses a different product type. List lengths differ by category so the pools do not all repeat on the same morning. pagesPerKeyword is how many SearchItems pages to read per keyword (Amazon allows itemPage 1 through 10 and itemCount 1 through 10). The job stops at maxDeals new discoveries, when a page has no new ASINs, or at maxRequests catalog calls. A search can set maxDealsPerKeyword to cap how many new deals that keyword adds; permanent outdoor lights is capped at 2. ASINs already in data/deals.json or data/asins.json are not added again.",
   "minDiscountPercent": 20,
   "minRating": 4,
   "maxDeals": 20,
@@ -136,6 +136,12 @@
       "keywords": "throw blanket",
       "searchIndex": "HomeAndKitchen",
       "category": "Home"
+    },
+    {
+      "keywords": "permanent outdoor lights",
+      "searchIndex": "ToolsAndHomeImprovement",
+      "category": "Home",
+      "maxDealsPerKeyword": 2
     },
     {
       "keywords": "pet supplies",
@@ -308,31 +314,6 @@
       "category": "Toys"
     },
     {
-      "keywords": "fitness gear",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
-    },
-    {
-      "keywords": "yoga mat",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
-    },
-    {
-      "keywords": "dumbbell set",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
-    },
-    {
-      "keywords": "resistance bands",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
-    },
-    {
-      "keywords": "camping tent",
-      "searchIndex": "SportsAndOutdoors",
-      "category": "Sports"
-    },
-    {
       "keywords": "snacks",
       "searchIndex": "GroceryAndGourmetFood",
       "category": "Food"
@@ -373,11 +354,6 @@
       "category": "Clothing"
     },
     {
-      "keywords": "womens sneakers",
-      "searchIndex": "Fashion",
-      "category": "Clothing"
-    },
-    {
       "keywords": "mens shorts",
       "searchIndex": "Fashion",
       "category": "Clothing"
@@ -396,14 +372,54 @@
       "keywords": "socks multipack",
       "searchIndex": "Fashion",
       "category": "Clothing"
+    },
+    {
+      "keywords": "nike sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "adidas sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "nike running shoes",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "adidas running shoes",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "mens sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "womens sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "kids sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "new balance sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
+    },
+    {
+      "keywords": "puma sneakers",
+      "searchIndex": "Fashion",
+      "category": "Shoes"
     }
   ],
   "priority": [
-    {
-      "keywords": "permanent outdoor lights",
-      "searchIndex": "ToolsAndHomeImprovement",
-      "category": "Home"
-    },
     {
       "keywords": "gaming microphone",
       "searchIndex": "Electronics",

@@ -83,9 +83,9 @@ test("filter chips put Tech and Gaming first and General last", () => {
     "Drinks",
     "Household",
     "Toys",
-    "Sports",
     "Food",
     "Clothing",
+    "Shoes",
   ]);
   assert.deepEqual(categoriesIn([
     { category: "General" },
@@ -97,8 +97,9 @@ test("filter chips put Tech and Gaming first and General last", () => {
   ]), ["All", "Tech", "Gaming", "Kitchen", "Clothing", "ZZZ", "General"]);
   assert.ok(CATEGORY_ORDER.indexOf("Tech") < CATEGORY_ORDER.indexOf("Gaming"));
   assert.ok(CATEGORY_ORDER.indexOf("Gaming") < CATEGORY_ORDER.indexOf("Kitchen"));
-  assert.ok(CATEGORY_ORDER.indexOf("Toys") < CATEGORY_ORDER.indexOf("Sports"));
+  assert.ok(CATEGORY_ORDER.indexOf("Toys") < CATEGORY_ORDER.indexOf("Food"));
   assert.ok(CATEGORY_ORDER.indexOf("Food") < CATEGORY_ORDER.indexOf("Clothing"));
+  assert.ok(CATEGORY_ORDER.indexOf("Clothing") < CATEGORY_ORDER.indexOf("Shoes"));
 });
 
 test("discovery drops baby items and boosts watched products", () => {
