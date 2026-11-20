@@ -2,6 +2,395 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B081415GCS",
+      "title": "Logitech G733 Lightspeed Wireless Gaming Headset - Black | Suspension Headband, Blue VO!CE Mic, PRO-G Audio, PC, PS5, PS4, Switch Compatible",
+      "image": "https://m.media-amazon.com/images/I/410QZvnpIxL._SL500_.jpg",
+      "price": 79.96,
+      "percentOff": 38,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B081415GCS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 129.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
+        "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0DSGRL3RP",
+      "title": "Original Doggy Bag® – Dog Travel Bag for Supplies & Christmas Dog Gift | 2 BPA-Free Travel Bowls and 2 Food Containers; Organizes Pup's Supplies for Road Trips; a Gift for Dog Moms & Dads; Beige",
+      "image": "https://m.media-amazon.com/images/I/41i9gbioTJL._SL500_.jpg",
+      "price": 38.95,
+      "percentOff": 29,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0DSGRL3RP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 54.95,
+      "expires": "2026-12-01",
+      "features": [
+        "1. GIVE THE PERFECT CHRISTMAS GIFT FOR DOG LOVERS – A practical dog travel bag and thoughtful choice for dog mom gifts for women, dog gifts, dog lover gifts and holiday surprises for pet parents.",
+        "2. THE ULTIMATE DOG TRAVEL ACCESSORY FOR STRESS-FREE ROAD TRIPS – Keep gear accessible with this dog travel bag for supplies featuring pockets, dividers, and a poop bag dispenser for quick access."
+      ]
+    },
+    {
+      "id": "B0GD55C2VQ",
+      "title": "Wireless Gaming Headset for PS5, PS4, PC, Switch, 20ms Low Latency with Mic | 2.4GHz 2-in-1 USB-A/USB-C Receiver & Bluetooth 5.4, Up to 60-Hour Battery Life, 50mm Titanium-Coated Drivers, RGB Lighting",
+      "image": "https://m.media-amazon.com/images/I/41fdikmtamL._SL500_.jpg",
+      "price": 18.99,
+      "percentOff": 34,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0GD55C2VQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 28.99,
+      "expires": "2026-12-01",
+      "features": [
+        "IMMERSIVE 3D GAMING AUDIO: Fachixy VK81 wireless gaming headset delivers powerful 3D stereo sound with deep bass, clear mids, and crisp highs. Hear footsteps, reloads, and environmental details precisely, improving reaction time and enhancing immersion for FPS, RPG, or open-world games on for PS5, P",
+        "VERSATILE MULTI-DEVICE CONNECTIVITY: Switch seamlessly between 2.4GHz wireless (USB/Type-C) for PC, PS5, PS4, Mac, Laptops, and Switch, or Bluetooth 5.4 for mobile devices. Ensure lag-free gaming on consoles and enjoy easy mobile audio streaming. Not compatible with Xbox consoles."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0C7QDW1M4",
+      "title": "Kastty 4L/135oz Stainless Steel Pet Water Fountain Replacement Filters | Kastty 8+8 Replacement Filters 6.5 Inch Larger Size and More Active Carbon than Others, 8 Pack Filters + 8 Pack Pump Filters",
+      "image": "https://m.media-amazon.com/images/I/414bP7WIbuL._SL500_.jpg",
+      "price": 14.39,
+      "percentOff": 20,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0C7QDW1M4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 17.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Quadruple Filtration and Larger Size Filter: The sachets of the filter is fuller as more active carbon is filled inside, which reinforces the filtering performance to even better (6.5 inches in length, not 3 inches only like most). Water filtered via this Kastty filter is fresh, clean and tastes bet",
+        "Complete Replacement Set: Includes 8 pack filters plus 8 pack pump filters designed specifically for Kastty 4L/135oz Stainless Steel Pet Water Fountain to ensure optimal performance"
+      ]
+    },
+    {
+      "id": "B07PSCCC78",
+      "title": "Redragon H510 Zeus Wired Gaming Headset - 7.1 Surround Sound - Memory Foam Ear Pads - 53MM Drivers - Detachable Microphone, Works for Multi-Platforms PC, PS4/3 & Xbox One/Series X, NS",
+      "image": "https://m.media-amazon.com/images/I/41ZNDIr0JJL._SL500_.jpg",
+      "price": 47.99,
+      "percentOff": 26,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07PSCCC78?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 64.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
+        "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0DJ7DFX93",
+      "title": "Pet Feeder Rear Cover for Pet Feeder & Connect, YOIHABV Cat Feeder Cover, Help Ensure Persistent Pets Can't Access/Steal Food from The Rear of The Cat Feeder While Lid is Open",
+      "image": "https://m.media-amazon.com/images/I/31sgqkNFvWL._SL500_.jpg",
+      "price": 15.99,
+      "percentOff": 20,
+      "category": "Pets",
+      "url": "https://www.amazon.com/dp/B0DJ7DFX93?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Compatibility: Replacement pet feeder rear cover, can work with pet feeder and pet feeder connect",
+        "Function 1: Cat feeder rear cover can prevent persistent pets from accessing food from rear of pet feeder while the lid is open"
+      ]
+    },
+    {
+      "id": "B0CN493YHF",
+      "title": "MAONO PD200XS XLR/USB Dynamic Microphone Kit, RGB Gaming Mic with Software | PC Mic with Mute, Gain Knob, Volume Control, Boom Arm for Streaming, Gaming, Podcasting, Voice-Over, Recording",
+      "image": "https://m.media-amazon.com/images/I/4165LmGnm4L._SL500_.jpg",
+      "price": 66.49,
+      "percentOff": 26,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CN493YHF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 89.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
+        "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0C5DCRRN7",
+      "title": "Tatybo Wireless Gaming Headset for PS5 PC, Dual Mode, Low Latency, Black | 7.1 Surround Sound, Bluetooth+2.4GHz Gaming Headset, Noise-Canceling Mic for FPS, 40Hrs for Switch, Mobile, Laptop",
+      "image": "https://m.media-amazon.com/images/I/41nsSGi+biL._SL500_.jpg",
+      "price": 24.68,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0C5DCRRN7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 32.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
+        "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07V4F7ZZ5",
+      "title": "EKSA E1000 Gaming Headset, Computer Headphones with Noise Canceling Mic & RGB Light, Compatible with PC, PS4, PS5, Laptop",
+      "image": "https://m.media-amazon.com/images/I/51Rsh1JKjtL._SL500_.jpg",
+      "price": 25.83,
+      "percentOff": 24,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07V4F7ZZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 33.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
+        "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0HGR4SDYC",
+      "title": "AOC 2.4GHz Wireless Gaming Headset for PS5, PS4, PC, Switch, 45Hr, White | Bluetooth 6.0 Gaming Headphones with Noise Canceling Mic, 7.1 Virtual Surround, Great for Fortnite & Call of Duty/FPS Gamers",
+      "image": "https://m.media-amazon.com/images/I/41Hm7ZSHbRL._SL500_.jpg",
+      "price": 37.98,
+      "percentOff": 24,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0HGR4SDYC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Zero-Latency Audio for Competitive Edge: Dominate your matches with the AOC wireless gaming headset. Featuring ultra-fast 2.4GHz lossless technology (≤20ms latency), this ps5 headset ensures your audio is always perfectly synced with the action. Tuned 50mm drivers deliver clear gaming sound for foot",
+        "Crystal-Clear Squad Communication: Coordinate strategies flawlessly using the detachable, omni-directional noise-canceling microphone. Whether you are gaming in a lively dorm room or a busy living room, this ps5 headset wireless filters out background distractions, transmitting your voice with absol"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07C4Y1XM5",
+      "title": "SOMIC G951pink Gaming Headset for PC, PS4, PS5, Laptop, Cat Ear Headphone USB Gaming Headphones with Mic Noise Cancelling, LED Light, 7.1 Virtual Surround Sound for Girls, Women",
+      "image": "https://m.media-amazon.com/images/I/41etRAyYVrL._SL500_.jpg",
+      "price": 41.59,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07C4Y1XM5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 51.99,
+      "expires": "2026-12-01",
+      "features": [
+        "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
+        "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07W549S56",
+      "title": "KAFRI RGB Headphone Stand with Wireless Charger Desk Gaming Headset Holder Hanger Rack with 10W/7.5W Fast Charge QI Wireless Charging Pad - Suitable for Gamer Desktop Table Game Earphone Accessories",
+      "image": "https://m.media-amazon.com/images/I/41nJIAgjRTL._SL500_.jpg",
+      "price": 15.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07W549S56?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【RGB LED lights】KAFRI RBG Headphone Stand can display 9 lighting effects modes, up to 16.8 million colors to creat an amazing gaming atmosphere at your preference. that can be selected merely by pressing a Touch switch. Great gifts for Son, boy, Men, husband and boyfriend.",
+        "【10W Qi Wireless Charger】Say goodbye to tangled wires and messing cables, just place your phone on fast charger pad. no cables or USB interface required. Charger compatible with Apple iPhone XS Max,XR,XS, X, iPhone 8/8 Plus, Samsung Galaxy S9/S9 Plus, Note 8, S8/S8 Plus, and other Qi-enabled cell ph"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0BJ72M77L",
+      "title": "SOMIC G951S Green Gaming Headset with Microphone for PS4, PS5, Xbox One, PC, Cat Ear Headphones Over Ear with in-Line Mic Control, Stereo Sound for Girls, Woman",
+      "image": "https://m.media-amazon.com/images/I/418LJsjWB8L._SL500_.jpg",
+      "price": 31.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BJ72M77L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "expires": "2026-12-01",
+      "features": [
+        "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
+        "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0C46CS37H",
+      "title": "MAONO DGM20S USB Gaming Microphone for PC, Noise Reduction Condenser Mic | RGB Lighting, Tap-to-mute, Gain Control, Headphone Monitoring and Boom Arm for Discord Gaming, Streaming, Content Creation",
+      "image": "https://m.media-amazon.com/images/I/51S8ExkKiRL._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0C46CS37H?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
+        "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0BV4F17CS",
+      "title": "CHERRY UM 9.0 PRO RGB, USB Microphone with RGB Lighting, Black/Copper | Gaming, Streaming, ASMR, 4 Polar Patterns (Cardioid, Omnidirectional, Bidirectional, Stereo), Plug & Play, for PC/Mac/PS4/PS5",
+      "image": "https://m.media-amazon.com/images/I/31lKa8y9sjL._SL500_.jpg",
+      "price": 41.58,
+      "percentOff": 58,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BV4F17CS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99,
+      "expires": "2026-12-01",
+      "features": [
+        "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
+        "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
+      ]
+    },
+    {
+      "id": "B09241VBTP",
+      "title": "FIFINE K669 Blue USB Computer Microphone for Recording Voice Over | Condenser Mic with Gain Knob, Compatible with Mac&PC, Home Studio, Plug and Play",
+      "image": "https://m.media-amazon.com/images/I/41RGRcpk-2S._SL500_.jpg",
+      "price": 25.59,
+      "percentOff": 33,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B09241VBTP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 37.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[Pure & Natural] The USB cardioid mic captures the clear and crisp sound in front of the mic capsule and reduces unwanted background noise. Using this directional condenser mic in a quiet environment will bring you the ideal recording effect and has an accurate reproduction of your voice.",
+        "[All Metal Construction] Made out of solid, quality materials, the microphone for computer recording is built to last. It also finished in a very nice matte blue coating which gives a real premium look and feel to the K669L. The 6ft permanently attached USB cable is long enough to connect the usb au"
+      ]
+    },
+    {
+      "id": "B08DHH74JQ",
+      "title": "ASTRO Gaming Logitech G A20 Gen 2 Wireless Headset PlayStation - White/Blue | Compatible with PlayStation 5, PlayStation 4, PC, Mac",
+      "image": "https://m.media-amazon.com/images/I/41RFDLcL4fL._SL500_.jpg",
+      "price": 89,
+      "percentOff": 26,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08DHH74JQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 119.99,
+      "features": [
+        "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
+        "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
+      ]
+    },
+    {
+      "id": "B0BBVY9L7C",
+      "title": "MAONO PD400X Dynamic Microphone, USB/XLR Podcast PC Mic with Software | EQ,Tap-to-Mute, Headphone Jack, Gain Knob & Volume Control, Studio Mic for Broadcast, Recording, Streaming & Gaming",
+      "image": "https://m.media-amazon.com/images/I/41m3Hg6G3qL._SL500_.jpg",
+      "price": 113.99,
+      "percentOff": 26,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BBVY9L7C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 154.99,
+      "expires": "2026-12-01",
+      "features": [
+        "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
+        "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
+      ]
+    },
+    {
+      "id": "B07DTTGZ7M",
+      "title": "Logitech for Creators Blue Yeti Nano USB Microphone for Gaming, Streaming, Podcasting,Twitch, YouTube, Discord, Recording for PC and Mac, Plug & Play - Shadow Grey",
+      "image": "https://m.media-amazon.com/images/I/41hh2sRKjvL._SL500_.jpg",
+      "price": 89.99,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07DTTGZ7M?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 119.99,
+      "features": [
+        "Legendary Blue broadcast sound: Yeti Nano features 2 custom mic capsules to give your voice exceptional presence and detail for professional-level recording and streaming",
+        "Blue VO!CE software: Elevate your streamings and recordings with clear broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples"
+      ]
+    },
+    {
+      "id": "B0D458QDVN",
+      "title": "FIFINE AmpliTank K688CT Podcast Microphone Kit, USB/XLR Dynamic Vocal Mic | Streaming Mic with Boom Arm for PC/XLR Mixer, with Mute Button, Headphone Jack, Gain Knob, for Gaming Voice-Over Recording",
+      "image": "https://m.media-amazon.com/images/I/41WQG5fyf7L._SL500_.jpg",
+      "price": 63.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0D458QDVN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-19",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 79.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
+        "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
+      ]
+    },
+    {
       "id": "B0FY2R5R8X",
       "title": "LHBGO Package Delivery Box with Sign, Lockable & Weatherproof Anti-Theft Parcel Delivery Box for Porch, Curbside, Patio，Black",
       "image": "https://m.media-amazon.com/images/I/41STLqUJgiL._SL500_.jpg",
@@ -17,8 +406,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -36,8 +424,7 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
@@ -55,8 +442,7 @@
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -74,8 +460,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0CV3NW398",
@@ -116,8 +501,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B0F3CQJZRQ",
@@ -156,8 +540,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0HFJ8TLN1",
@@ -296,8 +679,7 @@
       "features": [
         "[Clean Sound Quality] Featured with durability and adaptability, the metal-build podcast microphone, with SPL of 130dB, will not distort the audio from vocal, video or music recording to keep its originality. Quite directional cardioid pattern deals with background noise, like hard drives or compute",
         "[Upgrade XLR Output] XLR microphone reduces circuit noise interference and enhances the sense of audio space. Worked with S/N Ratio higher than 80dB, the dynamic microphone upgrades dynamics and details to makes your vocal easier to resonate. Use the streaming mic with sound card or mixer equipment"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0CNG1HDZJ",
@@ -375,8 +757,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0D8SX6XYB",
@@ -415,8 +796,7 @@
       "features": [
         "IMPROVED EXPERIENCE - The cardioid streaming mic with pop filter is excellent to eliminate background noise and pick up a clean tone in your voice. Benefits from the premium mic capsule and the wide response range, the usb vocal mic offers a good balance of bass and treble which will keep the sound",
         "ADJUSTABLE ARM STAND - The pc microphone with stand is sturdy and easily swivels in any orientation. The mic and accessories will not going to get in your way to have a successful podcast, and less likely to pick up thumps from desktop or keyboard. You could tightly mount the condenser recording mic"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B07SX9XP83",
@@ -454,8 +834,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0GMWK5PGT",
@@ -1242,13 +1621,12 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 79.99,
-      "expires": "2026-11-19",
+      "expires": "2026-12-01",
       "features": [
         "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
         "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B0HJ255N6R",
@@ -1784,8 +2162,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B01F35UGWS",
@@ -2302,8 +2679,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2322,8 +2698,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2338,11 +2713,11 @@
       "source": "api",
       "discovered": true,
       "originalPrice": 139.99,
+      "expires": "2026-12-01",
       "features": [
         "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
         "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0HP6VQLZ5",
@@ -2402,8 +2777,7 @@
         "Official Xbox Licensed headset: CloudX Stinger 2 Core was tested and approved by Microsoft, and connects directly to Xbox One and Xbox Series X|S controllers with a 3.5mm port.",
         "Lightweight comfort: Soft ear cushions provide a comfortable fit, and the flexible mic can be positioned just as you like."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      "priority": true
     },
     {
       "id": "B0GX5XQG45",
@@ -2421,8 +2795,7 @@
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
@@ -2440,8 +2813,7 @@
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2458,8 +2830,7 @@
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-20T02:47:09.009Z"
+      ]
     }
   ]
 }
