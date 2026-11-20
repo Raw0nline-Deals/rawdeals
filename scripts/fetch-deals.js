@@ -489,10 +489,10 @@ function readSearches(value, label) {
     if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
       throw new Error(`${label}[${index}] must be an object.`);
     }
-    const allowed = new Set(["keywords", "searchIndex", "category"]);
+    const allowed = new Set(["keywords", "searchIndex", "category", "maxDealsPerKeyword"]);
     for (const key of Object.keys(entry)) {
       if (!allowed.has(key)) {
-        throw new Error(`${label}[${index}].${key} is not a field you can set. Use keywords, searchIndex, and category.`);
+        throw new Error(`${label}[${index}].${key} is not a field you can set. Use keywords, searchIndex, category, and maxDealsPerKeyword.`);
       }
     }
     if (typeof entry.keywords !== "string" || !entry.keywords.trim()) {
@@ -510,6 +510,12 @@ function readSearches(value, label) {
         throw new Error(`${label}[${index}].category must be a non-empty string when present.`);
       }
       search.category = entry.category.trim();
+    }
+    if (entry.maxDealsPerKeyword != null) {
+      if (typeof entry.maxDealsPerKeyword !== "number" || !Number.isInteger(entry.maxDealsPerKeyword) || entry.maxDealsPerKeyword < 1 || entry.maxDealsPerKeyword > 40) {
+        throw new Error(`${label}[${index}].maxDealsPerKeyword must be a whole number from 1 to 40.`);
+      }
+      search.maxDealsPerKeyword = entry.maxDealsPerKeyword;
     }
     return search;
   });
@@ -963,6 +969,7 @@ export async function fetchCreatorsCatalog({
   for (const search of searches) {
     if (stopAll || requests >= maxRequests) break;
     const collected = [];
+    let keywordNew = 0;
     for (let page = 1; page <= pagesPerKeyword && page <= MAX_SEARCH_PAGE; page += 1) {
       if (requests >= maxRequests) break;
       const response = await callCatalog(
@@ -982,15 +989,40 @@ export async function fetchCreatorsCatalog({
         page,
         totalResultCount: body.searchResult.totalResultCount,
       });
-      for (const item of items) {
-        const asin = item?.asin;
-        if (!asin || seen.has(asin)) continue;
-        seen.add(asin);
-        if (typeof countsAsNewDeal === "function" && countsAsNewDeal(item, search)) newQualifying += 1;
+      const keywordCap = search.maxDealsPerKeyword;
+      let reachedCap = false;
+      if (keywordCap == null) {
+        for (const item of items) {
+          const asin = item?.asin;
+          if (!asin || seen.has(asin)) continue;
+          seen.add(asin);
+          if (typeof countsAsNewDeal === "function" && countsAsNewDeal(item, search)) newQualifying += 1;
+        }
+        collected.push(...items);
+      } else {
+        const kept = [];
+        for (const item of items) {
+          const asin = item?.asin;
+          if (!asin || seen.has(asin)) {
+            kept.push(item);
+            continue;
+          }
+          const qualifies = typeof countsAsNewDeal === "function" && countsAsNewDeal(item, search);
+          if (qualifies && keywordNew >= keywordCap) {
+            reachedCap = true;
+            continue;
+          }
+          seen.add(asin);
+          if (qualifies) {
+            keywordNew += 1;
+            newQualifying += 1;
+          }
+          kept.push(item);
+        }
+        collected.push(...kept);
       }
-      collected.push(...items);
       if (typeof countsAsNewDeal === "function" && newQualifying >= maxNewDeals) stopAll = true;
-      if (stopKeyword || stopAll) break;
+      if (stopKeyword || stopAll || reachedCap || (keywordCap != null && keywordNew >= keywordCap)) break;
     }
     groups.push({ category: search.category, items: collected });
   }

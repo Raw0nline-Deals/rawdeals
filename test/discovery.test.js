@@ -106,18 +106,44 @@ test("the shipped discovery file rotates a keyword pool across the twelve catego
     lengths.push(keywords.length);
   }
   assert.ok(new Set(lengths).size > 1);
+  const shoesLength = lengths[DISPLAY_CATEGORIES.indexOf("Shoes")];
+  assert.equal(lengths.filter((length) => length === shoesLength).length, 1);
   assert.ok(discovery.searches.every((search) => search.searchIndex));
-  assert.deepEqual(discovery.priority.map((search) => search.category), ["Home", "Gaming", "Gaming"]);
-  assert.ok(discovery.priority.every((search) => search.priority === true));
-
-  const selected = selectDailySearches(discovery, "2026-11-12");
-  assert.equal(selected.length, 15);
-  assert.deepEqual(selected.slice(0, 3).map((search) => search.keywords), [
-    "permanent outdoor lights",
+  assert.deepEqual(discovery.priority.map((search) => search.keywords), [
     "gaming microphone",
     "gaming headset",
   ]);
-  const daily = selected.slice(3);
+  assert.deepEqual(discovery.priority.map((search) => search.category), ["Gaming", "Gaming"]);
+  assert.ok(discovery.priority.every((search) => search.priority === true));
+  assert.equal(discovery.searches.some((search) => search.category === "Sports"), false);
+  const lights = discovery.searches.find((search) => search.keywords === "permanent outdoor lights");
+  assert.equal(lights.category, "Home");
+  assert.equal(lights.searchIndex, "ToolsAndHomeImprovement");
+  assert.equal(lights.maxDealsPerKeyword, 2);
+  assert.deepEqual(
+    discovery.searches.filter((search) => search.category === "Shoes").map((search) => search.keywords),
+    [
+      "nike sneakers",
+      "adidas sneakers",
+      "nike running shoes",
+      "adidas running shoes",
+      "mens sneakers",
+      "womens sneakers",
+      "kids sneakers",
+      "new balance sneakers",
+      "puma sneakers",
+    ],
+  );
+  assert.ok(discovery.searches.filter((search) => search.category === "Shoes").every((search) => search.searchIndex === "Fashion"));
+  assert.equal(discovery.searches.some((search) => search.category === "Clothing" && search.keywords === "womens sneakers"), false);
+
+  const selected = selectDailySearches(discovery, "2026-11-12");
+  assert.equal(selected.length, 14);
+  assert.deepEqual(selected.slice(0, 2).map((search) => search.keywords), [
+    "gaming microphone",
+    "gaming headset",
+  ]);
+  const daily = selected.slice(2);
   assert.equal(new Set(daily.map((search) => search.category)).size, DISPLAY_CATEGORIES.length);
   const day = daysSinceEpoch("2026-11-12");
   const start = day % DISPLAY_CATEGORIES.length;
@@ -127,14 +153,14 @@ test("the shipped discovery file rotates a keyword pool across the twelve catego
     const options = discovery.searches.filter((entry) => entry.category === search.category);
     assert.equal(search.keywords, options[day % options.length].keywords);
   }
-  const nextDay = selectDailySearches(discovery, "2026-11-13").slice(3).map((search) => search.keywords);
+  const nextDay = selectDailySearches(discovery, "2026-11-13").slice(2).map((search) => search.keywords);
   assert.notDeepEqual(daily.map((search) => search.keywords), nextDay);
   assert.deepEqual(selectDailySearches(discovery, "2026-11-12"), selected);
 
   const getItems = Math.ceil(asins.length / 10);
   assert.equal(getItems, 2);
   const worstCase = getItems + selected.length * discovery.pagesPerKeyword;
-  assert.equal(worstCase, 47);
+  assert.equal(worstCase, 44);
   assert.ok(worstCase <= discovery.maxRequests);
 });
 
@@ -176,6 +202,19 @@ test("discovery config rejects typos, duplicate keywords, and budgets the API wi
     ],
   }), /more than once/);
   assert.throws(() => loadDiscoveryConfig([]), /JSON object/);
+  assert.throws(() => loadDiscoveryConfig({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    searches: [{ keywords: "permanent outdoor lights", category: "Home", maxDealsPerKeyword: 0 }],
+  }), /maxDealsPerKeyword must be a whole number from 1 to 40/);
+  const capped = loadDiscoveryConfig({
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    searches: [{ keywords: "permanent outdoor lights", category: "Home", maxDealsPerKeyword: 2 }],
+  });
+  assert.equal(capped.searches[0].maxDealsPerKeyword, 2);
 });
 
 test("search requests use the site associate tag and a page from 1 to 10", () => {
@@ -224,8 +263,22 @@ test("Amazon departments map to the display categories, and a narrower name wins
   assert.equal(displayCategoryFromItem(item({ asin: "B0GAME", group: "Video Games" })), "Gaming");
   assert.equal(displayCategoryFromItem(item({ asin: "B0TOY", group: "Toy" })), "Toys");
   assert.equal(displayCategoryFromItem(item({ asin: "B0KIT", group: "Kitchen" })), "Kitchen");
-  assert.equal(matchCategory("Sports & Outdoors"), "Sports");
+  assert.equal(matchCategory("Running Shoes"), "Shoes");
+  assert.equal(matchCategory("Nike sneakers"), "Shoes");
+  assert.equal(matchCategory("Adidas"), "Shoes");
+  assert.equal(matchCategory("Apparel"), "Clothing");
+  assert.equal(matchCategory("Sports & Outdoors"), null);
   assert.equal(matchCategory("Health & Household"), "Household");
+  assert.equal(displayCategoryFromItem(item({
+    asin: "B0SHOE",
+    group: "Apparel",
+    nodes: [chain(["Men's Running Shoes", "Clothing, Shoes & Jewelry"])],
+  })), "Shoes");
+  assert.equal(displayCategoryFromItem(item({
+    asin: "B0HOOD",
+    group: "Apparel",
+    nodes: [chain(["Hoodies", "Clothing, Shoes & Jewelry"])],
+  })), "Clothing");
 
   assert.equal(displayCategoryFromItem(item({
     asin: "B0COFFEE",
@@ -705,7 +758,7 @@ test("later pages are fetched until the new-deal cap, and saved ASINs do not cou
     maxRequests: 20,
     searches: [
       { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
-      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+      { keywords: "yoga mat", searchIndex: "HomeAndKitchen", category: "Kitchen" },
     ],
   };
   const saved = {
@@ -787,6 +840,98 @@ test("later pages are fetched until the new-deal cap, and saved ASINs do not cou
   rmSync(dir, { recursive: true, force: true });
 });
 
+test("maxDealsPerKeyword caps new deals from one search and the next keyword still runs", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "rawdeals-keyword-cap-"));
+  const date = "2026-11-12";
+  const discovery = {
+    minDiscountPercent: 20,
+    minRating: 4,
+    maxDeals: 20,
+    pagesPerKeyword: 3,
+    keywordsPerRun: 2,
+    maxRequests: 20,
+    searches: [
+      {
+        keywords: "permanent outdoor lights",
+        searchIndex: "ToolsAndHomeImprovement",
+        category: "Home",
+        maxDealsPerKeyword: 2,
+      },
+      { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
+    ],
+  };
+  const saved = {
+    id: "B0LIGHTSAVED",
+    title: "Saved lights",
+    price: 20,
+    percentOff: 30,
+    category: "Home",
+    url: "https://www.amazon.com/dp/B0LIGHTSAVED",
+    added: "2026-11-10",
+    sample: false,
+    source: "api",
+    discovered: true,
+    image: "https://m.media-amazon.com/images/I/old.jpg",
+  };
+  const dealsPath = writeDiscoveryRun(dir, { discovery, deals: [saved] });
+  const calls = [];
+  const fetchImpl = async (url, options) => {
+    if (String(url).includes("/auth/o2/token")) {
+      return { ok: true, json: async () => ({ access_token: "token-value" }) };
+    }
+    const body = JSON.parse(options.body);
+    calls.push(`${body.keywords}#${body.itemPage}`);
+    if (body.keywords === "permanent outdoor lights") {
+      assert.equal(body.itemPage, 1);
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: {
+            items: [
+              item({ asin: "B0LIGHTSAVED", percent: 30, rating: 4.7, title: "Saved lights" }),
+              item({ asin: "B0LIGHT00001", percent: 40, rating: 4.6, title: "Permanent outdoor lights 1" }),
+              item({ asin: "B0LIGHT00002", percent: 35, rating: 4.5, title: "Permanent outdoor lights 2" }),
+              item({ asin: "B0LIGHT00003", percent: 33, rating: 4.4, title: "Permanent outdoor lights 3" }),
+              item({ asin: "B0LIGHT00004", percent: 30, rating: 4.2, title: "Permanent outdoor lights 4" }),
+              item({ asin: "B0THINLIGHT1", percent: 5, rating: 4.8, title: "Permanent outdoor lights thin" }),
+            ],
+          },
+        }),
+      };
+    }
+    if (body.keywords === "wireless earbuds" && body.itemPage === 1) {
+      return {
+        ok: true,
+        json: async () => ({
+          searchResult: {
+            items: [item({ asin: "B0EARBUDS001", percent: 40, rating: 4.5, title: "Earbuds" })],
+          },
+        }),
+      };
+    }
+    if (body.keywords === "wireless earbuds" && body.itemPage === 2) {
+      return { ok: true, json: async () => ({ searchResult: { items: [] } }) };
+    }
+    throw new Error(`unexpected search ${body.keywords} page ${body.itemPage}`);
+  };
+  const result = await runDiscovery(dir, dealsPath, fetchImpl, date);
+  assert.deepEqual(calls.filter((call) => call.startsWith("permanent outdoor lights")), ["permanent outdoor lights#1"]);
+  assert.deepEqual(calls.filter((call) => call.startsWith("wireless earbuds")), [
+    "wireless earbuds#1",
+    "wireless earbuds#2",
+  ]);
+  assert.equal(result.addedDiscoveries, 3);
+  const ids = JSON.parse(readFileSync(dealsPath, "utf8")).deals.map((deal) => deal.id);
+  assert.equal(ids.includes("B0LIGHTSAVED"), true);
+  assert.equal(ids.includes("B0LIGHT00001"), true);
+  assert.equal(ids.includes("B0LIGHT00002"), true);
+  assert.equal(ids.includes("B0LIGHT00003"), false);
+  assert.equal(ids.includes("B0LIGHT00004"), false);
+  assert.equal(ids.includes("B0THINLIGHT1"), false);
+  assert.equal(ids.includes("B0EARBUDS001"), true);
+  rmSync(dir, { recursive: true, force: true });
+});
+
 test("a page with no new ASINs stops that keyword and the next keyword still runs", async () => {
   const dir = mkdtempSync(join(tmpdir(), "rawdeals-dry-page-"));
   const date = "2026-11-12";
@@ -799,7 +944,7 @@ test("a page with no new ASINs stops that keyword and the next keyword still run
     maxRequests: 20,
     searches: [
       { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
-      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+      { keywords: "yoga mat", searchIndex: "HomeAndKitchen", category: "Kitchen" },
     ],
   };
   const known = ["B0KNOWN00001", "B0KNOWN00002"].map((id) => ({
@@ -870,7 +1015,7 @@ test("the request budget stops further SearchItems calls and still saves deals a
     maxRequests: 1,
     searches: [
       { keywords: "wireless earbuds", searchIndex: "Electronics", category: "Tech" },
-      { keywords: "yoga mat", searchIndex: "SportsAndOutdoors", category: "Sports" },
+      { keywords: "yoga mat", searchIndex: "HomeAndKitchen", category: "Kitchen" },
     ],
   };
   const dealsPath = writeDiscoveryRun(dir, { discovery });

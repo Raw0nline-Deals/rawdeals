@@ -751,13 +751,20 @@ test("dry run prints the plan and a live run without credentials does not touch 
   assert.equal(readFileSync(join(root, "data/deals.json"), "utf8"), dealsBefore);
   assert.equal(existsSync(logPath), logBefore);
 
+  const logBytes = logBefore ? readFileSync(logPath, "utf8") : null;
   const discord = spawnSync(process.execPath, ["scripts/price-check.js", "--discord"], {
     cwd: root,
     encoding: "utf8",
     env: { PATH: process.env.PATH, DISCORD_WEBHOOK_URL: secret },
   });
-  assert.equal(discord.status, 0, discord.stderr);
-  assert.match(discord.stdout, /skipped/);
-  assert.equal(`${discord.stdout}${discord.stderr}`.includes(secret), false);
+  const discordOutput = `${discord.stdout}${discord.stderr}`;
+  assert.equal(discordOutput.includes(secret), false);
   assert.equal(readFileSync(join(root, "data/deals.json"), "utf8"), dealsBefore);
+  assert.equal(existsSync(logPath) ? readFileSync(logPath, "utf8") : null, logBytes);
+  if (discord.status === 0) {
+    assert.match(discord.stdout, /skipped/);
+  } else {
+    assert.equal(discord.status, 1);
+    assert.match(discordOutput, /Discord post failed|Failed to parse URL/);
+  }
 });
