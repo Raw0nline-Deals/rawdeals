@@ -1,0 +1,13 @@
+[
+  {
+    "id": "example-expired",
+    "brand": "Example",
+    "title": "EXAMPLE expired code, not a real offer",
+    "code": "EXAMPLE",
+    "url": "https://www.amazon.com/",
+    "discount": "10% off entire order",
+    "starts": "2019-01-01",
+    "expires": "2020-01-01",
+    "notes": "Example only. Not a real code. Delete this object when you add a real one."
+  }
+]

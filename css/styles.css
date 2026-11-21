@@ -442,6 +442,8 @@ a { color: inherit; }
   font-weight: 700;
   letter-spacing: 0.04em;
   overflow-wrap: anywhere;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .copy-btn {
@@ -544,6 +546,64 @@ a { color: inherit; }
 }
 
 #deals { scroll-margin-top: 8.5rem; }
+
+#codes-nav[hidden],
+#codes[hidden] { display: none !important; }
+
+.codes {
+  margin: 36px auto 4px;
+  scroll-margin-top: 16px;
+}
+
+.codes h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 8px;
+  line-height: 1.1;
+}
+
+.codes-lead {
+  margin: 0 0 16px;
+  color: var(--ink-soft);
+}
+
+.codes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.code-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 18px;
+}
+
+.code-discount {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.code-detail,
+.code-notes {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.code-card .copy-btn { min-height: 44px; }
+
+.code-card .btn { margin-top: 4px; }
 
 .how-to {
   margin: 42px auto 0;
@@ -705,7 +765,8 @@ a { color: inherit; }
   .copy-btn.is-copied:hover { background: #7a28c9; }
   .icon-btn:hover,
   .btn-ghost:hover { background: #242838; }
-  .card:not(.is-dead):hover { border-color: #343856; }
+  .card:not(.is-dead):hover,
+  .code-card:hover { border-color: #343856; }
   .nav a:not(.icon-btn):hover { color: #fff; }
 }
 
@@ -722,6 +783,8 @@ a { color: inherit; }
   .result-count { margin-left: auto; }
 
   .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+
+  .codes-list { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
 
   .signup { flex-direction: row; align-items: center; }
 

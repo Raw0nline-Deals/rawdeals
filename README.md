@@ -69,7 +69,9 @@ Deals with `"sample": true` stay in the file. The page and the RSS feed both hid
 
 ## Promo codes and the Copy button
 
-The Copy button writes the code to the clipboard and the button label changes to **Copied**. That happens in the visitor’s browser.
+The Copy button writes the code to the clipboard and the button label changes to **Copied**. That happens in the visitor’s browser. Deal cards and the Promo Codes section share that button.
+
+Codes you keep yourself, separate from the daily deal list, go in `data/codes.json`. The refresh job does not edit that file. [docs/CODES.md](docs/CODES.md) has the template, how to remove a code, and how the end date works.
 
 ## Report dead deal
 
