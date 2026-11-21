@@ -2046,6 +2046,51 @@
         }
       ],
       "requests": 14
+    },
+    {
+      "checkedAt": "2026-11-21T02:46:31.302Z",
+      "checked": 135,
+      "unchanged": 132,
+      "updated": 2,
+      "removed": 1,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0D54QFW77",
+          "title": "Poppi Prebiotic Soda, Wild Berry, 12 Oz, 12 Pack | Prebiotic Soda, Sparkling Water & Fruit Juice, 5g Sugar",
+          "url": "https://www.amazon.com/dp/B0D54QFW77?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 9.82,
+          "newPrice": 10.64,
+          "oldPercentOff": 56,
+          "newPercentOff": 53,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00T7PCQBK",
+          "title": "MRS. MEYER'S CLEAN DAY All-Purpose Cleaner Spray, Lavender, 16 fl. oz",
+          "url": "https://www.amazon.com/dp/B00T7PCQBK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 4.99,
+          "newPrice": 5.27,
+          "oldPercentOff": 23,
+          "newPercentOff": 19,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0HF191VSF",
+          "title": "Permanent Outdoor Lights for House, 500FT RGB+IC Smart Christmas Lights | App & Remote Control,IP67 Waterproof,16 Million Colors,70+Scenes,Music Sync,Holiday Party Halloween Decor,Outdoor Lights",
+          "url": "https://www.amazon.com/dp/B0HF191VSF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 159.99,
+          "newPrice": 132.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 34,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 14
     }
   ]
 }
