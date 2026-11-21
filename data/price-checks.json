@@ -2169,6 +2169,40 @@
         }
       ],
       "requests": 14
+    },
+    {
+      "checkedAt": "2026-11-21T20:29:47.918Z",
+      "checked": 139,
+      "unchanged": 137,
+      "updated": 1,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.99,
+          "newPrice": 7.17,
+          "oldPercentOff": 30,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HJ255N6R",
+          "title": "CIDETTY Laptop Screen Extender 15.6\", FHD 1080P Detachable Monitor Portable | 360° Rotating，Height Adjustable，Vesa support, Ultra Thin, Smart Display software, Fit 12-17.3\" Laptop, Remote Work & Travel",
+          "url": "https://www.amazon.com/dp/B0HJ255N6R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 89.99,
+          "newPrice": 89.99,
+          "oldPercentOff": 44,
+          "newPercentOff": 44,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        }
+      ],
+      "requests": 14
     }
   ]
 }
