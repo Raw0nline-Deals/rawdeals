@@ -2360,6 +2360,62 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-22T20:35:01.774Z",
+      "checked": 148,
+      "unchanged": 144,
+      "updated": 3,
+      "removed": 1,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B00146I32G",
+          "title": "Melissa & Doug Safari Social Jumbo Floor Puzzle (24 Pieces, 2 x 3 Feet), Jigsaw Puzzle for Preschoolers and Kids Ages 3+ - FSC Certified",
+          "url": "https://www.amazon.com/dp/B00146I32G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 5.94,
+          "newPrice": 11.89,
+          "oldPercentOff": 50,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.49,
+          "newPrice": 12.49,
+          "oldPercentOff": 50,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HDRBFNYF",
+          "title": "Charmin Toilet Paper Ultra Strong, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue",
+          "url": "https://www.amazon.com/dp/B0HDRBFNYF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.99,
+          "newPrice": 8.69,
+          "oldPercentOff": 27,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.99,
+          "newPrice": 7.17,
+          "oldPercentOff": 30,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
