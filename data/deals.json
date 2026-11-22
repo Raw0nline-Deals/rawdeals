@@ -2,6 +2,381 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0HNZRZ14Y",
+      "title": "AOC Bluetooth Gaming Headset with Mic for PC, PS5/4, Nintendo Switch- Red | USB-C & Bluetooth 5.4 & 2.4GHz Gaming Headphones with Noise Canceling Mic, 7.1 Virtual Surround, 20ms Latency, 45H, RGB",
+      "image": "https://m.media-amazon.com/images/I/41AbvoHvIHL._SL500_.jpg",
+      "price": 42.74,
+      "percentOff": 29,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0HNZRZ14Y?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
+        "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0035BTQ06",
+      "title": "Scott Shop Towels Original, 55 Towels/Roll, 12 Rolls/Case",
+      "image": "https://m.media-amazon.com/images/I/41lQiJAHiGL._SL500_.jpg",
+      "price": 31.53,
+      "percentOff": 43,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0035BTQ06?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 54.99,
+      "expires": "2026-12-01",
+      "features": [
+        "55 Towels/Roll; 12 Rolls of Scott Shop Towels Original/Case; 660 Towels/Case; Original Blue Shop Towels; 9.4\"x11\" sheets",
+        "These multi-purpose blue shop towels are designed for cleaning up grease, absorbing liquids, oils and spills in automotive repair shops and garages"
+      ]
+    },
+    {
+      "id": "B00146I32G",
+      "title": "Melissa & Doug Safari Social Jumbo Floor Puzzle (24 Pieces, 2 x 3 Feet), Jigsaw Puzzle for Preschoolers and Kids Ages 3+ - FSC Certified",
+      "image": "https://m.media-amazon.com/images/I/51pVjR29++L._SL500_.jpg",
+      "price": 5.94,
+      "percentOff": 50,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B00146I32G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 11.89,
+      "features": [
+        "Safari-Themed Puzzle Adventure – Features a vibrant scene with wild animals like elephants, giraffes, and lions; a fun and engaging screen-free activity for toddlers and kids.",
+        "Supports Early Learning Skills – Encourages the development of fine motor skills, problem-solving, and hand-eye coordination in a fun, engaging way."
+      ]
+    },
+    {
+      "id": "B07MWQBMDR",
+      "title": "Apogee Hype Mic - USB Microphone with Analog Compression for Capturing Vocals and Instruments, Streaming, Podcasting, and Gaming",
+      "image": "https://m.media-amazon.com/images/I/411gMxKJt4L._SL500_.jpg",
+      "price": 149,
+      "percentOff": 63,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07MWQBMDR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 399,
+      "features": [
+        "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
+        "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
+      ]
+    },
+    {
+      "id": "B0788MGJ31",
+      "title": "BLUE PANDA Rainbow Paper Napkins - 2-Ply Absorbent Pastel Party Napkins for Rainbow Birthday Events - 6.5 x 6.5 in Folded - Pack of 150",
+      "image": "https://m.media-amazon.com/images/I/41dKMcQ7PYL._SL500_.jpg",
+      "price": 11.19,
+      "percentOff": 41,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0788MGJ31?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 18.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Vibrant Party Napkins: Elevate your event with BLUE PANDA's Rainbow Style Paper Napkins, perfect for adding a splash of color to any occasion. Designed with both aesthetics and practicality in mind, these napkins are a staple for rainbow birthday parties",
+        "Ensure Clean Surfaces: Protect your tables with these highly absorbent napkins that efficiently handle spills from milk, juice, or soda. Their 2-ply construction ensures durability, making them ideal for any pastel party decorations"
+      ]
+    },
+    {
+      "id": "B0085MIONU",
+      "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+      "image": "https://m.media-amazon.com/images/I/41yZPaXkVpL._SL500_.jpg",
+      "price": 8.49,
+      "percentOff": 50,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.99,
+      "features": [
+        "Piece together 48 extra-thick cardboard pieces to create a 4-foot-long puzzle and to reveal a stunning underwater scene filled with ocean life.",
+        "Completed puzzle features search-and-find activity and identification guide."
+      ]
+    },
+    {
+      "id": "B0FNNDBY9X",
+      "title": "Vanity Fair Everyday Paper Napkins, 2-Ply White Napkin, 400 Count | Soft and absorbent disposable napkins, 2-ply dinner napkins for mealtime; single-use for easy cleanup; classic white napkins",
+      "image": "https://m.media-amazon.com/images/I/417TAkadL+L._SL500_.jpg",
+      "price": 7.65,
+      "percentOff": 31,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0FNNDBY9X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 11.1,
+      "expires": "2026-12-01",
+      "features": [
+        "Vanity Fair Everyday disposable napkins feature a smooth, cloth like texture",
+        "Casual 2-ply paper napkins add a classic, stylish look to your table"
+      ]
+    },
+    {
+      "id": "B06XD2RSZR",
+      "title": "Ravensburger - Disney Pretty Princesses - 24 Piece Jigsaw Floor Puzzle - Belle, Cinderella, Ariel and Rapunzel in Bold, Bright Colors - Premium Quality - Ideal Gift - Screen-Free Fun - Children Age 3+",
+      "image": "https://m.media-amazon.com/images/I/51Z3I+Ito8L._SL500_.jpg",
+      "price": 13.99,
+      "percentOff": 30,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B06XD2RSZR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Disney Princess Floor Puzzle: Spark imagination with this 24-piece shaped floor puzzle featuring Cinderella, Belle, Ariel, and more; kid-friendly, larger, durable pieces promote fine motor skills, learning, and magical screen-free fun.",
+        "Educational Brain-Boosting Activity: Solving jigsaw puzzles awakens multiple areas of the brain, such as memory, spatial awareness, and problem-solving skills. A satisfying way to sharpen focus in boys and girls ages 8 and older, as well as adults."
+      ]
+    },
+    {
+      "id": "B0DQYR6X8R",
+      "title": "Bounty Select-A-Size Paper Towels, White, 2 Triple Rolls = 6 Regular Rolls",
+      "image": "https://m.media-amazon.com/images/I/51FgIkrPypL._SL500_.jpg",
+      "price": 6.99,
+      "percentOff": 28,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0DQYR6X8R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.69,
+      "features": [
+        "Pack contains 2 Triple Rolls of white Bounty Select-A-Size Paper Towels",
+        "2 Triple Rolls = 6 Regular Rolls"
+      ]
+    },
+    {
+      "id": "B08T9FZ1SX",
+      "title": "Ravensburger - Gardener's Getaway - 300 Piece Large Format Jigsaw Puzzle - Bright and Vivid Gardener's Dream with Gnomes & More - Frameable - Premium Quality - Puzzles for Adults",
+      "image": "https://m.media-amazon.com/images/I/51tqNkSMKIL._SL500_.jpg",
+      "price": 14.69,
+      "percentOff": 30,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B08T9FZ1SX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Charming Garden Retreat: Piece together a peaceful potting shed surrounded by blooming flowers, curious hens, bluebirds, and a watchful gnome - ideal for garden lovers, cozy cottage fans, and anyone seeking a relaxing 300-piece puzzle-piecing escape.",
+        "Crafted with Glare-Free Premium Materials: These adult-level puzzles use thick, durable cardboard and linen-structured paper for a seamless fit and glare-free finish. Each puzzle piece is uniquely shaped to ensure frustration-free piecing."
+      ]
+    },
+    {
+      "id": "B07PTZGML4",
+      "title": "Crisky Napkins Mr and Mrs Gold Cocktail Beverage Dessert for Wedding Shower Engagement Party Decorations, Cake Table Decor Supplies. 100 Pcs, 3-Ply",
+      "image": "https://m.media-amazon.com/images/I/31v7iLXNe4L._SL500_.jpg",
+      "price": 11.19,
+      "percentOff": 25,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B07PTZGML4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "expires": "2026-12-01",
+      "features": [
+        "100-Count Cocktail, beverage, appetizer, or dessert size napkins, 3-Ply",
+        "SIZE: 4.9-inch when folded. Real foil design that shines in the light. Food safe."
+      ]
+    },
+    {
+      "id": "B0CPM8TQRG",
+      "title": "Ravensburger Police on Patrol 150 XXL Piece Jigsaw Puzzle for Kids - Every Piece is Unique, Pieces Fit Together Perfectly",
+      "image": "https://m.media-amazon.com/images/I/51k-UndxHdL._SL500_.jpg",
+      "price": 11.89,
+      "percentOff": 30,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0CPM8TQRG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[About This 150pc Puzzle] No need to chase your child to settle down with a quiet activity — just give them a “Police on Patrol” jigsaw puzzle for hours of skill-building fun!",
+        "[Designed for Kids Ages 7+] Ravensburger kids puzzles have large, durable pieces little hands can easily hold for lots of repeat amusement."
+      ]
+    },
+    {
+      "id": "B0HDRBFNYF",
+      "title": "Charmin Toilet Paper Ultra Strong, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue",
+      "image": "https://m.media-amazon.com/images/I/41rDPOyqzeL._SL500_.jpg",
+      "price": 8.49,
+      "percentOff": 23,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0HDRBFNYF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 10.99,
+      "features": [
+        "WIDER SHEETS FOR A BETTER CLEAN: Wider sheets that clean better with fewer sheets vs. leading USA 1-ply bargain brand.",
+        "4X STRONGER TOILET PAPER WHEN WET: 4X stronger when wet vs. the leading USA 1-ply bargain brand, ensuring hands and skin stay clean and protected."
+      ]
+    },
+    {
+      "id": "B0D4QX4QKT",
+      "title": "Ravensburger All Seasons Flower Shop 1000 Piece Jigsaw Puzzle | Explore Colorful Botanical Arrangements | from The Bestselling Puzzle Brand Worldwide | Enhanced Anti-Glare Surface",
+      "image": "https://m.media-amazon.com/images/I/51yRVjmAIPL._SL500_.jpg",
+      "price": 17.49,
+      "percentOff": 30,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0D4QX4QKT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 24.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[About This 1000 Piece Puzzle] Breathe in the heady fragrance found in the “All Seasons Flower Shop” and enjoy a lovely jigsaw puzzle by artist Lars Stewart",
+        "Bestselling Puzzle Brand Worldwide – With over 1 billion puzzles sold, this 1000-piece puzzle demonstrates premium quality. Each piece is made from thick cardboard, featuring a matte, anti-glare finish and precision manufacturing for perfect fitting and minimal contours. Every puzzle piece is unique"
+      ]
+    },
+    {
+      "id": "B0FLFR269F",
+      "title": "Charmin Ultra Soft Toilet Paper, 6 Mega Rolls = 24 Regular Rolls",
+      "image": "https://m.media-amazon.com/images/I/51sVM-tel0L._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 20,
+      "category": "Household",
+      "url": "https://www.amazon.com/dp/B0FLFR269F?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "6 MEGA ROLLS OF TOILET PAPER: Each roll features 208 sheets, equivalent to 24 regular rolls, ensuring your toilet paper supply lasts longer.",
+        "ENHANCED TEAR TECHNOLOGY: Features wavy edges for smoother, easier tears compared to ordinary squares, outperforming leading 1-ply bargain brands for a better wipe experience."
+      ]
+    },
+    {
+      "id": "B0GHPYH331",
+      "title": "Buffalo Games Aimee Stewart, Vintage USA Travel, 1000 Piece Jigsaw Puzzle | Christmas Break, Poster Included, USA-Made Option, Interlocking Pieces, Vintage Puzzle, Patriotic Puzzles, Adult Jigsaws",
+      "image": "https://m.media-amazon.com/images/I/61XfgiElyhL._SL500_.jpg",
+      "price": 13.29,
+      "percentOff": 30,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0GHPYH331?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 18.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Effortless Assembly Guide: Buffalo Games' \"Aimee Stewart - Vintage USA Travel\" 1000 Piece Jigsaw Puzzle includes a full-color reference poster to make your puzzling journey manageable and engaging. This holiday season, dive into a 1000 piece puzzle experience with vibrant art",
+        "Proud USA Craftsmanship: Value a USA-made puzzle, crafted with precision for quality. Ideal for adult puzzle enthusiasts who appreciate domestically made products, adding a touch of local pride to your jigsaw puzzle assembly"
+      ]
+    },
+    {
+      "id": "B0GKC5M5NP",
+      "title": "Buffalo Games Charles Wysocki Roll Call with a Bang 300 Piece Jigsaw Puzzle | Oversized Easy-Grip Pieces, Full-Color Poster, Tight Snap Fit, Fall Puzzle, 100% Recycled Fibers",
+      "image": "https://m.media-amazon.com/images/I/51vnosl9YVL._SL500_.jpg",
+      "price": 10.92,
+      "percentOff": 27,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0GKC5M5NP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Effortless Assembly Experience: Dive into the Buffalo Games Charles Wysocki \"Roll Call with a Bang\" 300-piece jigsaw puzzle, featuring oversized, easy-to-grip pieces. Enjoy a relaxing Christmas break with pieces that make assembly smooth and satisfying",
+        "Visual Guide Included: Enhance your puzzling journey with a full-color bonus poster that saves you from searching for a separate guide. This is an excellent choice for adults into Halloween jigsaw puzzles or fall puzzles 300 pieces"
+      ]
+    },
+    {
+      "id": "B0F1DJXRBQ",
+      "title": "Wooden Puzzles for Adults, Cactus Flower 200 Piece Unique Shaped Puzzle, Creative Wooden Jigsaw Puzzle Gift, Family Game, Wall Art Decor, 11 x 15 Inch",
+      "image": "https://m.media-amazon.com/images/I/51GGZvq69uL._SL500_.jpg",
+      "price": 12.79,
+      "percentOff": 20,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0F1DJXRBQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 15.99,
+      "expires": "2026-12-01",
+      "features": [
+        "THICKEST & STRONGEST - 5mm Thick, Our Premium Wooden Jigsaw Puzzles Dominate the Market with Unmatched Durability – 50% Thicker Than Others for Ultimate Sturdiness",
+        "UNIQUE SHAPED WOODEN PUZZLE FOR ADULTS & KIDS - Crafted in a mesmerizing cactus flower design, this irregular-shaped wooden jigsaw puzzle combines nature-inspired art with hand-painted vibrancy. Its mysterious patterns and whimsy pieces deliver an engaging challenge for ages 6+ while doubling as stu"
+      ]
+    },
+    {
+      "id": "B0F9FW71PK",
+      "title": "Ruikiyart Wooden Bunny Puzzles for Adults,Rabbit Wood Puzzles for Kids | Unique Rabbit Wooden Jigsaw Puzzles For Adults,Creative Bunny Gifts,Home Decoration,500Pieces,16.4\"x15.3\"",
+      "image": "https://m.media-amazon.com/images/I/512TH5eVOOL._SL500_.jpg",
+      "price": 25.59,
+      "percentOff": 20,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0F9FW71PK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 31.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Unique Rabbit Wooden Puzzles:Different from traditional puzzles,our Ruikiyart wooden puzzles are cut into unique shapes, with some pieces funny animals and plants,the thickness of the wood is 5mm,it is thicker than other factory,So in the process of assembling,the pattern will not loosen and break o",
+        "Fun Challenging Bunny Puzzle:The cute bunny climbing on flower branch,the design is bright and vivid,attract the attention of puzzle lovers.the product assembly process is full of fun and challenges, and there is a sense of achievement after the assembly is completed"
+      ]
+    },
+    {
+      "id": "B0H28FC3GK",
+      "title": "1000 Piece Puzzle for Adults, Colorful Botanical Fantasy Garden with Birds | Premium Matte Finish, Thick Blue Cardboard, Fun and Challenging Jigsaw Puzzles for Nature Lovers",
+      "image": "https://m.media-amazon.com/images/I/51LCQSap-gL._SL500_.jpg",
+      "price": 12.74,
+      "percentOff": 20,
+      "category": "Toys",
+      "url": "https://www.amazon.com/dp/B0H28FC3GK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-22",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 15.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Intricate Botanical Fantasy Artwork】This 1000 piece puzzle for adults showcases the enchanting \"Garden of Whimsy\" design featuring a vibrant, densely detailed fantasy garden scene. The illustration bursts with colorful flowers, charming miniature houses, exotic birds, citrus fruits, mushrooms, and",
+        "【Premium Quality & Rich Detail】Crafted from high-quality, thick, and durable blue cardboard, these puzzles for adults ensure exceptional longevity. The precision-cut pieces provide a perfect interlocking fit with minimal dust. The matte anti-glare surface protects your eyes while you enjoy puzzles f"
+      ]
+    },
+    {
       "id": "B0CKLS8P2Q",
       "title": "Plano 4-Shelf Plastic Storage Shelves, 48” x 23” x 14”, 200lb Capacity, Pantry, Office, Closet and Garage Shelves, Easy to Assemble, Durable Plastic Shelving Unit",
       "image": "https://m.media-amazon.com/images/I/31sM6IB72WL._SL500_.jpg",
@@ -16,8 +391,7 @@
       "features": [
         "PLANO PLASTIC STORAGE SHELVES: Organize your home, closet, garage, laundry room or office with Plano heavy-duty Shelving Units.",
         "200LB STORAGE CAPACITY: Each of the 4 plastic shelves has a maximum weight capacity of 50lbs. The full shelving unit can easily accommodate up to 200lbs of total weight."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0HLL8FK69",
@@ -37,8 +411,7 @@
         "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
         "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B079D72S2B",
@@ -489,8 +862,7 @@
         "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
         "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B00023IXDQ",
@@ -586,8 +958,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0FNF8WK62",
@@ -784,8 +1155,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0DSGRL3RP",
@@ -825,8 +1195,7 @@
         "IMMERSIVE 3D GAMING AUDIO: Fachixy VK81 wireless gaming headset delivers powerful 3D stereo sound with deep bass, clear mids, and crisp highs. Hear footsteps, reloads, and environmental details precisely, improving reaction time and enhancing immersion for FPS, RPG, or open-world games on for PS5, P",
         "VERSATILE MULTI-DEVICE CONNECTIVITY: Switch seamlessly between 2.4GHz wireless (USB/Type-C) for PC, PS5, PS4, Mac, Laptops, and Switch, or Bluetooth 5.4 for mobile devices. Ensure lag-free gaming on consoles and enjoy easy mobile audio streaming. Not compatible with Xbox consoles."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0C7QDW1M4",
@@ -866,8 +1235,7 @@
         "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
         "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0DJ7DFX93",
@@ -907,8 +1275,7 @@
         "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
         "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0C5DCRRN7",
@@ -928,8 +1295,7 @@
         "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
         "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B07V4F7ZZ5",
@@ -949,8 +1315,7 @@
         "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
         "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0HGR4SDYC",
@@ -970,8 +1335,7 @@
         "Zero-Latency Audio for Competitive Edge: Dominate your matches with the AOC wireless gaming headset. Featuring ultra-fast 2.4GHz lossless technology (≤20ms latency), this ps5 headset ensures your audio is always perfectly synced with the action. Tuned 50mm drivers deliver clear gaming sound for foot",
         "Crystal-Clear Squad Communication: Coordinate strategies flawlessly using the detachable, omni-directional noise-canceling microphone. Whether you are gaming in a lively dorm room or a busy living room, this ps5 headset wireless filters out background distractions, transmitting your voice with absol"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B07C4Y1XM5",
@@ -991,8 +1355,7 @@
         "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
         "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B07W549S56",
@@ -1012,8 +1375,7 @@
         "【RGB LED lights】KAFRI RBG Headphone Stand can display 9 lighting effects modes, up to 16.8 million colors to creat an amazing gaming atmosphere at your preference. that can be selected merely by pressing a Touch switch. Great gifts for Son, boy, Men, husband and boyfriend.",
         "【10W Qi Wireless Charger】Say goodbye to tangled wires and messing cables, just place your phone on fast charger pad. no cables or USB interface required. Charger compatible with Apple iPhone XS Max,XR,XS, X, iPhone 8/8 Plus, Samsung Galaxy S9/S9 Plus, Note 8, S8/S8 Plus, and other Qi-enabled cell ph"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0BJ72M77L",
@@ -1033,8 +1395,7 @@
         "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
         "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0C46CS37H",
@@ -1054,8 +1415,7 @@
         "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
         "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0BV4F17CS",
@@ -1074,8 +1434,7 @@
       "features": [
         "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
         "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B09241VBTP",
@@ -1094,8 +1453,7 @@
       "features": [
         "[Pure & Natural] The USB cardioid mic captures the clear and crisp sound in front of the mic capsule and reduces unwanted background noise. Using this directional condenser mic in a quiet environment will bring you the ideal recording effect and has an accurate reproduction of your voice.",
         "[All Metal Construction] Made out of solid, quality materials, the microphone for computer recording is built to last. It also finished in a very nice matte blue coating which gives a real premium look and feel to the K669L. The 6ft permanently attached USB cable is long enough to connect the usb au"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B08DHH74JQ",
@@ -1113,8 +1471,7 @@
       "features": [
         "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
         "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0BBVY9L7C",
@@ -1133,8 +1490,7 @@
       "features": [
         "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
         "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B07DTTGZ7M",
@@ -1152,8 +1508,7 @@
       "features": [
         "Legendary Blue broadcast sound: Yeti Nano features 2 custom mic capsules to give your voice exceptional presence and detail for professional-level recording and streaming",
         "Blue VO!CE software: Elevate your streamings and recordings with clear broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0D458QDVN",
@@ -1172,8 +1527,7 @@
       "features": [
         "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
         "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0FY2R5R8X",
@@ -1191,8 +1545,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -1210,8 +1563,7 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
@@ -1229,8 +1581,7 @@
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -1248,8 +1599,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0CV3NW398",
@@ -1290,8 +1640,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0F3CQJZRQ",
@@ -1330,8 +1679,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0HFJ8TLN1",
@@ -1549,8 +1897,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0D8SX6XYB",
@@ -1589,8 +1936,7 @@
       "features": [
         "IMPROVED EXPERIENCE - The cardioid streaming mic with pop filter is excellent to eliminate background noise and pick up a clean tone in your voice. Benefits from the premium mic capsule and the wide response range, the usb vocal mic offers a good balance of bass and treble which will keep the sound",
         "ADJUSTABLE ARM STAND - The pc microphone with stand is sturdy and easily swivels in any orientation. The mic and accessories will not going to get in your way to have a successful podcast, and less likely to pick up thumps from desktop or keyboard. You could tightly mount the condenser recording mic"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B07SX9XP83",
@@ -1628,8 +1974,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0HPL68PVF",
@@ -2284,126 +2629,10 @@
       "lastChecked": "2026-11-22T02:49:33.292Z"
     },
     {
-      "id": "B0H98ZVTBW",
-      "title": "SMAVISTA Permanent Outdoor Lights S2, 200ft with 120 RGBCW LED String Light | Cuttable, Dual-Output, 16M RGB & 2700K-6500K White, 100+ Scenes, IP67 Waterproof, Compatible with Alexa & Google Assistant",
-      "image": "https://m.media-amazon.com/images/I/513tcFwwS5L._SL500_.jpg",
-      "price": 189.99,
-      "percentOff": 53,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0H98ZVTBW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 399.99,
-      "expires": "2026-12-01",
-      "features": [
-        "[100+ Preset Scenes & Creative DIY Customization] Never worry about repetitive decorations again. Choose from over 100 professionally tuned dynamic scenes covering holidays, parties, and atmospheric modes, or tap into the DIY editor to map individual node colors, motion speeds, and gradient effects",
-        "[2700K–6500K Tunable White for Year-Round Use] More than just holiday lights. Equipped with dedicated RGBCW LEDs outputting up to 50 lumens per lights, you can adjust color temperature from cozy 2700K warm white to crisp 6500K daylight white. Perfect for daily architectural accents, landscape ambian"
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
-      "id": "B08NZY8TB7",
-      "title": "KINESIS Gaming TKO Mechanical Keyboard | Clicky White Switches | 60% Layout | Split Spacebar | Hotswap | PBT Keycaps | Aluminum Body | SF Shock Limited Edition Travel Case",
-      "image": "https://m.media-amazon.com/images/I/51or1iF-vtL._SL500_.jpg",
-      "price": 48.75,
-      "percentOff": 25,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B08NZY8TB7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 65,
-      "features": [
-        "PROGRAMMABLE 60% LAYOUT: Ultra-compact aluminum keyboard with standard 60% layout and modular triple-space bar. Maximum portability and closer mouse placement.",
-        "HOTSWAP MECHANICAL SWITCHES: Premium Kailh Box White mechanical switches with tactile feedback and click. Switches are plug-and-play so you can customize the feel of WASD or swap out the whole board."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
-      "id": "B0DLP9JPR3",
-      "title": "Acer Nitro 27in FHD 1920x1080 Curved 280Hz Gaming Monitor XZ270 Zbmiiphx | 1ms, AMD FreeSync Premium, sRGB 99%, 2xHDMI, DisplayPort, 1500R Curve, Ergo Stand, Speaker, VESA Mountable",
-      "image": "https://m.media-amazon.com/images/I/41HHCeu1-7L._SL500_.jpg",
-      "price": 143.99,
-      "percentOff": 28,
-      "category": "Tech",
-      "url": "https://www.amazon.com/dp/B0DLP9JPR3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 199.99,
-      "features": [
-        "Resolution Matters: The Nitro 27\" Curved Display with Full HD (1920 x 1080) resolution offers the sharpest picture quality and provides a perfect picture with a broader view. The zero-frame design does away with the thick frames found on conventional monitors freeing up precious screen space, so you",
-        "AMD FreeSync Premium Technology: Say “goodbye” to stuttering and tearing. With AMD FreeSync Premium, the monitor’s frames are synced with the graphics card’s frames, which eliminates screen tearing and provide the smoothest gaming experience."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
-      "id": "B092LK5NSN",
-      "title": "Logitech G713 Wired Gaming Keyboard with LIGHTSYNC RGB Lighting, Tactile Switches (GX Brown), and Keyboard Palm Rest, PC and Mac Compatible, White Mist",
-      "image": "https://m.media-amazon.com/images/I/31NxWs+NfzL._SL500_.jpg",
-      "price": 129,
-      "percentOff": 24,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B092LK5NSN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 169.99,
-      "features": [
-        "Cloud-soft Comfort: Float away with G713’s dreamy white design and comfy, cloud-shaped palm rest; compact mechanical TKL keyboard layout and adjustable height give that good game feeling, all-day long",
-        "Lovely Lighting: Per key and perimeter Logitech LIGHTSYNC RGB with preloaded Play Mood animations, the Aurora Collection signature lighting; customize your RGB gaming keyboard’s lighting on G HUB"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
-      "id": "B0DMTTDSTG",
-      "title": "Xtrfy Cherry K4V2 TKL, Tenkeyless Mechanical Gaming Keyboard, Wired (USB-A), Adjustable RGB Lighting, 1000 Hz Polling Rate, Cherry MX2A RED Switches, Black",
-      "image": "https://m.media-amazon.com/images/I/41vJD8rx0mL._SL500_.jpg",
-      "price": 38.39,
-      "percentOff": 52,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0DMTTDSTG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 79.99,
-      "features": [
-        "High-performance wired gaming keyboard: Featuring a metal plate construction and durable housing - delivering powerful performance without unnecessary frills",
-        "Compact tenkeyless design: By eliminating the number pad, this wired keyboard not only frees up more desk space but also gives you greater freedom of movement for your mouse"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
-      "id": "B0FLX78XVF",
-      "title": "YUNZII C75 Cute 75% Wireless Mechanical Keyboard (Beige, Candy Switch) | Creamy Cake Keyboard, BT5.0/2.4G/USB-C, Hot-Swap, NKRO, PBT MOA Keycaps,5500mAh RGB Gasket Mount for Mac/Win/Gaming/Office",
-      "image": "https://m.media-amazon.com/images/I/41zQhk-CWYL._SL500_.jpg",
-      "price": 68.99,
-      "percentOff": 25,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B0FLX78XVF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-15",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 91.99,
-      "features": [
-        "Cute Cake Keyboard 75% LAYOUT: The new YUNZI C75 cute mechanical keyboard series, a sweet addition to desk accessories with colorful keyboard design. Boasting all the beloved features—high-quality mechanical keyboard, compact 75% layout Keyboard, wireless, BT and wired connectivity, and creamy typin",
-        "Creamy Keyboard with Gasket Structure: This cute mechanical gaming keyboard takes gasket structure and multiple layers of sound-absorbing fillings, pre-lubed mechanical switches, stabilizers and solid silicone eliminate typing noise, creating a solid creamy mechanical keyboard. Enjoy smooth and cons"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
-      "price": 67.66,
+      "price": 67.92,
       "percentOff": 32,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -2416,8 +2645,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0H6L14J6D",
@@ -2498,8 +2726,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2518,8 +2745,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2538,8 +2764,7 @@
       "features": [
         "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
         "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0HP6VQLZ5",
@@ -2562,32 +2787,11 @@
       "lastChecked": "2026-11-22T02:49:33.292Z"
     },
     {
-      "id": "B0HC3FSWGH",
-      "title": "Relivoween Permanent Outdoor Lights for House, 200FT Upgraded RGB+IC Lights | 16 Million Colors & 100+ Scene Modes, Individual LED Control, App & Remote Control, IP67 Waterproof, DIY Music Sync Modes",
-      "image": "https://m.media-amazon.com/images/I/51kAoam8x+L._SL500_.jpg",
-      "price": 93.99,
-      "percentOff": 62,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HC3FSWGH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 249.99,
-      "expires": "2026-11-21",
-      "features": [
-        "【Bluetooth Smart Control With Privacy Protection】Effortlessly control your permanent outdoor lights via smartphone. Our App features a no-login guest mode to safeguard your privacy, allowing you to adjust lighting modes anytime, anywhere—no account required.",
-        "【DIY Custom Modes for Any Occasion】Each LED is individually controllable via the App. Choose from 16 million colors to craft custom lighting scenes for holidays and daily decor. Static and dynamic lighting modes are included."
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
-    },
-    {
       "id": "B0BDGTM1DP",
       "title": "HyperX CloudX Stinger 2 Core Wired Gaming Headset for Xbox | Wired Connectivity | 40mm Drivers | Swivel-to-Mute Mic | Lightweight",
       "image": "https://m.media-amazon.com/images/I/41sa9-waeeL._SL500_.jpg",
-      "price": 24.98,
-      "percentOff": 38,
+      "price": 19.99,
+      "percentOff": 50,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0BDGTM1DP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
       "added": "2026-11-18",
@@ -2599,8 +2803,7 @@
         "Official Xbox Licensed headset: CloudX Stinger 2 Core was tested and approved by Microsoft, and connects directly to Xbox One and Xbox Series X|S controllers with a 3.5mm port.",
         "Lightweight comfort: Soft ear cushions provide a comfortable fit, and the flexible mic can be positioned just as you like."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      "priority": true
     },
     {
       "id": "B0GX5XQG45",
@@ -2618,16 +2821,15 @@
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
       "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
       "image": "https://m.media-amazon.com/images/I/416LIaAUumL._SL500_.jpg",
-      "price": 45.59,
+      "price": 47.49,
       "originalPrice": 49.99,
-      "percentOff": 9,
+      "percentOff": 5,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-18",
@@ -2636,14 +2838,13 @@
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
       "title": "Niceveedi Softbox Lighting Kit, 2700-6500K LED Photography Lighting with 18” Quick-Release Softbox/Bowens Mount/Cooling System/Remote/Tripod, Video Light for Video Recording/Streaming/Portraits",
       "image": "https://m.media-amazon.com/images/I/41CqzCXk27L._SL500_.jpg",
-      "price": 75.99,
+      "price": 75.69,
       "originalPrice": 99.99,
       "percentOff": 24,
       "category": "Tech",
@@ -2654,8 +2855,7 @@
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-22T02:49:33.292Z"
+      ]
     }
   ]
 }
