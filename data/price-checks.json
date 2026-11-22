@@ -2416,6 +2416,73 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-22T23:35:40.188Z",
+      "checked": 147,
+      "unchanged": 142,
+      "updated": 4,
+      "removed": 1,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.49,
+          "newPrice": 8.49,
+          "oldPercentOff": 26,
+          "newPercentOff": 50,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HDRBFNYF",
+          "title": "Charmin Toilet Paper Ultra Strong, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue",
+          "url": "https://www.amazon.com/dp/B0HDRBFNYF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.69,
+          "newPrice": 8.76,
+          "oldPercentOff": 21,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.17,
+          "newPrice": 7.18,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B003NLV6W4",
+          "title": "Lancôme Miracle Eau de Parfum - Spicy & Floral Women's Perfume - 3.4 Fl Oz | Perfume for Women - With Notes of Magnolia, Lychee, Ginger, Jasmine & Amber - Long Lasting Fragrance",
+          "url": "https://www.amazon.com/dp/B003NLV6W4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 95.9,
+          "newPrice": 95.9,
+          "oldPercentOff": 30,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0FP1TRW4L",
+          "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
+          "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 67.92,
+          "newPrice": 67.43,
+          "oldPercentOff": 32,
+          "newPercentOff": 33,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
