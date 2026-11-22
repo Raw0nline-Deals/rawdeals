@@ -2315,6 +2315,51 @@
         }
       ],
       "requests": 14
+    },
+    {
+      "checkedAt": "2026-11-22T17:36:55.227Z",
+      "checked": 148,
+      "unchanged": 145,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0HDRBFNYF",
+          "title": "Charmin Toilet Paper Ultra Strong, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue",
+          "url": "https://www.amazon.com/dp/B0HDRBFNYF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.49,
+          "newPrice": 7.99,
+          "oldPercentOff": 23,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DWYNY698",
+          "title": "Farberware Disney Bake with Mickey Mouse Nonstick Bakeware Cake Decorating/Baking Dish, 3D Cake Pan - Gray",
+          "url": "https://www.amazon.com/dp/B0DWYNY698?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 29.74,
+          "newPrice": 29.25,
+          "oldPercentOff": 26,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0BF976MJY",
+          "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
+          "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
+          "oldPrice": 47.49,
+          "newPrice": 45.59,
+          "oldPercentOff": 5,
+          "newPercentOff": 9,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
