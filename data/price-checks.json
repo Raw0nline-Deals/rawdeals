@@ -2483,6 +2483,40 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-23T02:53:49.835Z",
+      "checked": 146,
+      "unchanged": 144,
+      "updated": 1,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.49,
+          "newPrice": 12.49,
+          "oldPercentOff": 50,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0BDGTM1DP",
+          "title": "HyperX CloudX Stinger 2 Core Wired Gaming Headset for Xbox | Wired Connectivity | 40mm Drivers | Swivel-to-Mute Mic | Lightweight",
+          "url": "https://www.amazon.com/dp/B0BDGTM1DP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 19.99,
+          "newPrice": 19.99,
+          "oldPercentOff": 50,
+          "newPercentOff": 50,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
