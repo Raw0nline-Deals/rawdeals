@@ -2517,6 +2517,150 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-23T17:53:48.931Z",
+      "checked": 153,
+      "unchanged": 141,
+      "updated": 8,
+      "removed": 3,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B01F75UCYQ",
+          "title": "Funko POP TV: Golden Girls Blanche Action Figure",
+          "url": "https://www.amazon.com/dp/B01F75UCYQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 9.99,
+          "newPrice": null,
+          "oldPercentOff": 23,
+          "newPercentOff": null,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0C3DLYY46",
+          "title": "Puma Kids' Caven 2.0 Puma White-Puma Silver-Puma Black Big Kid 4.5",
+          "url": "https://www.amazon.com/dp/B0C3DLYY46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 45.45,
+          "newPrice": 45.42,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CFQGPZRT",
+          "title": "Puma Unisex-Child, Rebound Layup Synthetic Leather Hook and Loop, Puma Black-Puma Black, Little Kid 13",
+          "url": "https://www.amazon.com/dp/B0CFQGPZRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 42.9,
+          "newPrice": 43.23,
+          "oldPercentOff": 26,
+          "newPercentOff": 25,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.49,
+          "newPrice": 8.49,
+          "oldPercentOff": 26,
+          "newPercentOff": 50,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HDRBFNYF",
+          "title": "Charmin Toilet Paper Ultra Strong, 6 Mega Rolls = 24 Regular Rolls, 2-ply Bath Tissue",
+          "url": "https://www.amazon.com/dp/B0HDRBFNYF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.76,
+          "newPrice": 7.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0BJMMX1RV",
+          "title": "Gain Flings Laundry Detergent Pacs with Odor Defense, 112 Count, Super Fresh Blast Scent, HE 3in1 Detergent Pacs with Febreze and Oxi",
+          "url": "https://www.amazon.com/dp/B0BJMMX1RV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 17.18,
+          "newPrice": 27.98,
+          "oldPercentOff": 38,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0DJ1BM44B",
+          "title": "LEGO Minecraft The Armadillo Mine Expedition 21269 | Building Toy for Boys & Girls, Ages 8+, 247 Pieces, Minecraft Toy for Kids w/ 4 Figures, Pretend Play, Gift for Gamers",
+          "url": "https://www.amazon.com/dp/B0DJ1BM44B?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 23.95,
+          "newPrice": 29.6,
+          "oldPercentOff": 20,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0CQKNQ62N",
+          "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+          "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.84,
+          "newPrice": 11.28,
+          "oldPercentOff": 39,
+          "newPercentOff": 42,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B08DHH74JQ",
+          "title": "ASTRO Gaming Logitech G A20 Gen 2 Wireless Headset PlayStation - White/Blue | Compatible with PlayStation 5, PlayStation 4, PC, Mac",
+          "url": "https://www.amazon.com/dp/B08DHH74JQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 89,
+          "newPrice": 87.5,
+          "oldPercentOff": 26,
+          "newPercentOff": 27,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B09XF23WY2",
+          "title": "Lepro Clip on Desk Lamp, LED Reading Light with Clamp, 460LM 5W, Black | 3 Color Modes 10 Brightness, Dimmable, USB Small Desk Light with Gooseneck Swing Arm for Nail, Home Office and Dorm",
+          "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
+          "oldPrice": 15.33,
+          "newPrice": 15.09,
+          "oldPercentOff": 19,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00N1YPXW2",
+          "title": "Logitech Creators Blue Yeti USB Microphone for PC, Mac, Gaming, Recording, Streaming, Podcasting, Studio and Computer Condenser Mic with Blue VO!CE effects, 4 Pickup Patterns, Plug and Play - Blackout",
+          "url": "https://www.amazon.com/dp/B00N1YPXW2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 69.99,
+          "newPrice": 69.86,
+          "oldPercentOff": 50,
+          "newPercentOff": 50,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0D54QFW77",
+          "title": "Poppi Prebiotic Soda, Wild Berry, 12 Oz, 12 Pack | Prebiotic Soda, Sparkling Water & Fruit Juice, 5g Sugar",
+          "url": "https://www.amazon.com/dp/B0D54QFW77?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 10.64,
+          "newPrice": 22.56,
+          "oldPercentOff": 53,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
