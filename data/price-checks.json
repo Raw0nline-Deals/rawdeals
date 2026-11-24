@@ -2807,6 +2807,106 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-24T17:48:13.640Z",
+      "checked": 155,
+      "unchanged": 147,
+      "updated": 5,
+      "removed": 3,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0CFQGPZRT",
+          "title": "Puma Unisex-Child, Rebound Layup Synthetic Leather Hook and Loop, Puma Black-Puma Black, Little Kid 13",
+          "url": "https://www.amazon.com/dp/B0CFQGPZRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 43.23,
+          "newPrice": 40.6,
+          "oldPercentOff": 25,
+          "newPercentOff": 30,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B06XD2RSZR",
+          "title": "Ravensburger - Disney Pretty Princesses - 24 Piece Jigsaw Floor Puzzle - Belle, Cinderella, Ariel and Rapunzel in Bold, Bright Colors - Premium Quality - Ideal Gift - Screen-Free Fun - Children Age 3+",
+          "url": "https://www.amazon.com/dp/B06XD2RSZR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 13.99,
+          "newPrice": 19.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0DQYR6X8R",
+          "title": "Bounty Select-A-Size Paper Towels, White, 2 Triple Rolls = 6 Regular Rolls",
+          "url": "https://www.amazon.com/dp/B0DQYR6X8R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.99,
+          "newPrice": 6.97,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HMCWB6FZ",
+          "title": "COBEEK Ultrasonic Retainer Cleaner Machine, 52kHz Ultrasonic Denture Cleaner for Night Guards, Braces, Aligner, Toothbrush, Jewelry, Scaler Tips, Dental Cleaning Pod with Digital Timer & 250ML, White",
+          "url": "https://www.amazon.com/dp/B0HMCWB6FZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 37.98,
+          "newPrice": 34.99,
+          "oldPercentOff": 31,
+          "newPercentOff": 36,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0GH31VCJT",
+          "title": "Sodastream Pepsi, Starry & MTN Dew Variety Pack, Zero Sugar New Pour Bottle Drink Mix, for Sparkling Water Makers, Sugar Free Soda Syrup, Control Your Fizz with Sodastream Flavors, 3 x 14.9 Fl Oz (440ml) Makes about 72 Drinks Per Pack",
+          "url": "https://www.amazon.com/dp/B0GH31VCJT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 15.19,
+          "newPrice": 16,
+          "oldPercentOff": 25,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0C6Q1L59C",
+          "title": "Scrubby Soap by Dixie Belle Paint Co - Original Orange",
+          "url": "https://www.amazon.com/dp/B0C6Q1L59C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.04,
+          "newPrice": 14.99,
+          "oldPercentOff": 26,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0HF8193X3",
+          "title": "Bsahriy 100FT Permanent Outdoor Lights for House,Smart RGB+IC Eave LED Lighting,16 Million Colors, App/Remote Control,Music Sync,IP67 Outdoor Strip Lights for Christmas House Roof Party Holiday Decor",
+          "url": "https://www.amazon.com/dp/B0HF8193X3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 47.99,
+          "newPrice": 59.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B08GP28B4N",
+          "title": "Razer Seiren Mini - USB Condenser Microphone for Streaming (Compact with Supercardioid Polar Pattern, Tiltable Stand, Integrated Shock Absorber) Quartz Pink",
+          "url": "https://www.amazon.com/dp/B08GP28B4N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 51.6,
+          "newPrice": 51.61,
+          "oldPercentOff": 26,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
