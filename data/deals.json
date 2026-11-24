@@ -2,6 +2,381 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B01MXL3EOU",
+      "title": "FIFINE K669 Rose Red USB Microphone, Condenser Podcast Mic for Recording | PC Desk Microphone with Volume Knob Control, Metal Tripod Stand, USB Cable for Online Meeting, Streaming, Video Conferencing",
+      "image": "https://m.media-amazon.com/images/I/413769mg1rL._SL500_.jpg",
+      "price": 23.99,
+      "percentOff": 31,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B01MXL3EOU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 34.99,
+      "expires": "2026-12-01",
+      "features": [
+        "[Clear Audio Recording] With a frequency response of 20 Hz to 20 kHz and a signal-to-noise ratio of up to 78 dB, this USB microphone delivers consistently high-definition sound whether you're recording or in a meeting. Cardioid pickup pattern of podcast mic effectively reduces ambient noise from you",
+        "[Volume Knob Control] The volume knob on the condenser microphone lets you easily adjust the input level (turn left to decrease volume, turn right to increase volume, and turn fully left to mute). This intuitive knob eliminates the hassle of adjusting computer or sound card settings, making it simpl"
+      ]
+    },
+    {
+      "id": "B077KYT31Z",
+      "title": "Quaker Chewy Granola Bars, Peanut Butter Chocolate Chip, 58 Count",
+      "image": "https://m.media-amazon.com/images/I/51l9gvWtixS._SL500_.jpg",
+      "price": 12.27,
+      "percentOff": 23,
+      "category": "Food",
+      "url": "https://www.amazon.com/dp/B077KYT31Z?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 15.89,
+      "expires": "2026-11-28",
+      "features": [
+        "Includes 58 individually wrapped Chewy Granola Bars, Peanut Butter Chocolate Chip flavor",
+        "New Look. Same great taste. (Packaging may vary)"
+      ]
+    },
+    {
+      "id": "B0H7886JGQ",
+      "title": "Alpine Swiss Walter Mens Golf Shorts 8.5” Inseam Hybrid Dress Shorts Lightweight Quick Dry Chino Shorts Casual BLK 32",
+      "image": "https://m.media-amazon.com/images/I/31BmcfIVzZL._SL500_.jpg",
+      "price": 23.99,
+      "percentOff": 52,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0H7886JGQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 50,
+      "expires": "2026-12-01",
+      "features": [
+        "PREMIUM HYBRID PERFORMANCE: The Walter shorts deliver the sharp, tailored look of high-end cotton chinos with the secret comfort of athletic wear. Crafted from a premium 185 GSM blend of 79% Nylon and 21% Spandex, this lightweight, moisture-wicking fabric features a deep matte finish that looks 100%",
+        "HIDDEN FLEX-WAISTBAND: Get a perfectly tailored, flat-front look with zero compromise on comfort. We built a premium, wide 1.75-inch elastic backing into the waist that provides the hidden stretch and all-day comfort of your favorite lounge shorts. The specialized interior waistband lining also prov"
+      ]
+    },
+    {
+      "id": "B0D1YFJS7M",
+      "title": "Nike Men's Cortez Sneakers, White/Varsity Red/Varsity Blue, 9.5 Medium US",
+      "image": "https://m.media-amazon.com/images/I/31qyTB+nMQL._SL500_.jpg",
+      "price": 66.5,
+      "percentOff": 30,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0D1YFJS7M?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 95,
+      "features": [
+        "Rubber",
+        "Contrast trim"
+      ]
+    },
+    {
+      "id": "B0HLFB7KHB",
+      "title": "Kids Smart Watch with 32 Puzzle Games, Camera & Video Recording/Flashlight | 1.75\" Touch Screen with Music Player, Pedometer, Alarm Clock,Stopwatch, Smart Watches for Kids Ages 4-12",
+      "image": "https://m.media-amazon.com/images/I/51n29dtaRlL._SL500_.jpg",
+      "price": 25.99,
+      "percentOff": 80,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HLFB7KHB?tag=eddie060-20",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 129.95,
+      "expires": "2026-12-01",
+      "features": [
+        "【Easy to Use for Kids】Kids Smart Watch for Ages 4-12 – Designed with a 1.75\" TFT full-touch HD screen and an all-in-one design. No Wi-Fi, No SIM card, and No App download required. Just turn it on and it's ready to use. Kids can operate it independently with ease, giving parents peace of mind. The w",
+        "【32 Puzzle Games】This fun kids smartwatch comes loaded with 32 brain-boosting games that perfectly blend learning with play. Each game helps develop logical thinking, reaction time, and problem-solving skills while sparking creativity. Plus, unlike traditional watches, it includes a parent control f"
+      ],
+      "checkoutDiscount": true
+    },
+    {
+      "id": "B00NN8FM7C",
+      "title": "Kind Healthy Grains Granola, Peanut Butter Clusters, Gluten Free, Healthy Snack Mix, 10g Protein, 11oz, 6 Count",
+      "image": "https://m.media-amazon.com/images/I/51kC4abDAYL._SL500_.jpg",
+      "price": 24.82,
+      "percentOff": 22,
+      "category": "Food",
+      "url": "https://www.amazon.com/dp/B00NN8FM7C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 31.99,
+      "features": [
+        "Six 11 oz bags of KIND HEALTHY GRAINS Granola, Peanut Butter Clusters Protein",
+        "Gluten free snacks made with five super grains - oats, buckwheat, millet, amaranth and quinoa"
+      ]
+    },
+    {
+      "id": "B0D16JX7FJ",
+      "title": "Under Armour Men's Freedom Tech Big Flag Logo Shorts, 001 Black, LG",
+      "image": "https://m.media-amazon.com/images/I/3100opyHKCL._SL500_.jpg",
+      "price": 23.1,
+      "percentOff": 30,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0D16JX7FJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 33,
+      "features": [
+        "Regular Fit: Classic, right-down-the-middle fit: not too tight, not too loose.",
+        "UA Tech fabric is quick-drying, ultra-soft & has a more natural feel"
+      ]
+    },
+    {
+      "id": "B0FQN33B3R",
+      "title": "Nike Little Kids' Court Borough Mid 2 Shoes, White/Blue Crystal-Blue Crystal-White, 13C",
+      "image": "https://m.media-amazon.com/images/I/31NfCACBSPL._SL500_.jpg",
+      "price": 51.75,
+      "percentOff": 25,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0FQN33B3R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69,
+      "features": [
+        "Leather is durable and easy to clean.",
+        "Traditional laces provide a secure fit."
+      ]
+    },
+    {
+      "id": "B0H944NBMW",
+      "title": "Smart Watch for Women, 1.32'' AMOLED Clear Screen, Fitness Tracker | New Lightweight Women’s Smart Watch, Answer/Make Calls, Fitness Tracker with Heart Rate/Sleep/Step Counter,Gift for her, Pink",
+      "image": "https://m.media-amazon.com/images/I/41Vo91NVsHL._SL500_.jpg",
+      "price": 34.99,
+      "percentOff": 65,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0H944NBMW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "expires": "2026-11-28",
+      "features": [
+        "Ultra Thin & Super Lightweight Round Design: Tailored specifically for female wrist aesthetics, our 2026 upgraded women smart watch adopts an ultra-thin slim body and super lightweight design, completely different from those bulky and thick traditional smartwatches, bringing zero-burden all-day wear",
+        "Bluetooth Call & Message Notification: Equipped with upgraded Bluetooth 5.3 chip, this round smartwatch supports stable Bluetooth call function, enabling you to make and answer phone calls directly on the watch without holding your mobile phone, freeing your hands during driving, cooking, working an"
+      ]
+    },
+    {
+      "id": "B0FXQXRYV1",
+      "title": "Boy Swimming Trunks with Compress 10-12 Yellow Waffle Running Board Shorts | Boys Built-in Shorts With Pockets,Breathable Fabric,Sun protection Everyday Shorts",
+      "image": "https://m.media-amazon.com/images/I/51VqhV+ZQuL._SL500_.jpg",
+      "price": 14.99,
+      "percentOff": 25,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0FXQXRYV1?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Made to Daily Life: Our kids boards shorts are made to long useful. Swimming suits are quick dry. And drawstring not only looks stylish, but won’t easily loosen.",
+        "Comfortable Compress Liner: Our boys swim shorts use elasticity black compression layers. Bathing suits lining and ultra-soft, breathable and lightweight fabric to ensure boys comfort."
+      ]
+    },
+    {
+      "id": "B0FQN7YKKT",
+      "title": "Nike Little Kids' Court Legacy Shoes, Black Spruce/Off White-Steam-White, 13C",
+      "image": "https://m.media-amazon.com/images/I/31l9Pf4d95L._SL500_.jpg",
+      "price": 35.25,
+      "percentOff": 25,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0FQN7YKKT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 47,
+      "expires": "2026-12-16",
+      "features": [
+        "Durable leather has classic tennis style.",
+        "The rubber sole with herringbone pattern provides traction and heritage looks."
+      ]
+    },
+    {
+      "id": "B0HPRZDZ53",
+      "title": "Fitness Tracker, Smart Watch for Women Men with 24/7 Heart Rate/Blood Pressure/Blood Oxygen Monitor,Sleep Tracker,Step & Calorie Counter, IP68 Waterproof Fitness Watches Compatible with Android&iPhone",
+      "image": "https://m.media-amazon.com/images/I/41BFipQ3y8L._SL500_.jpg",
+      "price": 39.99,
+      "percentOff": 60,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HPRZDZ53?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Health & Lifestyle Management】Stay on top of your health with 24/7 real-time tracking of heart rate, blood oxygen, and sleep patterns. Get in-depth sleep analysis and personalized reports to improve your sleep quality. Additional smart features include weather updates, hydration and sedentary remin",
+        "【1.47\" Touchscreen & 200+ Dials】Enjoy a crystal-clear 1.47-inch TFT display with brilliant clarity and responsive touch control. The GloryFit app offers over 200 stylish watch faces, plus the option to upload your own photo for a personalized look. This feature-rich display seamlessly combines advan"
+      ]
+    },
+    {
+      "id": "B0CT39LH7W",
+      "title": "Aueyan Mens Swim Trunks with Compression Liner Funny Swimming Trunks for Men Duck Beach Shorts Men's Swimwear 5 Inch Inseam Board Shorts Fun Graphic Swimsuit Young Man Teens Boys Swimsuit,Large",
+      "image": "https://m.media-amazon.com/images/I/41GDpQblF4L._SL500_.jpg",
+      "price": 22.39,
+      "percentOff": 20,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0CT39LH7W?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 27.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Mens Swim Trunks with COMPRESSION LINER: 2 in 1 mens swimsuit trunks with built in boxer brief liner,which has stretch,supportive to keep everything in place. The liner help keep sand out and prevent chafing,so comfortable for all day long wear,which is different from traditional mesh lining.",
+        "4 POCKETS: Men's swim trunks with pockets: 2 side zipper pockets,1 back pocket,1 pocket on leg of compression liner,total four pockets. It is very convenient for you to take the small items,phone,keys or cards etc,put them to the zippered pockets,or any other as you like."
+      ]
+    },
+    {
+      "id": "B0HHRY28DB",
+      "title": "Smart Watch for Women, 1.27\" HD Fitness Watch(Answer/Make Calls), 2 Bands | Compatible iPhone/Samsung/Android, 120+ Sport Modes smartwatch with heart rate, sleep tracker & step counter, 3ATM Waterproof",
+      "image": "https://m.media-amazon.com/images/I/513DZmSS-qL._SL500_.jpg",
+      "price": 45.59,
+      "percentOff": 54,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HHRY28DB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Calls & Message Notifications】Direct Bluetooth 5.3 calling—make and answer calls right from your wrist via the built-in speaker. Stay updated with real-time SMS and app alerts (Facebook, WhatsApp, Instagram) . (Note: Text reply not supported)",
+        "【24/7 Health & Sleep Monitor】Tensky smartwatch with 24/7 heart rate and sleep monitoring. Tracks deep, light, and REM sleep stages synced via the VeryFit App."
+      ]
+    },
+    {
+      "id": "B0F5H3XCFP",
+      "title": "Nike Men's Club Fleece Shorts, Black/Black/White, Large",
+      "image": "https://m.media-amazon.com/images/I/31mFOwV9DFL._SL500_.jpg",
+      "price": 40,
+      "percentOff": 20,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0F5H3XCFP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 50,
+      "expires": "2026-12-16",
+      "features": [
+        "Clean meets casual with these classic shorts. Our midweight brushed fleece feels extra soft on the inside and smooth on the outside.",
+        "An elastic waistband and external drawcord deliver a comfortable, custom fit at your waist."
+      ]
+    },
+    {
+      "id": "B0HPF7VVR9",
+      "title": "QISUKUS Smart Watch Built-in Alexa, Answer & Make Calls, 1.83\" Fitness Watch IP68 Waterproof, Heart Rate, Sleep & Stress Monitor, Step Counter Smartwatch for Women Men, Compatible with Android iOS",
+      "image": "https://m.media-amazon.com/images/I/41VZM6ayk4L._SL500_.jpg",
+      "price": 45.99,
+      "percentOff": 54,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HPF7VVR9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "features": [
+        "[Built-in Alexa & Hands-free Calling] This smart watch features built-in Alexa for convenient hands-free control. Tap the screen or press the button to activate Alexa to set alarms, play music, check weather and operate smart home devices. It supports making and receiving calls directly on your wris",
+        "[24/7 All-Round Health Monitoring] Monitor your real-time heart rate, SpO2, stress level and sleep quality around the clock. It provides breathing exercises to relieve stress and detailed sleep analysis. Additional practical functions include menstrual cycle tracking, water intake reminders and sede"
+      ]
+    },
+    {
+      "id": "B0GKP754VG",
+      "title": "westwolf Swim Trunks for Little Boy Kid Swim Shorts Compress Baseball Bathing Suits Size 8-9",
+      "image": "https://m.media-amazon.com/images/I/51BUFhENmAL._SL500_.jpg",
+      "price": 19.99,
+      "percentOff": 20,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0GKP754VG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 24.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Made to Daily Life: Our kids boards shorts are made to long useful. Swimming suits are quick dry. And drawstring not only looks stylish, but won’t easily loosen.",
+        "Comfortable Compress Liner: Our boys swim shorts use elasticity black compression layers. Bathing suits lining and ultra-soft, breathable and lightweight fabric to ensure boys comfort."
+      ]
+    },
+    {
+      "id": "B0HDSMB23G",
+      "title": "Smart Watches for Women, 1.27\" HD Fitness Watch for iPhone Samsung Android | Answer/Make Calls, 120+ Sport Modes Fitness Tracker with Heart Rate/Sleep/Stress Monitor, 3ATM Waterproof, 2 Bands Smartwatch",
+      "image": "https://m.media-amazon.com/images/I/41awV3aruoL._SL500_.jpg",
+      "price": 46.54,
+      "percentOff": 53,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HDSMB23G?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 99.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Upgraded Bluetooth 5.3, Crystal‑Clear Communication】The Gydom smart watch features high‑definition speakers and microphones for crisp call audio. Equipped with a built‑in AI assistant, it supports seamless voice commands and convenient hands‑free calling. Get instant alerts for SMS and apps like Fa",
+        "【Comprehensive Health Monitoring】The smart watch monitors key wellness metrics 24/7 (CE/FCC certified for accuracy) including heart rate, stress levels and sleep patterns. Gain actionable insights to help you better manage your daily physical well‑being. Ideal as a thoughtful gift for Mother’s Day,"
+      ]
+    },
+    {
+      "id": "B01GH0ZJMU",
+      "title": "Columbia Youth Boys' Backcast Short, Breathable, UPF 50 Sun Protection",
+      "image": "https://m.media-amazon.com/images/I/41UyvDFSltL._SL500_.jpg",
+      "price": 15.84,
+      "percentOff": 37,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B01GH0ZJMU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 25,
+      "features": [
+        "ADVANCED TECHNOLOGY: Columbia Youth Boys' PFG Backcast Short features our signature UPF 50 fabric for protection against harmful UVA and UVB rays and skin damage.",
+        "HANDY FEATURES: These boys' fishing shorts feature two side pockets to keep your little one's small items."
+      ]
+    },
+    {
+      "id": "B0HR7WKLLR",
+      "title": "Smart Watch for Women Android/iPhone: Fitness Tracker Smart Watches Rose Gold IP68 Waterproof Bluetooth Calls Answer&Make 1.85\" Smartwatch Activity Pedometer Heart Rate SpO2 Monitor 120+ Sports Model",
+      "image": "https://m.media-amazon.com/images/I/51CxjC9lrnL._SL500_.jpg",
+      "price": 26.39,
+      "percentOff": 20,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HR7WKLLR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-24",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 32.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Bluetooth Calling and Message Notifications Smartwatch for Women: The smart watch with text and call womens watches features speaker and microphone, enabling you to answer make and reject calls on ladies watch. When you receive calls, texts, or SNS notifications (Facebook, WhatsApp, etc.), the smart",
+        "All-Day Heart Rate Monitor Watch & Sleep Monitoring Rose Gold Watches: The fitness watches for women sports watch features advanced sport optical sensors and cutting-edge measurement technology to track your heart rate, smartwatch for teenagers fitness tracker watch for women helping you gain insigh"
+      ]
+    },
+    {
       "id": "B0C74GYW3J",
       "title": "FIFINE AmpliGame AM8T XLR/USB Gaming Microphone Set, Dynamic PC Mic | Streaming RGB Mic Kit with Boom Arm Stand, Mute Button, Headphones Jack, for Podcasting Recording Vocal Voice-Over",
       "image": "https://m.media-amazon.com/images/I/41rKkw3TT2L._SL500_.jpg",
@@ -18,8 +393,7 @@
         "USB/XLR Connectivity-AM8T comes with a dynamic microphone and a boom arm stand. Versatile PC gaming microphone kit with USB compatibility plug and play for PC in streaming or recording, without additional drivers. And also, while in XLR compatibility for mixer or sound card connection, the XLR studi",
         "Vibrant RGB Light-The streaming microphone RGB illuminates your gaming setup with customizable RGB lighting for a visually stunning game experience. You can easily control the RGB mode/colors or turn off by simply tapping the RGB button without making any complicated settings on specific software."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0B4YYZZR5",
@@ -115,8 +489,7 @@
       "features": [
         "SELECTABLE PICKUP PATTERN: The pro broadcast mic starter kit features a 4-in-1 polar pattern selector which allows you to select from cardioid, bidirectional, stereo & omnidirectional. Equipped w/ headphone jack & adjustable headphone/mic volume/gain",
         "FULL METAL ALLOY BODY: Features a full metal alloy body. Includes metal tripod mic stand w/ angle adjustment & 5.9' detachable USB cable. Easy to connect w/ computer, no extra driver/software needed. Perfect for online performances, voice-overs, etc"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0DGB2GPCZ",
@@ -391,8 +764,7 @@
         "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
         "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0035BTQ06",
@@ -430,8 +802,7 @@
       "features": [
         "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
         "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0788MGJ31",
@@ -764,8 +1135,7 @@
       "features": [
         "PLANO PLASTIC STORAGE SHELVES: Organize your home, closet, garage, laundry room or office with Plano heavy-duty Shelving Units.",
         "200LB STORAGE CAPACITY: Each of the 4 plastic shelves has a maximum weight capacity of 50lbs. The full shelving unit can easily accommodate up to 200lbs of total weight."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0HLL8FK69",
@@ -785,8 +1155,7 @@
         "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
         "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B079D72S2B",
@@ -1199,8 +1568,7 @@
         "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
         "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B00023IXDQ",
@@ -1296,8 +1664,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B074YPSTRP",
@@ -1414,8 +1781,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0DSGRL3RP",
@@ -1455,8 +1821,7 @@
         "IMMERSIVE 3D GAMING AUDIO: Fachixy VK81 wireless gaming headset delivers powerful 3D stereo sound with deep bass, clear mids, and crisp highs. Hear footsteps, reloads, and environmental details precisely, improving reaction time and enhancing immersion for FPS, RPG, or open-world games on for PS5, P",
         "VERSATILE MULTI-DEVICE CONNECTIVITY: Switch seamlessly between 2.4GHz wireless (USB/Type-C) for PC, PS5, PS4, Mac, Laptops, and Switch, or Bluetooth 5.4 for mobile devices. Ensure lag-free gaming on consoles and enjoy easy mobile audio streaming. Not compatible with Xbox consoles."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0C7QDW1M4",
@@ -1496,8 +1861,7 @@
         "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
         "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0DJ7DFX93",
@@ -1537,8 +1901,7 @@
         "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
         "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0C5DCRRN7",
@@ -1558,8 +1921,7 @@
         "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
         "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B07V4F7ZZ5",
@@ -1579,8 +1941,7 @@
         "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
         "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0HGR4SDYC",
@@ -1600,8 +1961,7 @@
         "Zero-Latency Audio for Competitive Edge: Dominate your matches with the AOC wireless gaming headset. Featuring ultra-fast 2.4GHz lossless technology (≤20ms latency), this ps5 headset ensures your audio is always perfectly synced with the action. Tuned 50mm drivers deliver clear gaming sound for foot",
         "Crystal-Clear Squad Communication: Coordinate strategies flawlessly using the detachable, omni-directional noise-canceling microphone. Whether you are gaming in a lively dorm room or a busy living room, this ps5 headset wireless filters out background distractions, transmitting your voice with absol"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B07C4Y1XM5",
@@ -1621,8 +1981,7 @@
         "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
         "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B07W549S56",
@@ -1642,8 +2001,7 @@
         "【RGB LED lights】KAFRI RBG Headphone Stand can display 9 lighting effects modes, up to 16.8 million colors to creat an amazing gaming atmosphere at your preference. that can be selected merely by pressing a Touch switch. Great gifts for Son, boy, Men, husband and boyfriend.",
         "【10W Qi Wireless Charger】Say goodbye to tangled wires and messing cables, just place your phone on fast charger pad. no cables or USB interface required. Charger compatible with Apple iPhone XS Max,XR,XS, X, iPhone 8/8 Plus, Samsung Galaxy S9/S9 Plus, Note 8, S8/S8 Plus, and other Qi-enabled cell ph"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0BJ72M77L",
@@ -1663,8 +2021,7 @@
         "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
         "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0C46CS37H",
@@ -1684,8 +2041,7 @@
         "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
         "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0BV4F17CS",
@@ -1704,8 +2060,7 @@
       "features": [
         "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
         "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B09241VBTP",
@@ -1729,7 +2084,7 @@
     },
     {
       "id": "B08DHH74JQ",
-      "title": "ASTRO Gaming Logitech G A20 Gen 2 Wireless Headset PlayStation - White/Blue | Compatible with PlayStation 5, PlayStation 4, PC, Mac",
+      "title": "Logitech G ASTRO Gaming A20 Gen 2 Wireless Headset PlayStation - White/Blue | Compatible with PlayStation 5, PlayStation 4, PC, Mac",
       "image": "https://m.media-amazon.com/images/I/41RFDLcL4fL._SL500_.jpg",
       "price": 87.5,
       "percentOff": 27,
@@ -1743,8 +2098,7 @@
       "features": [
         "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
         "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0BBVY9L7C",
@@ -1763,8 +2117,7 @@
       "features": [
         "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
         "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B07DTTGZ7M",
@@ -1782,8 +2135,7 @@
       "features": [
         "Legendary Blue broadcast sound: Yeti Nano features 2 custom mic capsules to give your voice exceptional presence and detail for professional-level recording and streaming",
         "Blue VO!CE software: Elevate your streamings and recordings with clear broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0D458QDVN",
@@ -1802,8 +2154,7 @@
       "features": [
         "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
         "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0FY2R5R8X",
@@ -1821,8 +2172,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -1840,8 +2190,7 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
@@ -1859,8 +2208,7 @@
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -1878,8 +2226,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0CV3NW398",
@@ -1920,8 +2267,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0F3CQJZRQ",
@@ -1960,8 +2306,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0HFJ8TLN1",
@@ -2179,8 +2524,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0D8SX6XYB",
@@ -2219,8 +2563,7 @@
       "features": [
         "IMPROVED EXPERIENCE - The cardioid streaming mic with pop filter is excellent to eliminate background noise and pick up a clean tone in your voice. Benefits from the premium mic capsule and the wide response range, the usb vocal mic offers a good balance of bass and treble which will keep the sound",
         "ADJUSTABLE ARM STAND - The pc microphone with stand is sturdy and easily swivels in any orientation. The mic and accessories will not going to get in your way to have a successful podcast, and less likely to pick up thumps from desktop or keyboard. You could tightly mount the condenser recording mic"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B07SX9XP83",
@@ -2258,8 +2601,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0HPL68PVF",
@@ -2454,221 +2796,10 @@
       "lastChecked": "2026-11-24T02:51:13.704Z"
     },
     {
-      "id": "B01JCNEJVQ",
-      "title": "Rubbermaid Brilliance Plastic Leak-Proof Food Storage Container, 9.6-Cup | Airtight and Leakproof, 9.6 Cup Capacity, Shatter-Resistant and Durable, Splatter-Free Microwaving",
-      "image": "https://m.media-amazon.com/images/I/41ISGlBo1aL._SL500_.jpg",
-      "price": 9.99,
-      "percentOff": 30,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B01JCNEJVQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 14.34,
-      "expires": "2026-12-01",
-      "features": [
-        "The Brilliance Food Storage Container from Rubbermaid is a convenient way to store and heat leftovers",
-        "Leak-proof design"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0BSVXMGG8",
-      "title": "REDCON1 Total War Ready to Drink Pre Workout | Tiger’s Blood | 365mg Caffeine + Citrulline Malate + Beta Alanine | Zero Sugar (12 Pack)",
-      "image": "https://m.media-amazon.com/images/I/41xoSPULPNL._SL500_.jpg",
-      "price": 29.99,
-      "percentOff": 33,
-      "category": "Drinks",
-      "url": "https://www.amazon.com/dp/B0BSVXMGG8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 44.99,
-      "features": [
-        "Total War Preworkout for Men & Women - Formulated with amino acid beta alanine to enhance muscular endurance and reduce exhaustion. Total War preworkout delivers rapid, fast-acting power & focus for a transformative workout you didn't think was possible.",
-        "Unstoppable Power - This award-winning pre workout contains 350mg of active caffeine with 300mg of caffeine anhydrous, a dehydrated form that promotes alertness and wakefulness + 100mg of di-caffeine malate, which slows the release to help you dominate even your most challenging workouts."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0752ZJ5LF",
-      "title": "Rubbermaid Brilliance 16-Cup Airtight Food Storage Container with Lid Clear/Grey - optimal for pantry organization flour sugar and food storage",
-      "image": "https://m.media-amazon.com/images/I/31CeUbQl7oL._SL500_.jpg",
-      "price": 13.99,
-      "percentOff": 30,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0752ZJ5LF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 19.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Modular Design: Rubbermaid Storage Containers are compact and stackable, optimizing your kitchen storage space.",
-        "High Capacity: With a 16-cup volume, it is perfect for maintaining large quantities of flour, sugar, and other baking ingredients."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0DGF616XN",
-      "title": "6 Pack Extra Heavy Duty Large Moving Bags with Strong Zipper, Dark Blue | Comfortable Handles, Sturdy & Durable Clothes Storage Bags Totes Bins, Blue Packing Moving Boxes for College Supplies",
-      "image": "https://m.media-amazon.com/images/I/41D8Mks69aL._SL500_.jpg",
-      "price": 22.78,
-      "percentOff": 38,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0DGF616XN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 36.99,
-      "features": [
-        "【Extra Heavy Duty】Made of upgraded 180 GMS extra thick coated PE fabric, Fygrip moving bags with fully wrap around handles, strong zipper and reinforced stitching promise to safely hold more than 65 lbs loading.",
-        "【Extra Large Capacity】Sized at 29\"L x 14\"W x 13\"H, these extra large storage bags offers more than 23 gallon volume, perfect packing bags for the moving of college student."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0G5D28PBS",
-      "title": "Hikiko 5FT Dog Leash Padded Double Handle with Designed Pattern | Heavy Duty Traffic Handle Extra Control,Special Navy Blue Pink Flower,360° Rotating Clasp,for Medium Large Dog",
-      "image": "https://m.media-amazon.com/images/I/41qT4spvnkL._SL500_.jpg",
-      "price": 6,
-      "percentOff": 43,
-      "category": "Pets",
-      "url": "https://www.amazon.com/dp/B0G5D28PBS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 10.49,
-      "features": [
-        "【Dual Handles Soft Padded】- Two neoprene padded handles ensure comfortable grip. The standard handle is suitable for relaxing walking. Traffic handle are suitable for providing quick and emergency control on sidewalks or crowded areas.",
-        "【Durable & Sturdy】- 5FT length, 1 inch width dog leash suitable for medium or large dogs. The nylon material of the double handle dog leash is sturdy, durable, soft and comfortable."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0FPZTCQWX",
-      "title": "Lattafa Mallow Madness Eau de Parfum Give Me Gourmand Collection, Sweet Gourmand Fragrance, Marshmallow & Vanilla, Spray Form, 75ml, Long-lasting",
-      "image": "https://m.media-amazon.com/images/I/31HFadW73PL._SL500_.jpg",
-      "price": 31.9,
-      "percentOff": 29,
-      "category": "Fragrances",
-      "url": "https://www.amazon.com/dp/B0FPZTCQWX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 44.99,
-      "features": [
-        "FRAGRANCE PROFILE: A gourmand delight featuring sweet toasted marshmallow, creamy vanilla, and delicate sugar notes for an indulgent experience.",
-        "SCENT COMPOSITION: Luxurious blend of marshmallow-inspired accords combined with rich vanilla and sweet gourmand elements."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0BC7ZY1ZY",
-      "title": "[8 Pack] Salad Dressing Container To Go, 2.4oz Small Condiment Containers with Leakproof Silicone Lids, Reusable Stainless Steel Sauce Cups for Lunch Bento Box, Picnic and Travel",
-      "image": "https://m.media-amazon.com/images/I/41--7DmsKrL._SL500_.jpg",
-      "price": 11.11,
-      "percentOff": 35,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B0BC7ZY1ZY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 16.99,
-      "features": [
-        "PORTABLE SIZE : Each features 2.6” x 1.7”. and 2.4oz(70ml). Perfect Size for packing sauces, salad dressings, peanut butter, jams, dressings, snacks, etc.",
-        "RELIABLE MATERIAL: The small containers with lids are made of high quality 18/8 stainless steel and food grade safe silicone, BPA free, non-toxic. It can completely replace disposable containers and avoid environmental pollution caused by them. Totally dishwasher and fridge safe."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0BJM1MXG5",
-      "title": "Tide Hygienic Clean Power PODS Laundry Detergent Pacs, Original Scent, 45 Count, Removes Visible and Invisible Dirt",
-      "image": "https://m.media-amazon.com/images/I/41nBBIPglkL._SL500_.jpg",
-      "price": 14.99,
-      "percentOff": 25,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0BJM1MXG5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 19.99,
-      "features": [
-        "TACKLES TOUGH, SET-IN STAINS: stain fighting, with the power of Hygienic Clean",
-        "DEEP, HYGIENIC CLEAN: Gets between fibers to clean the hidden dirt"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B08BL4CWNW",
-      "title": "SOPHICO 2 Cup Silicone Lids Replacement for Pyrex & Anchor Hocking 7200-PC | Food Grade Silicone, Leakproof、Airtight Lids, Dishwasher Microwave Safe(2 Pack)",
-      "image": "https://m.media-amazon.com/images/I/31k-IlyT4CL._SL500_.jpg",
-      "price": 9.99,
-      "percentOff": 23,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B08BL4CWNW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 12.99,
-      "features": [
-        "Silicone Cover for 2 cup Glass Round Storage Dish (Containers are NOT INCLUDED) Package included: 2 Pack",
-        "LEAK-PROOF DESIGN: provide an airtight and secure seal to lock in freshness. Tight fit reduces leakage. Mess-free, spill-free."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B087D6RB5Q",
-      "title": "Zulay Kitchen Glass Storage Containers with Lids, Premium BPA Free 36oz | 5 Piece Large Borosilicate Glass Food Storage Containers - Leak-Proof Meal Prep - Microwave, Freezer & Oven Safe - Gray",
-      "image": "https://m.media-amazon.com/images/I/51MJQMVlGGL._SL500_.jpg",
-      "price": 36,
-      "percentOff": 28,
-      "category": "Kitchen",
-      "url": "https://www.amazon.com/dp/B087D6RB5Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 49.99,
-      "features": [
-        "Glass food storage containers with lids: Replace your old and flimsy plastic containers that stain easily with the Zulay Kitchen glass meal prep containers. Made from high-quality borosilicate glass that is sturdy, durable, and aesthetically pleasing. It works great for storing leftovers, packing lu",
-        "Premium Borosilicate Glass Food Storage Containers: Featuring a 100% BPA free thick glass that can withstand heat up to 600 degrees Fahrenheit making this glass container best for microwave, oven and freezer. Package comes with 5 rectangular container pieces with 36oz capacity that is perfect for pa"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
-      "id": "B0B1PGR1LZ",
-      "title": "Tide PODS Laundry Detergent Soap with Ultra Oxi 4-in-1 Detergent, 85 Count, Built-in Pre-Treaters, Set-in Stains, Color Protectors, HE Compatible",
-      "image": "https://m.media-amazon.com/images/I/41GCZthQ1tL._SL500_.jpg",
-      "price": 21.24,
-      "percentOff": 23,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0B1PGR1LZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-17",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 27.49,
-      "features": [
-        "TIDE PODS + ULTRA OXI POWER: Unleash Tide PODS laundry detergent with added Ultra Oxi set-in stain fighting power",
-        "4-IN-1 VALUE LAUNDRY SOAP: Tide Detergent PODS with Ultra Oxi are pre-measured, concentrated laundry detergent pacs with built-in pre-treaters, stain removers, and color protectors"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
-    },
-    {
       "id": "B0FP1TRW4L",
       "title": "HyperX Cloud III Wired Gaming Headset for PC, PS5, Xbox Series X | S | USB-C + USB-A + 3.5mm Connectivity | 53mm Drivers | Ultra-Clear 10mm Mic | Memory Foam | Durable Frame",
       "image": "https://m.media-amazon.com/images/I/31De+0rOPaL._SL500_.jpg",
-      "price": 67,
+      "price": 67.11,
       "percentOff": 33,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -2681,8 +2812,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0H6L14J6D",
@@ -2763,8 +2893,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2783,8 +2912,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2803,8 +2931,7 @@
       "features": [
         "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
         "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0HP6VQLZ5",
@@ -2842,8 +2969,7 @@
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
@@ -2860,8 +2986,7 @@
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2878,8 +3003,7 @@
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-24T02:51:13.704Z"
+      ]
     }
   ]
 }
