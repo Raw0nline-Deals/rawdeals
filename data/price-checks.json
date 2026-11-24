@@ -2907,6 +2907,62 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-24T20:43:21.040Z",
+      "checked": 152,
+      "unchanged": 148,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B01BDI8HBG",
+          "title": "Ferrero Collection Premium Chocolate Candy Assortment of Hazelnut, Dark Chocolate and Coconut, 32 Count Holiday Gift Box, 12.7 oz",
+          "url": "https://www.amazon.com/dp/B01BDI8HBG?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.69,
+          "newPrice": null,
+          "oldPercentOff": 27,
+          "newPercentOff": null,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0C3DLYY46",
+          "title": "Puma Kids' Caven 2.0 Puma White-Puma Silver-Puma Black Big Kid 4.5",
+          "url": "https://www.amazon.com/dp/B0C3DLYY46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 32.99,
+          "newPrice": 40.62,
+          "oldPercentOff": 48,
+          "newPercentOff": 36,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.49,
+          "newPrice": 12.49,
+          "oldPercentOff": 50,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0GH31VCJT",
+          "title": "Sodastream Pepsi, Starry & MTN Dew Variety Pack, Zero Sugar New Pour Bottle Drink Mix, for Sparkling Water Makers, Sugar Free Soda Syrup, Control Your Fizz with Sodastream Flavors, 3 x 14.9 Fl Oz (440ml) Makes about 72 Drinks Per Pack",
+          "url": "https://www.amazon.com/dp/B0GH31VCJT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 16,
+          "newPrice": 16,
+          "oldPercentOff": 21,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
