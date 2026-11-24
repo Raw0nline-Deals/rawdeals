@@ -2751,6 +2751,62 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-24T02:51:13.704Z",
+      "checked": 147,
+      "unchanged": 143,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.49,
+          "newPrice": 8.49,
+          "oldPercentOff": 26,
+          "newPercentOff": 50,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CQKNQ62N",
+          "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+          "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.28,
+          "newPrice": 11.84,
+          "oldPercentOff": 42,
+          "newPercentOff": 39,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0FNF8WK62",
+          "title": "Issey Miyake L'Eau d'Issey Eau de Toilette Holiday Fragrance Set for Women - Includes Eau de Toilette (100 mL), Moisturizing Body Lotion (50 mL) & Eau de Toilette Purse Spray (10 mL)",
+          "url": "https://www.amazon.com/dp/B0FNF8WK62?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 93.09,
+          "newPrice": null,
+          "oldPercentOff": 34,
+          "newPercentOff": null,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B09XF23WY2",
+          "title": "Lepro Clip on Desk Lamp, LED Reading Light with Clamp, 460LM 5W, Black | 3 Color Modes 10 Brightness, Dimmable, USB Small Desk Light with Gooseneck Swing Arm for Nail, Home Office and Dorm",
+          "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
+          "oldPrice": 15.09,
+          "newPrice": 15.33,
+          "oldPercentOff": 21,
+          "newPercentOff": 19,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
