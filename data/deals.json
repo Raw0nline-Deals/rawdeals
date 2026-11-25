@@ -2,6 +2,376 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0CTJ6GQGZ",
+      "title": "Shure MV7+ USB-C & XLR Podcast Dynamic Microphone - White | USB-C and XLR dynamic mic with LED touch panel, auto level and pop filter for podcasting, streaming and recording",
+      "image": "https://m.media-amazon.com/images/I/31twBC8hiiL._SL500_.jpg",
+      "price": 225,
+      "percentOff": 25,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CTJ6GQGZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 299,
+      "features": [
+        "OBS-CERTIFIED FOR CREATION: Certified for Open Broadcaster Software, the Shure MV7+ delivers professional audio for podcasting, streaming, and recording, with advanced DSP and Voice Isolation Technology that keeps your voice clear and present",
+        "CUSTOMIZABLE LED TOUCH PANEL: Personalize your setup with a full-color LED touch panel featuring 16.8 million color options, real-time level monitoring, and tap-to-mute control—ideal for livestreams, video calls, and on-camera podcasting"
+      ]
+    },
+    {
+      "id": "B0H98HGMYX",
+      "title": "Heated Vest for Men Women with 16000mAh Battery Pack, 6 Heating Zones | 3 Heating Levels Men's Heated Vest, Lightweight Heated Jackets for Winter, Hunting, Fishing, Cycling, Hiking",
+      "image": "https://m.media-amazon.com/images/I/414tW27CbpL._SL500_.jpg",
+      "price": 69.98,
+      "percentOff": 46,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0H98HGMYX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 129.99,
+      "expires": "2026-12-01",
+      "features": [
+        "6 Heating Zones for Precise Core Warmth: TNELTUEB heated vest features a 6-zone targeted heating design, with carbon fiber heating panels at the back of the neck, both front shoulders, the upper back, and both pockets. It delivers steady, even warmth exactly where your body gets cold first, keeping",
+        "Long-Lasting 16000mAh Battery: This heated vest with battery pack included features a 16000mAh rechargeable battery with 5V/2A output. It delivers up to 12 hours of warmth on Low, 7 hours on Medium, and 4 hours on High. Built with multi-layer safety protections, it provides stable power for all-day"
+      ]
+    },
+    {
+      "id": "B0BHPSTJZ8",
+      "title": "adidas Men's Daily 3.0 Skate Shoe, Grey One/Grey One/Lucid Lemon, 7.5",
+      "image": "https://m.media-amazon.com/images/I/31tAoFnncRL._SL500_.jpg",
+      "price": 39.95,
+      "percentOff": 39,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0BHPSTJZ8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 65,
+      "features": [
+        "Men's casual skate-inspired sneakers for every day",
+        "SNUG FIT: Classic lace closure for snug fit"
+      ]
+    },
+    {
+      "id": "B0HGLLJ4VC",
+      "title": "4K Webcam for PC Laptop Mac, Dual Noise-Reducing Mics, Usb Web Camera | Autofocus, Privacy Cover, Auto Light Correction, USB-A to USB-C Adapter, Plug and Play, 72° FOV, for Meetings and Streaming",
+      "image": "https://m.media-amazon.com/images/I/41fcSd9+3lL._SL500_.jpg",
+      "price": 25.49,
+      "percentOff": 49,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HGLLJ4VC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "expires": "2026-12-01",
+      "features": [
+        "True 4K UHD Video: This 4K webcam for PC features a 1/2-inch sensor and 8MP resolution, delivering four times the pixels of 1080p. The 72° field of view provides focused framing for video meetings and YouTube content creation.",
+        "Fast PDAF Autofocus: Keep faces and products sharp as you move or bring items closer. This autofocus web cam makes it easy to switch between video calls, online teaching and close-up product demonstrations."
+      ]
+    },
+    {
+      "id": "B00AJ32VZU",
+      "title": "Columbia Youth Boys Steens Mt II Fleece, Black, Small | Steens Mountain II Fleece Jacket keeps kids warm, comfortable, and ready for chilly outdoor adventures",
+      "image": "https://m.media-amazon.com/images/I/41hytfl4zHL._SL500_.jpg",
+      "price": 24.99,
+      "percentOff": 44,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B00AJ32VZU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 45,
+      "features": [
+        "FLEECE COMFORT: The Columbia Youth Steens Mt Fleece Jacket is crafted from our deep 250g MTR filament fleece for the perfect amount of warmth",
+        "VERSATILE LAYER: This full-zip fleece jacket is the perfect addition to his everyday wear—whether worn alone or as an extra layer"
+      ]
+    },
+    {
+      "id": "B0DJTQC5LQ",
+      "title": "adidas Unisex-Kids Adizero Instinct 2.0 Molded Rubber Softball, White/Black/Black, 10",
+      "image": "https://m.media-amazon.com/images/I/317oaLAIuLL._SL500_.jpg",
+      "price": 22.21,
+      "percentOff": 37,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0DJTQC5LQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 35,
+      "expires": "2026-12-01",
+      "features": [
+        "adidas Unisex-Kids adiZero Instinct 2.0 Molded Rubber Softball"
+      ]
+    },
+    {
+      "id": "B01LXCDPPK",
+      "title": "Logitech C922x HD Pro PC Webcam, Full HD 1080p/30fps or 720p/60fps Video, HD Light Correction, Works with Microsoft Teams, Google Meet, Zoom, Nintendo Switch 2’s new GameChat mode, Mac/Tablet- Black",
+      "image": "https://m.media-amazon.com/images/I/31WoC57WDPL._SL500_.jpg",
+      "price": 74.99,
+      "percentOff": 38,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B01LXCDPPK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 119.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Compatible with Nintendo Switch 2’s new GameChat mode",
+        "HD lighting adjustment and autofocus: The Logitech webcam automatically fine-tunes the lighting, producing bright, razor-sharp images even in low-light settings. This makes it a great webcam for streaming and an ideal web camera for laptop use"
+      ]
+    },
+    {
+      "id": "B0F5JQ9PTS",
+      "title": "Amazon Essentials Boys' Water Resistant Ski Winter Jacket, Bright Poppy Red, 4T",
+      "image": "https://m.media-amazon.com/images/I/41zLXtx+LnL._SL500_.jpg",
+      "price": 28.8,
+      "percentOff": 37,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0F5JQ9PTS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 45.7,
+      "expires": "2026-12-01",
+      "features": [
+        "RELAXED FIT: Relaxed, comfortable fit through the body",
+        "LENGTH: 19 1/2\" from side neck on US size 3T; 25 1/2\" on US size Medium"
+      ]
+    },
+    {
+      "id": "B09KMH22T4",
+      "title": "adidas Kids Grand Court 2.0 Tennis Shoe - Unisex-Child Sneakers",
+      "image": "https://m.media-amazon.com/images/I/31IY7tPZuFL._SL500_.jpg",
+      "price": 37.63,
+      "percentOff": 32,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B09KMH22T4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 55,
+      "features": [
+        "Kids' casual shoes for active all-day comfort",
+        "SYNTHETIC LEATHER UPPER: Lightweight PU leather upper has a leather-like look and feel"
+      ]
+    },
+    {
+      "id": "B0DM5YP22D",
+      "title": "Insta360 Link 2 - PTZ 4K Webcam for PC/Mac, 1/2\" Sensor, AI Tracking, HDR, Streaming Computer Camera with AI Noise-Canceling Mic and Gesture Control for Video Calls, Gaming, Works with Zoom and Teams",
+      "image": "https://m.media-amazon.com/images/I/31q9st-QxJL._SL500_.jpg",
+      "price": 149.99,
+      "percentOff": 25,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0DM5YP22D?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 199.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Premium Image Quality: Capture every detail with an impressive 1/2\" sensor, balanced, true-to-life 4K visuals with HDR and exceptional low light performance for quality videos in any light.",
+        "Professional Audio: Experience best-in-class audio with advanced AI noise-canceling algorithms. Filter out unwanted background noise for clear communication, even in busy environments."
+      ]
+    },
+    {
+      "id": "B0H2ZWNSWK",
+      "title": "adidas Boys Fleece Hooded Pullover | Wonder Alumina, Size S(8), Active Hoodies, side pockets, relaxed fit, ribbed cuffs, logo detail",
+      "image": "https://m.media-amazon.com/images/I/31V1PzhAfSL._SL500_.jpg",
+      "price": 30.3,
+      "percentOff": 33,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0H2ZWNSWK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 45,
+      "expires": "2026-12-01",
+      "features": [
+        "CLASSIC STYLE: This boys pullover hoodie features a bold logo graphic and classic sweatshirt styling, making it a go-to fleece hoodie for casual wear or school.",
+        "COMFORTABLE FIT: Designed with a regular fit, this boys sweatshirt offers the perfect balance between loose and snug for everyday comfort."
+      ]
+    },
+    {
+      "id": "B0CPS9WZ68",
+      "title": "adidas Womens Crazychaos 2000 Running Sneakers Shoes - Off White - Size 10 M",
+      "image": "https://m.media-amazon.com/images/I/31ldJdML7sL._SL500_.jpg",
+      "price": 34.95,
+      "percentOff": 29,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0CPS9WZ68?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49,
+      "features": [
+        "Regular fit",
+        "Mesh upper"
+      ]
+    },
+    {
+      "id": "B085TFF7M1",
+      "title": "Logitech C920x HD Pro PC Webcam with Microphone, Full HD 1080p/30fps Video | Stereo Audio, HD Light Correction, Works with Microsoft Teams, Google Meet, Zoom, Nintendo Switch, Mac/Tablet- Black",
+      "image": "https://m.media-amazon.com/images/I/31UjVjrQ4vL._SL500_.jpg",
+      "price": 54.99,
+      "percentOff": 21,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B085TFF7M1?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "expires": "2026-12-01",
+      "features": [
+        "HD lighting adjustment and autofocus: The Logitech webcam automatically fine-tunes lighting for bright, sharp images even in low light. A reliable addition to office supplies, it’s a great webcam for streaming and an ideal webcam for laptop use",
+        "Full HD 1080p video calling and recording at 30 fps. You'll make a strong impression with this webcam for PC that features crisp, clearly detailed, and vibrantly colored video"
+      ]
+    },
+    {
+      "id": "B09KMM1X4S",
+      "title": "Columbia Youth Girls Fire Side Sherpa Full Zip Fleece Jacket | Fire Side Sherpa Hybrid Fleece Jacket delivers plush warmth for cozy winter days",
+      "image": "https://m.media-amazon.com/images/I/414KATHdr7L._SL500_.jpg",
+      "price": 30.64,
+      "percentOff": 32,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B09KMM1X4S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 45,
+      "expires": "2026-12-01",
+      "features": [
+        "WARM AND COZY: THE Columbia Girl’s Fire Side Sherpa Full Zip Jacket is crafted from hourglass high pile fleece in a girl sized design, perfect for snug and activewear.",
+        "EXTRA PLUSH SHERPA PILE: Made of soft and plush sherpa pile, this jacket adds a nice touch of cozy warmth on any day."
+      ]
+    },
+    {
+      "id": "B0F2GCDC7P",
+      "title": "adidas Barreda Decode (Little Big Kid) Sneaker, Off-White/Collegiate Navy/Collegiate Green, 2 US Unisex",
+      "image": "https://m.media-amazon.com/images/I/21WfqNUrr4L._SL500_.jpg",
+      "price": 36.88,
+      "percentOff": 26,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0F2GCDC7P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 50,
+      "features": [
+        "Whether they're off to school or just getting ready for playtime, your little one will love stepping into their adidas Kids Barreda Decode Elastic Lace Shoes. These low-top shoes feature a smooth nylon upper that is accented with suede overlays for a",
+        "Regular fit."
+      ]
+    },
+    {
+      "id": "B0GQXJ71LR",
+      "title": "OIEXEN 1080P Webcam with Sony 1/3.0\" Sensor,Microphone Noise Reduction | 90°FOV Privacy Cover,USB-A to C Adapter,Plug & Play Camera for Computer /Laptop/Zoom/Teams/Meetings",
+      "image": "https://m.media-amazon.com/images/I/41RQVIDClJL._SL500_.jpg",
+      "price": 19.19,
+      "percentOff": 20,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0GQXJ71LR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 23.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【True-to-Life 1080P with Face AE: Always Look Your Best】Engineered for real-life clarity, not just specs. Our optimized 1080P webcam with 30FPS sensor delivers sharp, natural video that looks authentically you, while Face AE technology intelligently balances exposure to keep your skin tone natural i",
+        "【Faithful Audio Capture: Your Voice, Clear and Uninterrupted】Experience consistent, clear sound . This computer webcam with dual built-in microphones reliably capture your voice within 16.5 feet, ensuring every word is transmitted fully and without dropouts or electronic interference. Designed for e"
+      ]
+    },
+    {
+      "id": "B088BD7RBY",
+      "title": "Cuddle Club Kids Fleece Sweatshirt Jacket, 0-3 Months up to 5T",
+      "image": "https://m.media-amazon.com/images/I/415JZexK8nL._SL500_.jpg",
+      "price": 22.99,
+      "percentOff": 23,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B088BD7RBY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "features": [
+        "GREAT CLIMATE CONTROL - Cozy fleece novelty hoodie with full zipper keeps babies and kids warm when they need it.",
+        "SHARE CUTE PHOTOS - Adorable full zip jacket options that combine cute novelty with outerwear functionality - sharing photos of your infants or children on social media has never been more fun!"
+      ]
+    },
+    {
+      "id": "B0BZQYMC9B",
+      "title": "adidas Kids Athletic Cushioned Low Cut Ankle Socks 6 Pairs | Boys & Girls, 6-Pack, Targeted Cushioning, Arch Support, Breathable Moisture-Wicking, Size Callout On Sole, All-Day Comfort",
+      "image": "https://m.media-amazon.com/images/I/41UG7kRFbdL._SL500_.jpg",
+      "price": 15,
+      "percentOff": 25,
+      "category": "Shoes",
+      "url": "https://www.amazon.com/dp/B0BZQYMC9B?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20,
+      "features": [
+        "FEEL COOL AND DRY WITH ADIDAS CLIMACOOL Supporting your body's cooling system through the power of advanced materials. Your sweat is wicked away to keep you comfortable. Engineered for school days, recess and weekend play.",
+        "CUSHIONED + REINFORCED BUILD: A cushioned foot delivers comfort through full school days — delivering a no-slip fit. Reinforced heel and toe construction holds up to running, jumping and everyday kid energy through the school year."
+      ]
+    },
+    {
+      "id": "B0HH9F61M3",
+      "title": "EMEET C960 UltraX 4K Webcam for Mac & PC, 1/1.3\" Larger Sensor, 3D NR, HDR | Metal Body, 0.2s PDAF, Beauty Mode, Low-Light Clarity, Privacy Cover, 2 Mics, Computer Camera for Online Meetings & Streaming",
+      "image": "https://m.media-amazon.com/images/I/41yEmuYGpFL._SL500_.jpg",
+      "price": 143.99,
+      "percentOff": 20,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0HH9F61M3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 179.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Advanced Imaging with 1/1.3\" Sensor, 3D NR & HDR - EMEET C960 UltraX 4K webcam delivers exceptional video quality with a 1/1.3\" larger sensor that captures more light. 3D Noise Reduction reduces noise while preserving fine details, and HDR balances highlights and shadows. The 4K@30FPS computer camer",
+        "Mac-Optimized, PC Compatible - C960 UltraX webcam 4K is built as a webcam for Mac (MacBook, iMac, Mac mini) with seamless plug-and-play via USB-C and a C-to-A adapter, no drivers needed, solving Mac issues like poor compatibility, unstable connections, and complex setup. Its minimalist design fits M"
+      ]
+    },
+    {
+      "id": "B0GMY6GPJM",
+      "title": "Disney Lilo & Stitch Big Girls' Printed Zip-Up Fleece Coat Stitch Blue Lavender 14-16",
+      "image": "https://m.media-amazon.com/images/I/41vgh1A7nhL._SL500_.jpg",
+      "price": 26.57,
+      "percentOff": 22,
+      "category": "Clothing",
+      "url": "https://www.amazon.com/dp/B0GMY6GPJM?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-25",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 33.99,
+      "features": [
+        "Cozy Disney girls outerwear sherpa jackets; features favorite characters Minnie Mouse and Stitch in stylish designs; ideal outerwear for toddlers, little kids, and big girls.",
+        "Warm sherpa fleece construction; incredibly soft to the touch and provides reliable warmth during cooler fall and winter months; fully lined interior keeps children comfortable all day."
+      ]
+    },
+    {
       "id": "B01MXL3EOU",
       "title": "FIFINE K669 Rose Red USB Microphone, Condenser Podcast Mic for Recording | PC Desk Microphone with Volume Knob Control, Metal Tripod Stand, USB Cable for Online Meeting, Streaming, Video Conferencing",
       "image": "https://m.media-amazon.com/images/I/413769mg1rL._SL500_.jpg",
@@ -18,8 +388,7 @@
       "features": [
         "[Clear Audio Recording] With a frequency response of 20 Hz to 20 kHz and a signal-to-noise ratio of up to 78 dB, this USB microphone delivers consistently high-definition sound whether you're recording or in a meeting. Cardioid pickup pattern of podcast mic effectively reduces ambient noise from you",
         "[Volume Knob Control] The volume knob on the condenser microphone lets you easily adjust the input level (turn left to decrease volume, turn right to increase volume, and turn fully left to mute). This intuitive knob eliminates the hassle of adjusting computer or sound card settings, making it simpl"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B077KYT31Z",
@@ -413,8 +782,7 @@
         "USB/XLR Connectivity-AM8T comes with a dynamic microphone and a boom arm stand. Versatile PC gaming microphone kit with USB compatibility plug and play for PC in streaming or recording, without additional drivers. And also, while in XLR compatibility for mixer or sound card connection, the XLR studi",
         "Vibrant RGB Light-The streaming microphone RGB illuminates your gaming setup with customizable RGB lighting for a visually stunning game experience. You can easily control the RGB mode/colors or turn off by simply tapping the RGB button without making any complicated settings on specific software."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0B4YYZZR5",
@@ -510,8 +878,7 @@
       "features": [
         "SELECTABLE PICKUP PATTERN: The pro broadcast mic starter kit features a 4-in-1 polar pattern selector which allows you to select from cardioid, bidirectional, stereo & omnidirectional. Equipped w/ headphone jack & adjustable headphone/mic volume/gain",
         "FULL METAL ALLOY BODY: Features a full metal alloy body. Includes metal tripod mic stand w/ angle adjustment & 5.9' detachable USB cable. Easy to connect w/ computer, no extra driver/software needed. Perfect for online performances, voice-overs, etc"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0DGB2GPCZ",
@@ -766,8 +1133,7 @@
         "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
         "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0035BTQ06",
@@ -805,8 +1171,7 @@
       "features": [
         "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
         "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0788MGJ31",
@@ -1100,8 +1465,7 @@
       "features": [
         "PLANO PLASTIC STORAGE SHELVES: Organize your home, closet, garage, laundry room or office with Plano heavy-duty Shelving Units.",
         "200LB STORAGE CAPACITY: Each of the 4 plastic shelves has a maximum weight capacity of 50lbs. The full shelving unit can easily accommodate up to 200lbs of total weight."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0HLL8FK69",
@@ -1121,8 +1485,7 @@
         "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
         "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B079D72S2B",
@@ -1516,8 +1879,7 @@
         "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
         "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B00023IXDQ",
@@ -1613,8 +1975,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B074YPSTRP",
@@ -1731,8 +2092,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0DSGRL3RP",
@@ -1772,8 +2132,7 @@
         "IMMERSIVE 3D GAMING AUDIO: Fachixy VK81 wireless gaming headset delivers powerful 3D stereo sound with deep bass, clear mids, and crisp highs. Hear footsteps, reloads, and environmental details precisely, improving reaction time and enhancing immersion for FPS, RPG, or open-world games on for PS5, P",
         "VERSATILE MULTI-DEVICE CONNECTIVITY: Switch seamlessly between 2.4GHz wireless (USB/Type-C) for PC, PS5, PS4, Mac, Laptops, and Switch, or Bluetooth 5.4 for mobile devices. Ensure lag-free gaming on consoles and enjoy easy mobile audio streaming. Not compatible with Xbox consoles."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0C7QDW1M4",
@@ -1813,8 +2172,7 @@
         "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
         "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0DJ7DFX93",
@@ -1854,8 +2212,7 @@
         "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
         "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0C5DCRRN7",
@@ -1875,8 +2232,7 @@
         "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
         "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B07V4F7ZZ5",
@@ -1896,8 +2252,7 @@
         "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
         "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0HGR4SDYC",
@@ -1917,8 +2272,7 @@
         "Zero-Latency Audio for Competitive Edge: Dominate your matches with the AOC wireless gaming headset. Featuring ultra-fast 2.4GHz lossless technology (≤20ms latency), this ps5 headset ensures your audio is always perfectly synced with the action. Tuned 50mm drivers deliver clear gaming sound for foot",
         "Crystal-Clear Squad Communication: Coordinate strategies flawlessly using the detachable, omni-directional noise-canceling microphone. Whether you are gaming in a lively dorm room or a busy living room, this ps5 headset wireless filters out background distractions, transmitting your voice with absol"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B07C4Y1XM5",
@@ -1938,8 +2292,7 @@
         "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
         "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B07W549S56",
@@ -1959,8 +2312,7 @@
         "【RGB LED lights】KAFRI RBG Headphone Stand can display 9 lighting effects modes, up to 16.8 million colors to creat an amazing gaming atmosphere at your preference. that can be selected merely by pressing a Touch switch. Great gifts for Son, boy, Men, husband and boyfriend.",
         "【10W Qi Wireless Charger】Say goodbye to tangled wires and messing cables, just place your phone on fast charger pad. no cables or USB interface required. Charger compatible with Apple iPhone XS Max,XR,XS, X, iPhone 8/8 Plus, Samsung Galaxy S9/S9 Plus, Note 8, S8/S8 Plus, and other Qi-enabled cell ph"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0BJ72M77L",
@@ -1980,8 +2332,7 @@
         "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
         "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0C46CS37H",
@@ -2001,8 +2352,7 @@
         "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
         "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0BV4F17CS",
@@ -2021,8 +2371,7 @@
       "features": [
         "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
         "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B09241VBTP",
@@ -2060,8 +2409,7 @@
       "features": [
         "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
         "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0BBVY9L7C",
@@ -2080,8 +2428,7 @@
       "features": [
         "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
         "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B07DTTGZ7M",
@@ -2099,8 +2446,7 @@
       "features": [
         "Legendary Blue broadcast sound: Yeti Nano features 2 custom mic capsules to give your voice exceptional presence and detail for professional-level recording and streaming",
         "Blue VO!CE software: Elevate your streamings and recordings with clear broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0D458QDVN",
@@ -2119,8 +2465,7 @@
       "features": [
         "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
         "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0FY2R5R8X",
@@ -2138,8 +2483,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -2157,8 +2501,7 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
@@ -2176,8 +2519,7 @@
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -2195,8 +2537,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0CV3NW398",
@@ -2237,8 +2578,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0F3CQJZRQ",
@@ -2277,8 +2617,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0HFJ8TLN1",
@@ -2475,8 +2814,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0D8SX6XYB",
@@ -2515,8 +2853,7 @@
       "features": [
         "IMPROVED EXPERIENCE - The cardioid streaming mic with pop filter is excellent to eliminate background noise and pick up a clean tone in your voice. Benefits from the premium mic capsule and the wide response range, the usb vocal mic offers a good balance of bass and treble which will keep the sound",
         "ADJUSTABLE ARM STAND - The pc microphone with stand is sturdy and easily swivels in any orientation. The mic and accessories will not going to get in your way to have a successful podcast, and less likely to pick up thumps from desktop or keyboard. You could tightly mount the condenser recording mic"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B07SX9XP83",
@@ -2554,200 +2891,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B0HPL68PVF",
-      "title": "LIMANS No.00210 Lost Cherry Inspired Eau de Parfum 0.34 oz Mini Perfume | Long Lasting Unisex Perfume for Women & Men | 0.34 oz (10 ml) Mini Eau de Parfum Travel Spray | Vegan, French Perfume Oils",
-      "image": "https://m.media-amazon.com/images/I/51CUdsAnPGL._SL500_.jpg",
-      "price": 12.99,
-      "percentOff": 50,
-      "category": "Fragrances",
-      "url": "https://www.amazon.com/dp/B0HPL68PVF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 25.95,
-      "features": [
-        "FRUITY, SWEET & WARM SCENT - A rich fragrance blending black cherry and cherry liqueur with bitter almond, Turkish rose, jasmine sambac and plum. Tonka bean, Peru balsam and sandalwood create a warm base for a unisex scent",
-        "INSPIRED FRAGRANCE FOR WOMEN & MEN - LIMANS No. XXX is designed for those who enjoy a sweet fruity fragrance profile with floral and woody accents. A versatile Eau de Parfum for everyday wear, evenings and special occasions"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B00000IV35",
-      "title": "Five Crowns Rummy Style Card Game for Kids and Adults, Family Game Night | Unique Twist on Classic Rummy, Travel Games, Holiday Game, Playing Cards, Award-Winning, Holiday Gift",
-      "image": "https://m.media-amazon.com/images/I/51LOnrPPuoL._SL500_.jpg",
-      "price": 9.99,
-      "percentOff": 33,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B00000IV35?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 14.99,
-      "features": [
-        "FAMILY CARD GAME: It’s a unique twist on the classic rummy card game. A fifth suit of stars makes Five Crowns even more exciting than other family card games",
-        "EASY TO LEARN GAME: Make books and runs, knowing when to play your cards. But tread carefully! Rotating wild cards can change your luck in an instant"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B00OV7UKDU",
-      "title": "SAFAVIEH Greek Key Table Lamp Set of 2, 29\" LIT4305A-SET2 | Metal Base, Fabric Shade, 2-Piece Set, On/Off Switch, E26 Base, Bulb Included, nightstand, console table, Assembly Required",
-      "image": "https://m.media-amazon.com/images/I/21mD2e-E9+L._SL500_.jpg",
-      "price": 75.29,
-      "percentOff": 48,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B00OV7UKDU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 145.57,
-      "features": [
-        "[TABLE LAMP]: SAFAVIEH's Greek Key table lamp is a 29\" bedside lamp for a bedroom, bedside or living room, under a fabric shade.",
-        "[METAL & FABRIC CONSTRUCTION]: The body is metal, in a gold finish, seated on a spider fitter and harp."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B00JJ4PNHI",
-      "title": "Dutch Blitz Expansion Pack - 4 New Card Colors - 160 Cards for 4 Players | Add 4 more players for 8 total, fast-paced Vonder-fast card game, includes carriage, bucket, pump and plow deck designs",
-      "image": "https://m.media-amazon.com/images/I/51J0hiJjw8L._SL500_.jpg",
-      "price": 8.99,
-      "percentOff": 31,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B00JJ4PNHI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 12.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Can be played just with this deck or combined with other decks",
-        "4 new card colors"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B00WIIPQEC",
-      "title": "Dutch Blitz: Original and Expansion Combo, Fast Paced Card Game, Fun for Everyone, Great Family Game, Combine Packs to Play With 2-4 Players, For Ages 8 and Up",
-      "image": "https://m.media-amazon.com/images/I/51gXDkbcKJL._SL500_.jpg",
-      "price": 17.99,
-      "percentOff": 28,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B00WIIPQEC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 24.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Contains Dutch Blitz and Expansion Set",
-        "Combine packs to play with 2-4 players"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "0980209277",
-      "title": "The Red Dragon Inn 5: The Character Trove - Strategy Card Game | 2-4 Players, Ages 13+, 30-60 Minutes - Standalone Expansion w/Storage Box - Compatible with All Other Expansions",
-      "image": "https://m.media-amazon.com/images/I/51+QWClhU9L._SL500_.jpg",
-      "price": 44.73,
-      "percentOff": 25,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/0980209277?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 59.95,
-      "features": [
-        "JOIN THE AFTERPARTY: Our heroes are celebrating their hard-earned adventuring victory by drinking, gambling and roughhousing in the tavern. The adventure’s over, but the party’s just getting started!",
-        "UNIQUE CHARACTERS: Play as Zakhan the Drunken Master (Half-Elf Monk), Lizwick the Collector (Gnome Rogue), Joran the Trickster (Human Mage), or Sera the Fleetfooted (Human Rogue). Mix and match characters for endless replayability."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B0FNX47S5Y",
-      "title": "Floresita Dried Flowers Tripod Table Lamp 14.96in, 9W LED Dimmable Cute Bedside Lamp with Flowers Linen Lampshade for Nursery, Bedroom, Kid Room, Living Room, Light Brown Wooden Base",
-      "image": "https://m.media-amazon.com/images/I/41Y6BeuobyL._SL500_.jpg",
-      "price": 25.64,
-      "percentOff": 31,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0FNX47S5Y?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 36.99,
-      "features": [
-        "Pressed Flowers Table Lamp: Through exquisite handwork, different varieties of colorful dried flowers are made on the small table lamp. With a wooden base, linen shade, and lovely flowers, you'll be sure to be attracted to this beautiful pressed flowers table lamp!",
-        "Dimmable 9W Bulb Included: 9W LED light bulb, warm light, dimmable, you can choose your preferred light brightness! Soft, flicker-free, and glare-free, creating a warm and comfortable atmosphere for your work, study, and nighttime reading!"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B09WNG7W3C",
-      "title": "Glad Small Trash Bags 4 Gallon, Febreze Cherry Blossom Garbage Bags, Odor Resistant with Drawstring, 34 Count",
-      "image": "https://m.media-amazon.com/images/I/4136qMECofL._SL500_.jpg",
-      "price": 5.5,
-      "percentOff": 31,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B09WNG7W3C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 7.99,
-      "features": [
-        "SMALL TRASH BAGS: Thirty-four (34) 4-gallon Glad Drawstring Small Trash Bags with Cherry Blossom scent with Febreze freshness provide strength plus odor control",
-        "SCENTED GARBAGE BAGS: These small bathroom trash bags have Cherry Blossom scent with Febreze freshness to provide odor neutralization around the house and an airy orchard of floral scent"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B0CQ1DJGYQ",
-      "title": "hand2mind Numberblocks Playing Cards, 6 Math Games, Ages 3+ | Fun Card Games, Math Card Games for Kids Ages 3-5, Deck of Cards for Kids, Playing Cards Themed, Preschool Math Learning Toys",
-      "image": "https://m.media-amazon.com/images/I/51H9nwu-tRL._SL500_.jpg",
-      "price": 7.52,
-      "percentOff": 25,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0CQ1DJGYQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 9.99,
-      "features": [
-        "OFFICIALLY LICENSED NUMBERBLOCKS GAMES: Join all the numbery fun as you play along with Numberblocks One to Ten and friends in Numberblocks Playing Cards!",
-        "EDUCATIONAL MATH GAMES: Packed with opportunities to practice early math concepts, this versatile set features beloved characters from the global hit TV series on oversized playing cards designed for little hands."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B07JKZQKZ4",
-      "title": "Deacon 26\" Tall Desk Lamp Gooseneck USB and Outlet Bronze Brown LED Modern | USB Ports A+C Charging and AC Power Living Room Bedroom House Bedside Nightstand Office Home Family Rectangular Linen Shade",
-      "image": "https://m.media-amazon.com/images/I/411jLlw+lGL._SL500_.jpg",
-      "price": 199.99,
-      "percentOff": 20,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B07JKZQKZ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 249.99,
-      "features": [
-        "【Specifications】UL listed. 26\" high overall. Base is 8\" wide x 5 1/2\" deep. Shade is 10\" wide, 6\" deep at the top x 16\" wide, 10 1/2\" deep at the bottom x 10\" high. Weighs 10 lbs. Uses two maximum 60 watt standard-medium base bulbs (not included). Gooseneck arm includes 5 watt GU10 LED bulb. Dual ro",
-        "【Bedroom Ambiance】 Elevate your night stand with bedside lamps from Lamps Plus that combine functionality and style. Perfect for late-night reading, this modern nightstand lamp features a USB port for added convenience. Its unique design and decorative touch enhance your bed side decor, providing bo"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0FP1TRW4L",
@@ -2766,8 +2910,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0H6L14J6D",
@@ -2812,26 +2955,6 @@
       "lastChecked": "2026-11-25T02:53:18.686Z"
     },
     {
-      "id": "B0HF191VSF",
-      "title": "Permanent Outdoor Lights for House, 500FT RGB+IC Smart Christmas Lights | App & Remote Control,IP67 Waterproof,16 Million Colors,70+Scenes,Music Sync,Holiday Party Halloween Decor,Outdoor Lights",
-      "image": "https://m.media-amazon.com/images/I/51gAmZHePjL._SL500_.jpg",
-      "price": 132.99,
-      "percentOff": 34,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HF191VSF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 199.99,
-      "features": [
-        "【Year-Round Outdoor Lighting for Any Occasion】Transform your home with 500FT RGB+IC Permanent Outdoor Lights designed for year-round outdoor lighting. Create stunning lighting effects on roofs, eaves, garages, patios, and backyards. Whether for holidays, special events, or everyday curb appeal, thes",
-        "【Smart Dual Control with Presets & DIY Customization】 Take full command of your outdoor lighting via smartphone App and included remote controller. Powered by RGB+IC chasing function, it offers abundant pre‑set scene modes for Christmas, Halloween, parties and daily home use with one‑tap switching."
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
       "id": "B0FLKJ7FH7",
       "title": "HyperX SoloCast 2 USB Condenser Gaming Microphone | 24-bit | 96kHz | Cardioid | USB-C | Tap-to-Mute | PC Compatible",
       "image": "https://m.media-amazon.com/images/I/31PWz6pDdjL._SL500_.jpg",
@@ -2839,7 +2962,7 @@
       "percentOff": 25,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2848,8 +2971,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2859,7 +2981,7 @@
       "percentOff": 20,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2868,8 +2990,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2879,7 +3000,7 @@
       "percentOff": 50,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B002VA464S?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2888,28 +3009,7 @@
       "features": [
         "Custom three-capsule array: This professional USB gaming mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more",
         "Four pickup patterns: Flexible cardioid, omni, bidirectional, and stereo pickup patterns allow you to record in ways that would normally require multiple mics, for vocals, instruments and podcasts"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
-    },
-    {
-      "id": "B0HP6VQLZ5",
-      "title": "Ecoeve Permanent Outdoor Lights for House, 200ft RGB+IC Christmas LED Light | App & Remote Control with Guest Mode, 16 Million Colors, 50+ Scenes, Music Sync, IP67 Waterproof Seasonal Rope Lights",
-      "image": "https://m.media-amazon.com/images/I/51acb1axIHL._SL500_.jpg",
-      "price": 104.49,
-      "percentOff": 58,
-      "category": "Home",
-      "url": "https://www.amazon.com/dp/B0HP6VQLZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-18",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 249.99,
-      "features": [
-        "App & Remote Control With Guest Mode: Control your permanent outdoor lights through the smartphone app or included remote. Guest mode lets you enjoy app-based lighting control without creating an account, adding a convenient option for everyday use",
-        "16 Million Colors & Dimmable Brightness: Personalize your outdoor lighting with 16 million color options and adjustable brightness levels. Create a warm everyday atmosphere or colorful lighting for Christmas, Halloween, parties, and other celebrations"
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0GX5XQG45",
@@ -2920,15 +3020,14 @@
       "percentOff": 31,
       "category": "Kitchen",
       "url": "https://www.amazon.com/dp/B0GX5XQG45?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
@@ -2939,14 +3038,13 @@
       "percentOff": 9,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "sample": false,
       "source": "api",
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2957,14 +3055,13 @@
       "percentOff": 24,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0GYF7PRYR?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-18",
+      "added": "2026-11-25",
       "sample": false,
       "source": "api",
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-25T02:53:18.686Z"
+      ]
     }
   ]
 }
