@@ -3220,6 +3220,73 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-25T23:43:26.545Z",
+      "checked": 153,
+      "unchanged": 148,
+      "updated": 4,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0C3DLYY46",
+          "title": "Puma Kids' Caven 2.0 Puma White-Puma Silver-Puma Black Big Kid 4.5",
+          "url": "https://www.amazon.com/dp/B0C3DLYY46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 47.35,
+          "newPrice": 32.99,
+          "oldPercentOff": 25,
+          "newPercentOff": 48,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 8.49,
+          "newPrice": 12.49,
+          "oldPercentOff": 50,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B079D72S2B",
+          "title": "Diet Pepsi Cola Soda, 12 Fl Oz Cans (Pack of 12)",
+          "url": "https://www.amazon.com/dp/B079D72S2B?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.97,
+          "newPrice": 8.97,
+          "oldPercentOff": 59,
+          "newPercentOff": 47,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CQKNQ62N",
+          "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+          "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.28,
+          "newPrice": 11.84,
+          "oldPercentOff": 42,
+          "newPercentOff": 39,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B07DTTGZ7M",
+          "title": "Logitech for Creators Blue Yeti Nano USB Microphone for Gaming, Streaming, Podcasting,Twitch, YouTube, Discord, Recording for PC and Mac, Plug & Play - Shadow Grey",
+          "url": "https://www.amazon.com/dp/B07DTTGZ7M?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 89.99,
+          "newPrice": 57.19,
+          "oldPercentOff": 25,
+          "newPercentOff": 52,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
