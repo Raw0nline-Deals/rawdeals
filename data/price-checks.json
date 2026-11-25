@@ -3042,6 +3042,106 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-25T17:45:16.254Z",
+      "checked": 158,
+      "unchanged": 150,
+      "updated": 5,
+      "removed": 0,
+      "unavailable": 3,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0D16JX7FJ",
+          "title": "Under Armour Men's Freedom Tech Big Flag Logo Shorts, 001 Black, LG",
+          "url": "https://www.amazon.com/dp/B0D16JX7FJ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 23.1,
+          "newPrice": 21,
+          "oldPercentOff": 30,
+          "newPercentOff": 36,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0F5H3XCFP",
+          "title": "Nike Men's Club Fleece Shorts, Black/Black/White, Large",
+          "url": "https://www.amazon.com/dp/B0F5H3XCFP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 40,
+          "newPrice": 40,
+          "oldPercentOff": 20,
+          "newPercentOff": 20,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0DQYR6X8R",
+          "title": "Bounty Select-A-Size Paper Towels, White, 2 Triple Rolls = 6 Regular Rolls",
+          "url": "https://www.amazon.com/dp/B0DQYR6X8R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.97,
+          "newPrice": 6.99,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CV2HGKDQ",
+          "title": "LEGO Botanicals Plum Blossom Building Sets for Adults - Artificial Flower for Dinner Table Centerpiece, Living Room Home Decor, Ages 18+ - DIY Craft Kits - Gift for Birthdays - 10369",
+          "url": "https://www.amazon.com/dp/B0CV2HGKDQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 23.95,
+          "newPrice": 23.69,
+          "oldPercentOff": 20,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B013S2AOEI",
+          "title": "Lipton Decaf Green Tea Bags, Unsweetened Iced or Hot Tea Bags, 240 Total Tea Bags (40ct - Pack of 6)",
+          "url": "https://www.amazon.com/dp/B013S2AOEI?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 21.4,
+          "newPrice": 21.4,
+          "oldPercentOff": 20,
+          "newPercentOff": 20,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0CQKNQ62N",
+          "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+          "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.84,
+          "newPrice": 11.28,
+          "oldPercentOff": 39,
+          "newPercentOff": 42,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00023IXDQ",
+          "title": "Revlon Fire & Ice Perfume for Women Eau de Cologne Spray 1.7 Ounce",
+          "url": "https://www.amazon.com/dp/B00023IXDQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 16.99,
+          "newPrice": 18,
+          "oldPercentOff": 35,
+          "newPercentOff": 31,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.18,
+          "newPrice": 7.99,
+          "oldPercentOff": 28,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
