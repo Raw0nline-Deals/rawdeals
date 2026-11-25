@@ -3142,6 +3142,84 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-25T20:44:01.440Z",
+      "checked": 155,
+      "unchanged": 149,
+      "updated": 4,
+      "removed": 2,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0D1YFJS7M",
+          "title": "Nike Men's Cortez Sneakers, White/Varsity Red/Varsity Blue, 9.5 Medium US",
+          "url": "https://www.amazon.com/dp/B0D1YFJS7M?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 66.5,
+          "newPrice": 71.97,
+          "oldPercentOff": 30,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0C3DLYY46",
+          "title": "Puma Kids' Caven 2.0 Puma White-Puma Silver-Puma Black Big Kid 4.5",
+          "url": "https://www.amazon.com/dp/B0C3DLYY46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 32.99,
+          "newPrice": 47.35,
+          "oldPercentOff": 48,
+          "newPercentOff": 25,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CFQGPZRT",
+          "title": "Puma Unisex-Child, Rebound Layup Synthetic Leather Hook and Loop, Puma Black-Puma Black, Little Kid 13",
+          "url": "https://www.amazon.com/dp/B0CFQGPZRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 40.6,
+          "newPrice": 39.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 31,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CV2HGKDQ",
+          "title": "LEGO Botanicals Plum Blossom Building Sets for Adults - Artificial Flower for Dinner Table Centerpiece, Living Room Home Decor, Ages 18+ - DIY Craft Kits - Gift for Birthdays - 10369",
+          "url": "https://www.amazon.com/dp/B0CV2HGKDQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 23.69,
+          "newPrice": 23.95,
+          "oldPercentOff": 21,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B00WT6QLI8",
+          "title": "Lysol Disinfecting Wipes To-Go Pack, Lemon Scent, 15 Count (Pack of 2)",
+          "url": "https://www.amazon.com/dp/B00WT6QLI8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.99,
+          "newPrice": 8.61,
+          "oldPercentOff": 20,
+          "newPercentOff": 14,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0D9MCK4R8",
+          "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
+          "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 119.99,
+          "newPrice": 119.49,
+          "oldPercentOff": 20,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
