@@ -3008,6 +3008,40 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-25T02:53:18.686Z",
+      "checked": 150,
+      "unchanged": 148,
+      "updated": 2,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B01GH0ZJMU",
+          "title": "Columbia Youth Boys' Backcast Short, Breathable, UPF 50 Sun Protection",
+          "url": "https://www.amazon.com/dp/B01GH0ZJMU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 15.84,
+          "newPrice": 15.85,
+          "oldPercentOff": 37,
+          "newPercentOff": 37,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0C3DLYY46",
+          "title": "Puma Kids' Caven 2.0 Puma White-Puma Silver-Puma Black Big Kid 4.5",
+          "url": "https://www.amazon.com/dp/B0C3DLYY46?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 45.34,
+          "newPrice": 32.99,
+          "oldPercentOff": 28,
+          "newPercentOff": 48,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
