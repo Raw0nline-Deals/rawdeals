@@ -3332,6 +3332,84 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-26T17:50:14.541Z",
+      "checked": 149,
+      "unchanged": 143,
+      "updated": 3,
+      "removed": 1,
+      "unavailable": 2,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 130.96,
+          "newPrice": 134.99,
+          "oldPercentOff": 23,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0F2GCDC7P",
+          "title": "adidas Barreda Decode (Little Big Kid) Sneaker, Off-White/Collegiate Navy/Collegiate Green, 2 US Unisex",
+          "url": "https://www.amazon.com/dp/B0F2GCDC7P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 36.88,
+          "newPrice": 36.74,
+          "oldPercentOff": 26,
+          "newPercentOff": 27,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B01GH0ZJMU",
+          "title": "Columbia Youth Boys' Backcast Short, Breathable, UPF 50 Sun Protection",
+          "url": "https://www.amazon.com/dp/B01GH0ZJMU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 15.84,
+          "newPrice": 15.85,
+          "oldPercentOff": 37,
+          "newPercentOff": 37,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0GH31VCJT",
+          "title": "Sodastream Pepsi, Starry & MTN Dew Variety Pack, Zero Sugar New Pour Bottle Drink Mix, for Sparkling Water Makers, Sugar Free Soda Syrup, Control Your Fizz with Sodastream Flavors, 3 x 14.9 Fl Oz (440ml) Makes about 72 Drinks Per Pack",
+          "url": "https://www.amazon.com/dp/B0GH31VCJT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 16,
+          "newPrice": 24.99,
+          "oldPercentOff": 20,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0GV7MQ1NN",
+          "title": "2.4GHz Wireless Gaming Headset for PS5/PS4/PC/Switch, 45H RGB Lights, 2026 | Gaming Headphones with ENC Mic, 7.1 Surround Sound, 40mm Drivers, BT 5.4, <20ms Low Latency, 276g Lightweight, Memory Foam",
+          "url": "https://www.amazon.com/dp/B0GV7MQ1NN?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 41.99,
+          "newPrice": 41.99,
+          "oldPercentOff": 58,
+          "newPercentOff": 58,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0D9MCK4R8",
+          "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
+          "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 119.49,
+          "newPrice": 119,
+          "oldPercentOff": 20,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
