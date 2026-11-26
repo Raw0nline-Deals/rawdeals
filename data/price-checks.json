@@ -3287,6 +3287,51 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-26T02:50:32.131Z",
+      "checked": 152,
+      "unchanged": 149,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B01GH0ZJMU",
+          "title": "Columbia Youth Boys' Backcast Short, Breathable, UPF 50 Sun Protection",
+          "url": "https://www.amazon.com/dp/B01GH0ZJMU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 15.85,
+          "newPrice": 15.84,
+          "oldPercentOff": 37,
+          "newPercentOff": 37,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0085MIONU",
+          "title": "Melissa & Doug Search and Find Beneath The Waves Floor Puzzle (48 pcs, Over 4 feet Long) - FSC Certified",
+          "url": "https://www.amazon.com/dp/B0085MIONU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.49,
+          "newPrice": 8.49,
+          "oldPercentOff": 26,
+          "newPercentOff": 50,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0HFJ8TLN1",
+          "title": "500FT RGB+IC Permanent Outdoor Lights, IP67 Waterproof Christmas Lights | App/Remote Control, Music Sync,Outdoor House Roof Decor Lights , DIY Color Changing ,Patio, Holiday & Party",
+          "url": "https://www.amazon.com/dp/B0HFJ8TLN1?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 99.99,
+          "newPrice": 99.99,
+          "oldPercentOff": 29,
+          "newPercentOff": 44,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
