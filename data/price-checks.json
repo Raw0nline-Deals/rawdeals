@@ -3410,6 +3410,62 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-26T20:43:52.640Z",
+      "checked": 146,
+      "unchanged": 142,
+      "updated": 2,
+      "removed": 2,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 134.99,
+          "newPrice": 131.95,
+          "oldPercentOff": 21,
+          "newPercentOff": 22,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0F5JQ9PTS",
+          "title": "Amazon Essentials Boys' Water Resistant Ski Winter Jacket, Bright Poppy Red, 4T",
+          "url": "https://www.amazon.com/dp/B0F5JQ9PTS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 28.8,
+          "newPrice": 28.8,
+          "oldPercentOff": 37,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0D5C2ZFQ9",
+          "title": "PUMA Men's Low Cut Socks (8-Pack), Black Combo, 10-13 | Arch Support and Cushioned Footbed",
+          "url": "https://www.amazon.com/dp/B0D5C2ZFQ9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 10.48,
+          "newPrice": 17,
+          "oldPercentOff": 43,
+          "newPercentOff": 8,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0CQKNQ62N",
+          "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
+          "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.84,
+          "newPrice": 11.28,
+          "oldPercentOff": 39,
+          "newPercentOff": 42,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
