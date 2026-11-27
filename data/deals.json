@@ -2,6 +2,383 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0CXGTGPZQ",
+      "title": "Razer BlackShark V2 X Xbox Gaming Headset, 3.5mm Audio Jack, Black | 50mm Drivers, Cardioid Mic, Lightweight, Comfortable Noise Isolating Earcups, for Xbox Series X, Series S, PS5, PC, Switch",
+      "image": "https://m.media-amazon.com/images/I/417tvL0BQeL._SL500_.jpg",
+      "price": 29.99,
+      "percentOff": 40,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CXGTGPZQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "expires": "2026-12-01",
+      "features": [
+        "TRIFORCE TITANIUM 50 MM DRIVERS — Our cutting-edge proprietary design divides the driver into 3 parts for the individual tuning of highs, mids, and lows—producing brighter, clearer audio with richer highs and more powerful lows",
+        "HYPERCLEAR CARDIOID MIC — An improved pickup pattern ensures more voice and less noise as it tapers off towards the mic’s back and sides, with the sweet spot easily placed at the mouth because of the mic’s bendable design"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0CX8MT2M2",
+      "title": "International Version – Amazon Kindle Colorsoft 16 GB (2024 model) – With color display and adjustable warm light – No Ads – Black",
+      "image": "https://m.media-amazon.com/images/I/41xgZLXcZBL._SL500_.jpg",
+      "price": 169.99,
+      "percentOff": 51,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0CX8MT2M2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 347.58,
+      "expires": "2026-12-01",
+      "features": [
+        "Read in color – The 7\" Colorsoft display is high-contrast and easy on the eyes, with paper-like color that brings covers and content to life.",
+        "Kindle Colorsoft Experience - The Kindle Colorsoft display is optimized for reading in color and is different from the Kindle Paperwhite display, which is optimized for black and white reading."
+      ]
+    },
+    {
+      "id": "B0DDPYQTXR",
+      "title": "Cutluxe Butcher Knife Set, Brisket, Breaking & Boning Knife for Meat | BBQ Carving & Slicing Blades, Ultra Sharp German Steel, Full Tang Ergonomic Handles – Grilling Gift",
+      "image": "https://m.media-amazon.com/images/I/51IR2-pNymL._SL500_.jpg",
+      "price": 69.99,
+      "percentOff": 48,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DDPYQTXR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 134.99,
+      "expires": "2026-12-01",
+      "features": [
+        "BUTCHER KNIFE SET OF 3: Includes a 12\" brisket knife, a 10\" breaking cimeter knife, and a 6\" boning knife for meat cutting. The perfect BBQ knife set for any pitmaster.",
+        "VERSATILE BBQ KNIFE SET: breaking down primals with the breaking knife, trimming fat or filleting with the deboning knife, portioning briskets with the slicing knife. The right meat cutting knife for each job."
+      ]
+    },
+    {
+      "id": "B07C4Y1XM5",
+      "title": "SOMIC G951pink Gaming Headset for PC, PS4, PS5, Laptop, Cat Ear Headphone USB Gaming Headphones with Mic Noise Cancelling, LED Light, 7.1 Virtual Surround Sound for Girls, Women",
+      "image": "https://m.media-amazon.com/images/I/41etRAyYVrL._SL500_.jpg",
+      "price": 41.59,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07C4Y1XM5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 51.99,
+      "expires": "2026-12-01",
+      "features": [
+        "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
+        "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B07MVZQXRZ",
+      "title": "Fender Professional Instrument Cable, Guitar Cable, Anti-Kink, 10ft, Black | Electric guitar cable, stage-ready, anti-kinking design, durable connectors, low noise, live performance, 10 foot",
+      "image": "https://m.media-amazon.com/images/I/413wvF-RcAL._SL500_.jpg",
+      "price": 18.99,
+      "percentOff": 37,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B07MVZQXRZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "features": [
+        "One 10 foot Fender Instrument Cable guitar cords to use as electric guitar cord or amp cable with other instruments",
+        "Quality Fender Cable - Engineered to avoid twisting, kinking, and any \"physical memory,\" these instrument cables have resilient 95% oxygen-free spiral shielding that is flexible and aids in eliminating handling noise"
+      ]
+    },
+    {
+      "id": "B0H5PPPVLB",
+      "title": "Astercook Knife Set, 13 Pieces Kitchen Knives Set with Healthy Anti-Rust Coating, Dishwasher Safe, Stainless Steel Chef Knife Sets with 6 Blade Guards, Perfect Holiday Gifts for Kitchen Green",
+      "image": "https://m.media-amazon.com/images/I/41U6TthKBjL._SL500_.jpg",
+      "price": 18.99,
+      "percentOff": 46,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0H5PPPVLB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 34.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Multipurpose Knife Set: This kitchen knives set includes 8\" Chef Knife, 8\" Slicing Knife, 7\" Santoku Knife, 8\" Serrated Bread Knife, 5\" Utility Knife, 3.5\" Paring Knife, Kitchen Shears and 6 pcs Blade Guards",
+        "Anti-rust coating: The healthy anti-rust coating protects the knife from oxidation and dishwasher safe, while the non-stick coating ensures the blades stay clean all day long"
+      ]
+    },
+    {
+      "id": "B0F1C7PJZR",
+      "title": "Sonix x Sanrio Carrying Case for Nintendo Switch 2, Switch 1, Lite, OLED, Protective Travel Case with Game Cartridge Storage | Good Morning Hello Kitty",
+      "image": "https://m.media-amazon.com/images/I/41jTpC4V8xL._SL500_.jpg",
+      "price": 23.99,
+      "percentOff": 40,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0F1C7PJZR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "expires": "2026-12-01",
+      "features": [
+        "UNIVERSAL COMPATIBILITY: Designed for Nintendo Switch 2, with backwards compatibility for Nintendo Switch 1, Nintendo Switch Lite, and Switch OLED models—your all-in-one gaming storage case solution",
+        "STURDY & LIGHTWEIGHT PROTECTION: Soft shell exterior, handle, durable dual zipper, this sleek travel case safeguards your console, cables, and accessories"
+      ]
+    },
+    {
+      "id": "B08SGM6F79",
+      "title": "STREBITO Electronics Precision Screwdriver Sets 142-Piece with 120 Bits | Magnetic Repair Tool Kit for iPhone, MacBook, Computer, Laptop, PC, Tablet, PS4, Xbox, Nintendo, Game Console",
+      "image": "https://m.media-amazon.com/images/I/51flTTTGdML._SL500_.jpg",
+      "price": 23.79,
+      "percentOff": 37,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B08SGM6F79?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 37.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Wide Application】This precision screwdriver set has 120 bits, complete with every driver bit you’ll need to tackle any repair or DIY project. In addition, this repair kit has 22 practical accessories, such as magnetizer, magnetic mat, ESD tweezers, suction cup, spudger, cleaning brush, etc. Whether",
+        "【Humanized Design】This electronic screwdriver set has been professionally designed to maximize your repair capabilities. The screwdriver features a particle grip and rubberized, ergonomic handle with swivel top, provides a comfort grip and smoothly spinning. Magnetic bit holder transmits magnetism t"
+      ]
+    },
+    {
+      "id": "B0C1YBPJ43",
+      "title": "Astercook Knife Set for Kitchen with Block and Sharpener 15pcs German | Stainless Steel Kitchen Utensils Set Dishwasher Safe",
+      "image": "https://m.media-amazon.com/images/I/417qPLCzukL._SL500_.jpg",
+      "price": 37.98,
+      "percentOff": 37,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0C1YBPJ43?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 59.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【15 Pieces Multipurpose Knife Set】 15 pieces knife set includes: 8\" Chef knife, 8\" Slicing knife, 7\" Santoku knife, 8\" Serrated bread knife, 5\" Utility knife, 3.5\" Paring knife, 6 Pcs 4.5\" serrated steak knife, 1 Pc kitchen shear, and Black hard wood Knife Block with built-in Knife Sharpener.",
+        "【Black Non-Stick & Anti-Rust Coating】 The black coating on the stainless steel surface does a good job of stopping the knives from oxidizing in contact with oxygen in the air, so the kitchen knife set will remain non-stick and rust-proof for years to come."
+      ]
+    },
+    {
+      "id": "B0F69R7LLR",
+      "title": "PowerA Slim Case for Nintendo Switch 2 - Dark Heather Grey, Officially Licensed, Protective Case, Holds 10 Game Cards, Padded Screen Protector, Built-in Play Stand",
+      "image": "https://m.media-amazon.com/images/I/41Ef0k-aeqL._SL500_.jpg",
+      "price": 13.99,
+      "percentOff": 30,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0F69R7LLR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 19.99,
+      "features": [
+        "Structured Protection: Molded interior with soft fabric lining",
+        "Game Storage: Securely holds up to 10 game cards*"
+      ]
+    },
+    {
+      "id": "B0CFPL6CFY",
+      "title": "International Version – Amazon Kindle Paperwhite (16 GB) – With 7\" glare-free display, and weeks of battery life – Black",
+      "image": "https://m.media-amazon.com/images/I/41RHB1pVzBL._SL500_.jpg",
+      "price": 129.99,
+      "percentOff": 35,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0CFPL6CFY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 199.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Kindle Paperwhite – 7“ Paperwhite display with high contrast ratio and fast page turns.",
+        "Ready for travel – The ultra-thin design has a larger glare-free screen so pages stay sharp no matter where you are."
+      ]
+    },
+    {
+      "id": "B07HGRSC74",
+      "title": "Marco Almond Knife Block Set 14PC Rainbow Kitchen Knives Set | Forged Stainless Steel,Razor Sharp,Anti-Rust,Restaurant Grade,Ergonomic Handle,Full Tang,Restaurant Grade,Gift Box",
+      "image": "https://m.media-amazon.com/images/I/51oSyTEmP-L._SL500_.jpg",
+      "price": 28.17,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B07HGRSC74?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 39.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【Easy Care Knife Set】These kitchen knife set is easy to maintain. You can wash them not only by hand but also by machine. Wooden block keeps everything organized and countertop-ready.",
+        "【Rainbow Color Knife Sets】Each kitchen knife is coated with rainbow color that creates a very soothing color effect. Stainless steel material adds quality and rainbow color coating provides a very beautiful look and decor as if they are art pieces. Rainbow coating holds up well through dishwashing."
+      ]
+    },
+    {
+      "id": "B076GYVWRY",
+      "title": "iVoler Carrying Storage Case for Nintendo Switch/Switch OLED 2021 Black | Portable Travel All Protective Hard Messenger Bag Soft Lining 18 Games for Switch Console Pro Controller & Accessories",
+      "image": "https://m.media-amazon.com/images/I/51V6qeX+PNL._SL500_.jpg",
+      "price": 20.7,
+      "percentOff": 23,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B076GYVWRY?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 26.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Deluxe Travel Carrying Case. Specially designed to make your Console system even more portable & travel friendly. Comfortable handle strap is ideal for carrying. Large storage is suitable to take all the Switch accessories when go on a trip.",
+        "Multiple Storage. Interior grooves securely hold the Console include an extra set of JoyCons or a Pro Controller, For Switch Dock, JoyCons Charging Grip, AC Adapter. Interior mesh pocket for other smaller accessories like extra JoyCons, HDMI Cable, JoyCons Straps etc.Make going on vacation very easy"
+      ]
+    },
+    {
+      "id": "B0928VN44D",
+      "title": "AC Power Cord Compatible with Apple TV 1st, 2nd, 3rd, 4th, 5th Generation (4K) 10FT - UL Listed",
+      "image": "https://m.media-amazon.com/images/I/41cx53N9oIL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 23,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B0928VN44D?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 12.95,
+      "features": [
+        "Compatible with: Apple TV 1st, 2nd, 3rd, 4th, 5th Generation (4K)",
+        "Power Cord Type: 2-Slot, 18 AWG, 125V 7A"
+      ]
+    },
+    {
+      "id": "B07C85J8TV",
+      "title": "Shun Classic 2 Piece Carving Set | Includes 9\" Classic HG Slicing Knife & Carving Fork, VG-MAX Core, Damascus Stainless Steel Cladding, Pakkawood Handle",
+      "image": "https://m.media-amazon.com/images/I/41pM0FR3qHL._SL500_.jpg",
+      "price": 194.95,
+      "percentOff": 25,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B07C85J8TV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 259.95,
+      "features": [
+        "2 PIECE CARVING SET: Featuring a 9-inch Hollow Ground Slicing Knife and Carving Fork, the Shun Classic 2-Piece Meat Carving Set will help you achieve beautiful, even slices.",
+        "PIONEERING EXCELLENCE: Bring home a piece of the renowned Classic Series – the original authentic Japanese cutlery line introduced to the United States. Enjoy superior craftsmanship and innovative design."
+      ]
+    },
+    {
+      "id": "B07KXQX3S3",
+      "title": "SANDISK 128GB microSD Card, Super Mario Super Mushroom Edition | Officially Licensed for Nintendo-Switch, UHS-I, Up to 100MB/s Read Speeds - SDSQXAO-128G-GNCZN",
+      "image": "https://m.media-amazon.com/images/I/41wuFwHgE9L._SL500_.jpg",
+      "price": 49.99,
+      "percentOff": 23,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B07KXQX3S3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 64.99,
+      "features": [
+        "Compatible with Nintendo-Switch (NOT Nintendo-Switch 2)",
+        "Incredible speeds in a microSD card officially licensed for the Nintendo Switch, Nintendo OLED, and Nintendo Switch Lite systems"
+      ]
+    },
+    {
+      "id": "B001CCZF6E",
+      "title": "Pelican 1010 Micro Case (Black/Clear)",
+      "image": "https://m.media-amazon.com/images/I/411exATcBlL._SL500_.jpg",
+      "price": 16.76,
+      "percentOff": 20,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B001CCZF6E?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20.95,
+      "expires": "2026-12-04",
+      "features": [
+        "WATER RESISTANT CASE: Water Resistant (IP67), crushproof, and dustproof protection for your cell phone, camera, GoPro or other portable electronics and valuables. IP67 Certification = water resistant for 30 minutes when submerged at 3.3 feet",
+        "FEATURES: Automatic pressure equalization valve (balances interior pressure to keep water out), rubber liner that delivers o-ring watertight protection, carabiner included, stainless steel hinge and latch pins, easy open latch"
+      ]
+    },
+    {
+      "id": "B0G43YYLXW",
+      "title": "Cutluxe Boning Knife Set, 6\" Straight, Curved & Flexible for Fish & Meat | Razor Sharp High Carbon German Steel, Full Tang Ergonomic Handles – Artisan Series, Deboning",
+      "image": "https://m.media-amazon.com/images/I/51uBuebq+TL._SL500_.jpg",
+      "price": 52.24,
+      "percentOff": 24,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0G43YYLXW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 68.99,
+      "expires": "2026-12-01",
+      "features": [
+        "PREMIUM PERFORMANCE – Perfectly engineered flexible boning knife tapered to a razor-sharp edge for effortless filleting, de-boning, trimming, skinning and butterflying of different types of meat and fish.",
+        "RAZOR-SHARP PERFORMANCE: Each 6 Inch boning knife is hand sharpened to 14–16° per side for clean cuts. Designed as a meat cutting knife that cuts through fish, poultry, and meat with ease"
+      ]
+    },
+    {
+      "id": "B0FBQBY7P7",
+      "title": "Belkin Nintendo Switch 2 Case, Slim Carrying Travel Bag with AirTag Holder | Hard Shell Slim Carrying Case with AirTag Pocket, Soft Interior, 12 Game Card Slot, 2 in 1 Strap/Handle, Travel Protection",
+      "image": "https://m.media-amazon.com/images/I/417UjqbVXBL._SL500_.jpg",
+      "price": 22.99,
+      "percentOff": 23,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0FBQBY7P7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "expires": "2026-12-01",
+      "features": [
+        "NINTENDO CASE - SWITCH 2 COMPATIBLE: Our premium Nintendo Switch case is custom fit for your Switch 2, shielding your console with anti scratch velvet lining and shock absorbing materials—perfect for daily storage, commutes, or long travel days",
+        "TRAVEL READY DESIGN: This compact portable Nintendo Switch 2 carrying case fits easily in a backpack or carry-on or can simply be carried by itself with a wristlet handle for secure handling without risk of drops—great for on-the-go everyday players"
+      ]
+    },
+    {
+      "id": "B001PYL1BM",
+      "title": "Pelican 1050 Micro Case (Blue/Clear) | Waterproof Hard Shell Case with pressure valve - being replaced with Pelican M50 Series case (ASIN B0C73LKMPV)",
+      "image": "https://m.media-amazon.com/images/I/41Ob0dGOsUL._SL500_.jpg",
+      "price": 23.96,
+      "percentOff": 20,
+      "category": "Tech",
+      "url": "https://www.amazon.com/dp/B001PYL1BM?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-27",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.95,
+      "expires": "2026-12-04",
+      "features": [
+        "WATER RESISTANT CASE: Water Resistant (IP67), crushproof, and dustproof protection for your iPhone, cell phone, camera, GoPro or other portable electronics and valuables. IP67 Certification = water resistant for 30 minutes when submerged at 3.3 feet. Being replaced by the Pelican M50 Series case (AS",
+        "FEATURES: Automatic pressure equalization valve (balances interior pressure to keep water out), rubber liner that delivers o-ring watertight protection, carabiner included, stainless steel hinge and latch pins, easy open latch"
+      ]
+    },
+    {
       "id": "B00SAYCXWG",
       "title": "HyperX Cloud II Gaming Headset - 7.1 Surround Sound - Memory Foam Ear Pads - Durable Aluminum Frame - Multi Platform Headset - Works with PC, PS4, PS4 PRO, Xbox One, Xbox One S - Red (KHX-HSCP-RD)",
       "image": "https://m.media-amazon.com/images/I/41SkA5j2l-L._SL500_.jpg",
@@ -19,8 +396,7 @@
         "15-25kKhz Frequency Response.Headphones fit type:Over-Ear.Note : If the size of the earbud tips does not match the size of your ear canals or the headset is not worn properly in your ears, you may not obtain the correct sound qualities or call performance. Change the earbud tips to ones that fit mor",
         "Designed for comfort – Exceptionally comfortable memory foam ear cushions and padded leatherette headband help keep you focused on gaming.Supreme audio quality – Large 53mm drivers provide high-quality audio. Hear in-game details better and get the in-game advantage on your opponents"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0772KK55L",
@@ -79,8 +455,7 @@
         "TRIFORCE 40 MM DRIVERS — Razer patented 3-part driver design pushes out exceptional highs, mids and lows that doesn’t muddy, providing a more dynamic listening experience for deeper immersion",
         "RETRACTABLE HYPERCLEAR CARDIOID MIC — The improved pickup pattern in the microphone ensures more voice and less noise, while its retractable design allows for optimal positioning or protection when not in use"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0DZX63NRN",
@@ -139,8 +514,7 @@
         "IMMERSIVE, 7.1 SURROUND SOUND — Heighten awareness with accurate positional audio that lets you pinpoint intuitively where every sound is coming from (only available on Windows 10 64-bit)",
         "TRIFORCE 50MM DRIVERS — Cutting-edge proprietary design that divides the driver into 3 parts for the individual tuning of highs, mids, and lows —producing brighter, clearer audio with richer highs and more powerful lows"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0DP2PJCHR",
@@ -199,8 +573,7 @@
         "Gradient RGB Symphony Lights: Cyclic and gradient RGB lights, in line with your live broadcast aesthetics. Bring you an immersive gaming experience and awaken all your senses. There's also a palpable sense of security, and when the COCONISE microphone is muted, the RGB lights go off to let you know",
         "Practical and convenient function: It is equipped with a one-button mute touch sensor. When you want to close the microphone, you only need to touch it lightly to mute the sound, and the RGB light will go out to inform you that the microphone has been successfully closed. Equipped with a rotary cont"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0F2KYX5BJ",
@@ -1123,8 +1496,7 @@
         "USB/XLR Connectivity-AM8T comes with a dynamic microphone and a boom arm stand. Versatile PC gaming microphone kit with USB compatibility plug and play for PC in streaming or recording, without additional drivers. And also, while in XLR compatibility for mixer or sound card connection, the XLR studi",
         "Vibrant RGB Light-The streaming microphone RGB illuminates your gaming setup with customizable RGB lighting for a visually stunning game experience. You can easily control the RGB mode/colors or turn off by simply tapping the RGB button without making any complicated settings on specific software."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0B4YYZZR5",
@@ -1220,8 +1592,7 @@
       "features": [
         "SELECTABLE PICKUP PATTERN: The pro broadcast mic starter kit features a 4-in-1 polar pattern selector which allows you to select from cardioid, bidirectional, stereo & omnidirectional. Equipped w/ headphone jack & adjustable headphone/mic volume/gain",
         "FULL METAL ALLOY BODY: Features a full metal alloy body. Includes metal tripod mic stand w/ angle adjustment & 5.9' detachable USB cable. Easy to connect w/ computer, no extra driver/software needed. Perfect for online performances, voice-overs, etc"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0DGB2GPCZ",
@@ -1456,8 +1827,7 @@
         "【Dual-Mode Wireless with Ultra-Low Latency】Enjoy both 2.4 GHz and Bluetooth 5.4 connectivity with a guaranteed maximum latency of 20 ms. Whether you’re on devices, you get rock-solid audio synchronization for split-second reactions.",
         "【4-in-1 Universal Connectivity】AOC PS5 Headset is equipped with USB-A, Type-C, Bluetooth 5.4, and 3.5 mm wired modes, this single gaming headset wireless plugs into consoles, mobile devices, and more—eliminating the need for multiple adapters or extra purchases. * Bluetooth modes are incompatible wi"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0035BTQ06",
@@ -1495,8 +1865,7 @@
       "features": [
         "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
         "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0788MGJ31",
@@ -1790,8 +2159,7 @@
       "features": [
         "PLANO PLASTIC STORAGE SHELVES: Organize your home, closet, garage, laundry room or office with Plano heavy-duty Shelving Units.",
         "200LB STORAGE CAPACITY: Each of the 4 plastic shelves has a maximum weight capacity of 50lbs. The full shelving unit can easily accommodate up to 200lbs of total weight."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0HLL8FK69",
@@ -1811,8 +2179,7 @@
         "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
         "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B079D72S2B",
@@ -2072,64 +2439,6 @@
       "lastChecked": "2026-11-27T02:51:57.610Z"
     },
     {
-      "id": "B0GYCYQDS7",
-      "title": "Rayhaan Wolf – Spicy, Gourmand, Amber, Woody – Eau de Parfum Spray Long-Lasting Fragrance for Men, 3.4 Ounce / 100 ml",
-      "image": "https://m.media-amazon.com/images/I/41CZfidG9vL._SL500_.jpg",
-      "price": 26.6,
-      "percentOff": 43,
-      "category": "Fragrances",
-      "url": "https://www.amazon.com/dp/B0GYCYQDS7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 46.5,
-      "expires": "2026-12-01",
-      "features": [
-        "Bold Spiced & Gourmand Warmth: A captivating masculine fragrance that blends aromatic spices, rich sweetness, and warm woody accords for a confident and memorable scent.",
-        "Fragrance Notes: Opens with Cardamom & Orange Blossom, unfolds into a decadent heart of Toffee & Tonka Bean, and settles into a smooth base of Vanilla, Amber & Blonde Woods."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B0CQKNQ62N",
-      "title": "CloroxPro Pine-Sol Multi-Surface Cleaner, Original Pine, 80 fl. oz. | Professional Strength Clorox All Purpose Cleaner, Tackles Allergens, Odor, Dirt, Grime and Grease, Home and Commercial Use",
-      "image": "https://m.media-amazon.com/images/I/41136Dw6+tL._SL500_.jpg",
-      "price": 11.28,
-      "percentOff": 42,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0CQKNQ62N?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 19.49,
-      "features": [
-        "ONE BOTTLE SOLUTION: This 80 fluid ounce bottle of CloroxPro Pine-Sol Multi-Surface Cleaner gives you 80 gallons of cleaning solution that is safe for use on most commercial high-touch surfaces",
-        "KILLS 99.9% OF GERMS (3): When used as directed, CloroxPro Pine-Sol Multi-Surface Cleaner disinfects both neat and diluted with a formula that kills 99.9% of cold and flu viruses (1)"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "1932188126",
-      "title": "Bananagrams Classic Word Game, 144 Tiles in Banana Pouch, Travel Game | Fast-paced spelling & anagram game for 1-8 players; portable pouch, educational wordplay for kids and adults ages 7+",
-      "image": "https://m.media-amazon.com/images/I/31DfwOmhhVL._SL500_.jpg",
-      "price": 11.99,
-      "percentOff": 25,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/1932188126?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 15.99,
-      "features": [
-        "FUN FOR EVERYONE – Gather your family and friends with word games for adults and kids, and race against each other to build crossword grids. This anagram game that will drive you bananas.",
-        "MAKES A GREAT GIFT – Bananagrams will make a thoughtful gift as family games for adults and children for your friends or family members. It is perfect for both boys and girls."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
       "id": "B07JG9JB29",
       "title": "Geekria Shield Gaming Headset Case for Lay Flat Over-Ear Headphones, Replacement Hard Shell Travel Carrying Bag with Cable Storage, Compatible with SteelSeries, Logitech, JBL (Dark Grey)",
       "image": "https://m.media-amazon.com/images/I/51dIToUVBnS._SL500_.jpg",
@@ -2137,7 +2446,7 @@
       "percentOff": 20,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B07JG9JB29?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
+      "added": "2026-11-27",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2146,77 +2455,17 @@
         "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
         "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B0D5MFLFM2",
-      "title": "Pukka Premium Herbal Tea Gift Set, 45 Organic Tea Bags with 9 Flavors | Premium Herbal Tea, Caffeine Free, Variety Pack Wellness Collection for Tea Lovers Holiday Birthday Gift Box",
-      "image": "https://m.media-amazon.com/images/I/51BVbAqU-3L._SL500_.jpg",
-      "price": 19.11,
-      "percentOff": 20,
-      "category": "Drinks",
-      "url": "https://www.amazon.com/dp/B0D5MFLFM2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 23.93,
-      "expires": "2026-12-01",
-      "features": [
-        "Variety: Experience 9 premium herbal tea flavors in this comprehensive tea sampler gift set box, featuring 45 individually wrapped organic tea bags that deliver exceptional taste and wellness benefits for every tea lover's palate",
-        "Caffeine-Free: Enjoy relaxing caffeine free tea blends crafted without caffeine, perfect for evening sipping or anytime you want to unwind with soothing herbal teas that promote wellness and peaceful moments throughout your day"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B09158614F",
-      "title": "Clorox Free & Clear Cleaning Wipes, Light Lemon Scent, 75 Count, 3 Pack | For Most Surfaces in Kitchen, Bathroom and High Touch Areas, Safe Around Kids, Pets and Food, Bleach Free, No Dyes or Ammonia",
-      "image": "https://m.media-amazon.com/images/I/51yFOfIMljL._SL500_.jpg",
-      "price": 13.97,
-      "percentOff": 33,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B09158614F?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 20.97,
-      "features": [
-        "CLEANING WIPES: Safer Choice certified, Clorox Cleaning Wipes in a lemon scent are made from plant based fibers; Pack may vary",
-        "FAMILY FRIENDLY: Clorox Free & Clear Cleaning Wipes are formulated without dyes, bleach or ammonia to get the surface clean you want from the brand you trust"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B000K8FYAS",
-      "title": "Asmodee Ticket to Ride USA 1910 Board Game Expansion - Train Route-Building Strategy Game, Fun Family Game for Kids & Adults, Ages 8+, 2-5 Players, 30-60 Minute Playtime",
-      "image": "https://m.media-amazon.com/images/I/41rBNxm9PoL._SL500_.jpg",
-      "price": 17.49,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B000K8FYAS?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 21.99,
-      "expires": "2026-12-01",
-      "features": [
-        "EXPANSION FOR CLASSIC FUN: Enhance your Ticket to Ride experience with 181 new large format cards and 35 new Destination Tickets.",
-        "GLOBETROTTER BONUS: Compete for the GlobeTrotter bonus card by completing the most tickets in this exciting expansion."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0BSBVPWCV",
       "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
       "image": "https://m.media-amazon.com/images/I/31ZPUnFQUvL._SL500_.jpg",
-      "price": 280.85,
+      "price": 280,
       "percentOff": 26,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
+      "added": "2026-11-27",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2224,86 +2473,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B074YPSTRP",
-      "title": "Asmodee Twilight Imperium: 4th Edition Board Game - Epic Galactic Conquest, Sci-Fi Adventure Strategy Game for Kids & Adults, Ages 14+, 3-6 Players, 4-8 Hour Playtime",
-      "image": "https://m.media-amazon.com/images/I/51JFan8VxYL._SL500_.jpg",
-      "price": 151.99,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B074YPSTRP?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 189.99,
-      "expires": "2026-12-01",
-      "features": [
-        "THE DAWN OF A NEW AGE: Explore the latest reimagining of the Twilight Imperium saga with this epic fourth edition. The galaxy stirs once more, and the great races are again looking beyond their borders into the far reaches of space. Mecatol Rex, the jewel of galactic civilization, awaits the one who",
-        "SCI-FI STRATEGY BOARD GAME: In this game of galactic conquest, each player takes command of one of seventeen unique civilizations to compete for interstellar supremacy through warfare, trade, uncertain allegiances, and political dominance. Negotiate your way to victory or overrun your foes with mili"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B000VCW7EO",
-      "title": "Estée Lauder Beautiful Eau de Parfum Spray with Notes of Rose, Lily, Tuberose & Orange Flower | Floral Perfume for Women | Perfumes for Women, 2.5 Fl Oz",
-      "image": "https://m.media-amazon.com/images/I/219EcVAmlGL._SL500_.jpg",
-      "price": 69,
-      "percentOff": 40,
-      "category": "Fragrances",
-      "url": "https://www.amazon.com/dp/B000VCW7EO?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 115,
-      "expires": "2026-12-01",
-      "features": [
-        "TOP NOTES: Rose, Mandarin, Lily, Tuberose, Marigold",
-        "MIDDLE NOTES: Orange Flower, Muguet, Jasmine, Ylang-Ylang"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B09PZLN5ZF",
-      "title": "Clorox Disinfecting Cleaner Pack, 32 fl. oz., 3 Pack | All-Purpose Cleaner and Bathroom Cleaner Pack, Bleach Free, Household Essentials, Cleans Dirt and Grime Off Most Surfaces",
-      "image": "https://m.media-amazon.com/images/I/51rZORpgz2L._SL500_.jpg",
-      "price": 13.17,
-      "percentOff": 20,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B09PZLN5ZF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 16.38,
-      "features": [
-        "ALL PURPOSE DISINFECTING CLEANER BUNDLE: 4 in 1 Clorox Disinfecting All Purpose Cleaner cleans, deodorizes, disinfects and shines (1); Clorox Bathroom Disinfecting Cleaner dissolves soap scum",
-        "BLEACH FREE DISINFECTANTS: These Clorox bathroom cleaning sprays are formulated without bleach, but do not compromise the cleaning power you need in your bathroom"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B0FJ2WQKJ2",
-      "title": "Marc Jacobs Daisy Love ($210 Value) - Floral Women's Perfume – Discovery 3 Pieces Trial Set",
-      "image": "https://m.media-amazon.com/images/I/31E-LHGNEGL._SL500_.jpg",
-      "price": 120,
-      "percentOff": 20,
-      "category": "Fragrances",
-      "url": "https://www.amazon.com/dp/B0FJ2WQKJ2?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 150,
-      "expires": "2026-12-01",
-      "features": [
-        "A radiant fragrance that combines fresh and floral accords featuring cloudberries, daisy petals and driftwood."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B081415GCS",
@@ -2323,8 +2493,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0GD55C2VQ",
@@ -2365,8 +2534,7 @@
         "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
         "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0CN493YHF",
@@ -2386,8 +2554,7 @@
         "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
         "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0C5DCRRN7",
@@ -2407,29 +2574,7 @@
         "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
         "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
-    },
-    {
-      "id": "B07V4F7ZZ5",
-      "title": "EKSA E1000 Gaming Headset, Computer Headphones with Noise Canceling Mic & RGB Light, Compatible with PC, PS4, PS5, Laptop",
-      "image": "https://m.media-amazon.com/images/I/51Rsh1JKjtL._SL500_.jpg",
-      "price": 25.83,
-      "percentOff": 24,
-      "category": "Gaming",
-      "url": "https://www.amazon.com/dp/B07V4F7ZZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-26",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 33.99,
-      "expires": "2026-12-01",
-      "features": [
-        "[Compatibility]: Professional gaming headset for PC gamers, compatibility with PC (Win 7, Win 8, Win10), PS4 Console, laptops, Mac and other devices with USB audio port.",
-        "[7. 1 Surround Sound]: EKSA gaming headset equip built-in USB audio sound chip with 7. 1 surround sound. Combine with 50mm magnetic neodymium driver, create an immersive gaming experience with stereo surround sound in the game. No driver required, Plug and Play."
-      ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0BJ72M77L",
@@ -2449,8 +2594,7 @@
         "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
         "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0C46CS37H",
@@ -2470,8 +2614,7 @@
         "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
         "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0BV4F17CS",
@@ -2490,8 +2633,7 @@
       "features": [
         "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
         "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0BBVY9L7C",
@@ -2510,8 +2652,7 @@
       "features": [
         "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
         "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0D458QDVN",
@@ -2530,8 +2671,7 @@
       "features": [
         "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
         "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0FY2R5R8X",
@@ -2549,8 +2689,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -2568,27 +2707,24 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
       "title": "Lepro Clip on Desk Lamp, LED Reading Light with Clamp, 460LM 5W, Black | 3 Color Modes 10 Brightness, Dimmable, USB Small Desk Light with Gooseneck Swing Arm for Nail, Home Office and Dorm",
       "image": "https://m.media-amazon.com/images/I/31n1Qsepg+L._SL500_.jpg",
-      "price": 15.33,
+      "price": 15.09,
       "originalPrice": 18.99,
-      "percentOff": 19,
+      "percentOff": 21,
       "category": "Home",
       "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-26",
-      "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -2606,8 +2742,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B09Q2ZZGH2",
@@ -2627,8 +2762,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0BXSXPG7K",
@@ -2646,8 +2780,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B07Y1C6GDS",
@@ -2666,8 +2799,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B09BNMJM2C",
@@ -2685,8 +2817,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0FP1TRW4L",
@@ -2696,7 +2827,7 @@
       "percentOff": 33,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0FP1TRW4L?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-20",
+      "added": "2026-11-27",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2705,8 +2836,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0FLKJ7FH7",
@@ -2725,8 +2855,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2745,8 +2874,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2784,26 +2912,25 @@
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
       "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
       "image": "https://m.media-amazon.com/images/I/416LIaAUumL._SL500_.jpg",
-      "price": 45.59,
+      "price": 39.99,
       "originalPrice": 49.99,
-      "percentOff": 9,
+      "percentOff": 20,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-25",
+      "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2820,8 +2947,7 @@
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-27T02:51:57.610Z"
+      ]
     }
   ]
 }
