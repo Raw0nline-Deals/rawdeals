@@ -3656,6 +3656,62 @@
         }
       ],
       "requests": 16
+    },
+    {
+      "checkedAt": "2026-11-27T20:44:06.960Z",
+      "checked": 148,
+      "unchanged": 144,
+      "updated": 3,
+      "removed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0H5PPPVLB",
+          "title": "Astercook Knife Set, 13 Pieces Kitchen Knives Set with Healthy Anti-Rust Coating, Dishwasher Safe, Stainless Steel Chef Knife Sets with 6 Blade Guards, Perfect Holiday Gifts for Kitchen Green",
+          "url": "https://www.amazon.com/dp/B0H5PPPVLB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 18.99,
+          "newPrice": 24.99,
+          "oldPercentOff": 46,
+          "newPercentOff": 29,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 134.99,
+          "newPrice": 132.95,
+          "oldPercentOff": 21,
+          "newPercentOff": 22,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0FQN33B3R",
+          "title": "Nike Little Kids' Court Borough Mid 2 Shoes, White/Blue Crystal-Blue Crystal-White, 13C",
+          "url": "https://www.amazon.com/dp/B0FQN33B3R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 51.75,
+          "newPrice": 51.75,
+          "oldPercentOff": 25,
+          "newPercentOff": 25,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B0D9MCK4R8",
+          "title": "HyperX QuadCast 2 USB Gaming Microphone | 24-bit | 96kHz | 4 Polar Patterns | USB-C | Removable Shock Mount | For PC, Mac, PS5 & Switch | LED Lighting | On-Board Controls",
+          "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 119,
+          "newPrice": 118.49,
+          "oldPercentOff": 21,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
