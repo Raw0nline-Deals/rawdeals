@@ -3712,6 +3712,40 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-27T23:46:18.555Z",
+      "checked": 147,
+      "unchanged": 145,
+      "updated": 2,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B07KXQX3S3",
+          "title": "SANDISK 128GB microSD Card, Super Mario Super Mushroom Edition | Officially Licensed for Nintendo-Switch, UHS-I, Up to 100MB/s Read Speeds - SDSQXAO-128G-GNCZN",
+          "url": "https://www.amazon.com/dp/B07KXQX3S3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 49.99,
+          "newPrice": 49.11,
+          "oldPercentOff": 23,
+          "newPercentOff": 24,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 132.95,
+          "newPrice": 130.96,
+          "oldPercentOff": 22,
+          "newPercentOff": 23,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
