@@ -3511,6 +3511,29 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-27T02:51:57.610Z",
+      "checked": 143,
+      "unchanged": 142,
+      "updated": 1,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0BSBVPWCV",
+          "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
+          "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 280,
+          "newPrice": 280.85,
+          "oldPercentOff": 26,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
