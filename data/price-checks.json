@@ -3534,6 +3534,128 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-27T17:50:30.546Z",
+      "checked": 152,
+      "unchanged": 142,
+      "updated": 6,
+      "removed": 3,
+      "unavailable": 1,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 131.95,
+          "newPrice": 134.99,
+          "oldPercentOff": 22,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0H98HGMYX",
+          "title": "Heated Vest for Men Women with 16000mAh Battery Pack, 6 Heating Zones | 3 Heating Levels Men's Heated Vest, Lightweight Heated Jackets for Winter, Hunting, Fishing, Cycling, Hiking",
+          "url": "https://www.amazon.com/dp/B0H98HGMYX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 69.98,
+          "newPrice": 69.98,
+          "oldPercentOff": 46,
+          "newPercentOff": 46,
+          "action": "unavailable",
+          "reason": "out of stock or unavailable"
+        },
+        {
+          "asin": "B01GH0ZJMU",
+          "title": "Columbia Youth Boys' Backcast Short, Breathable, UPF 50 Sun Protection",
+          "url": "https://www.amazon.com/dp/B01GH0ZJMU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 15.85,
+          "newPrice": 15.84,
+          "oldPercentOff": 37,
+          "newPercentOff": 37,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0B4YYZZR5",
+          "title": "Funko Pop Star Wars: the Book of Boba Fett - the Mandalorian with Pouch - Collectable Vinyl Figure - Gift Idea - Official Merchandise - Toys for Kids & Adults - Sci-Fi Fans",
+          "url": "https://www.amazon.com/dp/B0B4YYZZR5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 7.7,
+          "newPrice": 15.25,
+          "oldPercentOff": 49,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B08XZY8Y53",
+          "title": "Pyle USB Microphone Selectable Pickup Pattern-4 in 1 Polar Pattern Selector Audio Cardioid Condenser Mic w/LED Effect Lights, Podcast Recording Kit for Gaming Streaming Podcasting Studio PDMIUSBMT300",
+          "url": "https://www.amazon.com/dp/B08XZY8Y53?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 37.7,
+          "newPrice": 48.99,
+          "oldPercentOff": 23,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0DZXSTD2Q",
+          "title": "Funko POP! TV: Sesame Street - Oscar the Grouch | Official Merch - Collectable Vinyl Figurine for Shelf Display - Birthday Gift Idea for Fans and Collectors",
+          "url": "https://www.amazon.com/dp/B0DZXSTD2Q?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 10.49,
+          "newPrice": 12.06,
+          "oldPercentOff": 30,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DQYR6X8R",
+          "title": "Bounty Select-A-Size Paper Towels, White, 2 Triple Rolls = 6 Regular Rolls",
+          "url": "https://www.amazon.com/dp/B0DQYR6X8R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.99,
+          "newPrice": 6.97,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0BSBVPWCV",
+          "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
+          "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 280,
+          "newPrice": 283.79,
+          "oldPercentOff": 26,
+          "newPercentOff": 25,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0GD55C2VQ",
+          "title": "Wireless Gaming Headset for PS5, PS4, PC, Switch, 20ms Low Latency with Mic | 2.4GHz 2-in-1 USB-A/USB-C Receiver & Bluetooth 5.4, Up to 60-Hour Battery Life, 50mm Titanium-Coated Drivers, RGB Lighting",
+          "url": "https://www.amazon.com/dp/B0GD55C2VQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 18.99,
+          "newPrice": 28.99,
+          "oldPercentOff": 34,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B09XF23WY2",
+          "title": "Lepro Clip on Desk Lamp, LED Reading Light with Clamp, 460LM 5W, Black | 3 Color Modes 10 Brightness, Dimmable, USB Small Desk Light with Gooseneck Swing Arm for Nail, Home Office and Dorm",
+          "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
+          "oldPrice": 15.09,
+          "newPrice": 15.33,
+          "oldPercentOff": 21,
+          "newPercentOff": 19,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
