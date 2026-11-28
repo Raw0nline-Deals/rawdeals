@@ -3802,6 +3802,128 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-28T17:39:04.316Z",
+      "checked": 154,
+      "unchanged": 144,
+      "updated": 6,
+      "removed": 4,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0CT559B2P",
+          "title": "PowerA Protection Case for Nintendo Switch/OLED/Lite - Peely, Protective, Gaming, Console Case, Accessories, Storage, Officially licensed",
+          "url": "https://www.amazon.com/dp/B0CT559B2P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 18.07,
+          "newPrice": 18.16,
+          "oldPercentOff": 21,
+          "newPercentOff": 21,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0G43YYLXW",
+          "title": "Cutluxe Boning Knife Set, 6\" Straight, Curved & Flexible for Fish & Meat | Razor Sharp High Carbon German Steel, Full Tang Ergonomic Handles – Artisan Series, Deboning",
+          "url": "https://www.amazon.com/dp/B0G43YYLXW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 52.24,
+          "newPrice": 54.99,
+          "oldPercentOff": 24,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DP2PJCHR",
+          "title": "Nike W Zoom Fly 6 Running ShoesWomen, Bright Crimson Cave Purple Lime Blast, 7.5 US",
+          "url": "https://www.amazon.com/dp/B0DP2PJCHR?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 130.96,
+          "newPrice": 131.95,
+          "oldPercentOff": 23,
+          "newPercentOff": 22,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B077KYT31Z",
+          "title": "Quaker Chewy Granola Bars, Peanut Butter Chocolate Chip, 58 Count",
+          "url": "https://www.amazon.com/dp/B077KYT31Z?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 12.27,
+          "newPrice": 17.57,
+          "oldPercentOff": 23,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0DGB2GPCZ",
+          "title": "Funko POP! Deluxe: How to Train Your Dragon (Live Action) - Toothless | Official Cartoon/Animation Merch - Collectable Vinyl Figurine for Shelf Display - Birthday Gift Idea for Fans and Collectors",
+          "url": "https://www.amazon.com/dp/B0DGB2GPCZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 17.59,
+          "newPrice": 18.04,
+          "oldPercentOff": 41,
+          "newPercentOff": 40,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B07MXY4QXC",
+          "title": "PUMA Men's Crew Socks (6-Pack), Black/Gray, 10-13 | Arch Support and Cushioned Footbed",
+          "url": "https://www.amazon.com/dp/B07MXY4QXC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 11.9,
+          "newPrice": 16.9,
+          "oldPercentOff": 41,
+          "newPercentOff": 16,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B07B598S15",
+          "title": "PUMA unisex child 6 Pairs Low Cut Socks, Black Combo, 7-8.5 US | Extra Cushion and Arch Support",
+          "url": "https://www.amazon.com/dp/B07B598S15?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.34,
+          "newPrice": 10.33,
+          "oldPercentOff": 36,
+          "newPercentOff": 0,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        },
+        {
+          "asin": "B0CFQGPZRT",
+          "title": "Puma Unisex-Child, Rebound Layup Synthetic Leather Hook and Loop, Puma Black-Puma Black, Little Kid 13",
+          "url": "https://www.amazon.com/dp/B0CFQGPZRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 43.2,
+          "newPrice": 39.99,
+          "oldPercentOff": 26,
+          "newPercentOff": 31,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0DQYR6X8R",
+          "title": "Bounty Select-A-Size Paper Towels, White, 2 Triple Rolls = 6 Regular Rolls",
+          "url": "https://www.amazon.com/dp/B0DQYR6X8R?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 6.97,
+          "newPrice": 6.99,
+          "oldPercentOff": 28,
+          "newPercentOff": 28,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0D4QX4QKT",
+          "title": "Ravensburger All Seasons Flower Shop 1000 Piece Jigsaw Puzzle | Explore Colorful Botanical Arrangements | from The Bestselling Puzzle Brand Worldwide | Enhanced Anti-Glare Surface",
+          "url": "https://www.amazon.com/dp/B0D4QX4QKT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 17.49,
+          "newPrice": 20.84,
+          "oldPercentOff": 30,
+          "newPercentOff": 17,
+          "action": "removed",
+          "reason": "discount below the minimum"
+        }
+      ],
+      "requests": 16
     }
   ]
 }
