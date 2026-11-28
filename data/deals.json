@@ -2,6 +2,378 @@
   "about": "Live deals. Entries with source api come from the Amazon Creators API. Hand-written deals use sample false.",
   "deals": [
     {
+      "id": "B0HGR4SDYC",
+      "title": "AOC 2.4GHz Wireless Gaming Headset for PS5, PS4, PC, Switch, 45Hr, White | Bluetooth 6.0 Gaming Headphones with Noise Canceling Mic, 7.1 Virtual Surround, Great for Fortnite & Call of Duty/FPS Gamers",
+      "image": "https://m.media-amazon.com/images/I/41Hm7ZSHbRL._SL500_.jpg",
+      "price": 37.98,
+      "percentOff": 24,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0HGR4SDYC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 49.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Zero-Latency Audio for Competitive Edge: Dominate your matches with the AOC wireless gaming headset. Featuring ultra-fast 2.4GHz lossless technology (≤20ms latency), this ps5 headset ensures your audio is always perfectly synced with the action. Tuned 50mm drivers deliver clear gaming sound for foot",
+        "Crystal-Clear Squad Communication: Coordinate strategies flawlessly using the detachable, omni-directional noise-canceling microphone. Whether you are gaming in a lively dorm room or a busy living room, this ps5 headset wireless filters out background distractions, transmitting your voice with absol"
+      ],
+      "priority": true
+    },
+    {
+      "id": "B0BJDPZ4FB",
+      "title": "EEKEDO Tongs for Cooking, Stainless Steel Kitchen Tongs with Silicone Tips | 600ºF High Heat-Resistant, Non Scratch, Locking Tong for Non-Stick Pans Air Fryer Salads BBQ, Set of 2 (9\" and 12\") Navy Blue",
+      "image": "https://m.media-amazon.com/images/I/41tBXxSN+bL._SL500_.jpg",
+      "price": 8.54,
+      "percentOff": 34,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0BJDPZ4FB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 12.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Premium Materials: EEKEDO kitchen tongs are constructed with food-grade stainless steel and silicone. Carbon free.Thickened stainless steel makes it stronger and more durable.It is convenient and safe to your cooking. 🌿Our silicone kitchen tongs Contains at least 50% recycled material, helping you",
+        "600ºF High Heat-Resistant: The silicone tongs feature BPA free silicone tip that will not scratch your nonstick cookware. Scalloped edges securely hold food. EEKEDO Tongs are great for frying, grilling, stirring, and serving. Non-stick surface easy to rinse, dishwasher safe."
+      ]
+    },
+    {
+      "id": "B0H2K3RD7C",
+      "title": "EA Sports Madden NFL 27 - Standard Edition PS5 |Disc I VideoGame",
+      "image": "https://m.media-amazon.com/images/I/61i4mpAfgRL._SL500_.jpg",
+      "price": 29.95,
+      "percentOff": 57,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0H2K3RD7C?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 69.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Standard Edition for PlayStation 5 (disc) includes the full EA SPORTS Madden NFL 27 game. Experience authentic NFL gameplay with Franchise mode, Superstar Career, and Ultimate Team.",
+        "DYNAMIC FRANCHISE MODE – Persona Engine brings each NFL athlete to life with unique personalities, creating a reactive and evolving league shaped by your decisions."
+      ]
+    },
+    {
+      "id": "B081T3HBNF",
+      "title": "E-far 9 Inch Round Canning Cooking Racks, Stainless Steel Round Steaming Baking Cooling Rack Set of 2, Multi-Purpose for Air Fryer Pressure Cooker, Dishwasher Safe",
+      "image": "https://m.media-amazon.com/images/I/41loD2VVwSL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 33,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B081T3HBNF?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "features": [
+        "HEALTHY MATERIAL - E-far round cooling racks are made of pure stainless steel to ensure no harmful substance into food, Rust free and healthy racks to meet your daily kitchen use",
+        "STURDY & DURABLE - High hardness stainless to resist deformation, Solid welded thick wires sturdy enough to lift heavy food, Mirror finish surface for easy clean up, Dishwasher safe"
+      ]
+    },
+    {
+      "id": "B0C8N9QBC3",
+      "title": "Jekeno Gaming Gamepad Blackout Curtains for Bedroom, 2 Panels Set 52x63 in | Black Out Curtains for Living Room Office, Thermal Insulated Window Drapes, Video Games Controller Neon Sign Print Home Decor",
+      "image": "https://m.media-amazon.com/images/I/51Co2UoUfdL._SL500_.jpg",
+      "price": 22.79,
+      "percentOff": 53,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0C8N9QBC3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 47.98,
+      "expires": "2026-12-01",
+      "features": [
+        "Video Game Black-Out Curtains: Leading high-definition digital printing technology to ensure long-term use without fading, and keep the color bright. breathable, and anti-wrinkle. Without chemical coating. Which is healthier and safer for people, especially adults and kids baby",
+        "Blackout Functions: 70% Blackout, Can darken the room, and 100% Privacy Protection. Our Video Games Pattern Gaming Theme blackout window drapes have the perfect room decoration function. Perfect for bedroom, living room, apartment, Playroom, dorm, nursery, gaming room, gamer room, dormitory, hotel,"
+      ]
+    },
+    {
+      "id": "B0FY2PFLG7",
+      "title": "400PCS 12\"x16\" Parchment Paper Baking Sheets,100% Wood Pulp 45gsm Unbleached Precut Half Parchment Paper for Baking, Non-Stick Baking Paper for Baking, Grillin, Steaming Bread Cookies, Oven, Air Fryer",
+      "image": "https://m.media-amazon.com/images/I/51ltZ0DgKCL._SL500_.jpg",
+      "price": 19.93,
+      "percentOff": 31,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0FY2PFLG7?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 28.99,
+      "expires": "2026-12-01",
+      "features": [
+        "【400 PCS 12”×16” Food Grade Parchment Paper Sheets】YUANYE’s baking paper is made of 100% natural wood pulp, unbleached and 45gsm ultra-thick. These brown baking paper sheets are FSC certified, with double-sided food-safe silicone coating. Safe non-toxic, recyclable, BPA-free, chlorine and fluorescen",
+        "【Pre-cut Baking Parchment Paper Sheets】Our pre-cut parchment paper sheets perfectly fits most baking pan surfaces: 12x16 inches; 9x13 inches; ensuring they lay flat on the baking tray without curling, making it easy to prepare Christmas cookies, festive cakes, holiday pastries, and homemade treats f"
+      ]
+    },
+    {
+      "id": "B016JBE8LU",
+      "title": "Logitech G29 Driving Force Racing Wheel and Pedals, Force Feedback, Real Leather + Logitech G Driving Force Shifter - For PS5, PS4 and PC, Mac - Black",
+      "image": "https://m.media-amazon.com/images/I/413zcGlvzsL._SL500_.jpg",
+      "price": 195.38,
+      "percentOff": 46,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B016JBE8LU?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 359.98,
+      "features": [
+        "REALISTIC RACING SIMULATION DUO: Feel what is like to drive a real race car with G29 Driving Force Racing Wheel & Pedals and Driving Force Shifter",
+        "PAIRED FOR PRECISION: Take full control of the race with G29 Driving Force Racing Wheel & Pedals and Driving Force Shifter"
+      ]
+    },
+    {
+      "id": "B0GTTSM956",
+      "title": "Fintoriel Kitchen Cooking Tongs Set, 9\" & 12\", Green, 2 Pack | Built-in Stand & Dishwasher Safe; Heat Resistant up to 600°F; Perfect for Grilling, BBQ, Salad & Frying.",
+      "image": "https://m.media-amazon.com/images/I/31ZoIR+YuOL._SL500_.jpg",
+      "price": 6.99,
+      "percentOff": 30,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0GTTSM956?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "features": [
+        "【Heat Resistant Up to 600°F】 Crafted from premium 430 stainless steel with BPA-free silicone tips, these tongs withstand extreme heat without melting, warping, or bending—safe for grilling, frying, oven cooking, and more.",
+        "【Two Handy Sizes for All Tasks】 Includes 9” and 12” tongs. The 9” size is perfect for tossing salad or serving at the table, while the 12” tong gives you extra reach and safety when grilling, using the air fryer, or serving buffet dishes."
+      ]
+    },
+    {
+      "id": "B08DVCBSLC",
+      "title": "Laimax Grip Case for Nintendo Switch Lite,Hand Grips Handles Ergonomic Protective Case,Accessories Compatible with Nintendo Switch Lite (Yellow)",
+      "image": "https://m.media-amazon.com/images/I/41lAmohm9hL._SL500_.jpg",
+      "price": 10.49,
+      "percentOff": 30,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08DVCBSLC?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 14.99,
+      "expires": "2026-12-01",
+      "features": [
+        "This grip case is newly designed for Switch lite",
+        "The ergonomic handle with a striped anti-skid design to provide a comfortable feel and grip, It can effectively relieve hand cramps in long-term competitions."
+      ]
+    },
+    {
+      "id": "B0DXF5RGWW",
+      "title": "LIANYU 6 Inch Round Cake Pan, Stainless Steel Baking Layer Cake Pan Tin | Heavy Duty Metal Round Tier Cake Baking Tins, 2In Tall, Oven & Dishwasher Safe, No Coating, Non Toxic Bakeware",
+      "image": "https://m.media-amazon.com/images/I/31BE9--YbtL._SL500_.jpg",
+      "price": 9.99,
+      "percentOff": 29,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DXF5RGWW?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 13.99,
+      "features": [
+        "Durable & healthy, round cake pan is made from food-grade, heavy gauge stainless steel, which is corrosion resistant and sturdy, no coating on this baking pan, you no longer worry about harmful coatings or chemicals leaching off into your food, safely bake for your family everyday",
+        "Exquisite design, engineered for professional-grade baking performance, our round cake pan features a precision-polished surface that ensures effortless release while protecting hands from abrasions, the reinforced rolled rims provide a secure ergonomic grip during handling"
+      ]
+    },
+    {
+      "id": "B0BV32YNQT",
+      "title": "Resident Evil 6 HD PS4 (PS4) [video game]",
+      "image": "https://m.media-amazon.com/images/I/51bYr6MeJYL._SL500_.jpg",
+      "price": 21.48,
+      "percentOff": 28,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0BV32YNQT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 29.99,
+      "features": [
+        "Starting with four distinct, yet interwoven story threads, for either solo or co-op play, both offline and online, not only does Resident Evil 6 deliver both different perspectives and gameplay styles",
+        "Ada Wong, Resident Evil's very own femme fatale, dives into a thrilling campaign of intrigue and infiltration, featuring unique missions, gameplay and weapons. Ada is available from the start"
+      ]
+    },
+    {
+      "id": "B0C33CHG99",
+      "title": "Cosori TurboBlaze Air Fryer, 9-in-1, 6 Qt, PFAS-Free Ceramic Coating | 90°-450°F, 5 Fan Speeds, Air Fry, Roast, Broil, Frozen, Bake, Dry, Proof, 95% Less Oil, Safety Lock, Dishwasher-Safe, 1725W",
+      "image": "https://m.media-amazon.com/images/I/413JPonrV1L._SL500_.jpg",
+      "price": 89.98,
+      "percentOff": 25,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0C33CHG99?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 119.99,
+      "expires": "2026-12-19",
+      "features": [
+        "𝘼𝙞𝙧 𝙁𝙧𝙮𝙚𝙧 𝙐𝙥𝙜𝙧𝙖𝙙𝙚: Innovative TurboBlaze Technology delivers a powerful 3600 rpm fan speed and temperatures up to 450℉, achieving crispy, juicy results every time",
+        "𝙃𝙚𝙖𝙩𝙞𝙣𝙜 𝙐𝙥𝙜𝙧𝙖𝙙𝙚: Cosori's unique 5-fan speed system and precise 90°– 450°F temperature control deliver evenly cooked dishes with perfect texture in every bite"
+      ]
+    },
+    {
+      "id": "B08DHH74JQ",
+      "title": "Logitech G ASTRO Gaming A20 Gen 2 Wireless Headset PlayStation - White/Blue | Compatible with PlayStation 5, PlayStation 4, PC, Mac",
+      "image": "https://m.media-amazon.com/images/I/41RFDLcL4fL._SL500_.jpg",
+      "price": 87.5,
+      "percentOff": 27,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08DHH74JQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 119.99,
+      "features": [
+        "Up to 15m wireless range: Removing the boundaries of wires, the 2.4 GHz wireless signal provides a range of up to 15m",
+        "Cross-platform connectivity: With our new USB transmitter, you can easily connect cross-platform between console and PC; separately sold console-specific USB transmitters allow for cross-console compatibility using the same headset"
+      ]
+    },
+    {
+      "id": "B0DYFXFC5Y",
+      "title": "Disney Stitch Mini Oven Mitts, 2-Pack, Heat Resistant 450F | Compact 5.5\"x7.5\" pot holders for kitchen, printed silicone offers non-slip grip, ambidextrous,hand wash or spot clean",
+      "image": "https://m.media-amazon.com/images/I/51XGKUMLz2L._SL500_.jpg",
+      "price": 12.74,
+      "percentOff": 25,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0DYFXFC5Y?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 16.99,
+      "expires": "2026-12-01",
+      "features": [
+        "EXPERIENCE THE MAGIC OF SAFE COOKING – These mini oven mitts feature slip-resistant printed silicone strips for a secure grip and heat protection up to 450°F. Ideal for home cooks who want safer handling of hot cookware without bulky oven gloves, including ovens, air fryers, and stovetops.",
+        "OFFICIALLY LICENSED DISNEY IN YOUR KITCHEN! – Featuring Mickey & Friends, Winnie the Pooh, and Lilo & Stitch, these mitts are perfect for Disney moms, collectors, themed kitchen lovers, and gift shoppers who want functional kitchen décor with authentic character designs."
+      ]
+    },
+    {
+      "id": "B0CT559B2P",
+      "title": "PowerA Protection Case for Nintendo Switch/OLED/Lite - Peely, Protective, Gaming, Console Case, Accessories, Storage, Officially licensed",
+      "image": "https://m.media-amazon.com/images/I/41H0rehC3qL._SL500_.jpg",
+      "price": 18.07,
+      "percentOff": 21,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B0CT559B2P?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 22.99,
+      "features": [
+        "Code for Bonus Virtual Item Included - Rocket Rodeo",
+        "Sturdy outer shell with rubberized handle and durable dual zipper pulls"
+      ]
+    },
+    {
+      "id": "B08ZM7Z8TD",
+      "title": "Zulay 2-Pack 9\"x12\" Silicone Trivets for Hot Pots & Pans – Heat-Resistant, Non-Slip Trivet Mats – Durable, Flexible, Multi-Purpose Hot Pads for Kitchen Counter & Table - Olive Green",
+      "image": "https://m.media-amazon.com/images/I/413nux70YmL._SL500_.jpg",
+      "price": 15.99,
+      "percentOff": 24,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B08ZM7Z8TD?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 20.99,
+      "features": [
+        "PREMIUM QUALITY TRIVET: Our silicone pot mats are made with food-grade silicone that does not stain, warp, or chirp. This set of 2 mats is heat resistant and can withstand temperatures from -40 to 480°F. These are perfect for use in a microwave or freezer.",
+        "EXTRA THICK AND NON-SLIP: Protect your countertops and dining tables from heat and scratches with our 0.47” thick silicone trivets. With a wavy stripe design, raised edges, and deep grooves, making them slip-resistant. (Trivets measure 12 x 9 x 0.47”)"
+      ]
+    },
+    {
+      "id": "B06Y5K5BP9",
+      "title": "DTOL DS Lite Charger Replacement for Nintendo DS Lite, AC Adapter (100-240v) 2 Pack",
+      "image": "https://m.media-amazon.com/images/I/41l7Gj-jDpL._SL500_.jpg",
+      "price": 7.99,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B06Y5K5BP9?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Back to the most memorable happy gaming,DTOL upgraded this ds lite charger for you, which is well compatible with all DS Lite console in USA. * NOTE: IT IS NOT compatible with DS and the console version after DSi",
+        "With DTOL made DS Lite charger, you can enjoy pocket gaming at anywhere, as it is small, light, sturdy. You will love to carry it for your DS Lite charging needs, which supports 100-240 auto voltage is suitable for any places"
+      ]
+    },
+    {
+      "id": "B0CQTBZBZ5",
+      "title": "HOTEC Small Silicone Kitchen Tongs 7-Inch Mini Serving Tongs, Set of 3 | 600°F Heat-Resistant, Durable Spring Locking, Non-Scratch Tong for Cooking, Serving, Salad, BBQ, Air Fryer, Dishwasher-Safe",
+      "image": "https://m.media-amazon.com/images/I/41mL1aLm9gL._SL500_.jpg",
+      "price": 7.59,
+      "percentOff": 24,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B0CQTBZBZ5?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 9.95,
+      "expires": "2026-12-01",
+      "features": [
+        "TOP QUALITY: Hotec mini silicone tongs are constructed with high quality stainless steel, sturdy, heat resistance, anti-rust, anti-corrosion, light weight, easy to handle, like new forever. Package includes: 3 x 7-inch small tongs (Blue)",
+        "EASY TO STORE: These small serving tongs have locking mechanism, pull the ring for lock and push for unlock, super easy operation. Hang them with the hanging loop after use or put in the drawer by pulling the ring to lock it, space saving."
+      ]
+    },
+    {
+      "id": "B08L34CXG3",
+      "title": "NBCP Controller Holder, Game Controller Rack Headset Stand for Xbox Series X S/Xbox one / PS5 / PS4 / NS/PC/Headset, Aluminum Metal Mount Universal Organizer for Video Game Accessories",
+      "image": "https://m.media-amazon.com/images/I/41OOep+DhyL._SL500_.jpg",
+      "price": 22.39,
+      "percentOff": 20,
+      "category": "Gaming",
+      "url": "https://www.amazon.com/dp/B08L34CXG3?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 27.99,
+      "expires": "2026-12-01",
+      "features": [
+        "Universal Controller Stand - Works with Xbox sereis X ,Xbox One, 360, PS5,PS4 ,Nintendo Switch, Steam Controller,gaming headset , Desktop PC Gamepads and most other third party made game controllers,mobile phones.",
+        "Unique Artistic and Stability Design - The stand was made of high quality thickened aluminum alloy, Constructed with advanced Multi-layer Forging technology, strong, durable, and only 0.078 inches thick. It was designed with a gravity base that can be place on your desks, shelves, cabinets, glass su"
+      ]
+    },
+    {
+      "id": "B003L0OYJ4",
+      "title": "OXO Good Grips 9-Inch Tongs with Silicone Heads | Heat-Resistant Heads, Safe for Non-Stick Cookware, Ideal for Cooking & Serving, Dishwasher Safe",
+      "image": "https://m.media-amazon.com/images/I/2196zn+nXCL._SL500_.jpg",
+      "price": 14.39,
+      "percentOff": 20,
+      "category": "Kitchen",
+      "url": "https://www.amazon.com/dp/B003L0OYJ4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+      "added": "2026-11-28",
+      "sample": false,
+      "source": "api",
+      "discovered": true,
+      "originalPrice": 17.99,
+      "features": [
+        "Scalloped edges securely hold food",
+        "Silicone heads are high heat resistant and safe for non-stick cookware"
+      ]
+    },
+    {
       "id": "B0CXGTGPZQ",
       "title": "Razer BlackShark V2 X Xbox Gaming Headset, 3.5mm Audio Jack, Black | 50mm Drivers, Cardioid Mic, Lightweight, Comfortable Noise Isolating Earcups, for Xbox Series X, Series S, PS5, PC, Switch",
       "image": "https://m.media-amazon.com/images/I/417tvL0BQeL._SL500_.jpg",
@@ -19,8 +391,7 @@
         "TRIFORCE TITANIUM 50 MM DRIVERS — Our cutting-edge proprietary design divides the driver into 3 parts for the individual tuning of highs, mids, and lows—producing brighter, clearer audio with richer highs and more powerful lows",
         "HYPERCLEAR CARDIOID MIC — An improved pickup pattern ensures more voice and less noise as it tapers off towards the mic’s back and sides, with the sweet spot easily placed at the mouth because of the mic’s bendable design"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0CX8MT2M2",
@@ -80,8 +451,7 @@
         "(●ↀωↀ●)✧7.1 VIRTUAL SURROUND SOUND - Immerse yourself in a captivating gaming experience with our pink gaming headset featuring a built-in USB audio sound chip and a 40mm high-resolution driver. It delivers a wide range of frequencies, allowing you to detect even the subtlest in-game sounds.",
         "(●ↀωↀ●)✧TUNED FOR ENDLESS COMFORT - Designed for ultimate comfort, this cat headphone features large size leather earmuffs, an adjustable headband, and a 360° rotating microphone. Its skin-friendly and lightweight design ensures long-lasting comfort, making it perfect for gaming, conversations, and"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B07MVZQXRZ",
@@ -416,8 +786,7 @@
         "15-25kKhz Frequency Response.Headphones fit type:Over-Ear.Note : If the size of the earbud tips does not match the size of your ear canals or the headset is not worn properly in your ears, you may not obtain the correct sound qualities or call performance. Change the earbud tips to ones that fit mor",
         "Designed for comfort – Exceptionally comfortable memory foam ear cushions and padded leatherette headband help keep you focused on gaming.Supreme audio quality – Large 53mm drivers provide high-quality audio. Hear in-game details better and get the in-game advantage on your opponents"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0772KK55L",
@@ -476,8 +845,7 @@
         "TRIFORCE 40 MM DRIVERS — Razer patented 3-part driver design pushes out exceptional highs, mids and lows that doesn’t muddy, providing a more dynamic listening experience for deeper immersion",
         "RETRACTABLE HYPERCLEAR CARDIOID MIC — The improved pickup pattern in the microphone ensures more voice and less noise, while its retractable design allows for optimal positioning or protection when not in use"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0DZX63NRN",
@@ -536,8 +904,7 @@
         "IMMERSIVE, 7.1 SURROUND SOUND — Heighten awareness with accurate positional audio that lets you pinpoint intuitively where every sound is coming from (only available on Windows 10 64-bit)",
         "TRIFORCE 50MM DRIVERS — Cutting-edge proprietary design that divides the driver into 3 parts for the individual tuning of highs, mids, and lows —producing brighter, clearer audio with richer highs and more powerful lows"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0DP2PJCHR",
@@ -596,8 +963,7 @@
         "Gradient RGB Symphony Lights: Cyclic and gradient RGB lights, in line with your live broadcast aesthetics. Bring you an immersive gaming experience and awaken all your senses. There's also a palpable sense of security, and when the COCONISE microphone is muted, the RGB lights go off to let you know",
         "Practical and convenient function: It is equipped with a one-button mute touch sensor. When you want to close the microphone, you only need to touch it lightly to mute the sound, and the RGB light will go out to inform you that the microphone has been successfully closed. Equipped with a rotary cont"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0F2KYX5BJ",
@@ -1481,8 +1847,7 @@
         "USB/XLR Connectivity-AM8T comes with a dynamic microphone and a boom arm stand. Versatile PC gaming microphone kit with USB compatibility plug and play for PC in streaming or recording, without additional drivers. And also, while in XLR compatibility for mixer or sound card connection, the XLR studi",
         "Vibrant RGB Light-The streaming microphone RGB illuminates your gaming setup with customizable RGB lighting for a visually stunning game experience. You can easily control the RGB mode/colors or turn off by simply tapping the RGB button without making any complicated settings on specific software."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B01BDI89SW",
@@ -1814,8 +2179,7 @@
       "features": [
         "FIRST TAKE: First Take is a free podcast recording application that allows you to connect up to 4 different Apogee mics to a single computer or USB Hub. Get set up in seconds and instantly hear your recordings once you're finished. Recording a podcast has never been easier.",
         "PODCAST READY: HypeMic is the only USB Microphone with a built-in analog compressor which helps your voice jump through the speaker. Ever wondered how some of your favorite podcast hosts sound so present. It’s because of compression that is usually done in post-production. With HypeMic, you don’t ha"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0788MGJ31",
@@ -2103,14 +2467,13 @@
       "percentOff": 19,
       "category": "Kitchen",
       "url": "https://www.amazon.com/dp/B0CKLS8P2Q?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
-      "added": "2026-11-21",
+      "added": "2026-11-28",
       "sample": false,
       "source": "api",
       "features": [
         "PLANO PLASTIC STORAGE SHELVES: Organize your home, closet, garage, laundry room or office with Plano heavy-duty Shelving Units.",
         "200LB STORAGE CAPACITY: Each of the 4 plastic shelves has a maximum weight capacity of 50lbs. The full shelving unit can easily accommodate up to 200lbs of total weight."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0HLL8FK69",
@@ -2120,7 +2483,7 @@
       "percentOff": 60,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0HLL8FK69?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
+      "added": "2026-11-28",
       "sample": false,
       "source": "api",
       "discovered": true,
@@ -2130,265 +2493,7 @@
         "4-in-1 Connection Ways & Multi-platform Compatibility: Enjoy wireless gaming through 2.4GHz, USB, Bluetooth, or 3.5mm wired connection. Leveraging a 2.4GHz connection through its USB dongle, this gaming headsets ensures consistent gameplay for PCs and many consoles. Support PC, Nintendo Switch, PS4/",
         "Clear Calls: Featuring an ENC (Environmental Noise Cancellation) microphone, the noise-cancelling headphones ensure your voice comes through clearly on calls, even in loud surroundings. The closed-back earcups with plush memory foam cushions create a tight seal around your ears, providing excellent"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B079D72S2B",
-      "title": "Diet Pepsi Cola Soda, 12 Fl Oz Cans (Pack of 12)",
-      "image": "https://m.media-amazon.com/images/I/51jaOBYTkLL._SL500_.jpg",
-      "price": 8.97,
-      "percentOff": 47,
-      "category": "Drinks",
-      "url": "https://www.amazon.com/dp/B079D72S2B?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 16.98,
-      "features": [
-        "Includes 12 (12oz) cans of Diet Pepsi Cola Soda Pop",
-        "Zero Calories. Zero Sugar"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0DRW8G3WK",
-      "title": "LEGO Botanicals Mini Bonsai Trees 10373 | Building Set for Adults, Ages 18+, 709 Pieces, Gift for Christmas, Artificial Plant Home Décor for Office or Bedroom",
-      "image": "https://m.media-amazon.com/images/I/417qRCa9daL._SL500_.jpg",
-      "price": 44.99,
-      "percentOff": 31,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0DRW8G3WK?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 64.99,
-      "expires": "2026-12-01",
-      "features": [
-        "MINIATURE ZEN GARDEN – Find your center while building the LEGO Botanicals Mini Bonsai Trees (10373) collection for adults 18 years old and up",
-        "THREE SEASONAL SCENES – Create a ginkgo bonsai tree with yellow leaves, a black pine bonsai tree with green needles and a wisteria bonsai tree with hanging lilac flowers"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0HMCWB6FZ",
-      "title": "COBEEK Ultrasonic Retainer Cleaner Machine, 52kHz Ultrasonic Denture Cleaner for Night Guards, Braces, Aligner, Toothbrush, Jewelry, Scaler Tips, Dental Cleaning Pod with Digital Timer & 250ML, White",
-      "image": "https://m.media-amazon.com/images/I/4164P6VSv9L._SL500_.jpg",
-      "price": 34.99,
-      "percentOff": 36,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0HMCWB6FZ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 54.99,
-      "expires": "2026-12-01",
-      "features": [
-        "【Advanced 52kHz Ultrasonic Cleaning】The Ultrasonic Retainer Cleaner using high-frequency 52kHz ultrasonic technology which generates millions of micro-bubbles that penetrate deep and clean into narrow gaps and hard-to-reach surfaces, without causing any damage. This Dental Cleaning Pod effectively l",
-        "【Upgraded 6 U-V Lights for Deep Cleaning】The retainer cleaner machine equipped with 6 upgraded 254nm U-V lights for 360° deep cleaning, help remove odors and surface stain, making your items look and feel brand new. This professional-grade U-V function helps keep your dental appliances fresh, clean,"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B07QQBFNSM",
-      "title": "MAGBLOCK 100 Piece Magnetic Tiles,Building Blocks for Kids 3+ | Magnetic Blocks Preschool Building Sets Educational Toys for Kids Boys and Girls,shape & color recognition",
-      "image": "https://m.media-amazon.com/images/I/51xs-pQf7pL._SL500_.jpg",
-      "price": 29.99,
-      "percentOff": 25,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B07QQBFNSM?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "expires": "2026-12-01",
-      "features": [
-        "This magnetic tiles building set 100 pcs include 38*Small Square, 18*Equilateral Triangle, 10*Right Triangle, 8*Long Triangle, 8*Window, 6*Window Frame, 4*Door, 2*Gate, 2*Rectangle, 4*Semi-Circle, 1*Colorful Cardboard Box, 1* Color Manual with many reference models, 1*Warranty Card.",
-        "Made of food grade ABS plastic and strong magnet. Smooth surface, round edge design won't scratch or hurt hands. Using ultrasonic welding process to ensure better tightness, rivets on the edges for double protect, so magnet won't easily fall out, durable for long-term use."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B085G5ZKWB",
-      "title": "simplehuman Code P 100 Count Custom Fit Liners, Drawstring Kitchen Trash Bags, One-by-One Mess-Free Dispense, Extra Thick & Double Seamed, 50% PCR Plastic, 50-60 Liter / 13-16 Gallon, White",
-      "image": "https://m.media-amazon.com/images/I/31zez5vY5FL._SL500_.jpg",
-      "price": 29.75,
-      "percentOff": 26,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B085G5ZKWB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 39.99,
-      "expires": "2026-12-01",
-      "features": [
-        "PERFECT FIT, NO SLIP: Tailored to fit simplehuman's cans precisely — no bunching, no overhang, no bag slipping into the trash. Stays neatly hidden when the lid is closed.",
-        "EXTRA-THICK, DOUBLE-SEAMED — PACKS TO THE RIM WITHOUT RIPPING: Reinforced plastic and welded seams resist leaks and punctures — strong enough to handle a full bag without bursting."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0DZNP6XYX",
-      "title": "NEOFORMERS 16PCS Square Magnetic Tiles Magnet Expansion Set, Construction Building Blocks, Starter Set for Kids Ages 3+",
-      "image": "https://m.media-amazon.com/images/I/51psIenN1KL._SL500_.jpg",
-      "price": 9.87,
-      "percentOff": 24,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0DZNP6XYX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 12.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Expand Your Imagination & Build Limitlessly: With the NEOFROMERS Magnetic Building Blocks Set, your child's architectural creativity knows no bounds.",
-        "STEM Learning Made Fun: This set is an entertaining way to introduce STEM concepts such as geometry, magnetism, and structural engineering. It's a playful educational experience that encourages visual and spatial learning, color recognition, and fine motor skills, all while keeping kids engaged for"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0CV2HGKDQ",
-      "title": "LEGO Botanicals Plum Blossom Building Sets for Adults - Artificial Flower for Dinner Table Centerpiece, Living Room Home Decor, Ages 18+ - DIY Craft Kits - Gift for Birthdays - 10369",
-      "image": "https://m.media-amazon.com/images/I/41PyzZx9sbL._SL500_.jpg",
-      "price": 23.95,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0CV2HGKDQ?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "features": [
-        "Flower décor building set for adults – Take time out or join friends and family for a relaxing building experience with the LEGO Icons Plum Blossom flower building project",
-        "Creative building for plant lovers – This creative building set includes everything you need to craft a plum blossom artificial flower and a pastel blue pot with a golden band and wood effect plinth"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0FMK4B87X",
-      "title": "Sealegend Magnetic Metal Lint Bin with Lid, Trash Can with Brush, White | Collect Dryer Lint Easily, Space-Saving Laundry Room Organization & Storage",
-      "image": "https://m.media-amazon.com/images/I/41iyQdzo+LL._SL500_.jpg",
-      "price": 17.99,
-      "percentOff": 25,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0FMK4B87X?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 23.99,
-      "expires": "2026-12-01",
-      "features": [
-        "[WITH LINT BRUSH] The easy way to clean and store lint in one step. Use the brush to remove lint from your dryer, then store it in the lint bin. This kit cleans your dryer, helps prevent fires, and keeps your laundry room tidy",
-        "[THREE MOUNTING OPTIONS] Easily attach the metal lint bin to your washer/dryer, or other metal surfaces with the magnetic support. You can also hang it on the wall with hooks or screws, or just place it on a table"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0DX3HTMV8",
-      "title": "LEGO Botanicals Bouquet of Pink Roses 10374 | Building Set for Adults, Ages 18+, 789 Pieces, Artificial Indoor Flower Décor for Home, Gift for Women & Men",
-      "image": "https://m.media-amazon.com/images/I/51iJ-1To3xL._SL500_.jpg",
-      "price": 47.99,
-      "percentOff": 20,
-      "category": "Toys",
-      "url": "https://www.amazon.com/dp/B0DX3HTMV8?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 59.99,
-      "features": [
-        "BOUQUET OF LEGO FLOWERS - Plant creative joy with the LEGO Botanicals Bouquet of Pink Roses (10374) building set for adults ages 18 years old and up",
-        "BUILDABLE PINK ROSES - Assemble a combination of 4 roses in full bloom, 4 blossoming roses, and 4 rosebuds, each with stems, along with 4 sprigs of white baby's breath flowers"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0FNV5NNC4",
-      "title": "NINESTARS 13 Gallon Extra Thick Drawstring Trash Bags, Heavy Duty Leak-Proof White Plastic Garbage Bags for Kitchen, Bathroom, or Office, 90 Count",
-      "image": "https://m.media-amazon.com/images/I/41A5T6S6UOL._SL500_.jpg",
-      "price": 22.99,
-      "percentOff": 23,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0FNV5NNC4?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 29.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Durable Construction: Made from extra-strong, leakage-proof plastic for reliable trash containment.",
-        "Thickened & Heavy-Duty: Features a thicker 1.0 mil construction, offering enhanced strength and durability — less tearing, less leakage, and more peace of mind."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0CJVQZ6CB",
-      "title": "Scrub Mommy Kitchen Sponge (6) + Daddy Caddy Sink Holder | Dual-Sided Dish Scrubber, Non-Scratch on 25+ Surfaces, Stain & Odor Resistant Up to 12 Weeks, Dishwasher Safe, BPA-Free",
-      "image": "https://m.media-amazon.com/images/I/41E3VnvDNmL._SL500_.jpg",
-      "price": 17.59,
-      "percentOff": 20,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0CJVQZ6CB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 21.97,
-      "expires": "2026-12-01",
-      "features": [
-        "Complete Scrub Mommy Set: Includes 6 dual-sided Scrub Mommy kitchen sponges plus a Daddy Caddy holder, the perfect home for your dish scrub. Safe on glass, stainless steel, cast iron and non-stick, these scrubbers tackle dishes, pots and pans.",
-        "Two Sides, One Smart Sponge: FlexTexture foam firms in cool water for tough messes and softens in warm water for light cleaning, while ResoFoam creates a rich, soapy lather. The smiley face reaches inside cups, mugs and hard-to-clean corners."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0CJWY2BPH",
-      "title": "Wipe Those Hands On-The-Go Hand Sanitizing Wipes, 4 Pack of 30 (120ct) | Individually Wrapped Travel Wipes, Alcohol-Free, Fragrance-Free, Kills Germs Fast, Travel Essentials",
-      "image": "https://m.media-amazon.com/images/I/41Nw8j-DcPL._SL500_.jpg",
-      "price": 20.79,
-      "percentOff": 20,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0CJWY2BPH?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 25.99,
-      "expires": "2026-12-01",
-      "features": [
-        "120 INDIVIDUALLY WRAPPED WIPES: Four 30-count packs give you sealed singles for frequent use and multiple bags or locations.",
-        "KEEP THEM EVERYWHERE: Stock a purse, backpack, lunch box, car, desk, gym bag or carry-on so hand cleanup is close by."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
-    },
-    {
-      "id": "B0FDBJW9ND",
-      "title": "Cascade Platinum Plus Dishwasher Pods, Dish Detergent Soap, Clean Scent, 62 Count",
-      "image": "https://m.media-amazon.com/images/I/51DAqt3Fj-L._SL500_.jpg",
-      "price": 19.95,
-      "percentOff": 20,
-      "category": "Household",
-      "url": "https://www.amazon.com/dp/B0FDBJW9ND?tag=eddie060-20&linkCode=osi&th=1&psc=1",
-      "added": "2026-11-21",
-      "sample": false,
-      "source": "api",
-      "discovered": true,
-      "originalPrice": 24.99,
-      "expires": "2026-12-01",
-      "features": [
-        "Our best dishwasher detergent for up to 100% Food Residue Removal",
-        "Only Cascade Platinum Plus contains 2X* the Dawn grease fighting power and 2X* the scrubbing power to power through dried on food *Cleaning ingredients vs Cascade Complete ActionPacs"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B07JG9JB29",
@@ -2407,14 +2512,13 @@
         "Maximum compatible headphone dimensions (inside): 8.6 x 8.2 x 2.3 inches. Compatible with wired/wireless headphones.",
         "Compatible with SteelSeries ARCTIS 7+ DESTINY 2: LIGHTFALL EDITION, Arctis Nova 7/7P/7X Wireless Gen 2, Arctis Nova Pro Wireless X, Arctis Nova Pro Wireless, Arctis Nova 1P, Arctis Nova 1X, Arctis Nova 1, Arctis Nova 3, Arctis Nova 7P Wireless, Arctis Nova 7X Wireless, Arctis Nova Elite case."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0BSBVPWCV",
       "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
       "image": "https://m.media-amazon.com/images/I/31ZPUnFQUvL._SL500_.jpg",
-      "price": 280,
+      "price": 281.29,
       "percentOff": 26,
       "category": "Gaming",
       "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
@@ -2426,8 +2530,7 @@
       "features": [
         "The Quintessential Gaming Mic: The Yeti Studio gaming microphone reinvents the traditional dynamic XLR microphone with advanced tech and a gamer-first design for a pro-quality gaming experience",
         "ClearAmp Active Preamp Inside: Built-in ClearAmp technology delivers +25dB additional gain for exceptional audio sound quality for your audience - no external mic booster required"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B081415GCS",
@@ -2447,8 +2550,7 @@
         "Personalize your Logitech wireless gaming headset lighting with 16.8M vibrant colors. Enjoy front-facing, dual-zone Lightsync RGB with preset animations—or create your own using G HUB software.",
         "Total freedom - 20 meter range and Lightspeed wireless audio transmission. Keep playing for up to 29 hours. Play in stereo on PS4. Note: Change earbud tips for optimal sound quality. Uses: Gaming, Personal, Streaming, gaming headphones wireless."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B07PSCCC78",
@@ -2468,8 +2570,7 @@
         "Precisely Clear Audio - Enjoy the real clear and lossless sound quality with 7.1 Surround-Sound technology, creating a field of immersion wherever in game field, listening to alive concert or in a chat room. The 53mm drivers offer a wider frequency range, richer sound fields, higher definition and e",
         "Adjustable & Comfortable - Its free-adjustable headband with lightweight robust made steel frame will free your head from extra burdens when gaming or listening to music. The finest leatherette with premium memory foam filler enables your ear to breathe and keep them dry and cool. No need to worry,"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0CN493YHF",
@@ -2489,8 +2590,7 @@
         "Superior Sound Quality: Capture crystal-clear audio with PD200X USB dynamic microphone. The built-in dynamic mic capsule helps you to capture deep lows, delicate highs, and crisp mid-tones. Ultra-wide frequency response of 40Hz-16kHz presents a warm and smooth sound. Cardioid polar pattern reduces u",
         "Advanced Software Control: MAONO Link software takes your audio customization to the next level, allowing you to adjust various parameters and optimize your sound effortlessly setting the perfect vocal tone. And you can turn on/off the RGB light or switch in 9 different colors, also supports EQ, lim"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0C5DCRRN7",
@@ -2510,8 +2610,7 @@
         "【7.1PRO Surround Sound】Equipped with a 50mm dynamic driver and advanced 2.4GHz lossless technology, this ps5 headset delivers enhanced audio clarity and precise spatial awareness. The 7.1 surround sound creates lifelike 3D soundscapes, allowing you to hear critical details like enemy footsteps or di",
         "【20ms Ultra-Low Latency Headset】Experience flawless audio-video sync with <20ms latency – faster and more stable. Ideal for competitive games, this wireless gaming headset ensures ultra-smooth performance without lag or interference. Smart power management prevents boot issues by auto-resetting when"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0BJ72M77L",
@@ -2531,8 +2630,7 @@
         "STEREO SOUND QUALITY: Built-in 40 mm high fidelity speakers, which can produce rich sound quality, vivid sound field, high sound clarity and sound shock feeling.",
         "MULTI-PLATFORM COMPATIBLE (3.5mm PLUG): The headset is compatible with Xbox one/ Xbox one X/S controller, Nintendo switch, PS4, PS5, PC, laptop, smartphone and other devices that has 3.5mm jack."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0C46CS37H",
@@ -2552,8 +2650,7 @@
         "Gaming Voice Experience — Hear Clearly. Win Together：The DGM20S gaming microphone upgrades your gaming voice experience with focused voice pickup designed for team communication. One-click noise reduction helps reduce unwanted background distractions, while the cardioid pickup pattern captures your",
         "Customize Your Gaming Setup: The USB mic for pc create a battle station that matches your style with controllable RGB lighting effects. Choose your favorite colors and lighting modes for gaming, streaming, or content creation—or turn the lights off for a clean look."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0BV4F17CS",
@@ -2572,8 +2669,7 @@
       "features": [
         "Stylish gaming microphone with USB-C connection: Perfect for gaming sessions, streaming, podcasting, video conferencing, face-to-face interviews, vlogging, ASMR and much more!",
         "Elegant black-and-copper design and impressive RGB lighting: Choose between different colors, a rainbow effect, or no lighting—whatever suits your taste"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0BBVY9L7C",
@@ -2592,8 +2688,7 @@
       "features": [
         "ONE MICROPHONE IS ENOUGH: Ideal for Studio Recording, Home Recording, Podcasting and Live Streaming. The PD400X podcast dynamic microphone is loved and trusted by customer all over the world, proofed by kickstarter, digital journal and more professional media",
         "PERFECT VOICE IN IMPERFECT ROOM: The podcast microphone combination of dynamic capsule and cardioid polar pattern. Have confidence that your streaming microphone will reject any unwanted background noise for perfect recordings in imperfect rooms"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0D458QDVN",
@@ -2612,8 +2707,7 @@
       "features": [
         "[Authentic Sound Integrity] Experience natural sound reproduction with the podcast microphone with boom arm, preserving audio without distortion. The XLR dynamic microphone boasts a SPL of 120dB-handling extreme instrument sound pressure and sharp transients—delivering original and consistent record",
         "[Flexible Connectivity Options] Equipped with both USB and XLR connections, recording studio microphone kit offers versatility to suit your streaming/gaming needs. Seamlessly transition between plug-and-play USB convenience or enhanced XLR connectivity, providing flexibility and studio-grade sound r"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0FY2R5R8X",
@@ -2631,8 +2725,7 @@
       "features": [
         "Enhanced Anti-Theft Protection - Our parcel delivery box is equipped with a precision-engineered anti-theft device, featuring a one-way delivery system and a sturdy internal baffle to provide extra protection from porch pirates, ensuring that your packages stay safe.",
         "Spacious Storage Capacity - With its generous dimensions, our package delivery box can hold multiple parcels. Say goodbye to missed deliveries and enjoy a more convenient way to manage your shipments."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0BTCT7BJP",
@@ -2650,8 +2743,7 @@
       "features": [
         "【Linear & Circular Movement】 NEEWER SD001 is an articulating manual camera dolly that moves in straight lines or circles for sliding and panning shots. By adjusting the wheels at -45°/+45°, you can control the panoramic areas to shoot subjects of various sizes with your mirrorless cameras, mini camc",
         "【Smooth & Quiet Wheels】 Padded with soft rubber rings, the wheels move quietly and smoothly on the floor, table, and camera slider for a noise free video recording environment. Not suitable for telephoto lenses"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B09XF23WY2",
@@ -2663,13 +2755,13 @@
       "category": "Home",
       "url": "https://www.amazon.com/dp/B09XF23WY2?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-26",
+      "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
         "【Room-Saving】Comes with C-Clamp, this desk lamp is designed for limited space, like a small table, drawing board or workbench, leaving you a much cleaner space. ❌ USB Adaptor is NOT Included! ❌ Non-Rechargeable!",
         "【Multiple Light Modes】 3 Colour modes together with 10 brightness levels, this desk lamp is suitable for different needs, like bright white light for home office and soft warm light for bedside reading."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0FLKC5JN4",
@@ -2687,8 +2779,7 @@
       "features": [
         "The Groundbreaking New Sound - Latest wireless over ear Bluetooth headphones from CMF by Nothing, Headphone Pro, Features LDAC and Dual Hi-Res Certification. with customized 40mm dynamic drivers to deliver a more remarkable listening experience than ever before",
         "Broad Compatibility, Simple to Use - An ideal headphone choice for iOS and Android, it supports various streaming devices via Bluetooth pairing or AUX and is also compatible with macOS & Windows. With built-in Google Fast Pair & Microsoft Swift Pair, it is ready to use right out of the box for most"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B09Q2ZZGH2",
@@ -2708,8 +2799,7 @@
         "[Plug & Play for Gaming & Recording] The A6T is a complete plug-and-play USB condenser microphone kit for both gaming and vocal recording. No additional audio interface. Connect directly to your PC, Mac, or PS4/PS5. The upgraded DSP chip delivers a clean, stable digital signal directly to your compu",
         "[Original Sound Reproduction] Don't settle for muffled audio. Supporting an impressive 192kHz/24bit sampling rate and an excellent >70dB SNR, this studio recording microphone captures energetic and warm natural sound reproduction. It preserves the breath and vocal nuances, making your live streaming"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0BXSXPG7K",
@@ -2727,8 +2817,7 @@
       "features": [
         "Custom Three-Capsule Array: Produces clear, powerful, broadcast-quality sound for YouTube, game streaming, podcasting, Zoom calls and music.",
         "Blue VOICE Software: Craft the perfect broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples. Advanced Blue VOICE is compatible with Yeti, Yeti Nano and Yeti X. To access Blue VOICE, please download Logitech’s free G HUB software."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B07Y1C6GDS",
@@ -2747,8 +2836,7 @@
       "features": [
         "[USB Output] Enables simple setup. USB studio recording microphone kit provides a direct convenient plug-and-play connection to pc and laptop without any additional hardware or drivers for recording vocals, podcasts and Skype. Studio microphone for recording vocals is never been easier to get high-q",
         "[Excellent Sound Quality] With rugged construction for durable performance, the vocal recording microphone, USB condenser mic for PC,offers a wide frequency response and handles high SPLs with ease. Ideal for project/home-studio applications. The cardioid condenser capsule captures crystal-clear aud"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B09BNMJM2C",
@@ -2766,8 +2854,7 @@
       "features": [
         "[Original Voice Reproduction] Featuring a 16-bit/48kHz sampling rate, this USB dynamic microphone significantly enhances vocal intelligibility and authentic voice reproduction. The K658 delivers clear, resonant vocals that make your voice stand out on stream or podcast. Designed for streaming, its c",
         "[Function Mic Keys] Tap the top of this gaming microphone to mute instantly. No loud clicks, no fumbling for buttons. Never worry about someone walking into your room during a live stream again. The built-in LED indicator shows your mute status at a glance. The large gain knob lets you adjust microp"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0FP1TRW4L",
@@ -2786,8 +2873,7 @@
         "Comfort is King Comfort’s in the Cloud III’s DNA. HyperX signature memory foam in the headband and ear cushions wrapped in soft, premium leatherette make for a plush, comfortable fit all around.",
         "Audio Tuned for Your Entertainment Angled 53mm drivers have been tuned by HyperX audio engineers to provide the optimal listening experience that accents the dynamic sounds of gaming."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0FLKJ7FH7",
@@ -2806,8 +2892,7 @@
         "Designed to capture less unwanted noise: Engineered from the inside to reduce vibrations from the outside, with a built-in suspension system that delivers shock mount benefits in a compact, no-fuss design.",
         "An All-In-One mic that doesn’t ask for more: Everything you need is built in — foam pop filter, tiltable stand, and mic arm threads. No extras required. Just clear sound and a smart design for a setup that keeps things simple."
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B0D9MCK4R8",
@@ -2826,8 +2911,7 @@
         "Connectivity Technology: Wired",
         "Cable Length: 9.84 ft"
       ],
-      "priority": true,
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      "priority": true
     },
     {
       "id": "B002VA464S",
@@ -2865,27 +2949,24 @@
       "features": [
         "PREMIUM MATERIAL & CRAFT – ROCOCO refines traditional hand-forging with high-temperature treatment, quenching, edge sharpening, and wood handle assembly. Each knife is forged by skilled blacksmiths from premium stainless steel, offering sharpness, wear resistance, durability, and 60±2 HRC hardness.",
         "SHARP & PRETTY BLADE – The curved cleaver features a hand-polished 15° V-edge for low-resistance, precise cuts without crushing or juice loss. The rust-resistant stainless steel is easy to clean and ideal for board-to-pan use."
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0BF976MJY",
       "title": "2-Pack LED Video Light Kit, NiceVeedi Studio Light, 2800-6500K Dimmable Photography Lighting Kit with Tripod Stand&Phone Holder, 73\" Stream Light for Video Recording, Game Streaming, YouTube",
       "image": "https://m.media-amazon.com/images/I/416LIaAUumL._SL500_.jpg",
-      "price": 39.99,
+      "price": 45.59,
       "originalPrice": 49.99,
-      "percentOff": 20,
+      "percentOff": 9,
       "category": "Tech",
       "url": "https://www.amazon.com/dp/B0BF976MJY?tag=eddie060-20&linkCode=ogi&th=1&psc=1",
       "added": "2026-11-25",
-      "expires": "2026-12-01",
       "sample": false,
       "source": "api",
       "features": [
         "【MULTIPLE COLOR TEMPERATURE & ADJUSTABLE BRIGHTNESS】There are 3 Color temperatures (2800K, 4800K & 6500K) which offer different lighting atmosphere; This Studio Light is equipped with 356 Led beads which offers a stable and ample output of 15W. Features a high CRI of 97+ for precise color rendering.",
         "【LIGHT PANEL & POWER CABLE】The 10” (25.5 cm) x 7.8” (19.8 cm) LED light panel with compact design allows you to carry around conveniently with durable storage bag. Thickened light shell works a diffusion, making the lighting more softer. Ideal USB port for powering the device with 5V, 2A DC wall cha"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     },
     {
       "id": "B0GYF7PRYR",
@@ -2902,8 +2983,7 @@
       "features": [
         "【Professional Lighting Modifiers】This photography lighting kit includes a softbox and a honeycomb grid. The softbox diffuses light into a soft, even base, while the honeycomb grid shapes the beam, reduces spill, and enhances subject separation for more dimensional lighting results. The softbox featu",
         "【Powerful Video Light】Features with 2700K–6500K adjustable color temperature for flexible, stable lighting in any setup. Compared to traditional softbox lighting kit, it is brighter, more efficient, more stable during long shoots, making it more reliable for YouTube, TikTok, live streaming, intervie"
-      ],
-      "lastChecked": "2026-11-28T02:47:50.177Z"
+      ]
     }
   ]
 }
