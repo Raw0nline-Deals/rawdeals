@@ -3746,6 +3746,62 @@
         }
       ],
       "requests": 15
+    },
+    {
+      "checkedAt": "2026-11-28T02:47:50.177Z",
+      "checked": 147,
+      "unchanged": 143,
+      "updated": 4,
+      "removed": 0,
+      "unavailable": 0,
+      "skipped": 0,
+      "changes": [
+        {
+          "asin": "B0HHRY28DB",
+          "title": "Smart Watch for Women, 1.27\" HD Fitness Watch(Answer/Make Calls), 2 Bands | Compatible iPhone/Samsung/Android, 120+ Sport Modes smartwatch with heart rate, sleep tracker & step counter, 3ATM Waterproof",
+          "url": "https://www.amazon.com/dp/B0HHRY28DB?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 45.59,
+          "newPrice": 45.59,
+          "oldPercentOff": 54,
+          "newPercentOff": 24,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0CFQGPZRT",
+          "title": "Puma Unisex-Child, Rebound Layup Synthetic Leather Hook and Loop, Puma Black-Puma Black, Little Kid 13",
+          "url": "https://www.amazon.com/dp/B0CFQGPZRT?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 39.99,
+          "newPrice": 43.2,
+          "oldPercentOff": 31,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B08T9FZ1SX",
+          "title": "Ravensburger - Gardener's Getaway - 300 Piece Large Format Jigsaw Puzzle - Bright and Vivid Gardener's Dream with Gnomes & More - Frameable - Premium Quality - Puzzles for Adults",
+          "url": "https://www.amazon.com/dp/B08T9FZ1SX?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 14.69,
+          "newPrice": 20.99,
+          "oldPercentOff": 30,
+          "newPercentOff": 20,
+          "action": "updated",
+          "reason": "price changed"
+        },
+        {
+          "asin": "B0BSBVPWCV",
+          "title": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone - Off White | Active Dynamic, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount, for gaming",
+          "url": "https://www.amazon.com/dp/B0BSBVPWCV?tag=eddie060-20&linkCode=osi&th=1&psc=1",
+          "oldPrice": 283.79,
+          "newPrice": 280,
+          "oldPercentOff": 25,
+          "newPercentOff": 26,
+          "action": "updated",
+          "reason": "price changed"
+        }
+      ],
+      "requests": 15
     }
   ]
 }
